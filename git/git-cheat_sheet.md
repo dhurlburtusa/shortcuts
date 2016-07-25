@@ -128,6 +128,13 @@ $ git diff --staged
 ```
 
 
+## Rename
+
+```sh
+git mv <source>... <destination>
+```
+
+
 ## Status
 
 Get a brief summary.
