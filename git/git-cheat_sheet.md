@@ -218,6 +218,12 @@ Use `gitk` for a GUI version
 
 Allows to manage tracked repositories.  A Github repository is usually a tracked repository.
 
+### List Existing Remotes
+
+```sh
+$ git remote --verbose
+```
+
 ### Add a Remote
 
 ```sh
