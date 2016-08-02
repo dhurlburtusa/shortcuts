@@ -75,6 +75,27 @@ mongoimport --db <db-name> --collection <collection-name> --drop --file <file-pa
 ```
 
 
+## Drivers
+
+Drivers for MongoDB are the client libraries that handle the interface between the application and the MongoDB servers
+and deployments.  Drivers are responsible for managing connections to MongoDB standalone instances, replica sets, or
+sharded clusters.  Drivers provide the methods and interfaces that applications use to interact with MongoDB as well as
+handle the translation of documents between BSON objects and native mapping structures.
+
+### Node.js Driver
+
+#### Install or Upgrade
+
+From the root of your npm project:
+
+```sh
+npm install --save mongodb
+```
+
+### Other Drivers
+
+See https://docs.mongodb.com/ecosystem/drivers/ for other drivers.
+
 ## MongoDB Shell
 
 Use the `mongo` executable (included with installation) to start the interactive MongoDB shell program.
@@ -180,6 +201,174 @@ See https://docs.mongodb.com/manual/indexes/ for details.
 db.<collection-name>.createIndex(<index-spec>)
 # where <index-spec> is like { <field1>: <order>, ... }
 # where <order> is 1 or -1.
+```
+
+`createIndex()` will only creates an index if the index does not exist.
+
+
+## Node.js
+
+Once, the driver is installed, then you can connect to a MongoDB instance using a script similar to the following.
+
+### API Docs
+
+See http://mongodb.github.io/node-mongodb-native/2.2/api/.
+
+### Making a Connection (Node.js)
+
+```js
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+
+var url = 'mongodb://localhost:27017/test';
+
+MongoClient.connect(url, (err, db) => {
+  assert.equal(err, null);
+  console.log("Connected correctly to server.");
+  db.close();
+});
+```
+
+The callback passed to the `connect` function will be passed a [database object](http://mongodb.github.io/node-mongodb-native/2.2/api/Db.html)
+`db`.  This database object will be assumed to be available in the following example.
+
+### Selecting a Collection (Node.js)
+
+```js
+let collection = db.collection('<collection-name>');
+```
+
+This will return a [collection object](http://mongodb.github.io/node-mongodb-native/2.2/api/Collection.html)
+which will be assumed to be available in the following examples.
+
+### Inserting (Node.js)
+
+```js
+collection.insertOne(doc, (err, result) => {
+  assert.equal(err, null);
+  console.dir(result);
+});
+```
+
+### Querying (Node.js)
+
+#### Query for All Documents in a Collection
+
+```js
+let cursor = collection.find();
+```
+
+#### Query for Specific Conditions
+
+```js
+let cursor = collection.find({ <field1>: <value1>, <field2>: <value2>, ... });
+```
+
+#### Working with Cursors
+
+```js
+cursor.forEach((doc) => {
+  console.dir(doc);
+}, (err) => {
+  assert.equal(err, null);
+});
+```
+
+#### Query for Specific Conditions with Operators
+
+```js
+let cursor = collection.find({ <field1>: { <oper1>: <value1> } }, ... });
+```
+
+Operators: `$eq`, `$gt`, `$gte`, `$lt`, `$lte`, `$ne`, `$in`, `$nin`
+
+#### Combining Conditions
+
+##### Logical AND
+
+```js
+let cursor = collection.find({ <field1>: <value1>, <field2>: <value2>, ... });
+let cursor = collection.find({ <field1>: { <oper1>: <value1> }, <field2>: <value2>, ... });
+```
+
+##### Logical OR
+
+```js
+let cursor = collection.find({ $or: [ { <field1>: <value1> }, { <field2>: <value2> }, ... ] });
+```
+
+
+### Sorting (Node.js)
+
+```js
+let cursor = collection.find(...).sort({ <field1>: 1, <field2>: -1, ... });
+```
+
+
+### Updating (Node.js)
+
+```js
+collection.updateOne(<conditions>, <operators>, <options>, <callback>);
+let promise = collection.updateOne(<conditions>, <operators>, <options>);
+
+// where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
+```
+
+See https://docs.mongodb.com/manual/reference/operator/update/ for list of update operators.
+
+#### Update Multiple Documents
+
+```js
+collection.updateMany(<conditions>, <operators>, <options>, <callback>);
+let promise = collection.updateMany(<conditions>, <operators>, <options>);
+
+// where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
+```
+
+#### Replace a Document
+
+```js
+collection.replaceOne(<conditions>, <document>, <options>, <callback>);
+let promise = collection.replaceOne(<conditions>, <document>, <options>);
+```
+
+
+### Deleting (Node.js)
+
+```js
+collection.deleteOne(<conditions>, <options>, <callback>);
+let promise = collection.deleteOne(<conditions>, <options>);
+collection.deleteMany(<conditions>, <options>, <callback>);
+let promise = collection.deleteMany(<conditions>, <options>);
+```
+
+
+### Dropping a Collection in Node.js
+
+```js
+collection.drop(<options>, <callback>);
+let promise = collection.drop(<options>);
+```
+
+
+### Aggregation (Node.js)
+
+See https://docs.mongodb.com/manual/aggregation/ for details.
+
+```js
+collection.aggregate([ <stage1>, <stage2>, ... ]);
+```
+
+
+### Indexing (Node.js)
+
+See https://docs.mongodb.com/manual/indexes/ for details.
+
+```js
+collection.createIndex(<index-spec>, <options>, <callback>);
+let promise = collection.createIndex(<index-spec>, <options>);
+// where <index-spec> is like { <field1>: <order>, ... }
+// where <order> is 1 or -1.
 ```
 
 `createIndex()` will only creates an index if the index does not exist.
