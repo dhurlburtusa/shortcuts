@@ -250,6 +250,13 @@ collection.insertOne(doc, (err, result) => {
 });
 ```
 
+#### Inserting Multiple Documents
+
+```js
+collection.insertMany(<docs>, <options>, <callback>);
+let promise = collection.insertMany(<docs>, <options>);
+```
+
 ### Querying (Node.js)
 
 #### Query for All Documents in a Collection
