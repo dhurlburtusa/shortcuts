@@ -11,12 +11,18 @@ MongoDB obviates the need for an Object Relational Mapping (ORM) to facilitate d
 A record in MongoDB is a document, which is a data structure composed of field and value pairs.  MongoDB documents are
 similar to JSON objects.  The values of fields may include other documents, arrays, and arrays of documents.
 
+
 ## Collections
 
 MongoDB stores documents in collections.  Collections are analogous to tables in relational databases.  Unlike a table,
 however, a collection does not require its documents to have the same schema.
 
 In MongoDB, documents stored in a collection must have a unique `_id` field that acts as a primary key.
+
+
+## _id Field
+
+The `_id` field is the field MongoDB uses as the unique primary-key.  MongoDB automatically creates an index on this field.  MongoDB will also auto-insert an `_id` field of type `ObjectId` if one is not supplied during document insertion.
 
 
 ## Running MongoDB
