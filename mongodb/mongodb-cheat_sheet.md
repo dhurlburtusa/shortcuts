@@ -31,7 +31,7 @@ MongoDB stores its data in [BSON](http://bsonspec.org/) format.  See https://doc
 
 ### ObjectId
 
-Are 12-byte hex strings.  They are composed of 4 parts.  The first part is the date as a timestamp -- the number of seconds since the Unix epoch.  The second part is a MAC address.  The third part is a process ID.  And the last part is a counter (to help ensure the ObjectId is unique when multiple insert occur simultaneously).
+Are 12-byte hex strings.  They are composed of 4 parts.  The first part is the date as a timestamp -- the number of seconds since the Unix epoch.  The second part is a MAC address.  The third part is a process ID.  And the last part is a counter (to help ensure the ObjectId is unique when multiple inserts occur simultaneously).
 
 ```
  Date   |  MAC  |  PID  | Counter
