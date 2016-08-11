@@ -25,6 +25,21 @@ In MongoDB, documents stored in a collection must have a unique `_id` field that
 The `_id` field is the field MongoDB uses as the unique primary-key.  MongoDB automatically creates an index on this field.  MongoDB will also auto-insert an `_id` field of type `ObjectId` if one is not supplied during document insertion.
 
 
+## Data Types
+
+MongoDB stores its data in [BSON](http://bsonspec.org/) format.  See https://docs.mongodb.com/manual/reference/bson-types/ for details.
+
+### ObjectId
+
+Are 12-byte hex strings.  They are composed of 4 parts.  The first part is the date as a timestamp -- the number of milliseconds since the Unix epoch.  The second part is a MAC address.  The third part is a process ID.  And the last part is a counter (to help ensure the ObjectId is unique when multiple insert occur simultaneously).
+
+```
+ Date   |  MAC  |  PID  | Counter
+_ _ _ _ | _ _ _ |  _ _  | _ _ _ 
+4-bytes  3-bytes 2-bytes 3-bytes
+```
+
+
 ## Running MongoDB
 
 ### Setup on Windows 10 Pro
