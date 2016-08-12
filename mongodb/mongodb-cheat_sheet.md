@@ -593,3 +593,28 @@ let promise = collection.createIndex(<index-spec>, <options>);
 ```
 
 `createIndex()` will only creates an index if the index does not exist.
+
+
+## Python
+
+### Making a Connection (Python)
+
+```python
+import pymongo
+
+url = 'mongodb://localhost'
+connection = pymongo.MongoClient(url)
+```
+
+### Selecting a Database (Python)
+
+```python
+db = connection.<database-name>
+```
+
+### Selecting a Collection (Python)
+
+```python
+collection = db.<collection-name>
+```
+
