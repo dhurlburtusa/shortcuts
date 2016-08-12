@@ -163,6 +163,31 @@ Find documents where field1 is not equal to value1 and field2 is not equal to va
 collection.find({ $nor: [{ field1: value1}, { field2: value2}] })
 ```
 
+### Evaluation Matches
+
+Find documents where some criteria (field1 equals value1) matches OR some other criteria (field2 > value2) matches:
+```
+collection.find({ field: { $regex: /.../ } })
+```
+
+See https://docs.mongodb.com/manual/reference/operator/query/regex/ for more details on using regular expressions in queries.
+
+Find documents where value of a field is even:
+```
+collection.find({ field: { $mod: [2, 0] } })
+```
+
+Find documents where value of a field is even:
+```
+collection.find({ field: { $mod: [2, 1] } })
+```
+
+Find documents where field1 equals field2:
+```
+collection.find({ $where: "this.field1 == this.field2" })
+collection.find({ $where: function () { return this.field1 == this.field2; } })
+```
+
 
 ## Running MongoDB
 
