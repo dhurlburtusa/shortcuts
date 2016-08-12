@@ -123,8 +123,27 @@ Use the `mongo` executable (included with installation) to start the interactive
 
 ### Inserting (MongoDB Shell)
 
+See https://docs.mongodb.com/manual/reference/method/db.collection.insert/ for details.
+
 ```sh
 db.<collection-name>.insert({...})
+db.<collection-name>.insert({...}, { writeConcern: {...}, ordered: <boolean> })
+db.<collection-name>.insert([{...}, {...}, ...])
+db.<collection-name>.insert([{...}, {...}, ...], { writeConcern: {...}, ordered: <boolean> })
+```
+
+See https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/ for details.
+
+```sh
+db.<collection-name>.insertOne({...})
+db.<collection-name>.insertOne({...}, { writeConcern: {...} })
+```
+
+See https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/ for details.
+
+```sh
+db.<collection-name>.insertMany([{...}, {...}, ...])
+db.<collection-name>.insertMany([{...}, {...}, ...], { writeConcern: {...}, ordered: <boolean> })
 ```
 
 ### Querying (MongoDB Shell)
@@ -264,6 +283,13 @@ which will be assumed to be available in the following examples.
 
 ### Inserting (Node.js)
 
+Syntax:
+```js
+collection.insertOne(<doc>, <options>, <callback>);
+let promise = collection.insertOne(<doc>, <options>);
+```
+
+Example:
 ```js
 collection.insertOne(doc, (err, result) => {
   assert.equal(err, null);
@@ -273,6 +299,7 @@ collection.insertOne(doc, (err, result) => {
 
 #### Inserting Multiple Documents
 
+Syntax:
 ```js
 collection.insertMany(<docs>, <options>, <callback>);
 let promise = collection.insertMany(<docs>, <options>);
