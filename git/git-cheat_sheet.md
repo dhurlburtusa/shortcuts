@@ -184,6 +184,10 @@ Deleting a branch regardless of its merge status:
 $ git branch -D <branch-name>
 ```
 
+### A Successful Branching Model
+
+See http://nvie.com/posts/a-successful-git-branching-model/
+
 <!--
 ### How to Start a New Branch:
 
