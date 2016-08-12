@@ -188,6 +188,23 @@ collection.find({ $where: "this.field1 == this.field2" })
 collection.find({ $where: function () { return this.field1 == this.field2; } })
 ```
 
+### Array Matches
+
+Find documents where array field contains all the specified values:
+```
+collection.find({ arrField: { $all: [value1, value2, ...] } })
+```
+
+Find documents where array field has length of 2:
+```
+collection.find({ arrField: { $size: 2 } })
+```
+
+Find documents where array field has an element that has a field of some value:
+```
+collection.find({ arrField: { $elemMatch: { field: value } } })
+```
+
 
 ## Running MongoDB
 
