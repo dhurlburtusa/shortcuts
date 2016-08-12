@@ -39,6 +39,42 @@ _ _ _ _ | _ _ _ |  _ _  | _ _ _
 4-bytes  3-bytes 2-bytes 3-bytes
 ```
 
+## Query Syntax and Semantics
+
+### Equality Matches
+
+Find documents where `field` equals `value`:
+```
+collection.find({ field: value })
+```
+
+Find documents where `field1` equals `value1` AND `field2` equals `value2`:
+```
+collection.find({ field1: value1, field2: value2 })
+```
+
+Find documents where sub-document field `subDoc.field` equals `value`:
+```
+collection.find({ 'subDoc.field': value })
+```
+
+### Equality Matches on Arrays
+
+Find documents where array field matches entire array (item order is important):
+```
+collection.find({ arrField: [value1, value2, ...] })
+```
+
+Find documents where any item in array field matches a value:
+```
+collection.find({ arrField: value })
+```
+
+Find documents where the first item in array field matches a value:
+```
+collection.find({ 'arrField.0': value })
+```
+
 
 ## Running MongoDB
 
