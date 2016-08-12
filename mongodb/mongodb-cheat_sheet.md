@@ -41,6 +41,8 @@ _ _ _ _ | _ _ _ |  _ _  | _ _ _
 
 ## Query Syntax and Semantics
 
+See https://docs.mongodb.com/manual/reference/operator/query/ for details.
+
 ### Equality Matches
 
 Find documents where `field` equals `value`:
@@ -132,6 +134,33 @@ collection.find({ field: { $exists: false } })
 Find documents where a particular field is of type string:
 ```
 collection.find({ field: { $type: 'string' } })
+```
+
+### Logical Matches
+
+Find documents where some criteria (field1 equals value1) matches OR some other criteria (field2 > value2) matches:
+```
+collection.find({ $or: [{ field1: value1 }, { field2: { $gt: value2 } }] })
+```
+
+Find documents where field exists and is not equal to some value (using standard syntax would not be valid):
+```
+collection.find({ $and: [{ field: { $ne: value } }, { field: { $exists: true } }] })
+```
+
+Find documents where field is not greater than some value:
+```
+collection.find({ field: { $not: { $gt: value } } })
+```
+
+Find documents where field does not start with the letter 'p':
+```
+collection.find({ field: { $not: /^p.*/ } })
+```
+
+Find documents where field1 is not equal to value1 and field2 is not equal to value2:
+```
+collection.find({ $nor: [{ field1: value1}, { field2: value2}] })
 ```
 
 
