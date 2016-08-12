@@ -75,6 +75,48 @@ Find documents where the first item in array field matches a value:
 collection.find({ 'arrField.0': value })
 ```
 
+### Comparison Matches
+
+Find documents where field has a value greater than or equal to a value:
+```
+collection.find({ field: { $gte: value } })
+```
+
+Find documents where field has a value greater than a value:
+```
+collection.find({ field: { $gt: value } })
+```
+
+Find documents where field has a value less than a value:
+```
+collection.find({ field: { $lt: value } })
+```
+
+Find documents where field has a value less than or equal to a value:
+```
+collection.find({ field: { $lte: value } })
+```
+
+Find documents where field has a value greater than one value but less than another value:
+```
+collection.find({ field: { $gt: value1, $lt: value2 } })
+```
+
+Find documents where field does not have a specific value or documents that don't have the specified field:
+```
+collection.find({ field: { $ne: value } })
+```
+
+Find documents where field has a value equal to one of several specified values:
+```
+collection.find({ field: { $in: [value1, value2, ...] } })
+```
+
+Find documents where field does not have a value equal to one of several specified values:
+```
+collection.find({ field: { $nin: [value1, value2, ...] } })
+```
+
 
 ## Running MongoDB
 
