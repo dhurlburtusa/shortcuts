@@ -117,6 +117,23 @@ Find documents where field does not have a value equal to one of several specifi
 collection.find({ field: { $nin: [value1, value2, ...] } })
 ```
 
+### Element Matches
+
+Find documents where a particular field exists:
+```
+collection.find({ field: { $exists: true } })
+```
+
+Find documents where a particular field does NOT exist:
+```
+collection.find({ field: { $exists: false } })
+```
+
+Find documents where a particular field is of type string:
+```
+collection.find({ field: { $type: 'string' } })
+```
+
 
 ## Running MongoDB
 
