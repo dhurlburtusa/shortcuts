@@ -618,3 +618,20 @@ db = connection.<database-name>
 collection = db.<collection-name>
 ```
 
+### Inserting (Python)
+
+See https://api.mongodb.com/python/3.3.0/api/pymongo/collection.html#pymongo.collection.Collection.insert_one for details.
+
+Syntax:
+```js
+result = collection.insert_one(<doc>, bypass_document_validation=False);
+```
+
+#### Inserting Multiple Documents
+
+Syntax:
+```js
+results = collection.insert_many(<docs>, ordered=True, bypass_document_validation=False);
+```
+
+where `<docs>` is an iterable such as a list of dictionaries.
