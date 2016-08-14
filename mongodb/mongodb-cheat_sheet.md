@@ -635,3 +635,19 @@ results = collection.insert_many(<docs>, ordered=True, bypass_document_validatio
 ```
 
 where `<docs>` is an iterable such as a list of dictionaries.
+
+### Updating (Python)
+
+```js
+collection.update_one(<conditions>, <operators>, upsert=False, bypass_document_validation=False);
+
+// where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
+```
+
+#### Update Multiple Documents
+
+```js
+collection.update_many(<conditions>, <operators>, upsert=False, bypass_document_validation=False);
+
+// where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
+```
