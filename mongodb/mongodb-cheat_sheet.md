@@ -657,3 +657,10 @@ collection.update_many(<conditions>, <operators>, upsert=False, bypass_document_
 ```js
 collection.replace_one(<conditions>, <document>, upsert=False, bypass_document_validation=False);
 ```
+
+Deleting (Python)
+
+```python
+collection.delete_one(<conditions>)
+collection.delete_many(<conditions>)
+```
