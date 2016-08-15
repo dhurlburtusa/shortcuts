@@ -651,3 +651,9 @@ collection.update_many(<conditions>, <operators>, upsert=False, bypass_document_
 
 // where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
 ```
+
+#### Replace a Document
+
+```js
+collection.replace_one(<conditions>, <document>, upsert=False, bypass_document_validation=False);
+```
