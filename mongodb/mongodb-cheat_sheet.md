@@ -623,39 +623,39 @@ collection = db.<collection-name>
 See https://api.mongodb.com/python/3.3.0/api/pymongo/collection.html#pymongo.collection.Collection.insert_one for details.
 
 Syntax:
-```js
-result = collection.insert_one(<doc>, bypass_document_validation=False);
+```python
+result = collection.insert_one(<doc>, bypass_document_validation=False)
 ```
 
 #### Inserting Multiple Documents
 
 Syntax:
-```js
-results = collection.insert_many(<docs>, ordered=True, bypass_document_validation=False);
+```python
+results = collection.insert_many(<docs>, ordered=True, bypass_document_validation=False)
 ```
 
 where `<docs>` is an iterable such as a list of dictionaries.
 
 ### Updating (Python)
 
-```js
-collection.update_one(<conditions>, <operators>, upsert=False, bypass_document_validation=False);
+```python
+collection.update_one(<conditions>, <operators>, upsert=False, bypass_document_validation=False)
 
 // where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
 ```
 
 #### Update Multiple Documents
 
-```js
-collection.update_many(<conditions>, <operators>, upsert=False, bypass_document_validation=False);
+```python
+collection.update_many(<conditions>, <operators>, upsert=False, bypass_document_validation=False)
 
 // where <operators> is like { <oper1>: { <field1>: <value1>, ... }, <oper2>: { <field1>: <value1>, ... } }
 ```
 
 #### Replace a Document
 
-```js
-collection.replace_one(<conditions>, <document>, upsert=False, bypass_document_validation=False);
+```python
+collection.replace_one(<conditions>, <document>, upsert=False, bypass_document_validation=False)
 ```
 
 Deleting (Python)
