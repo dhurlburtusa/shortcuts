@@ -522,7 +522,8 @@ let cursor = collection.find({ $or: [ { <field1>: <value1> }, { <field2>: <value
 ### Sorting (Node.js)
 
 ```js
-let cursor = collection.find(...).sort({ <field1>: 1, <field2>: -1, ... });
+let cursor = collection.find(...).sort({ <field1>: 1|-1 });
+let cursor = collection.find(...).sort([ [<field1>, 1|-1], [<field2>, 1|-1], ... ]);
 ```
 
 
