@@ -425,6 +425,9 @@ db.<collection-name>.createIndex(<index-spec>)
 
 Once, the driver is installed, then you can connect to a MongoDB instance using a script similar to the following.
 
+NOTE: The Node.js driver is designed to be asynchronous.  Callbacks are called when the asynchronous command is
+complete.
+
 ### API Docs
 
 See http://mongodb.github.io/node-mongodb-native/2.2/api/.
