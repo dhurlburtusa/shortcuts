@@ -214,6 +214,10 @@ The following assumes MongoDB was installed in the `C:\Program Files\MongoDB\Ser
 
 NOTE: The following commands should all be run under administrator priveleges.
 
+#### Changing the Default Directories
+
+NOTE: The default data directory for MongoDB is `\data\db`.
+
 ```sh
 mkdir \home\databases\mongodb\db
 mkdir \home\databases\mongodb\log
