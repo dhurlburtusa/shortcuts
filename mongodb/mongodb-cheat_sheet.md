@@ -291,6 +291,11 @@ See https://docs.mongodb.com/ecosystem/drivers/ for other drivers.
 
 Use the `mongo` executable (included with installation) to start the interactive MongoDB shell program.
 
+NOTE: The shell is a fully functional JavaScript interpreter.  So, you can do JavaScripty things at the prompt like
+assign output of commands to variables.
+
+NOTE: The shell behaves synchronously.  That is, it blocks until the command completes.
+
 ### Inserting (MongoDB Shell)
 
 See https://docs.mongodb.com/manual/reference/method/db.collection.insert/ for details.
