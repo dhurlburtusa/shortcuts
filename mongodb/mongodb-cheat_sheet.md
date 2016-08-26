@@ -418,7 +418,7 @@ db.<collection-name>.createIndex(<index-spec>)
 # where <order> is 1 or -1.
 ```
 
-`createIndex()` will only creates an index if the index does not exist.
+`createIndex()` will only create an index if the index does not exist.
 
 
 ## Node.js
@@ -605,7 +605,7 @@ let promise = collection.createIndex(<index-spec>, <options>);
 // where <order> is 1 or -1.
 ```
 
-`createIndex()` will only creates an index if the index does not exist.
+`createIndex()` will only create an index if the index does not exist.
 
 
 ## Python
