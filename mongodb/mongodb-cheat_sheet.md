@@ -412,6 +412,8 @@ db.<collection-name>.aggregate( [ <stage1>, <stage2>, ... ] )
 
 See https://docs.mongodb.com/manual/indexes/ for details.
 
+#### Creating an Index
+
 ```sh
 db.<collection-name>.createIndex(<index-spec>)
 # where <index-spec> is like { <field1>: <order>, ... }
@@ -419,6 +421,20 @@ db.<collection-name>.createIndex(<index-spec>)
 ```
 
 `createIndex()` will only create an index if the index does not exist.
+
+#### Discovering Indexes
+
+```sh
+db.<collection-name>.getIndexes()
+```
+
+#### Dropping an Index
+
+```sh
+db.<collection-name>.dropIndex(<index-spec>)
+# where <index-spec> is like { <field1>: <order>, ... }
+# where <order> is 1 or -1.
+```
 
 
 ## Node.js
@@ -598,6 +614,8 @@ collection.aggregate([ <stage1>, <stage2>, ... ]);
 
 See https://docs.mongodb.com/manual/indexes/ for details.
 
+#### Creating an Index
+
 ```js
 collection.createIndex(<index-spec>, <options>, <callback>);
 let promise = collection.createIndex(<index-spec>, <options>);
@@ -606,6 +624,20 @@ let promise = collection.createIndex(<index-spec>, <options>);
 ```
 
 `createIndex()` will only create an index if the index does not exist.
+
+#### Discovering Indexes
+
+```js
+collection.getIndexes()
+```
+
+#### Dropping an Index
+
+```js
+collection.dropIndex(<index-spec>)
+// where <index-spec> is like { <field1>: <order>, ... }
+// where <order> is 1 or -1.
+```
 
 
 ## Python
