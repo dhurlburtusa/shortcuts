@@ -415,12 +415,40 @@ See https://docs.mongodb.com/manual/indexes/ for details.
 #### Creating an Index
 
 ```sh
-db.<collection-name>.createIndex(<index-spec>)
-# where <index-spec> is like { <field1>: <order>, ... }
-# where <order> is 1 or -1.
+db.<collection-name>.createIndex(<index-spec>, <options>)
+# where <index-spec> is like { <field1>: <type>, ... }
+# where <type> is 1 (ascending), -1 (descending), '2d', '2dsphere', 'hashed', or 'text'.
 ```
 
 `createIndex()` will only create an index if the index does not exist.
+
+##### Create a Single-Key Index Examples
+
+```sh
+db.collection.createIndex({ field: 1 })
+db.collection.createIndex({ field: -1 })
+db.collection.createIndex({ field: 1 }, { name: 'field_asc' })  # With a name
+```
+
+##### Create a Unique Index Example
+
+```sh
+db.collection.createIndex(<index-spec>, { unique: true })
+```
+
+##### Create a Partial Index Example
+
+See https://docs.mongodb.com/manual/core/index-partial/ for details.
+
+```sh
+db.collection.createIndex(<index-spec>, { partialFilterExpression: <filter-expr> })
+```
+
+##### Create a Sparse Index Example
+
+```sh
+db.collection.createIndex(<index-spec>, { sparse: true })
+```
 
 #### Discovering Indexes
 
@@ -432,8 +460,8 @@ db.<collection-name>.getIndexes()
 
 ```sh
 db.<collection-name>.dropIndex(<index-spec>)
-# where <index-spec> is like { <field1>: <order>, ... }
-# where <order> is 1 or -1.
+# where <index-spec> is like { <field1>: <type>, ... }
+# where <type> is 1 (ascending), -1 (descending), '2d', '2dsphere', 'hashed', or 'text'.
 ```
 
 
@@ -619,11 +647,40 @@ See https://docs.mongodb.com/manual/indexes/ for details.
 ```js
 collection.createIndex(<index-spec>, <options>, <callback>);
 let promise = collection.createIndex(<index-spec>, <options>);
-// where <index-spec> is like { <field1>: <order>, ... }
-// where <order> is 1 or -1.
+// where <index-spec> is like { <field1>: <type>, ... }
+// where <type> is 1 (ascending), -1 (descending), '2d', '2dsphere', 'hashed', or 'text'.
 ```
 
 `createIndex()` will only create an index if the index does not exist.
+
+##### Create a Single-Key Index Examples
+
+```js
+collection.createIndex({ field: 1 });
+collection.createIndex({ field: -1 });
+collection.createIndex({ field: 1 }, { name: 'field_asc' })  // With a name
+```
+
+##### Create a Unique Index Example
+
+```js
+collection.createIndex(<index-spec>, { unique: true });
+```
+
+##### Create a Partial Index Example
+
+See https://docs.mongodb.com/manual/core/index-partial/ for details.
+
+```js
+collection.createIndex(<index-spec>, { partialFilterExpression: <filter-expr> });
+```
+
+##### Create a Sparse Index Example
+
+```js
+collection.createIndex(<index-spec>, { sparse: true });
+```
+
 
 #### Discovering Indexes
 
@@ -635,8 +692,8 @@ collection.getIndexes()
 
 ```js
 collection.dropIndex(<index-spec>)
-// where <index-spec> is like { <field1>: <order>, ... }
-// where <order> is 1 or -1.
+// where <index-spec> is like { <field1>: <type>, ... }
+// where <type> is 1 (ascending), -1 (descending), '2d', '2dsphere', 'hashed', or 'text'.
 ```
 
 
