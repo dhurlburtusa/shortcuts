@@ -450,6 +450,12 @@ db.collection.createIndex(<index-spec>, { partialFilterExpression: <filter-expr>
 db.collection.createIndex(<index-spec>, { sparse: true })
 ```
 
+##### Create a Text Index Example
+
+```sh
+db.collection.createIndex({ field: 'text', ... }, { ... })
+```
+
 #### Discovering Indexes
 
 ```sh
@@ -681,6 +687,11 @@ collection.createIndex(<index-spec>, { partialFilterExpression: <filter-expr> })
 collection.createIndex(<index-spec>, { sparse: true });
 ```
 
+##### Create a Text Index Example
+
+```js
+collection.createIndex({ field: 'text', ... }, { ... });
+```
 
 #### Discovering Indexes
 
