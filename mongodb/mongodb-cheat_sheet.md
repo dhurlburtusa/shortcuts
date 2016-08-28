@@ -495,6 +495,17 @@ db.<collection-name>.dropIndex(<index-spec>)
 ```
 
 
+## Explain (MongoDB Shell)
+
+See https://docs.mongodb.com/manual/reference/method/db.collection.explain/ for details.
+
+```sh
+db.<collection-name>.explain(<verbosity>)
+# where <verbosity> is 'queryPlanner' (default), 'executionStats', or 'allPlansExecution',
+# returns an Explainable object.
+```
+
+
 ## Node.js
 
 Once, the driver is installed, then you can connect to a MongoDB instance using a script similar to the following.
