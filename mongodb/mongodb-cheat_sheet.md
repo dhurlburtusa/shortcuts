@@ -165,7 +165,7 @@ collection.find({ $nor: [{ field1: value1}, { field2: value2}] })
 
 ### Evaluation Matches
 
-Find documents where some criteria (field1 equals value1) matches OR some other criteria (field2 > value2) matches:
+Find documents where value of a field matches a regular expression:
 ```
 collection.find({ field: { $regex: /.../ } })
 ```
