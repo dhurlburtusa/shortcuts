@@ -182,6 +182,30 @@ Find documents where value of a field is even:
 collection.find({ field: { $mod: [2, 1] } })
 ```
 
+Find documents where fields in a text index matches:
+```
+collection.find({
+  $text: {
+      $search: <string>,
+      $language: <string>,
+      $caseSensitive: <boolean>,
+      $diacriticSensitive: <boolean>
+    }
+})
+```
+
+See https://docs.mongodb.com/manual/reference/operator/query/text/ for more details on performing text searches.
+
+Find documents with a text search, returning the text score, and sorted by text score:
+```
+collection.find(
+  { $text: { $search: '...' } },
+  { score: { $meta: 'textScore' } }
+).sort({ score: { $meta: "textScore" } })
+```
+
+The field in the projection called `score` is arbitrary.  It could have been named differently.  The key is that name chosen matches in both the projection and the sort.
+
 Find documents where field1 equals field2:
 ```
 collection.find({ $where: "this.field1 == this.field2" })
