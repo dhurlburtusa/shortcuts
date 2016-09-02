@@ -230,6 +230,19 @@ collection.find({ arrField: { $elemMatch: { field: value } } })
 ```
 
 
+## Aggregation
+
+See https://docs.mongodb.com/manual/aggregation/ for details.
+
+MongoDB provides three ways to perform aggregation:
+* [the aggregation pipeline](https://docs.mongodb.com/manual/core/aggregation-pipeline/)
+* [the map-reduce function](https://docs.mongodb.com/manual/core/map-reduce/)
+* single purpose aggregation methods
+  -  [db.collection.count()](https://docs.mongodb.com/manual/reference/method/db.collection.count/)
+  -  [db.collection.group()](https://docs.mongodb.com/manual/reference/method/db.collection.group/)
+  -  [db.collection.distinct()](https://docs.mongodb.com/manual/reference/method/db.collection.distinct/)
+
+
 ## Running MongoDB
 
 ### Setup on Windows 10 Pro
