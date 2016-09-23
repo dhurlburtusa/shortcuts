@@ -10,7 +10,6 @@ the outlines of their ancestors.
 * `blockquote`
 * `body`
 * `details`
-* `dialog`
 * `fieldset`
 * `figure`
 * `td`
