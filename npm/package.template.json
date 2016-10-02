@@ -156,6 +156,13 @@
   "files": [
     ""
   ],
+  /**
+   * The `main` field is a module ID that is the primary entry point to your program.  That is, if your package is named
+   * `foo`, and a user installs it, and then does `require("foo")`, then your main module's exports object will be
+   * returned.
+   *
+   * This should be a module ID relative to the root of your package folder.
+   */
   "main": "",
   /**
    * A lot of packages have one or more executable files that they'd like to install into the PATH.  npm makes this
