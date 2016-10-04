@@ -1,4 +1,4 @@
-# npm Cheatsheet
+# npm Cheat Sheet
 
 See http://browsenpm.org/help for another npm cheat sheet.
 
