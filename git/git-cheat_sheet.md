@@ -1,4 +1,4 @@
-# Git Cheatsheet
+# Git Cheat Sheet
 
 See [git documenation](https://git-scm.com/docs/git).
 
