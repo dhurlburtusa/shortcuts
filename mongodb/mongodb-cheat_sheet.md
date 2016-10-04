@@ -1,4 +1,4 @@
-# MongoDB Cheatsheet
+# MongoDB Cheat Sheet
 
 See https://www.mongodb.com/.
 
