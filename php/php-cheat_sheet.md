@@ -285,3 +285,28 @@ In the following example `$cars` is an array.
 $cars = array("Chevy", "Dodge", "Ford");
 ?>
 ```
+
+
+## PHP Object
+
+An object is a data type which stores data and information on how to process that data.
+
+In PHP, an object must be explicitly declared.
+
+First we must declare a class of object.  For this, we use the `class` keyword.  A class is a structure that can contain properties and methods:
+
+```php
+<?php
+class Car {
+  function Car() {
+    $this->model = "Mustang";
+  }
+}
+
+// Create an object
+$car = new Car();
+
+// Show object properties
+echo $car->model;
+?>
+```
