@@ -235,3 +235,16 @@ PHP supports the following data types:
 * Object
 * NULL
 * Resource
+
+
+## PHP String
+
+A string is a sequence of characters, like "Hello world!".  You can use single or double quotes:
+
+```php
+<?php 
+$x = "Hello";
+$y = ' world!';
+echo $x . $y; // Can be concatenated
+?>
+```
