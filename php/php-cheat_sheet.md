@@ -260,3 +260,15 @@ Rules for integers:
 * An integer must not have a decimal point.
 * An integer can be either positive or negative.
 * Integers can be specified in three formats: decimal (10-based), hexadecimal (16-based - prefixed with 0x) or octal (8-based - prefixed with 0)
+
+
+## PHP Boolean
+
+A Boolean represents two possible states: TRUE or FALSE.
+
+```php
+<?php
+$x = true;
+$y = false;
+?>
+```
