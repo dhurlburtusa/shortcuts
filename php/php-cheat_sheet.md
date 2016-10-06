@@ -56,3 +56,8 @@ $x = 5 /* + 15 */ + 5;
 echo $x;
 ?>
 ```
+
+
+## Case Sensitivity
+
+ All keywords (e.g. `if`, `else`, `while`, `echo`, etc.), classes, functions, and user-defined functions are NOT case-sensitive.  However, all variable names __are__ case-sensitive.
