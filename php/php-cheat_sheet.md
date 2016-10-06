@@ -106,3 +106,48 @@ echo "I love " . $txt . "!";
 ?>
 ```
 
+
+## Variables Scope
+
+In PHP, variables can be declared anywhere in the script.
+
+The scope of a variable is the part of the script where the variable can be referenced/used.
+
+PHP has three different variable scopes:
+
+* local
+* global
+* static
+
+### Global and Local Scope
+
+A variable declared __outside__ a function has a global scope and can only be accessed outside a function:
+
+```php
+<?php
+$x = 5; // global scope
+
+function myTest() {
+  // using x inside this function will generate an error
+  echo "<p>Variable x inside function is: $x</p>";
+} 
+myTest();
+
+echo "<p>Variable x outside function is: $x</p>";
+?>
+```
+
+A variable declared __within__ a function has a local scope and can only be accessed within that function:
+
+```php
+<?php
+function myTest() {
+  $x = 5; // local scope
+  echo "<p>Variable x inside function is: $x</p>";
+} 
+myTest();
+
+// using x outside the function will generate an error
+echo "<p>Variable x outside function is: $x</p>";
+?>
+```
