@@ -272,3 +272,16 @@ $x = true;
 $y = false;
 ?>
 ```
+
+
+## PHP Array
+
+An array stores multiple values in one single variable.
+
+In the following example `$cars` is an array.
+
+```php
+<?php 
+$cars = array("Chevy", "Dodge", "Ford");
+?>
+```
