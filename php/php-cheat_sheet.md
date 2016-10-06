@@ -221,3 +221,17 @@ myTest();
 In PHP there are two basic ways to get output: `echo` and `print`.  They are more or less the same.  They are both used to output data to the screen.
 
 The differences are small: `echo` has no return value while `print` has a return value of 1 so it can be used in expressions.  `echo` can take multiple parameters while `print` can take one argument.  `echo` is marginally faster than `print`.
+
+
+## PHP Data Types
+
+PHP supports the following data types:
+
+* Boolean
+* Float (floating point numbers - also called double)
+* Integer
+* String
+* Array
+* Object
+* NULL
+* Resource
