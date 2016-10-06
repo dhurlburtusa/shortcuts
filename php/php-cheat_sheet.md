@@ -310,3 +310,12 @@ $car = new Car();
 echo $car->model;
 ?>
 ```
+
+
+## PHP NULL Value
+
+Null is a special data type which can have only one value: `null`.
+
+A variable of data type NULL is a variable that has no value assigned to it.
+
+**Note**: If a variable is created without a value, it is automatically assigned a value of `null`.
