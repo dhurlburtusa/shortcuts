@@ -33,3 +33,5 @@ A PHP script starts with `<?php` and ends with `?>`:
 // PHP code goes here
 ?>
 ```
+
+**Note**: PHP statements end with a semicolon (;).
