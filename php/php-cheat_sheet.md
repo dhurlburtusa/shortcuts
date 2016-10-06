@@ -2,6 +2,7 @@
 
 PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor.
 
+
 ## Brief History
 
 See https://en.wikipedia.org/wiki/PHP#History for details.
@@ -19,3 +20,16 @@ See https://en.wikipedia.org/wiki/PHP#History for details.
 **PHP 6**: In March 2010, the project in its current form was officially abandoned.
 
 **PHP 7**: Started in 2015.
+
+
+## Basic PHP Syntax
+
+A PHP script can be placed anywhere in the document.
+
+A PHP script starts with `<?php` and ends with `?>`:
+
+```php
+<?php
+// PHP code goes here
+?>
+```
