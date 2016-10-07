@@ -249,6 +249,26 @@ echo $x . $y; // Can be concatenated
 ?>
 ```
 
+**Common String Functions**
+
+```php
+<?php 
+$str = 'Hello world!';
+strlen($str); // Total number of characters.  Returns 12.
+str_word_count($str); // Count of words.  Returns 2.
+strrev($str); // Reverses characters.  Returns '!dlrow olleH'.
+strpos($str, 'world'); // Finds position of a string.  Returns 6.
+str_replace('world', 'Dolly', $str); // Returns 'Hello Dolly!'.
+addslashes('Special "chars"');  // Returns 'Special \"chars\"'.
+chop('foo bar\t\n  '); // Returns 'foo bar'.
+explode(',', 'foo,bar,baz,quux');  // Returns array of 'foo', 'bar', 'baz', and 'quux'.
+implode(',', array('foo', 'bar', 'baz', 'quux')); // Returns 'foo,bar,baz,quux'. Alias of `join`.
+htmlspecialchars('This is some <b>bold</b> text.'); // Returns 'This is some &lt;b&gt;bold&lt;/b&gt; text.'.
+strtolower('FooBar'); // Returns 'foobar'.
+trim('\tFoo Bar\r\n'); // Returns 'Foo Bar'.
+?>
+```
+
 
 ## PHP Integer
 
