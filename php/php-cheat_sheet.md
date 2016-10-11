@@ -379,3 +379,24 @@ Null is a special data type which can have only one value: `null`.
 A variable of data type NULL is a variable that has no value assigned to it.
 
 **Note**: If a variable is created without a value, it is automatically assigned a value of `null`.
+
+
+## PHP 5 Constants
+
+A valid constant name starts with a letter or underscore (no $ sign before the constant name).
+
+**Note**: Unlike variables, constants are automatically global across the entire script.
+
+### Create a PHP Constant
+
+To create a constant, use the `define()` function.
+
+```php
+define(name, value, case-insensitive)
+```
+
+**Parameters**:
+
+* name: Specifies the name of the constant.
+* value: Specifies the value of the constant.
+* case-insensitive: Specifies whether the constant name should be case-insensitive. Default is `false`.
