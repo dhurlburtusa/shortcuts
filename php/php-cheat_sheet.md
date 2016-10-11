@@ -406,6 +406,19 @@ A variable of data type NULL is a variable that has no value assigned to it.
 | %=       | $x %= 10 |
 
 
+### Comparison Operators
+
+| Operator | Function                 | Example   |
+| -------- | ------------------------ | --------- |
+| ==       | Equal                    | $x == $y  |
+| ===      | Identical                | $x === $y |
+| !=       | Not Equal                | $x != $y  |
+| !==      | Not identical            | $x !== $y |
+| >        | Greater than             | $x > $y   |
+| <        | Less than                | $x < $y   |
+| >=       | Greater than or equal to | $x >= $y  |
+| <=       | Less than or equal to    | $x <= $y  |
+
 
 ## PHP 5 Constants
 
