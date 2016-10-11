@@ -394,6 +394,18 @@ A variable of data type NULL is a variable that has no value assigned to it.
 | %        | Modulus        | $x % $y  |
 | **       | Exponentiation | $x ** $y |
 
+### Assignment Operators
+
+| Operator | Example  |
+| -------- | -------- |
+| =        | $x = 10  |
+| +=       | $x += 10 |
+| -=       | $x -= 10 |
+| *=       | $x *= 10 |
+| /=       | $x /= 10 |
+| %=       | $x %= 10 |
+
+
 
 ## PHP 5 Constants
 
