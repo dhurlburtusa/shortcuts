@@ -381,6 +381,20 @@ A variable of data type NULL is a variable that has no value assigned to it.
 **Note**: If a variable is created without a value, it is automatically assigned a value of `null`.
 
 
+## PHP 5 Operators
+
+### Arithmetic Operators
+
+| Operator | Function       | Example  |
+| ---------| -------------- | -------- |
+| +        | Addition       | $x + $y  |
+| -        | Subtraction    | $x - $y  |
+| *        | Multiplication | $x * $y  |
+| /        | Division       | $x / $y  |
+| %        | Modulus        | $x % $y  |
+| **       | Exponentiation | $x ** $y |
+
+
 ## PHP 5 Constants
 
 A valid constant name starts with a letter or underscore (no $ sign before the constant name).
