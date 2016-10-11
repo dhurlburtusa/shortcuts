@@ -428,6 +428,19 @@ A variable of data type NULL is a variable that has no value assigned to it.
 | --       | Pre-decrement  | --$x    |
 | --       | Post-decrement | $x--    |
 
+### Logical Operators
+
+The following is in order of precedence from higher to lower.
+
+| Operator | Function | Example    | Result                                         |
+| -------- | -------- | ---------- | ---------------------------------------------- |
+| !        | Not      | !$x        | True if $x is not true.                        |
+| &&       | And      | $x && $y   | True if both $x and $y are true.               |
+| \|\|     | Or       | $x \|\| $y | True if either $x or $y is true.               |
+| and      | And      | $x and $y  | True if both $x and $y are true.               |
+| xor      | Xor      | $x xor $y  | True if either $x or $y is true, but not both. |
+| or       | Or       | $x or $y   | True if either $x or $y is true.               |
+
 
 ## PHP 5 Constants
 
