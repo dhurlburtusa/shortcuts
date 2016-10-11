@@ -419,6 +419,15 @@ A variable of data type NULL is a variable that has no value assigned to it.
 | >=       | Greater than or equal to | $x >= $y  |
 | <=       | Less than or equal to    | $x <= $y  |
 
+### Increment / Decrement Operators
+
+| Operator | Function       | Example |
+| -------- | -------------- | ------- |
+| ++       | Pre-increment  | ++$x    |
+| ++       | Post-increment | $x++    |
+| --       | Pre-decrement  | --$x    |
+| --       | Post-decrement | $x--    |
+
 
 ## PHP 5 Constants
 
