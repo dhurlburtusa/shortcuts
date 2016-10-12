@@ -586,7 +586,13 @@ for ($x = 0; $x <= 10; $x++) {
 **foreach Loop**
 
 ```php
+// Indexed Arrays:
 foreach ($array as $value) {
+  // code to be executed;
+}
+
+// Associative Arrays:
+foreach ($array as $key => $value) {
   // code to be executed;
 }
 ```
