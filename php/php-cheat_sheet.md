@@ -334,15 +334,28 @@ $y = false;
 ```
 
 
-## PHP Array
+## PHP Arrays
 
 An array stores multiple values in one single variable.
 
-In the following example `$cars` is an array.
+**Indexed Arrays**
 
 ```php
-<?php 
-$cars = array("Chevy", "Dodge", "Ford");
+<?php
+$cars = array('Chevy', 'dodge', 'Ford');
+$cars[1] = 'Dodge';
+echo $cars[2];  // outputs Ford
+echo count($cars);  // outputs 3
+?>
+```
+
+**Associative Arrays**
+
+```php
+<?php
+$car = array('make' => 'Ford', 'model' => 'Mustang', 'year' => 1967);
+$car['year'] = 1968;
+echo $car['model'];  // outputs Mustang
 ?>
 ```
 
