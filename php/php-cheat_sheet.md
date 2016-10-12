@@ -441,6 +441,13 @@ The following is in order of precedence from higher to lower.
 | xor      | Xor      | $x xor $y  | True if either $x or $y is true, but not both. |
 | or       | Or       | $x or $y   | True if either $x or $y is true.               |
 
+### String Operators
+
+| Operator | Function                 | Example  |
+| -------- | ------------------------ | -------- |
+| .        | Concatenation            | $x . $y  |
+| .=       | Concatenation assignment | $x .= $y |
+
 
 ## PHP 5 Constants
 
