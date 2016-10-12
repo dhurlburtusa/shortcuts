@@ -481,3 +481,57 @@ define(name, value, case-insensitive)
 
 ## Control Flow Statements
 
+### Conditional Statements
+
+**if Statement**
+
+```php
+if (condition) {
+  // code to be executed if condition is true;
+}
+```
+
+**if...else Statement**
+
+```php
+if (condition) {
+  // code to be executed if condition is true;
+}
+else {
+  // code to be executed if condition is false;
+}
+```
+
+**if...elseif...else Statement**
+
+```php
+if (condition) {
+  // code to be executed if this condition is true;
+}
+elseif (condition) {
+  // code to be executed if this condition is true;
+}
+// other elseif clauses may be added here;
+else {
+  // code to be executed if all conditions are false;
+}
+```
+
+**switch Statement**
+
+```php
+switch (n) {
+  case value1:
+    // code to be executed if n == value1;
+    break;
+  case value2:
+    // code to be executed if n == value2;
+    break;
+  case value3:
+    // code to be executed if n == value3;
+    break;
+  ...
+  default:
+    // code to be executed if n is different from all values;
+}
+```
