@@ -448,6 +448,16 @@ The following is in order of precedence from higher to lower.
 | .        | Concatenation            | $x . $y  |
 | .=       | Concatenation assignment | $x .= $y |
 
+### Array Operators
+
+| Operator |	Function     |	Example    |	Result                                                                                           |
+| -------- | ------------ | ---------- | ------------------------------------------------------------------------------------------------ |
+| +        | Union        |	$x + $y	   | Union of $x and $y.                                                                              |
+| ==	      | Equality	    | $x == $y	  | Returns true if $x and $y have the same key/value pairs.                                         |
+| ===	     | Identity	    | $x === $y	 | Returns true if $x and $y have the same key/value pairs in the same order and of the same types. |
+| !=	      | Inequality	  | $x != $y	  | Returns true if $x is not equal to $y.                                                           |
+| !==	     | Non-identity	| $x !== $y	 | Returns true if $x is not identical to $y.                                                       |
+
 
 ## PHP 5 Constants
 
