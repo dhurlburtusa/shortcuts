@@ -577,3 +577,13 @@ foreach ($array as $value) {
   // code to be executed;
 }
 ```
+
+
+## Functions
+
+```php
+function functionName($arg1, $arg2, ..., $argN = defaultValue, ...) {
+  // code to be executed;
+  return someValue; // optional
+}
+```
