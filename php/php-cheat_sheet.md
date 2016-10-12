@@ -535,3 +535,45 @@ switch (n) {
     // code to be executed if n is different from all values;
 }
 ```
+
+### Loop Statements
+
+**while Loop**
+
+```php
+while (condition) {
+  // code to be executed while condition is true;
+}
+```
+
+**do...while Loop**
+
+```php
+do {
+  // code to be executed while condition is true;
+} while (condition);
+```
+
+**for Loop**
+
+```php
+for (init counter; test counter; increment counter) {
+  // code to be executed;
+}
+```
+
+```php
+<?php 
+for ($x = 0; $x <= 10; $x++) {
+  echo "The number is: $x <br>";
+} 
+?>
+```
+
+**foreach Loop**
+
+```php
+foreach ($array as $value) {
+  // code to be executed;
+}
+```
