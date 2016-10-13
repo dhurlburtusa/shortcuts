@@ -523,6 +523,12 @@ if (condition) {
 }
 ```
 
+```php
+<?php if (condition): ?>
+  Some text to output if condition is true.
+<?php endif ?>
+```
+
 **if...else Statement**
 
 ```php
@@ -532,6 +538,14 @@ if (condition) {
 else {
   // code to be executed if condition is false;
 }
+```
+
+```php
+<?php if (condition): ?>
+  Some text to output if condition is true.
+<?php else: ?>
+  Some text to output if condition is false.
+<?php endif ?>
 ```
 
 **if...elseif...else Statement**
@@ -547,6 +561,16 @@ elseif (condition) {
 else {
   // code to be executed if all conditions are false;
 }
+```
+
+```php
+<?php if (condition): ?>
+  Some text to output if this condition is true.
+<?php elseif (condition): ?>
+  Some text to output if this condition is true.
+<?php else: ?>
+  Some text to output if all conditions are false.
+<?php endif ?>
 ```
 
 **switch Statement**
@@ -566,6 +590,20 @@ switch (n) {
   default:
     // code to be executed if n is different from all values;
 }
+```
+
+```php
+<?php switch (n): ?>
+<?php case value1: ?>
+  Some text to output if n == value1.
+<?php break; case value2: ?>
+  Some text to output if n == value1.
+<?php break; case value3: ?>
+  Some text to output if n == value3.
+<?php ... ?>
+<?php break; default: ?>
+  Some text to output if n is different from all values.
+<?php endswitch ?>
 ```
 
 ### Loop Statements
