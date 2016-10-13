@@ -619,6 +619,9 @@ catch(ErrorException $e) {
 catch(Exception $e) {
   echo 'Message: ' . $e->getMessage();
 }
+finally {
+  // code to always be executed regardless of exceptions;
+}
 ```
 
 ## Functions
