@@ -276,6 +276,25 @@ PHP supports the following data types:
 * NULL
 * Resource
 
+**Determining the Data Type**:
+
+```php
+gettype($var);  // Returns 'array', 'boolean', 'double', 'integer', 'NULL',
+                // 'object', 'resource', 'string', or 'unknown type'.
+get_class($var);
+is_array($var);
+is_bool($var);
+is_callable($var);
+is_float($var);
+is_int($var);
+is_null($var);
+is_numeric($var);
+is_object($var);
+is_resource($var);
+is_scalar($var);
+is_string($var);
+```
+
 
 ## PHP String
 
