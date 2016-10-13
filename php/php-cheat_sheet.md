@@ -597,6 +597,12 @@ foreach ($array as $key => $value) {
 }
 ```
 
+### throw Statement
+
+```php
+throw new Exception('message');
+```
+
 ### try/catch Statements
 
 ```php
