@@ -93,8 +93,8 @@ Several predefined variables in PHP are "superglobals", which means that they ar
 The PHP superglobal variables are:
 
 * $GLOBALS
-* $_SERVER
-* $_REQUEST
+* $_SERVER see https://secure.php.net/manual/en/reserved.variables.server.php for details.
+* $_REQUEST See https://secure.php.net/manual/en/reserved.variables.request.php for details.
 * $_POST
 * $_GET
 * $_FILES
