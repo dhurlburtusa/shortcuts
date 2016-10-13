@@ -5,7 +5,7 @@ PHP originally stood for Personal Home Page, but it now stands for the recursive
 
 ## Brief History
 
-See https://en.wikipedia.org/wiki/PHP#History for details.
+See http://php.net/manual/en/history.php.php and https://en.wikipedia.org/wiki/PHP#History for details.
 
 **PHP 1.0**: Started in 1995.
 
