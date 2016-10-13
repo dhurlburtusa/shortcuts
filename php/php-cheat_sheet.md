@@ -609,6 +609,13 @@ throw new Exception('message');
 try {
   // code to be executed that might throw an exception;
 }
+catch(CustomException $e) {
+  echo 'Message: ' . $e->getMessage();
+}
+...
+catch(ErrorException $e) {
+  echo 'Message: ' . $e->getMessage();
+}
 catch(Exception $e) {
   echo 'Message: ' . $e->getMessage();
 }
