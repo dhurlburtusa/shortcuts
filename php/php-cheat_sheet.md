@@ -681,6 +681,7 @@ finally {
 }
 ```
 
+
 ## Functions
 
 ```php
@@ -688,4 +689,210 @@ function functionName($arg1, $arg2, ..., $argN = defaultValue, ...) {
   // code to be executed;
   return someValue; // optional
 }
+```
+
+
+## PHP 5 Classes
+
+```php
+
+namespace NamespaceName {
+
+  [abstract | final] class ClassName [extends OtherClassName] [implements SomeInterface[, SomeOtherInterface]] {
+
+    const CONSTANT = 'constant value';
+
+    public static $staticVar = ...;
+    private static $staticVar = ...;
+
+    public static function staticMethodName(...) {
+      ...
+      self::$staticVar
+    }
+
+    /**
+     * Triggered when invoking inaccessible methods in a static context.
+     * 
+     * @param {string} $name - The property name.
+     * @param {Array} $arguments - The arguments.
+     */
+    static function __callStatic($name, $arguments) {
+      ...
+      return ...;
+    }
+
+    private static function staticMethodName(...) {
+      ...
+      self::$staticVar
+    }
+
+    // Properties:
+
+    public $pubPropName1;
+    public $pubPropName2 = defaultValue;  // Default value must be able to be evaluated at compile time.
+    ...
+
+    protected $protPropName1;
+    protected $protPropName2 = defaultValue;  // Default value must be able to be evaluated at compile time.
+    ...
+
+    private $privPropName1;
+    private $privPropName2 = defaultValue;  // Default value must be able to be evaluated at compile time.
+    ...
+
+    function __construct(...) {
+      ...
+      parent::__construct(...);
+      ...
+      self::$staticVar
+    }
+
+    function __destruct() {
+      ...
+      parent::__destruct();
+      ...
+    }
+  
+    /**
+     * Run when reading data from inaccessible properties.
+     * 
+     * @param {string} $name - The property name.
+     * @return {mixed}
+     */
+    function __get($name) {
+      ...
+      return ...;
+    }
+
+    /**
+     * Run when writing data to inaccessible properties.
+     * 
+     * @param {string} $name - The property name.
+     * @param {mixed} $value - The property value.
+     */
+    function __set($name, $value) {
+      ...
+    }
+
+    /**
+     * Triggered by calling `isset()` or `empty()` on inaccessible properties.
+     * 
+     * @param {string} $name - The property name.
+     */
+    function __isset($name) {
+      ...
+      return ...;
+    }
+
+    /**
+     * Invoked when `unset()` is used on inaccessible properties.
+     * 
+     * @param {string} $name - The property name.
+     */
+    function __unset($name) {
+      ...
+    }
+
+    /**
+     * Triggered when invoking inaccessible methods in an object context.
+     * 
+     * @param {string} $name - The property name.
+     * @param {Array} $arguments - The arguments.
+     */
+    function __call($name, $arguments) {
+      ...
+      return ...;
+    }
+
+    /**
+     * Invoked when a script tries to call an object as a function.
+     */
+    function __invoke(...) {
+      return ...;
+    }
+
+    /**
+     * @return {string} A string representation of this object.
+     */
+    function __toString() {
+      return ...;
+    }
+
+    /**
+     * Executed prior to any serialization.
+     * 
+     * @return {Array} The names of all variables of that object that should be serialized.
+     */
+    function __sleep() {
+      return ...;
+    }
+
+    function __wakeup() {
+      return ...;
+    }
+
+    abstract [public|protected] function methodName(...);
+    
+    final [public|protected|private] function methodName(...) { ... }
+
+    /**
+     * Method description.
+     *
+     * @param {type} $param1 - Param1 description.
+     * @param {type} [$param2=defaultValue] - Param2 description.
+     *
+     * @return {type} Return description.
+     */
+    public function methodName($param1, $param2 = defaultValue) {
+      self::$staticVar
+      ...
+      $this->propName;
+      return ...;
+    }
+
+    /**
+     * @override
+     */
+    public function overriddenMethod(...) {
+      ...
+      parent::overriddenMethod(...);
+      ...
+    }
+
+    /**
+     *
+     */
+    function methodName(...) {
+      ...
+      return ...;
+    }
+
+    /**
+     *
+     */
+    protected function methodName(...) {
+      ...
+      return ...;
+    }
+
+    /**
+     *
+     */
+    private function methodName(...) {
+      ...
+      return ...;
+    }
+
+  }
+
+}
+
+// Calling a static method:
+ClassName::staticMethodName(...);
+
+// Instantiating an object of a particular class:
+$var = new ClassName;
+$var = new ClassName();
+$className = 'ClassName';
+$var = new $className();
 ```
