@@ -1,1 +1,3 @@
 # JSDoc Cheat Sheet
+
+## Types
