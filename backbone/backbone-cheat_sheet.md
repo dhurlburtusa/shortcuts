@@ -1,5 +1,9 @@
 # Backbone Cheat Sheet
 
+## Dependencies
+
+Backbone has two JavaScript library dependencies: [jQuery](https://jquery.com/) and [UnderscoreJS](http://underscorejs.org/). jQuery is not a hard dependency and [can be replaced](https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery).
+
 ## Models
 
 A Model manages an internal table of data attributes and triggers "change" events when any of its data is modified.
