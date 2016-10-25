@@ -27,17 +27,17 @@ MyModel = Backbone.Model.extend({
    *   default value.
    */
   defaults: {
-    prop1: 'default',
-    prop2: 0,
+    attr1: 'default',
+    attr2: 0,
     ...
   },
 
   defaults: function () {
     return {
-      prop1: 'default',
-      prop2: 0,
-      prop3: new Date(),
-      prop4: {},
+      attr1: 'default',
+      attr2: 0,
+      attr3: new Date(),
+      attr4: {},
       ...
     };
   },
