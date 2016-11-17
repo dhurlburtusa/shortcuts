@@ -68,3 +68,16 @@ namespace HelloConsole {
 
 }
 ```
+
+## Naming Conventions
+
+Some naming rules are enforced by the compiler.  Some are unenforced guidelines suggested by Microsoft.
+
+### Naming Rules Enforced by Compiler
+
+* Identifier (classes, structures, fields, properties, variables, and methods) names can include alphanumeric characters and underscores.  They must begin with alpha or an underscore.
+
+### Guidelines by Microsoft
+
+* Use camel-case for variables, fields, and parameters
+* Use pascal-case (aka upper camel-case) for class names, constants, methods, properties, and structures
