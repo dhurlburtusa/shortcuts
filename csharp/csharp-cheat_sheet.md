@@ -1,10 +1,19 @@
 # C# Cheat Sheet
 
+
 ## Characteristics
 
 * Strongly typed
 * Object oriented
 * Supports imperative, declarative, functional, generic programming paradigms
+
+
+## Managed Code Environment
+
+* C# code is compiled to bytecode
+* Executed by Common Language Runtime (CLR)
+  - A virtual machine
+
 
 ## History
 
