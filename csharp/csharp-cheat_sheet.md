@@ -15,6 +15,18 @@
   - A virtual machine
 
 
+## The .NET Stack
+
+|                          The .NET Stack                        |
+| -------------------------------------------------------------- |
+|        The specific languages such as C#, C++, VB, etc         |
+| Common Language Specification (ASP.NET, WPF, WinForms, Others) |
+|           Application Class Libraries and Services             |
+|                      Base Class Library                        |
+|                    Common Language Runtime                     |
+|                       Operating System                         |
+
+
 ## History
 
 ### Versions
