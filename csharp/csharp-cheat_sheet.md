@@ -3,8 +3,12 @@
 
 ## Characteristics
 
+* Case sensitive
 * Strongly typed
 * Object oriented
+* Everything is an object; no primitives
+* No global variables or functions
+* Uses namespaces (as opposed to packages like in Java)
 * Supports imperative, declarative, functional, generic programming paradigms
 * Garbage collected very similar to Java
   - CLR periodically checks memory heap
