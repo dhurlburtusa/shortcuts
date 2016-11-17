@@ -6,6 +6,9 @@
 * Strongly typed
 * Object oriented
 * Supports imperative, declarative, functional, generic programming paradigms
+* Garbage collected very similar to Java
+  - CLR periodically checks memory heap
+  - Looks for unreferenced objects
 
 
 ## Managed Code Environment
