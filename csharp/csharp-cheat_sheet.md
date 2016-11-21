@@ -177,3 +177,18 @@ s += ", World!";
 | C# Type | .NET Type | Max Length    |
 | ------- | --------- | ------------- |
 | string  | String    | 2,147,483,647 |
+
+
+## Uncategorized (TODO: Categorize the Following Info)
+
+### StringBuilder
+
+```csharp
+using System.Text;
+
+StringBuilder sb = new StringBuilder();
+sb.Append("Hello");
+sb.Append(", ");
+sb.Append("World!");
+String greeting = sb.ToString();
+```
