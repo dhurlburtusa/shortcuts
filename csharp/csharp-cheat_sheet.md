@@ -252,3 +252,21 @@ bool parsed = Double.TryParse("", out d);
 | >=   | Greater than or equal   | if (x >= y)             |
 | is   | Type compatible         | if (x is String)        |
 
+### Constants
+
+Use the `const` keyword.  Convention uses pascal-case (aka upper camel-case) for constants.
+
+```csharp
+namespace Example
+{
+  public class MyClass
+  {
+    const int MeaningOfLife = 42;
+    
+    public MyClass()
+    {
+      Console.WriteLine("The meaning of life is " + MeaningOfLife);
+    }
+  }
+}
+```
