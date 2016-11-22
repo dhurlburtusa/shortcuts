@@ -181,6 +181,19 @@ s += ", World!";
 
 ## Uncategorized (TODO: Categorize the Following Info)
 
+### Comparing Strings
+
+Strings can be compared with `==` or `Equals()`.
+
+```csharp
+// The following two statements are equivalent:
+if (str1.Equals(str2)) {}
+if (str1 == str2) {}
+
+// For non-case-sensitive comparison:
+if (str1.Equals(str2, StringComparison.OrdinalIgnoreCase)) {}
+```
+
 ### StringBuilder
 
 ```csharp
