@@ -137,16 +137,16 @@ short s = -345;
 int i = 1;
 ```
 
-| C# Type | .NET Type | Min            | Max           |
-| ------- | --------- | -------------- | ------------- |
-| byte    | Byte      | 0              | 255           |
-| sbyte   | SByte     | -128           | 127           |
-| short   | Int16     | -32,768        | 32,767        |
-| ushort  | UInt16    | 0              | 65,535        |
-| int     | Int32     | -2,147,483,648 | 2,147,483,647 |
-| uint    | UInt32    | 0              | 4,294,967,295 |
-| long    | Long      | -9.22e18       | 9.22e18       |
-| ulong   | ULong     | 0              | 1.84e19       |
+| C# Type | .NET Type    | Min            | Max           |
+| ------- | ------------ | -------------- | ------------- |
+| byte    | Byte         | 0              | 255           |
+| sbyte   | SByte        | -128           | 127           |
+| short   | Int16        | -32,768        | 32,767        |
+| ushort  | UInt16       | 0              | 65,535        |
+| int     | Int32        | -2,147,483,648 | 2,147,483,647 |
+| uint    | UInt32       | 0              | 4,294,967,295 |
+| long    | Long/Int64   | -9.22e18       | 9.22e18       |
+| ulong   | ULong/UInt64 | 0              | 1.84e19       |
 
 ### Floating-Point and Decimal Types (structures)
 
