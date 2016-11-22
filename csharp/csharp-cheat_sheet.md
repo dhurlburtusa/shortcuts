@@ -192,3 +192,24 @@ sb.Append(", ");
 sb.Append("World!");
 String greeting = sb.ToString();
 ```
+
+### Converting a String to a Number
+
+```csharp
+byte b = Byte.Parse("128");
+bool parsed = Byte.TryParse("278", out b);
+
+int i = Int32.Parse("255");
+bool parsed = Int32.TryParse("", out i);
+
+long l = Int64.Parse("123456789012345");
+bool parsed = Int64.TryParse("", out l);
+
+decimal d = Decimal.Parse("1.34e5");
+bool parsed = Decimal.TryParse("", out d);
+
+double d = Double.Parse("19.99");
+bool parsed = Double.TryParse("", out d);
+
+// Similar code for Int16, SByte, Single, UInt16, UInt32, and UInt64.
+```
