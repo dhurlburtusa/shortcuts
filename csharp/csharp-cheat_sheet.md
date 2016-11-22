@@ -213,3 +213,17 @@ bool parsed = Double.TryParse("", out d);
 
 // Similar code for Int16, SByte, Single, UInt16, UInt32, and UInt64.
 ```
+
+### Mathematical Operators
+
+| Oper | Description             | Example      |
+| ---- | ----------------------- | ------------ |
+| +    | Addition                | 1 + 2 = 3    |
+| -    | Subtraction             | 64 - 16 = 48 |
+| *    | Multiplication          | 8 * 4 = 32   |
+| /    | Division                | 8 / 4 = 2    |
+| %    | Modulus (aka remainder) | 9 % 2 = 1    |
+| ++   | Increment               | i++ or ++i   |
+| --   | Decrement               | i-- or --i   |
+| +=   | Add, assign             | i += 1       |
+| -=   | Subtract, assign        | i -= 1       |
