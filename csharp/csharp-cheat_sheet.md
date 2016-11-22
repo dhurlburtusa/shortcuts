@@ -291,3 +291,12 @@ namespace Example
 }
 ```
 
+### Dates and Times
+
+```csharp
+DateTime now = DateTime.Now;
+
+// Note: Month is 1-based unlike in JavaScript.
+DateTime dt = new DateTime(2000, 1, 1, 0, 0, 0);
+Console.WriteLine("Y2K: " + dt.ToString("M/d/yyyy"));
+```
