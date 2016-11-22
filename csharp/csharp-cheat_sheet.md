@@ -244,6 +244,48 @@ s += ", World!";
 
 ## Control Flow Statements
 
+### Conditional Statements
+
+**if Statement**
+
+```csharp
+if (condition)
+{
+    // code to be executed if condition is true;
+}
+```
+
+**if...else Statement**
+
+```csharp
+if (condition)
+{
+    // code to be executed if condition is true;
+}
+else
+{
+    // code to be executed if condition is false;
+}
+```
+
+**if...else if...else Statement**
+
+```csharp
+if (condition)
+{
+    // code to be executed if this condition is true;
+}
+else if (condition)
+{
+    // code to be executed if this condition is true;
+}
+// other else if clauses may be added here;
+else
+{
+    // code to be executed if all conditions are false;
+}
+```
+
 
 ## Uncategorized (TODO: Categorize the Following Info)
 
