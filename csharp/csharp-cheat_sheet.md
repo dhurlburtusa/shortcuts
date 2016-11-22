@@ -300,3 +300,9 @@ DateTime now = DateTime.Now;
 DateTime dt = new DateTime(2000, 1, 1, 0, 0, 0);
 Console.WriteLine("Y2K: " + dt.ToString("M/d/yyyy"));
 ```
+
+### Reading Console Input
+
+```csharp
+string input = Console.ReadLine();
+```
