@@ -216,17 +216,20 @@ bool parsed = Double.TryParse("", out d);
 
 ### Operators
 
-| Oper | Description             | Example             |
-| ---- | ----------------------- | ------------------- |
-| +    | Addition                | 1 + 2 = 3           |
-| -    | Subtraction             | 64 - 16 = 48        |
-| *    | Multiplication          | 8 * 4 = 32          |
-| /    | Division                | 8 / 4 = 2           |
-| %    | Modulus (aka remainder) | 9 % 2 = 1           |
-| ++   | Increment               | i++ or ++i          |
-| --   | Decrement               | i-- or --i          |
-| +=   | Add, assign             | i += 1              |
-| -=   | Subtract, assign        | i -= 1              |
-| ==   | Equals                  | x == y              |
-| !=   | Not equals              | x != y              |
-| !    | Negation                | !x (x must be bool) |
+| Oper | Description             | Example                 |
+| ---- | ----------------------- | -------------------     |
+| +    | Addition                | 1 + 2 = 3               |
+| -    | Subtraction             | 64 - 16 = 48            |
+| *    | Multiplication          | 8 * 4 = 32              |
+| /    | Division                | 8 / 4 = 2               |
+| %    | Modulus (aka remainder) | 9 % 2 = 1               |
+| ++   | Increment               | i++ or ++i              |
+| --   | Decrement               | i-- or --i              |
+| +=   | Add, assign             | i += 1                  |
+| -=   | Subtract, assign        | i -= 1                  |
+| ==   | Equals                  | x == y                  |
+| !=   | Not equals              | x != y                  |
+| !    | Negation                | !x (x must be bool)     |
+| &&   | AND                     | if (x && y)             |
+| \|\| | OR                      | if (x || y)             |
+| ??   | Null-coalescing         | int i = (x ?? default); |
