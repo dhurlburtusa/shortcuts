@@ -270,3 +270,24 @@ namespace Example
   }
 }
 ```
+
+### Enums
+
+Use the `enum` keyword.  Convention uses pascal-case (aka upper camel-case) for both the enum identifier and its individual values.
+
+```csharp
+namespace Example
+{
+  public class MyClass
+  {
+    enum Flavors { Chocolate, Vanilla, Strawberry };
+    
+    public MyClass()
+    {
+      // Prints "My favorite flavor is Chocolate".
+      Console.WriteLine("My favorite flavor is " + Flavors.Chocolate);
+    }
+  }
+}
+```
+
