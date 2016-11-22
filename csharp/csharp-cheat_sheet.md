@@ -178,6 +178,70 @@ s += ", World!";
 | string  | String    | 2,147,483,647 |
 
 
+## Operators
+
+### Arithmetic Operators
+
+| Oper | Function                | Example |
+| ---- | ----------------------- | ------- |
+| +    | Addition                | x + y   |
+| -    | Subtraction             | x - y   |
+| *    | Multiplication          | x * y   |
+| /    | Division                | x / y   |
+| %    | Modulus (aka remainder) | x % y   |
+
+### Assignment Operators
+
+| Oper | Function          | Example |
+| ---- | ----------------- | ------- |
+| =    | Assign            | x = 0   |
+| +=   | Add, assign       | x += 1  |
+| -=   | Subtract, assign  | x -= 1  |
+| *=   | Multiply, assign  | x *= 2  |
+| /=   | Divide, assign    | x /= 2  |
+| %=   | Remainder, assign | x %= 1  |
+| &=   | AND, assign       | x &= y  |
+| \|=   | OR, assign       | x \|= y |
+| ^=   | XOR, assign       | x ^= y  |
+
+### Comparison Operators
+
+| Oper | Function              | Example          |
+| ---- | --------------------- | ---------------- |
+| ==   | Equals                | x == y           |
+| !=   | Not equals            | x != y           |
+| >    | Greater than          | if (x > y)       |
+| <    | Less than             | if (x < y)       |
+| >=   | Greater than or equal | if (x >= y)      |
+| <=   | Less than or equal    | if (x <= y)      |
+| is   | Type compatible       | if (x is String) |
+
+### Increment / Decrement Operators
+
+| Oper | Function       | Example |
+| ---- | -------------- | ------- |
+| ++   | Pre-increment  | ++x     |
+| ++   | Post-increment | x++     |
+| --   | Pre-decrement  | --x     |
+| --   | Post-decrement | x--     |
+
+### Logical Operators
+
+| Oper | Function        | Example                 |
+| ---- | --------------- | ----------------------- |
+| !    | Negation        | !x (x must be bool)     |
+| &&   | AND             | if (x && y)             |
+| \|\| | OR              | if (x \|\| y)           |
+
+### Special Operators
+
+| Oper | Function        | Example                 |
+| ---- | --------------- | ----------------------- |
+| ??   | Null-coalescing | int x = (y ?? default); |
+| ?.   | Member access   | int? len = obj?.Length; |
+| ?[   | Index access    | Person p = people?[0];  |
+
+
 ## Uncategorized (TODO: Categorize the Following Info)
 
 ### Comparing Strings
@@ -225,31 +289,6 @@ bool parsed = Double.TryParse("", out d);
 
 // Similar code for Int16, SByte, Single, UInt16, UInt32, and UInt64.
 ```
-
-### Operators
-
-| Oper | Description             | Example                 |
-| ---- | ----------------------- | -------------------     |
-| +    | Addition                | 1 + 2 = 3               |
-| -    | Subtraction             | 64 - 16 = 48            |
-| *    | Multiplication          | 8 * 4 = 32              |
-| /    | Division                | 8 / 4 = 2               |
-| %    | Modulus (aka remainder) | 9 % 2 = 1               |
-| ++   | Increment               | i++ or ++i              |
-| --   | Decrement               | i-- or --i              |
-| +=   | Add, assign             | i += 1                  |
-| -=   | Subtract, assign        | i -= 1                  |
-| ==   | Equals                  | x == y                  |
-| !=   | Not equals              | x != y                  |
-| !    | Negation                | !x (x must be bool)     |
-| &&   | AND                     | if (x && y)             |
-| \|\| | OR                      | if (x || y)             |
-| ??   | Null-coalescing         | int i = (x ?? default); |
-| <    | Less than               | if (x < y)              |
-| >    | Greater than            | if (x > y)              |
-| <=   | Less than or equal      | if (x <= y)             |
-| >=   | Greater than or equal   | if (x >= y)             |
-| is   | Type compatible         | if (x is String)        |
 
 ### Constants
 
