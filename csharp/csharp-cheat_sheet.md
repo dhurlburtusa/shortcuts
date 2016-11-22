@@ -233,3 +233,9 @@ bool parsed = Double.TryParse("", out d);
 | &&   | AND                     | if (x && y)             |
 | \|\| | OR                      | if (x || y)             |
 | ??   | Null-coalescing         | int i = (x ?? default); |
+| <    | Less than               | if (x < y)              |
+| >    | Greater than            | if (x > y)              |
+| <=   | Less than or equal      | if (x <= y)             |
+| >=   | Greater than or equal   | if (x >= y)             |
+| is   | Type compatible         | if (x is String)        |
+
