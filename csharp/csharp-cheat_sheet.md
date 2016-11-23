@@ -318,6 +318,15 @@ for (int i = 0; i < len; i++)
 }
 ```
 
+**foreach Loop**
+
+```csharp
+foreach (var item in collection)
+{
+    // code to be executed;
+}
+```
+
 **while Loop**
 
 ```csharp
