@@ -204,6 +204,16 @@ sections[2, 1] = "bottom center";
 sections[2, 2] = "bottom right";
 ```
 
+### Lists (class)
+
+```csharp
+var fruitList = new List<string>();
+fruitList.App("Apple");
+fruitList.App("Oranges");
+fruitList.App("Grapes");
+```
+
+
 ## Operators
 
 ### Arithmetic Operators
