@@ -177,6 +177,32 @@ s += ", World!";
 | ------- | --------- | ------------- |
 | string  | String    | 2,147,483,647 |
 
+### Arrays (class)
+
+```csharp
+// Example of two ways to create an array.
+string[] fruits = { "Apples", "Oranges", "Grapes" };
+
+string[] fruits = new string[3];
+// All fruits are null at this point.
+fruits[0] = "Apples";
+fruits[1] = "Oranges";
+fruits[2] = "Grapes";
+
+// Example of a 2-dimensional array:
+string[,] sections = new string[3, 3];
+sections[0, 0] = "top left";
+sections[0, 1] = "top center";
+sections[0, 2] = "top right";
+
+sections[1, 0] = "middle left";
+sections[1, 1] = "middle center";
+sections[1, 2] = "middle right";
+
+sections[2, 0] = "bottom left";
+sections[2, 1] = "bottom center";
+sections[2, 2] = "bottom right";
+```
 
 ## Operators
 
