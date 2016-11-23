@@ -318,6 +318,15 @@ for (int i = 0; i < len; i++)
 }
 ```
 
+**while Loop**
+
+```csharp
+while (condition)
+{
+    // code to be executed while condition is true;
+}
+```
+
 
 ## Uncategorized (TODO: Categorize the Following Info)
 
