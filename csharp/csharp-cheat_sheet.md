@@ -307,6 +307,17 @@ switch (n)
 }
 ```
 
+### Loop Statements
+
+**for Loop**
+
+```csharp
+for (int i = 0; i < len; i++)
+{
+    // code to be executed;
+}
+```
+
 
 ## Uncategorized (TODO: Categorize the Following Info)
 
