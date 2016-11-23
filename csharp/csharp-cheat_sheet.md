@@ -345,6 +345,30 @@ do
 } while (condition);
 ```
 
+### try/catch Statements
+
+```csharp
+try
+{
+    // code to be executed that might throw an exception;
+}
+catch (AnotherException e)
+{
+    // code to be executed to handle the exception;
+    throw; // E.g, rethrow current exception.
+}
+...
+catch (Exception e)
+{
+    // code to be executed to handle the exception;
+    throw; // E.g, rethrow current exception.
+}
+finally
+{
+    // code to always be executed regardless of exceptions;
+}
+```
+
 
 ## Uncategorized (TODO: Categorize the Following Info)
 
