@@ -213,6 +213,26 @@ fruitList.App("Oranges");
 fruitList.App("Grapes");
 ```
 
+### Dictionaries (class)
+
+```csharp
+var inventory = new Dictionary<string, double>();
+inventory.Add("Figs", 56);
+inventory.Add("Apples", 23);
+inventory.Add("Oranges", 12);
+
+foreach (var key in inventory.Keys)
+{
+    Console.WriteLine(key + ": " + inventory[key]);
+}
+
+double value;
+if (inventory.TryGetValue("Figs", out value))
+{
+    Console.WriteLine("Figs inventory: " + value);
+}
+```
+
 
 ## Operators
 
