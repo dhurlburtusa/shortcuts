@@ -327,6 +327,15 @@ while (condition)
 }
 ```
 
+**do while Loop**
+
+```csharp
+do
+{
+    // code to be executed while condition is true;
+} while (condition);
+```
+
 
 ## Uncategorized (TODO: Categorize the Following Info)
 
