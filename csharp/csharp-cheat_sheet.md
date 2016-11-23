@@ -233,6 +233,88 @@ if (inventory.TryGetValue("Figs", out value))
 }
 ```
 
+### Classes
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Example
+{
+    class MyBaseClass
+    {
+        // Static Methods:
+
+        public static <type> MyPublicStaticMethod(<parameters>)
+        {
+            ...
+        }
+
+        private static <type> MyPrivateStaticMethod(<parameters>)
+        {
+            ...
+        }
+
+        public|private MyBaseClass()
+        {
+            ...
+        }
+
+        public|private MyBaseClass(<parameters>)
+        {
+            ...
+        }
+
+        private <type> fieldName;
+        public <type> FieldName
+        {
+            get { return fieldName; }
+            set { fieldName = value; }
+        }
+        
+        // Shorthand for simple getters and setters:
+        public <type> FieldName2 { get; set; }
+        
+        public override string ToString()
+        {
+            return ...;
+        }
+    }
+    
+    class MySubClass : MyBaseClass
+    {
+        public|private MySubClass()
+        {
+            ...
+        }
+        
+        public|private MySubClass(<parameters>) :
+            base(<arguments>)
+        {
+            ...
+        }
+        
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var myBaseClass = new MyBaseClass();
+            myBaseClass.FieldName = ...;
+            Console.WriteLine(myBaseClass.FieldName);
+        }
+    }
+}
+```
+
 
 ## Operators
 
