@@ -6,6 +6,16 @@ SharePoint is a web based application that integrates with Microsoft Office.  Sh
 document management and storage system, but the product is highly configurable and usage varies substantially between
 organizations.
 
+SharePoint is installed on a server.  Then a web browser on a desktop, tablet, or phone is used to connect to the
+server.
+
+Different people work with different aspects of SharePoint, so for some of us, SharePoint is a collaboration site.  For
+others of us, SharePoint is simply a place to store documents.  For some of us, SharePoint is a workflow engine that's
+used to automate tasks that we do on a everyday basis.  But SharePoint is more than any of those individual things.
+That is, SharePoint is a platform that organizations use to build solutions for a wide variety of business problems.
+
+Allows collaboration with Outlook, Word, Visio, and other products.
+
 ## Editions
 
 SharePoint comes in various editions:
@@ -73,4 +83,3 @@ Missing capabilities include:
 * Service Application administration options
 * Ability to change files on sever
 * Ability to read error logs
-
