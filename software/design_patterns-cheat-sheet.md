@@ -69,3 +69,90 @@
     </td>
   </tr>
 </table>
+
+
+## Structural Patterns
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Adapter or Wrapper or Translator</td>
+    <td>
+      Convert the interface of a class into another interface clients expect.  An adapter lets classes work together that
+      could not otherwise because of incompatible interfaces.  The enterprise integration pattern equivalent is the
+      translator.
+    </td>
+  </tr>
+  <tr>
+    <td>Bridge</td>
+    <td>
+      Decouple an abstraction from its implementation allowing the two to vary independently.
+    </td>
+  </tr>
+  <tr>
+    <td>Composite</td>
+    <td>
+      Compose objects into tree structures to represent part-whole hierarchies.  Composite lets clients treat individual
+      objects and compositions of objects uniformly.
+    </td>
+  </tr>
+  <tr>
+    <td>Decorator</td>
+    <td>
+      Attach additional responsibilities to an object dynamically keeping the same interface.  Decorators provide a flexible
+      alternative to subclassing for extending functionality.
+    </td>
+  </tr>
+  <tr>
+    <td>Extension Object</td>
+    <td>
+      Adding functionality to a hierarchy without changing the hierarchy.
+    </td>
+  </tr>
+  <tr>
+    <td>Facade</td>
+    <td>
+      Provide a unified interface to a set of interfaces in a subsystem.  Facade defines a higher-level interface that makes
+      the subsystem easier to use.
+    </td>
+  </tr>
+  <tr>
+    <td>Flyweight</td>
+    <td>
+      Use sharing to support large numbers of similar objects efficiently.
+    </td>
+  </tr>
+  <tr>
+    <td>Front Controller</td>
+    <td>
+      The pattern relates to the design of Web applications.  It provides a centralized entry point for handling requests.
+    </td>
+  </tr>
+  <tr>
+    <td>Marker</td>
+    <td>
+      Empty interface to associate metadata with a class.
+    </td>
+  </tr>
+  <tr>
+    <td>Module</td>
+    <td>
+      Group several related elements, such as classes, singletons, methods, globally used, into a single conceptual entity.
+    </td>
+  </tr>
+  <tr>
+    <td>Proxy</td>
+    <td>
+      Provide a surrogate or placeholder for another object to control access to it.
+    </td>
+  </tr>
+  <tr>
+    <td>Twin</td>
+    <td>
+      Twin allows modeling of multiple inheritance in programming languages that do not support this feature.
+    </td>
+  </tr>
+</table>
