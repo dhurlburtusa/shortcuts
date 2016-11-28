@@ -156,3 +156,113 @@
     </td>
   </tr>
 </table>
+
+
+## Behavioral Patterns
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Blackboard</td>
+    <td>
+      Artificial intelligence pattern for combining disparate sources of data.
+    </td>
+  </tr>
+  <tr>
+    <td>Chain of Responsibility</td>
+    <td>
+      Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.
+      Chain the receiving objects and pass the request along the chain until an object handles it.
+    </td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>
+      Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and
+      the queuing or logging of requests.  It also allows for the support of undoable operations.
+    </td>
+  </tr>
+  <tr>
+    <td>Interpreter</td>
+    <td>
+      Given a language, define a representation for its grammar along with an interpreter that uses the representation to
+      interpret sentences in the language.
+    </td>
+  </tr>
+  <tr>
+    <td>Iterator</td>
+    <td>
+      Provide a way to access the elements of an aggregate object sequentially without exposing its underlying
+      representation.
+    </td>
+  </tr>
+  <tr>
+    <td>Mediator</td>
+    <td>
+      Define an object that encapsulates how a set of objects interact.  Mediator promotes loose coupling by keeping objects
+      from referring to each other explicitly, and it allows their interaction to vary independently.
+    </td>
+  </tr>
+  <tr>
+    <td>Memento</td>
+    <td>
+      Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored
+      to this state later.
+    </td>
+  </tr>
+  <tr>
+    <td>Null Object</td>
+    <td>
+      Avoid null references by providing a default object.
+    </td>
+  </tr>
+  <tr>
+    <td>Observer or Publish/subscribe</td>
+    <td>
+      Define a one-to-many dependency between objects where a state change in one object results in all its dependents being
+      notified and updated automatically.
+    </td>
+  </tr>
+  <tr>
+    <td>Servant</td>
+    <td>
+      Define common functionality for a group of classes.
+    </td>
+  </tr>
+  <tr>
+    <td>Specification</td>
+    <td>
+      Recombinable business logic in a Boolean fashion.
+    </td>
+  </tr>
+  <tr>
+    <td>State</td>
+    <td>
+      Allow an object to alter its behavior when its internal state changes.  The object will appear to change its class.
+    </td>
+  </tr>
+  <tr>
+    <td>Strategy</td>
+    <td>
+      Define a family of algorithms, encapsulate each one, and make them interchangeable.  Strategy lets the algorithm vary
+      independently from clients that use it.
+    </td>
+  </tr>
+  <tr>
+    <td>Template Method</td>
+    <td>
+      Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.  Template method lets
+      subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+    </td>
+  </tr>
+  <tr>
+    <td>Visitor</td>
+    <td>
+      Represent an operation to be performed on the elements of an object structure.  Visitor lets a new operation be
+      defined without changing the classes of the elements on which it operates.
+    </td>
+  </tr>
+</table>
