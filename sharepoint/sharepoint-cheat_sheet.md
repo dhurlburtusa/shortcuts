@@ -83,3 +83,15 @@ Missing capabilities include:
 * Service Application administration options
 * Ability to change files on sever
 * Ability to read error logs
+
+
+## Roles
+
+* **Owner**: Has full control of a site, or a list or a library, and can do anything with it that they want.
+* **Designer**: Can view, add, update, delete, approve, and they can customize the things that they're given a designer
+  role in relationship to.
+* **Editor**: Have permission to work items one might find in a site but they don't have the ability to do things like
+  customize the site's design.
+* **Contributor**: More limited permissions.  Only have the permission to delete items they themselves created.
+* **Reader**: Have the ability to look at any item that's there.  May even have the ability to download a document and
+  edit it but not to resave it.
