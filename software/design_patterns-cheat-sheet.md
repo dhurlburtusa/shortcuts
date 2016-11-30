@@ -266,3 +266,83 @@
     </td>
   </tr>
 </table>
+
+## Singleton Pattern Implementations
+
+```java
+/**
+ * Classic singleton pattern implementation.
+ *
+ * - Not thread safe.
+ * - Uses lazy instantiation.
+ *   + Useful when singleton object may not always be used.
+ *   + Useful when singleton object is complex and may slow loading of system.
+ */
+public class Singleton {
+
+  private static Singleton instance;
+
+  public static Singleton getInstance() {
+    if (instance == null) {
+      instance = new Singleton();
+    }
+    return instance;
+  }
+
+  private Singleton() {}
+}
+```
+
+```java
+/**
+ * Thread safe version of the classic singleton pattern implementation.
+ *
+ * - Thread safe.
+ * - Call to `getinstance` is slower than unsafe version.  Synchronization is expensive.  However, being thread safe may be
+ *   critical to the correctness of your application.
+ * - Uses lazy instantiation.
+ *   + Useful when singleton object may not always be used.
+ *   + Useful when singleton object is complex and may slow loading of system.
+ */
+public class Singleton {
+
+  private static Singleton instance;
+
+  /**
+   * NOTE: Since this method is synchronized, it is slower to call.
+   */
+  public static synchronized Singleton getInstance() {
+    if (instance == null) {
+      instance = new Singleton();
+    }
+    return instance;
+  }
+
+  private Singleton() {}
+}
+```
+
+```java
+/**
+ * Thread safe version of the singleton pattern implementation.  Use this version when thread safety is required and
+ * it is very likely that the singleton is needed by your application.
+ *
+ * - Thread safe.
+ * - Always creates singleton instance when class is loaded.
+ *   + Detrimental when instance may not be needed.
+ *     - Unnecessary memory use.
+ *     - Unnecessary processing time.
+ *     - Not lazy, so may slow startup of system.
+ *   + Useful when instance is likely to be needed.
+ */
+public class Singleton {
+
+  private static Singleton instance = new Singleton();
+
+  public static Singleton getInstance() {
+    return instance;
+  }
+
+  private Singleton() {}
+}
+```
