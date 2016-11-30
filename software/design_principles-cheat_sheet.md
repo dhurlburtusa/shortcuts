@@ -13,6 +13,7 @@
   the XP practice of "do the simplest thing that could possibly work".  It is meant to be used in combination with
   several other practices, such as continuous refactoring, continuous automated unit testing, and continuous
   integration.
+* Separate what varies and encapsulate it.
 * Program to an interface, not an implementation.
 * Favor composition over inheritance.
 * Strive for loosely coupled designs between objects that interact.
