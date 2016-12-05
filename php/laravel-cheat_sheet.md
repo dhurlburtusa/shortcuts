@@ -14,3 +14,40 @@ Laravel uses the following components (among others):
 ## Installation
 
 See https://laravel.com/docs for details.
+
+## Routing
+
+Routes will be defined in route files.  The location and name of the route files varies between releases.
+
+### Basic Routing
+
+**Basic GET**
+
+```php
+Route::get('/', function () { ... });
+```
+
+**Basic POST**
+
+```php
+Route::post('foo', function () { ... });
+```
+
+**Available Router Methods**
+
+```php
+Route::get($uri, $callback);
+Route::post($uri, $callback);
+Route::put($uri, $callback);
+Route::patch($uri, $callback);
+Route::delete($uri, $callback);
+Route::options($uri, $callback);
+```
+
+**Matching Many HTTP Methods**
+
+```php
+Route::match(['get', 'post'], '/', function () { ... });
+
+Route::any('foo', function () { ... });
+```
