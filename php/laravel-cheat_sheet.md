@@ -71,3 +71,42 @@ Route::get('user/{id}', function ($id) { ... })->where('id', '[0-9]+');
 
 Route::get('user/{id}/{name}', function ($id, $name) { ... })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 ```
+
+### Named Routes in 4.x
+
+**Creating**
+
+```php
+// Route named 'profile':
+Route::get('user/profile', array('as' => 'profile', function () { ... }));
+Route::get('user/profile', array('as' => 'profile', 'uses' => 'UserController@showProfile'));
+```
+
+**Using**
+
+```php
+$url = URL::route('profile');
+
+$redirect = Redirect::route('profile');
+```
+
+### Named Routes in 5.x
+
+**Creating**
+
+```php
+// Route named 'profile':
+Route::get('user/profile', function () { ... })->name('profile');
+Route::get('user/{id}/profile', function ($id) { ... })->name('profile');
+Route::get('user/profile', 'UserController@showProfile')->name('profile');
+```
+
+**Using**
+
+```php
+$url = route('profile');
+// With parameters:
+$url = route('profile', [ 'id' => 1 ]);
+
+$redirect = redirect()->route('profile');
+```
