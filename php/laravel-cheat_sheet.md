@@ -10,3 +10,7 @@ Laravel uses the following components (among others):
 * Symfony: A PHP development framework
 * Eloquent ORM: Object-oriented database management and migration
 * Blade: A templating engine
+
+## Installation
+
+See https://laravel.com/docs for details.
