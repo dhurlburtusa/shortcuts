@@ -11,9 +11,11 @@ Laravel uses the following components (among others):
 * Eloquent ORM: Object-oriented database management and migration
 * Blade: A templating engine
 
+
 ## Installation
 
 See https://laravel.com/docs for details.
+
 
 ## Routing
 
@@ -50,4 +52,22 @@ Route::options($uri, $callback);
 Route::match(['get', 'post'], '/', function () { ... });
 
 Route::any('foo', function () { ... });
+```
+
+### Parameters
+
+```php
+Route::get('user/{id}', function ($id) { ... });
+
+Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) { ... });
+
+// Optional Parameters:
+
+Route::get('user/{name?}', function ($name = null) { ... });
+
+// Regular Expression Constraints:
+
+Route::get('user/{id}', function ($id) { ... })->where('id', '[0-9]+');
+
+Route::get('user/{id}/{name}', function ($id, $name) { ... })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 ```
