@@ -60,3 +60,34 @@ namespace MyApp.Controllers
   }
 }
 ```
+
+**Adding Views to Your Application**
+
+* Add a `Views` folder to the root of your project.
+* Add a folder named `Shared` to contain reusable view pieces such as layouts.
+* Add a folder matching the name of your controller (`My` for the controller above) to the `Views` folder.
+* Add a file matching the name of your controller's action method (`Index` for the controller above) with the `.cshtml` extension to the corresponding controller folder.
+* Use the Razor syntax in the file.
+
+```html
+<!-- Shared/_Layout.cshtml -->
+<!DOCTYPE html>
+<html>
+  <head>
+  ...
+  </head>
+  <body>
+    ...
+    @RenderBody()
+    ...
+  </body>
+</html>
+```
+
+```html
+<!-- My/Index.cshtml -->
+@{
+  Layout = "_Layout";
+}
+<p>This is the My#Index body.</p>
+```
