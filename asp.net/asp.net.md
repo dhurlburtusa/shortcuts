@@ -91,3 +91,93 @@ namespace MyApp.Controllers
 }
 <p>This is the My#Index body.</p>
 ```
+
+**Adding Data to Your Application**
+
+There are a couple options to passing data to your application.
+
+* Option 1: (No type safety or Intellisense)
+  - Add properties to the `ViewBag` in the controller.
+  - Access properties of the `ViewBag` in the view.
+
+```csharp
+// Controllers/MyController.cs
+using Microsoft.AspNet.Mvc;
+
+namespace MyApp.Controllers
+{
+  public class MyController : Controller
+  {
+    // GET: /<controller>/
+    public IActionResult Index()
+    {
+      ViewBag.Title = "My Title";
+      ViewBag.Name = "Me, a name, I call myself";
+      return View();
+    }
+    ...
+  }
+}
+```
+
+```html
+<!-- Views/My/Index.cshtml -->
+@{
+  Layout = "_Layout";
+}
+<h1>@ViewBag.Title</h1>
+<p>I am @ViewBag.Name</p>
+```
+
+* Option 2: (Type safety and intellisense)
+  - Add a `Models` folder to the root of your project.
+  - Create a class to represent the model.
+  - Instantiate an object of the model class.
+  - Pass the model object to the `View` method.
+  - Declare the type of the model.
+
+```csharp
+// Models/MyModel.cs
+using System;
+
+namespace MyApp.Models
+{
+  public class MyModel
+  {
+    public string Title { get; set; }
+    public string Name { get; set; }
+    ...
+  }
+}
+```
+
+```csharp
+// Controllers/MyController.cs
+using Microsoft.AspNet.Mvc;
+
+namespace MyApp.Controllers
+{
+  public class MyController : Controller
+  {
+    // GET: /<controller>/
+    public IActionResult Index()
+    {
+      var MyModel model = new MyModel();
+      model.Title = "My Title";
+      model.Name = "Me, a name, I call myself";
+      return View(model);
+    }
+    ...
+  }
+}
+```
+
+```html
+<!-- Views/My/Index.cshtml -->
+@model = MyApp.Models.Post;
+@{
+  Layout = "_Layout";
+}
+<h1>@Model.Title</h1>
+<p>I am @Model.Name</p>
+```
