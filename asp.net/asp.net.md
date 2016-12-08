@@ -44,7 +44,7 @@ namespace MyApp
 * Add a file similar to the following to the new Controllers folder.
 
 ```csharp
-// MyController.cs
+// Controllers/MyController.cs
 using Microsoft.AspNet.Mvc;
 
 namespace MyApp.Controllers
@@ -70,7 +70,7 @@ namespace MyApp.Controllers
 * Use the Razor syntax in the file.
 
 ```html
-<!-- Shared/_Layout.cshtml -->
+<!-- Views/Shared/_Layout.cshtml -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -85,7 +85,7 @@ namespace MyApp.Controllers
 ```
 
 ```html
-<!-- My/Index.cshtml -->
+<!-- Views/My/Index.cshtml -->
 @{
   Layout = "_Layout";
 }
