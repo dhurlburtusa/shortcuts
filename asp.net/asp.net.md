@@ -37,3 +37,26 @@ namespace MyApp
   }
 }
 ```
+
+**Adding Controllers to Your Application**
+
+* Add a `Controllers` folder to the root of your project.
+* Add a file similar to the following to the new Controllers folder.
+
+```csharp
+// MyController.cs
+using Microsoft.AspNet.Mvc;
+
+namespace MyApp.Controllers
+{
+  public class MyController : Controller
+  {
+    // GET: /<controller>/
+    public IActionResult Index()
+    {
+      return View();
+    }
+    ...
+  }
+}
+```
