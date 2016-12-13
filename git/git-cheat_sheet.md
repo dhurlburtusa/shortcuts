@@ -86,7 +86,7 @@ be a remote repo tagged as `origin`.
 
 There are several methods that can be used to clone a repository.
 
-### Univeral
+### Universal
 
 See https://git-scm.com/docs/git-clone for details.
 
