@@ -373,3 +373,20 @@ Some Examples:
     [core]
       ; Don't trust file modes
       filemode = false
+
+### First Time Setup
+
+See https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup for details.
+
+**Your Identity**
+
+```sh
+git config --global user.name "Danny Hurlburt"
+git config --global user.email danny.hurlburt@hypersoftllc.com
+```
+
+**Your Editor**
+
+```sh
+git config --global core.editor "'C:/Program Files/SublimeText3/sublime_text.exe' -multiInst -nosession"
+```
