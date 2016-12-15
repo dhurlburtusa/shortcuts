@@ -8,7 +8,8 @@ https://blog.codepen.io/documentation/editor/adding-external-resources/ for deta
 
 **Using Resources from Github**
 
-You may use the https://rawgit.com/ service.
+Unfortunately, CodePen won't execute JavaScript served from GitHub since GitHub returns the raw JavaScript with a MIME
+of text/plain.  An easy way to get around this is to use the https://rawgit.com/ service.
 
 * Go to Github and navigate to the file you want to use as a resource.
 * Click Raw to see the raw version.
