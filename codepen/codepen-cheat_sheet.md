@@ -6,12 +6,12 @@
 See https://blog.codepen.io/2013/05/28/new-feature-use-pens-as-external-resources/ and
 https://blog.codepen.io/documentation/editor/adding-external-resources/ for details.
 
-**Using Resources from Github**
+**Using Resources from GitHub**
 
 Unfortunately, CodePen won't execute JavaScript served from GitHub since GitHub returns the raw JavaScript with a MIME
 of text/plain.  An easy way to get around this is to use the https://rawgit.com/ service.
 
-* Go to Github and navigate to the file you want to use as a resource.
+* Go to GitHub and navigate to the file you want to use as a resource.
 * Click Raw to see the raw version.
 * Copy the URL of the raw version.
 * Go to RawGit.
