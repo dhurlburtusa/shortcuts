@@ -49,3 +49,34 @@ can be useful for experimenting with React.
   </body>
 </html>
 ```
+
+
+## JSX
+
+See https://facebook.github.io/react/docs/introducing-jsx.html for more details.
+
+JSX is a syntax extension to JavaScript.  It is like a template language, but it comes with the full power of
+JavaScript.
+
+It is safe to embed user input in JSX.  By default, React DOM escapes any values embedded in JSX before rendering
+them.
+
+You can embed any JavaScript expression in JSX by wrapping it in curly braces.
+
+```jsx
+const foo = 1;
+const bar = 2;
+
+const element = (
+  <span>{foo + bar}</span>
+);
+```
+
+**Specifying Attributes with JSX**
+
+React DOM uses camelCase property naming convention instead of HTML attribute names.
+
+```jsx
+var nextIndex = 0;
+const element = <div className="..." tabIndex={nextIndex}>...</div>;
+```
