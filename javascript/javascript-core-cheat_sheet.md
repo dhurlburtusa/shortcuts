@@ -184,6 +184,12 @@ Here are somethings about JavaScript that I find to be quirky.
 typeof NaN == 'number';   // true
 ```
 
+**The type of `null` is 'object'**
+
+```js
+typeof null == 'object';  // true
+```
+
 **The month of Date is zero-based**
 
 ```js
