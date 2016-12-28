@@ -178,19 +178,19 @@ typeof flag == 'boolean' ? flag : false;
 
 Here are somethings about JavaScript that I find to be quirky.
 
-**The type of NaN is 'number'**
+**The type of `NaN` is `'number'`**
 
 ```js
 typeof NaN == 'number';   // true
 ```
 
-**The type of `null` is 'object'**
+**The type of `null` is `'object'`**
 
 ```js
 typeof null == 'object';  // true
 ```
 
-**The month of Date is zero-based**
+**The month of `Date` is zero-based**
 
 ```js
 new Date(2000, 0, 1);   // January 1st, 2000
