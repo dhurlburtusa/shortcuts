@@ -1,5 +1,8 @@
 # React Cheat Sheet
 
+See https://facebook.github.io/react/ for details.
+
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
 
 ## HTML
 
