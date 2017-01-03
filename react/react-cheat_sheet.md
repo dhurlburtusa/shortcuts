@@ -4,6 +4,18 @@ See https://facebook.github.io/react/ for details.
 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
 
+
+## Ecosystem
+
+Here is a list of some other projects that work well with React.
+
+* [Flux](https://facebook.github.io/flux/)
+* [Immutable](https://facebook.github.io/immutable-js/)
+* [React Native](https://facebook.github.io/react-native/)
+* [React Router](https://github.com/reactjs/react-router)
+* [React Router Redux](https://github.com/reactjs/react-router-redux)
+* [Redux](http://redux.js.org/)
+
 ## HTML
 
 The following demonstrates what is needed to use React in the browser without needing a build process in place.  This
