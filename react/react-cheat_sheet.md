@@ -9,6 +9,7 @@ React is a declarative, efficient, and flexible JavaScript library for building 
 
 Here is a list of some other projects that work well with React.
 
+* [Flow](https://flowtype.org/)
 * [Flux](https://facebook.github.io/flux/)
 * [Immutable](https://facebook.github.io/immutable-js/)
 * [React Native](https://facebook.github.io/react-native/)
