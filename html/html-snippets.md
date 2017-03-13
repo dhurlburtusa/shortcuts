@@ -3,6 +3,9 @@
 ## Common Script Tags
 
 ```html
+    <!-- Logging API -->
+    <script src="http://codepen.io/dhurlburtusa/pen/peNdbP.js?name=Logging+API_v0_0_0"></script>
+
     <!-- Modernizr 2.8.3 -->
     <script crossorigin="anonymous" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
