@@ -10,8 +10,8 @@
 **Hardcoded Left/Right Spacing**
 ```css
 /*
- * @dependency A positioned ancestor element.  Offsets are relative to this element for an absolutely positioned block and
- *   relative to the viewport for a fixed positioned block.
+ * @dependency A positioned ancestor element.  Offsets are relative to this element for an absolutely positioned
+ *   block and relative to the viewport for a fixed positioned block.
  */
 .Block { position: absolute|fixed; left: x; right: x; }
 ```
