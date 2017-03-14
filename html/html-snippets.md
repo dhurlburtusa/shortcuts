@@ -17,6 +17,9 @@
     @dependency Normalize
     -->
     <link href="http://codepen.io/dhurlburtusa/pen/OpgBVR.css?name=base_css_v0_0_0" rel="stylesheet">
+    
+    <!-- Properties Latest -->
+    <link href="https://rawgit.com/dhurlburtusa/css-properties/master/properties.css" rel="stylesheet">
 ```
 
 
