@@ -9,7 +9,10 @@
 
 **Hardcoded Left/Right Spacing**
 ```css
+.Block { margin-left: x; margin-right: x; }
+
 /*
+ * Alternatively:
  * @dependency A positioned ancestor element.  Offsets are relative to this element for an absolutely positioned
  *   block and relative to the viewport for a fixed positioned block.
  */
