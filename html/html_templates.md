@@ -227,7 +227,10 @@ section where it should be white.
 
   <!-- Class Latest: -->
   <script src="http://codepen.io/dhurlburtusa/pen/mOopRq.js?name=Class+-+ES6_v0_0_0"></script>
-  
+
+  <!-- EventEmitter Polyfill: -->
+  <script src="http://codepen.io/dhurlburtusa/pen/pNQYXv.js?name=EventEmitter+Polyfill_v0_0_0"></script>
+
   <!-- Third-Party Libraries: -->
   
   <!-- Page Specific JavaScript: -->
