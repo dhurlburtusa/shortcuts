@@ -236,6 +236,9 @@ section where it should be white.
     <!-- Page Specific JavaScript: -->
     <script>
       (function (global) {
+
+        'use strict';
+
         // Insert your code here.
       })(this || window);
     </script>
