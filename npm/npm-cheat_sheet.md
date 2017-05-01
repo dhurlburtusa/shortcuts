@@ -2,6 +2,12 @@
 
 See http://browsenpm.org/help for another npm cheat sheet.
 
+## Initializing a Package
+
+```sh
+npm init
+```
+
 ## Listing Installed Packages
 
 **List All Global Packages**
