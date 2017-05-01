@@ -2,6 +2,21 @@
 
 See http://browsenpm.org/help for another npm cheat sheet.
 
+## Listing Installed Packages
+
+**List All Global Packages**
+
+```sh
+npm ls --global
+```
+
+**List All Local Packages**
+
+```sh
+cd project
+npm ls
+```
+
 ## package.json
 
 ### Dependencies
