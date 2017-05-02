@@ -207,7 +207,7 @@ branches.
 1. Get on the branch you want to merge into (e.g. `git checkout <branch-name>`).
 2. `git merge <incoming-branch>`
 
-It is [recommened](http://nvie.com/posts/a-successful-git-branching-model/) that the `--no-ff` option be used.
+It is [recommended](http://nvie.com/posts/a-successful-git-branching-model/) that the `--no-ff` option be used.
 
 ## History
 
