@@ -123,6 +123,12 @@ started, you will be prompted to select a folder where you want to clone the rep
 
 ## Diff
 
+See what changes have been made but not staged yet.
+
+```sh
+$ git diff
+```
+
 See what is about to be committed.
 
 ```sh
