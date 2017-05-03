@@ -145,7 +145,8 @@ git mv <source>... <destination>
 
 ## Status
 
-Get a brief summary.
+Get a brief summary.  This is useful to see a summary of the changed made.  It is recommended to run this before you
+commit your changed to make sure you have staged everything you want in your commit.
 
 ```sh
 $ git status
