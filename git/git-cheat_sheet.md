@@ -54,7 +54,9 @@ See [Appendix A: Git Quick Reference](https://git-scm.com/docs/user-manual.html#
 $ cd /path/to/my/new/codebase
 $ git init
 $ git add .
-$ git commit
+$ git commit -m "Your Message Title
+> More detail. (optional)
+> More optional detail."
 ```
 
 Eventually, you may want to push the code to a remote repository such as Github.  See the [remote](#remote) section.
