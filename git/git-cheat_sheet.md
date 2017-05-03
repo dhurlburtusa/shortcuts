@@ -156,7 +156,9 @@ $ git status
 ## Commit
 
 ```sh
-$ git commit
+$ git commit -m "Your Message Title
+> More details. (Optional)
+> More optional details."
 ```
 
 
