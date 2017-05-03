@@ -1,4 +1,5 @@
 // See https://docs.npmjs.com/files/package.json.
+```js
 {
   /**
    * The name of your npm package.  Required.  < 214 chars.  Can't start with a dot or an underscore.  No uppercase
@@ -267,3 +268,4 @@
     "package-name": "version-expression or url"
   }
 }
+```
