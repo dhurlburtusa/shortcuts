@@ -15,7 +15,7 @@ See http://www.typescriptlang.org/docs/handbook/basic-types.html for details.
 | `undefined`   | `undefined`     |
 | `Array`       | `<type>[]`, e.g. `number[]` |
 | `Array`       | `Array<type>`, e.g. `Array<number>` |
-| Tuple         | `[<type>, ...]`, e.g. `[<number>, <string>]` |
+| Tuple         | `[<type>, ...]`, e.g. `[number, string]` |
 | Any           | `any`           |
 | Never         | `never`         |
 
