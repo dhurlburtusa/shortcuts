@@ -22,6 +22,15 @@ foo, bar, baz, qux, quux, corge, grault, garply, waldo, fred, plugh, xyzzy, thud
 See [List_of_Unicode_Characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters) for a larger list including
 the character's unicode code-point, HTML entity, etc.
 
+See [Alt Codes](https://usefulshortcuts.com/alt-codes) for instructions and list of Alt Codes.
+
+### Common Symbols
+
+| Char | Code   | Decimal     | HTML         | Alt Code |
+| ---- | ------ | ----------- | ------------ | -------- |
+| ©    | U+00A9 | &amp;#169;  | &amp;copy;   | 0169     |
+| ™    | U+2122 | &amp;#8482; | &amp;trade;  | 0153     |
+
 ### Common Accented
 
 | Char | Code   | Decimal    | HTML         |
