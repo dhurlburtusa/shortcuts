@@ -28,6 +28,10 @@ See [Alt Codes](https://usefulshortcuts.com/alt-codes) for instructions and list
 
 | Char | Code   | Decimal     | HTML         | Alt Code |
 | ---- | ------ | ----------- | ------------ | -------- |
+| ¿    | U+00BF | &amp;#191;  | &amp;iquest; | 168      |
+| ½    | U+00BD | &amp;#189;  | &amp;frac12; | 171      |
+| ¼    | U+00BC | &amp;#188;  | &amp;frac14; | 172      |
+| ¡    | U+00A1 | &amp;#161;  | &amp;iexcl;  | 173      |
 | ©    | U+00A9 | &amp;#169;  | &amp;copy;   | 0169     |
 | ™    | U+2122 | &amp;#8482; | &amp;trade;  | 0153     |
 
