@@ -7,8 +7,10 @@
   - Empty
   - Non-empty
 * Booleans
-  - false
-  - true
+  - False
+    + `false`
+  - True
+    + `true`
 * Dates
   - Specific
   - Now
@@ -17,13 +19,18 @@
 * Errors/Exceptions
 * Functions
 * Function Arguments
-  - arguments
+  - `arguments`
 * Numbers
   - Negative
   - Zero
   - Positive
   - Infinity
-  - NaN
+    + `Infinity`
+    + `Number.NEGATIVE_INFINITY`
+    + `Number.POSITIVE_INFINITY`
+  - `Number.MAX_VALUE`
+  - `Number.MIN_VALUE`
+  - `NaN`
 * Objects
   - Empty
   - Non-empty
@@ -32,7 +39,7 @@
   - Empty
   - Non-empty
 * Nulls
-  - nil
-  - None
-  - null
-  - undefined
+  - `nil`
+  - `None`
+  - `null`
+  - `undefined`
