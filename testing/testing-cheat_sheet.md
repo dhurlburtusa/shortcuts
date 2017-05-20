@@ -6,7 +6,7 @@
 * Arrays
   - Empty
   - Non-empty
-* Boolean
+* Booleans
   - false
   - true
 * Dates
@@ -14,6 +14,10 @@
   - Now
   - Past
   - Future
+* Errors/Exceptions
+* Functions
+* Function Arguments
+  - arguments
 * Numbers
   - Negative
   - Zero
@@ -23,10 +27,11 @@
 * Objects
   - Empty
   - Non-empty
+* Regular Expressions
 * Strings
   - Empty
   - Non-empty
-* Null
+* Nulls
   - nil
   - None
   - null
