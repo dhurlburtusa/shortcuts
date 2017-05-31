@@ -21,15 +21,15 @@
 * Function Arguments
   - `arguments`
 * Numbers
-  - Negative
-  - Zero
   - Positive
+  - Zero
+  - Negative
+  - `Number.MAX_VALUE`
+  - `Number.MIN_VALUE`
   - Infinity
     + `Infinity`
     + `Number.NEGATIVE_INFINITY`
     + `Number.POSITIVE_INFINITY`
-  - `Number.MAX_VALUE`
-  - `Number.MIN_VALUE`
   - `NaN`
 * Objects
   - Empty
