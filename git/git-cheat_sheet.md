@@ -162,6 +162,21 @@ $ git commit -m "Your Message Title
 ```
 
 
+## Undo
+
+To undo your last commit that hasn't been pushed, while maintaining your working copy changes:
+
+```sh
+$ git reset HEAD~
+```
+
+If you also want to clear your working copy changes:
+
+```sh
+$ git reset --hard HEAD~
+```
+
+
 ## Branches
 
 List branches:
