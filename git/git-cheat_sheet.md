@@ -164,7 +164,14 @@ $ git commit -m "Your Message Title
 
 ## Undo
 
-To undo your last commit that hasn't been pushed, while maintaining your working copy changes:
+To undo your last commit that hasn't been pushed, while maintaining your working copy changes and keeping current
+files staged:
+
+```sh
+$ git reset --soft HEAD~
+```
+
+If you also want to unstage all the files (working copy changes remain untouched):
 
 ```sh
 $ git reset HEAD~
