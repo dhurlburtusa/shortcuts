@@ -294,6 +294,21 @@ Create annotated tag with a message:
 $ git tag -a [-m <msg>] <tagname>
 ```
 
+Rename a tag:
+
+```sh
+$ git tag new old
+$ git tag -d old
+$ git push origin :refs/tags/old
+$ git push --tags
+```
+
+and if applicable, have others run:
+
+```sh
+$ git pull --prune --tags
+```
+
 
 ## Push
 
