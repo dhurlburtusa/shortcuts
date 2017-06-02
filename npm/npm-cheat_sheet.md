@@ -71,6 +71,15 @@ If run in a git repo, it will also create a version commit and tag.  Use the `--
 this behavior.
 
 
+## README
+
+The README file of your NPM project will be displayed on the NPM project page (e.g., https://www.npmjs.com/package/qc-to_int).
+However, the widest the code segments can be without needing to scroll horizontally only allows up to 71 characters, fewer on
+smaller devices.  Therefore, it is recommended to keep the lines in the code segments to 71 characters or fewer.
+
+In non-code segments, you will be able to have more characters in constructs like paragraphs that will wrap in HTML.
+
+
 ## Publishing
 
 ```sh
