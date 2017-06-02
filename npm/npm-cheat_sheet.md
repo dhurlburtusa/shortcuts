@@ -2,11 +2,13 @@
 
 See http://browsenpm.org/help for another npm cheat sheet.
 
+
 ## Initializing a Package
 
 ```sh
 npm init
 ```
+
 
 ## Listing Installed Packages
 
@@ -22,6 +24,7 @@ npm ls --global
 cd project
 npm ls
 ```
+
 
 ## package.json
 
@@ -55,6 +58,7 @@ Example from package.json:
 
     "qc-util": "file://C:\\repos\\npm\\qc-util"
 
+
 ## Versioning
 
 See https://docs.npmjs.com/cli/version.
@@ -65,6 +69,7 @@ npm version [<newversion> | major | minor | patch | premajor | preminor | prepat
 
 If run in a git repo, it will also create a version commit and tag.  Use the `--no-git-tag-version` option to disable
 this behavior.
+
 
 ## Publishing
 
