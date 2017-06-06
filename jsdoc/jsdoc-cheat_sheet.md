@@ -1,5 +1,16 @@
 # JSDoc Cheat Sheet
 
+
+## Namepaths
+
+myValue
+myFunction
+MyConstructor
+MyConstructor#instanceMember
+MyConstructor.staticMember
+MyConstructor~innerMember
+
+
 ## Types
 
 ### Common Types
