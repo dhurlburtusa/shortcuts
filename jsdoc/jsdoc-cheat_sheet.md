@@ -11,6 +11,11 @@ MyConstructor.staticMember
 MyConstructor~innerMember
 
 
+## Tags
+
+Use @returns instead of @return.
+
+
 ## Types
 
 ### Common Types
