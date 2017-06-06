@@ -43,3 +43,36 @@
   - `None`
   - `null`
   - `undefined`
+
+### Sample of JavaScript Test Values
+
+let test_values = [
+  [],
+  ['not empty'],
+  true,
+  false,
+  new Date(),
+  new Error('Help!'),
+  function () {},
+  arguments,
+  Infinity,
+  Number.POSITIVE_INFINITY,
+  Number.MAX_VALUE,
+  1,
+  0,
+  -1,
+  Number.MIN_VALUE,
+  Number.NEGATIVE_INFINITY,
+  NaN,
+  Number.NaN,
+  {},
+  { prop: 'not empty', },
+  /regexp/,
+  '',
+  'Infinity',
+  '-Infinity',
+  'NaN',
+  'not empty',
+  null,
+  undefined,
+];
