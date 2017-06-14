@@ -9,8 +9,9 @@ See [crontab(1)][man1crontab] and [crontab(5)][man5crontab] for details.
 ### Configuration
 
 The configuration of `cron` is done in what are known as crontabs or cron
-tables, which are plaintext files in a particular format.  The `crontab`
-command is used to create and/or update these crontabs.
+tables, which are plaintext files in a particular format.  Although the
+crontabs are plaintext files, it is __strongly__ recommended that you use
+the `crontab` to create and/or update them.
 
 #### Format
 
