@@ -18,12 +18,12 @@ the `crontab` to create and/or update them.
 Each crontab can have three types of lines: 1) comments 2) environment setting
 or 3) cron command.  Blank lines and leading spaces and tabs are ignored.
 
-**Comments**
+**Comment Lines**
 
 Lines whose first non-space character is a hash-sign (#) are comments, and
 they are ignored.
 
-**Environment Settings**
+**Environment Setting Lines**
 
 The crontab file is parsed from top to bottom, so any environment settings
 will affect only the cron commands below them in the file.  An environment
@@ -37,7 +37,7 @@ value string may be placed in quotes (single or double, but matching) to
 preserve leading or trailing blanks.  To define an empty variable, quotes must
 be used.
 
-**cron Commands**
+**cron Command Lines**
 
 Each line has five time and date fields, followed by a command.  The fields
 may be separated by spaces or tabs.
