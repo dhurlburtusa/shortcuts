@@ -18,3 +18,13 @@ Here is some information about apps related to eHost.
 * phpBB
 * PrestaShop
 * WordPress
+
+### Some Available Commands
+
+* git
+* mysql
+* php
+* python
+* python3
+* rails
+* ruby
