@@ -6,6 +6,26 @@ See [Intro to cron][unixgeeks_cron] and [man 8 cron][man8cron] for details.
 
 See [crontab(1)][man1crontab] and [crontab(5)][man5crontab] for details.
 
+### Common Uses
+
+**Create/Update Current User's crontab**
+
+```sh
+$ crontab -e
+```
+
+**List Current User's crontab**
+
+```sh
+$ crontab -l
+```
+
+**Making a Backup of Current User's crontab**
+
+```sh
+$ crontab -l > file
+```
+
 ### Configuration
 
 The configuration of `cron` is done in what are known as crontabs or cron
