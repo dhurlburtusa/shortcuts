@@ -1,11 +1,11 @@
 # eHost Cheat Sheet
 
 
-## Apps
+## Features
 
 Here is some information about apps related to eHost.
 
-### Available
+### Available Apps
 
 * B2Evolution
 * Concrete5
