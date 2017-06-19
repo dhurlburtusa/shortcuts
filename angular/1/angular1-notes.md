@@ -232,3 +232,33 @@ use
   <span>{{ ::item.name }}</span>
 </li>
 ```
+
+**Why ng-include Should be Avoided**
+
+* Has a significant performance hit
+* Replace usages with real components
+
+**Use ng-change Instead of $watch**
+
+**ng-change benefits**
+
+* Only triggers for changes made __by the user__
+* Expresses intent more clearly
+* Easier to trace
+* More performant; saves on watches
+
+Instead of
+
+```html
+<input ng-model="$ctrl.show.name" ...>
+```
+
+```js
+$scope.$watch(() => show.name, nameChanged);
+```
+
+use
+
+```html
+<input ng-model="$ctrl.show.name" ng-change="$ctrl.nameChanged()" ...>
+```
