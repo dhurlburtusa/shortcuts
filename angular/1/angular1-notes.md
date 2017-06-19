@@ -1,5 +1,6 @@
 # Angular 1 Notes
 
+See https://angularjs.org/ for details about AngularJS 1.
 
 ## From Lynda.com's Learning AngularJS 1
 
