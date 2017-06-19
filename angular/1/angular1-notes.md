@@ -182,4 +182,19 @@ var ... = angular.module('...', [
 
 ## From Lynda.com's AngularJS 1.x Tips and Tricks
 
+### Performance
+
+**ng-if vs ng-show**
+
+```html
+<div ng-show="$ctrl.enabled">...</div>
+<!-- vs -->
+<div ng-if="$ctrl.enabled">...</div>
+```
+
+| Action                                   | ng-show/ng-hide | ng-if |
+| ---------------------------------------- | --------------- | ----- |
+| Renders element when false               | true            | false |
+| Adds/removes `display: none`             | true            | false |
+| Re-initialize components when displaying | false           | true  |
 
