@@ -179,3 +179,7 @@ var ... = angular.module('...', [
   ...
 }
 ```
+
+## From Lynda.com's AngularJS 1.x Tips and Tricks
+
+
