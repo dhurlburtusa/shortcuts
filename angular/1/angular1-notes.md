@@ -211,3 +211,24 @@ track by a unique value
 ```html
 <li ng-repeat="item in $ctrl.items track by item.id">
 ```
+
+**One-time Binding**
+
+Use the double colon prefix (`::`) to tell Angular to only evalute the
+expression once instead of creating a watcher for each expression.
+
+Instead of
+
+```html
+<li ng-repeat="item in $ctrl.items">
+  <span>{{ item.name }}</span>
+</li>
+```
+
+use
+
+```html
+<li ng-repeat="item in $ctrl.items">
+  <span>{{ ::item.name }}</span>
+</li>
+```
