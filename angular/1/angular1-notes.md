@@ -86,3 +86,56 @@ myApp.controller('MyController', ['$scope', ..., function MyController($scope, .
 ```html
   {{ item.name | uppercase }}
 ```
+
+### Routing
+
+**index.html**
+
+```html
+...
+    <script src="angular-route.js"></script>
+...
+    <div ng-view></div>
+```
+
+**app.js**
+
+```js
+var myApp = angular.module('myApp', [
+  'ngRoute',
+  'myControllers',
+  ...
+]);
+
+myApp.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider.
+    when('/list', {
+      controller: 'ListController',
+      templateUrl: 'partials/list.htm'
+    }).
+    when('/details/:id', {
+      controller: 'DetailsController',
+      templateUrl: 'partials/details.htm'
+    }).
+    ...
+    otherwise({
+      redirectTo: '/list'
+    });
+}]);
+```
+
+**controllers.js**
+
+```js
+var myControllers = angular.module('myControllers', []);
+
+myControllers.controller('ListController', [..., function (...) {
+  ...
+});
+
+myControllers.controller('DetailsController', ['$routeParams', ..., function ($routeParams, ...) {
+  ...
+  // Do something with `$routeParams.id`
+  ...
+});
+```
