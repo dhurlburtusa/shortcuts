@@ -35,3 +35,4 @@ for details.
   - Routes
   - Controllers
   
+Angular uses an MV* (MV star) or an MVW (MV whatever) architecture.
