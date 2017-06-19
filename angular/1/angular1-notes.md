@@ -47,7 +47,7 @@ Angular uses an MV* (MV star) or an MVW (MV whatever) architecture.
 ```js
 var myApp = angular.module('myApp', []);
 
-myApp.controller('MyController', function MyController($scope) {
+myApp.controller('MyController', ['$scope', ...], function MyController($scope, ...) {
   // ...
 });
 ```
