@@ -36,3 +36,29 @@ for details.
   - Controllers
   
 Angular uses an MV* (MV star) or an MVW (MV whatever) architecture.
+
+
+### Controllers
+
+**js/controllers.js**
+
+```js
+var myApp = angular.module('myApp', []);
+
+myApp.controller('MyController', function MyController($scope) {
+  // ...
+});
+```
+
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>...</head>
+  <body>
+    <div ng-controller="MyController">
+    </div>
+  </body>
+</html>
+```
