@@ -262,3 +262,9 @@ use
 ```html
 <input ng-model="$ctrl.show.name" ng-change="$ctrl.nameChanged()" ...>
 ```
+
+
+## From Lynda.com's AngularJS 1: Adding Registration to your Application
+
+See https://www.lynda.com/Angular-tutorials/Working-AngularJS-validation/560052/571705-4.html
+for details.
