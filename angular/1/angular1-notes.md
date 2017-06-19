@@ -198,3 +198,16 @@ var ... = angular.module('...', [
 | Adds/removes `display: none`             | true            | false |
 | Re-initialize components when displaying | false           | true  |
 
+**Speed up ng-repeat with track by**
+
+Instead of
+
+```html
+<li ng-repeat="item in $ctrl.items">
+```
+
+track by a unique value
+
+```html
+<li ng-repeat="item in $ctrl.items track by item.id">
+```
