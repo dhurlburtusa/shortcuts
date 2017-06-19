@@ -80,3 +80,9 @@ myApp.controller('MyController', ['$scope', ..., function MyController($scope, .
 ```html
   <img ng-src="images/{{ item.url_thumbnail }}" .../>
 ```
+
+### Filters
+
+```html
+  {{ item.name | uppercase }}
+```
