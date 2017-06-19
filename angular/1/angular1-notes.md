@@ -268,3 +268,36 @@ use
 
 See https://www.lynda.com/Angular-tutorials/Working-AngularJS-validation/560052/571705-4.html
 for details.
+
+### Validation
+
+See https://www.lynda.com/AngularJS-tutorials/AngularJS-Form-Validation/438886-2.html
+for details.
+
+Add `novalidate` to `form` tags like so.
+
+```html
+<form ... novalidate>...</form>
+```
+
+**Attributes**
+
+* ng-required
+* ng-minlength
+* ng-maxlength
+* ng-pattern
+
+**Properties/Classes**
+
+| Property  | Class               | Description           |
+| --------- | ------------------- | --------------------- |
+| $pristine | ng-pristine         | Hasn't been used.     |
+| $dirty    | ng-dirty            | Has been used.        |
+| $touched  | ng-touched          | Has been blurred.     |
+|           | ng-untouched        | Has been blurred.     |
+| $valid    | ng-valid            | Element is valid.     |
+|           | ng-valid-parse      |  |
+|           | ng-valid-required   |  |
+| $invalid  | ng-invalid          | Element is not valid. |
+|           | ng-invalid-required |  |
+
