@@ -62,3 +62,13 @@ myApp.controller('MyController', function MyController($scope) {
   </body>
 </html>
 ```
+
+### ngRepeat Directive
+
+```html
+  <ul>
+    <li ng-repeat="item in list">
+      {{ item.name }}
+    </li>
+  </ul>
+```
