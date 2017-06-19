@@ -139,3 +139,43 @@ myControllers.controller('DetailsController', ['$routeParams', ..., function ($r
   ...
 });
 ```
+
+### Animation
+
+**index.html**
+
+```html
+...
+    <script src="angular-animate.js"></script>
+...
+```
+
+**app.js | controllers.js**
+
+var ... = angular.module('...', [
+  'ngAnimate',
+  ...
+]);
+
+**index.html | partials/*.htm**
+
+```html
+...
+  <li class="thing" ng-animate="'animate'" ...>
+  </li>
+...
+```
+
+**CSS**
+
+```css
+.thing.ng-enter.ng-enter-active,
+.thing.ng-leave {
+  ...
+}
+
+.thing.ng-leave.ng-leave-active,
+.thing.ng-enter {
+  ...
+}
+```
