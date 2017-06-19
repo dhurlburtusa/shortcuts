@@ -72,3 +72,9 @@ myApp.controller('MyController', function MyController($scope) {
     </li>
   </ul>
 ```
+
+### ngSrc Directive
+
+```html
+  <img ng-src="images/{{ item.url_thumbnail }}" .../>
+```
