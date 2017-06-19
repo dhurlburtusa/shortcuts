@@ -30,9 +30,11 @@ for details.
   - Directives
     + Basically, commands that start with "ng-"
   - Data binding
+  - Dependency Injection
   - Filters
   - Modules
   - Routes
+  - Services
   - Controllers
   
 Angular uses an MV* (MV star) or an MVW (MV whatever) architecture.
