@@ -294,7 +294,7 @@ Add `novalidate` to `form` tags like so.
 | $pristine | ng-pristine         | Hasn't been used.     |
 | $dirty    | ng-dirty            | Has been used.        |
 | $touched  | ng-touched          | Has been blurred.     |
-|           | ng-untouched        | Has been blurred.     |
+|           | ng-untouched        | Has not been blurred. |
 | $valid    | ng-valid            | Element is valid.     |
 |           | ng-valid-parse      |  |
 |           | ng-valid-required   |  |
