@@ -28,3 +28,16 @@ Here is some information about apps related to eHost.
 * python3 (3.2.3)
 * rails (2.3.18)
 * ruby (1.8.7)
+
+
+## Support
+
+### Links
+
+Here are some useful links for eHost support.  Some, like the "employees" one, don't
+appear to have a direct link anywhere.
+
+* http://support.ehost.com/categories/cpanel
+* http://support.ehost.com/categories/employees/
+* http://support.ehost.com/categories/hosting-guide/
+* http://support.ehost.com/categories/specialized-help/
