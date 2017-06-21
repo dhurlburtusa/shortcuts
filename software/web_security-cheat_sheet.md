@@ -37,3 +37,13 @@ Security follows a very basic formula:
 * Legacy code is a security concern
 * Built-in functions are often better than your own versions
 * Disable or remove unused features when possible
+
+### Never Trust Users
+
+Never trust the data coming from users.  Even well-meaning users can send
+incompatible data.
+
+_Always_ sanitize and validate data coming from the user.
+
+Note: Data coming from the database may have originated from the user and is
+therefore a candidate for sanitation.
