@@ -54,3 +54,27 @@ therefore a candidate for sanitation.
 * Prevent the crime before it happens
 * Ask, "What are all the things a user could try on this page?"
 * Consider edge cases
+
+### Defence in Depth
+
+* Layered defences
+* Originally a military term
+  + Slowing the advance of an attacker
+  + Attacks lose momentum
+* Redundant security
+* Areas to Focus On
+  + People
+    - Security Policy
+    - Education
+    - Getting them to follow best practices
+    - Assigning responsibilities
+  + Technology
+    - Hardware, software, acquisition and maintenance, the system administration, as
+      well as the programming that you do.
+    - Firewalls, intrusion detection, encryption to protect the data while it's in
+      transit, access controls, etc.
+  + Operations
+    - Periodic security reviews
+    - Data handling procedures
+    - Monitoring responsibilities
+    - How you respond to threats
