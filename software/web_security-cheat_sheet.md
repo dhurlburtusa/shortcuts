@@ -125,3 +125,21 @@ therefore a candidate for sanitation.
 * Used to steal cookies which could contain session data.
 * Prevention
   - Sanitize any user controlled text that gets output to browser
+
+### Cross-site Request Forgery (CSRF)
+
+* Hacker trick users into making a request to your server
+* Can be used for fraudulent clicks
+* Can take advantage of a user's logged in state
+* Prevention
+  + GET requests should be idempotent
+    - Makes no changes
+    - Can be called repeatedly without side-effects
+  + Only use POST requests for making changes
+  + Use a "form token"
+    - Store token in user's session
+    - Add a hidden form field with form token as value
+    - Compare session form token and submitted form token
+    - Improvements
+      * Store token generation time in user's session
+      * Check if too much time has passed
