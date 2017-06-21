@@ -4,6 +4,7 @@ Security follows a very basic formula:
 
     Awareness + Protection = Security
 
+Security is only as strong as the weakest link.
 
 ## Fundamental Principles
 
