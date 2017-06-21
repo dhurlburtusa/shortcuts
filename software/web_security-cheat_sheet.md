@@ -143,3 +143,30 @@ therefore a candidate for sanitation.
     - Improvements
       * Store token generation time in user's session
       * Check if too much time has passed
+
+### SQL Injection
+
+**Examples of Data Used**
+
+    foo' OR 1 = 1; --
+    q' OR 1=(SELECT COUNT(*) FROM tblAdminLogins); --
+    q' UNION SELECT username, password FROM users; --
+    q'; DROP TABLE customers; --
+    q'; UPDATE users SET admin=1 WHERE username='hacker'; --
+    q'; INSERT INTO orders (customer_id, product_id, 2906, 567, 995.0); --
+
+* Hacker is able to execute arbitrary SQL requests
+* Can be used to probe database schema
+  - Trial and error looking for valid SQL
+* Can be used to steal database data
+  - Usernames, passwords, credit cards, encrypted data
+* Can be used to add or change database data
+  - Place orders
+  - Assign elevated privileges
+* Can be used to destroy database data
+  - Truncate or drop tables
+* Prevention
+  - Give limited privileges to application's database user
+  - Sanitize input
+  - Escape for SQL
+  - Prepared statements
