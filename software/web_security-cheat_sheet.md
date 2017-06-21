@@ -102,3 +102,18 @@ therefore a candidate for sanitation.
 * Limit exposed information
 * Limit feedback
 * Obscurity **does not** mean misdirection
+
+
+## Common Attacks
+
+* Cross-site Scripting (XSS)
+* Cross-site Request Forgery (CSRF)
+* SQL Injection
+* URL Manipulation
+* Faked Requests and Forms
+* Cookie Visibility and Theft
+* Session Hijacking
+* Session Fixation
+* Remote System Execution
+* File-Upload Abuse
+* Denial of Service
