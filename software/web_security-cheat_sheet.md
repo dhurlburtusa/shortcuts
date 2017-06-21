@@ -11,8 +11,8 @@ Security is only as strong as the weakest link.
 
 * Should match your needs and goals. No need for a high security vault to
   protect a 100 dollar bill but may need one to protect $100,000,000.
-  - Are you a big target?
-  - Are there many who would want to exploit your vulnerabilities.
+  + Are you a big target?
+  + Are there many who would want to exploit your vulnerabilities.
 * Execute the security you need really well
 * Re-evalute periodically
   + Review all technology in use (hardware, software)
@@ -39,10 +39,10 @@ Security is only as strong as the weakest link.
 **Benefits**
 
 * Code stability
-  - Controlled data access
-  - Easier to test actions and interactions
+  + Controlled data access
+  + Easier to test actions and interactions
 * System security
-  - Vulnerabilities are limited and localized
+  + Vulnerabilities are limited and localized
 
 ### Simple is more Secure
 
@@ -124,7 +124,7 @@ therefore a candidate for sanitation.
 * Used to trick users into running JavaScript code
 * Used to steal cookies which could contain session data.
 * Prevention
-  - Sanitize any user controlled text that gets output to browser
+  + Sanitize any user controlled text that gets output to browser
 
 ### Cross-site Request Forgery (CSRF)
 
@@ -157,19 +157,19 @@ therefore a candidate for sanitation.
 
 * Hacker is able to execute arbitrary SQL requests
 * Can be used to probe database schema
-  - Trial and error looking for valid SQL
+  + Trial and error looking for valid SQL
 * Can be used to steal database data
-  - Usernames, passwords, credit cards, encrypted data
+  + Usernames, passwords, credit cards, encrypted data
 * Can be used to add or change database data
-  - Place orders
-  - Assign elevated privileges
+  + Place orders
+  + Assign elevated privileges
 * Can be used to destroy database data
-  - Truncate or drop tables
+  + Truncate or drop tables
 * Prevention
-  - Give limited privileges to application's database user
-  - Sanitize input
-  - Escape for SQL
-  - Prepared statements
+  + Give limited privileges to application's database user
+  + Sanitize input
+  + Escape for SQL
+  + Prepared statements
 
 ### URL Manipulation
 
