@@ -47,3 +47,10 @@ _Always_ sanitize and validate data coming from the user.
 
 Note: Data coming from the database may have originated from the user and is
 therefore a candidate for sanitation.
+
+### Expect the Unexpected
+
+* Security is not reactive
+* Prevent the crime before it happens
+* Ask, "What are all the things a user could try on this page?"
+* Consider edge cases
