@@ -170,3 +170,16 @@ therefore a candidate for sanitation.
   - Sanitize input
   - Escape for SQL
   - Prepared statements
+
+### URL Manipulation
+
+* Editing the URL string to probe the site
+* Can be used for revealing private information
+* Can be used for performing restricted actions
+* Prevention
+  + First, realize that URLs are exposed and editable
+  + Don't use obscurity for access control
+  + Keep error messages vague
+  + Clarify GET and POST requests
+    - GET requests should be idempotent (no changes)
+    - POST requests should be used for making changes
