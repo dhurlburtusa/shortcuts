@@ -26,3 +26,14 @@ Security follows a very basic formula:
   - Easier to test actions and interactions
 * System security
   - Vulnerabilities are limited and localized
+
+### Simple is more Secure
+
+* Complexity invites bugs
+* Use clearly named functions and variables
+* Write code comments
+* Break up long sections of code into small functions
+* Don't repeat yourself
+* Legacy code is a security concern
+* Built-in functions are often better than your own versions
+* Disable or remove unused features when possible
