@@ -117,3 +117,11 @@ therefore a candidate for sanitation.
 * Remote System Execution
 * File-Upload Abuse
 * Denial of Service
+
+### Cross-site Scripting (XSS)
+
+* Hacker can inject JavaScript into a web page
+* Used to trick users into running JavaScript code
+* Used to steal cookies which could contain session data.
+* Prevention
+  - Sanitize any user controlled text that gets output to browser
