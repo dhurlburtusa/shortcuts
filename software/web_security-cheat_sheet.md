@@ -6,6 +6,22 @@ Security follows a very basic formula:
 
 Security is only as strong as the weakest link.
 
+
+## How much security?
+
+* Should match your needs and goals. No need for a high security vault to
+  protect a 100 dollar bill but may need one to protect $100,000,000.
+  - Are you a big target?
+  - Are there many who would want to exploit your vulnerabilities.
+* Execute the security you need really well
+* Re-evalute periodically
+  + Review all technology in use (hardware, software)
+  + Review code in use and still in development
+  + Review procedures
+  + Review access privileges
+  + Educate and re-educate
+
+
 ## Fundamental Principles
 
 * Least privilege
