@@ -78,3 +78,10 @@ therefore a candidate for sanitation.
     - Data handling procedures
     - Monitoring responsibilities
     - How you respond to threats
+
+### Security through Obscurity
+
+* More information benefits hackers
+* Limit exposed information
+* Limit feedback
+* Obscurity **does not** mean misdirection
