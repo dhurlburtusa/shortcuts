@@ -64,3 +64,11 @@ countless times where I increased the indentation of some code but also had to
 edit the associated comment because it now exceeded the strict character
 limit.  But by starting the line-wrapping count at a point that is indentation
 agnostic, I no longer run into this problem.
+
+
+## Sentence Spacing
+
+I use either a single space or two spaces.  Which I use depends on the
+context.  In code, I use two spaces.  In WYSWYG editors such as MS Word, an
+email client with formatting options (like TinyMCE), etc, I try to use a
+single space but I am still in the habit of doing two spaces.
