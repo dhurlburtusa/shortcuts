@@ -118,10 +118,9 @@ Restricted by default is more secure.
 
 ## Best Practices
 
-### Misc
+### Passwords
 
 * Require strong passwords
-* Validate input
 * Keep Credentials Private
   + Hashed passwords
   + Public-key cryptography
@@ -129,10 +128,6 @@ Restricted by default is more secure.
     - SSH keys
     - SSH agent, Keychain
     - SSH agent forwarding
-* Session Fixation Solutions
-  + Do not accept session identifiers from GET or POST variables.
-  + Regenerate session identifier periodically, at key points.  Especially
-    important to regenerate after log in.
 * Hashing Algorithms for Passwords
   + MD5
   + SHA-1
@@ -142,6 +137,14 @@ Restricted by default is more secure.
   + AES
   + Blowfish
     - Secure, free, easy, slow
+
+### Misc
+
+* Validate input
+* Session Fixation Solutions
+  + Do not accept session identifiers from GET or POST variables.
+  + Regenerate session identifier periodically, at key points.  Especially
+    important to regenerate after log in.
 * Credit Card Payments
   + Transmit all payment info over SSL
   + Never store full credit card number
