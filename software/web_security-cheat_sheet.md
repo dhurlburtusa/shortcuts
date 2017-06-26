@@ -275,3 +275,22 @@ Restricted by default is more secure.
   + Set cookie domain and path
   + Encrypt cookie data
   + Use server-side sessions instead of client-side cookies
+
+### Session Hijacking
+
+* Similar to cookie theft
+* Can be used to assume your identity and logged in status
+* Can be used to steal personal info, change password
+* Often done by network eavesdropping
+  + Beware of open wireless networks at coffee shops
+* Protection
+  + Save user agent in session and confirm it (weak)
+  + Check IP address (buggy)
+  + Use HttpOnly cookies
+    - Can't be stolen via XSS
+  + Regenerate session identifier periodically, at key points
+    - Especially important to regenerate after log in.
+  + Expire/remove old session files regularly
+    - keep track of last activity in session
+  + Use SSL
+  + Use Secure cookies
