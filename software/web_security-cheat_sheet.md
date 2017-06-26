@@ -291,6 +291,19 @@ Restricted by default is more secure.
   + Regenerate session identifier periodically, at key points
     - Especially important to regenerate after log in.
   + Expire/remove old session files regularly
-    - keep track of last activity in session
+    - Keep track of last activity in session
   + Use SSL
   + Use Secure cookies
+
+### Session Fixation
+
+* Trick a user into using a hacker-provided session identifier
+* Can be used to assume your identity and logged in status
+* Can be used to steal personal info, change password
+* Successful if user authenticates a known session identifier
+* Prevention
+  + Do not accept session identifiers from GET or POST variables
+  + Regenerate session identifier periodically, at key points
+    - Especially important to regenerate after log in.
+  + Expire/remove old session files regularly
+    - Keep track of last activity in session
