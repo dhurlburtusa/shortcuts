@@ -89,6 +89,12 @@ as of 2017-06-22:
 * mod_version.c
 
 
+## Setting Up SSH
+
+* hostname: e19.ehosts.com
+* port: 2222
+
+
 ## Support
 
 ### Links
