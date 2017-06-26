@@ -118,6 +118,8 @@ Restricted by default is more secure.
 
 ## Best Practices
 
+### Misc
+
 * Require strong passwords
 * Validate input
 * Keep Credentials Private
