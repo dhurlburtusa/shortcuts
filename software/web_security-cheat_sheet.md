@@ -120,23 +120,75 @@ Restricted by default is more secure.
 
 ### Passwords
 
-* Require strong passwords
+* Password Requirements
+  + Require strong passwords
+    - Require length, but do not limit length
+    - Require non-alphanumeric characters
+  + Confirm password
+  + Report password strength
+  + Do not record a password hint
+  + Security questions are questionable
+    + I don't recommend them
 * Keep Credentials Private
+  + __Never__ store passwords in plain text
+    - Compromises users on your site and on other sites
   + Hashed passwords
   + Public-key cryptography
     - Public key + private key
     - SSH keys
     - SSH agent, Keychain
     - SSH agent forwarding
-* Hashing Algorithms for Passwords
-  + MD5
-  + SHA-1
-  + SHA-2 (SHA-256, SHA-512)
-  + Whirlpool
-  + Tiger
-  + AES
-  + Blowfish
-    - Secure, free, easy, slow
+* Store passwords encrypted
+  + Use a one-way hashing algorithm
+  + Hashing Algorithms for Passwords
+    - MD5 (not considered safe anymore)
+      * Due to use of rainbow tables
+        + Rainbow tables are pre-computed tables of password hashes for each hashing
+        algorithm.
+    - SHA-1
+    - SHA-2 (SHA-256, SHA-512)
+    - Whirlpool
+    - Tiger
+    - AES
+    - Blowfish (recommended)
+      * Secure, free, easy, slow
+* Salting Passwords
+  + Salt
+    - Additional data added to the password before encryption
+    - Knowing password requires also knowing the salt string
+    - Rainbow tables could be used, but they would be almost impossibly large
+  + Unique Salt
+    - Create salt using strings unique to each user
+      * E.g., "Put salt on the {$password} for {$username}"
+    - Knowing password requires knowing salt and username
+    - Rainbow tables are still impossibly large, but now each user's salt is unique
+      too
+  + Random Salt
+    - Create salt using pseudo-random string
+      * "Put salt on the {$password} at " . time()
+    - Knowing password requires knowing the random string
+    - Rainbow tables are useless, as each user's hash is almost random, almost unique
+  + Store Salt in Database
+    - When using user data for salt and user data could change
+    - When using random salt
+    - Just the salt, not the password
+    - Hash the salt so it will not be plain text
+* Handling Forgotten Passwords
+  + What proves someone's identity
+    - Privileged information (e.g, ATM card number plus PIN)
+    - Security challenge questions
+    - Customer service staff
+    - Send email with reset token
+      * User navigates to a I-forgot-my-password page
+        + They request the username that they want to reset
+        + Always respond positively
+        + Generate a unique token, store in database
+        + Store token generation time; limit time for use
+        + Email a URL that includes token
+        + URL grants access; allows setting password
+        + Nice features:
+          - Account still functions up until the reset
+          - Self-serve; does not require customer service staff
 
 ### Misc
 
