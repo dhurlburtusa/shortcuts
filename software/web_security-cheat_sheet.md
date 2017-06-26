@@ -245,3 +245,18 @@ Restricted by default is more secure.
   + Clarify GET and POST requests
     - GET requests should be idempotent (no changes)
     - POST requests should be used for making changes
+
+### Faked Requests and Forms
+
+* Request header information can be manufactured
+  + Plugins and tools for all major browsers
+  + Advanced tools for command line
+  + Can be part of a script
+* Forms can easily be manufactured by duplicating a known form
+* Prevention
+  + Do not rely on form structure for data validation
+  + Do not rely on client-side data validations
+    - Be sure to also include server-side validation
+  + Use HTTP Referer to enforce same-domain forms
+    - However, headers can be faked
+  + Use CSRF protections
