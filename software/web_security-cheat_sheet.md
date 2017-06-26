@@ -30,6 +30,7 @@ Security is only as strong as the weakest link.
 * Expect the unexpected
 * Defence in depth
 * Security through Obscurity
+* Blacklisting vs Whitelisting
 
 ### Least Privilege
 
@@ -102,6 +103,17 @@ therefore a candidate for sanitation.
 * Limit exposed information
 * Limit feedback
 * Obscurity **does not** mean misdirection
+
+### Blacklisting vs Whitelisting
+
+* Blacklisting
+  + A no-access list
+  + A reference list for what's forbidden
+* Whitelisting
+  + A reference list for what is permitted
+  + Allows restricted-by-default functionality
+
+Restricted by default is more secure.
 
 
 ## Common Attacks
