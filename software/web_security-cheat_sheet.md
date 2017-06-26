@@ -116,6 +116,56 @@ therefore a candidate for sanitation.
 Restricted by default is more secure.
 
 
+## Best Practices
+
+* Require strong passwords
+* Validate input
+* Keep Credentials Private
+  + Hashed passwords
+  + Public-key cryptography
+    - Public key + private key
+    - SSH keys
+    - SSH agent, Keychain
+    - SSH agent forwarding
+* Session Fixation Solutions
+  + Do not accept session identifiers from GET or POST variables.
+  + Regenerate session identifier periodically, at key points.  Especially
+    important to regenerate after log in.
+* Hashing Algorithms for Passwords
+  + MD5
+  + SHA-1
+  + SHA-2 (SHA-256, SHA-512)
+  + Whirlpool
+  + Tiger
+  + AES
+  + Blowfish
+    - Secure, free, easy, slow
+* Credit Card Payments
+  + Transmit all payment info over SSL
+  + Never store full credit card number
+  + Never store security code (CVV)
+  + Store card brand and last four digits of card number
+* Database Backup Security
+  + Back up databases regulary (weekly, nightly, hourly)
+  + Protect database backups physically
+* Map Exposure Points and Data Passageways
+  + Incoming Exposure Points
+    - URLs
+    - Forms
+    - Cookies/Sessions
+    - Database reads
+    - Your public APIs
+  + Outgoing Exposure Points
+    - HTML
+    - JavaScript/JSON/XML/RSS
+    - Cookies/Sessions
+    - Database writes
+    - Third-party APIs
+  + Mapping Data Passageways
+    - What paths does data take?
+    - Helps understand site topography
+
+
 ## Common Attacks
 
 * Cross-site Scripting (XSS)
