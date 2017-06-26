@@ -260,3 +260,18 @@ Restricted by default is more secure.
   + Use HTTP Referer to enforce same-domain forms
     - However, headers can be faked
   + Use CSRF protections
+
+### Cookie Visibility and Theft
+
+* Cookie data is visible to users
+* Cookies can be stolen using XSS attacks
+* Cookies can be sniffed by observing network traffic
+* Protection
+  + Only put non-sensitive data in cookies
+  + Use HttpOnly cookies
+    - Won't be able to call `document.cookie` anymore
+  + Use Secure cookies (HTTPS only)
+  + Set cookie expiration date
+  + Set cookie domain and path
+  + Encrypt cookie data
+  + Use server-side sessions instead of client-side cookies
