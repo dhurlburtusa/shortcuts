@@ -49,3 +49,9 @@ doSomething().then(function (result) {
 })
 .catch(failureCallback);
 ```
+
+
+## Error Propagation
+
+See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#Error_propagation
+for details.
