@@ -89,6 +89,23 @@ as of 2017-06-22:
 * mod_version.c
 
 
+## Installing Django
+
+I used the directions found at https://support.ehost.com/articles/employees/django-with-fastcgi
+to help come up with the following:
+
+* Detemine the latest version of virtualenv (15.0.1 at time of writing)
+* SSH'd into server using PuTTY
+* `mkdir temp; cd temp`
+* `curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.0.1.tar.gz`
+* `gzip -cd virtualenv-15.0.1.tar.gz | tar xf -`
+* `cd virtualenv-15.0.1`
+* `python3 setup.py install --user`
+* `cd ~`
+* (To be cont'd)
+
+
+
 ## Setting Up SSH
 
 * hostname: e19.ehosts.com
