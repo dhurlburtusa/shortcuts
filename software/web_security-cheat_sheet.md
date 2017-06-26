@@ -334,3 +334,33 @@ Restricted by default is more secure.
   + Limit allowable file formats, file extensions
   + Use caution when opening uploaded files
   + Do not host uploaded files which have not been verified
+
+### Denial of Service
+
+* Attempt to make a server unavailable to users
+* Usually performed by overloading a server with too many requests
+* Includes DNS and routing disruption
+* Includes using up disk space, processor power, bandwidth
+* Attacks often performed by distributed network ("DDoS")
+* Cheap to launch, difficult to prevent
+* Usually performed by person or group with a grudge
+* Can be used as a distraction from other hacking attempts
+* Protection
+  + Firewalls
+    - Allow you to set rules about what traffic is allowed to pass onto the web
+      server
+      * You can block access to certain ports or filter out IP addresses of attackers
+  + Switches and routers
+    - Often have rate limiting and filtering features such as access control lists
+  + Load management hardware/software
+    - Could be load balancing tools
+    - Could spin up additional instances of a server in the cloud
+  + Collection of reverse proxy servers
+  + Map your infrastructure
+  + Keep infrastructure up to date
+  + Purchase high-quality hosting and equipment
+  + Make network traffic visible
+  + Develop a response plan
+  + If you're under attack
+    - Change IP address
+    - "Black hole" or "null route" traffic
