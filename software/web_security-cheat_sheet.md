@@ -307,3 +307,18 @@ Restricted by default is more secure.
     - Especially important to regenerate after log in.
   + Expire/remove old session files regularly
     - Keep track of last activity in session
+
+### Remote System Execution
+
+* Remotely run operating system commands on a webserver
+* Can be used to do anything your OS can do
+* Most powerful hack
+* Typically hardest to achieve (unless you make it easy)
+* Prevention
+  + Avoid system execution keywords
+    - system, exec, shell, sh, shell_exec, open, popen, proc_open, call,
+      subprocess, spawn, passthru, eval, %x, and ` (backtick)
+  + Perform system execution with extreme caution
+  + Sanitize any dynamic data carefully
+  + Understand the commands and their syntax completely
+  + Add additional data validations
