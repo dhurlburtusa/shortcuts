@@ -322,3 +322,15 @@ Restricted by default is more secure.
   + Sanitize any dynamic data carefully
   + Understand the commands and their syntax completely
   + Add additional data validations
+
+### File-Upload Abuse
+
+* Abuse of allowed file upload features
+* Can be used to upload too much (quantity, file size)
+* Can be used to upload malicious files
+* Protection
+  + Require user authentication, no anonymous uploads
+  + Limit maximum upload size
+  + Limit allowable file formats, file extensions
+  + Use caution when opening uploaded files
+  + Do not host uploaded files which have not been verified
