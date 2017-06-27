@@ -100,10 +100,16 @@ to help come up with the following:
 * `curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.0.1.tar.gz`
 * `gzip -cd virtualenv-15.0.1.tar.gz | tar xf -`
 * `cd virtualenv-15.0.1`
-* `python3 setup.py install --user`
+* `python2.7 setup.py install --user`
 * `cd ~`
+* `find temp -delete`
+* `~/.local/bin/virtualenv virtenv --python=python2.7`
+* `source ~/virtenv/bin/activate`
+* `~/virtenv/bin/pip install pip --upgrade`
+* `~/virtenv/bin/pip install django`
+* `~/virtenv/bin/pip install flup`
+* `chmod +x ~/virtenv/bin/django-admin.py`
 * (To be cont'd)
-
 
 
 ## Setting Up SSH
