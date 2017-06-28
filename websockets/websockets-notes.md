@@ -1,5 +1,6 @@
 # WebSockets Notes
 
+
 ## From Wikipedia
 
 See https://en.wikipedia.org/wiki/WebSocket for details.
@@ -23,3 +24,41 @@ TLS-encrypted connections), which is of benefit for those environments which
 block non-web Internet connections using a firewall.  Similar two-way browser-
 server communications have been achieved in non-standardized ways using
 stopgap technologies such as Comet.
+
+
+## From MDN
+
+WebSockets is an advanced technology that makes it possible to open an
+interactive communication session between the user's browser and a server.
+With this API, you can send messages to a server and receive event-driven
+responses without having to poll the server for a reply.
+
+```js
+const socket = new WebSocket('ws://localhost:9797');
+
+socket.addEventListener('open', function (openEvent) {
+  let socket = openEvent.target;
+  
+  socket.send('My Message');
+});
+
+socket.addEventListener('message', function (messageEvent) {
+  let socket = messageEvent.target,
+      data = socket.data;
+  
+  // Do something with data:
+});
+
+socket.addEventListener('error', function (event) {
+  let socket = event.target;
+
+  // Handle error:
+});
+
+
+socket.addEventListener('close', function (closeEvent) {
+  let socket = closeEvent.target;
+  
+  // Handle close:
+});
+```
