@@ -117,6 +117,10 @@ if (typeof WebSocket == 'function') {
     // is called with no arguments, the resulting code in the close event is 1005.
     // (This was seen in Chrome 59.)  So, I recommend being explicit with setting the
     // closing code.
+    //
+    // It may be helpful to examine the socket's `bufferedAmount` attribute before
+    // attempting to close the connection to determine if any data has yet to be
+    // transmitted on the network.
     socket.close(1000, "Done!");
   }, 10000);
 }
