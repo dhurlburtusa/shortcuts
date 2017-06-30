@@ -25,3 +25,25 @@ level of abstraction or virtualization being provided.
   - Production can be cloned for test and development environment.
 * High availability.
 * Disaster recovery.
+
+### Scaling
+
+**Scaling Out**
+
+Aka horizontal scaling, is when capacity is added to a system by adding more
+components or nodes that make up that system.
+
+**Scaling In**
+
+Aka horizontal scaling, is when capacity is removed from a system by
+decreasing the number of components or nodes.
+
+**Scaling Up**
+
+Aka vertical scaling, is when resources are added to a single component or
+node in the system in order to increase its capacity to handle load.
+
+**Scaling Down**
+
+Aka vertical scaling, is reducing the resources of a single component or node
+in the system.
