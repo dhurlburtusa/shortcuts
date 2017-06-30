@@ -256,18 +256,18 @@ NOTE: The following commands should all be run under administrator priveleges.
 NOTE: The default data directory for MongoDB is `\data\db`.
 
 ```sh
-mkdir \home\databases\mongodb\db
-mkdir \home\databases\mongodb\log
+mkdir \data\mongodb\db
+mkdir \data\mongodb\log
 ```
 
-Create a `mongod.cfg` configuration file at C:\Program Files\MongoDB\Server\3.2\ with the following contents.
+Create a `mongod.cfg` configuration file at C:\Program Files\MongoDB\Server\3.2\ with the following content.
 
 ```
 systemLog:
     destination: file
-    path: C:\home\databases\mongodb\log\mongod.log
+    path: C:\data\mongodb\log\mongod.log
 storage:
-    dbPath: C:\home\databases\mongodb\db
+    dbPath: C:\data\mongodb\db
 ```
 
 Create a service for MongoDB by running the following.
