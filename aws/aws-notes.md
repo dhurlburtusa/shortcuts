@@ -16,4 +16,12 @@ level of abstraction or virtualization being provided.
 * Minimum upfront investment.
 * Just-in-time infrastructure.
 * No long-term contracts.
-* Allows scalability.
+
+### Technical Benefits
+
+* Scriptable infrastructure.
+* Scalability.
+* Improved development lifecycle:
+  - Production can be cloned for test and development environment.
+* High availability.
+* Disaster recovery.
