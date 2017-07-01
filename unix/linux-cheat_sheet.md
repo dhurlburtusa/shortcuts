@@ -1,4 +1,4 @@
-# UNIX Cheat Sheet
+# Linux Cheat Sheet
 
 
 ## Manual Pages
