@@ -9,7 +9,7 @@ From the Linux: User and Group Management course.
 
 #### User Accounts
 
-User account details is stored in `/etc/passwd`.
+User account details are stored in `/etc/passwd`.
 
 **/etc/passwd**
 
@@ -20,7 +20,7 @@ colon-delimited columns.
 | :----: | ----------- |
 | 1      | User name.  |
 | 2      | Encoded password or an x indicating the encoded password is stored in `/etc/shadow`. |
-| 3      | User ID. 0-999 => System accounts. 1000+ => User accounts. |
+| 3      | User ID. 0-999 => System accounts. 1000+ => User accounts.  May be configured in `etc/login.defs`. |
 | 4      | Primary group ID.  See `/etc/group`. |
 | 5      | Comment field. |
 | 6      | Home directory. |
@@ -54,3 +54,29 @@ May begin with a $, hash type, and $.
 | 5            | SHA256    |
 | 6            | SHA512    |
 
+#### Groups
+
+Group details are stored in `/etc/group`.
+
+**/etc/group**
+
+The file has four colon-delimited columns.
+
+| Column | Description |
+| :----: | ----------- |
+| 1      | Group name. |
+| 2      | Encoded password or an x indicating the encoded password is stored in `/etc/gshadow`. |
+| 3      | Group ID. 0-999 => Admin. 1000+ => Non-admin.  May be configured in `etc/login.defs`. |
+| 4      | Comma separated list of user names that belong to the group. |
+
+**/etc/gshadow**
+
+Contains encoded passwords for each group.  The file has nine colon-delimited
+columns.
+
+| Column | Description |
+| :----: | ----------- |
+| 1      | Group name. |
+| 2      | Password hash.  If there's an `!` present, a user won't be able to change to this group. |
+| 3      | Comma separated list of administrators which can change the group password or members of this group. |
+| 4      | Comma separated list of users that are members of the group. |
