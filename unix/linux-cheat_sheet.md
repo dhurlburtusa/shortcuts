@@ -37,3 +37,8 @@ man -S <section> <term>
 # example
 man -S 3 string
 ```
+
+### Online
+
+Man pages are not always installed.  However, there are many online versions
+of the man pages.  I like the man pages at http://man.he.net/.
