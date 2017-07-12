@@ -101,6 +101,51 @@ ga(function (tracker) {
 });
 ```
 
+**Getting Fields**
+
+Once you have a reference to a tracker, you can use the `get` method to get field values.
+
+```js
+ga(function (tracker) {
+  let value = tracker.get('fieldname');
+});
+```
+
+**Setting/Updating Fields**
+
+Tracker objects can be updated using the `set` method.  A tracker's `set`
+method can be called on a tracker object itself or by adding a `set` command
+to the `ga()` command queue.
+
+The following examples use the command queue:
+
+```js
+ga('set', 'page', '/about');
+ga('set', 'title', 'About Us');
+// or
+ga('set', {
+  page: '/about',
+  title: 'About Us'
+});
+
+// with a named tracker:
+ga('myTracker.set', 'page', '/about');
+```
+
+The following examples use a tracker object:
+
+```js
+ga(function (tracker) {
+  tracker.set('page', '/about');
+  tracker.set('title', 'About Us');
+  // or
+  tracker.set({
+    page: '/about',
+    title: 'About Us'
+  });
+});
+```
+
 
 ## Campaign
 
