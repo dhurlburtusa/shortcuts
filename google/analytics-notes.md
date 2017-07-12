@@ -57,6 +57,8 @@ loaded, so you should only reference them inside a ready callback.
 ## Trackers
 
 Trackers collect and store data and then send that data to Google Analytics.
+The data comes in field (i.e., name/value pairs) form.  See the
+[field reference][ga-fld-ref] for applicable fields.
 
 **Creating**
 
@@ -129,5 +131,6 @@ the GA web interface.  Also, it appears it may be limited to 1500 bytes.
 
 
 [ga-cmdq-ref]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
+[ga-fld-ref]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference
 [ga-fld-cn]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName
 [ga-fld-sc]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#sessionControl
