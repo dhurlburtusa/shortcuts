@@ -147,6 +147,11 @@ ga(function (tracker) {
 ```
 
 
+## Hits
+
+Tracking of user interaction is done by sending "hits" to Google Analytics.
+
+
 ## Campaign
 
 **Fields**
