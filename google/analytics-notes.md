@@ -39,4 +39,29 @@ These snippets end up creating a global function named `ga` which is known as
 the command queue.  See the [command queue reference][ga-cmd-q] for details.
 
 
+## Trackers
+
+Trackers collect and store data and then send that data to Google Analytics.
+
+**Creating**
+
+```js
+// Syntax:
+ga('create', [trackingId], [cookieDomain], [name], [fieldsObject]);
+
+// Example:
+ga('create', 'UA-XXXXX-Y', 'example.com', 'MyTracker', {
+  allowAnchor: true, // The default
+  allowLinker: false, // The default
+  alwaysSendReferrer: false, // The default
+  cookieDomain: 'example.com', // Synonymous with 3rd param
+  cookieExpires: 63072000, // The default of 2 years
+  cookieName: '_ga', // The default
+  legacyHistoryImport: true, // The default
+  sampleRate: 95, // 95% of users. 100% is the default
+  siteSpeedSampleRate: 10, // 10% of users.  1% is the default
+});
+```
+
+
 [ga-cmd-q]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
