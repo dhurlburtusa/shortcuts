@@ -86,6 +86,12 @@ ga('send', 'pageview', { sessionControl: 'start' });
 ```
 
 
+## Misc
+
+GA tracks the document title, so be sure to pick the title you want to see in
+the GA web interface.  Also, it appears it may be limited to 1500 bytes.
+
+
 [ga-cmd-q]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
 [ga-fld-cn]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName
 [ga-fld-sc]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#sessionControl
