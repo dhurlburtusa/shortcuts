@@ -1,5 +1,8 @@
 # Google Analytics Notes
 
+See https://developers.google.com/analytics/devguides/collection/analyticsjs/
+for details.
+
 
 ## JavaScript Tracking Snippet
 
