@@ -64,4 +64,18 @@ ga('create', 'UA-XXXXX-Y', 'example.com', 'MyTracker', {
 ```
 
 
+## Sessions
+
+**Session Control**
+
+Sessions can be controlled with the `sessionControl` field.  See
+[reference][ga-fld-sc] for details.
+
+```js
+// Starts a new session.
+ga('send', 'pageview', { sessionControl: 'start' });
+```
+
+
 [ga-cmd-q]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
+[ga-fld-sc]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#sessionControl
