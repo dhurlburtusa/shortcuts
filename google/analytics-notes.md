@@ -64,6 +64,15 @@ ga('create', 'UA-XXXXX-Y', 'example.com', 'MyTracker', {
 ```
 
 
+## Campaign
+
+**Fields**
+
+There are many campaign related fields that may be set, which include the ID,
+name, source, medium, keyword, and content.  See [field reference][ga-fld-cn]
+for details.
+
+
 ## Sessions
 
 **Session Control**
@@ -78,4 +87,5 @@ ga('send', 'pageview', { sessionControl: 'start' });
 
 
 [ga-cmd-q]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
+[ga-fld-cn]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName
 [ga-fld-sc]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#sessionControl
