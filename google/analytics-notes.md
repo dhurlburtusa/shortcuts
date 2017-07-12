@@ -38,6 +38,21 @@ ga('send', 'pageview');
 These snippets end up creating a global function named `ga` which is known as
 the command queue.  See the [command queue reference][ga-cmdq-ref] for details.
 
+**Ready Callback**
+
+The ready callback is called when the `analytics.js` library is fully loaded,
+and all previous commands added to the queue have been executed.
+
+```js
+// @param {Tracker} [tracker] - The default tracker if one was created.
+ga(function (tracker) {
+  // Do something with the tracker or call methods on the ga object.
+});
+```
+
+Note: `ga` object methods are only available when `analytics.js` has fully
+loaded, so you should only reference them inside a ready callback.
+
 
 ## Trackers
 
