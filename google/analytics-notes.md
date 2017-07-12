@@ -78,6 +78,27 @@ ga('create', 'UA-XXXXX-Y', 'example.com', 'MyTracker', {
 });
 ```
 
+**Referencing**
+
+Because the creation of trackers is asynchronous, we need a way to get a
+reference to the tracker(s).  The trackers will be available when the ready
+callback has been called.
+
+```js
+// @param {Tracker} [tracker] - The default tracker if one was created.
+ga(function (tracker) {
+
+  // If multiple trackers were created, the `ga` object provides two methods
+  // to get access to the trackers.
+  
+  // Get tracker by name:
+  let myTracker = ga.getByName('MyTracker');
+  
+  // Get all trackers:
+  let trackers = ga.getAll();
+});
+```
+
 
 ## Campaign
 
