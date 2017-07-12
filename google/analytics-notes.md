@@ -36,7 +36,7 @@ ga('send', 'pageview');
 ```
 
 These snippets end up creating a global function named `ga` which is known as
-the command queue.  See the [command queue reference][ga-cmd-q] for details.
+the command queue.  See the [command queue reference][ga-cmdq-ref] for details.
 
 
 ## Trackers
@@ -92,6 +92,6 @@ GA tracks the document title, so be sure to pick the title you want to see in
 the GA web interface.  Also, it appears it may be limited to 1500 bytes.
 
 
-[ga-cmd-q]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
+[ga-cmdq-ref]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
 [ga-fld-cn]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName
 [ga-fld-sc]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#sessionControl
