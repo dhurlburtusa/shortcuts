@@ -150,6 +150,50 @@ ga(function (tracker) {
 ## Hits
 
 Tracking of user interaction is done by sending "hits" to Google Analytics.
+Here are the available types of hits: `event`, `exception`, `item`,
+`pageview`, `screenview`, `social`, `timing`, and `transaction`.
+
+Hits are made via the `send` method.
+
+The following examples use the command queue:
+
+```js
+// Syntax:
+ga('[trackerName.]send', [hitType], [...fields], [fieldsObject]);
+
+// Example:
+ga('send', 'pageview', {
+  page: '/about',
+  title: 'About Us'
+});
+// Or
+ga('send', {
+  hitType: 'pageview',
+  page: '/about',
+  title: 'About Us'
+});
+```
+
+The following examples use a tracker object:
+
+```js
+ga(function (tracker) {
+  // Syntax:
+  tracker.send([hitType], [...fields], [fieldsObject]);
+  
+  // Example:
+  tracker.send('pageview', {
+    page: '/about',
+    title: 'About Us',
+  });
+  // or
+  tracker.send('pageview', '/about', { title: 'About Us' });
+});
+```
+
+If any of the fields passed with the `send` command are already set on the
+tracker object, the values passed in the command will be used rather than the
+values stored on the tracker.
 
 
 ## Campaign
