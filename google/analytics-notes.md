@@ -230,7 +230,6 @@ form.addEventListener('submit', function (evt) {
 
 **Transport Mechanism**
 
-
 By default, `analytics.js` picks the HTTP method and transport mechanism with
 which to optimally send hits.  The three options are `'image'` (using an
 `Image` object), `'xhr'` (using an `XMLHttpRequest` object), or 'beacon' using
@@ -249,6 +248,27 @@ The following code sets the transport mechanism to 'beacon' in browsers that sup
 ```js
 // Updates the default tracker to use `navigator.sendBeacon` if available.
 ga('set', 'transport', 'beacon');
+```
+
+
+## Plugins
+
+Plugins are scripts that enhance the functionality of `analytics.js` to aid in
+measuring user interaction.
+
+**Requiring**
+
+The `require` command takes the name of a plugin and registers it for use with
+the command queue.
+
+```js
+// Syntax:
+ga('[trackerName.]require', pluginName, [pluginOptions]);
+
+// Example:
+ga('myTracker.require', 'displayfeatures', {
+  cookieName: 'display_features_cookie'
+});
 ```
 
 
