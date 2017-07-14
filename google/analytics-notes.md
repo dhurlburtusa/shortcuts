@@ -301,6 +301,14 @@ them.  The complete list of official `analytics.js` plugins can be found under
 the Offical Plugins section in the left-side navigation of the
 [guide][ga-guide].
 
+Because both the `analytics.js` library and any plugins are loaded
+asynchronously, it can be a challenge to know when plugins are fully loaded
+and ready to be used.
+
+The `analytics.js` library solves this problem by halting the execution of the
+command queue when it encounters a `require` command for a plugin that isn't
+yet loaded.  Once the plugin is loaded, queue execution continues as normal.
+
 
 ## Campaign
 
