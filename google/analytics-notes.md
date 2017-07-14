@@ -309,6 +309,34 @@ The `analytics.js` library solves this problem by halting the execution of the
 command queue when it encounters a `require` command for a plugin that isn't
 yet loaded.  Once the plugin is loaded, queue execution continues as normal.
 
+**Calling Plugin Methods**
+
+After requiring a plugin, it's methods become available for use with the
+command queue.  Here is the command signature for calling plugin methods:
+
+```js
+// Syntax:
+ga('[trackerName.][pluginName:]methodName', ...args);
+```
+
+For example, the Enhanced Ecommerce plugin's `addProduct` method can be called like this:
+
+```js
+ga('ec:addProduct', {
+  id: 'P12345',
+  quantity: 1
+});
+```
+
+Or on a named tracker by adding the tracker name to the command string:
+
+```js
+ga('myTracker.ec:addProduct', {
+  id: 'P12345',
+  quantity: 1
+});
+```
+
 
 ## Campaign
 
