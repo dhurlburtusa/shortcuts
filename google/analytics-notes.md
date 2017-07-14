@@ -228,6 +228,29 @@ form.addEventListener('submit', function (evt) {
 });
 ```
 
+**Transport Mechanism**
+
+
+By default, `analytics.js` picks the HTTP method and transport mechanism with
+which to optimally send hits.  The three options are `'image'` (using an
+`Image` object), `'xhr'` (using an `XMLHttpRequest` object), or 'beacon' using
+the new `navigator.sendBeacon` method.
+
+The former two methods have a problem where hits are often not sent if the
+page is being unloaded.  The `navigator.sendBeacon` method, by contrast, is a
+new HTML feature created to solve this problem.
+
+If your user's browser supports the `navigator.sendBeacon`, you can specify
+`'beacon'` as the transport mechanism and not have to worry about setting a
+hit callback.
+
+The following code sets the transport mechanism to 'beacon' in browsers that support it.
+
+```js
+// Updates the default tracker to use `navigator.sendBeacon` if available.
+ga('set', 'transport', 'beacon');
+```
+
 
 ## Campaign
 
