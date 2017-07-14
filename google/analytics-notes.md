@@ -195,6 +195,39 @@ If any of the fields passed with the `send` command are already set on the
 tracker object, the values passed in the command will be used rather than the
 values stored on the tracker.
 
+**Hit Callback**
+
+To be notified when a hit is done sending, you set the `hitCallback` field.
+`hitCallback` is a function that gets called with no arguments as soon as the
+hit has been successfully sent.
+
+Whenever you put critical site functionality inside the `hitCallback`
+function, you should always use a timeout function to handle cases where the
+`analytics.js` library fails to load.
+
+```js
+var form = document.getElementById('signup-form');
+
+form.addEventListener('submit', function (evt) {
+  var formSubmitted = false;
+
+  function submitForm() {
+    if (!formSubmitted) {
+      formSubmitted = true;
+      form.submit();
+    }
+  }
+
+  evt.preventDefault();
+
+  setTimeout(submitForm, 1000);
+
+  ga('send', 'event', 'Signup Form', 'submit', {
+    hitCallback: submitForm
+  });
+});
+```
+
 
 ## Campaign
 
