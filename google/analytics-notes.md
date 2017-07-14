@@ -271,6 +271,36 @@ ga('myTracker.require', 'displayfeatures', {
 });
 ```
 
+**Loading**
+
+The `require` command initializes the plugin methods for use with the command
+queue, but it does not load the plugin script itself.  If you're using a
+third-party plugin, or writing a plugin yourself, you'll need to manually add
+the plugin code to the page.
+
+The recommended method for adding plugin code to the page is via a `<script>`
+tag with the `async` attribute set to ensure it doesn't block the loading of
+other features on your site.
+
+```html
+<script>
+// Tracking snippet ...
+// ...
+ga('require', 'myplugin');
+</script>
+
+<!-- ... -->
+
+<!-- Note: plugin scripts must be included after the tracking snippet. -->
+<script async src="/path/to/my-plugin.js"></script>
+```
+
+Note: Official Google Analytics plugins for `analytics.js` get loaded
+automatically when they're required; you do not need to add script tags for
+them.  The complete list of official `analytics.js` plugins can be found under
+the Offical Plugins section in the left-side navigation of the
+[guide][ga-guide].
+
 
 ## Campaign
 
@@ -299,7 +329,7 @@ ga('send', 'pageview', { sessionControl: 'start' });
 GA tracks the document title, so be sure to pick the title you want to see in
 the GA web interface.  Also, it appears it may be limited to 1500 bytes.
 
-
+[ga-guide]: https://developers.google.com/analytics/devguides/collection/analyticsjs/
 [ga-cmdq-ref]: https://developers.google.com/analytics/devguides/collection/analyticsjs/command-queue-reference
 [ga-fld-ref]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference
 [ga-fld-cn]: https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName
