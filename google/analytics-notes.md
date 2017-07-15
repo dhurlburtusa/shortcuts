@@ -392,6 +392,19 @@ version of `analytics.js` without requiring you to change your tracking code.
 This allows you to debug your own sites and also see how other sites have
 implemented Google Analytics tracking with `analytics.js`.
 
+**Google Tag Assistant**
+
+Google Tag Assistant is a Chrome Extension that helps you validate the
+tracking code on your website and troubleshoot common problems.  It's an ideal
+tool for debugging and testing your `analytics.js` implementations locally and
+ensuring everything is correct before deploying your code to production.
+
+Tag Assistant works by letting you record a typical user flow.  It keeps track
+of all the hits you send, checks them for any problems, and gives you a full
+report of the interactions.  If it detects any issues or potential
+improvements, it will let you know.
+
+
 
 ## Campaign
 
