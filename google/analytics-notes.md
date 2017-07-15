@@ -338,6 +338,23 @@ ga('myTracker.ec:addProduct', {
 ```
 
 
+## Debugging
+
+**The Debug Version of the analytics.js Library**
+
+Google Analytics provides a debug version of the `analytics.js` library that
+logs detailed messages to the Javascript console as its running.  These
+messages include successfully executed commands as well as warnings and error
+messages that can tell you when your tracking code is set up incorrectly.  It
+also provides a breakdown of each hit sent to Google Analytics, so you can see
+exactly what data is being tracked.
+
+You can enable the debug version of `analytics.js` by changing the URL in the
+JavaScript tracking snippet from
+`https://www.google-analytics.com/analytics.js` to
+<code><span>https</span>://www.google-analytics.com/analytics_<strong>debug</strong>.js</code>.
+
+
 ## Campaign
 
 **Fields**
