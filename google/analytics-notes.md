@@ -370,6 +370,18 @@ if (location.hostname == 'localhost') {
 ga('send', 'pageview');
 ```
 
+**Trace Debugging**
+
+Enabling trace debugging will output more verbose information to the console.
+
+To enable trace debugging, load the debug version of `analytics.js` as
+described above and add the following line of JavaScript to the tracking
+snippet prior to any calls to the command queue.
+
+```js
+window.ga_debug = { trace: true };
+```
+
 
 ## Campaign
 
