@@ -340,6 +340,9 @@ ga('myTracker.ec:addProduct', {
 
 ## Debugging
 
+See https://developers.google.com/analytics/devguides/collection/analyticsjs/debugging
+for details.
+
 **The Debug Version of the analytics.js Library**
 
 Google Analytics provides a debug version of the `analytics.js` library that
