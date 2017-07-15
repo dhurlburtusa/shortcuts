@@ -354,6 +354,22 @@ JavaScript tracking snippet from
 `https://www.google-analytics.com/analytics.js` to
 <code><span>https</span>://www.google-analytics.com/analytics_<strong>debug</strong>.js</code>.
 
+**Testing Your Implementation without Sending Hits**
+
+You can disable sending of hits by disabling the `sendHitTask` task.  Here's an example:
+
+```js
+// Tracking snippet ...
+...
+ga('create', 'UA-XXXXX-Y', 'auto');
+
+if (location.hostname == 'localhost') {
+  ga('set', 'sendHitTask', null);
+}
+
+ga('send', 'pageview');
+```
+
 
 ## Campaign
 
