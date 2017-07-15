@@ -385,6 +385,13 @@ snippet prior to any calls to the command queue.
 window.ga_debug = { trace: true };
 ```
 
+**The Google Analytics Debugger Chrome Extension**
+
+Google Analytics also provides a Chrome extension that can enable the debug
+version of `analytics.js` without requiring you to change your tracking code.
+This allows you to debug your own sites and also see how other sites have
+implemented Google Analytics tracking with `analytics.js`.
+
 
 ## Campaign
 
