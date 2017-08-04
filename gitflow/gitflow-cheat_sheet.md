@@ -41,4 +41,66 @@ $ git flow init
 ```
 
 
+## Feature Branches
+
+**Naming Convention**
+
+The default naming convention used by `git-flow` is `feature/$name`.
+
+### Steps
+
+#### Vanilla
+
+**Creating**
+
+```sh
+$ git checkout -b feature/$name develop
+```
+
+**Implement Feature**
+
+...
+
+**Periodically Keep Up-to-date with `develop` Branch**
+
+```sh
+$ git merge --no-ff develop -m "Merge branch develop into feature/$name"
+```
+
+**When Feature is Ready to Release**
+
+```sh
+$ git checkout develop
+$ git merge --no-ff feature/$name -m "Merge branch feature/$name into develop"
+$ git branch -d feature/$name
+$ git push origin develop
+```
+
+
+#### Using git-flow
+
+**Creating**
+
+```sh
+$ git flow feature start $name
+```
+
+**Implement Feature**
+
+...
+
+**Periodically Keep Up-to-date with `develop` Branch**
+
+```sh
+$ git merge --no-ff develop -m "Merge branch develop into feature/$name"
+```
+
+**When Feature is Ready to Release**
+
+```sh
+$ git flow feature finish $name
+$ git push origin develop
+```
+
+
 [br-model]: http://nvie.com/git-model
