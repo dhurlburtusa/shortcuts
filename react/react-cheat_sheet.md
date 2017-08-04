@@ -20,6 +20,17 @@ Here is a list of some other projects that work well with React.
 * [Redux Thunk](https://github.com/gaearon/redux-thunk)
 
 
+## Substitutes
+
+There are a few substitutes or drop-in replacements for React.  Most are
+designed to contain only the most common functionality.  Some offer a little
+bit more functionality or niceties.  Some are designed for performance.
+
+* [Interno](https://infernojs.org/)
+* [Preact](https://preactjs.com/)
+* [react-lite](https://github.com/Lucifier129/react-lite)
+
+
 ## HTML
 
 The following demonstrates what is needed to use React in the browser without needing a build process in place.  This
