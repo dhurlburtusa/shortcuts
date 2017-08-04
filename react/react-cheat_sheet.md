@@ -2,7 +2,8 @@
 
 See https://facebook.github.io/react/ for details.
 
-React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+React is a declarative, efficient, and flexible JavaScript library for
+building user interfaces.
 
 
 ## Ecosystem
@@ -33,8 +34,9 @@ bit more functionality or niceties.  Some are designed for performance.
 
 ## HTML
 
-The following demonstrates what is needed to use React in the browser without needing a build process in place.  This
-can be useful for experimenting with React.
+The following demonstrates what is needed to use React in the browser without
+needing a build process in place.  This can be useful for experimenting with
+React.
 
 ### Dependencies
 
@@ -83,13 +85,14 @@ can be useful for experimenting with React.
 
 ## JSX
 
-See https://facebook.github.io/react/docs/introducing-jsx.html for more details.
+See https://facebook.github.io/react/docs/introducing-jsx.html for more
+details.
 
-JSX is a syntax extension to JavaScript.  It is like a template language, but it comes with the full power of
-JavaScript.
+JSX is a syntax extension to JavaScript.  It is like a template language, but
+it comes with the full power of JavaScript.
 
-It is safe to embed user input in JSX.  By default, React DOM escapes any values embedded in JSX before rendering
-them.
+It is safe to embed user input in JSX.  By default, React DOM escapes any
+values embedded in JSX before rendering them.
 
 You can embed any JavaScript expression in JSX by wrapping it in curly braces.
 
@@ -104,7 +107,8 @@ const element = (
 
 **Specifying Attributes with JSX**
 
-React DOM uses camelCase property naming convention instead of HTML attribute names.
+React DOM uses camelCase property naming convention instead of HTML attribute
+names.
 
 ```jsx
 var nextIndex = 0;
