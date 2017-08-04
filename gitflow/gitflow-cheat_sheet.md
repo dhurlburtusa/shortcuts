@@ -8,7 +8,9 @@ operations for Vincent Driessen's [branching model][br-model].
 The branching model uses two main branches: `master` and `develop`.  There are
 several ways to create these branches in a repository.
 
-**Vanilla**
+### Steps
+
+#### Vanilla
 
 After initializing a repo by use `git init`, the `master` branch will exist.
 However, there does not seem to be an _easy_ way to create the `develop` branch
@@ -30,7 +32,7 @@ $ git checkout develop
 $ git checkout -b develop master
 ```
 
-**git-flow**
+#### Using git-flow
 
 `git-flow` simplifies everything:
 
