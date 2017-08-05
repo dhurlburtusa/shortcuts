@@ -103,4 +103,96 @@ $ git push origin develop
 ```
 
 
+## Release Branches
+
+It is a good idea to have your Continuous Integration server hooked to your
+release branches to help ensure you only release code that passes all tests.
+
+### Steps
+
+#### Vanilla
+
+**Creating**
+
+```sh
+$ git checkout -b release/#.#.# develop
+```
+
+**Update version Numbers**
+
+```sh
+...
+$ git commit -m "Update Version"
+$ git push origin release/#.#.#
+```
+
+**Fix any Bugs and Commit to Release Branch**
+
+```sh
+# Fix bugs
+...
+$ git commit -m "Fix ..."
+$ git push origin release/#.#.#
+
+# Merge fixes back to `develop` branch
+$ git checkout develop
+$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
+$ git push origin develop
+$ git checkout release/#.#.#
+```
+
+**Finish Release**
+
+```sh
+$ git checkout develop
+$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
+$ git push origin develop
+$ git checkout master
+$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into master"
+
+# Tag Release
+$ git tag -a "v#.#.#" -m "Release #.#.#"
+$ git branch -d release/#.#.#
+$ git push origin master
+```
+
+#### Using git-flow
+
+**Creating**
+
+```sh
+$ git flow release start #.#.#
+```
+
+**Update version Numbers**
+
+```sh
+...
+$ git commit -m "Update Version"
+$ git push origin release/#.#.#
+```
+
+**Fix any Bugs and Commit to Release Branch**
+
+```sh
+# Fix bugs
+...
+$ git commit -m "Fix ..."
+$ git push origin release/#.#.#
+
+# Merge fixes back to `develop` branch
+$ git checkout develop
+$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
+$ git push origin develop
+$ git checkout release/#.#.#
+```
+
+**Finish Release**
+
+```sh
+$ git flow release finish #.#.#
+$ git push origin master
+```
+
+
 [br-model]: http://nvie.com/git-model
