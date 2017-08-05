@@ -139,6 +139,7 @@ $ git checkout develop
 $ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
 $ git push origin develop
 $ git checkout release/#.#.#
+...
 ```
 
 **Finish Release**
@@ -185,12 +186,93 @@ $ git checkout develop
 $ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
 $ git push origin develop
 $ git checkout release/#.#.#
+...
 ```
 
 **Finish Release**
 
 ```sh
 $ git flow release finish #.#.#
+$ git push origin master
+```
+
+
+## Hotfix Branches
+
+It is a good idea to have your Continuous Integration server hooked to your
+hotfix branches to help ensure you only release code that passes all tests.
+
+### Steps
+
+#### Vanilla
+
+**Creating**
+
+```sh
+$ git checkout -b hotfix/#.#.# master
+```
+
+**Update version Numbers**
+
+```sh
+...
+$ git commit -m "Update Version"
+$ git push origin hotfix/#.#.#
+```
+
+**Fix any Bugs, Add/Update Tests, and Commit to Hotfix Branch**
+
+```sh
+# Fix bugs and add/update tests
+...
+$ git commit -m "Fix ..."
+$ git push origin hotfix/#.#.#
+```
+
+**Finish Hotfix**
+
+```sh
+$ git checkout develop
+$ git merge --no-ff hotfix/#.#.# -m "Merge branch hotfix/#.#.# into develop"
+$ git push origin develop
+$ git checkout master
+$ git merge --no-ff hotfix/#.#.# -m "Merge branch hotfix/#.#.# into master"
+
+# Tag Hotfix
+$ git tag -a "v#.#.#" -m "Hotfix #.#.#"
+$ git branch -d hotfix/#.#.#
+$ git push origin master
+```
+
+#### Using git-flow
+
+**Creating**
+
+```sh
+$ git flow hotfix start #.#.#
+```
+
+**Update version Numbers**
+
+```sh
+...
+$ git commit -m "Update Version"
+$ git push origin hotfix/#.#.#
+```
+
+**Fix any Bugs, Add/Update Tests, and Commit to Hotfix Branch**
+
+```sh
+# Fix bugs and add/update tests
+...
+$ git commit -m "Fix ..."
+$ git push origin hotfix/#.#.#
+```
+
+**Finish Hotfix**
+
+```sh
+$ git flow hotfix finish #.#.#
 $ git push origin master
 ```
 
