@@ -32,6 +32,15 @@ bit more functionality or niceties.  Some are designed for performance.
 * [react-lite](https://github.com/Lucifier129/react-lite)
 
 
+## Project Setup
+
+There are many ways to setup a React project.  See the following for details.
+
+* https://github.com/facebookincubator/create-react-app
+* https://github.com/Microsoft/TypeScript-React-Starter
+* https://github.com/FountainJS/generator-fountain-react
+
+
 ## HTML
 
 The following demonstrates what is needed to use React in the browser without
