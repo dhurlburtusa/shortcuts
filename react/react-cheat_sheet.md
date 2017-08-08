@@ -205,16 +205,6 @@ class DerivedComponent extends React.Component {
      ```
   */
 
-  static defaultProps = Object.freeze({
-    foo: 'bar',
-    // ...
-  });
-
-  static propTypes = Object.freeze({
-    foo: PropTypes.string.isRequired,
-    // ...
-  });
-
   /*
    * The construstor is the right place to initialize state.
    *
@@ -396,6 +386,16 @@ class DerivedComponent extends React.Component {
   }
 
 }
+
+DerivedComponent.defaultProps = Object.freeze({
+  foo: 'bar',
+  // ...
+});
+
+DerivedComponent.propTypes = Object.freeze({
+  foo: PropTypes.string.isRequired,
+  // ...
+});
 
 DerivedComponent.prototype.__name__ = 'DerivedComponent';
 
