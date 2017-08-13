@@ -1,11 +1,24 @@
-import PropTypes from 'prop-types';
+// @flow
 import React from 'react';
+
+
+type DefaultProps = {
+  // ...
+};
+
+type Props = {
+  // ...
+};
+
+type State = {
+  // ...
+};
 
 /**
  * See https://facebook.github.io/react/docs/react-component.html for up-to-date
  * information about components.
  */
-class DerivedComponent extends React.Component {
+class DerivedComponent extends React.Component<DefaultProps, Props, State> {
 
   /*
      ## Lifecycle Stages
@@ -72,6 +85,13 @@ class DerivedComponent extends React.Component {
      ```
   */
 
+  static defaultProps: DefaultProps = {
+  };
+
+  __name__: string;
+  props: Props;
+  state: State;
+
   /*
    * The construstor is the right place to initialize state.
    *
@@ -98,7 +118,7 @@ class DerivedComponent extends React.Component {
    *
    * Called during the Initialization stage.
    */
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     console.log(`${this.__name__}#constructor(props)`);
   }
@@ -162,7 +182,7 @@ class DerivedComponent extends React.Component {
    *
    * Called during the Prop Changes stage.
    */
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps: Props) {
     console.log(`${this.__name__}#componentWillReceiveProps(nextProps)`);
   }
 
@@ -194,7 +214,7 @@ class DerivedComponent extends React.Component {
    *
    * Called during the Prop Changes and State Changes stages.
    */
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps: Props, nextState: State) {
     console.log(`${this.__name__}#shouldComponentUpdate(nextProps, nextState)`);
     // return super.shouldComponentUpdate(nextProps, nextState);
     return true;
@@ -210,7 +230,7 @@ class DerivedComponent extends React.Component {
    *
    * Called during the Prop Changes and State Changes stages.
    */
-  componentWillUpdate(nextProps, nextState) {
+  componentWillUpdate(nextProps: Props, nextState: State) {
     console.log(`${this.__name__}#componentWillUpdate(nextProps, nextState)`);
   }
 
@@ -225,7 +245,7 @@ class DerivedComponent extends React.Component {
    *
    * Called during the Prop Changes and State Changes stages.
    */
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps: Props, prevState: State) {
     console.log(`${this.__name__}#componentDidUpdate(prevProps, prevState)`);
   }
 
@@ -254,14 +274,6 @@ class DerivedComponent extends React.Component {
 
 }
 
-DerivedComponent.defaultProps = Object.freeze({
-  foo: 'bar',
-  // ...
-});
-
-DerivedComponent.propTypes = Object.freeze({
-  foo: PropTypes.string.isRequired,
-  // ...
-});
-
 DerivedComponent.prototype.__name__ = 'DerivedComponent';
+
+export default DerivedComponent;
