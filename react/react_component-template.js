@@ -18,7 +18,7 @@ type State = {
  * See https://facebook.github.io/react/docs/react-component.html for up-to-date
  * information about components.
  */
-class DerivedComponent extends React.Component<DefaultProps, Props, State> {
+class DerivedComponent<DefaultProps, Props, State> extends React.Component<DefaultProps, Props, State> {
 
   /*
      ## Lifecycle Stages
@@ -85,8 +85,7 @@ class DerivedComponent extends React.Component<DefaultProps, Props, State> {
      ```
   */
 
-  static defaultProps: DefaultProps = {
-  };
+  static defaultProps: DefaultProps;
 
   __name__: string;
   props: Props;
