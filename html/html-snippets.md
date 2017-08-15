@@ -90,9 +90,20 @@
 ## Conditional Comments
 
 ```html
-<!--[if IE 6]>
-<p>You are using Internet Explorer 6.</p>
-<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9  lt-ie8  lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9  lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+<!--[if lt IE 7]>      <html class="ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    
+<!--[if lte IE 8]><link href="lte-ie-8.css" rel="stylesheet"><![endif]-->
+<!--[if lte IE 7]><link href="lte-ie-7.css" rel="stylesheet"><![endif]-->
+<!--[if lte IE 6]><link href="lte-ie-6.css" rel="stylesheet"><![endif]-->
 
 <!--[if gt IE 6]><!-->
 This code displays on non-IE browsers and on IE 7 or higher.
