@@ -85,3 +85,16 @@
     <script crossorigin="anonymous" integrity="sha256-tOxqmY8dQCMnADBz21ISU92/ghcSrLv72CqdHIMKG9s=" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.19.0/babel.js"></script>
     
 ```
+
+
+## Conditional Comments
+
+```html
+<!--[if IE 6]>
+<p>You are using Internet Explorer 6.</p>
+<![endif]-->
+
+<!--[if gt IE 6]><!-->
+This code displays on non-IE browsers and on IE 7 or higher.
+<!--<![endif]-->
+```
