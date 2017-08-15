@@ -104,7 +104,8 @@
 <!--[if lte IE 8]><link href="lte-ie-8.css" rel="stylesheet"><![endif]-->
 <!--[if lte IE 7]><link href="lte-ie-7.css" rel="stylesheet"><![endif]-->
 <!--[if lte IE 6]><link href="lte-ie-6.css" rel="stylesheet"><![endif]-->
-
+<!--[if !IE]>--><link href="non-ie.css" rel="stylesheet"><!--<![endif]-->
+    
 <!--[if gt IE 6]><!-->
 This code displays on non-IE browsers and on IE 7 or higher.
 <!--<![endif]-->
