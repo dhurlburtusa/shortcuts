@@ -154,7 +154,7 @@ $ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into master"
 # Tag Release
 $ git tag -a "v#.#.#" -m "Release #.#.#"
 $ git branch -d release/#.#.#
-$ git push origin master
+$ git push origin master --tags
 ```
 
 #### Using git-flow
@@ -241,7 +241,7 @@ $ git merge --no-ff hotfix/#.#.# -m "Merge branch hotfix/#.#.# into master"
 # Tag Hotfix
 $ git tag -a "v#.#.#" -m "Hotfix #.#.#"
 $ git branch -d hotfix/#.#.#
-$ git push origin master
+$ git push origin master --tags
 ```
 
 #### Using git-flow
