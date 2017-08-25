@@ -9,6 +9,12 @@
 * Click EC2 from Services menu.
 
 
+## Connecting to an Instance
+
+See http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html
+for details.
+
+
 ## From Various Sources
 
 **How to find out info about my Amazon Linux AMI**
