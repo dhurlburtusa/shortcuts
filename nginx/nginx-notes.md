@@ -106,6 +106,11 @@ http {
     #    location.
     # 7) If no regular expression matches, use the location corresponding to the stored
     #    prefix string.
+    
+    # location Syntax
+    # ---------------
+    # `location [ = | ~ | ~* | ^~ ] uri { ... }`
+    # `location @name { ... }`
     location path {
       # The "location" context only allows simple directives and other "location"
       # directives.
