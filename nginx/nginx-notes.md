@@ -78,6 +78,18 @@ http {
     # ...
   }
 
+  # Logic for Selecting a server to Process
+  # ---------------------------------------
+  # When searching for a virtual server by name, if name matches more than one of
+  # the specified variants, e.g. both wildcard name and regular expression match,
+  # the first matching variant will be chosen, in the following order of
+  # precedence:
+  #
+  # 1) Exact name
+  # 2) Longest wildcard name starting with an asterisk, e.g. "*.example.org"
+  # 3) Longest wildcard name ending with an asterisk, e.g. "mail.*"
+  # 4) First matching regular expression (in order of appearance in a configuration
+  #    file)
   server {
     # The "server" context only allows simple directives and "location" directives.
 
