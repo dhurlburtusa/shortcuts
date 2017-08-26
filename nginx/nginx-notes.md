@@ -93,6 +93,19 @@ http {
       # ...
     }
 
+    # Logic for Selecting a location to Process
+    # -----------------------------------------
+    # 1) Test the URI against all prefix strings.
+    # 2) The = (equals sign) modifier defines an exact match of the URI and a prefix
+    #    string.  If the exact match is found, then the search stops.
+    # 3) If the ^~ (caret-tilde) modifier prepends the longest matching prefix string,
+    #    the regular expressions are not checked.
+    # 4) Store the longest matching prefix string.
+    # 5) Test the URI against regular expressions.
+    # 6) Break on the first matching regular expression and use the corresponding
+    #    location.
+    # 7) If no regular expression matches, use the location corresponding to the stored
+    #    prefix string.
     location path {
       # The "location" context only allows simple directives and other "location"
       # directives.
