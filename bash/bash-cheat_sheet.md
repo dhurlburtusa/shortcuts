@@ -19,6 +19,7 @@ cd DIR            # change directory
 cd -              # change to previous directory
 clear             # clear screen
 cp FILE1 FILE2    # copy FILE1 as FILE2
+ln FILE1 FILE2    # link FILE2 to FILE1     
 mkdir DIR         # make a new directory
 mkdir DIR1 DIR2   # make many new directories
 mkdir -p DIR/DIR  # make tree of directories
