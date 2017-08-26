@@ -62,7 +62,7 @@ http {
     #...
   }
 
-	geo [$address] $variable {
+  geo [$address] $variable {
     #...
   }
 
