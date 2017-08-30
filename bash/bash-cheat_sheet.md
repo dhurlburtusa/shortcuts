@@ -56,7 +56,7 @@ man COMMAND
 
 ## Find Files
 
-Use the `find` command.
+Use the `find` or `grep` command.
 
 ### Find Files by Name
 
@@ -66,6 +66,17 @@ find DIR -name "pattern"
 
 # Example
 find . -name "*.txt"
+```
+
+### Find Files Containing Text
+
+```sh
+# Syntax
+grep [OPTION]... PATTERN [FILE]...
+
+# Example
+# Find some text in the current directory and its subdirectories.
+grep -rn -e 'some text' ./
 ```
 
 ## File Permissions
