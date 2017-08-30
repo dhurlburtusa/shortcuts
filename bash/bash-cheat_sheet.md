@@ -76,7 +76,7 @@ grep [OPTION]... PATTERN [FILE]...
 
 # Example
 # Find some text in the current directory and its subdirectories.
-grep -rn -e 'some text' ./
+grep -Enr 'some text' ./
 ```
 
 ## File Permissions
