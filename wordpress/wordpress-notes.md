@@ -76,3 +76,17 @@ if ( get_stylesheet() !== get_template() ) {
 }
 ?>
 ```
+
+
+## Debugging
+
+In `wp-config.php`, you can define the following PHP variables.
+
+```php
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', true );
+```
+
+See https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/#other-wordpress-development-tools
+for more details and options.
