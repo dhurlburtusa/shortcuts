@@ -11,8 +11,9 @@ Like all WP themes, they live in subdirectories of the WordPress themes
 directory (wp-content/themes/ by default).  It is recommended (though not
 required) that the name of your child theme directory is appended with '-child'.
 
-The child theme directory requires at minimum a `style.css` and a
-`functions.php` file.
+The child theme directory requires at minimum a `style.css` file.  However, a
+`functions.php` file is typically included also so that the parent styles can
+be imported.
 
 The `style.css` file must begin with a stylesheet header comment which will
 look something like the following:
@@ -31,4 +32,36 @@ look something like the following:
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  parent-theme-child
 */
+```
+
+`Template` is the only parameter that is required.  However, the `Theme Name`,
+`Description`, `Author`, and `Version` are usually include since they show up
+on the WP Admin.
+
+The `functions.php` file usually includes the parent themess styles.  The
+following snippet demonstrates how to do that.
+
+```php
+<?php
+
+add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 99);
+
+function child_enqueue_styles() {
+  $parent_style = 'parent-style';
+
+  wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+  wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ) );
+}
+
+if ( get_stylesheet() !== get_template() ) {
+  add_filter( 'pre_update_option_theme_mods_' . get_stylesheet(), function ( $value, $old_value ) {
+    update_option( 'theme_mods_' . get_template(), $value );
+    return $old_value; // prevent update to child theme mods
+  }, 10, 2 );
+
+  add_filter( 'pre_option_theme_mods_' . get_stylesheet(), function ( $default ) {
+    return get_option( 'theme_mods_' . get_template(), $default );
+  } );
+}
+?>
 ```
