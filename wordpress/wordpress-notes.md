@@ -1,6 +1,9 @@
 # WordPress Notes
 
 
+## Themes
+
+
 ## Child Themes
 
 > A child theme is a theme that inherits the functionality and styling of
