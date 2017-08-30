@@ -3,6 +3,14 @@
 
 ## Themes
 
+At their most basic level, WordPress themes are collections of different files
+that work together to create what you see, as well as how your site behaves.
+
+There are only two files absolutely required in a WordPress theme:
+
+* index.php – the main template file
+* style.css – the main style file
+
 
 ## Child Themes
 
