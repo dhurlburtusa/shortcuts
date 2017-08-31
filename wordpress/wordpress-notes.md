@@ -11,6 +11,27 @@ There are only two files absolutely required in a WordPress theme:
 * index.php – the main template file
 * style.css – the main style file
 
+The `style.css` file must begin with a stylesheet header comment which will
+look something like the following:
+
+```css
+/*
+ Theme Name:   Name of Theme
+ Theme URI:    http://example.com/name-of-theme/
+ Author:       John Doe
+ Author URI:   http://example.com
+ Description:  This is a theme.
+ Version:      x.x.x
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  name-of-theme
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+*/
+```
+
+`Theme Name`, `Author`, `Description`, `Version`, `License`, `License URI`, and `Text Domain`
+are all required.  The rest are optional.
+
 
 ## Child Themes
 
