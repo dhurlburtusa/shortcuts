@@ -29,8 +29,11 @@ look something like the following:
 */
 ```
 
-`Theme Name`, `Author`, `Description`, `Version`, `License`, `License URI`, and `Text Domain`
-are all required.  The rest are optional.
+`Theme Name`, `Author`, `Description`, `Version`, `License`, `License URI`,
+and `Text Domain` are all required.  The rest are optional.
+
+Note: When you have the bare minimum, the Customizer will have the "Site
+Identity", the Menus, "Static Front Page", and the "Additional CSS" tabs.
 
 
 ## Child Themes
