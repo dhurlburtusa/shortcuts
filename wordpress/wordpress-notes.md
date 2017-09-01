@@ -6,6 +6,11 @@
 At their most basic level, WordPress themes are collections of different files
 that work together to create what you see, as well as how your site behaves.
 
+### Template Files
+
+WordPress themes are made up of template files.  These are PHP files that
+contain a mixture of HTML, Template Tags, and PHP code.
+
 There are only two files absolutely required in a WordPress theme:
 
 * index.php – the main template file
