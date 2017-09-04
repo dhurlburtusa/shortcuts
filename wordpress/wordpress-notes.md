@@ -96,6 +96,8 @@ and `Text Domain` are all required.  The rest are optional.
 Note: When you have the bare minimum, the Customizer will have the "Site
 Identity", the Menus, "Static Front Page", and the "Additional CSS" tabs.
 
+### Conditional Tags
+
 
 ## Child Themes
 
