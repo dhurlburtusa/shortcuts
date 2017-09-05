@@ -98,6 +98,110 @@ Identity", the Menus, "Static Front Page", and the "Additional CSS" tabs.
 
 ### Conditional Tags
 
+* **`is_home()`**: Determines if the query is for the blog homepage.  See
+  https://developer.wordpress.org/reference/functions/is_home/.
+* **`is_front_page()`**: Determines if the query is for the front page of the
+  site.  See https://developer.wordpress.org/reference/functions/is_front_page/.
+* **`is_admin()`**: Determines if the current request is for an administrative
+  interface page.  See https://developer.wordpress.org/reference/functions/is_admin/.
+* **`is_single(?$post)`**: Determines if the query is for an existing single post.
+  See https://developer.wordpress.org/reference/functions/is_single/.
+* **`is_singular(?$post_types)`**: Determines if the query is for an existing
+  single post of any post type (post, attachment, page, or custom post types).
+  See https://developer.wordpress.org/reference/functions/is_singular/.
+* **`is_sticky(?$post_id)`**: Determines if the post is sticky.  See
+  https://developer.wordpress.org/reference/functions/is_sticky/.
+* **`post_type_exists($post_type)`**: Determines if the post type is registered.
+  See https://developer.wordpress.org/reference/functions/post_type_exists/.
+* **`is_post_type_hierarchical($post_type)`**: Determines if the post type is
+  hierarchical.  See
+  https://developer.wordpress.org/reference/functions/is_post_type_hierarchical/.
+* **`is_post_type_archive(?$post_types)`**: Determines if the query is for an
+  existing post type archive page.  See
+  https://developer.wordpress.org/reference/functions/is_post_type_archive/.
+* **`comments_open(?$post_id)`**: Determines if the current post or the
+  specified post is open for comments.  See
+  https://developer.wordpress.org/reference/functions/comments_open/.
+* **`pings_open(?$post_id)`**: Determines if the current post is open for pings.
+  See https://developer.wordpress.org/reference/functions/pings_open/.
+* **`is_page(?$page)`**: Determines if the query is for an existing single page.
+  See https://developer.wordpress.org/reference/functions/is_page/.
+* **`is_page_template(?$template)`**: Determines if currently in a page
+  template.  See
+  https://developer.wordpress.org/reference/functions/is_page_template/.
+* **`is_category(?$category)`**: Determines if the query is for an existing
+  category archive page.  See
+  https://developer.wordpress.org/reference/functions/is_category/.
+* **`is_tag(?$tag)`**: Determines if the query is for an existing tag archive
+  page.  See https://developer.wordpress.org/reference/functions/is_tag/.
+* **`has_tag(?$tag, ?$post)`**: Determines if the current post or the specified
+  post has any of the given tags.  See
+  https://developer.wordpress.org/reference/functions/has_tag/.
+* **`is_tax(?$taxonomy, ?$term)`**: Determines if the query is for an existing
+  custom taxonomy archive page.  See
+  https://developer.wordpress.org/reference/functions/is_tax/.
+* **`has_term(?$taxonomy, ?$term, ?$post)`**: Determines if the current post or
+  the specified post has any of the given terms.  See
+  https://developer.wordpress.org/reference/functions/has_term/.
+* **`taxonomy_exists($taxonomy)`**: Determines if the taxonomy name exists.  See
+  https://developer.wordpress.org/reference/functions/taxonomy_exists/.
+* **`is_author(?$author)`**: Determines if the query is for an existing author
+  archive page.  See
+  https://developer.wordpress.org/reference/functions/is_author/.
+* **`is_multi_author()`**: Determines if this site has more than one author.
+  See https://developer.wordpress.org/reference/functions/is_multi_author/.
+* **`is_date()`**: Determines if the query is for an existing date archive.  See
+  https://developer.wordpress.org/reference/functions/is_date/.
+* **`is_year()`**: Determines if the query is for an existing year archive.  See
+  https://developer.wordpress.org/reference/functions/is_year/.
+* **`is_month()`**: Determines if the query is for an existing month archive.
+  See https://developer.wordpress.org/reference/functions/is_month/.
+* **`is_day()`**: Determines if the query is for an existing day archive.  See
+  https://developer.wordpress.org/reference/functions/is_day/.
+* **`is_time()`**: Determines if the query is for a specific time.  See
+  https://developer.wordpress.org/reference/functions/is_time/
+* **`is_new_day()`**: Determines if the publish date of the current post in the
+  loop is different from the publish date of the previous post in the loop.  See
+  https://developer.wordpress.org/reference/functions/is_new_day/.
+* **`is_archive()`**: Determines if the query is for an existing archive page.
+  See https://developer.wordpress.org/reference/functions/is_archive/.
+* **`is_search()`**: Determines if the query is for a search.  See
+  https://developer.wordpress.org/reference/functions/is_search/.
+* **`is_404()`**: Determines if the query is a 404 (returns no results).  See
+  https://developer.wordpress.org/reference/functions/is_404/.
+* **`is_attachment(?$attachment)`**: Determines if the query is for an existing
+  attachment page.  See
+  https://developer.wordpress.org/reference/functions/is_attachment/.
+* **`is_feed()`**: Determines if the query is for a feed.  See
+  https://developer.wordpress.org/reference/functions/is_feed/.
+* **`is_trackback()`**: Determines if the query is for a trackback endpoint
+  call.  See https://developer.wordpress.org/reference/functions/is_trackback/.
+* **`is_preview()`**: Determines if the query is for a post or page preview.
+  See https://developer.wordpress.org/reference/functions/is_preview/.
+* **`has_excerpt(?$post)`**: Determines if the post has a custom excerpt.  See
+  https://developer.wordpress.org/reference/functions/has_excerpt/.
+* **`has_nav_menu($location)`**: Determines is a registered nav menu location
+  has a menu assigned to it.  See
+  https://developer.wordpress.org/reference/functions/has_nav_menu/.
+* **`in_the_loop()`**: Determines if the caller is in the Loop.  See
+  https://developer.wordpress.org/reference/functions/in_the_loop/.
+* **`is_active_sidebar($index)`**: Determines if a sidebar is in use.  See
+  https://developer.wordpress.org/reference/functions/is_active_sidebar/.
+* **`is_multisite()`**: Determines if Multisite is enabled.  See
+  https://developer.wordpress.org/reference/functions/is_multisite/.
+* **`is_main_site()`**: Determines if a site is the main site of the current
+  network.  See
+  https://developer.wordpress.org/reference/functions/is_main_site/.
+* **`is_super_admin(?$user_id)`**: Determines if user is a site admin.  See
+  https://developer.wordpress.org/reference/functions/is_super_admin/.
+* **`is_plugin_active($plugin)`**: Determines if a plugin is active.  See
+  https://developer.wordpress.org/reference/functions/is_plugin_active/.
+* **`is_child_theme()`**: Determines if a child theme is in use.  See
+  https://developer.wordpress.org/reference/functions/is_child_theme/.
+* **`current_theme_supports($feature)`**: Determines if a theme supports a given
+  feature.  See
+  https://developer.wordpress.org/reference/functions/current_theme_supports/.
+
 
 ## Child Themes
 
