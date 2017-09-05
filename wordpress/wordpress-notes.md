@@ -202,6 +202,8 @@ Identity", the Menus, "Static Front Page", and the "Additional CSS" tabs.
   feature.  See
   https://developer.wordpress.org/reference/functions/current_theme_supports/.
 
+### Informational Tags
+
 
 ## Child Themes
 
