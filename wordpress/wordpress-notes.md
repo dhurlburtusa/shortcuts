@@ -204,6 +204,30 @@ Identity", the Menus, "Static Front Page", and the "Additional CSS" tabs.
 
 ### Informational Tags
 
+Here is a short list of what may be useful informational tags.
+
+* **`get_bloginfo(?$show, ?$filter)`**: Retrieves information about the current
+  site.  See https://developer.wordpress.org/reference/functions/get_bloginfo/.
+* **`get_body_class(?$class)`**: Retrieves the classes for the body element as
+  an array.  See
+  https://developer.wordpress.org/reference/functions/get_body_class/.
+* **`get_locale()`**: Retrieves the current locale.  See
+  https://developer.wordpress.org/reference/functions/get_locale/.
+* **`get_num_queries()`**: Retrieves the number of database queries during the
+  WordPress execution.  See
+  https://developer.wordpress.org/reference/functions/get_num_queries/.
+* **`get_post_format(?$post)`**: Retrieves the format slug for the current post
+  or of a given post.  See
+  https://developer.wordpress.org/reference/functions/get_post_format/.
+* **`get_post_type(?$post)`**: Retrieves the post type for the current post or of
+  a given post.  See
+  https://developer.wordpress.org/reference/functions/get_post_type/.
+* **`get_the_category(?$id)`**: Retrieves the categories for the current post or
+  of a post with the given ID.  See
+  https://developer.wordpress.org/reference/functions/get_the_category/.
+* **`get_the_time(?$format, ?$post)`**: Retrieves the time at which the post was
+  written for the current post or the given post.
+
 
 ## Child Themes
 
