@@ -22,4 +22,21 @@ See http://www.robotstxt.org/orig.html and
 https://en.wikipedia.org/wiki/Robots_exclusion_standard for details.
 
 
+## Alternatives
+
+**HTML meta Tags**
+
+```html
+<meta name="robots" content="noindex">
+<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="nofollow">
+```
+
+**nofollow Attrbute Value**
+
+```html
+<a href="..." rel="nofollow">...</a>
+```
+
+
 [wikipedia-robots]: https://en.wikipedia.org/wiki/Robots_exclusion_standard
