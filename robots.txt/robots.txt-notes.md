@@ -37,6 +37,24 @@ https://en.wikipedia.org/wiki/Robots_exclusion_standard for details.
 ```html
 <a href="..." rel="nofollow">...</a>
 ```
+See https://en.wikipedia.org/wiki/Noindex for some related techniques.
+
+**Microformats**
+
+```html
+<p class="robots-noindex">Don't index this text.</p>
+```
+
+**Structured Comments**
+
+```html
+<p>
+  Do index this text.
+  <!--googleoff: all-->
+  Don't index this text.
+  <!--googleon: all-->
+</p>
+```
 
 
 ## Example
