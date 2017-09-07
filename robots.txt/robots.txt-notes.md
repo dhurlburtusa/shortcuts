@@ -16,4 +16,10 @@ A `robots.txt` file covers one origin.  For websites with multiple subdomains,
 each subdomain must have its own robots.txt file.
 
 
+## Specification
+
+See http://www.robotstxt.org/orig.html and
+https://en.wikipedia.org/wiki/Robots_exclusion_standard for details.
+
+
 [wikipedia-robots]: https://en.wikipedia.org/wiki/Robots_exclusion_standard
