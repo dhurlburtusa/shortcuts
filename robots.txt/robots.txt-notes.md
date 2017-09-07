@@ -39,4 +39,15 @@ https://en.wikipedia.org/wiki/Robots_exclusion_standard for details.
 ```
 
 
+## Example
+
+```
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+Disallow: /private/
+```
+
+
 [wikipedia-robots]: https://en.wikipedia.org/wiki/Robots_exclusion_standard
