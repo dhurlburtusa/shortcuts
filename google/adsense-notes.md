@@ -29,3 +29,22 @@ website.  Advertisers bid for your ad space in a real-time auction.
   a page of Google ads related to that topic.  Though you won't receive earnings
   for clicks on the topics, you'll be paid for user clicks on any of the ads on
   the resulting page.
+
+
+## Sign Up Process
+
+* Choose to Sign Up.
+* Either create a new Google account or select an existing account.
+* Enter requested information:
+  + URL of your site
+  + Country
+* Once your account is created, you'll be asked for:
+  + Payment address details
+    - Account type (Business or Individual)
+    - Business name (for Business)
+    - Name and address
+    - Contact name (for Business)
+    - Phone number
+    - Email address (for Business)
+  + Insert code snippet
+  + Wait for Google to review your site
