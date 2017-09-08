@@ -48,3 +48,4 @@ website.  Advertisers bid for your ad space in a real-time auction.
     - Email address (for Business)
   + Insert code snippet
   + Wait for Google to review your site
+    - Your site can be declined if there is not enough content
