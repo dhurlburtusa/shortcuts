@@ -6,6 +6,9 @@ From [Wikipedia][]
 > protocols and APIs that enable real-time communication over peer-to-peer
 > connections.  This allows web browsers to not only request resources from
 > backend servers, but also real-time information from browsers of other users.
+>
+> This enables applications such as video conferencing, file transfer, chat, or
+> desktop sharing without the need of either internal or external plugins.
 
 From [MDN][]
 
@@ -18,6 +21,8 @@ From [MDN][]
 > 
 > WebRTC consists of several interrelated APIs and protocols which work together
 > to achieve this.
+
+WebRTC uses Real-time Transport Protocol to transfer audio and video.
 
 
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API
