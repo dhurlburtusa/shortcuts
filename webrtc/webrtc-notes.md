@@ -25,6 +25,13 @@ From [MDN][]
 WebRTC uses Real-time Transport Protocol to transfer audio and video.
 
 
+## Main JavaScript APIs
+
+* [RTCPeerConnection]
+* [MediaStream]
+* [RTCDataChannel]
+
+
 ## Useful Resources
 
 * https://en.wikipedia.org/wiki/WebRTC
@@ -42,6 +49,8 @@ WebRTC uses Real-time Transport Protocol to transfer audio and video.
 * https://bloggeek.me/sctp-data-channel/
 
 
-
+[mediastream]: https://developer.mozilla.org/en-US/docs/Web/API/MediaStream
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API
+[rtcdatachannel]: https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel
+[rtcpeerconnection]: https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection
 [wikipedia]: https://en.wikipedia.org/wiki/WebRTC
