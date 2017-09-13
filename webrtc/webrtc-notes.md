@@ -47,6 +47,7 @@ WebRTC uses Real-time Transport Protocol to transfer audio and video.
 * https://simpl.info/webrtc/
 * https://bloggeek.me/resources/webrtc-series/
 * https://bloggeek.me/sctp-data-channel/
+* chrome://webrtc-internals
 
 
 [mediastream]: https://developer.mozilla.org/en-US/docs/Web/API/MediaStream
