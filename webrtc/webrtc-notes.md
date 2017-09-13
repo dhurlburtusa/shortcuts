@@ -1,6 +1,6 @@
 # WebRTC Notes
 
-From [Wikipedia][]
+From [Wikipedia]
 
 > WebRTC ("Web Real-Time Communication") is a collection of communications
 > protocols and APIs that enable real-time communication over peer-to-peer
@@ -10,7 +10,7 @@ From [Wikipedia][]
 > This enables applications such as video conferencing, file transfer, chat, or
 > desktop sharing without the need of either internal or external plugins.
 
-From [MDN][]
+From [MDN]
 
 > WebRTC (Web Real-Time Communications) is a technology which enables Web
 > applications and sites to capture and optionally stream audio and/or video
