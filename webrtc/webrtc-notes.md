@@ -25,5 +25,23 @@ From [MDN][]
 WebRTC uses Real-time Transport Protocol to transfer audio and video.
 
 
+## Useful Resources
+
+* https://en.wikipedia.org/wiki/WebRTC
+* https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API
+* https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices
+* https://codelabs.developers.google.com/codelabs/webrtc-web/
+* https://webrtc.org/
+* https://www.html5rocks.com/en/tutorials/webrtc/basics/
+* https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/
+* https://www.html5rocks.com/en/tutorials/webrtc/datachannels/
+* https://www.html5rocks.com/en/tutorials/getusermedia/intro/
+* https://github.com/webrtc/adapter
+* https://simpl.info/webrtc/
+* https://bloggeek.me/resources/webrtc-series/
+* https://bloggeek.me/sctp-data-channel/
+
+
+
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API
 [wikipedia]: https://en.wikipedia.org/wiki/WebRTC
