@@ -32,6 +32,20 @@ WebRTC uses Real-time Transport Protocol to transfer audio and video.
 * [RTCDataChannel]
 
 
+## JavaScript Libraries/Frameworks
+
+**Video**
+
+* https://simplewebrtc.com/
+* https://easyrtc.com/
+* https://github.com/webRTC-io
+
+**Data**
+
+* http://peerjs.com/
+* https://www.sharefest.me/
+
+
 ## Useful Resources
 
 * https://en.wikipedia.org/wiki/WebRTC
