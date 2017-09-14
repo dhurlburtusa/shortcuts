@@ -1,5 +1,8 @@
 # HTML Video Notes
 
+See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video and
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement for setails.
+
 
 ## Browser Support
 
@@ -15,6 +18,9 @@ There are 3 supported video formats: MP4, WebM, and Ogg.
 
 
 ## Media Types
+
+See https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats
+for more details.
 
 | File Format | Media Type |
 | ----------- | ---------- |
