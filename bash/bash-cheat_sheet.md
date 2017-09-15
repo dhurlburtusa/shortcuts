@@ -145,6 +145,16 @@ sudo iptables -L
 sudo iptables -I INPUT -s 80.82.70.222/32 -j DROP
 ```
 
+After you make changes to the firewall configuration, you probably
+want to save it so the changes take effect after the server is restarted.
+
+```bash
+# Red Hat/CentOS
+sudo service iptables save
+# Ubuntu
+sudo iptables-save
+```
+
 
 ## Network
 
