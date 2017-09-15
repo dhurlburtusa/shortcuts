@@ -144,3 +144,12 @@ sudo iptables -L
 # Block access for a particular IP address:
 sudo iptables -I INPUT -s 80.82.70.222/32 -j DROP
 ```
+
+
+## Network
+
+**Check Who's Listening**
+
+```bash
+netstat -nl
+```
