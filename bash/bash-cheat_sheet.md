@@ -54,6 +54,7 @@ Most commands come with a manual.  You can view the command's manual page by usi
 man COMMAND
 ```
 
+
 ## Find Files
 
 Use the `find` or `grep` command.
@@ -79,6 +80,7 @@ grep [OPTION]... PATTERN [FILE]...
 grep -Enr 'some text' ./
 ```
 
+
 ## File Permissions
 
 Ordered by read (4), write (2), execute (1) for user, group, and others.
@@ -97,6 +99,7 @@ chmod u=rwx,g=rx,o=rx my_script.sh
 chmod 755 my_script.sh
 ```
 
+
 ## Search for Patterns
 
 Use the `grep` command.
@@ -105,6 +108,7 @@ Use the `grep` command.
 # Syntax
 grep [OPTION]... PATTERN [FILE]...
 ```
+
 
 ## Redirection
 
