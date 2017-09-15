@@ -128,3 +128,19 @@ ls > filelist.txt
 # Redirect stderr to file
 ls notreal 2> errors.txt
 ```
+
+
+## Firewall
+
+**List Firewall Rules**
+
+```bash
+sudo iptables -L
+```
+
+**Add Firewall Rule**
+
+```bash
+# Block access for a particular IP address:
+sudo iptables -I INPUT -s 80.82.70.222/32 -j DROP
+```
