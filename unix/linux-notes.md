@@ -80,3 +80,48 @@ columns.
 | 2      | Password hash.  If there's an `!` present, a user won't be able to change to this group. |
 | 3      | Comma separated list of administrators which can change the group password or members of this group. |
 | 4      | Comma separated list of users that are members of the group. |
+
+
+## From Elsewhere
+
+### Firewall
+
+By default, Linux uses the `iptables` utility as its firewall.  `iptables` is
+a command-line firewall utility that uses policy chains to allow or block
+traffic.  When a connection tries to establish itself on your system,
+`iptables` looks for a rule in its list to match it to.  If it doesn't find
+one, it resorts to the default action.
+
+#### Chains
+
+`iptables` uses three different chains: input, forward, and output.
+
+**List the Chains**
+
+```sh
+sudo iptables -L -v
+```
+
+#### Default Policy
+
+**Display Current Policy**
+
+```sh
+sudo iptables -L | grep policy
+```
+
+**Changing Default Policy**
+
+```sh
+# Accept by Default
+sudo iptables --policy INPUT ACCEPT
+sudo iptables --policy OUTPUT ACCEPT
+sudo iptables --policy FORWARD ACCEPT
+
+# Deny by Default
+sudo iptables --policy INPUT DROP
+sudo iptables --policy OUTPUT DROP
+sudo iptables --policy FORWARD DROP
+```
+
+#### Configuration
