@@ -27,10 +27,13 @@
 
 ```html
     <!-- Logging API Latest -->
-    <script src="http://codepen.io/dhurlburtusa/pen/peNdbP.js?name=Logging+API_v0_0_0"></script>
+    <script src="https://codepen.io/dhurlburtusa/pen/peNdbP.js?name=Logging+API_v1_1_1"></script>
 
-    <!-- Class Latest -->
-    <script src="http://codepen.io/dhurlburtusa/pen/mOopRq.js?name=Class+-+ES6_v0_0_0"></script>
+    <!-- Class - ES6 Latest -->
+    <script src="https://codepen.io/dhurlburtusa/pen/mOopRq.js?name=Class+-+ES6_v0_0_1"></script>
+
+    <!-- EventEmitter+Polyfill - ES6 Latest -->
+    <script src="https://codepen.io/dhurlburtusa/pen/pNQYXv.js?name=EventEmitter+Polyfill+-+ES6_v0_0_1"></script>
 
     <!-- Modernizr 2.8.3 -->
     <script crossorigin="anonymous" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
