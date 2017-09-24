@@ -48,6 +48,7 @@
 
     <!-- Zepto 1.2.0 -->
     <!--script crossorigin="anonymous" integrity="sha256-vrn14y7WH7zgEElyQqm2uCGSQrX/xjYDjniRUQx3NyU=" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script-->
+    <script crossorigin="anonymous" integrity="sha256-U+vPaw6wGRNjtBRznIBWHgpzNvNI8pRs8fQC313cxfs=" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js"></script>
 
     <!--
     Bootstrap
