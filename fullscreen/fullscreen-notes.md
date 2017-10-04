@@ -95,6 +95,21 @@ vendor prefixes are required for x-browser styling.
 you can't style it.
 
 
+## Misc
+
+* Click events and probably others still bubble up through the backdrop
+  pseudo-element.  Therefore, the element put into fullscreen mode should
+  probably stop propagation of certain events to prevent unexpected behavior.
+* Elements in an `iframe` are allowed to enter fullscreen mode if the iFrame
+  has the `allowfullscreen` attribute set.
+
+```html
+<!-- For modern browsers: -->
+<iframe allowfullscreen src="..."></iframe>
+<!-- For IE 11 (according to MDN): -->
+<iframe msallowfullscreen src="..."></iframe>
+```
+
 
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
 [mdn-prefix]: https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API#Prefixing
