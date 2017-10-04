@@ -58,6 +58,44 @@ if (document.fullscreenEnabled) {
 ```
 
 
+## Styling
+
+When you place an element into fullscreen mode, it can be selected using the
+`:fullscreen` pseudo-class.  Also, when an element is in fullscreen mode, it
+has a backdrop psuedo-element which can be selected <sup>1</sup> using the
+`::backdrop` pseudo-element selector.
+
+```css
+::backdrop {
+  /* Properties to style the backdrop. */
+}
+.MyFullscreenElement {
+  /* Normal properties. */
+}
+.MyFullscreenElement:fullscreen {
+  /* Fullscreen mode specific properties. */
+}
+```
+
+Unfortunately, very few browsers (Edge) support the standard selectors.  Thus
+vendor prefixes are required for x-browser styling.
+
+```css
+::-moz-backdrop { /* ... */ }
+::-ms-backdrop { /* ... */ }
+::-webkit-backdrop { /* ... */ }
+::backdrop { /* ... */ }
+.MyFullscreenElement:-moz-full-screen { /* ... */ }
+.MyFullscreenElement:-ms-fullscreen { /* ... */ }
+.MyFullscreenElement:-webkit-full-screen { /* ... */ }
+.MyFullscreenElement:fullscreen { /* ... */ }
+```
+
+1. Unfortunately, no current browser seems to select the backdrop.  Therefore,
+you can't style it.
+
+
+
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
 [mdn-prefix]: https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API#Prefixing
 [polyfill]: https://github.com/neovov/Fullscreen-API-Polyfill
