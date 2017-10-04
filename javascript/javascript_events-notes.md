@@ -1,5 +1,6 @@
 # JavaScript Events Notes
 
+See https://developer.mozilla.org/en-US/docs/Web/API/Event for details.
 
 ## Standard Event API
 
