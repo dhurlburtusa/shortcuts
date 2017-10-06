@@ -26,6 +26,37 @@ evt.stopPropagation()
 ```
 
 
+## Custom Events
+
+See https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
+for details.
+
+**With no Custom Data**
+
+```js
+var event = new Event('build')
+
+// Listen for the event.
+elmt.addEventListener('build', function (evt) { ... })
+
+// Dispatch the event.
+elmt.dispatchEvent(event)
+```
+
+**With Custom Data**
+
+```js
+var event = new CustomEvent('build', { detail: ... });
+
+elmt.addEventListener('build', function (evt) {
+  console.log(evt.detail)
+})
+
+// Dispatch the event.
+elmt.dispatchEvent(event)
+```
+
+
 ## Event Delegation
 
 Event delegation is a technique with the following benefits.
