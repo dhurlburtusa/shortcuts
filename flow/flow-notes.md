@@ -11,3 +11,6 @@ it does work that way.
 Using data flow analysis, Flow infers types and tracks data as it moves
 through your code.  You don't need to fully annotate your code before Flow can
 start to find bugs.
+
+
+## Installation
