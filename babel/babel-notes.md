@@ -1,6 +1,6 @@
 # Babel Notes
 
-See http://babeljs.io/ for details.
+See http://babeljs.io/ and https://github.com/thejameskyle/babel-handbook/ for details.
 
 Babel is a JavaScript compiler (aka transpiler).   At a high level, it has 3
 stages that it runs code in: parsing, transforming, and generation.
