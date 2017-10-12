@@ -10,5 +10,9 @@ JavaScript project.
 * `git flow init`
 * `yarn init` or `npm init`
 * Add a .gitignore file.
-* Add dependencies: `yarn add $dependency` or `npm install --save $dependency`
-* Add dev dependencies: `yarn add $dependency --dev` or `npm install --save $dependency`
+* Add dependencies:
+  + `yarn add $dependency`
+  + `npm install --save $dependency`
+* Add dev dependencies:
+  + `yarn add --dev $dependency` or `yarn add -D $dependency`
+  + `npm install --save-dev $dependency`
