@@ -46,6 +46,7 @@
 
 ### Sample of JavaScript Test Values
 
+```js
 let test_values = [
   [],
   ['not empty'],
@@ -76,6 +77,7 @@ let test_values = [
   null,
   undefined,
 ];
+```
 
 
 ## In Browser with Mocha
