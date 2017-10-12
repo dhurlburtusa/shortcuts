@@ -18,3 +18,15 @@ npm install --save-dev jest
 # or
 yarn add --dev jest
 ```
+
+
+## Configuration
+
+**Update package.json**
+
+```json
+  "scripts": {
+    "coverage": "jest --coverage",
+    "test": "jest --watch"
+  }
+```
