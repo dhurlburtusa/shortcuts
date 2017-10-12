@@ -9,6 +9,7 @@ JavaScript project.
 
 * `mkdir my-project && cd my-project`
 * `git flow init`<sup>†</sup>
+  + Use all defaults except `v` for the version tag prefix.  
 * `yarn init` or `npm init`<sup>‡</sup>
 * Add a [.gitignore][gitignore-template] file.
 * Add dependencies:
