@@ -70,6 +70,7 @@ WebRTC uses Real-time Transport Protocol to transfer audio and video.
 * https://webrtc.github.io/samples/
 * https://github.com/mdn/samples-server/tree/master/s
 * https://simpl.info/webrtc/
+* https://webrtcglossary.com/
 * https://www.webrtc-experiment.com/
 * https://bloggeek.me/webrtc-posts/
 * https://bloggeek.me/sctp-data-channel/
