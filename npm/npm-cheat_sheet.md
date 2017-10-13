@@ -37,8 +37,8 @@ See https://docs.npmjs.com/files/package.json#dependencies for details.
 * `>=version` etc
 * `<version`
 * `<=version`
-* `~version` "Approximately equivalent to version" See semver
-* `^version` "Compatible with version" See semver
+* `~version` "Approximately equivalent to version" See [semver].
+* `^version` "Compatible with version" See [semver].
 * `1.2.x` 1.2.0, 1.2.1, etc., but not 1.3.0
 * `http://...` See 'URLs as Dependencies' below
 * `*` Matches any version
@@ -156,3 +156,5 @@ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>]
 
 * Check the version has been bumped correctly.
 
+
+[semver]: https://docs.npmjs.com/misc/semver
