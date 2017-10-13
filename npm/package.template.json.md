@@ -3,8 +3,9 @@
 ```js
 {
   /**
-   * The name of your npm package.  Required.  < 214 chars.  Can't start with a dot or an underscore.  No uppercase
-   * letters.  Can't contain any non-URL-safe chars.
+   * The name of your npm package.  Required.  < 214 chars.  Can't start with a dot
+   * or an underscore.  No uppercase letters.  Can't contain any non-URL-safe
+   * chars.
    * - Don't use the same name as a core Node module.
    * - Don't put "js" or "node" in the name.
    */
@@ -12,18 +13,22 @@
   /**
    * See http://semver.org/ for details.
    *
-   * A string of the form: major.minor.patch where major, minor, and patch is an integer >= 0.
+   * A string of the form: `major.minor.patch` where major, minor, and patch is an
+   * integer >= 0.
    *
    * Prerelease:
    * major.minor.patch-[alpha|beta].preid
    */
   "version": "",
   /**
-   * If you set `"private": true` in your package.json, then npm will refuse to publish it.
+   * If you set `"private": true` in your package.json, then npm will refuse to
+   * publish it.
    *
-   * This is a way to prevent accidental publication of private repositories.  If you would like to ensure that a
-   * given package is only ever published to a specific registry (for example, an internal registry), then use the
-   * `publishConfig` dictionary described below to override the `registry` config param at publish-time.
+   * This is a way to prevent accidental publication of private repositories.  If
+   * you would like to ensure that a given package is only ever published to a
+   * specific registry (for example, an internal registry), then use the
+   * `publishConfig` dictionary described below to override the `registry` config
+   * param at publish-time.
    */
   "private": true,
   /**
@@ -40,19 +45,22 @@
    *
    *   "os" : [ "darwin", "linux" ]
    *
-   * You can also blacklist instead of whitelist operating systems, just prepend the blacklisted os with a '!':
+   * You can also blacklist instead of whitelist operating systems, just prepend
+   * the blacklisted os with a '!':
    *
    *   "os" : [ "!win32" ]
    *
    * The host operating system is determined by `process.platform`.
    *
-   * It is allowed to both blacklist, and whitelist, although there isn't any good reason to do this.
+   * It is allowed to both blacklist, and whitelist, although there isn't any good
+   * reason to do this.
    */
   "os": [
     ""
   ],
   /**
-   * If your code only runs on certain cpu architectures, you can specify which ones.
+   * If your code only runs on certain cpu architectures, you can specify which
+   * ones.
    *
    *   "cpu" : [ "x64", "ia32" ]
    *
@@ -87,29 +95,32 @@
     }
   ],
   /**
-   * A description of your npm package.  This helps people discover your package as it's listed in `npm search`.
+   * A description of your npm package.  This helps people discover your package as
+   * it's listed in `npm search`.
    */
   "description": "",
   /**
-   * An array of keywords related to your npm package.  This helps people discover your package as it's listed in
-   * `npm search`.
+   * An array of keywords related to your npm package.  This helps people discover
+   * your package as it's listed in `npm search`.
    */
   "keywords": ["", ""],
   /**
    * The url to the project homepage.
    *
-   * NOTE: This is not the same as "url". If you put a "url" field, then the registry will think it's a redirection to
-   * your package that has been published somewhere else
+   * NOTE: This is not the same as "url".  If you put a "url" field, then the
+   * registry will think it's a redirection to your package that has been published
+   * somewhere else.
    */
   "homepage": "",
   /**
-   * The url to your project's issue tracker and / or the email address to which issues should be reported.  These
-   * are helpful for people who encounter issues with your package.
+   * The URL to your project's issue tracker and / or the email address to which
+   * issues should be reported.  These are helpful for people who encounter issues
+   * with your package.
    *
-   * You can specify either one or both values.  If you want to provide only a url, you can specify the value for
-   * "bugs" as a simple string instead of an object.
+   * You can specify either one or both values.  If you want to provide only a URL,
+   * you can specify the value for "bugs" as a simple string instead of an object.
    *
-   * If a url is provided, it will be used by the `npm bugs` command.
+   * If a URL is provided, it will be used by the `npm bugs` command.
    *
    * Examples:
    *
@@ -141,31 +152,35 @@
    */
   "license": "UNLICENSED",
   /**
-   * The "files" field is an array of files to include in your project.  If you name a folder in the array, then it
-   * will also include the files inside that folder.  (Unless they would be ignored by another rule.)
+   * The "files" field is an array of files to include in your project.  If you
+   * name a folder in the array, then it will also include the files inside that
+   * folder.  (Unless they would be ignored by another rule.)
    *
-   * You can also provide a ".npmignore" file in the root of your package or in subdirectories, which will keep files
-   * from being included, even if they would be picked up by the files array.  The .npmignore file works just like a
+   * You can also provide a ".npmignore" file in the root of your package or in
+   * subdirectories, which will keep files from being included, even if they would
+   * be picked up by the files array.  The .npmignore file works just like a
    * .gitignore file.
    */
   "files": [
     ""
   ],
   /**
-   * The `main` field is a module ID that is the primary entry point to your program.  That is, if your package is named
-   * `foo`, and a user installs it, and then does `require("foo")`, then your main module's exports object will be
+   * The `main` field is a module ID that is the primary entry point to your
+   * program.  That is, if your package is named `foo`, and a user installs it, and
+   * then does `require("foo")`, then your main module's exports object will be 
    * returned.
    *
    * This should be a module ID relative to the root of your package folder.
    */
   "main": "",
   /**
-   * A lot of packages have one or more executable files that they'd like to install into the PATH.  npm makes this
-   * pretty easy (in fact, it uses this feature to install the "npm" executable.)
+   * A lot of packages have one or more executable files that they'd like to
+   * install into the PATH.  npm makes this pretty easy (in fact, it uses this
+   * feature to install the "npm" executable.)
    *
-   * To use this, supply a `bin` field in your package.json which is a map of command name to local file name.  On
-   * install, npm will symlink that file into `prefix/bin` for global installs, or `./node_modules/.bin/` for local
-   * installs.
+   * To use this, supply a `bin` field in your package.json which is a map of
+   * command name to local file name.  On install, npm will symlink that file into
+   * `prefix/bin` for global installs, or `./node_modules/.bin/` for local installs.
    */
   "bin": {
     "mycmd": "path/to/local/file"
@@ -241,12 +256,13 @@
     "name": "value"
   },
   /**
-   * This is a set of config values that will be used at publish-time.  It's especially handy if you want to set the
-   * tag, registry, or access, so that you can ensure that a given package is not tagged with "latest", published to
-   * the global public registry or that a scoped module is private by default.
+   * This is a set of config values that will be used at publish-time.  It's
+   * especially handy if you want to set the tag, registry, or access, so that you
+   * can ensure that a given package is not tagged with "latest", published to the
+   * global public registry or that a scoped module is private by default.
    *
-   * Any config values can be overridden, but of course only "tag", "registry", and "access" probably matter for the
-   * purposes of publishing.
+   * Any config values can be overridden, but of course only "tag", "registry", and
+   * "access" probably matter for the purposes of publishing.
    */
   "publishConfig": {},
   "bundledDependencies": [""],
