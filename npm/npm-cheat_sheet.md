@@ -69,6 +69,25 @@ NPM recognizes several script names: `prepublish`, `prepare`,
 `poststop`, `prestart`, `start`, `poststart`, `prerestart`, `restart`,
 `postrestart`, `preshrinkwrap`, `shrinkwrap`, `postshrinkwrap`.
 
+**Environment Variables**
+
+Several environment variables are made available to the NPM scripts.  They all
+begin with `npm_`.  A set of them begin with `npm_config_` and they contain
+the current NPM configuration.  Another set of them begin with `npm_package_`
+and they contain the values in the `package.json`.  Then there are some
+miscellaneous variables.  Below is a list with example values.
+
+* `npm_config_globalconfig`: `'C:\\Program Files\\nodejs\\etc\\npmrc'`
+* `npm_config_globalignorefile`: `'C:\\Program Files\\nodejs\\etc\\npmignore'`
+* `npm_config_user_agent`: `'npm/5.4.2 node/v8.7.0 win32 x64'`
+* `npm_execpath`: `'C:\\ProgramData\\nvm\\v8.7.0\\node_modules\\npm\\bin\\npm-cli.js'`
+* `npm_lifecycle_event`: `'custom'` | `'install'` | `'start'` | `'stop'` | `'test'` | etc
+* `npm_lifecycle_script`: `'...'`,
+* `npm_node_execpath`: `'C:\\Program Files\\nodejs\\node.exe'`
+* `npm_package_name`: `'...'`
+* `npm_package_version`: `'0.0.0'`
+
+
 ## Versioning
 
 See https://docs.npmjs.com/cli/version.
