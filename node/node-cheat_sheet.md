@@ -1,4 +1,4 @@
-# Node Cheat Sheet
+# Node Notes
 
 
 ## Global
