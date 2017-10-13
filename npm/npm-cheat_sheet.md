@@ -58,6 +58,16 @@ Example from package.json:
 
     "qc-util": "file://C:\\repos\\npm\\qc-util"
 
+### Scripts
+
+See https://docs.npmjs.com/misc/scripts for details.
+
+NPM recognizes several script names: `prepublish`, `prepare`,
+`prepublishOnly`, `prepack`, `postpack`, `publish`, `preinstall`, `install`,
+`postinstall`, `preuninstall`, `uninstall`, `postuninstall`, `preversion`,
+`version`, `postversion`, `pretest`, `test`, `posttest`, `prestop`, `stop`,
+`poststop`, `prestart`, `start`, `poststart`, `prerestart`, `restart`,
+`postrestart`, `preshrinkwrap`, `shrinkwrap`, `postshrinkwrap`.
 
 ## Versioning
 
