@@ -27,14 +27,6 @@
    */
   "private": true,
   /**
-   * If your package is primarily a command-line application that should be installed globally, then set this value
-   * to `true` to provide a warning if it is installed locally.
-   *
-   * It doesn't actually prevent users from installing it locally, but it does help prevent some confusion if it
-   * doesn't work as expected.
-   */
-  "preferGlobal": true,
-  /**
    * You can specify the version of node that your stuff works on:
    *
    *   "engines" : { "node" : ">=0.10.3 <0.12" }
