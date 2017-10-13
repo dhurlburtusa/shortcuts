@@ -40,7 +40,8 @@
    *   "engines" : { "node" : ">=0.10.3 <0.12" }
    */
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
   },
   /**
    * You can specify which operating systems your module will run on:
@@ -185,7 +186,8 @@
     "doc": "",
     "example": "",
     "lib": "",
-    "man": ""
+    "man": "",
+    "test": ""
   },
   /**
    * Examples:
