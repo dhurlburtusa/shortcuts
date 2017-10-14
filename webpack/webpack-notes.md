@@ -18,7 +18,7 @@ Create a JavaScript file that uses CommonJS module syntax.  The following is an 
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: './bin',
+    path: './dist',
     filename: 'app.bundle.js'
   }
 };
