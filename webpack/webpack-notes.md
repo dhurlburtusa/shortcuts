@@ -82,17 +82,23 @@ import(
 )
 ```
 
-### AMD Define
+### AMD define (with factory)
 
-See http://webpack.github.io/docs/amd.html for details.
+See https://webpack.js.org/api/module-methods/#define-with-factory- for details.
 
 ```js
 define(
-  'mod_name',
+  'mod_name', // Optional.  Ignored by webpack.
   ['./dep_1', 'dep_2', 'etc'],
   function (dep1, dep2, etc) {
-    // Do something...
-    return 456;
+    // Do something with dep1, dep2, etc
+    
+    // Return whatever is intended to be exported:
+    return {
+      bar,
+      foo,
+      qux
+    }
   }
 );
 ```
