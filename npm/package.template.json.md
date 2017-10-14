@@ -220,33 +220,168 @@
    * See https://docs.npmjs.com/misc/scripts for details.
    */
   "scripts": {
+    /**
+     * Run BEFORE the package is packed and published, as well as on local `npm
+     * install` without any arguments.
+     *
+     * Note: `prepublish` or `prepublishOnly` are deprecated.  It is not clearly
+     * documented.  The documentation implies using `prepare` in place of
+     * `prepublish`.  Use `prepublishOnly` when it does not need to be run during
+     * an `npm install` run.  Beware that `prepare` and `prepublishOnly` are only
+     * recognized when npm 4.0.0 or later is used.
+     */
     "prepublish": "",
+    /**
+     * Run BEFORE the package is packed and published, as well as on local `npm
+     * install` without any arguments.  This is run AFTER `prepublish`, but BEFORE
+     * `prepublishOnly`.
+     *
+     * Added in `npm@4.0.0`.
+     */
+    "prepare": "",
+    /**
+     * Only runs during `npm publish`, unlike `prepublish` which runs during both
+     * `npm install` and `npm publish`.
+     *
+     * Added in `npm@4.0.0`.
+     */
+    "prepublishOnly": "",
+    /**
+     * Run AFTER the package is published.
+     *
+     * For clarify, I'd recommend using `postpublish` instead.
+     */
     "publish": "",
+    /**
+     * Run AFTER the package is published.
+     */
     "postpublish": "",
+
+    /**
+     * Run BEFORE a tarball is packed (on `npm pack`, `npm publish`, and when
+     * installing git dependencies).
+     */
+    "prepack": "",
+    /**
+     * Run AFTER the tarball has been generated and moved to its final destination.
+     */
+    "postpack": "",
+    
+    /**
+     * Run BEFORE the package is installed.
+     *
+     * Note: The only valid use of `install` or `preinstall` scripts is for
+     * compilation which must be done on the target architecture.
+     */
     "preinstall": "",
+    /**
+     * Run AFTER the package is installed.
+     *
+     * For clarify, I'd recommend using `postinstall` instead.  Use this to alter the
+     * the default behavior of `"node-gyp rebuild"`.
+     */
     "install": "",
+    /**
+     * Run AFTER the package is installed.
+     */
     "postinstall": "",
+
+    /**
+     * Run BEFORE the package is uninstalled.
+     */
     "preuninstall": "",
+    /**
+     * Run BEFORE the package is uninstalled.
+     *
+     * For clarify, I'd recommend using `preuninstall` instead.
+     */
     "uninstall": "",
+    /**
+     * Run AFTER the package is uninstalled.
+     */
     "postuninstall": "",
+
+    /**
+     * Run BEFORE bumping the package version.
+     */
     "preversion": "",
+    /**
+     * Run AFTER bumping the package version, but BEFORE commit.
+     */
     "version": "",
+    /**
+     * Run AFTER bumping the package version, and AFTER commit.
+     */
     "postversion": "",
+
+    /**
+     * The following are run when the `npm test` command is run.
+     */
     "pretest": "",
     "test": "",
     "posttest": "",
+
+    /**
+     * The following are run when the `npm stop` command is run.
+     */
     "prestop": "",
     "stop": "",
     "poststop": "",
+
+    /**
+     * The following are run when the `npm start` command is run.
+     */
     "prestart": "",
-    "start": "",
+    "start": "", /* Defaults to "node server.js" */
     "poststart": "",
+
+    /**
+     * The following are run when the `npm start` command is run.
+     *
+     * Note: `npm restart` will run the `stop` and `start` scripts if no `restart`
+     * script is provided.
+     */
     "prerestart": "",
     "restart": "",
     "postrestart": "",
+
+    /**
+     * The following are run when the `npm shrinkwrap` command is run.
+     */
+    "preshrinkwrap": "",
+    "shrinkwrap": "",
+    "postshrinkwrap": "",
+
+    /**
+     * The following are run when the `npm run <command>` command is run.
+     */
     "pre<command-name>": "<command>",
     "<command-name>": "<command>",
     "post<command-name>": "<command>",
+
+    /**
+     * The following is a list of common script names and their intended purpose.
+     * You can include the "pre" and "post" versions of the scripts as required.
+     */
+
+    /**
+     * Builds the project.  The build process will vary from project to project but
+     * the following steps are not uncommon to see: 1) generate code and assets 2)
+     * compile code 3) minify code and assets 4) bundle code and assets
+     */
+    "build": "",
+
+    /**
+     * Cleans the project.  The clean process usually involves deleting directories
+     * and removing any generated/bundled code/assets.
+     */
+    "clean": "",
+
+    /**
+     * Runs the code coverage tests and generates the coverage reports.
+     */
+    "coverage": "",
+
     "...": "...",
   },
   /**
