@@ -1,5 +1,6 @@
 # Webpack Notes
 
+
 ## Installation
 
 ```bash
@@ -7,6 +8,7 @@ npm install --save-dev webpack
 ```
 
 It is not recommended to install globally.
+
 
 ## Configuration
 
@@ -21,6 +23,7 @@ module.exports = {
   }
 };
 ```
+
 
 ## Module Styles
 
@@ -50,6 +53,7 @@ require(
   }
 );
 ```
+
 
 ## Code Splitting (aka Chunking)
 
