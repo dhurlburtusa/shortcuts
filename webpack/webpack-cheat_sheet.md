@@ -1,4 +1,4 @@
-# Webpack Cheat Sheet
+# Webpack Notes
 
 ## Installation
 
