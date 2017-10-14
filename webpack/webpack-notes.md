@@ -109,6 +109,14 @@ require(
 );
 ```
 
+### CommonJS
+
+See https://webpack.js.org/api/module-methods/#commonjs for details.
+
+```js
+const myModule = require('./my-module')
+```
+
 
 ## Code Splitting (aka Chunking)
 
