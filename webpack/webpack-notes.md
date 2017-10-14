@@ -119,7 +119,7 @@ define({
 
 ### AMD Require
 
-See http://webpack.github.io/docs/amd.html for details.
+See https://webpack.js.org/api/module-methods/#require-amd-version- for details.
 
 ```js
 require(
