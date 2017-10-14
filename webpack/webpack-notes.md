@@ -38,6 +38,50 @@ Webpack uses various loaders to handle different file types.
 
 ## Module Styles
 
+### ES6 (Recommended)
+
+**import**
+
+Version 2 of webpack supports ES6 module syntax natively, meaning you can use
+`import` and `export` without a tool like babel to handle this for you.
+
+```js
+import MyModule from './my-module.js'
+import { NamedExport } from './other-module.js'
+```
+
+**export**
+
+```js
+// Named exports
+export var Count = 5
+export function Multiply(a, b) {
+  return a * b
+}
+
+// Default export
+export default {
+  // Some data...
+}
+```
+
+**import()**
+
+Calls to `import()` are treated as split points, meaning the requested module
+and it's children are split out into a separate chunk.
+
+The spec for `import()` doesn't allow control over the chunk's name or other
+properties as "chunks" are only a concept within webpack.  Luckily webpack
+allows some special parameters via comments so as to not break the spec:
+
+```js
+import(
+  /* webpackChunkName: string // May contain the `[index]` and `[request]` placeholders. */
+  /* webpackMode: 'eager' | 'lazy' | 'lazy-once' | 'weak' // Defaults to 'lazy'. */
+  'module'
+)
+```
+
 ### AMD Define
 
 See http://webpack.github.io/docs/amd.html for details.
