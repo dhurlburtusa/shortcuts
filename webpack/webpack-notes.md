@@ -24,6 +24,17 @@ module.exports = {
 };
 ```
 
+**Managing Assets**
+
+A typical web app/site will have multiple files of various types (HTML, CSS,
+JavaScript, Fonts, Images, Audio, Video).  All the different files will need
+processing to some extent.  It may be as simple as a no-op (the file is good
+as is), to a simple copy (just needs copied to the destination directory), or
+a full-blown processing step involving many steps such as code generation,
+compilation, concatenation, minification, or more.
+
+Webpack uses various loaders to handle different file types.
+
 
 ## Module Styles
 
