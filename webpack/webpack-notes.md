@@ -103,6 +103,20 @@ define(
 );
 ```
 
+### AMD define (with value)
+
+See https://webpack.js.org/api/module-methods/#define-with-value- for details.
+
+```js
+// Syntax:
+// define(value: !Function)
+define({
+  bar,
+  foo,
+  qux
+})
+```
+
 ### AMD Require
 
 See http://webpack.github.io/docs/amd.html for details.
