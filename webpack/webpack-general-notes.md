@@ -1,4 +1,4 @@
-# Webpack Notes
+# Webpack General Notes
 
 webpack is a module bundler for modern JavaScript applications.  When webpack
 processes your application, it recursively builds a dependency graph that
