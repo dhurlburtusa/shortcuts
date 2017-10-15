@@ -15,6 +15,11 @@ Interprets and resolves `@import` and `url()` in CSS.
 Emits the module as a file to the output and returns its public URL.
 
 
+## Sass Loader
+
+Compiles .sass/.scss files to CSS.
+
+
 ## Style Loader
 
 Embeds CSS into JavaScript which when run injects the CSS into the DOM via a
