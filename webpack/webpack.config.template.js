@@ -223,10 +223,21 @@ const loaders = {
       ]
     },
     {
-      test: /\.(png|svg|jpg|gif)$/,
+      test: /\.(gif|jpg|jpeg|png|svg|webp)$/,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 4096
+          },
+        }
+      ],
+    },
+    {
+      test: /\.(eot|otf|ttf|woff|woff2)$/,
       use: [
         'file-loader',
-      ]
+      ],
     },
     // ...
   ],
