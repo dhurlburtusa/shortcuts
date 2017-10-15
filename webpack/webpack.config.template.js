@@ -415,6 +415,7 @@ const resolve = undefined
 const target = undefined
 
 const config = {
+  context: context,
   entry: entry,
   module: loaders,
   externals: externals,
