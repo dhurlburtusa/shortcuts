@@ -15,6 +15,12 @@ Interprets and resolves `@import` and `url()` in CSS.
 Emits the module as a file to the output and returns its public URL.
 
 
+## Style Loader
+
+Embeds CSS into JavaScript which when run injects the CSS into the DOM via a
+dynamically generated `<style>` tag.
+
+
 ## URL Loader
 
 Returns a base64 encoded DataURL if the file is smaller than a specified byte
