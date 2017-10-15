@@ -26,6 +26,12 @@ available in your HTML document.
 Emits the module as a file to the output and returns its public URL.
 
 
+## Imports Loader
+
+Injects imports statements into the imported script.  Useful when given
+a script that depends on certain global variables being present.
+
+
 ## Raw Loader
 
 Allows importing of file contents as a string into a JavaScript file.
