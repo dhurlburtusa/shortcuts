@@ -5,6 +5,11 @@ some of the most popular and also explain the difference between loaders that
 provide similar or closely related features.
 
 
+## CSS Loader
+
+Interprets and resolves `@import` and `url()` in CSS.
+
+
 ## File Loader
 
 Emits the module as a file to the output and returns its public URL.
