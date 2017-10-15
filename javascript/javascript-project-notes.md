@@ -12,7 +12,8 @@ JavaScript project.
   + Use all defaults except `v` for the version tag prefix.  
 * Add a package.json file:
   + Do one of:
-    - `yarn init` or `npm init`<sup>‡</sup>
+    - `yarn init`
+    - `npm init`
     - Start from a [package.json template][package_json-template].
 * Add a [.gitignore][gitignore-template] file.
 * Add dependencies:
@@ -24,10 +25,6 @@ JavaScript project.
 
 
 † On Windows, run command from git-bash.
-
-‡ On Windows, running command from git-bash does NOT work well.  Running with
-  Cmd or Powershell has worked well.  VS Code can be configured to use Cmd or
-  Powershell.
 
 
 [gitignore-template]: https://github.com/dhurlburtusa/shortcuts/blob/master/git/.gitignore.template
