@@ -8,3 +8,10 @@ provide similar or closely related features.
 ## File Loader
 
 Emits the module as a file to the output and returns its public URL.
+
+
+## URL Loader
+
+Returns a base64 encoded DataURL if the file is smaller than a specified byte
+limit.  Otherwise, handling it delegated to another loader.  By default, the
+fallback loader is a file-loader.
