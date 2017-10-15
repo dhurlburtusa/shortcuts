@@ -17,11 +17,14 @@ JavaScript project.
     - Start from a [package.json template][package_json-template].
 * Add a [.gitignore][gitignore-template] file.
 * Add dependencies:
-  + `yarn add $dependency`
-  + `npm install --save $dependency`
+  + Do one of:
+    - `yarn add $dependency`
+    - `npm install --save $dependency`
 * Add dev dependencies:
-  + `yarn add --dev $dependency` or `yarn add -D $dependency`
-  + `npm install --save-dev $dependency`
+  + Do one of:
+    - `yarn add --dev $dependency`
+    - `yarn add -D $dependency`
+    - `npm install --save-dev $dependency`
 
 
 † On Windows, run command from git-bash.
