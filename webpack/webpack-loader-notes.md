@@ -5,6 +5,11 @@ some of the most popular and also explain the difference between loaders that
 provide similar or closely related features.
 
 
+## Babel Loader
+
+Transpiles JavaScript files using Babel.
+
+
 ## CSS Loader
 
 Interprets and resolves `@import` and `url()` in CSS.
