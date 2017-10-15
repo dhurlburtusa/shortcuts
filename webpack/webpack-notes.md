@@ -1,5 +1,19 @@
 # Webpack Notes
 
+webpack is a module bundler for modern JavaScript applications.  When webpack
+processes your application, it recursively builds a dependency graph that
+includes every module your application needs, then packages all of those
+modules into a small number of bundles - often only one - to be loaded by the
+browser.
+
+The starting point of the dependency graph is known as an entry point.  A
+project may have more than one entry point.
+
+webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module.
+However, webpack itself only understands JavaScript.  webpack uses loaders to
+transform these files into modules before they are added to the dependency
+graph.
+
 
 ## Installation
 
