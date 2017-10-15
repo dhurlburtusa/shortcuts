@@ -1,5 +1,5 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require('path')
+const webpack = require('webpack')
 
 /*
  * webpack accepts configuration files written in multiple programming and data
@@ -17,7 +17,7 @@ const webpack = require('webpack');
  *
  * @param {string=} - context
  */
-const context = path.resolve(__dirname, 'src');
+const context = path.resolve(__dirname, 'src')
 
 /*
  * The point or points to enter the application.  If an array is passed, all
@@ -37,12 +37,12 @@ const context = path.resolve(__dirname, 'src');
  *   function to be called to return the entrypoint(s).  Necessary when the value
  *   is dynamic.
  */
-const entry = './index.js';
+const entry = './index.js'
 const entry = {
   main: './index.js',
   chunk1: './chunk1-entry.js',
   chunk2: './chunk2-entry.js',
-};
+}
 
 /*
  * This option provides a way of excluding dependencies from the output bundles.
@@ -56,7 +56,7 @@ const entry = {
  * @param {!Object<string|!Array|!Object>|!RegExp|function (context, request, callback)}
  *   - The key should math the name of the imported module.
  */
-const externals = undefined;
+const externals = undefined
 
 /*
  * These options determine how the different types of modules within a project will
@@ -241,7 +241,7 @@ const loaders = {
     },
     // ...
   ],
-};
+}
 
 /*
  * The set of options instructing webpack on how and where it should output your
@@ -333,7 +333,7 @@ const output = {
    * @param {string}
    */
   publicPath: 'https://cdn.example.com/assets/',
-};
+}
 
 /*
  * These options allows you to control how webpack notifies you of assets and
@@ -375,7 +375,7 @@ const performance = {
    * @param {number=} - [maxAssetSize=250000]
    */
   maxAssetSize: 250000,
-};
+}
 
 /*
  * The plugins option is used to customize the webpack build process in a variety
@@ -388,7 +388,7 @@ const plugins = [
   new webpack.optimize.UglifyJsPlugin({
     // ...
   }),
-];
+]
 
 /*
  * These options change how modules are resolved.  webpack provides reasonable
@@ -398,7 +398,7 @@ const plugins = [
  *
  * @param {!Object=}
  */
-const resolve = undefined;
+const resolve = undefined
 
 /*
  * Because JavaScript can be written for both server and browser, webpack offers
@@ -412,7 +412,7 @@ const resolve = undefined;
  * @param {function (compiler): string=} target - Set it to a function if none of
  *   the predefined targets from the list above meet your needs.
  */
-const target = undefined;
+const target = undefined
 
 const config = {
   entry: entry,
@@ -423,21 +423,21 @@ const config = {
   plugins: plugins,
   resolve: resolve,
   target: target,
-};
+}
 
-module.exports = config;
+module.exports = config
 
 // You can also setup more than one configuration.
 
-const config2 = { /* ... */ };
+const config2 = { /* ... */ }
 
 // ...
 
-const configN = { /* ... */ };
+const configN = { /* ... */ }
 
 module.exports = [
   config,
   config2,
   // ...
   configN,
-];
+]
