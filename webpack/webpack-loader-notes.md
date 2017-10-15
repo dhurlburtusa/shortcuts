@@ -15,6 +15,12 @@ Transpiles JavaScript files using Babel.
 Interprets and resolves `@import` and `url()` in CSS.
 
 
+## Expose Loader
+
+Adds modules to the global object.  Useful when you need `window.jQuery`
+available in your HTML document.
+
+
 ## File Loader
 
 Emits the module as a file to the output and returns its public URL.
