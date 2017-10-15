@@ -10,7 +10,7 @@ JavaScript project.
 * `mkdir my-project && cd my-project`
 * `git flow init`<sup>†</sup>
   + Use all defaults except `v` for the version tag prefix.  
-* Add a package.json file:
+* Add a `package.json` file:
   + Do one of:
     - `yarn init`
     - `npm init`
