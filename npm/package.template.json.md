@@ -75,6 +75,7 @@
   /**
    * Examples:
    *
+   *   "license": "ISC"
    *   "license": "MIT"
    *   "license": "(MIT OR Apache-2.0)"
    *   "license": "UNLICENSED"
