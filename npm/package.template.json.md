@@ -32,6 +32,19 @@
    */
   "private": true,
   /**
+   * The set of constraints defining the list of browsers this project is designed
+   * to support.  See https://github.com/ai/browserslist for details about how to
+   * declare different constraints.
+   *
+   * Many tools use this to configure how they run.  For example, it is used by
+   * Autoprefixer, some PostCSS plugins, some Babel presets, and many others.
+   */
+  "browserslist": [
+    "> 0.5%",
+    "Last 2 major versions",
+    "Firefox ESR"
+  ],
+  /**
    * You can specify the version of node that your stuff works on:
    *
    *   "engines" : { "node" : ">=0.10.3 <0.12" }
