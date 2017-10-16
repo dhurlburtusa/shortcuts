@@ -1,6 +1,19 @@
 # CSS Notes
 
 
+## Some New CSS Properties
+
+### Implemented in at Least One Browser
+
+**caret-color**
+
+```css
+textarea {
+  caret-color: red;
+}
+```
+
+
 ## Stacking Context
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context for details.
