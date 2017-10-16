@@ -21,6 +21,16 @@
    */
   "version": "",
   /**
+   * A description of your npm package.  This helps people discover your package as
+   * it's listed in `npm search`.
+   */
+  "description": "",
+  /**
+   * An array of keywords related to your npm package.  This helps people discover
+   * your package as it's listed in `npm search`.
+   */
+  "keywords": ["", ""],
+  /**
    * If you set `"private": true` in your package.json, then npm will refuse to
    * publish it.
    *
@@ -31,6 +41,45 @@
    * param at publish-time.
    */
   "private": true,
+  /**
+   * Examples:
+   *
+   *   "author": {
+   *     "name": "Barney Rubble",
+   *     "email": "barney@rubble.com",
+   *     "url": "http://barnyrubble.tumblr.com/"
+   *   }
+   *
+   *   "author": "Barney Rubble <barney@rubble.com> (http://barnyrubble.tumblr.com)"
+   */
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  /**
+   * The url to the project homepage.
+   *
+   * NOTE: This is not the same as "url".  If you put a "url" field, then the
+   * registry will think it's a redirection to your package that has been published
+   * somewhere else.
+   */
+  "homepage": "",
+  /**
+   * Examples:
+   *
+   *   "license": "MIT"
+   *   "license": "(MIT OR Apache-2.0)"
+   *   "license": "UNLICENSED"
+   */
+  "license": "UNLICENSED",
   /**
    * The set of constraints defining the list of browsers this project is designed
    * to support.  See https://github.com/ai/browserslist for details about how to
@@ -44,6 +93,19 @@
     "Last 2 major versions",
     "Firefox ESR"
   ],
+  /**
+   * If your code only runs on certain cpu architectures, you can specify which
+   * ones.
+   *
+   *   "cpu" : [ "x64", "ia32" ]
+   *
+   * Like the `os` option, you can also blacklist architectures:
+   *
+   *   "cpu" : [ "!arm", "!mips" ]
+   *
+   * The host architecture is determined by `process.arch`.
+   */
+  "cpu": [ "", "" ],
   /**
    * You can specify the version of node that your stuff works on:
    *
@@ -71,99 +133,6 @@
   "os": [
     ""
   ],
-  /**
-   * If your code only runs on certain cpu architectures, you can specify which
-   * ones.
-   *
-   *   "cpu" : [ "x64", "ia32" ]
-   *
-   * Like the `os` option, you can also blacklist architectures:
-   *
-   *   "cpu" : [ "!arm", "!mips" ]
-   *
-   * The host architecture is determined by `process.arch`.
-   */
-  "cpu": [ "", "" ],
-  /**
-   * Examples:
-   *
-   *   "author": {
-   *     "name": "Barney Rubble",
-   *     "email": "barney@rubble.com",
-   *     "url": "http://barnyrubble.tumblr.com/"
-   *   }
-   *
-   *   "author": "Barney Rubble <barney@rubble.com> (http://barnyrubble.tumblr.com)"
-   */
-  "author": {
-    "name": "",
-    "email": "",
-    "url": ""
-  },
-  "contributors": [
-    {
-      "name": "",
-      "email": "",
-      "url": ""
-    }
-  ],
-  /**
-   * A description of your npm package.  This helps people discover your package as
-   * it's listed in `npm search`.
-   */
-  "description": "",
-  /**
-   * An array of keywords related to your npm package.  This helps people discover
-   * your package as it's listed in `npm search`.
-   */
-  "keywords": ["", ""],
-  /**
-   * The url to the project homepage.
-   *
-   * NOTE: This is not the same as "url".  If you put a "url" field, then the
-   * registry will think it's a redirection to your package that has been published
-   * somewhere else.
-   */
-  "homepage": "",
-  /**
-   * The URL to your project's issue tracker and / or the email address to which
-   * issues should be reported.  These are helpful for people who encounter issues
-   * with your package.
-   *
-   * You can specify either one or both values.  If you want to provide only a URL,
-   * you can specify the value for "bugs" as a simple string instead of an object.
-   *
-   * If a URL is provided, it will be used by the `npm bugs` command.
-   *
-   * Examples:
-   *
-   *   "bugs": {
-   *     "email": "dhurlburtusa@github.com",
-   *     "url": "https://github.com/dhurlburtusa/qc-core/issues"
-   *   }
-   *
-   *   "bugs": {
-   *     "email": "dhurlburtusa@github.com"
-   *   }
-   *
-   *   "bugs": {
-   *     "url": "https://github.com/dhurlburtusa/qc-core/issues"
-   *   }
-   *
-   *   "bugs": "https://github.com/dhurlburtusa/qc-core/issues"
-   */
-  "bugs": {
-    "email": "",
-    "url": ""
-  },
-  /**
-   * Examples:
-   *
-   *   "license": "MIT"
-   *   "license": "(MIT OR Apache-2.0)"
-   *   "license": "UNLICENSED"
-   */
-  "license": "UNLICENSED",
   /**
    * The "files" field is an array of files to include in your project.  If you
    * name a folder in the array, then it will also include the files inside that
@@ -210,6 +179,37 @@
     "test": ""
   },
   /**
+   * The URL to your project's issue tracker and / or the email address to which
+   * issues should be reported.  These are helpful for people who encounter issues
+   * with your package.
+   *
+   * You can specify either one or both values.  If you want to provide only a URL,
+   * you can specify the value for "bugs" as a simple string instead of an object.
+   *
+   * If a URL is provided, it will be used by the `npm bugs` command.
+   *
+   * Examples:
+   *
+   *   "bugs": {
+   *     "email": "dhurlburtusa@github.com",
+   *     "url": "https://github.com/dhurlburtusa/qc-core/issues"
+   *   }
+   *
+   *   "bugs": {
+   *     "email": "dhurlburtusa@github.com"
+   *   }
+   *
+   *   "bugs": {
+   *     "url": "https://github.com/dhurlburtusa/qc-core/issues"
+   *   }
+   *
+   *   "bugs": "https://github.com/dhurlburtusa/qc-core/issues"
+   */
+  "bugs": {
+    "email": "",
+    "url": ""
+  },
+  /**
    * Examples:
    *
    *   "repository": {
@@ -228,6 +228,12 @@
   "repository": {
     "type": "",
     "url": ""
+  },
+  /**
+   * See https://docs.npmjs.com/misc/config for details.
+   */
+  "config": {
+    "name": "value"
   },
   /**
    * See https://docs.npmjs.com/misc/scripts for details.
@@ -396,12 +402,6 @@
     "coverage": "",
 
     "...": "...",
-  },
-  /**
-   * See https://docs.npmjs.com/misc/config for details.
-   */
-  "config": {
-    "name": "value"
   },
   /**
    * This is a set of config values that will be used at publish-time.  It's
