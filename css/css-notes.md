@@ -8,6 +8,20 @@ keywords, properties, rules, and values I recently came across.
 
 ### Implemented in at Least One Browser
 
+**::backdrop**
+
+The `::backdrop` CSS pseudo-element is a box rendered immediately below any
+element rendered in fullscreen mode (and above any lower elements in the
+stack) or a `dialog` element.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop for details.
+
+```css
+dialog::backdrop {
+  background: rgba(255, 0, 0, .25);
+}
+```
+
 **box-decoration-break**
 
 The `box-decoration-break` CSS property specifies how the `background`,
