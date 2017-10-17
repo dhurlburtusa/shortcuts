@@ -65,6 +65,20 @@ See https://drafts.csswg.org/css-display/#box-generation for details.
 }
 ```
 
+**touch-action**
+
+The `touch-action` CSS property specifies whether, and in what ways, a given
+region can be manipulated by the user via a touchscreen (for instance, by
+panning or zooming features built into the browser).
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action for details.
+
+```css
+div {
+  touch-action: pan-y;
+}
+```
+
 **@viewport**
 
 The `@viewport` rule is like a CSS alternative to
