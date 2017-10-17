@@ -127,6 +127,24 @@ See https://www.w3.org/TR/css-device-adapt/#atviewport-rule for details.
 }
 ```
 
+**will-change**
+
+The `will-change` CSS property provides a way for authors to hint browsers
+about the kind of changes to be expected on an element, so that the browser
+can set up appropriate optimizations ahead of time before the element is
+actually changed.  These kind of optimizations can increase the responsiveness
+of a page by doing potentially expensive work ahead of time before they are
+actually required.  `will-change` is intended to be used as something of a
+last resort.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/will-change for details.
+
+```css
+.sidebar {
+  will-change: transform;
+}
+```
+
 **wrap-flow and wrap-through**
 
 The `wrap-flow` and `wrap-through` properties are a part of the CSS Exclusions
