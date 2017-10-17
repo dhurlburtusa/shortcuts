@@ -167,19 +167,27 @@ A stacking context is formed, anywhere in the document, by any element which is 
 
 * The root element (HTML)
 * [Positioned][position] (absolutely or relatively) with a `z-index` value other than `"auto"`
-* `position: fixed`
+* `position: fixed` or `position: sticky`
 * A flex item with a [`z-index`][z_index] value other than `"auto"`
 * Elements with an [`opacity`][opacity] value less than `1`
-* Elements with a [`transform`][transform] value other than `"none"`
 * Elements with a [`mix-blend-mode`][mix_blend_mode] value other than `"normal"`
-* Elements with a [`filter`][filter] value other than `"none"`
-* Elements with a [`perspective`][perspective] value other than `"none"`
+* Elements with any of the following properties with a value other than `"none"`:
+  + [`clip-path`][clip_path]
+  + [`filter`][filter]
+  + [`mask`][mask], [`mask-image`][mask_image], [`mask-border`][mask_border]
+  + [`perspective`][perspective]
+  + [`transform`][transform]
 * Elements with [`isolation`][isolation] set to `"isolate"`
-* Specifying any attribute above in [`will-change`][will_change] even if you don't specify values for these attributes directly
 * Elements with [`-webkit-overflow-scrolling`][webkit_overflow_scrolling] set to `"touch"`
+* Specifying any attribute above in [`will-change`][will_change] even if you don't specify values for these attributes directly
 
+
+[clip_path]: https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
 [filter]: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 [isolation]: https://developer.mozilla.org/en-US/docs/Web/CSS/isolation
+[mask]: https://developer.mozilla.org/en-US/docs/Web/CSS/mask
+[mask_border]: https://www.w3.org/TR/css-masking-1/#the-mask-border
+[mask_image]: https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image
 [mix_blend_mode]: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode
 [opacity]: https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
 [perspective]: https://developer.mozilla.org/en-US/docs/Web/CSS/perspective
