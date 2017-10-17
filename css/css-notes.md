@@ -95,9 +95,20 @@ details.
 
 ```css
 input::placeholder,
-select::placeholder,
 textarea::placeholder {
   font: ...;
+}
+```
+
+**:placeholder-shown**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown for
+details.
+
+```css
+input:placeholder-shown,
+textarea:placeholder-shown {
+  text-overflow: ellipsis;
 }
 ```
 
