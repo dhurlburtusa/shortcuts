@@ -65,6 +65,17 @@ See https://drafts.csswg.org/css-display/#box-generation for details.
 }
 ```
 
+**object-fit**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit for details.
+
+```css
+img,
+video {
+  object-fit: cover;
+}
+```
+
 **touch-action**
 
 The `touch-action` CSS property specifies whether, and in what ways, a given
