@@ -93,6 +93,19 @@ details.
 }
 ```
 
+**:fullscreen**
+
+The `:fullscreen` CSS pseudo-class represents an element that's displayed when
+the browser is in fullscreen mode.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen for details.
+
+```css
+video:fullscreen {
+  ...
+}
+```
+
 **object-fit**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit for details.
