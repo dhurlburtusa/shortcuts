@@ -55,6 +55,19 @@ p {
 }
 ```
 
+**@viewport**
+
+The `@viewport` rule is like a CSS alternative to
+`<meta name="viewport" content="...">`.
+
+See https://www.w3.org/TR/css-device-adapt/#atviewport-rule for details.
+
+```css
+@viewport {
+  width: 320px auto;
+}
+```
+
 
 ## Stacking Context
 
