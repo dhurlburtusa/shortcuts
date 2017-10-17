@@ -1,10 +1,10 @@
 # CSS Notes
 
 
-## Some New CSS Properties/Keywords
+## Some New CSS Features
 
-Here are some new (at least new to me) CSS properties/keywords I recently came
-across.
+Here are some new (at least new to me) CSS psuedo-classes, pseudo-elements,
+keywords, properties, rules, and values I recently came across.
 
 ### Implemented in at Least One Browser
 
