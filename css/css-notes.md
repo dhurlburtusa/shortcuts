@@ -88,6 +88,18 @@ video {
 }
 ```
 
+**scroll-behavior**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior for
+details.
+
+```css
+div {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+```
+
 **touch-action**
 
 The `touch-action` CSS property specifies whether, and in what ways, a given
