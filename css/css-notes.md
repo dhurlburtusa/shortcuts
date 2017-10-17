@@ -1,9 +1,10 @@
 # CSS Notes
 
 
-## Some New CSS Properties
+## Some New CSS Properties/Keywords
 
-Here are some new (at least new to me) CSS properties I recently came across.
+Here are some new (at least new to me) CSS properties/keywords I recently came
+across.
 
 ### Implemented in at Least One Browser
 
@@ -33,6 +34,24 @@ See https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color for details.
 ```css
 textarea {
   caret-color: red;
+}
+```
+
+**currentColor**
+
+The `currentColor` keyword represents the value of an element's `color`
+property.  This lets you use the `color` value on properties that do not
+receive it by default.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentColor_keyword
+for details.
+
+```css
+html {
+  color: maroon;
+}
+p {
+  border: 1px solid currentColor;
 }
 ```
 
