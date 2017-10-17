@@ -65,6 +65,20 @@ See https://drafts.csswg.org/css-display/#box-generation for details.
 }
 ```
 
+**:focus-within**
+
+Represents an element that has received focus or contains an element that has
+received focus.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within for
+details.
+
+```css
+.Panel:focus-within {
+  outline: 2px solid aqua;
+}
+```
+
 **object-fit**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit for details.
