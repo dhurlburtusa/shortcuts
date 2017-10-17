@@ -5,6 +5,21 @@
 
 ### Implemented in at Least One Browser
 
+**box-decoration-break**
+
+The `box-decoration-break` CSS property specifies how the `background`,
+`padding`, `border`, `border-image`, `box-shadow`, `margin`, and `clip-path`
+of an element are applied when the box for the element is fragmented.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/box-decoration-break for
+details.
+
+```css
+div {
+  box-decoration-break: clone;
+}
+```
+
 **caret-color**
 
 ```css
