@@ -22,6 +22,12 @@ div {
 
 **caret-color**
 
+The `caret-color` CSS property sets the color of the insertion caret within an
+element such as `<input>`, `<select>`, `<textarea>`, or one with the
+`contenteditable` attribute set.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color for details.
+
 ```css
 textarea {
   caret-color: red;
