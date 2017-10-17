@@ -3,6 +3,8 @@
 
 ## Some New CSS Properties
 
+Here are some new (at least new to me) CSS properties I recently came across.
+
 ### Implemented in at Least One Browser
 
 **box-decoration-break**
