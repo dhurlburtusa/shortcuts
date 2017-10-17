@@ -88,6 +88,19 @@ video {
 }
 ```
 
+**::placeholder**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder for
+details.
+
+```css
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  font: ...;
+}
+```
+
 **scroll-behavior**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior for
