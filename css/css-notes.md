@@ -78,6 +78,19 @@ See https://www.w3.org/TR/css-device-adapt/#atviewport-rule for details.
 }
 ```
 
+**wrap-flow and wrap-through**
+
+The `wrap-flow` and `wrap-through` properties are a part of the CSS Exclusions
+module.  Exclusions defines how inline content flows around elements.  It
+extends the content wrapping ability of floats to any block-level element.
+
+```css
+div {
+  wrap-flow: clear;
+  wrap-through: none;
+}
+```
+
 
 ## Stacking Context
 
