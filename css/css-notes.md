@@ -76,6 +76,18 @@ video {
 }
 ```
 
+**object-position**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/object-position for
+details.
+
+```css
+img,
+video {
+  object-position: center top;
+}
+```
+
 **touch-action**
 
 The `touch-action` CSS property specifies whether, and in what ways, a given
