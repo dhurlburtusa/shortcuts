@@ -55,6 +55,16 @@ p {
 }
 ```
 
+**display: contents**
+
+See https://drafts.csswg.org/css-display/#box-generation for details.
+
+```css
+.wrapper {
+  display: contents;
+}
+```
+
 **@viewport**
 
 The `@viewport` rule is like a CSS alternative to
