@@ -70,6 +70,11 @@
    * NOTE: This is not the same as "url".  If you put a "url" field, then the
    * registry will think it's a redirection to your package that has been published
    * somewhere else.
+   *
+   * Examples:
+   *   "homepage": "https://github.com/<github-username>/<project-name>#readme"
+   *
+   *   "homepage": "https://github.com/dhurlburtusa/qc-core#readme"
    */
   "homepage": "",
   /**
