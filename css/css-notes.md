@@ -165,6 +165,17 @@ div {
 }
 ```
 
+**text-decoration-<color|line|skip|style>**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration for
+details.
+
+```css
+.error {
+  text-decoration: underline wavy red;
+}
+```
+
 **text-emphasis**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis for
