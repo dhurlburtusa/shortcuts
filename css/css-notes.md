@@ -165,6 +165,17 @@ div {
 }
 ```
 
+**text-emphasis**
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis for
+details.
+
+```css
+h2.is-important {
+  text-emphasis: open sesame red;
+}
+```
+
 **touch-action**
 
 The `touch-action` CSS property specifies whether, and in what ways, a given
