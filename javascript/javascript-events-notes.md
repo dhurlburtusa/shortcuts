@@ -175,10 +175,21 @@ IE9+.
 ```
 
 
+## Event Listener Options
+
+The third parameter to `EventTarget#addEventListener` has accepted a boolean
+indicating whether the listener should be called during the capturing phase or
+the bubbling phase.  Later, browsers began accepting an EventListenerOptions
+dictionary object.  Use the following polyfill to add support to older
+browsers.
+
+https://github.com/WICG/EventListenerOptions/blob/gh-pages/EventListenerOptions.polyfill.js
+
+
 ## Passive Event Listeners
 
-When an event listener is added, options can be set to declared that the listener is intended to be
-passive.
+When an event listener is added, options can be set to declared that the
+listener is intended to be passive.
 
 ```js
 eventTarget.addEventListener('some-event', (evt) => { ... }, { passive: true })
