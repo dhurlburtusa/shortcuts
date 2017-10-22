@@ -175,5 +175,18 @@ IE9+.
 ```
 
 
+## Passive Event Listeners
+
+When an event listener is added, options can be set to declared that the listener is intended to be
+passive.
+
+```js
+eventTarget.addEventListener('some-event', (evt) => { ... }, { passive: true })
+```
+
+See https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener for details
+about the passive option.
+
+
 [el-closest]: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
 [el-matches]: https://developer.mozilla.org/en-US/docs/Web/API/Element/matches
