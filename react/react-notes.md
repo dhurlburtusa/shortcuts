@@ -1,6 +1,6 @@
 # React Notes
 
-See https://facebook.github.io/react/ for details.
+See https://reactjs.org/ for details.
 
 React is a declarative, efficient, and flexible JavaScript library for
 building user interfaces.
@@ -94,7 +94,7 @@ React.
 
 ## JSX
 
-See https://facebook.github.io/react/docs/introducing-jsx.html for more
+See https://reactjs.org/docs/introducing-jsx.html for more
 details.
 
 JSX is a syntax extension to JavaScript.  It is like a template language, but
