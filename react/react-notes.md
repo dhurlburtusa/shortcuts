@@ -1,4 +1,4 @@
-# React Cheat Sheet
+# React Notes
 
 See https://facebook.github.io/react/ for details.
 
