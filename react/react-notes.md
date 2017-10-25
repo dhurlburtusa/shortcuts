@@ -137,3 +137,13 @@ See https://github.com/dhurlburtusa/shortcuts/blob/master/react/react_component-
 
 Portals provide a first-class way to render children into a DOM node that
 exists outside the DOM hierarchy of the parent component.
+
+Portals are created using [`ReactDOM.createPortal`][createPortal].
+
+```js
+let portal = ReactDOM.createPortal(child, container)
+```
+
+
+
+[createPortal]: https://reactjs.org/docs/react-dom.html#createportal
