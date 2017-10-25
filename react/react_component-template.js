@@ -122,6 +122,25 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
     console.log(`${this.__name__}#constructor(props)`);
   }
 
+  /**
+   * This method is invoked after a JavaScript error is thrown during rendering, in
+   * lifecycle methods, and in constructors of the whole tree below them.
+   *
+   * NOTE: This method is not invoked in the following scenarios:
+   *
+   * * Event handlers.
+   * * Asynchronous code (e.g. `setTimeout` or `requestAnimationFrame` callbacks).
+   * * Server-side rendering.
+   *
+   * Only use this method in components that should act as "error boundaries".
+   *
+   * This method is new in React v16.
+   */
+  componentDidCatch(error, info) {
+    console.log(`${this.__name__}#componentDidCatch(error, info)`);
+    // It may be useful to log the error and display a fallback UI.
+  }
+
   /*
    * This method is invoked immediately before mounting occurs.  It is called
    * before `render`, therefore setting state synchronously in this method will not
