@@ -41,3 +41,17 @@ type Query {
   ...
 }
 ```
+
+
+## Query Syntax
+
+```
+query <queryName> {
+  <operationName>(<arguments>)
+}
+query <queryName> {
+  <operationName>(<arguments>): {
+    <fieldName>
+  }
+}
+```
