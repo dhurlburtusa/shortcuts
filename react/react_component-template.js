@@ -1,18 +1,18 @@
 // @flow
-import React from 'react';
+import React from 'react'
 
 
 type DefaultProps = {
   // ...
-};
+}
 
 type Props = {
   // ...
-};
+}
 
 type State = {
   // ...
-};
+}
 
 /**
  * See https://facebook.github.io/react/docs/react-component.html for up-to-date
@@ -68,28 +68,28 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
      ### forceUpdate
 
      ```js
-     this.forceUpdate();
+     this.forceUpdate()
      ```
 
      ### setState
 
      ```js
-     this.setState(partialOrFullNewState); // e.g. this.setState({ foo: 'bar' });
+     this.setState(partialOrFullNewState) // e.g. this.setState({ foo: 'bar' })
      ```
 
      ```js
      this.setState((prevState, props) => {
        ...
-       return partialOrFullNewState;
-     });
+       return partialOrFullNewState
+     })
      ```
   */
 
-  static defaultProps: DefaultProps;
+  static defaultProps: DefaultProps
 
-  __name__: string;
-  props: Props;
-  state: State;
+  __name__: string
+  props: Props
+  state: State
 
   /*
    * The construstor is the right place to initialize state.
@@ -99,10 +99,10 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    *
    * ```js
    *   constructor(props) {
-   *     super(props);
+   *     super(props)
    *     this.state = {
    *       color: props.initialColor
-   *     };
+   *     }
    *   }
    * ```
    *
@@ -118,8 +118,8 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Initialization stage.
    */
   constructor(props: Props) {
-    super(props);
-    console.log(`${this.__name__}#constructor(props)`);
+    super(props)
+    console.log(`${this.__name__}#constructor(props)`)
   }
 
   /**
@@ -137,7 +137,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * This method is new in React v16.
    */
   componentDidCatch(error, info) {
-    console.log(`${this.__name__}#componentDidCatch(error, info)`);
+    console.log(`${this.__name__}#componentDidCatch(error, info)`)
     // It may be useful to log the error and display a fallback UI.
   }
 
@@ -153,7 +153,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Initialization stage.
    */
   componentWillMount() {
-    console.log(`${this.__name__}#componentWillMount()`);
+    console.log(`${this.__name__}#componentWillMount()`)
     // Note: this.props, this.state, and this.setState may be used here.
   }
 
@@ -167,8 +167,8 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Initialization, Prop Changes, and State Changes stages.
    */
   render() {
-    console.log(`${this.__name__}#render()`);
-    return null;
+    console.log(`${this.__name__}#render()`)
+    return null
   }
 
   /*
@@ -180,7 +180,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Initialization stage.
    */
   componentDidMount() {
-    console.log(`${this.__name__}#componentDidMount()`);
+    console.log(`${this.__name__}#componentDidMount()`)
   }
 
   /*
@@ -201,7 +201,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Prop Changes stage.
    */
   componentWillReceiveProps(nextProps: Props) {
-    console.log(`${this.__name__}#componentWillReceiveProps(nextProps)`);
+    console.log(`${this.__name__}#componentWillReceiveProps(nextProps)`)
   }
 
   /*
@@ -233,9 +233,9 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Prop Changes and State Changes stages.
    */
   shouldComponentUpdate(nextProps: Props, nextState: State) {
-    console.log(`${this.__name__}#shouldComponentUpdate(nextProps, nextState)`);
-    // return super.shouldComponentUpdate(nextProps, nextState);
-    return true;
+    console.log(`${this.__name__}#shouldComponentUpdate(nextProps, nextState)`)
+    // return super.shouldComponentUpdate(nextProps, nextState)
+    return true
   }
 
   /*
@@ -249,7 +249,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Prop Changes and State Changes stages.
    */
   componentWillUpdate(nextProps: Props, nextState: State) {
-    console.log(`${this.__name__}#componentWillUpdate(nextProps, nextState)`);
+    console.log(`${this.__name__}#componentWillUpdate(nextProps, nextState)`)
   }
 
   /*
@@ -264,7 +264,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Prop Changes and State Changes stages.
    */
   componentDidUpdate(prevProps: Props, prevState: State) {
-    console.log(`${this.__name__}#componentDidUpdate(prevProps, prevState)`);
+    console.log(`${this.__name__}#componentDidUpdate(prevProps, prevState)`)
   }
 
   /*
@@ -276,22 +276,22 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * Called during the Unmounting stage.
    */
   componentWillUnmount() {
-    console.log(`${this.__name__}#componentWillUnmount()`);
+    console.log(`${this.__name__}#componentWillUnmount()`)
   }
 
   _bind(methodNameList) {
-    let i, iLen;
+    let i, iLen
 
     for (i = 0, iLen = methodNameList.length; i < iLen; ++i) {
-      let methodName = methodNameList[i];
+      let methodName = methodNameList[i]
       if (typeof this[methodName] === 'function') {
-        this[methodName] = this[methodName].bind(this);
+        this[methodName] = this[methodName].bind(this)
       }
     }
   }
 
 }
 
-DerivedComponent.prototype.__name__ = 'DerivedComponent';
+DerivedComponent.prototype.__name__ = 'DerivedComponent'
 
-export default DerivedComponent;
+export default DerivedComponent
