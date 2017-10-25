@@ -40,4 +40,11 @@ available object.  When other modules import from i18next, they will be importin
 the same object instance that was initialized in the above module.
 
 
+## Translations
+
+i18next offers many different ways to bring your different language translations
+into your code.  One of the simplest ways is to declare each language translation
+in the `resources` initialization property.
+
+
 [i18next]: https://www.i18next.com/
