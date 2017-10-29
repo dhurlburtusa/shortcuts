@@ -13,3 +13,9 @@ of functions, each with a single argument.
 // may be curried to:
 x => y => x + y
 ```
+
+**Partial Application**
+
+Partial application refers to the process of fixing a number of arguments to a
+function, producing another function of smaller arity.
+
