@@ -26,3 +26,7 @@ returns a function.
 
 `Array.map` and `Array.filter` in JavaScript are examples of HOFs because they
 accept a function as an argument.
+
+**Predicate**
+
+A predicate is a function that returns a boolean value.
