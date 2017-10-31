@@ -274,6 +274,13 @@ $ git remote add origin https://github.com/dhurlburtusa/qc-core.git
 ```
 
 
+## Syncing a Fork
+
+See https://help.github.com/articles/syncing-a-fork/. (Be sure to
+[configure a remote for a fork]( https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+first.)
+
+
 ## Tags
 
 List tags:
