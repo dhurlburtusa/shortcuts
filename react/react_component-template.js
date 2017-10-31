@@ -253,7 +253,7 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
   }
 
   /*
-   * This method is is invoked immediately after updating occurs.  This method is
+   * This method is invoked immediately after updating occurs.  This method is
    * not called for the initial render.
    *
    * Use this as an opportunity to operate on the DOM when the component has been
