@@ -147,5 +147,14 @@ let portal = ReactDOM.createPortal(child, container)
 
 ## Testing
 
+**Useful Links**
+
+* https://reactjs.org/docs/test-utils.html
+* https://reactjs.org/docs/shallow-renderer.html
+* https://reactjs.org/docs/test-renderer.html
+* https://facebook.github.io/jest/docs/en/tutorial-react.html
+* http://airbnb.io/enzyme/
+
+
 
 [createPortal]: https://reactjs.org/docs/react-dom.html#createportal
