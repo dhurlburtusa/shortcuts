@@ -145,5 +145,7 @@ let portal = ReactDOM.createPortal(child, container)
 ```
 
 
+## Testing
+
 
 [createPortal]: https://reactjs.org/docs/react-dom.html#createportal
