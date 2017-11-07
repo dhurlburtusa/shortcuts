@@ -41,6 +41,8 @@ Enzyme.configure({
 })
 ```
 
+See http://airbnb.io/enzyme/docs/installation/ for more installation details.
+
 
 ## Running Enzyme Tests
 
