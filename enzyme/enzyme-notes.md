@@ -40,3 +40,20 @@ Enzyme.configure({
   adapter: new Adapter()
 })
 ```
+
+
+## Running Enzyme Tests
+
+Enzyme is unopinionated regarding which test runner or assertion library you
+use, and should be compatible with all major test runners and assertion
+libraries out there.
+
+If you are interested in using enzyme with custom assertions and convenience
+functions for testing your React components, you can consider using:
+
+* `chai-enzyme` with Mocha/Chai.
+* `jasmine-enzyme` with Jasmine.
+* `jest-enzyme` with Jest.
+* `should-enzyme` for should.js.
+* `expect-enzyme` for expect.
+
