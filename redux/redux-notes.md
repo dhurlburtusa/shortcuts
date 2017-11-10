@@ -38,3 +38,52 @@ npm install --save redux
 
 3) **Changes are made with Pure Functions**: To specify how the state tree is
    transformed by actions, you write pure reducers.
+
+
+## Actions
+
+[Actions][action] are payloads of information that send data from your
+application to your store.  Actions are just plain JavaScript objects with a
+globally unique `type` property.
+
+```js
+{
+  type: 'ADD_TODO',
+  text: 'Demo an action'
+}
+```
+
+In order to enable tooling, you can shape your actions to match the [Flux
+Standard Action][fsa] (FSA).
+
+```js
+{
+  type: 'ADD_TODO',
+  payload: {
+    text: 'Demo an FSA'
+  }
+}
+```
+
+See https://redux.js.org/docs/basics/Actions.html and
+http://redux.js.org/docs/recipes/ReducingBoilerplate.html#actions for more
+details.
+
+**Action Creators**
+
+Action creators are functions that create actions.  They are a good way to
+hide details about the structure of the action.  This makes it easy to switch
+to using FSAs in the future.
+
+```js
+function addTodo(text) {
+  return {
+    type: 'ADD_TODO',
+    text: 'Demo action creators'
+  }
+}
+```
+
+
+[action]: https://redux.js.org/docs/Glossary.html#action
+[fsa]: https://github.com/acdlite/flux-standard-action
