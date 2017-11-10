@@ -208,11 +208,69 @@ This is fine, but try to keep the data separate from the UI state.
 > [normalizr's][normalizr] documentation in detail.
 
 
+## Usage with React
+
+```sh
+npm install --save react-redux
+```
+
+`connect` from React Redux generates an [HOC][] of another component, usually a
+presentational component.  See the [connect API][connect-api] for details.
+
+```js
+import { connect } from 'react-redux'
+
+import PresentationalComponent from './components/Presentationl'
+
+
+const mapStateToProps = (state) => {
+  // Create presentational component props from current state.
+  return props
+}
+
+const mapDispatchToProps = (dispatch) => {
+  // Create component props from dispatch function.  These are usually event
+  // handlers passed to the presentational component.
+  return props
+}
+
+const ContainerComponent = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PresentationalComponent)
+
+export default ContainerComponent
+```
+
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+import rootStateReducer from './reducers'
+import App from './components/App'
+
+let store = createStore(rootStateReducer)
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
+```
+
+See https://redux.js.org/docs/basics/UsageWithReact.html for details.
+
+
 [action]: https://redux.js.org/docs/Glossary.html#action
 [applyMiddleware]: https://redux.js.org/docs/api/applyMiddleware.html
+[connect-api]: https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options
 [dispatch]: https://redux.js.org/docs/api/Store.html#dispatch
 [fsa]: https://github.com/acdlite/flux-standard-action
 [get-state]: https://redux.js.org/docs/api/Store.html#getState
+[hoc]: https://reactjs.org/docs/higher-order-components.html
 [normalizr]: https://github.com/paularmstrong/normalizr
 [store-creator]: https://redux.js.org/docs/Glossary.html#store-creator
 [store-enhancer]: https://redux.js.org/docs/Glossary.html#store-enhancer
