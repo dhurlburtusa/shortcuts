@@ -18,6 +18,7 @@ Here is a list of some other projects that work well with React.
 * [React Router](https://github.com/reactjs/react-router)
 * [React Router Redux](https://github.com/reactjs/react-router-redux)
 * [Redux](http://redux.js.org/)
+* [redux-actions](https://redux-actions.js.org/)
 * [redux-devtools](https://github.com/gaearon/redux-devtools)
 * [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
 * [redux-promise](https://github.com/acdlite/redux-promise)
