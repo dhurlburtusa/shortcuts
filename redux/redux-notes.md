@@ -19,3 +19,10 @@ describing what happened.  To specify how the actions transform the state
 tree, you write pure reducers.
 
 That's it!
+
+
+## Installation
+
+```sh
+npm install --save redux
+```
