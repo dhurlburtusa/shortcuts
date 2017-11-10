@@ -85,5 +85,54 @@ function addTodo(text) {
 ```
 
 
+## Reducers
+
+Reducers specify how the application's state changes in response to actions.
+
+A reducer is a pure function that takes the previous state and an action, and
+returns the next state.
+
+```js
+(prevState, action) => nextState
+```
+
+It's very important that the reducer stays pure.  Things you should never do
+inside a reducer:
+
+* Mutate its arguments.
+* Perform side effects like API calls and routing transitions.
+* Call non-pure functions, e.g. `Date.now()` or `Math.random()`.
+
+**Splitting Reducers**
+
+As the application grows, a single reducer can become very verbose making it
+hard to comprehend.  A technique called reducer composition can help by
+breaking the main reducer into smaller, more managable reducers that each
+handle a small portion of the state tree.  See
+https://redux.js.org/docs/basics/Reducers.html#splitting-reducers for details
+on how this is done.
+
+Making use of `combineReducers` can help reduce some boilerplate.
+
+```js
+// ./reducers/index.js
+import React from 'react'
+import Redux from 'redux'
+
+import bar from './reducers/bar'
+import foo from './reducers/foo'
+
+const rootStateReducer = Redux.combineReducers({
+  foo,
+  bar,
+})
+
+export default rootStateReducer
+```
+
+See https://redux.js.org/docs/api/combineReducers.html for details.
+
+
+
 [action]: https://redux.js.org/docs/Glossary.html#action
 [fsa]: https://github.com/acdlite/flux-standard-action
