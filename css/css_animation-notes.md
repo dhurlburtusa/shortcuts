@@ -30,3 +30,19 @@ The `animation` property lets you configure how the animation will be played.
   animation-fill-mode: forwards;
 }
 ```
+
+**Appearance Configuration**
+
+The `@keyframes` at-rule lets you configure the appearance of the element as
+the animation is being played.
+
+```css
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+```
