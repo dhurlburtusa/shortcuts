@@ -102,6 +102,56 @@ property, and may be output in additional cases.
 | `...-play-state` | `running`    | `paused`, `running` |
 
 
+## `@keyframes` At-Rule
+
+The `@keyframes` CSS at-rule controls the intermediate steps in a CSS
+animation sequence by defining styles for keyframes (or waypoints) along the
+animation sequence. 
+
+```css
+@keyframes identifier {
+  0% {
+    /* Animatable property declarations */
+  }
+  ...
+  50% {
+    /* Animatable property declarations */
+  }
+  ...
+  100% {
+    /* Animatable property declarations */
+  }
+}
+@keyframes identifier {
+  from {
+    /* Animatable property declarations */
+  }
+  to {
+    /* Animatable property declarations */
+  }
+}
+```
+
+If a keyframe rule doesn't specify the start or end states of the animation
+(that is, `0%`/`from` and `100%`/`to`, browsers will use the element's
+existing styles for the start/end states.  This can be used to animate an
+element from its initial state and back.
+
+If multiple keyframe sets exist for a given name, the last one encountered by
+the parser is used.  `@keyframes` rules don't cascade, so animations never
+derive keyframes from more than one rule set.
+
+If a given animation time offset is duplicated, the last keyframe in the
+`@keyframes` rule for that percentage is used for that frame.  There's no
+cascading within a `@keyframes` rule if multiple keyframes specify the same
+percentage values.
+
+Properties that aren't specified in every keyframe are interpolated if
+possible.
+
+Declarations in a keyframe qualified with `!important` are ignored.
+
+
 [anim]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 [anim-delay]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay
 [anim-dir]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction
