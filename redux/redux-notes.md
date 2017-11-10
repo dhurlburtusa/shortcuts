@@ -133,6 +133,67 @@ export default rootStateReducer
 See https://redux.js.org/docs/api/combineReducers.html for details.
 
 
+## Store
+
+The Store is the object that brings the actions and reducers together.  The
+store has the following responsibilities:
+
+* Holds application state.
+* Allows access to state via [`getState()`][get-state].
+* Allows state to be updated via [`dispatch(action)`][dispatch].
+* Registers listeners via [`subscribe(listener)`][subscribe].
+* Handles unregistering of listeners via the function returned by
+  `subscribe(listener)`.
+
+> It's important to note that you'll only have a single store in a Redux
+> application.  When you want to split your data handling logic, you'll use
+> reducer composition instead of many stores.
+
+**Creation**
+
+```js
+import { createStore } from 'redux'
+import rootStateReducer from './reducers'
+
+let store = createStore(rootStateReducer)
+```
+
+**Creation with Preloaded State**
+
+```js
+import { createStore } from 'redux'
+import rootStateReducer from './reducers'
+
+// Example of preloaded state:
+const preloadedState = window.STATE_FROM_SERVER
+
+let store = createStore(rootStateReducer, preloadedState)
+```
+
+**Creation with Enhancements**
+
+The third argument accepts a [store enhancer][store-enhancer].  A store
+enhancer is a higher-order function that composes a
+[store creator][store-creator] to return a new, enhanced store creator.  The
+only store enhancer that ships with Redux is
+[`applyMiddleware()`][applyMiddleware].
+
+```js
+import { createStore, applyMiddleware } from 'redux'
+import reduxThunk from 'redux-thunk';
+import rootStateReducer from './reducers'
+
+let store = createStore(rootStateReducer, ..., applyMiddleware(reduxThunk))
+```
+
+See https://redux.js.org/docs/api/createStore.html for details.
+
 
 [action]: https://redux.js.org/docs/Glossary.html#action
+[applyMiddleware]: https://redux.js.org/docs/api/applyMiddleware.html
+[dispatch]: https://redux.js.org/docs/api/Store.html#dispatch
 [fsa]: https://github.com/acdlite/flux-standard-action
+[get-state]: https://redux.js.org/docs/api/Store.html#getState
+[store-creator]: https://redux.js.org/docs/Glossary.html#store-creator
+[store-enhancer]: https://redux.js.org/docs/Glossary.html#store-enhancer
+[subscribe]: https://redux.js.org/docs/api/Store.html#subscribe
