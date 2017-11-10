@@ -30,3 +30,11 @@ converter, and spits out a complete, ready-to-publish static website.
 ├── .jekyll-metadata
 └── index.html # can also be an 'index.md' with valid YAML Frontmatter
 ```
+
+
+## Configuration
+
+Jekyll configuration can be specified in a `_config.yml` file placed in your
+site's root directory.
+
+See https://jekyllrb.com/docs/configuration/ for details.
