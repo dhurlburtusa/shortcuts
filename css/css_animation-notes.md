@@ -46,3 +46,69 @@ the animation is being played.
   }
 }
 ```
+
+
+## `animation` Property
+
+The [`animation`][anim] CSS property is a shorthand property for the
+various animation properties:
+
+* [`animation-name`][anim-name]
+* [`animation-duration`][anim-duration]
+* [`animation-timing-function`][anim-timing-func]
+* [`animation-delay`][anim-delay]
+* [`animation-iteration-count`][anim-iter-count]
+* [`animation-direction`][anim-dir]
+* [`animation-fill-mode`][anim-fill-mode]
+* [`animation-play-state`][anim-play-state].
+
+The `animation` property is specified as one or more single animations,
+separated by commas.
+
+Each individual animation is specified as:
+
+* zero or one occurrences of the following values:
+  + &lt;transition-timing-function>
+  + &lt;animation-iteration-count>
+  + &lt;animation-direction>
+  + &lt;animation-fill-mode>
+  + &lt;animation-play-state>
+* an optional name for the animation, which may be none, a &lt;custom-ident>, or
+  a &lt;string>
+* zero, one, or two &lt;time> values
+
+The order of values within each animation definition is important: the first
+value that can be parsed as a `<time>` is assigned to the
+`animation-duration`, and the second one is assigned to `animation-delay`.
+
+The order within each animation definition is also important for
+distinguishing `animation-name` values from other keywords.  When parsed,
+keywords that are valid for properties other than `animation-name`, and whose
+values were not found earlier in the shorthand, must be accepted for those
+properties rather than for `animation-name`.  Furthermore, when serialized,
+default values of other properties must be output in at least the cases
+necessary to distinguish an animation-name that could be a value of another
+property, and may be output in additional cases.
+
+| Property        | Initial Value | Possible Values             |
+| --------------- | ------------- | --------------------------- |
+| `...-name`      | `none`        | Valid identifier.           |
+| `...-duration`  | `0s`          | `<num>s` or `<num>ms`.  `0` or positive.  Unit required. |
+| `...-delay`     | `0s`          | `<num>s` or `<num>ms`.  A negative value causes the animation to begin immediately, but partway through its cycle.  Unit required. |
+| `...-timing-function` | `ease`  | `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `cubic-bezier(#, #, #, #)`, `step-start`, `step-end`, `steps(#, [start\|end])` |
+| `...-iteration-count` | `1`     | Positive, real number or `infinite`. |
+| `...-direction` | `normal`      | `alternate`, `alternate-reverse`, `normal`, `reverse` |
+| `...-fill-mode` | `none`        | `backwards`, `both`, `forwards`, `none` |
+| `...-play-state` | `running`    | `paused`, `running` |
+
+
+[anim]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+[anim-delay]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay
+[anim-dir]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction
+[anim-duration]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration
+[anim-fill-mode]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+[anim-iter-count]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count
+[anim-name]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name
+[anim-play-state]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state
+[anim-timing-func]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+
