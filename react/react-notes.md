@@ -14,11 +14,15 @@ Here is a list of some other projects that work well with React.
 * [Flux](https://facebook.github.io/flux/)
 * [Immutable](https://facebook.github.io/immutable-js/)
 * [React Native](https://facebook.github.io/react-native/)
+* [react-redux](https://github.com/reactjs/react-redux)
 * [React Router](https://github.com/reactjs/react-router)
 * [React Router Redux](https://github.com/reactjs/react-router-redux)
 * [Redux](http://redux.js.org/)
+* [redux-devtools](https://github.com/gaearon/redux-devtools)
 * [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
+* [redux-promise](https://github.com/acdlite/redux-promise)
 * [Redux Thunk](https://github.com/gaearon/redux-thunk)
+* [reselect](https://github.com/reactjs/reselect)
 
 
 ## Substitutes
