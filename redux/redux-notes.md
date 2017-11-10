@@ -26,3 +26,15 @@ That's it!
 ```sh
 npm install --save redux
 ```
+
+
+## Three Guiding Principles
+
+1) **Single Source of Truth**: The state of your whole application is stored in
+   an object tree within a single store.
+
+2) **State is Read-Only**: The only way to change the state is to emit an action,
+   an object describing what happened.
+
+3) **Changes are made with Pure Functions**: To specify how the state tree is
+   transformed by actions, you write pure reducers.
