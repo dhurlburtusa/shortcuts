@@ -189,11 +189,31 @@ let store = createStore(rootStateReducer, ..., applyMiddleware(reduxThunk))
 See https://redux.js.org/docs/api/createStore.html for details.
 
 
+## State
+
+The shape of the app's state is entirely up to the developer.
+
+**Designing the State Shape**
+
+In Redux, all the application state is stored as a single object.  It's a good
+idea to think of its shape before writing any code.  You'll often find that
+you need to store some data, as well as some UI state, in the state tree.
+This is fine, but try to keep the data separate from the UI state.
+
+> In a more complex app, you're going to want different entities to reference
+> each other.  We suggest that you keep your state as normalized as possible,
+> without any nesting.  Keep every entity in an object stored with an ID as a
+> key, and use IDs to reference it from other entities, or lists.  Think of
+> the app's state as a database.  This approach is described in
+> [normalizr's][normalizr] documentation in detail.
+
+
 [action]: https://redux.js.org/docs/Glossary.html#action
 [applyMiddleware]: https://redux.js.org/docs/api/applyMiddleware.html
 [dispatch]: https://redux.js.org/docs/api/Store.html#dispatch
 [fsa]: https://github.com/acdlite/flux-standard-action
 [get-state]: https://redux.js.org/docs/api/Store.html#getState
+[normalizr]: https://github.com/paularmstrong/normalizr
 [store-creator]: https://redux.js.org/docs/Glossary.html#store-creator
 [store-enhancer]: https://redux.js.org/docs/Glossary.html#store-enhancer
 [subscribe]: https://redux.js.org/docs/api/Store.html#subscribe
