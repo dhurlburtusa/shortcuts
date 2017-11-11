@@ -63,6 +63,25 @@ python manage.py migrate
 ```
 
 
+## Models
+
+```python
+from django.db import models
+
+
+class ParentModel(models.Model):
+    some_text = models.CharField(max_length=200)
+    age = models.IntegerField(default=0)
+
+
+class ChildModel(models.Model):
+    parent = models.ForeignKey(ParentModel, on_delete=models.CASCADE)
+    some_text = models.CharField(max_length=200)
+    dob = models.DateTimeField('date of birth')
+
+```
+
+
 ## Views
 
 ```python
