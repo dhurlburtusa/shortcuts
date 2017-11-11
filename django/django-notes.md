@@ -131,4 +131,31 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
+def detail(request, child_id):
+    return HttpResponse("You're looking at child %s." % child_id)
 ```
+
+
+## URLconfs
+
+Django uses what are known as URLconfs to get from a URL to a view.  These are
+defined in an app's `urls.py` file.
+
+```python
+# app/urls.py
+from django.conf.urls import url
+
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^(?P<child_id>[0-9]+)/$', views.detail, name='detail'),
+]
+
+```
+
+**Named RegEx Captures**
+
+Capturing groups in regular expressions can be named by adding `?P<name>`
+immediately following the opening parenthesis of the capturing group.  See an
+example in the above code snippet.
