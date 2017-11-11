@@ -105,6 +105,21 @@ class ChildModel(models.Model):
 
 ```
 
+**Querying Models**
+
+```python
+from app.models import ChildModel, ParentModel
+
+children = ChildModel.objects.all()
+children = ChildModel.objects.filter(id=1)
+children = ChildModel.objects.filter(some_text__startswith='Foo')
+child = ChildModel.objects.get(pk=1)
+
+from django.utils import timezone
+
+current_year = timezone.now().year
+child = ChildModel.objects.get(dob__year=current_year)
+```
 
 ## Views
 
