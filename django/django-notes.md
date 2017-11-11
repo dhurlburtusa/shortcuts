@@ -135,6 +135,23 @@ def detail(request, child_id):
     return HttpResponse("You're looking at child %s." % child_id)
 ```
 
+**Shortcuts**
+
+```python
+# app/views.py
+from django.shortcuts import get_list_or_404, get_object_or_404, render
+
+from .models import MyModel
+
+def search(request, query):
+    models = get_list_or_404(MyModel, query)
+    return render(request, 'app/search.html', {'models': models})
+
+def detail(request, model_id):
+    model = get_object_or_404(MyModel, pk=model_id)
+    return render(request, 'app/detail.html', {'model': model})
+```
+
 
 ## URLconfs
 
