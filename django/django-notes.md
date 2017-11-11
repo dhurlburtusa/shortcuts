@@ -164,6 +164,10 @@ from django.conf.urls import url
 
 from . import views
 
+# Setting an app name allows URLs to be namespaced which can
+# be used by the {% url %} template tag.
+app_name = 'my_app'
+
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^(?P<child_id>[0-9]+)/$', views.detail, name='detail'),
@@ -189,7 +193,7 @@ example in the above code snippet.
 
 <ul>
 {% for my_item in my_list %}
-    <li><a href="{% url 'detail' my_item.id %}">{{ my_item.some_text }}</a></li>
+    <li><a href="{% url 'my_app:detail' my_item.id %}">{{ my_item.some_text }}</a></li>
 {% endfor %}
 </ul>
 ```
