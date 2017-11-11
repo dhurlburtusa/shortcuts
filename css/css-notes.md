@@ -158,6 +158,17 @@ video {
 }
 ```
 
+**offset**
+
+The `offset` CSS property is a shorthand property for animating an element
+along a defined path.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/offset for details.
+
+```css
+offset: path(M 100 100 L 300 100 L 200 300 z);
+```
+
 **::placeholder**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder for
