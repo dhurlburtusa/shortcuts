@@ -142,6 +142,39 @@ def detail(request, child_id):
     return HttpResponse("You're looking at child %s." % child_id)
 ```
 
+**Generic Views**
+
+```python
+# app/views.py
+from django.views import generic
+
+from .models import MyModel
+
+
+class IndexView(generic.ListView):
+    template_name = 'app/index.html'
+    context_object_name = 'my_model_list'
+
+    def get_queryset(self):
+        return MyModel.objects.all()
+
+class DetailView(generic.DetailView):
+    model = MyModel
+    template_name = 'app/detail.html'
+```
+
+```python
+# app/urls.py
+# ...
+from . import views
+# ...
+urlpatterns = [
+    url(r'^$', views.IndexView.as_view(), name='index'),
+    url(r'^(?P<pk>[0-9]+)/$', views.DetailView.as_view(), name='detail'),
+    # ...
+]
+```
+
 **Shortcuts**
 
 ```python
