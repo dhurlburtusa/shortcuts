@@ -56,6 +56,12 @@ python manage.py startapp <name>
 python manage.py runserver
 ```
 
+**Creating Migrations**
+
+```sh
+python manage.py makemigrations <name>
+```
+
 **Migrating Database**
 
 ```sh
