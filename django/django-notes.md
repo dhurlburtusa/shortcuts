@@ -30,3 +30,34 @@ pip install django
 ```sh
 django-admin --version
 ```
+
+
+## Project
+
+A project is a collection of configuration and apps for a particular website.
+A project can contain multiple apps.  An app can be in multiple projects.
+
+**Creating a Project**
+
+```sh
+django-admin startproject <name>
+cd <name>
+```
+
+**Creating an App**
+
+```sh
+python manage.py startapp <name>
+```
+
+**Running the Server**
+
+```sh
+python manage.py runserver
+```
+
+**Migrating Database**
+
+```sh
+python manage.py migrate
+```
