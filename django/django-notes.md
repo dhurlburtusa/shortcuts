@@ -193,7 +193,11 @@ example in the above code snippet.
 
 <ul>
 {% for my_item in my_list %}
-    <li><a href="{% url 'my_app:detail' my_item.id %}">{{ my_item.some_text }}</a></li>
+    <li>{{ forloop.counter }} <a href="{% url 'my_app:detail' my_item.id %}">{{ my_item.some_text }}</a></li>
 {% endfor %}
 </ul>
+
+<form method="post" ...>
+  {% csrf_token %}
+</form>
 ```
