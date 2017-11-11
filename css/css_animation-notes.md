@@ -166,6 +166,28 @@ for a complete list.
 * `font-kerning`
 
 
+## Animation Events
+
+Animation events are fired:
+
+* `animationstart`
+* `animationiteration`
+* `animationend`
+
+**AnimationEvent**
+
+```js
+let elem = document.querySelector('.animatable')
+elem.addEventListener('animationstart', (evt) => {
+  evt.animationName
+  evt.elapsedTime
+  evt.pseudoElement
+})
+```
+
+See https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent for details.
+
+
 [anim]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 [anim-delay]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay
 [anim-dir]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction
