@@ -61,3 +61,16 @@ python manage.py runserver
 ```sh
 python manage.py migrate
 ```
+
+
+## Views
+
+```python
+from django.http import HttpResponse
+
+
+# Manually generating an HttpResponse:
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+
+```
