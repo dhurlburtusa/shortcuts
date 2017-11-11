@@ -152,6 +152,20 @@ possible.
 Declarations in a keyframe qualified with `!important` are ignored.
 
 
+## Animatable CSS Properties
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+for a complete list.
+
+**Select List of Non-Animatable CSS Properties**
+
+* `box-sizing`
+* `clear`
+* `display`
+* `float`
+* `font-kerning`
+
+
 [anim]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 [anim-delay]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay
 [anim-dir]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction
