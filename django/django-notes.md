@@ -50,6 +50,12 @@ cd <name>
 python manage.py startapp <name>
 ```
 
+**Checking for Project Problems**
+
+```sh
+python manage.py check
+```
+
 **Running the Server**
 
 ```sh
