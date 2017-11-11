@@ -86,6 +86,13 @@ python manage.py sqlmigrate <app-name> <migration-id>
 python manage.py migrate
 ```
 
+**Running Tests**
+
+```sh
+python manage.py test
+python manage.py test <app-name>
+```
+
 
 ## Models
 
