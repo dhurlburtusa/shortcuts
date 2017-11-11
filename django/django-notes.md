@@ -208,3 +208,16 @@ example in the above code snippet.
   {% csrf_token %}
 </form>
 ```
+
+
+## Testing
+
+**Setting Up Test Environment in Django Shell**
+
+```sh
+$ python manage.py shell
+>>> from django.test.utils import setup_test_environment
+>>> setup_test_environment()
+>>> from django.test import Client
+>>> client = Client()
+```
