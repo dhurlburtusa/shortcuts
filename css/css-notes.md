@@ -120,6 +120,21 @@ video:fullscreen {
 }
 ```
 
+**inline-size**
+
+The `inline-size` CSS property defines the horizontal or vertical size of an
+element's block, depending on its `writing-mode`.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size for details.
+
+```css
+p {
+  writing-mode: vertical-rl;
+  block-size: 20em;
+  inline-size: 40em;
+}
+```
+
 **object-fit**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit for details.
