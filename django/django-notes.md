@@ -56,6 +56,12 @@ python manage.py startapp <name>
 python manage.py check
 ```
 
+**Starting an Interactive Console Shell**
+
+```sh
+python manage.py shell
+```
+
 **Running the Server**
 
 ```sh
