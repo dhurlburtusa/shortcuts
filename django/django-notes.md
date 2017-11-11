@@ -59,7 +59,13 @@ python manage.py runserver
 **Creating Migrations**
 
 ```sh
-python manage.py makemigrations <name>
+python manage.py makemigrations <app-name>
+```
+
+**Show Migration SQL**
+
+```sh
+python manage.py sqlmigrate <app-name> <migration-id>
 ```
 
 **Migrating Database**
