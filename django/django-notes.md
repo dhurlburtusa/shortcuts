@@ -31,6 +31,12 @@ pip install django
 django-admin --version
 ```
 
+**Where is Django Installed?**
+
+```sh
+python -c "import django; print(django.__path__)"
+```
+
 
 ## Project
 
