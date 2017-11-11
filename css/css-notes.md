@@ -22,6 +22,20 @@ dialog::backdrop {
 }
 ```
 
+**block-size**
+
+The `block-size` CSS property defines the horizontal or vertical size of an
+element's block, depending on its `writing-mode`.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/block-size for details.
+
+```css
+p {
+  writing-mode: vertical-rl;
+  block-size: 20em;
+}
+```
+
 **box-decoration-break**
 
 The `box-decoration-break` CSS property specifies how the `background`,
