@@ -246,6 +246,41 @@ div {
 ```
 
 
+## Block Formatting Context
+
+See https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context
+for details.
+
+A block formatting context is the region in which the layout of block boxes
+occurs and in which floats interact with each other.
+
+A block formatting context is created by one of the following:
+
+* The root element or something that contains it
+* Floats (elements where `float` is not none)
+* Absolutely positioned elements (elements where `position` is `absolute` or
+  `fixed`)
+* Inline-blocks (elements with `display: inline-block`)
+* Table cells (elements with `display: table-cell`, which is the default for
+  HTML table cells)
+* Table captions (elements with `display: table-caption`, which is the default
+  for HTML table captions)
+* Block elements where `overflow` has a value other than `visible`.
+* `display: flow-root`
+* `column-span: all` should always create a new formatting context, even when
+  the `column-span: all` element isn't contained by a multicol container.
+
+A block formatting context contains everything inside of the element creating
+it that is not also inside a descendant element that creates a new block
+formatting context.
+
+Block formatting contexts are important for the positioning and clearing of
+floats.  The rules for positioning and clearing of floats apply only to things
+within the same block formatting context.  Floats do not affect the layout of
+things in other block formatting contexts, and clear only clears past floats
+in the same block formatting context.
+
+
 ## Stacking Context
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context for details.
