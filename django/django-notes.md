@@ -176,3 +176,20 @@ urlpatterns = [
 Capturing groups in regular expressions can be named by adding `?P<name>`
 immediately following the opening parenthesis of the capturing group.  See an
 example in the above code snippet.
+
+
+## Templates
+
+```python
+{% if condition %}
+  <p>Condition is truthy.</p>
+{% else %}
+  <p>Condition not truthy.</p>
+{% endif %}
+
+<ul>
+{% for my_item in my_list %}
+    <li><a href="{% url 'detail' my_item.id %}">{{ my_item.some_text }}</a></li>
+{% endfor %}
+</ul>
+```
