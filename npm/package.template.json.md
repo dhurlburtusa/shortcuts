@@ -1,6 +1,6 @@
 // See https://docs.npmjs.com/files/package.json.
 
-```js
+```json5
 {
   /**
    * The name of your npm package.  Required.  < 214 chars.  Can't start with a dot
