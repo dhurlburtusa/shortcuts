@@ -26,7 +26,8 @@ npm install --save-dev babel-cli
 Then install one or more presets or plugins.
 
 ```sh
-npm install --save-dev babel-preset-env babel-plugin-transform-remove-debugger
+npm install --save-dev babel-preset-env
+npm install --save-dev babel-plugin-transform-remove-debugger
 ```
 
 Then update `package.json` to run Babel.
@@ -46,6 +47,43 @@ Then update `.babelrc` to:
 ```json5
 {
   "plugins": [
+    "transform-remove-debugger"
+  ],
+  "presets": [
+    "env"
+  ]
+}
+```
+
+**Typical Application**
+
+Same parts as above plus the following.
+
+```sh
+npm install --save-dev cross-env
+```
+
+```sh
+npm install --save-dev babel-plugin-minify-dead-code-elimination
+npm install --save-dev babel-plugin-transform-inline-environment-variables
+```
+
+```json5
+{
+  ...
+  "scripts": {
+    "build": "cross-env NODE_ENV=development babel src -d build",
+    "build-prod": "cross-env NODE_ENV=producton babel src -d build"
+  },
+  ...
+}
+```
+
+```json5
+{
+  "plugins": [
+    "minify-dead-code-elimination",
+    "transform-inline-environment-variables",
     "transform-remove-debugger"
   ],
   "presets": [
