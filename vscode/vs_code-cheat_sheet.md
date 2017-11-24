@@ -40,6 +40,26 @@ Debugging with Chrome Debugger Extension:
 
 Update `url` and `webRoot` as necessary.
 
+```json5
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Goto chrome://inspect/ and make sure "127.0.0.1:9229" is in the
+      // "Discover network targets" configuration.
+      "type": "node",
+      "request": "launch",
+      "name": "Run Tests with Debugger",
+      "program": "${workspaceRoot}/the/script/to/debug.js",
+      "args": [...],
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}
+```
+
+Update `program` and `args` as necessary.
+
 **.vscode/settings.json**
 
 ```json5
@@ -135,5 +155,40 @@ Update `url` and `webRoot` as necessary.
   //   by variables with values
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}"
 
+}
+```
+
+
+## Debugging
+
+**An NPM Controlled Project with Jest**
+
+```json5
+// package.json
+...
+  "scripts": {
+    ...
+    "test:inspect": "node --inspect ./node_modules/jest/bin/jest.js --watch"
+    ...
+  },
+...
+```
+
+```json5
+// .vscode/launch.json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Goto chrome://inspect/ and make sure "127.0.0.1:9229" is in the
+      // "Discover network targets" configuration.
+      "type": "node",
+      "request": "launch",
+      "name": "Run Tests with Debugger",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": ["--watch"],
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
 }
 ```
