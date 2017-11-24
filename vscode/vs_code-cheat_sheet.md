@@ -3,8 +3,10 @@
 
 ## Popular Shortcuts
 
+* Show the Command Palette (`Ctrl+Shift+P`)
 * Open Markdown Preview in current editor group (`Ctrl+Shift+V`)
 * Open Markdown Preview in new editor group to the side (`Ctrl+K V`)
+* Show the Debug view (`Ctrl+Shift+D`)
 
 
 ## Hiding Derived JavaScript Files
