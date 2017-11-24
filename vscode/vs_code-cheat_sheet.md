@@ -19,6 +19,27 @@ for details.
 
 Here are the settings I tend to use in a project.
 
+**.vscode/launch.json**
+
+Debugging with Chrome Debugger Extension:
+
+```json5
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}/src"
+    }
+  ]
+}
+```
+
+Update `url` and `webRoot` as necessary.
+
 **.vscode/settings.json**
 
 ```json5
