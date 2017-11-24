@@ -1,6 +1,12 @@
 # VS Code Cheat Sheet
 
 
+## Popular Shortcuts
+
+* Open Markdown Preview in current editor group (`Ctrl+Shift+V`)
+* Open Markdown Preview in new editor group to the side (`Ctrl+K V`)
+
+
 ## Hiding Derived JavaScript Files
 
 See https://code.visualstudio.com/docs/languages/typescript#_hiding-derived-javascript-files
