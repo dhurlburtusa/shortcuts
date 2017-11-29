@@ -40,3 +40,7 @@ want to load it:
     </script>
     ...
 ```
+
+The snippet above can be configured to use a different language, disable XFBML
+parsing, check login status, etc.  See https://developers.facebook.com/docs/javascript/advanced-setup
+for details.
