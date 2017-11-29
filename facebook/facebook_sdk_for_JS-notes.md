@@ -12,3 +12,31 @@ functionality that:
   Facebook.
 
 The SDK, social plugins and dialogs work on both desktop and mobile web browsers.
+
+**Loading the SDK**
+
+Insert the following directly after the opening `<body>` tag on each page you
+want to load it:
+
+```html
+  <body>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId            : 'your-app-id',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.11'
+        });
+      };
+
+      (function (d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    ...
+```
