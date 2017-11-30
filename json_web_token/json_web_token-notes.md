@@ -15,6 +15,8 @@ Let's explain some concepts of this definition further.
 * **Self-contained**: The payload contains all the required information about
   the user, avoiding the need to query the database more than once.
 
+See https://jwt.io/ and https://en.wikipedia.org/wiki/JSON_Web_Token for
+details.
 
 ## When should you use JSON Web Tokens?
 
