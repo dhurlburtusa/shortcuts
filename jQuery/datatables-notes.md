@@ -57,3 +57,14 @@ body, and foot are explicitly declared. The `tfoot` is optional.
     </tfoot>
 </table>
 ```
+
+
+## Table Initialization
+
+All that is needed to initialize a `<table id="table_id">` is some JS similiar to the following:
+
+```js
+$(document).ready(function () {
+  $('#table_id').DataTable()
+})
+```
