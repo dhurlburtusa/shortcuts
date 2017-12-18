@@ -240,7 +240,7 @@ section where it should be white.
         'use strict';
 
         // Insert your code here.
-      })(this || window);
+      })(self || window);
     </script>
   </body>
 </html>
