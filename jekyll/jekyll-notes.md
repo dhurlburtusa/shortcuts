@@ -38,3 +38,25 @@ Jekyll configuration can be specified in a `_config.yml` file placed in your
 site's root directory.
 
 See https://jekyllrb.com/docs/configuration/ for details.
+
+
+## Running
+
+**Installing Gems**
+
+This only needs to be done once or whenever the gems change.
+
+```sh
+bundle install
+```
+
+**Starting the Dev Server**
+
+```sh
+bundle exec jekyll serve
+```
+
+**Building for Production**
+
+1. Set your production URL in `_config.yml` e.g. url: https://example.com.
+2. Run `JEKYLL_ENV=production bundle exec jekyll build`
