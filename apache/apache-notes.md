@@ -12,7 +12,6 @@ available on your system.  This is useful when you don't have access to
 httpd.conf.
 
 **Note**: This will only work if the `headers_module` has been loaded.
-LoadModule headers_module modules/mod_headers.so
 
 The following script adds HTTP headers to the response.
 
