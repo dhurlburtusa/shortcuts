@@ -60,3 +60,11 @@ bundle exec jekyll serve
 
 1. Set your production URL in `_config.yml` e.g. url: https://example.com.
 2. Run `JEKYLL_ENV=production bundle exec jekyll build`
+
+
+## Misc
+
+* The contents of `<destination>` are automatically cleaned, by default, when
+  the site is built.  Some files could be retained by specifying them within the
+  `<keep_files>` configuration directive.
+
