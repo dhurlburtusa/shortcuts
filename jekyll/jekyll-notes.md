@@ -39,6 +39,9 @@ site's root directory.
 
 See https://jekyllrb.com/docs/configuration/ for details.
 
+**Note**: Using tabs in configuration files will either lead to parsing
+errors, or Jekyll will revert to the default settings.  Use spaces instead.
+
 
 ## Running
 
