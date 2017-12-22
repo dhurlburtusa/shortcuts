@@ -1,6 +1,9 @@
 // @flow
 import React from 'react'
 
+type Context = {
+  // ...
+}
 
 type DefaultProps = {
   // ...
@@ -85,7 +88,9 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
      ```
   */
 
+  static contextTypes: PropTypes
   static defaultProps: DefaultProps
+  static propTypes: PropTypes
 
   __name__: string
   props: Props
@@ -117,9 +122,9 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    *
    * Called during the Initialization stage.
    */
-  constructor(props: Props) {
-    super(props)
-    console.log(`${this.__name__}#constructor(props)`)
+  constructor(props: Props[, context: Context]) {
+    super(props[, context])
+    console.log(`${this.__name__}#constructor(props, context)`)
   }
 
   /**
@@ -200,8 +205,8 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    *
    * Called during the Prop Changes stage.
    */
-  componentWillReceiveProps(nextProps: Props) {
-    console.log(`${this.__name__}#componentWillReceiveProps(nextProps)`)
+  componentWillReceiveProps(nextProps: Props[, nextContext: Context]) {
+    console.log(`${this.__name__}#componentWillReceiveProps(nextProps, nextContext)`)
   }
 
   /*
@@ -232,8 +237,8 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    *
    * Called during the Prop Changes and State Changes stages.
    */
-  shouldComponentUpdate(nextProps: Props, nextState: State) {
-    console.log(`${this.__name__}#shouldComponentUpdate(nextProps, nextState)`)
+  shouldComponentUpdate(nextProps: Props, nextState: State[, nextContext: Context]) {
+    console.log(`${this.__name__}#shouldComponentUpdate(nextProps, nextState, nextContext)`)
     // return super.shouldComponentUpdate(nextProps, nextState)
     return true
   }
@@ -248,8 +253,8 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    *
    * Called during the Prop Changes and State Changes stages.
    */
-  componentWillUpdate(nextProps: Props, nextState: State) {
-    console.log(`${this.__name__}#componentWillUpdate(nextProps, nextState)`)
+  componentWillUpdate(nextProps: Props, nextState: State[, nextContext: Context]) {
+    console.log(`${this.__name__}#componentWillUpdate(nextProps, nextState, nextContext)`)
   }
 
   /*
