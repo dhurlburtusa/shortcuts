@@ -34,6 +34,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 ```
 
 
+## Configuration
+
+There are several ways to configure GTM.  Usually, the user interface at
+https://tagmanager.google.com/ is used.  Another way is to use the REST API.
+See https://developers.google.com/tag-manager/api/v2/ for more details.
+
+
 ## Misc
 
 GTM fires tags asynchronously.
