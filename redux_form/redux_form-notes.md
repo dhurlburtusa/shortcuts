@@ -84,7 +84,7 @@ import { Field, reduxForm } from 'redux-form'
         <Field name="email" component="input" type="email" />
       </div>
       ...
-      <button type="submit" disabled={ pristine || submitting }>
+      <button type="submit" disabled={ submitting }>
         Submit
       </button>
       <button type="button" disabled={ pristine || submitting } onClick={ reset }>
