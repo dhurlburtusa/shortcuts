@@ -73,6 +73,7 @@ goes as follows:
 ...
 import { Field, reduxForm } from 'redux-form'
 ...
+    const { handleSubmit, pristine, reset, submitting } = this.props;
     <form onSubmit={ handleSubmit }>
       <div>
         <label htmlFor="name">Name</label>
@@ -83,7 +84,12 @@ import { Field, reduxForm } from 'redux-form'
         <Field name="email" component="input" type="email" />
       </div>
       ...
-      <button type="submit">Submit</button>
+      <button type="submit" disabled={ pristine || submitting }>
+        Submit
+      </button>
+      <button type="button" disabled={ pristine || submitting } onClick={ reset }>
+        Reset
+      </button>
     </form>
 ...
 ```
