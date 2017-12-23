@@ -117,3 +117,60 @@ class MyPage extends React.Component {
 
 The Redux Form HOC expects an `onSubmit` callback prop that will be called
 with the submitted form values when the form is submitted.
+
+
+## Field Validation
+
+There are two ways to provide synchronous client-side validation to your form.
+
+The first is to provide redux-form with a validation function that takes an
+object of form values and returns an object of errors.  This is done by
+providing the validation function to the decorator as a config parameter, or
+to the decorated form component as a prop.
+
+```js
+MyForm = reduxForm({
+  form: 'my',
+  // The following act as defaults for the validate and warn properties
+  // if they are not explicitly passed to the decorated component.
+  validate: (values) => {
+    const errors = {}
+    if (!values.username) {
+      errors.username = 'Required'
+    } else if (values.username.length > 15) {
+      errors.username = 'Must be 15 characters or less'
+    }
+    return errors
+  },
+  warn = values => {
+    const warnings = {}
+    if (values.age < 19) {
+      warnings.age = 'Hmm, you seem a bit young...'
+    }
+    return warnings
+  },
+})(MyForm)
+
+export default MyForm
+```
+
+```js
+const validate = (values) => { ... }
+const warn = (values) => { ... }
+<MyForm validate={ validate } warn={ warn }/>
+```
+
+The second is to use individual validators for each field.
+
+```js
+const required = (value) => value ? undefined : 'Required'
+const maxLength15 = (value) => ...
+const ofExtremeCriminal = (value) => ...
+<Field
+  name="name"
+  component="input"
+  type="text"
+  validate={[required, maxLength15]}
+  warn={ofExtremeCriminal}
+/>
+```
