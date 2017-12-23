@@ -174,3 +174,15 @@ const ofExtremeCriminal = (value) => ...
   warn={ofExtremeCriminal}
 />
 ```
+
+
+## Properties
+
+Documentation on the props given to the decorated form component can be read
+at https://redux-form.com/7.2.0/docs/api/props.md/.
+
+Although the documentation is quite good, here is some more information to
+help clarify some of the properties.
+
+* **invalid**: Not only `true` when a field has an error, but also `true` when
+  the `error` property is not `undefined`.
