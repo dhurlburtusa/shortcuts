@@ -40,6 +40,16 @@ There are several ways to configure GTM.  Usually, the user interface at
 https://tagmanager.google.com/ is used.  Another way is to use the REST API.
 See https://developers.google.com/tag-manager/api/v2/ for more details.
 
+### Exporting Configuration
+
+The current configuration can be exported using the following procedure:
+
+1. Log into Tag Manager.
+2. Select the container to be exported.
+3. Select the Admin tab.
+4. Select Export Container.
+5. Select the version or workspace.
+
 
 ## Misc
 
