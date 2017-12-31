@@ -21,3 +21,6 @@ function handleOnLeave(prevRouterState) {
   ...
 }
 ```
+```jsx
+  <Route path="..." component={...} onEnter={handleOnEnter} onLeave={handleOnLeave} />
+```
