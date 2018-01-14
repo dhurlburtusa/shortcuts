@@ -148,3 +148,22 @@ http {
   }
 }
 ```
+
+### Samples
+
+**Setting Long Expiration for Static Files**
+
+```
+# ...
+  server {
+    # ...
+
+    location ~* \.(css|eot|gif|ico|jpeg|jpg|js|png|svg|ttf|woff|woff2)$ {
+      expires max;
+      log_not_found off;
+    }
+
+    # ...
+  }
+# ...
+```
