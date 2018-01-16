@@ -476,6 +476,10 @@ In Google Analytics (GA), you do the following:
 > Currently you can create up to five content groupings.  Within each of those,
 > there is no limit to the number of content groups you can define.
 
+In Google Tag Manager (GTM), you do the following:
+
+* See this [YouTube video](https://www.youtube.com/watch?v=OSKEEy2xb9E&time_continue=474).
+
 
 ## Misc
 
