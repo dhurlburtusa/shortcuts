@@ -189,16 +189,25 @@ type GtmExportFormat = {
 
 ### Built-In
 
-Many of the built-in variables' documentation lacks examples which makes it
-hard to write an expression.
+See https://support.google.com/tagmanager/answer/7182738 for details.
 
-| Name          | Example                                | Comments |
-| ------------- | -------------------------------------- | -------- |
-| Container ID  | GTM-1ABCD23                            | |
-| Page Hostname | www.example.com                        | |
-| Page Path     | /about/                                | Does not contain query string or fragment identifier. |
-| Page URL      | https://www.example.com/about/?foo=bar | Does not contain fragment identifier (aka hash). |
-| Referrer      | https://www.example.com/               | |
+Many of the built-in variables' documentation lacks examples which makes it
+hard to write an expression when you question exactly what the value might
+look like.
+
+| Name              | Example(s)                                 | Comments |
+| ----------------- | ------------------------------------------ | -------- |
+| Container ID      | 'GTM-1ABCD23'                              | |
+| Container Version | 'QUICK_PREVIEW'                            | May be other values too. (Please update as they become known.) |
+| Debug Mode        | true, false                                | |
+| Environment Name  | 'Draft Environment 1 2018-01-16 12:42:32 ' | May be other values too. (Please update as they become known.) |
+| Event             | null, 'gtm.js', 'gtm.dom', 'gtm.load'      |  May be other values too. (Please update as they become known.) |
+| HTML ID           | ?                                          | 'undefined'. (Please update as example values become known.) |
+| Page Hostname     | 'www.example.com'                          | |
+| Page Path         | '/', '/about/', etc                        | Does not contain query string or fragment identifier. |
+| Page URL          | 'https://www.example.com/about/?foo=bar'   | Does not contain fragment identifier (aka hash). |
+| Random Number     | 123456789                                  | |
+| Referrer          | 'https://www.example.com/'                 | |
 
 
 ## Misc
