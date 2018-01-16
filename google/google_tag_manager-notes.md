@@ -187,6 +187,19 @@ type GtmExportFormat = {
 
 ## Variables
 
+### Built-In
+
+Many of the built-in variables' documentation lacks examples which makes it
+hard to write an expression.
+
+| Name          | Example                                | Comments |
+| ------------- | -------------------------------------- | -------- |
+| Container ID  | GTM-1ABCD23                            | |
+| Page Hostname | www.example.com                        | |
+| Page Path     | /about/                                | Does not contain query string or fragment identifier. |
+| Page URL      | https://www.example.com/about/?foo=bar | Does not contain fragment identifier (aka hash). |
+| Referrer      | https://www.example.com/               | |
+
 
 ## Misc
 
