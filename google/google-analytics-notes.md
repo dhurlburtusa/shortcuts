@@ -428,6 +428,55 @@ ga('send', 'pageview', { sessionControl: 'start' });
 ```
 
 
+## Content Grouping
+
+A content grouping is a set of content groups.  A content group is a
+collection of content.  This content could be pages in a certain section of
+your website or screens from a certain part of your app.
+
+**Google's Description**
+
+Content Grouping lets you group content into a logical structure that reflects
+how you think about your site or app, and then view and compare aggregated
+metrics by group name in addition to being able to drill down to the
+individual URL, page title, or screen name.  For example, you can see the
+aggregated number of pageviews for all pages in a group like Men/Shirts, and
+then drill in to see each URL or page title.
+
+See https://support.google.com/analytics/answer/2853423?hl=en for more
+details.
+
+**Creating Content Groups**
+
+To create a content group, you first need to create a content grouping.  Then
+you can create content groups for each of your content groupings.  In each of
+the content groups will be items, each representing different pages, screens,
+or sections of your website/web app.
+
+In Google Analytics (GA), you do the following:
+
+* From GA, go to the Admin section.
+* Choose an Account, Property, and View.
+* In the View, select Content Grouping.
+* Here you can create a new content grouping or edit an existing grouping.
+* From the Content Grouping Settings section you can set groups by three means:
+  by tracking code, using extraction, and using rule definition.
+  + By Tracking Code requires you to add a snippet of JS to each page to define
+    the group.
+  + Using Extraction lets you define groups by matching on reg exp capture groups
+    on the page URI, page title, or screen name.
+  + Using Rule Definitions lets you define groups by defining rule sets that match
+    on the page URI, page title, or screen name on various rules.  The rules
+    include matching exactly, contains, starts with, ends with, regex, is one of,
+    and the negation of the previous six for a total of twelve.  Each rule set can
+    contain multiple rules which can be OR'd or AND'd together.  (It appears you
+    can always define a rule set that is equivalent to an Extraction.  I have not
+    yet confirmed this.)
+
+> Currently you can create up to five content groupings.  Within each of those,
+> there is no limit to the number of content groups you can define.
+
+
 ## Misc
 
 GA tracks the document title, so be sure to pick the title you want to see in
