@@ -185,6 +185,9 @@ type GtmExportFormat = {
   container's `fingerprint` is updated to the same value.
 
 
+## Variables
+
+
 ## Misc
 
 GTM fires tags asynchronously.
