@@ -33,6 +33,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 ```
 
+## Data Layer
+
+A data layer is an object that contains all of the information that you want
+to pass to Google Tag Manager.  Information such as events or variables can be
+passed to Google Tag Manager via the data layer, and triggers can be set up in
+Google Tag Manager based on the values of variables.
+
+If the data is needed when the GTM tag is loaded, then the dataLayer must be
+created before the GTM tag.
+```html
+<script>
+  dataLayer = [];
+  dataLayer.push({ ... });
+</script>
+...
+<!-- Google Tag Manager -->
+...
+<!-- End Google Tag Manager -->
+```
+
+More data can be added after the GTM tag is loaded.  You just push more data
+on to the layer using the `Array#push` method.
+
+```js
+// Events:
+dataLayer.push({'event': '<event_name>'});
+
+// Variables:
+dataLayer.push({'<variable_name>': '<variable_value>'});
+```
+
+**Common Data Layer Variables**
+
+| Name                    | Comment |
+| ----------------------- | ------- |
+| pageCategory            | E.g., ['Uncategorized']. |
+| pagePostAuthor          | E.g., 'username'. |
+| pagePostAuthorID        | E.g., 1. |
+| pagePostDate            | E.g., 'January 14, 2018'. |
+| pagePostDateDay         | E.g., '14'. |
+| pagePostDateMonth       | E.g., '01'. |
+| pagePostDateYear        | E.g., '2018'. |
+| pagePostType            | 'bloghome' , 'frontpage', 'page', 'post' |
+| pagePostType2           | 'author-post', 'category-post', 'month-post', 'single-page', 'single-post' |
+| pageTitle               | E.g., 'About Us \| ' |
+| postCountOnPage         | E.g., 1. |
+| postCountTotal          | E.g., 1. |
+| postID                  | E.g., 1. |
+| siteID                  | E.g., 0. |
+| siteName                | |
+| siteSearchFrom          | E.g., 'https://example.com/blog' |
+| siteSearchResults       | |
+| siteSearchTerm          | |
+| visitorEmail            | E.g., 'me@example.com' |
+| visitorId               | E.g., 1. |
+| visitorLoginState       | E.g., 'logged-in', 'logged-out' |
+| visitorRegistrationDate | E.g., 1515892215. |
+| visitorType             | E.g., 'administrator', 'visitor-logged-out' |
+
 
 ## Configuration
 
