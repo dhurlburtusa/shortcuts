@@ -87,6 +87,19 @@ miscellaneous variables.  Below is a list with example values.
 * `npm_package_name`: `'...'`
 * `npm_package_version`: `'0.0.0'`
 
+**Setting Environment Variables**
+
+To set an environment variable for a single script that works across all common
+OSs, install [`cross-env`][cross-env] and use it like follows.
+
+```json5
+// package.json
+  ...
+  "scripts": {
+    "build:prod": "cross-env NODE_ENV=production node scripts/build.js",
+  },
+  ...
+```
 
 ## Versioning
 
@@ -157,4 +170,5 @@ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>]
 * Check the version has been bumped correctly.
 
 
+[cross-env]: https://www.npmjs.com/package/cross-env
 [semver]: https://docs.npmjs.com/misc/semver
