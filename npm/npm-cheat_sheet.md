@@ -101,6 +101,23 @@ OSs, install [`cross-env`][cross-env] and use it like follows.
   ...
 ```
 
+**Running Scripts in Parallel**
+
+To run npm scripts in parallel that works across all common OSs, install
+[`npm-run-all`][npm-run-all] and use it like follows.
+
+```json5
+// package.json
+  ...
+  "scripts": {
+    "build": "...",
+    "serve": "...",
+    "start": "npm-run-all -p build serve",
+  },
+  ...
+```
+
+
 ## Versioning
 
 See https://docs.npmjs.com/cli/version.
@@ -171,4 +188,5 @@ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>]
 
 
 [cross-env]: https://www.npmjs.com/package/cross-env
+[npm-run-all]: https://www.npmjs.com/package/npm-run-all
 [semver]: https://docs.npmjs.com/misc/semver
