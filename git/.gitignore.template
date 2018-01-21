@@ -3,9 +3,13 @@
 # dependencies
 /node_modules
 
-/build
+# testing
 /coverage
+
+# production
+/build
 /dist
+/lib
 
 .coveralls.yml
 .DS_Store
