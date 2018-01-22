@@ -170,6 +170,7 @@ $ git flow release start #.#.#
 ```sh
 ...
 $ git commit -m "Update Version"
+# Optionally push the release branch to origin
 $ git push origin release/#.#.#
 ```
 
@@ -179,6 +180,7 @@ $ git push origin release/#.#.#
 # Fix bugs
 ...
 $ git commit -m "Fix ..."
+# Optionally push the release branch to origin
 $ git push origin release/#.#.#
 
 # Merge fixes back to `develop` branch
@@ -193,7 +195,8 @@ $ git checkout release/#.#.#
 
 ```sh
 $ git flow release finish #.#.#
-$ git push origin master
+$ git push origin develop
+$ git push origin master --tags
 ```
 
 
