@@ -8,6 +8,9 @@
 * Public Identifier for SVG 1.1: PUBLIC "-//W3C//DTD SVG 1.1//EN"
 * System Identifier for the SVG 1.1 Recommendation:
   http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd
+* The fill is painted first, then the stroke, and then the marker symbols.  The
+  marker symbols are rendered in order along the outline of the shape, from the
+  start of the shape to the end of the shape.
 
 
 ## SVG Elements
