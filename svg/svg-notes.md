@@ -23,3 +23,13 @@ viewport and coordinate system.
   ...
 </svg>
 ```
+
+
+## DOCTYPE
+
+Note:  It is not recommended that a DOCTYPE declaration be included in SVG
+documents.
+
+```xml
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+```
