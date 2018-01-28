@@ -83,6 +83,20 @@ one point and ends at another.
 ...
 ```
 
+**rect**
+
+The `rect` element is a shape element that defines a rectangle which is
+axis-aligned with the current user coordinate system.  Rounded rectangles can be
+achieved by setting appropriate values for attributes `rx` and `ry`.
+
+```svg
+...
+<rect width="20" height="30"/>
+<rect x="10" y="10" width="20" height="30"/>
+<rect x="10" y="10" width="20" height="30" rx="3" ry="3"/>
+...
+```
+
 **symbol**
 
 The `symbol` element is a container element used to define graphical template
