@@ -132,6 +132,15 @@ container elements as child elements.
 * `symbol`
 * `svg`
 
+### Descriptive Elements
+
+Descriptive elements are those elements which provides supplementary descriptive
+information about its parent.
+
+* `desc`
+* `metadata`
+* `title`
+
 ### Graphics Elements
 
 Graphics elements are those elements that can cause graphics to be drawn onto
