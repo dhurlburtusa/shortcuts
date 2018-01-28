@@ -132,6 +132,19 @@ container elements as child elements.
 * `symbol`
 * `svg`
 
+### Shape Elements
+
+Shape elements are those that define graphics elements which are defined by some
+combination of straight lines and curves.
+
+* `circle`
+* `ellipse`
+* `line`
+* `path`
+* `polygon`
+* `polyline`
+* `rect`
+
 ### Structural Elements
 
 Structural elements are those elements which define the primary structure of an
