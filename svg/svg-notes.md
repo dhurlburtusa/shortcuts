@@ -114,6 +114,24 @@ child element of its parent.
 Authors should always provide a `title` child element to the outermost `svg`
 element within a stand-alone SVG document.
 
+### Container Elements
+
+Container elements are those elements which can have graphics elements and other
+container elements as child elements.
+
+* `a`
+* `defs`
+* `glyph`
+* `g`
+* `marker`
+* `mask`
+* `missing-glyph`
+* `pattern`
+* `svg`
+* `switch`
+* `symbol`
+* `svg`
+
 
 ## DOCTYPE
 
