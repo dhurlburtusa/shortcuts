@@ -109,6 +109,18 @@ one point and ends at another.
 ...
 ```
 
+**path**
+
+The `path` element is a shape element that represents the outline of a shape
+which can be filled, stroked, used as a clipping path, or any combination of the
+three.
+
+```svg
+...
+<path d="..."/>
+...
+```
+
 **polygon**
 
 The `polygon` element is a shape element that defines a closed shape consisting
