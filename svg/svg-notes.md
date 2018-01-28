@@ -40,6 +40,23 @@ that are descendants of a `defs` are not rendered directly;
 ...
 ```
 
+**desc**
+
+The `desc` element is a descriptive element which provides supplementary
+descriptive information about its parent.  It may be used by assistive
+technologies to help with accessibility, among other uses.
+
+```svg
+<svg ...>
+  <desc>Description of svg element.</desc>
+  ...
+  <g>
+    <desc>Description of g element.</desc>
+    ...
+  </g>
+</svg>
+```
+
 **g**
 
 The `g` element is a container element for grouping together related graphics
