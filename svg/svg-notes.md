@@ -27,6 +27,19 @@ viewport and coordinate system.
 </svg>
 ```
 
+**g**
+
+The `g` element is a container element for grouping together related graphics
+elements.
+
+```svg
+...
+<g class="..." id="...">
+  ...
+</g>
+...
+```
+
 
 ## DOCTYPE
 
