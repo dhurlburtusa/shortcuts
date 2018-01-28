@@ -15,6 +15,8 @@
 
 ## SVG Elements
 
+See https://www.w3.org/TR/SVG11/eltindex.html for the full list of elements.
+
 **svg**
 
 The `svg` element can be used to embed an SVG fragment inside the current
