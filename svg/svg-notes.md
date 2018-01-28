@@ -109,6 +109,17 @@ one point and ends at another.
 ...
 ```
 
+**polyline**
+
+The `polyline` element is a shape element that defines a set of connected
+straight line segments.
+
+```svg
+...
+<polyline points="0,0 10,0 10,10 0,10"/>
+...
+```
+
 **rect**
 
 The `rect` element is a shape element that defines a rectangle which is
