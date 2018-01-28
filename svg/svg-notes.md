@@ -109,6 +109,17 @@ one point and ends at another.
 ...
 ```
 
+**polygon**
+
+The `polygon` element is a shape element that defines a closed shape consisting
+of a set of connected straight line segments.
+
+```svg
+...
+<polygon points="0,0 10,0 10,10 0,10"/>
+...
+```
+
 **polyline**
 
 The `polyline` element is a shape element that defines a set of connected
