@@ -132,6 +132,17 @@ container elements as child elements.
 * `symbol`
 * `svg`
 
+### Structural Elements
+
+Structural elements are those elements which define the primary structure of an
+SVG document.
+
+* `defs`
+* `g`
+* `svg`
+* `symbol`
+* `use`
+
 
 ## DOCTYPE
 
