@@ -70,6 +70,13 @@ elements.
 ...
 ```
 
+**symbol**
+
+The `symbol` element is a container element used to define graphical template
+objects which can be instantiated by a `use` element.  `symbol` elements are
+never rendered directly.
+
+
 **title**
 
 The `title` element is a descriptive element which provides supplementary
