@@ -29,6 +29,18 @@ viewport and coordinate system.
 </svg>
 ```
 
+**circle**
+
+The `circle` element is a shape element that defines a circle based on a center
+point and a radius.
+
+```svg
+...
+<circle r="25"/>
+<circle cx="10" cy="10" r="25"/>
+...
+```
+
 **defs**
 
 The `defs` element is a container element for referenced elements.  Elements
