@@ -71,6 +71,20 @@ technologies to help with accessibility, among other uses.
 </svg>
 ```
 
+**ellipse**
+
+The `ellipse` element is a shape element that defines an ellipse which is
+axis-aligned with the current user coordinate system based on a center point and
+two radii.
+
+```svg
+...
+<ellipse rx="20" ry="30" />
+<ellipse cx="10" cy="10" rx="20" ry="30" />
+...
+```
+
+
 **g**
 
 The `g` element is a container element for grouping together related graphics
