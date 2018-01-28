@@ -27,6 +27,19 @@ viewport and coordinate system.
 </svg>
 ```
 
+**defs**
+
+The `defs` element is a container element for referenced elements.  Elements
+that are descendants of a `defs` are not rendered directly;
+
+```svg
+...
+<defs>
+  ...
+</defs>
+...
+```
+
 **g**
 
 The `g` element is a container element for grouping together related graphics
