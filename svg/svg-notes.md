@@ -70,6 +70,17 @@ elements.
 ...
 ```
 
+**line**
+
+The `line` element is a shape element that defines a line segment that starts at
+one point and ends at another.
+
+```svg
+...
+<line x1="10" y1="10" x2="20" y2="30"/>
+...
+```
+
 **symbol**
 
 The `symbol` element is a container element used to define graphical template
