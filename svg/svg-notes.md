@@ -141,6 +141,13 @@ information about its parent.
 * `metadata`
 * `title`
 
+### Gradient Elements
+
+Gradient elements are those elements that defines a gradient paint server.
+
+* `linearGradient`
+* `radialGradient`
+
 ### Graphics Elements
 
 Graphics elements are those elements that can cause graphics to be drawn onto
