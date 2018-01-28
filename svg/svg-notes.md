@@ -88,6 +88,13 @@ over particular elements.
 </svg>
 ```
 
+In conforming SVG document fragments, any `title` element should be the first
+child element of its parent.
+
+Authors should always provide a `title` child element to the outermost `svg`
+element within a stand-alone SVG document.
+
+
 ## DOCTYPE
 
 Note:  It is not recommended that a DOCTYPE declaration be included in SVG
