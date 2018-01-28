@@ -70,6 +70,23 @@ elements.
 ...
 ```
 
+**title**
+
+The `title` element is a descriptive element which provides supplementary
+descriptive information about its parent.  User agents may, however, for
+example, display the `title` element as a tooltip, as the pointing device moves
+over particular elements.
+
+```svg
+<svg ...>
+  <title>Example SVG Document</title>
+  ...
+  <g>
+    <title>A Group of SVG Elements</title>
+    ...
+  </g>
+</svg>
+```
 
 ## DOCTYPE
 
