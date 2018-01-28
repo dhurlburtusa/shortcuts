@@ -132,6 +132,24 @@ container elements as child elements.
 * `symbol`
 * `svg`
 
+### Graphics Elements
+
+Graphics elements are those elements that can cause graphics to be drawn onto
+the target canvas.
+
+* `circle`
+* `ellipse`
+* `image`
+* `line`
+* `path`
+* `polygon`
+* `polyline`
+* `rect`
+* `text`
+* `use`
+
+Note: Includes the shape elements plus the `image`, `text`, and `use` elements.
+
 ### Shape Elements
 
 Shape elements are those that define graphics elements which are defined by some
