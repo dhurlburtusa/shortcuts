@@ -298,7 +298,61 @@ is_string($var);
 
 ## PHP String
 
-A string is a sequence of characters, like "Hello world!".  You can use single or double quotes:
+A string is sequence of characters, where a character is the same as a byte.
+This means that PHP only supports a 256-character set, and hence does not offer
+native Unicode support.
+
+A string literal can be specified in four different ways:
+
+* Single quoted
+* Double quoted
+* Heredoc syntax
+* Nowdoc syntax (since PHP 5.3.0)
+
+**Single Quoted**
+
+A string specified by enclosing it in single quotes (the ' character).
+
+To specify a literal single quote, escape it with a backslash (\').  To specify
+a literal backslash, double it (\\).
+
+**Double Quoted**
+
+A string specified by enclosing it in double quotes (the " character).
+
+In double quoted strings, PHP **will** interpret the escape sequences for
+special characters it **will** expand variable names.
+
+**Heredoc Syntax**
+
+A third way to delimit strings is the heredoc syntax: <<<.  After this operator,
+an identifier is provided, then a newline.  The string itself follows, and then
+the same identifier again to close the quotation.
+
+The closing identifier must begin in the first column of the line.  Also, the
+identifier must follow the same naming rules as any other label in PHP: it must
+contain only alphanumeric characters and underscores, and must start with a
+non-digit character or underscore.
+
+Heredoc text behaves just like a double-quoted string, without the double
+quotes.
+
+Starting with PHP 5.3.0, the opening Heredoc identifier may optionally be
+enclosed in double quotes.
+
+**Nowdoc Syntax**
+
+Nowdocs are to single-quoted strings what heredocs are to double-quoted strings.
+A nowdoc is specified similarly to a heredoc, but no parsing is done inside a
+nowdoc.  The construct is ideal for embedding PHP code or other large blocks of
+text without the need for escaping.
+
+A nowdoc is identified with the same <<< sequence used for heredocs, but the
+identifier which follows is enclosed in single quotes, e.g. <<<'EOT'.
+
+Nowdoc support was added in PHP 5.3.0.
+
+**Examples**
 
 ```php
 <?php 
