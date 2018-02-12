@@ -32,6 +32,32 @@ WebRTC uses Real-time Transport Protocol to transfer audio and video.
 * [RTCDataChannel]
 
 
+## Parts Needed to Create a Peer-to-Peer Video/Audio Conversation
+
+**RTC Peer Connection**
+
+Each peer will need an RTC peer connection which can be acquired by creating a
+new instance of `RTCPeerConnection`.
+
+**Local Media Stream**
+
+Each peer will need to get access to a media stream with audio and/or video
+tracks to be able to communicate with audio and/or video.  This media stream is
+then added to the current RTC peer connection.
+
+**RTC Data Channels**
+
+Each peer will need to get access to an RTC data channel to be able to send
+data between peers.  The RTC data channel is then added to the current RTC peer
+connection.
+
+**Note**: As of Chrome 47, the `getUserMedia` API cannot be called from insecure
+origins.
+
+See https://caniuse.com/#feat=stream for browser support (basically, only
+evergreen browsers).
+
+
 ## JavaScript Libraries/Frameworks
 
 **Video**
