@@ -23,3 +23,16 @@
 
 See https://www.twilio.com/video and
 https://www.twilio.com/docs/programmable-video for details.
+
+
+## JavaScript Platform
+
+See https://www.twilio.com/docs/api/video/javascript and
+https://media.twiliocdn.com/sdk/js/video/v1/docs for details.
+
+**Initial Onetime Setup**
+
+* Install the SDK: `npm install --save twilio-video`
+* Create an API Key: See https://www.twilio.com/console/video/runtime/api-keys
+
+  
