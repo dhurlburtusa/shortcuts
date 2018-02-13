@@ -35,4 +35,10 @@ https://media.twiliocdn.com/sdk/js/video/v1/docs for details.
 * Install the SDK: `npm install --save twilio-video`
 * Create an API Key: See https://www.twilio.com/console/video/runtime/api-keys
 
-  
+**General Steps**
+
+The general steps to create a video/audio app is as follows:
+
+1. Generate an Access Token
+2. Connect to a room and start listening for room events
+3. When new participants connect, start listening for participant events
