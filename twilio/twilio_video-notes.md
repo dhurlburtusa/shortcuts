@@ -100,3 +100,54 @@ app.get('/api/token', function (request, response) {
   let tokenJwt = token.toJwt();
   response.send(tokenJwt);
 });
+```
+
+**Connecting to a Room**
+
+Once you have an access toke, you can connect to a room.
+
+```js
+import TwilioVideo from 'twilio-video';
+
+getAccessToken()
+  .then(({ token }) => {
+    TwilioVideo.connect(token, {
+      name: 'my-room',
+      // Any other options
+    })
+      .then((room) => {
+        room.on('participantConnected', function (participant) {
+          participant.on('trackAdded', function (track) {
+            // TODO: Attach to a DOM element.
+          });
+          participant.on('trackDimensionsChanged', function (videoTrack) {
+            ...
+          });
+          participant.on('trackDisabled', function (track) {
+            ...
+          });
+          participant.on('trackEnabled', function (track) {
+            ...
+          });
+          participant.on('trackRemoved', function (track) {
+            ...
+          });
+          participant.on('trackStarted', function (track) {
+            ...
+          });
+          participant.once('disconnected', function (participant) {
+            ...
+          });
+        });
+        room.once('disconnected', function(room, error) {
+          if (error) {
+            console.log('Unexpectedly disconnected:', error);
+          }
+          room.localParticipant.tracks.forEach(function (track) {
+            track.stop();
+            track.detach();
+          });
+        });
+      });
+  })
+```
