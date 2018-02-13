@@ -789,6 +789,11 @@ function functionName($arg1, $arg2, ..., $argN = defaultValue, ...) {
 }
 ```
 
+**Function Reference**
+
+PHP has many functions available.  See http://php.net/manual/en/funcref.php for
+details.
+
 
 ## PHP 5 Classes
 
