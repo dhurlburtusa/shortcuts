@@ -112,7 +112,49 @@ Use `$GLOBALS['x']` to access `$x`.
 
 ### $_SERVER
 
-An associative array which holds information about headers, paths, and script locations.
+An associative array containing information such as headers, paths, and script
+locations.  The entries in this array are created by the web server.
+
+**Common Variables**
+
+* `'SERVER_ADDR'`: The IP address of the server under which the current script is
+  executing.
+* `'SERVER_NAME'`: The name of the server host under which the current script is
+  executing.  If the script is running on a virtual host, this will be the value
+  defined for that virtual host.
+* `'REQUEST_METHOD'`: Which request method was used to access the page; i.e.
+  'GET', 'HEAD', 'POST', 'PUT'.
+* `'QUERY_STRING'`: The query string, if any, via which the page was accessed.
+* `'HTTP_HOST'`: Contents of the `Host:` header from the current request, if there
+  is one.
+* `'HTTP_REFERER'`: The address of the page (if any) which referred the user agent
+  to the current page.  This is set by the user agent.  Not all user agents will
+  set this, and some provide the ability to modify `HTTP_REFERER` as a feature.
+  In short, it cannot really be trusted.
+* `'HTTP_USER_AGENT'`: Contents of the `User-Agent:` header from the current
+  request, if there is one.  This is a string denoting the user agent being which
+  is accessing the page.
+* `'HTTPS'`: Set to a non-empty value if the script was queried through the HTTPS
+  protocol.  Note: Note that when using ISAPI with IIS, the value will be `'off'`
+  if the request was not made through the HTTPS protocol.
+* `'REMOTE_ADDR'`: The IP address from which the user is viewing the current page.
+* `'REMOTE_HOST'`: The Host name from which the user is viewing the current page.
+  The reverse dns lookup is based off the `REMOTE_ADDR` of the user.
+* `'SCRIPT_FILENAME'`: The absolute pathname of the currently executing script.
+* `'PATH_TRANSLATED'`: Filesystem- (not document root-) based path to the current
+  script, after the server has done any virtual-to-real mapping.
+* `'SCRIPT_NAME'`: Contains the current script's path.  This is useful for pages
+  which need to point to themselves.  The `__FILE__` constant contains the full
+  path and filename of the current (i.e. included) file.
+* `'REQUEST_URI'`: The URI which was given in order to access this page; for
+  instance, '/index.html'.
+* `'PATH_INFO'`: Contains any client-provided pathname information trailing the
+  actual script filename but preceding the query string, if available.  For
+  instance, if the current script was accessed via the URL
+  http://www.example.com/php/path_info.php/some/stuff?foo=bar, then
+  `$_SERVER['PATH_INFO']` would contain `/some/stuff`.
+* `'ORIG_PATH_INFO'`: Original version of 'PATH_INFO' before processed by PHP.
+
 
 ### $_REQUEST
 
