@@ -104,7 +104,7 @@ app.get('/api/token', function (request, response) {
 
 **Connecting to a Room**
 
-Once you have an access toke, you can connect to a room.
+Once you have an access token, you can connect to a room.
 
 ```js
 import TwilioVideo from 'twilio-video';
@@ -116,36 +116,149 @@ getAccessToken()
       // Any other options
     })
       .then((room) => {
-        room.on('participantConnected', function (participant) {
-          participant.on('trackAdded', function (track) {
-            // TODO: Attach to a DOM element.
+        let localParticipant = room.localParticipant;
+
+        localParticipant.on('trackAdded', function (localTrack) {
+          ...
+        });
+        localParticipant.on('trackDimensionsChanged', function (localVideoTrack) {
+          ...
+        });
+        localParticipant.on('trackDisabled', function (localTrack) {
+          ...
+        });
+        localParticipant.on('trackEnabled', function (localTrack) {
+          ...
+        });
+        localParticipant.on('trackPublicationFailed', function (error, localTrack) {
+          ...
+        });
+        localParticipant.on('trackPublished', function (localTrackPublication) {
+          ...
+        });
+        localParticipant.on('trackRemoved', function (localTrack) {
+          ...
+        });
+        localParticipant.on('trackStarted', function (localTrack) {
+          ...
+        });
+        localParticipant.on('trackStopped', function (localTrack) {
+          ...
+        });
+        localParticipant.once('disconnected', function (participant) {
+          ...
+        });
+
+        room.on('participantConnected', function (remoteParticipant) {
+          remoteParticipant.on('trackAdded', function (remoteTrack) {
+            let kind = remoteTrack.kind;
+            
+            if (['data'].includes(kind)) {
+              remoteTrack.on('message', (data, remoteDataTrack) => { ... });
+            }
+            if (['video'].includes(kind)) {
+              remoteTrack.on('dimensionsChanged', (remoteVideoTrack) => {
+                let { height, width } = remoteVideoTrack.dimensions;
+                ...
+              });
+            }
+            if (['audio', 'video'].includes(kind)) {
+              remoteTrack.on('disabled', (remoteTrack) => { ... });
+              remoteTrack.on('enabled', (remoteTrack) => { ... });
+              remoteTrack.on('started', (remoteTrack) => { ... });
+            }
+            if (['audio', 'data', 'video'].includes(kind)) {
+              remoteTrack.on('unsubscribed', (remoteTrack) => { ... });
+            }
+            if (['audio', 'video'].includes(kind)) {
+              // One of the following:
+              
+              const mediaEl = remoteTrack.attach('<selector>');
+              
+              const mediaEl = remoteTrack.attach(myMediaEl);
+            
+              const mediaEl = remoteTrack.attach();
+              // And attach to DOM
+              $('.mediaElCt').append(mediaEl);
+            }
           });
-          participant.on('trackDimensionsChanged', function (videoTrack) {
+          remoteParticipant.on('trackDimensionsChanged', function (remoteVideoTrack) {
             ...
           });
-          participant.on('trackDisabled', function (track) {
+          remoteParticipant.on('trackDisabled', function (remoteTrack) {
             ...
           });
-          participant.on('trackEnabled', function (track) {
+          remoteParticipant.on('trackEnabled', function (remoteTrack) {
             ...
           });
-          participant.on('trackRemoved', function (track) {
+          remoteParticipant.on('trackMessage', function (data, remoteDataTrack) {
             ...
           });
-          participant.on('trackStarted', function (track) {
+          remoteParticipant.on('trackRemoved', function (remoteTrack) {
+            let kind = remoteTrack.kind;
+            
+            if (['audio', 'video'].includes(kind)) {
+              const mediaEls = remoteTrack.detach();
+              mediaEls.forEach(mediaEl => mediaEl.remove());
+            }
+          });
+          remoteParticipant.on('trackStarted', function (remoteTrack) {
             ...
           });
-          participant.once('disconnected', function (participant) {
+          remoteParticipant.on('trackSubscribed', function (remoteTrack) {
             ...
           });
+          remoteParticipant.on('trackSubscriptionFailed', function (error) {
+            ...
+          });
+          remoteParticipant.on('trackUnsubscribed', function (remoteTrack) {
+            ...
+          });
+          remoteParticipant.once('disconnected', function (participant) {
+            ...
+          });
+        });
+        room.on('participantDisconnected', function (remoteParticipant) {
+          ...
+        });
+        room.on('recordingStarted', () => { ... });
+        room.on('recordingStopped', () => { ... });
+        room.on('trackAdded', function (remoteTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackDimensionsChanged', function (remoteVideoTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackDisabled', function (remoteTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackEnabled', function (remoteTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackMessage', function (data, remoteDataTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackRemoved', function (remoteTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackStarted', function (remoteTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackSubscribed', function (remoteTrack, remoteParticipant) {
+          ...
+        });
+        room.on('trackUnsubscribed', function (remoteTrack, remoteParticipant) {
+          ...
         });
         room.once('disconnected', function(room, error) {
           if (error) {
             console.log('Unexpectedly disconnected:', error);
           }
-          room.localParticipant.tracks.forEach(function (track) {
-            track.stop();
-            track.detach();
+          room.localParticipant.tracks.forEach(function (localTrack) {
+            if (['audio', 'video'].includes(localTrack.kind)) {
+              localTrack.stop();
+              localTrack.detach();
+            }
           });
         });
       });
