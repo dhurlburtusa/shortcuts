@@ -13,6 +13,16 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 See http://www.lipsum.com/ and http://baconipsum.com/.
 
 
+## Solidus or Not to Solidus
+
+I have not finalized on my decision here, but this is what I am thinking:
+
+1. URLs: Include a solidus at the end for directory paths such as used in
+   `BASE_URL` like configs.
+2. Paths: Include a solidus at the end for directory paths such as used in
+   `ROOT_PATH` like configs.
+
+
 ## [MetaSyntactic Variables](https://en.wikipedia.org/wiki/Metasyntactic_variable)
 
 foo, bar, baz, qux, quux, corge, grault, garply, waldo, fred, plugh, xyzzy, thud
