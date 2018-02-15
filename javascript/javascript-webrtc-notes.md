@@ -51,6 +51,8 @@ Each peer will need to get access to an RTC data channel to be able to send
 data between peers.  The RTC data channel is then added to the current RTC peer
 connection.
 
+To be continued...
+
 **Note**: As of Chrome 47, the `getUserMedia` API cannot be called from insecure
 origins.
 
