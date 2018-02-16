@@ -350,7 +350,19 @@ See https://git-scm.com/docs/gitignore for details.
 * .gitignore
 * sub-folder/.gitignore
 
+**Ignoring a File/Directory After It's been Committed**
+
 To stop tracking a file that is currently tracked, use `git rm --cached`.
+
+**Examples Removing Cached**
+
+```
+git rm -r --cached tmp/
+```
+
+```
+git rm --cached npm-debug.log
+```
 
 ### Pattern Format
 
