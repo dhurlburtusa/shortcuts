@@ -84,6 +84,30 @@ columns.
 
 ## From Elsewhere
 
+### File System
+
+**Changing Ownership**
+
+To change the ownership of a file or directory:
+
+```sh
+sudo chown newowner file
+sudo chown -R newuser directory/
+```
+
+**Changing Group**
+
+```sh
+sudo chgrp newgroup file
+```
+
+**Changing Group and Ownership**
+
+```sh
+sudo chown newowner:newgroup file
+sudo chown -R newowner:newgroup directory/
+```
+
 ### Firewall
 
 By default, Linux uses the `iptables` utility as its firewall.  `iptables` is
