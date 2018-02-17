@@ -59,6 +59,74 @@ origins.
 See https://caniuse.com/#feat=stream for browser support (basically, only
 evergreen browsers).
 
+## List of getUserMedia Errors
+
+Different browsers have different reasons for rejecting the promise returned
+from `MediaDevices#getUserMedia`.  Although webrtc-adapter tries to normalized
+the WebRTC API between browsers, I believe there may still be some
+inconsistancies.
+
+The following is a list of the reasons I've come across so far.
+
+* When a user Denies permission by clicking Deny in dialog prompt.
+  + Chrome:
+      * object: {
+          constraint: '',
+          message: '',
+          name: 'NotAllowedError',
+      }
+          // Edge: {
+          //   MediaStreamError = {
+          //     constraintName: null,
+          //     message: null,
+          //     name: 'PermissionDeniedError',
+          //   },
+          // }
+          // FireFox: {
+          //   MediaStreamError = {
+          //     constraint: '',
+          //     message: 'The request is not allowed by the user agent or the platform in the current context.',
+          //     name: 'NotAllowedError',
+          //     stack: '',
+          //   },
+          // }
+
+* When user ignore permission request by clicking the close button (x) in dialog prompt.
+  + When not using [webrtc-adapter]:
+    - Chrome
+      * NavigatorUserMediaError = {
+          constraintName: '',
+          message: '',
+          name: 'PermissionDismissedError',
+        }
+
+
+* When a user Denies permission by clicking Block in dialog prompt:
+  + When not using [webrtc-adapter]:
+    - Chrome
+      * NavigatorUserMediaError = {
+          constraintName: '',
+          message: '',
+          name: 'PermissionDeniedError',
+        }
+* When user returns to a domain that they previously blocked:
+  + When not using [webrtc-adapter]:
+    - Chrome
+      * NavigatorUserMediaError = {
+          constraintName: '',
+          message: '',
+          name: 'PermissionDeniedError',
+        }
+* When Run Via a Non-Secure Origin
+  + When not using [webrtc-apapter]:
+    - Chrome
+      * DOMException = {
+          code: 9,
+          message: 'Only secure origins are allowed (see: https://goo.gl/Y0ZkNV).',
+          name: 'NotSupportedError',
+        }
+
+
 
 ## JavaScript Libraries/Frameworks
 
@@ -113,4 +181,5 @@ evergreen browsers).
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API
 [rtcdatachannel]: https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel
 [rtcpeerconnection]: https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection
+[webrtc-adapter]: https://github.com/webrtc/adapter
 [wikipedia]: https://en.wikipedia.org/wiki/WebRTC
