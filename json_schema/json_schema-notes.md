@@ -84,5 +84,52 @@ optional.
 | `format`               | anno/asse  | string  | Declares the ID of the format that identifies the semantic validation that may optional be applied against the instance. | MAY be one of the predefined values: 'date', 'date-time', 'email', 'hostname', 'idn-email', 'idn-hostname', 'ipv4', 'ipv6', 'iri', 'iri-reference', 'json-pointer', 'regex', 'relative-json-pointer', 'time', 'uri', 'uri-reference', 'uri-template' | Always.  However, may only be meaningful when the instance is of a particular `type` such as 'string'. |
 | `definitions`          | misc       | object  | Provides a standardized location for schema authors to inline re-usable schemas into a more general schema. |  | Always in all versions and at any level. |
 
+**List of Validation Keywords for Numeric Instances**
+
+* `exclusiveMaximum`
+* `exclusiveMinimum`
+* `maximum`
+* `minimum`
+* `multipleOf`
+
+**List of Validation Keywords for String Instances**
+
+* `maxLength`
+* `minLength`
+* `pattern`
+
+**List of Validation Keywords for Array Instances**
+
+* `additionalItems`
+* `contains`
+* `items`
+* `maxItems`
+* `minItems`
+* `uniqueItems`
+
+**List of Validation Keywords for Object Instances**
+
+* `additionalProperties`
+* `dependencies`
+* `maxProperties`
+* `minProperties`
+* `patternProperties`
+* `properties`
+* `propertyNames`
+* `required`
+
+**List of Keywords for Applying Subschemas Conditionally**
+
+* `else`
+* `if`
+* `then`
+
+**List of Keywords for Applying Subschemas with Boolean Logic**
+
+* allOf
+* anyOf
+* oneOf
+* not
+
 
 [stsi-json_schema-guide]: https://spacetelescope.github.io/understanding-json-schema/
