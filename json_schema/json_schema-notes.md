@@ -131,5 +131,54 @@ optional.
 * oneOf
 * not
 
+**Additional `format` Values Accepted by JSON Editor**
+
+See https://github.com/jdorn/json-editor#format for more details.
+
+**For 'array' Instances**
+
+* 'table'
+* 'tabs'
+
+**For Array of Enumerated Strings**
+
+* 'checkbox'
+* 'select'
+
+**For 'boolean' Instances**
+
+* checkbox
+
+**For 'object' Instances**
+
+* grid
+
+**For 'string' Instances**
+
+* color
+* date
+* datetime
+* datetime-local
+* email
+* month
+* number
+* range
+* tel
+* text
+* textarea
+* time
+* url
+* week
+
+**Requiring Plugins**
+
+* bbcode
+* css
+* html
+* markdown
+* python
+* ruby
+* yaml
+
 
 [stsi-json_schema-guide]: https://spacetelescope.github.io/understanding-json-schema/
