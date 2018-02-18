@@ -83,3 +83,8 @@ crawlers browse the pathways of a website — is vital to them finding all of th
 
 One of the best ways to optimize a page's rankings is to ensure that the keywords you want to rank for are prominently
 used in titles, text, and metadata.
+
+
+## Factors that may Affect Search Ranks
+
+* Better PageSpeed score.
