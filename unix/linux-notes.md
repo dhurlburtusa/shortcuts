@@ -86,6 +86,20 @@ columns.
 
 ### File System
 
+**Changing Access Permissions**
+
+```sh
+# Using Octal Mode:
+sudo chmod ooo file ...
+sudo chmod ooo directory/
+sudo chmod -R ooo directory/
+# Using Symbolic Mode:
+sudo chmod [ugoa][+-=][rwxXst] file ...
+sudo chmod go-x file ... # Remove execute from group and others
+sudo chmod ug+rw file ... # Add read and write to user and group
+sudo chmod u+rw,g+rw file ... # Same as above
+```
+
 **Changing Ownership**
 
 To change the ownership of a file or directory:
