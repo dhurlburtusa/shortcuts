@@ -118,3 +118,29 @@
 This code displays on non-IE browsers and on IE 7 or higher.
 <!--<![endif]-->
 ```
+
+
+## Body Templates
+
+```html
+  <div class="Screens">
+    <div class="Screen  is-active">
+      <div class="Screen-Modals  Modals">
+        <div class="Modals-Mask">...</div>
+        <div class="Screen-Modal  Modal  is-active">
+          <div class="Modal-Head">...</div>
+          <div class="Modal-Body">...</div>
+          <div class="Modal-Foot">...</div>
+        </div>
+        <div class="Screen-Modal  Modal">...</div>
+      </div>
+      <div class="Screen-Head">...</div>
+      <div class="Screen-Body">
+        <main>...</main>
+      </div>
+      <div class="Screen-Foot">...</div>
+    </div>
+    ...
+    <div class="Screen">...</div>
+  </div>
+```
