@@ -83,7 +83,7 @@ for more details.
         console.log('Data for the current playback position is available, but not enough data to play next frame/millisecond.')
         break
       case HTMLMediaElement.HAVE_FUTURE_DATA:
-        console.log('Data for the cHAVE_METADATAurrent and at least the next frame is available.')
+        console.log('Data for the current and at least the next frame is available.')
         break
       case HTMLMediaElement.HAVE_ENOUGH_DATA:
         console.log('Enough data is available to start playing.')
