@@ -16,3 +16,9 @@ Pw: admin
 From the `Setup` > `Basic Setup screen`, there is a DHCP Reservation button
 about half way down.  Clicking this button will open the DHCP Reservation
 dialog.
+
+### Port Forwarding
+
+Port forwarding can be configured under `Applications & Gaming`.  Before
+configuring, it would be wise to reserve the IP for the device you plan to
+configure for port forwarding.
