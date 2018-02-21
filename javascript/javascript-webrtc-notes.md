@@ -142,6 +142,11 @@ The following is a list of the reasons I've come across so far.
 * https://www.sharefest.me/
 
 
+## Vendors
+
+See this blog article: https://bloggeek.me/webrtc-paas-report/.
+
+
 ## Useful Resources
 
 * https://en.wikipedia.org/wiki/WebRTC
