@@ -1,2 +1,4 @@
-# shortcuts
-A collection of shortcuts: cheat sheets, snippets, templates, etc.
+# Shortcuts
+
+This is an on-going collection of shortcuts: cheat sheets, notes, snippets,
+templates, etc.
