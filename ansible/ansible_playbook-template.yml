@@ -10,7 +10,7 @@
 
   tasks:
   - name: name of task
-    <cmd>: param1=arg1 param2=arg2
+    <module-name>: param1=arg1 param2=arg2
     ...
     notify:
     - name of handler
@@ -18,4 +18,4 @@
   
   handlers:
   - name: name of handler
-    <cmd>: param1=arg1 param2=arg2
+    <module-name>: param1=arg1 param2=arg2
