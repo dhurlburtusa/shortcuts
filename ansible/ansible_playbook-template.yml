@@ -1,0 +1,21 @@
+---
+- name: name of play
+  hosts: web # Reference to inventory
+  remote_user: installer
+  become_method: sudo
+  become_user: root
+  vars:
+    var_1: value_1
+    ...
+
+  tasks:
+  - name: name of task
+    <cmd>: param1=arg1 param2=arg2
+    ...
+    notify:
+    - name of handler
+  ...
+  
+  handlers:
+  - name: name of handler
+    <cmd>: param1=arg1 param2=arg2
