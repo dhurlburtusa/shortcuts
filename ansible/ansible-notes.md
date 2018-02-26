@@ -21,3 +21,14 @@ See https//www.ansible.com/ for more details.
 A list of nodes using IP addresses or hostnames.  May be static or dynamic.
 
 * Allows variables.
+
+
+## Playbooks
+
+Playbooks describe the desired state of a node.
+
+* Written with YAML file(s).
+* Consists of plays which consists of tasks which call modules.
+* Allows variables from: playbooks, files, inventories, command line, and more.
+* Tasks run sequentially.
+* Handlers are triggered by tasks and are run once at the end of plays.
