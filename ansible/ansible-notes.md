@@ -7,3 +7,10 @@ Ansible is a powerful IT automation and orchestration engine.
 * An automation engine which runs the Ansible playbooks.
 
 See https//www.ansible.com/ for more details.
+
+**Requirements**
+
+* OpenSSH (WinRM for Windows)
+* Python 2.4+
+* A Linux control node.
+* One or more nodes of virtually any type including Linux and Windows
