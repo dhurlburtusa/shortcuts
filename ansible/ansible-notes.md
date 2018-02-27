@@ -11,7 +11,7 @@ See https//www.ansible.com/ for more details.
 **Requirements**
 
 * OpenSSH (WinRM for Windows)
-* Python 2.4+
+* Python 2.6, 2.7, 3.5+.
 * A Linux control node.
 * One or more nodes of virtually any type including Linux and Windows
 
