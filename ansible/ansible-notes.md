@@ -10,10 +10,18 @@ See https//www.ansible.com/ for more details.
 
 **Requirements**
 
-* OpenSSH (WinRM for Windows)
+For Control node:
+
+* Installed on Linux (includes Red Hat, Debian, CentOS, OS X, any of the BSDs, and
+  so on).
 * Python 2.6, 2.7, 3.5+.
-* A Linux control node.
-* One or more nodes of virtually any type including Linux and Windows
+
+For Managed nodes:
+
+* Installed on Linux, Windows, etc
+* Python 2.6, 2.7, 3.5+.
+* OpenSSH (WinRM for Windows).
+* sftp (preferable) or scp.
 
 
 ## Inventory
