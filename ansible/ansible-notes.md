@@ -81,3 +81,35 @@ Playbooks describe the desired state of a node.
 * Allows variables from: playbooks, files, inventories, command line, and more.
 * Tasks run sequentially.
 * Handlers are triggered by tasks and are run once at the end of plays.
+
+
+## Misc Uncategorized
+
+docs.ansible.com/ansible/intro_installation.html
+docs.ansible.com/ansible/modules_by_category.html
+
+**Running**
+
+```sh
+ansible <inventory> -m ...
+```
+
+```sh
+ansible-playbook ...
+```
+
+Using Ansible Tower.
+
+
+**Modules**
+
+100s built-in
+Others available from Ansible Galaxy.
+
+http://docs.ansible.com/ansible/latest/modules_by_category.html
+
+**Ansible Galaxy**
+
+Source of community and vendor-provided Ansible playbooks, roles, and modules.
+
+https://galaxy.ansible.com/
