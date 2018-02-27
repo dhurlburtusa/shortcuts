@@ -24,6 +24,26 @@ For Managed nodes:
 * sftp (preferable) or scp.
 
 
+## Installation
+
+There are many different ways to install Ansible on the control node.  The
+easiest way is to use the package manager of your OS.
+
+**Latest Releases via Apt (Ubuntu)**
+
+```sh
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+```
+
+See
+http://docs.ansible.com/ansible/latest/intro_installation.html#installing-the-control-machine
+for a complete list.
+
+
 ## Inventory
 
 A list of nodes using IP addresses or hostnames.  May be static or dynamic.
