@@ -44,6 +44,16 @@ http://docs.ansible.com/ansible/latest/intro_installation.html#installing-the-co
 for a complete list.
 
 
+## Initial Setup
+
+Edit (or create) `/etc/ansible/hosts` and put one or more remote systems in it.
+Your public SSH key should be located in `authorized_keys` on those systems.
+This file is known as the inventory file.
+
+The inventory file will need to be updated as managed nodes are added, changed,
+or removed.
+
+
 ## Inventory
 
 A list of nodes using IP addresses or hostnames.  May be static or dynamic.
