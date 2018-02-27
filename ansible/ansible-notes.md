@@ -56,9 +56,20 @@ or removed.
 
 ## Inventory
 
-A list of nodes using IP addresses or hostnames.  May be static or dynamic.
+Basically a list of managed nodes using IP addresses or hostnames.
 
+* May be static or dynamic.
+* May be in different formats depending on inventory plugins.
+  + INI (by default)
+  + YAML with plugin
+* Allows grouping of hosts.
 * Allows variables.
+
+See http://docs.ansible.com/ansible/latest/intro_inventory.html for details and
+examples.
+
+See http://docs.ansible.com/ansible/latest/ansible-inventory.html for use of the
+`ansible-inventory` command-line tool.
 
 
 ## Playbooks
