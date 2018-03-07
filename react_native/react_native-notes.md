@@ -34,6 +34,32 @@ export default App
 The elements/components returned/used in the `render` method is the primary
 difference.
 
+### Styling
+
+With RN, you style your component using the `style` prop.  This prop expects a
+plain object or an array of plain objects where the styles in the last object
+take precedence.
+
+Style objects can be organized with help from [`StyleSheet`][rn-stylesheet].
+
+```jsx
+const styles = StyleSheet.create({
+  root: { ... },
+  title: { ... },
+  ...,
+})
+
+  ...
+  render() {
+    return (
+      <View style={styles.root}>
+        <Text style={styles.title}>...</Text>
+      </View>
+    )
+  }
+  ...
+```
+
 
 ## Misc (To be Categorized)
 
@@ -53,3 +79,6 @@ difference.
   + Text
   + TextInput
   + View
+
+
+[rn-stylesheet]: http://facebook.github.io/react-native/docs/stylesheet.html
