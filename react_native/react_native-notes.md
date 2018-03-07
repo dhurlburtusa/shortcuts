@@ -1,5 +1,39 @@
 # React Native Notes
 
+## Components
+
+Components in React Native are very much like React components.
+
+```jsx
+import React from 'react'
+
+
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+    };
+  }
+
+  render() {
+    const { ... } = this.props;
+    const { ... } = this.state;
+
+    return (
+      ...
+    )
+  }
+
+}
+
+export default App
+```
+
+The elements/components returned/used in the `render` method is the primary
+difference.
+
 
 ## Misc (To be Categorized)
 
