@@ -1,7 +1,7 @@
 # Font Awesome Notes
 
 
-## Usage
+## Usage (v4.x)
 
 To use FA, you simply add the `fa` CSS class and the CSS class of the icon you
 want to an empty inline element.
@@ -30,3 +30,21 @@ Optionally, you can add more CSS classes for different effects.
 | `fa-rotate-270`      | Rotates the icon by 270°.      |
 | `fa-flip-horizontal` | Flips the icon horizontally.   |
 | `fa-flip-vertical`   | Flips the icon vertically.     |
+
+**Making Icons Animatable**
+
+You can make an icon animate from its normal orientation to its an orientation rotated 90°, 180°, and 270° by adding the following rule to your stylesheet and adding or removing the approprate class such as `fa-rotate-90`.
+
+```css
+.fa {
+  transition: transform .2s linear;
+}
+```
+
+Adjust the timing and easing function as you like.  If you want to animate other properties, then add then like so.
+
+```css
+.fa {
+  transition: transform .2s linear, font-size .5s ease;
+}
+```
