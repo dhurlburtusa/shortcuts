@@ -81,6 +81,11 @@ See http://facebook.github.io/react-native/docs/layout-props.html for the
 complete list.
 
 
+## Networking
+
+RN supports `Fetch`, `WebSocket`, and `XMLHttpRequest`.
+
+
 ## Misc (To be Categorized)
 
 * All dimensions in React Native are unitless, and represent density-independent
