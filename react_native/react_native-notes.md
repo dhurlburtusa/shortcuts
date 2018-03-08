@@ -105,5 +105,17 @@ RN supports `Fetch`, `WebSocket`, and `XMLHttpRequest`.
   + TextInput
   + View
 
+**Platform-Specific Extensions**
+
+Platform-specific code may be split into separate files with `.ios.` or
+`.android.` extensions.  RN will load the relevant platform file when required
+from other components.  For example, say you have the following files in your
+project: `BigButton.ios.js` and `BigButton.android.js`.  You can then require
+the component as follows:
+
+```jsx
+import BigButton from './BigButton'
+```
+
 
 [rn-stylesheet]: http://facebook.github.io/react-native/docs/stylesheet.html
