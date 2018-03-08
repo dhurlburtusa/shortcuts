@@ -60,6 +60,26 @@ const styles = StyleSheet.create({
   ...
 ```
 
+**Layout Props**
+
+A very large subset of CSS properties are recognized for layout.  The following is
+a grouped list of these properties.
+
+* `bottom`, `direction`, `end`, `left`, `position`, `right`, `start`, `top`, `zIndex`.
+* `display`, `overflow`.
+* `alignContent`, `alignItems`, `alignSelf`, `flex`, `flexBasis`, `flexDirection`,
+  `flexGrow`, `flexShrink`, `flexWrap`, `justifyContent`.
+* `margin`, `marginBottom`, `marginEnd`, `marginHorizontal`, `marginLeft`,
+  `marginRight`, `marginStart`, `marginTop`, `marginVertical`.
+* `maxHeight`, `maxWidth`, `minHeight`, `minWidth`, `width`, `height`.
+* `borderBottomWidth`, `borderEndWidth`, `borderLeftWidth`, `borderRightWidth`,
+  `borderStartWidth`, `borderTopWidth`, `borderWidth`
+* `padding`, `paddingBottom`, `paddingEnd`, `paddingHorizontal`, `paddingLeft`,
+  `paddingRight`, `paddingStart`, `paddingTop`, `paddingVertical`.
+
+See http://facebook.github.io/react-native/docs/layout-props.html for the
+complete list.
+
 
 ## Misc (To be Categorized)
 
