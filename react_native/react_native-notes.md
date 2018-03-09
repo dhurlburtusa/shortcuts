@@ -104,6 +104,9 @@ RN supports `Fetch`, `WebSocket`, and `XMLHttpRequest`.
   + Text
   + TextInput
   + View
+* Some possible packages to use:
+  + react-timer-mixin
+  + react-mixin
 
 **Platform-Specific Extensions**
 
