@@ -1,4 +1,4 @@
-# JavaScript DOM Snippets
+# JavaScript DOM/Web Snippets
 
 
 ## DOM Content Loaded
