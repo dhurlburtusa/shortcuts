@@ -10,6 +10,13 @@
 * Principle: “learn once, write anywhere.”
 
 
+## History
+
+* Started as React Native for iOS in March 2015.
+* Intro'd React Native for Android in Sept 2015.
+* Accessibility added in Nov 2015.
+
+
 ## Components
 
 Components in React Native are very much like React components.
