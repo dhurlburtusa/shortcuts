@@ -1,5 +1,15 @@
 # React Native Notes
 
+
+## Features
+
+* Allow same UX of a native app.
+* Not a wrapper around native WebViews.
+* No long compilation step after every change (better DX).
+* Runs in embedded instance of JavaScriptCore.
+* Principle: “learn once, write anywhere.”
+
+
 ## Components
 
 Components in React Native are very much like React components.
