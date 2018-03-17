@@ -7,6 +7,12 @@ for your data.  GraphQL isn't tied to any specific database or storage engine
 and is instead backed by your existing code and data.
 
 
+## History
+
+* A query language created by Facebook in 2012.
+* The development of this standard started in 2015.
+
+
 ## Type Syntax
 
 **Enums**
