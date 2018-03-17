@@ -38,12 +38,30 @@ See [Alt Codes](https://usefulshortcuts.com/alt-codes) for instructions and list
 
 | Char | Code   | Decimal     | HTML         | Alt Code |
 | ---- | ------ | ----------- | ------------ | -------- |
+| ±    | U+00B1 | &amp;#177;  | &amp;plusmn; | 241      |
+| ≈    | U+2248 | &amp;#8776; | &amp;#8776;  | 247      |
+| ≠    | U+2260 | &amp;#8800; | &amp;#8800;  | ?        |
+| ≡    | U+2261 | &amp;#8801; | &amp;equiv;  | 240      |
+| √    | U+221A | &amp;#8730; | &amp;radic;  | 251      |
+| ∞    | U+221E | &amp;#8734; | &amp;infin;  | 236      |
+| ∝    | U+221D | &amp;#8733; | &amp;prop;   | ?        |
 | ¿    | U+00BF | &amp;#191;  | &amp;iquest; | 168      |
+| ¾    | U+00BE | &amp;#190;  | &amp;frac34; | 170      |
 | ½    | U+00BD | &amp;#189;  | &amp;frac12; | 171      |
 | ¼    | U+00BC | &amp;#188;  | &amp;frac14; | 172      |
+| ‼    | U+203C | &amp;#8252; | &amp;#8252;  |          |
 | ¡    | U+00A1 | &amp;#161;  | &amp;iexcl;  | 173      |
+| †    | U+2020 | &amp;#8224; | &amp;dagger; | 0134     |
+| ‡    | U+2021 | &amp;#8225; | &amp;Dagger; | 0135     |
 | ©    | U+00A9 | &amp;#169;  | &amp;copy;   | 0169     |
+| °    | U+00B0 | &amp;#176;  | &amp;deg;    | 248      |
+| ®    | U+00AE | &amp;#174;  | &amp;reg;    | 0174     |
 | ™    | U+2122 | &amp;#8482; | &amp;trade;  | 0153     |
+| ‘    | U+2018 | &amp;#8216; | &amp;lsquo;  | 0145     |
+| ’    | U+2019 | &amp;#8217; | &amp;rsquo;  | 0146     |
+| “    | U+201C | &amp;#8220; | &amp;ldquo;  | 0147     |
+| ”    | U+201D | &amp;#8221; | &amp;rdquo;  | 0148     |
+
 
 ### Common Accented
 
