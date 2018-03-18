@@ -85,6 +85,7 @@ query <queryName> {
 **Types**
 
 Map, List, Null, String, Boolean, Int, Float, Enum.
+Query, Mutation, Subscription.
 
 **Response**
 
