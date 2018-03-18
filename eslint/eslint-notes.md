@@ -35,6 +35,18 @@ file.
 /* eslint-env node, mocha, jest, etc */
 ```
 
+```js
+const config = {
+  // ...
+  env: {
+    mocha: true,
+    node: true,
+    ...
+  },
+  // ...
+}
+```
+
 **Declare Global Variables**
 
 ```js
