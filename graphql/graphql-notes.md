@@ -13,6 +13,19 @@ and is instead backed by your existing code and data.
 * The development of this standard started in 2015.
 
 
+## Design Principles
+
+* **Client‐specified queries**: A GraphQL query returns exactly what a client asks
+  for and no more.  These queries are specified at field‐level granularity.
+* **Hierarchical**: The query is shaped just like the data it returns.
+* **Introspective**: A GraphQL server's type system must be queryable by the
+  GraphQL language itself.
+* **Product‐centric**: GraphQL is driven by the requirements of views and the
+  front‐end engineers that write them.
+* **Strong‐typing**: The server can make certain guarantees about the shape and
+  nature of the response.
+
+
 ## Type Syntax
 
 **Enums**
