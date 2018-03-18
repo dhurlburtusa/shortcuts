@@ -62,3 +62,69 @@ query <queryName> {
   }
 }
 ```
+
+
+## Misc (To Be Categoried/Organized)
+
+**Types**
+
+Map, List, Null, String, Boolean, Int, Float, Enum.
+
+**Response**
+
+GraphQL does not require a specific serialization format.  However, JSON is the
+preferred serialization format.
+
+A response to a GraphQL operation must be a map.
+
+For a successful execution:
+
+```json5
+{
+  data: Mixed, // Depends on query.
+  extensions: { ... }, // Optional.
+}
+```
+
+For an errant execution:
+
+```json5
+{
+  errors: [
+    {
+      message: string,
+      locations: [
+        {
+          line: number, // >= 1
+          column: number, // >= 1
+        },
+        ...
+      ]
+    },
+    ...
+  ],
+  extensions: { ... }, // Optional.
+}
+```
+
+For a partially successful execution:
+
+```json5
+{
+  data: Mixed, // Depends on query.
+  errors: [
+    {
+      message: string,
+      locations: [
+        {
+          line: number, // >= 1
+          column: number, // >= 1
+        },
+        ...
+      ]
+    },
+    ...
+  ],
+  extensions: { ... }, // Optional.
+}
+```
