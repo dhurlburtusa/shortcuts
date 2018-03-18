@@ -13,7 +13,7 @@ information.
 ## History
 
 * A query language created by Facebook in 2012.
-* The development of this standard started in 2015.
+* The GraphQL spec was started in 2015.
 
 
 ## Design Principles
