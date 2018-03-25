@@ -30,6 +30,23 @@ rmdir DIR         # remove empty directory
 ```
 
 
+## Useful Aliases
+
+The following aliases me be put in your `.bashrc` (preferrable) or
+`.bash_profile` file.
+
+```sh
+alias la='ls -al'
+alias ll='ls -l'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gl='git log'
+alias gs='git status'
+```
+
+
 ## Command-line Navigation
 
 Key Combo    | Result
