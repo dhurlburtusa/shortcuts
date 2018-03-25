@@ -21,7 +21,7 @@ npm init --scope=username
 
 ### Version Controlled Package Initialization Examples
 
-For these examples, Git is used as the SCM.
+For these examples, Github is used as the SCM.
 
 **Local-First**
 
@@ -32,6 +32,18 @@ mkdir ${PACKAGE_NAME}
 cd ${PACKAGE_NAME}
 git flow init
 npm init --scope=${NPM_SCOPE} # Exclude the '@' prefix.
+```
+
+* Create a new repo in your Github account.
+  + Choose a name.
+  + Add a description. (Likely the same as the description used in `package.json`.
+  + Choose public or private.
+  + Initialize with a README if you haven't added one yet.
+  + Add a `.gitignore` and or a `LICENSE` if needed.
+
+```sh
+git remote add origin https://github.com/${username}/${repo-name}.git
+git push -u origin develop
 ```
 
 
