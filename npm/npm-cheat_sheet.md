@@ -9,6 +9,16 @@ See http://browsenpm.org/help for another npm cheat sheet.
 npm init
 ```
 
+**Scoped**
+
+```sh
+npm init --scope=my-scope
+```
+
+```sh
+npm init --scope=username
+```
+
 
 ## Listing Installed Packages
 
