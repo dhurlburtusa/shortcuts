@@ -19,6 +19,8 @@ npm init --scope=my-scope
 npm init --scope=username
 ```
 
+### Version Controlled Package Initialization Examples
+
 
 ## Listing Installed Packages
 
