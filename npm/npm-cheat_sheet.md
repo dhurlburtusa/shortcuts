@@ -21,6 +21,19 @@ npm init --scope=username
 
 ### Version Controlled Package Initialization Examples
 
+For these examples, Git is used as the SCM.
+
+**Local-First**
+
+```sh
+cd ${REPO_DIR}
+cd ${NPM_SCOPE_DIR} # Optional
+mkdir ${PACKAGE_NAME}
+cd ${PACKAGE_NAME}
+git flow init
+npm init --scope=${NPM_SCOPE} # Exclude the '@' prefix.
+```
+
 
 ## Listing Installed Packages
 
