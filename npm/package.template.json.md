@@ -19,7 +19,7 @@
    * Prerelease:
    * major.minor.patch-[alpha|beta].preid
    */
-  "version": "",
+  "version": "0.0.0-alpha",
   /**
    * A description of your npm package.  This helps people discover your package as
    * it's listed in `npm search`.
