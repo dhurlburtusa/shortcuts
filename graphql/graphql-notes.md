@@ -82,6 +82,10 @@ query <queryName> {
 
 ## Misc (To Be Categoried/Organized)
 
+**Boilerplate**
+
+https://github.com/graphql-boilerplates/
+
 **Types**
 
 Map, List, Null, String, Boolean, Int, Float, Enum.
