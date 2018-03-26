@@ -178,6 +178,30 @@ In non-code segments, you will be able to have more characters in constructs lik
 
 ## Publishing
 
+In order to publish, you must be logged in.  This requires that you have setup
+an npm account.
+
+When you run the following command, you will be prompted for your username,
+password, and email.
+
+```sh
+npm login
+```
+
+If you are planning to publish the package to a particular scope you have
+permission for, then declare the scope as an option when you login.
+
+```sh
+npm login --scope=the_scope
+```
+
+It is important that you are publishing your package using the correct user.
+Use the following command to find out who you are logged in as.
+
+```sh
+npm whoami
+```
+
 ```sh
 npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>]
 ```
