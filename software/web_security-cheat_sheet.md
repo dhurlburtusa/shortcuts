@@ -190,6 +190,11 @@ Restricted by default is more secure.
           - Account still functions up until the reset
           - Self-serve; does not require customer service staff
 
+### Webpages
+
+* Secure your links
+  + https://mathiasbynens.github.io/rel-noopener/
+
 ### Misc
 
 * Validate input
