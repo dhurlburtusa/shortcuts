@@ -219,6 +219,17 @@ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>]
 
   Use `npm ls -g` to see if it's there.
 
+  To make sure only the files you expect make it into your package, run the
+  following from the root of your project.
+  
+  ```sh
+  npm pack
+  ```
+
+  Open the tarball and examine it.  If it is not what you expect, then adjust the
+  `files` array in `package.json`, update `.gitignore`, or `.npmignore`.  Rerun
+  the above command and check until everything looks as expected.
+
   To test a local install, go into some other folder, and then do:
 
   ```sh
