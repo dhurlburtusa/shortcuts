@@ -14,6 +14,10 @@ One word when used as the unique ID typed in by the user to identify themselves.
 
 Two words when used as the name of a user.
 
+**Web Page**
+
+One word is recommended and most prevalent.
+
 **Website**
 
 One word is most prevalent.
