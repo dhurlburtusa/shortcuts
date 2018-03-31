@@ -123,6 +123,7 @@ $ git checkout -b release/#.#.# develop
 ```sh
 ...
 $ git commit -m "Update Version"
+# Optionally push to origin which is a good opportunity to run CI build.
 $ git push origin release/#.#.#
 ```
 
