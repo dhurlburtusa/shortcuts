@@ -64,14 +64,14 @@ $ git checkout -b feature/$name develop
 **Periodically Keep Up-to-date with `develop` Branch**
 
 ```sh
-$ git merge --no-ff develop -m "Merge branch develop into feature/$name"
+$ git merge --no-ff develop -m "Merge develop into feature/$name"
 ```
 
 **When Feature is Ready to Release**
 
 ```sh
 $ git checkout develop
-$ git merge --no-ff feature/$name -m "Merge branch feature/$name into develop"
+$ git merge --no-ff feature/$name -m "Merge feature/$name into develop"
 $ git branch -d feature/$name
 $ git push origin develop
 ```
@@ -92,7 +92,7 @@ $ git flow feature start $name
 **Periodically Keep Up-to-date with `develop` Branch**
 
 ```sh
-$ git merge --no-ff develop -m "Merge branch develop into feature/$name"
+$ git merge --no-ff develop -m "Merge develop into feature/$name"
 ```
 
 **When Feature is Ready to Release**
@@ -136,7 +136,7 @@ $ git push origin release/#.#.#
 
 # Merge fixes back to `develop` branch
 $ git checkout develop
-$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
+$ git merge --no-ff release/#.#.# -m "Merge release/#.#.# into develop"
 $ git push origin develop
 $ git checkout release/#.#.#
 ...
@@ -146,10 +146,10 @@ $ git checkout release/#.#.#
 
 ```sh
 $ git checkout develop
-$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
+$ git merge --no-ff release/#.#.# -m "Merge release/#.#.# into develop"
 $ git push origin develop
 $ git checkout master
-$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into master"
+$ git merge --no-ff release/#.#.# -m "Merge release/#.#.# into master"
 
 # Tag Release
 $ git tag -a "v#.#.#" -m "Release #.#.#"
@@ -185,7 +185,7 @@ $ git push origin release/#.#.#
 
 # Merge fixes back to `develop` branch
 $ git checkout develop
-$ git merge --no-ff release/#.#.# -m "Merge branch release/#.#.# into develop"
+$ git merge --no-ff release/#.#.# -m "Merge release/#.#.# into develop"
 $ git push origin develop
 $ git checkout release/#.#.#
 ...
@@ -236,10 +236,10 @@ $ git push origin hotfix/#.#.#
 
 ```sh
 $ git checkout develop
-$ git merge --no-ff hotfix/#.#.# -m "Merge branch hotfix/#.#.# into develop"
+$ git merge --no-ff hotfix/#.#.# -m "Merge hotfix/#.#.# into develop"
 $ git push origin develop
 $ git checkout master
-$ git merge --no-ff hotfix/#.#.# -m "Merge branch hotfix/#.#.# into master"
+$ git merge --no-ff hotfix/#.#.# -m "Merge hotfix/#.#.# into master"
 
 # Tag Hotfix
 $ git tag -a "v#.#.#" -m "Hotfix #.#.#"
