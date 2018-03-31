@@ -153,7 +153,7 @@ $ git checkout master
 $ git merge --no-ff release/#.#.# -m "Merge release/#.#.# into master"
 
 # Tag Release
-$ git tag -a "v#.#.#" -m "Release #.#.#"
+$ git tag -a "#.#.#" -m "Release #.#.#"
 $ git branch -d release/#.#.#
 $ git push origin master --tags
 ```
@@ -243,7 +243,7 @@ $ git checkout master
 $ git merge --no-ff hotfix/#.#.# -m "Merge hotfix/#.#.# into master"
 
 # Tag Hotfix
-$ git tag -a "v#.#.#" -m "Hotfix #.#.#"
+$ git tag -a "#.#.#" -m "Hotfix #.#.#"
 $ git branch -d hotfix/#.#.#
 $ git push origin master --tags
 ```
