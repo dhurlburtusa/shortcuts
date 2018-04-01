@@ -65,6 +65,19 @@ textarea {
 }
 ```
 
+**contain**
+
+The `contain` CSS property allows an author to indicate that an element and its
+contents are, as much as possible, independent of the rest of the document tree.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/contain for details.
+
+```css
+section {
+  contain: strict;
+}
+```
+
 **currentColor**
 
 The `currentColor` keyword represents the value of an element's `color`
