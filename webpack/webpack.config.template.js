@@ -428,7 +428,9 @@ const config = {
 
 module.exports = config
 
-// You can also setup more than one configuration.
+// You can also setup more than one configuration.  All configurations will be
+// built.  See https://webpack.js.org/configuration/configuration-types/#exporting-multiple-configurations
+// for details.
 
 const config2 = { /* ... */ }
 
