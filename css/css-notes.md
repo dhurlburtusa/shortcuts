@@ -182,6 +182,20 @@ See https://developer.mozilla.org/en-US/docs/Web/CSS/offset for details.
 offset: path(M 100 100 L 300 100 L 200 300 z);
 ```
 
+**overscroll-behavior**
+
+The `overscroll-behavior` CSS property allows you to control the browser's
+scroll overflow behavior — what happens when the boundary of a scrolling area is
+reached.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior for details.
+
+```css
+.ChatBox {
+  overscroll-behavior: contain;
+}
+```
+
 **::placeholder**
 
 See https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder for
