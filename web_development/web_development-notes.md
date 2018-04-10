@@ -3,6 +3,116 @@
 
 ## Cross-Origin Resource Sharing (CORS)
 
+Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP
+headers to let a user agent gain permission to access selected resources from a
+server on a different origin (domain) than the site currently in use.
+
+A cross-origin HTTP request happens when a request is made to a resource from a
+different domain, protocol, or port than the one from which the current document
+originated.  See https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+for details.
+
+For security reasons, browsers restrict cross-origin HTTP requests initiated
+from within scripts.
+
+Modern browsers handle the client-side components of cross-origin sharing,
+including headers and policy enforcement.  But this new standard means servers
+have to handle new request and response headers.
+
+### Requests Using CORS
+
+* Invocations of the `XMLHttpRequest` or `Fetch` APIs in a cross-origin manner.
+* Web Fonts (for cross-domain font usage in `@font-face` within CSS).
+* WebGL textures.
+* Images/video frames drawn to a canvas using `drawImage`.
+* Stylesheets (for CSSOM access).
+* Scripts (for unmuted exceptions).
+
+### Preflight Requests
+
+Some requests trigger a CORS preflight.  Preflighted requests first send an HTTP
+request by the `OPTIONS` method to the resource on the other domain, in order to
+determine whether the actual request is safe to send.  Cross-site requests are
+preflighted like this since they may have implications to user data.
+
+Some of the conditions that cause a request to be preflighted include:
+
+* Request uses any of the following methods: `CONNECT`, `DELETE`, `OPTIONS`
+  `PATCH`, `PUT`, or `TRACE`.
+* The `Content-Type` header has a value other than the following:
+  + `application/x-www-form-urlencoded`
+  + `multipart/form-data`
+  + `text/plain`
+
+See https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Preflighted_requests
+for details.
+
+### Server-Side
+
+The CORS protocol consists of a set of headers that indicates whether a response
+can be shared cross-origin.
+
+**Requests**
+
+A CORS request is an HTTP request that includes an `Origin` header.
+
+A CORS-preflight request is a CORS request that checks to see if the CORS
+protocol is understood.  It uses `OPTIONS` as method and includes these headers:
+
+* **`Access-Control-Request-Method`**
+  Indicates which method a future CORS request to the same resource might use.
+
+* **`Access-Control-Request-Headers`**
+  Indicates which headers a future CORS request to the same resource might use.
+
+**Responses**
+
+An HTTP response to a CORS request can include the following headers:
+
+* **`Access-Control-Allow-Origin`**
+  Indicates whether the response can be shared, via returning the literal value of
+  the `Origin` request header (which can be `null`) or `*` in a response.
+
+* **`Access-Control-Allow-Credentials`**
+  Indicates whether the response can be shared when request’s credentials mode is
+  "include".
+
+For a CORS-preflight request, request’s credentials mode is always "omit", but for
+any subsequent CORS requests it might not be.  Support therefore needs to be
+indicated as part of the HTTP response to the CORS-preflight request as well.
+
+An HTTP response to a CORS-preflight request can include the following headers:
+
+* **`Access-Control-Allow-Methods`**
+  Indicates which methods are supported by the response’s url for the purposes of
+  the CORS protocol.
+  
+  ```
+  Access-Control-Allow-Methods: GET, POST, PUT, etc
+  ```
+
+  Note: The `Allow` header is not relevant for the purposes of the CORS protocol.
+
+* **`Access-Control-Allow-Headers`**
+  Indicates which headers are supported by the response’s url for the purposes of
+  the CORS protocol.
+  
+  ```
+  Access-Control-Allow-Headers: X-FOO, Content-Type, etc
+  ```
+
+* **`Access-Control-Max-Age`**
+  Indicates how long the information provided by the
+  `Access-Control-Allow-Methods` and `Access-Control-Allow-Headers` headers can be
+  cached in seconds.
+
+An HTTP response to a CORS request that is not a CORS-preflight request can also
+include the following header:
+
+* **`Access-Control-Expose-Headers`**
+  Indicates which headers can be exposed as part of the response by listing their
+  names.
+
 
 ## Progressive Web Apps (PWA)
 
