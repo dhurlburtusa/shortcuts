@@ -1,6 +1,9 @@
 # Web Development Notes
 
 
+## Cross-Origin Resource Sharing (CORS)
+
+
 ## Progressive Web Apps (PWA)
 
 From https://en.wikipedia.org/wiki/Progressive_Web_Apps:
