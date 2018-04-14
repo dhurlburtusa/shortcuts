@@ -3,6 +3,23 @@
 
 ## HTTP Cookies
 
+An HTTP cookie is a small piece of data that a server sends to the user's web
+browser.  The browser may store it and send it back with the next request to the
+same server.
+
+### Creating
+
+A server can send a `Set-Cookie` header with the response.  The cookie is
+usually stored by the browser, and then the cookie is sent with requests made to
+the same server inside a `Cookie` HTTP header.
+
+The `Set-Cookie` HTTP response header sends cookies from the server to the user
+agent.  A simple cookie is set like this:
+
+```
+Set-Cookie: <cookie-name>=<cookie-value>
+```
+
 
 ## Cross-Origin Resource Sharing (CORS)
 
