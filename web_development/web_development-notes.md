@@ -193,3 +193,10 @@ https://www.impressivewebs.com/cache-busting-front-end-resources-file-name-revvi
 for details.  That is, filename revving is still a valid technique, however, it
 is typically more difficult to implement without a proper build process in
 place.
+
+
+## Misc
+
+**Useful Links**
+
+* http://mybrowserinfo.com/
