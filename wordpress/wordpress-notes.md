@@ -1,6 +1,13 @@
 # WordPress Notes
 
 
+## Plugins
+
+**Notes**
+
+* [Stripe](https://github.com/dhurlburtusa/shortcuts/blob/master/stripe/stripe_payments_wordpress_plugin-notes.md)
+
+
 ## Themes
 
 At their most basic level, WordPress themes are collections of different files
