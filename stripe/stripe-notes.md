@@ -18,11 +18,20 @@ Payments is a complete payments platform that can be used to bill customers on a
 recurring basis, set up a marketplace, or simply accept payments.  See
 https://stripe.com/us/payments for details.
 
-
 ### Checkout
 
 Checkout is an embeddable payment form for desktop, tablet, and mobile devices.
 See https://stripe.com/checkout for details.
+
+### Stripe.js & Elements
+
+Stripe.js is a JavaScript library for building payment flows.  With it you can
+collect sensitive information from the user and create representative tokens.
+
+**Elements**
+
+Stripe Elements is a set of pre-built UI components for building your checkout
+flow and is available as a feature of Stripe.js.
 
 
 ## Use with WordPress
