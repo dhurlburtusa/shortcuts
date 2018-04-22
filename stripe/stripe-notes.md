@@ -5,6 +5,13 @@ Internet.  Stripe provides the technical, fraud prevention, and banking
 infrastructure required to operate on-line payment systems.
 
 
+## Products
+
+Stripe offers various products: Payments, Billing, Connect, Sigma, Atlas, Radar.
+However, when someone mentions Stripe, they are usually referring to the
+Payments product.
+
+
 ## Use with WordPress
 
 To use Stripe payments on a WordPress site, you have many options.  See
