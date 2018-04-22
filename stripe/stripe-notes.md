@@ -19,6 +19,12 @@ recurring basis, set up a marketplace, or simply accept payments.  See
 https://stripe.com/us/payments for details.
 
 
+## Checkout
+
+Checkout is an embeddable payment form for desktop, tablet, and mobile devices.
+See https://stripe.com/checkout for details.
+
+
 ## Use with WordPress
 
 To use Stripe payments on a WordPress site, you have many options.  See
