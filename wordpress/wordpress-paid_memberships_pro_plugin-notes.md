@@ -1,0 +1,1 @@
+# Wordpress PaidMembershipsPro Plugin Notes
