@@ -19,7 +19,7 @@ recurring basis, set up a marketplace, or simply accept payments.  See
 https://stripe.com/us/payments for details.
 
 
-## Checkout
+### Checkout
 
 Checkout is an embeddable payment form for desktop, tablet, and mobile devices.
 See https://stripe.com/checkout for details.
