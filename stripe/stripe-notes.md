@@ -12,6 +12,13 @@ However, when someone mentions Stripe, they are usually referring to the
 Payments product.
 
 
+## Payments
+
+Payments is a complete payments platform that can be used to bill customers on a
+recurring basis, set up a marketplace, or simply accept payments.  See
+https://stripe.com/us/payments for details.
+
+
 ## Use with WordPress
 
 To use Stripe payments on a WordPress site, you have many options.  See
