@@ -271,10 +271,10 @@ look something like the following:
 ```
 
 `Template` is the only parameter that is required.  However, the `Theme Name`,
-`Description`, `Author`, and `Version` are usually include since they show up
+`Description`, `Author`, and `Version` are usually included since they show up
 on the WP Admin.
 
-The `functions.php` file usually includes the parent themess styles.  The
+The `functions.php` file usually includes the parent themes' styles.  The
 following snippet demonstrates how to do that.
 
 ```php
