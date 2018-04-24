@@ -1,6 +1,29 @@
 # WordPress Notes
 
 
+## Database
+
+**Initial Set of Tables**
+
+After WordPress is installed, the following set of tables will exist.  Note: The tables
+listed here are shown without the prefix that WordPress typically uses.
+
+| Table Name           |
+| -------------------- |
+| `commentmeta`        |
+| `comments`           |
+| `links`              |
+| `options`            |
+| `postmeta`           |
+| `posts`              |
+| `term_relationships` |
+| `term_taxonomy`      |
+| `termmeta`           |
+| `terms`              |
+| `usermeta`           |
+| `users`              |
+
+
 ## Plugins
 
 **Notes**
