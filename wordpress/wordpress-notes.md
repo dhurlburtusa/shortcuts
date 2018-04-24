@@ -237,7 +237,7 @@ Here is a short list of what may be useful informational tags.
   written for the current post or the given post.
 
 
-## Child Themes
+### Child Themes
 
 > A child theme is a theme that inherits the functionality and styling of
 > another theme, called the parent theme.  Child themes are the recommended way
