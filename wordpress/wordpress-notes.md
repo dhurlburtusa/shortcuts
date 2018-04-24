@@ -418,6 +418,12 @@ if (get_stylesheet() !== get_template()) {
 ?>
 ```
 
+### Starter Themes
+
+**Underscores**
+
+`_`s is a starter theme.  See http://underscores.me/ for details.
+
 
 ## Debugging
 
