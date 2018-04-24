@@ -1,6 +1,13 @@
 # WordPress Notes
 
 
+## Common URIs
+
+* /wp-login.php
+* /wp-login.php?action=register
+* /wp-login.php?action=lostpassword
+
+
 ## Database
 
 See https://codex.wordpress.org/Database_Description for details.
