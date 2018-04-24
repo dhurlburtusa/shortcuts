@@ -116,6 +116,27 @@ listed here are shown without the prefix that WordPress typically uses.
 | `comment_parent`       | bigint(20)   |
 | `user_id`              | bigint(20)   |
 
+**Select Options**
+
+The following is a select list of options from the `options` table.
+
+| Option Name       | Example Option Value | Description          |
+| ----------------- | -------------------- | -------------------- |
+| `admin_email`     | admin@example.com    | Administrator email. |
+| `blogname`        | My First Blog        | Blog title.          |
+| `blogdescription` | Another Blog         | Blog tagline.        |
+| `current_theme`   | mytheme-child        |                      |
+| `date_format`     | F j, Y               | Default date format. |
+| `home`            | http://example.com   | Blog address.        |
+| `posts_per_page`  | 10                   | The maximum number of posts on the blog index. |
+| `show_on_front`   | posts                | What to show on the front page. One of 'posts' or 'page'. |
+| `siteurl`         | http://example.com   | WordPress address.   |
+| `stylesheet`      | mytheme-child        | The slug of the currently activated stylesheet (style.css). |
+| `template`        | mytheme-child        | The slug of the currently activated theme. |
+| `time_format`     | g:i a                | Default time format. |
+
+See https://codex.wordpress.org/Option_Reference for more details.
+
 
 ## Plugins
 
