@@ -243,6 +243,42 @@ and `Text Domain` are all required.  The rest are optional.
 Note: When you have the bare minimum, the Customizer will have the "Site
 Identity", the Menus, "Static Front Page", and the "Additional CSS" tabs.
 
+### File Organization
+
+Although there is no required file structure, here is an example of how the
+Twenty Seventeen Theme organizes its files:
+
+```
+assets/
+  +- css/
+  +- images/
+  +- js/
+inc/
+template-parts/
+  +- footer/
+  +- header/
+  +- navigation/
+  +- page/
+  +- post/
+404.php
+archive.php
+comments.php
+footer.php
+front-page.php
+functions.php
+header.php
+index.php
+page.php
+README.txt
+rtl.css
+screenshot.png
+search.php
+searchform.php
+sidebar.php
+single.php
+style.css
+```
+
 ### Conditional Tags
 
 * **`is_home()`**: Determines if the query is for the blog homepage.  See
