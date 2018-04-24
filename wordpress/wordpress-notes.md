@@ -375,7 +375,6 @@ Here is a short list of what may be useful informational tags.
 * **`get_the_time(?$format, ?$post)`**: Retrieves the time at which the post was
   written for the current post or the given post.
 
-
 ### Child Themes
 
 > A child theme is a theme that inherits the functionality and styling of
@@ -447,6 +446,21 @@ if (get_stylesheet() !== get_template()) {
 
 `_`s is a starter theme.  See http://underscores.me/ for details.
 
+### Post Types
+
+There are many different types of content in WordPress.  There are five default
+Post Types readily available to users or internally used by the WordPress
+installation:
+
+* Post: `post`
+* Page: `page`
+* Attachment: `attachment`
+* Revision: `revision`
+* Navigation menu: `nav_menu_item`
+
+You may also create custom post types.  However, it is not recommended that you
+place this functionality in your theme.  This type of functionality should be
+placed/created in a plugin. 
 
 ## Debugging
 
