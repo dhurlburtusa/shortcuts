@@ -3,6 +3,8 @@
 
 ## Database
 
+See https://codex.wordpress.org/Database_Description for details.
+
 **Initial Set of Tables**
 
 After WordPress is installed, the following set of tables will exist.  Note: The tables
