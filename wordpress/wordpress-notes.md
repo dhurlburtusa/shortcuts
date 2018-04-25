@@ -149,6 +149,13 @@ See https://codex.wordpress.org/Option_Reference for more details.
 
 ## Plugins
 
+### Common/Popular
+
+**WP Development**
+
+* [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/)
+* [Theme My Login](https://wordpress.org/plugins/theme-my-login/)
+
 **Notes**
 
 * [PaidMembershipsPro](https://github.com/dhurlburtusa/shortcuts/blob/master/wordpress/wordpress-paid_memberships_pro_plugin-notes.md)
