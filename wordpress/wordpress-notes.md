@@ -153,10 +153,10 @@ See https://codex.wordpress.org/Option_Reference for more details.
 
 **WP Development**
 
-* [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/)
-* [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/)
-* [Theme My Login](https://wordpress.org/plugins/theme-my-login/)
-* [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/)
+* [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
+* [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
+* [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
+* [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
 
 **Notes**
 
