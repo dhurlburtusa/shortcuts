@@ -528,3 +528,17 @@ define('WP_DEBUG_DISPLAY', true);
 
 See https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/#other-wordpress-development-tools
 for more details and options.
+
+
+## Misc
+
+**CSS Selectors**
+
+* `body.page`
+* `body.page-id-##`
+* `body.page-template-default`
+* `article.post-##`
+* `article.page`
+* `article.status-publish`
+* `article.type-page`
+
