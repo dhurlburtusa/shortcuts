@@ -31,6 +31,7 @@ See https://restfulapi.net/resource-naming/ for more RESTful conventions.
 
 ## Related Links
 
+* [OpenAPI](https://www.openapis.org/)
 * [Overview of RESTful API Description Languages](https://en.wikipedia.org/wiki/Overview_of_RESTful_API_Description_Languages)
 * [RAML](https://en.wikipedia.org/wiki/RAML_(software))
 * [RSDL](https://en.wikipedia.org/wiki/RSDL)
