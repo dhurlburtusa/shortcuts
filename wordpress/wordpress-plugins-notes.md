@@ -13,7 +13,7 @@
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
 * [WP Add Custom CSS](https://wordpress.org/plugins/wp-add-custom-css/) (Free)
 
-## Notes
+## Specific Plugin Notes
 
 * [PaidMembershipsPro](https://github.com/dhurlburtusa/shortcuts/blob/master/wordpress/wordpress-paid_memberships_pro_plugin-notes.md)
-* [Stripe](https://github.com/dhurlburtusa/shortcuts/blob/master/stripe/stripe_payments_wordpress_plugin-notes.md)
+* [Stripe Payments](https://github.com/dhurlburtusa/shortcuts/blob/master/stripe/stripe_payments_wordpress_plugin-notes.md)
