@@ -25,3 +25,13 @@
 | PATCH     | /resources/:id/subresources/:id/ | Patches(updates) a subset of the sub-resource      |  |
 | PUT       | /resources/:id/subresources/:id/ | Replaces whole sub-resource                        |  |
 | DELETE    | /resources/:id/subresources/:id/ | Deletes the sub-resource                           |  |
+
+See https://restfulapi.net/resource-naming/ for more RESTful conventions.
+
+
+## Related Links
+
+* [Overview of RESTful API Description Languages](https://en.wikipedia.org/wiki/Overview_of_RESTful_API_Description_Languages)
+* [RAML](https://en.wikipedia.org/wiki/RAML_(software))
+* [RSDL](https://en.wikipedia.org/wiki/RSDL)
+* [restfulapi.net](https://restfulapi.net/)
