@@ -45,3 +45,9 @@ and JavaScript.
 **Hooks: Actions and Filters**
 
 A plugin may use actions and filters.
+
+
+## Misc
+
+* The plugin PHP file just needs a Plugin Header, a couple of PHP functions, and
+  some hooks to attach your functions to.
