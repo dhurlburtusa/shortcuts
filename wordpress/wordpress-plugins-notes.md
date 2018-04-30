@@ -1,5 +1,6 @@
 # WordPress Plugins Notes
 
+
 ## Common/Popular
 
 **WP Development**
@@ -13,7 +14,34 @@
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
 * [WP Add Custom CSS](https://wordpress.org/plugins/wp-add-custom-css/) (Free)
 
+
 ## Specific Plugin Notes
 
 * [PaidMembershipsPro](https://github.com/dhurlburtusa/shortcuts/blob/master/wordpress/wordpress-paid_memberships_pro_plugin-notes.md)
 * [Stripe Payments](https://github.com/dhurlburtusa/shortcuts/blob/master/stripe/stripe_payments_wordpress_plugin-notes.md)
+
+
+## Writing a Plugin
+
+Plugins are packages of code that extend the core functionality of WordPress.
+WordPress plugins are made up of PHP code and other assets such as images, CSS,
+and JavaScript.
+
+### Basics
+
+**Initial Steps**
+
+* In `wp-content/plugins`, create a directory named after your plugin.
+* In the new directory, create a PHP file named after your plugin.
+* Add at least the minimum plugin header comment to this file.
+
+  ```php
+  <?php
+  /*
+  Plugin Name: YOUR PLUGIN NAME
+  */
+  ```
+
+**Hooks: Actions and Filters**
+
+A plugin may use actions and filters.
