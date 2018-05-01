@@ -76,11 +76,12 @@ claims.
 * **Registered claims**: These are a set of predefined claims which are not
   mandatory but recommended, to provide a set of useful, interoperable claims.
   Some of them are: `iss` (issuer), `exp` (expiration time), `sub` (subject),
-  `aud` (audience), and others.
+  `aud` (audience), and [others](other-reg-claims).
 
 * **Public claims**: These can be defined at will by those using JWTs.  But to
-  avoid collisions they should be defined in the IANA JSON Web Token Registry
-  or be defined as a URI that contains a collision resistant namespace.
+  avoid collisions they should be defined in the [IANA JSON Web Token
+  Registry][iana-jwt-registry] or be defined as a URI that contains a collision
+  resistant namespace.
 
 * **Private claims**: These are the custom claims created to share information
   between parties that agree on using them.
@@ -115,4 +116,6 @@ The signature is used to verify that the sender of the JWT is who it says it
 is and to ensure that the message wasn't changed along the way.
 
 
+[iana-jwt-registry]: https://www.iana.org/assignments/jwt/jwt.xhtml
+[other-reg-claims]: https://tools.ietf.org/html/rfc7519#section-4.1
 [rfc-7519]: https://tools.ietf.org/html/rfc7519
