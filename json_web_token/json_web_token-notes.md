@@ -116,6 +116,35 @@ The signature is used to verify that the sender of the JWT is who it says it
 is and to ensure that the message wasn't changed along the way.
 
 
+## Header
+
+The header of a JWT is a JOSE (JSON Object Signing and Encryption) Header.  It
+is a JSON object whose members describe the cryptographic operations applied to
+the JWT.  The header may optionally contain other members to further describe
+additional properties of the JWT.  The header is comprised of header parameters.
+There are three classes of header parameters: registered, public, and private.
+
+**Registered Header Parameters**
+
+The following header parameter names for use in JWSs are registered in the IANA
+"JSON Web Signature and Encryption Header Parameters" registry.
+   
+| Name   |  Typical Values          | Required | Description |
+| ------ | ------------------------ | -------- | ----------- |
+| `alg`  | `HS256`; `RS256`; `none` | Yes      | The algorithm header identifies the crypto algorithm used. |
+| `cty`  |                          | No       | Used to convey structural info about the JWT.  Usually left out. |
+| `typ`  | `JWT`                    | No       | The media type of a JWS, which for JWT is JWT. |
+
+**Public Header Parameters**
+
+Not typically used with JWT.  May be used in other JWSs.
+
+**Private Header Parameters**
+
+Not typically used with JWT.  May be used in other JWSs.
+
+
 [iana-jwt-registry]: https://www.iana.org/assignments/jwt/jwt.xhtml
+[jose-header]: https://tools.ietf.org/html/rfc7515#section-4
 [other-reg-claims]: https://tools.ietf.org/html/rfc7519#section-4.1
 [rfc-7519]: https://tools.ietf.org/html/rfc7519
