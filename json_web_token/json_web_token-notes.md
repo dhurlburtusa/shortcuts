@@ -70,10 +70,10 @@ Then, this JSON is Base64Url encoded to form the first part of the JWT.
 
 The second part of the token is the payload, which contains the claims.
 Claims are statements about an entity (typically, the user) and additional
-metadata.  There are three types of claims: reserved, public, and private
+metadata.  There are three types of claims: registered, public, and private
 claims.
 
-* **Reserved claims**: These are a set of predefined claims which are not
+* **Registered claims**: These are a set of predefined claims which are not
   mandatory but recommended, to provide a set of useful, interoperable claims.
   Some of them are: `iss` (issuer), `exp` (expiration time), `sub` (subject),
   `aud` (audience), and others.
