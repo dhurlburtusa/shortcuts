@@ -15,7 +15,7 @@ Let's explain some concepts of this definition further.
 * **Self-contained**: The payload contains all the required information about
   the user, avoiding the need to query the database more than once.
 
-See https://jwt.io/ and https://en.wikipedia.org/wiki/JSON_Web_Token for
+See https://jwt.io/ and https://en.wikipedia.org/wiki/JSON_Web_Token for 
 details.
 
 ## When should you use JSON Web Tokens?
@@ -40,9 +40,9 @@ Here are some scenarios where JSON Web Tokens are useful:
 
 JSON Web Tokens consist of three parts separated by dots (.), which are:
 
-* Header
-* Payload
-* Signature
+* Header (xxxxx)
+* Payload (yyyyy)
+* Signature (zzzzz)
 
 Therefore, a JWT typically looks like the following.
 
@@ -53,7 +53,7 @@ Let's break down the different parts.
 **Header**
 
 The header typically consists of two parts: the type of the token, which is
-JWT, and the hashing algorithm being used, such as HMAC SHA256 or RSA.
+`JWT`, and the hashing algorithm being used, such as HMAC SHA256 or RSA.
 
 For example:
 
@@ -106,9 +106,9 @@ be created in the following way:
 
 ```
 HMACSHA256(
-  base64UrlEncode(header) + "." +
-  base64UrlEncode(payload),
-  secret)
+  base64UrlEncode(header) + "." + base64UrlEncode(payload),
+  secret
+)
 ```
 
 The signature is used to verify that the sender of the JWT is who it says it
