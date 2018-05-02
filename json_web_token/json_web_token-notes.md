@@ -205,6 +205,31 @@ Public Claim Names, Private Claim Names are subject to collision and should be
 used with caution.
 
 
+## Use with Authentication
+
+In authentication, when the user successfully logs in using their credentials, a
+JSON Web Token will be returned and must be saved locally (typically in local
+storage).
+
+Whenever the user wants to access a protected route or resource, the user agent
+should send the JWT, typically in the `Authorization` header using the `Bearer`
+schema.  The content of the header should look like the following:
+
+```
+Authorization: Bearer <token>
+```
+
+This is a stateless authentication mechanism as the user state is never saved in
+server memory.
+
+Note: It doesn't matter which domains are serving your APIs, so Cross-Origin
+Resource Sharing (CORS) won't be an issue as it doesn't use cookies.
+
+Note: With signed tokens, all the information contained within the token is
+exposed to users or other parties, even though they are unable to change it.
+This means you should not put secret information within the token.
+
+
 [iana-jwt-registry]: https://www.iana.org/assignments/jwt/jwt.xhtml
 [jose-header]: https://tools.ietf.org/html/rfc7515#section-4
 [other-reg-claims]: https://tools.ietf.org/html/rfc7519#section-4.1
