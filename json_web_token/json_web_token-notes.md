@@ -144,7 +144,69 @@ Not typically used with JWT.  May be used in other JWSs.
 Not typically used with JWT.  May be used in other JWSs.
 
 
+## Payload
+
+The payload of a JWT is comprised of a claims set formatted as JSON.
+
+### Claims
+
+There are three classes of claims: registered, public, and private.
+
+**Registered**
+
+| Code  | Name            | Brief Description |
+| ----- | --------------- | ----------------- |
+| `aud` | Audience        | Identifies the recipients that the JWT is intended for.  Is an array of case-sensitive strings, each containing a string or URI.  May also be just the single value. |
+| `exp` | Expiration Time | Identifies the expiration time on or after which the JWT MUST NOT be accepted for processing.  Is a number representing the seconds since the epoch. |
+| `iat` | Issued At       | Identifies the time at which the JWT was issued.  Is a number representing the seconds since the epoch. |
+| `iss` | Issuer          | Identifies the principal that issued the JWT. |
+| `jti` | JWT ID          | Provides a unique identifier for the JWT.  Is a case-sensitive string. |
+| `nbf` | Not Before      | Identifies the time before which the JWT MUST NOT be accepted for processing.  Is a number representing the seconds since the epoch. |
+| `sub` | Subject         | Identifies the principal that is the subject of the JWT.  Is a case-sensitive string containing a string or URI. |
+
+**Public**
+
+Claim Names can be defined at will by those using JWTs.  However, in order to
+prevent collisions, any new Claim Name should either be registered in the IANA
+"JSON Web Token Claims" registry or be a Public Name: a value that contains a
+collision-resistant name which is a name in a namespace that enables names to be
+allocated in a manner such that they are highly unlikely to collide with other
+names.  Examples of collision-resistant namespaces include: Domain Names and
+Universally Unique IDentifiers (UUIDs) [RFC4122][rfc-4122].
+   
+| Code                    | Brief Description |
+| ----------------------- | ----------------- |
+| `name`                  | Full name.        |
+| `given_name`            | Given name(s) or first name(s). |
+| `family_name`           | Surname(s) or last name(s). |
+| `middle_name`           | Middle name(s). |
+| `nickname`              | Casual name. |
+| `preferred_username`    | Shorthand name by which the End-User wishes to be referred to. |
+| `profile`               | Profile page URL. |
+| `picture`               | Profile picture URL. |
+| `website`               | Web page or blog URL. |
+| `email`                 | Preferred e-mail address. |
+| `email_verified`        | True if the e-mail address has been verified; otherwise false. |
+| `gender`                | Gender. |
+| `birthdate`             | Birthday. |
+| `zoneinfo`              | Time zone. |
+| `locale`                | Locale. |
+| `phone_number`          | Preferred telephone number. |
+| `phone_number_verified` | True if the phone number has been verified; otherwise false. |
+| `address`               | Preferred postal address. |
+
+See the [IANA JSON Web Token registry][iana-jwt-registry] for a complete list.
+
+**Private**
+
+A producer and consumer of a JWT MAY agree to use Claim Names that are Private
+Names: names that are not Registered Claim Names or Public Claim Names.  Unlike
+Public Claim Names, Private Claim Names are subject to collision and should be
+used with caution.
+
+
 [iana-jwt-registry]: https://www.iana.org/assignments/jwt/jwt.xhtml
 [jose-header]: https://tools.ietf.org/html/rfc7515#section-4
 [other-reg-claims]: https://tools.ietf.org/html/rfc7519#section-4.1
+[rfc-4122]: https://tools.ietf.org/html/rfc4122
 [rfc-7519]: https://tools.ietf.org/html/rfc7519
