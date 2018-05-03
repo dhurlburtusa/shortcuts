@@ -1,0 +1,1 @@
+# WordPress Internationalization/Localization Notes
