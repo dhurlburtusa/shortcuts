@@ -15,4 +15,9 @@ Here is how it works in a few sentences:
   strings at run-time.
 
 
+## Useful Links
+
+* http://ottopress.com/2012/internationalization-youre-probably-doing-it-wrong/.
+
+
 [gettext]: https://www.gnu.org/software/gettext/
