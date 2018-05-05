@@ -9,6 +9,10 @@
 * [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
 * [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
+* [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
+  + **Caution**: Causes a styling issue with built-in Theme editor and Plugin
+    editor.  The editor's gutter ends up covering the first 3 or 4 characters on
+    each line.
 * [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
