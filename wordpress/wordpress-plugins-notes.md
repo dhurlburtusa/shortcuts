@@ -16,7 +16,6 @@
 * [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
-* [Template Debugger](https://wordpress.org/plugins/quick-edit-template-link/) (Free)
 * [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
   + **Caution**: Does not seem to backup core WordPress files including
