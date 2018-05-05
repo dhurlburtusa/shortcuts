@@ -278,6 +278,13 @@ class DerivedComponent<DefaultProps, Props, State> extends React.Component<Defau
    * timers, cancelling network requests, or cleaning up any DOM elements that were
    * created in `componentDidMount` or in `componentDidUpdate`.
    *
+   * Note: From
+   * https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#adding-event-listeners-or-subscriptions
+   *
+   * > Only once `componentDidMount` (as opposed to `componentWillMount`) has been
+   * > called does React guarantee that `componentWillUnmount` will later be called for
+   * > clean up.
+   *
    * Called during the Unmounting stage.
    */
   componentWillUnmount() {
