@@ -24,6 +24,8 @@
 * [WP Config File Editor](https://wordpress.org/plugins/wp-config-file-editor/) (Free)
   + **Caution**: Make a backup of `wp-config.php` before using.  Using supplied
     Editor will wipe out any special statements included by hosting services.
+  + `WP File Manager` plugin preferred.
+* [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
 
 
 ## Specific Plugin Notes
