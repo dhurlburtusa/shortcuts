@@ -5,6 +5,7 @@
 
 **WP Development**
 
+* [Add Admin CSS](https://wordpress.org/plugins/add-admin-css/) (Free)
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
 * [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
 * [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
