@@ -5,8 +5,12 @@
 
 **WP Development**
 
+* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
+* [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
+* [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
 * [Beaver Builder](https://www.wpbeaverbuilder.com/) (Paid)
 * [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
+* [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
 * [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
 * [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
