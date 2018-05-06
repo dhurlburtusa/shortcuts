@@ -62,10 +62,45 @@ and JavaScript.
 
 **Hooks: Actions and Filters**
 
-A plugin may use actions and filters.
+WordPress hooks allow you to tap into WordPress at specific points to change how
+WordPress behaves without editing any core files.
+
+There are two types of hooks within WordPress: actions and filters.  Actions
+allow you to add or change WordPress functionality, while filters allow you to
+alter content as it is loaded and displayed to the website user.
+
+A plugin uses hooks to change how WordPress behaves.
+
+**Plugin Registration Hooks**
+
+After a plugin is installed, it can be activated, deactivated, and then
+uninstalled.  WordPress provides three different functions to add your own hook
+when the plugin is activated, deactivated, or uninstalled:
+
+* [`register_activation_hook`][register_activation_hook]
+* [`register_deactivation_hook`][register_deactivation_hook]
+* [`register_uninstall_hook`][register_uninstall_hook]
+
+**Adding Hooks**
+
+You can add your own, custom hooks with [`do_action`][do_action], which will
+enable developers to extend your plugin by passing functions through your hooks.
+
+**Removing Hooks**
+
+You can also use invoke [`remove_action`][remove_action] to remove a function
+that was defined earlier.
 
 
 ## Misc
 
 * The plugin PHP file just needs a Plugin Header, a couple of PHP functions, and
   some hooks to attach your functions to.
+
+
+[do_action]: https://developer.wordpress.org/reference/functions/do_action/
+[register_activation_hook]: https://developer.wordpress.org/reference/functions/register_activation_hook/
+[register_deactivation_hook]: https://developer.wordpress.org/reference/functions/register_deactivation_hook/
+[register_uninstall_hook]: https://developer.wordpress.org/reference/functions/register_uninstall_hook/
+[remove_action]: https://developer.wordpress.org/reference/functions/remove_action/
+
