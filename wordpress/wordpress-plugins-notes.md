@@ -91,6 +91,13 @@ enable developers to extend your plugin by passing functions through your hooks.
 You can also use invoke [`remove_action`][remove_action] to remove a function
 that was defined earlier.
 
+### Header Comment
+
+The header comment is what tells WordPress that a file is a plugin.
+
+See https://developer.wordpress.org/plugins/the-basics/header-requirements/ for
+a list of what can put into the header comment.
+
 
 ## Misc
 
