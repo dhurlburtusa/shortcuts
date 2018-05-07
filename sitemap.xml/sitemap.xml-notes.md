@@ -15,4 +15,6 @@ This allows search engines to crawl the site more intelligently.
 ## File Format
 
 The Sitemap Protocol format consists of XML tags.  The file itself must be UTF-8
-encoded.  They may be gzipped compressed.
+encoded.  They may be gzipped compressed.  See
+https://en.wikipedia.org/wiki/Sitemaps#File_format and
+https://www.sitemaps.org/protocol.html for more details.
