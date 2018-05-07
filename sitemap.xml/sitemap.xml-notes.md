@@ -10,3 +10,9 @@ about each URL:
 * How important it is in relation to other URLs in the site
 
 This allows search engines to crawl the site more intelligently. 
+
+
+## File Format
+
+The Sitemap Protocol format consists of XML tags.  The file itself must be UTF-8
+encoded.  They may be gzipped compressed.
