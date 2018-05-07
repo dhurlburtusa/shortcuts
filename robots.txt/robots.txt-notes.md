@@ -68,4 +68,15 @@ Disallow: /private/
 ```
 
 
+## Sitemap.xml Autodiscovery
+
+You may also add a `Sitemap` directive pointing to the site's sitemap.
+
+```
+Disallow: ...
+...
+Sitemap: https://www.example.com/sitemap.xml
+```
+
+
 [wikipedia-robots]: https://en.wikipedia.org/wiki/Robots_exclusion_standard
