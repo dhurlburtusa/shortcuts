@@ -18,7 +18,8 @@ each subdomain must have its own robots.txt file.
 
 ## Specification
 
-See http://www.robotstxt.org/orig.html and
+See http://www.robotstxt.org/orig.html,
+https://developers.google.com/search/reference/robots_txt, and
 https://en.wikipedia.org/wiki/Robots_exclusion_standard for details.
 
 
