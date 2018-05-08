@@ -32,11 +32,14 @@
 * [Debug Bar Widgets](https://wordpress.org/plugins/debug-bar-widgets/) (Free)
 * [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
+* [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
+  + **Con**: Plaintext editor.
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 * [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
   + **Caution**: Does not seem to backup core WordPress files including
     `wp-config.php`.
+* [Wordfence](https://wordpress.org/plugins/wordfence/) (Free, Paid)
 * [WP Add Custom CSS](https://wordpress.org/plugins/wp-add-custom-css/) (Free)
 * ~~[WP Config File Editor](https://wordpress.org/plugins/wp-config-file-editor/)~~ (Free)
   + **Caution**: Make a backup of `wp-config.php` before using.  Using supplied
