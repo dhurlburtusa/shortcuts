@@ -26,7 +26,7 @@
   + **Caution**: Does not seem to backup core WordPress files including
     `wp-config.php`.
 * [WP Add Custom CSS](https://wordpress.org/plugins/wp-add-custom-css/) (Free)
-* [WP Config File Editor](https://wordpress.org/plugins/wp-config-file-editor/) (Free)
+* ~~[WP Config File Editor](https://wordpress.org/plugins/wp-config-file-editor/)~~ (Free)
   + **Caution**: Make a backup of `wp-config.php` before using.  Using supplied
     Editor will wipe out any special statements included by hosting services.
   + `WP File Manager` plugin preferred.
