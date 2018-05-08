@@ -44,6 +44,8 @@
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
   + **Con**: Plaintext editor.
+* [Log Viewer](https://wordpress.org/plugins/log-viewer/) (Free)
+* [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 * [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
@@ -56,6 +58,7 @@
     Editor will wipe out any special statements included by hosting services.
   + `WP File Manager` plugin preferred.
 * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
+* [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
 
 
 ## Specific Plugin Notes
