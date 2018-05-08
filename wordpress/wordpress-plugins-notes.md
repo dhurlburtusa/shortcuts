@@ -14,10 +14,22 @@
 * [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
 * [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
+* [Debug Bar Actions and Filters](https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/) (Free)
 * [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
   + **Caution**: Causes a styling issue with built-in Theme editor and Plugin
     editor.  The editor's gutter ends up covering the first 3 or 4 characters on
     each line.
+* [Debug Bar Constants](https://wordpress.org/plugins/debug-bar-constants/) (Free)
+* [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) (Free)
+* [Debug Bar Localization](https://wordpress.org/plugins/debug-bar-localization/) (Free)
+* [Debug Bar Post Types](https://wordpress.org/plugins/debug-bar-post-types/) (Free)
+* [Debug Bar Rewrite Rules](https://wordpress.org/plugins/debug-bar-rewrite-rules/) (Free)
+* [Debug Bar Screen Info](https://wordpress.org/plugins/debug-bar-screen-info/) (Free)
+* [Debug Bar Shortcodes](https://wordpress.org/plugins/debug-bar-shortcodes/) (Free)
+* [Debug Bar Slow Actions](https://wordpress.org/plugins/debug-bar-slow-actions/) (Free)
+* [Debug Bar Taxonomies](https://wordpress.org/plugins/debug-bar-taxonomies/) (Free)
+* [Debug Bar Transients](https://wordpress.org/plugins/debug-bar-transients/) (Free)
+* [Debug Bar Widgets](https://wordpress.org/plugins/debug-bar-widgets/) (Free)
 * [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
