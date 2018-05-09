@@ -14,6 +14,7 @@
 * [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
 * [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
 * [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
+  + **Caution**: Causes WP Mail SMTP plugin to break.
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
 * [Debug Bar Actions and Filters](https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/) (Free)
 * [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
@@ -58,6 +59,7 @@
     Editor will wipe out any special statements included by hosting services.
   + `WP File Manager` plugin preferred.
 * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
+* [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) (Free)
 * [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
 
 
