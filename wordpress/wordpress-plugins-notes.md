@@ -14,7 +14,8 @@
 * [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
 * [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
 * [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
-  + **Caution**: Causes WP Mail SMTP plugin to break.
+  + **Caution**: Causes WP Mail SMTP plugin to break due to some Composer
+    compatibility issues and the order in which the plugins are loaded.
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
 * [Debug Bar Actions and Filters](https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/) (Free)
 * [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
