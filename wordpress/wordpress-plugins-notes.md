@@ -15,7 +15,9 @@
 * [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
 * [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
   + **Caution**: Causes WP Mail SMTP plugin to break due to some Composer
-    compatibility issues and the order in which the plugins are loaded.
+    compatibility issues and the order in which the plugins are loaded.  However, if
+    a plugin such as Plugin Organizer is installed, then the plugin load order can
+    be changed such that this plugin loads after the WP Main SMTP plugin.
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
 * [Debug Bar Actions and Filters](https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/) (Free)
 * [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
@@ -48,6 +50,7 @@
   + **Con**: Plaintext editor.
 * [Log Viewer](https://wordpress.org/plugins/log-viewer/) (Free)
 * [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
+* [Plugin Organizer](https://wordpress.org/plugins/plugin-organizer/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 * [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
