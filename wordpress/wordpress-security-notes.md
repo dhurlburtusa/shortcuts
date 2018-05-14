@@ -37,6 +37,11 @@
 * Disable PHP execution in certain WordPress directories.
 
 
+## Useful Links
+
+* http://www.wpbeginner.com/wordpress-security/
+
+
 [all in one wp security & firewall]: https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/
 [backupbuddy]: https://ithemes.com/purchase/backupbuddy/
 [sucuri scanner]: https://wordpress.org/plugins/sucuri-scanner/
