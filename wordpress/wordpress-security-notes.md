@@ -311,6 +311,7 @@ Options -Indexes
 
 ## Useful Links
 
+* https://sucuri.net/guides/wordpress-security/
 * http://www.wpbeginner.com/wordpress-security/
 
 
