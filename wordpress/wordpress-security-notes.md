@@ -28,6 +28,8 @@
     - [Sucuri Scanner]
     - [Wordfence]
 * Disable PHP file execution in certain WordPress directories.
+  + See http://www.wpbeginner.com/wp-tutorials/how-to-disable-php-execution-in-certain-wordpress-directories/
+    for details.
 * Limit login attempts.
 * Disable directory indexing and browsing.
   + Add `Options -Indexes` to `.htaccess` file.
