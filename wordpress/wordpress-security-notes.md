@@ -48,6 +48,32 @@
 ```
 # Top-Level .htaccess
 
+# Prevent Directory Indexing and Browsing
+Options -Indexes
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# BEGIN GD-SSL
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_USER_AGENT} ^(.+)$
+  RewriteCond %{SERVER_NAME} ^example\.com$
+  RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+  Header add Strict-Transport-Security "max-age=300"
+</IfModule>
+# END GD-SSL
+
 # BEGIN All In One WP Security
 
 #AIOWPS_BLOCK_WP_FILE_ACCESS_START
@@ -269,29 +295,6 @@ LimitRequestBody 10240000
 
 # END All In One WP Security
 
-# BEGIN GD-SSL
-<IfModule mod_rewrite.c>
-  Options +FollowSymLinks
-  RewriteEngine On
-  RewriteCond %{HTTPS} !=on
-  RewriteCond %{HTTP_USER_AGENT} ^(.+)$
-  RewriteCond %{SERVER_NAME} ^example\.com$
-  RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-  Header add Strict-Transport-Security "max-age=300"
-</IfModule>
-# END GD-SSL
-
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.php$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.php [L]
-</IfModule>
-# END WordPress
-
 # Wordfence WAF
 <Files ".user.ini">
   <IfModule mod_authz_core.c>
@@ -303,9 +306,6 @@ LimitRequestBody 10240000
   </IfModule>
 </Files>
 # END Wordfence WAF
-
-# Prevent Directory Indexing and Browsing
-Options -Indexes
 ```
 
 
