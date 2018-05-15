@@ -30,7 +30,12 @@
 * Disable PHP file execution in certain WordPress directories.
 * Limit login attempts.
 * Disable directory indexing and browsing.
+  + Add `Options -Indexes` to `.htaccess` file.
+  + See http://www.wpbeginner.com/wp-tutorials/disable-directory-browsing-wordpress/
+    for details.
 * Disable XML-RPC in WordPress.
+  + See http://www.wpbeginner.com/plugins/how-to-disable-xml-rpc-in-wordpress/ for
+    details.
 * Automatically log out idle users in WordPress.
 * Delete all inactive themes.
 * Delete `.php` files from the `wp-content/uploads/` directory.
@@ -296,6 +301,9 @@ LimitRequestBody 10240000
   </IfModule>
 </Files>
 # END Wordfence WAF
+
+# Prevent Directory Indexing and Browsing
+Options -Indexes
 ```
 
 
