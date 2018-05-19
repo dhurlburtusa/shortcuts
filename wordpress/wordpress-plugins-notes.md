@@ -9,6 +9,7 @@
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
 * [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
 * [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
+* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) (Free, Paid)
 * [All in One WP Security & Firewall](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/) (Free)
 * [Beaver Builder](https://www.wpbeaverbuilder.com/) (Paid)
 * [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
@@ -65,6 +66,7 @@
 * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) (Free)
 * [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (Free, Paid)
 
 
 ## Specific Plugin Notes
