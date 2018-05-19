@@ -5,6 +5,7 @@
 
 **WP Development**
 
+* [ACF Content Analysis for Yoast SEO](https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/) (Free)
 * [Add Admin CSS](https://wordpress.org/plugins/add-admin-css/) (Free)
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
 * [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
@@ -67,6 +68,8 @@
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) (Free)
 * [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (Free, Paid)
+  + If the `Advance Custom Fields` plugin is installed, be sure to also install `ACF
+    Content Analysis for Yoast SEO` plugin so Yoast can analyze the custom fields.
 
 
 ## Specific Plugin Notes
