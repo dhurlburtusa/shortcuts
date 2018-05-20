@@ -308,6 +308,14 @@ LimitRequestBody 10240000
 # END Wordfence WAF
 ```
 
+**php.ini**
+
+```
+...
+expose_php = Off
+...
+```
+
 
 ## Useful Links
 
