@@ -225,6 +225,8 @@ WordPress, when handling a request, will look for the existence of certain
 files.  If present, WordPress will execute the file by including it into one of
 the many templates WordPress traverses along its journey to create a response.
 
+See http://wpengineer.com/2500/wordpress-dropins/ for more details.
+
 * `wp-content/advanced-cache.php`
 * `wp-content/db.php`
 * `wp-content/db-error.php`
