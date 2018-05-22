@@ -138,6 +138,13 @@ See https://developer.wordpress.org/plugins/the-basics/header-requirements/ for
 a list of what can put into the header comment.
 
 
+## Must Use Plugins
+
+Usually, the plugins you use are stored in `wp-content/plugins`.  Whether they
+run or not depends on whether they are activated.  However, if any plugins are
+stored in `wp-content/mu-plugins`, they are always run.
+
+
 ## Misc
 
 * The plugin PHP file just needs a Plugin Header, a couple of PHP functions, and
