@@ -219,6 +219,24 @@ require index.php
 ```
 
 
+## Drop-in Files
+
+WordPress, when handling a request, will look for the existence of certain
+files.  If present, WordPress will execute the file by including it into one of
+the many templates WordPress traverses along its journey to create a response.
+
+* `wp-content/advanced-cache.php`
+* `wp-content/db.php`
+* `wp-content/db-error.php`
+* `wp-content/install.php`
+* `wp-content/maintenance.php`
+* `wp-content/object-cache.php`
+* `wp-content/sunrise.php` (if multisite)
+* `wp-content/blog-deleted.php` (if multisite)
+* `wp-content/blog-inactive.php` (if multisite)
+* `wp-content/suspended.php` (if multisite)
+
+
 ## Misc
 
 **CSS Selectors**
