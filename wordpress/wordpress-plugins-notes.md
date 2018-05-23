@@ -73,6 +73,7 @@
 
 **Some to Try**
 
+* [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) (Free)
 * [Simple Taxonomy](https://wordpress.org/plugins/simple-taxonomy/) (Free)
 * [Taxonomy Images](https://wordpress.org/plugins/taxonomy-images/) (Free)
 
