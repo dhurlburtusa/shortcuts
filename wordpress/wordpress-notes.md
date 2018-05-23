@@ -251,3 +251,13 @@ See http://wpengineer.com/2500/wordpress-dropins/ for more details.
 * `article.status-publish`
 * `article.type-page`
 
+**Customization Notes**
+
+* Use [custom fields] in pages/posts
+* Use [custom post types]
+* Use [custom taxonomies]
+
+
+[custom fields]: https://codex.wordpress.org/Custom_Fields
+[custom post types]: https://codex.wordpress.org/Custom_Post_Types
+[custom_taxonomies]: https://codex.wordpress.org/Custom_Taxonomies
