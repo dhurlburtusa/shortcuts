@@ -71,6 +71,10 @@
   + If the `Advance Custom Fields` plugin is installed, be sure to also install `ACF
     Content Analysis for Yoast SEO` plugin so Yoast can analyze the custom fields.
 
+**Some to Try**
+
+* [Taxonomy Images](https://wordpress.org/plugins/taxonomy-images/) (Free)
+
 
 ## Specific Plugin Notes
 
