@@ -53,6 +53,7 @@
 * [Log Viewer](https://wordpress.org/plugins/log-viewer/) (Free)
 * [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
 * [Plugin Organizer](https://wordpress.org/plugins/plugin-organizer/) (Free)
+* [Remove Dashboard Access](https://wordpress.org/plugins/remove-dashboard-access-for-non-admins/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 * [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
