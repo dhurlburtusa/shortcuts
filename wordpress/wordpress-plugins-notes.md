@@ -73,6 +73,7 @@
 
 **Some to Try**
 
+* [Simple Taxonomy](https://wordpress.org/plugins/simple-taxonomy/) (Free)
 * [Taxonomy Images](https://wordpress.org/plugins/taxonomy-images/) (Free)
 
 
