@@ -341,7 +341,7 @@ if (get_stylesheet() !== get_template()) {
 
 ## Post Types
 
-There are many different types of content in WordPress.  There are five default
+There are many different types of content in WordPress.  There are seven default
 Post Types readily available to users or internally used by the WordPress
 installation:
 
@@ -350,6 +350,8 @@ installation:
 * Attachment: `attachment`
 * Revision: `revision`
 * Navigation menu: `nav_menu_item`
+* Custom CSS: `custom_css`
+* Changesets: `customize_changeset`
 
 You may also create custom post types.  However, it is not recommended that you
 place this functionality in your theme.  This type of functionality should be
