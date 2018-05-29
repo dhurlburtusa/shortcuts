@@ -353,6 +353,13 @@ installation:
 * Custom CSS: `custom_css`
 * Changesets: `customize_changeset`
 
+See https://codex.wordpress.org/Post_Types
+
 You may also create custom post types.  However, it is not recommended that you
 place this functionality in your theme.  This type of functionality should be
 placed/created in a plugin. 
+
+**Custom Post Types**
+
+See http://www.wpbeginner.com/wp-tutorials/how-to-create-custom-post-types-in-wordpress/
+and https://codex.wordpress.org/Post_Types for details.
