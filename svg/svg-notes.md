@@ -1,6 +1,11 @@
 # SVG Notes
 
 
+## Scaling
+
+See https://css-tricks.com/scale-svg/ for details.
+
+
 ## Misc
 
 * MIME type: image/svg+xml
