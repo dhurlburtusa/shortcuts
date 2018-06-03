@@ -16,6 +16,8 @@ There are 3 supported video formats: MP4, WebM, and Ogg.
 | Safari            | YES | NO   | NO  |
 | Opera             | YES (from Opera 25) | YES  | YES |
 
+See https://webkit.org/blog/6784/new-video-policies-for-ios/ for important
+information about the video on iOS.
 
 ## Media Types
 
