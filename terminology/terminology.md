@@ -1,6 +1,20 @@
 # Terminology Notes
 
 
+## Aside or Sidebar?
+
+Many times an aside and sidebar are used interchangeably in the HTML markup and
+CSS world.  However, they are distinct things.  A sidebar is a region that is
+to the left or right of another region.  It is, however, common to have asides
+within the sidebar region.  An aside is a special type of section.  It is a
+section that is tangentially related to the content around it.  Aside are not
+only found in a sidebar region, they may be found in other regions too.  Sidebar
+regions not only contain asides, but they may contain other content as well such
+as advertisements or navigation.
+
+See Region or Section below.
+
+
 ## Container or Wrapper?
 
 Many times container and wrapper are used interchangeably in the HTML markup and
