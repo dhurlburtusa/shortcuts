@@ -9,3 +9,6 @@
   `doc.save()` will not persist this modification.  If you must modify `Date`
   types using built-in methods, tell mongoose about the change with
   `doc.markModified('pathToYourDate')` before saving.
+* Arrays are special because they implicitly have a default value of `[]` (empty
+  array).
+* Mongoose will, by default, "minimize" schemas by removing empty objects.
