@@ -34,3 +34,27 @@ elements in HTML.  Because an element in an HTML document can never represent a
 screen (it can be styled to take up most or all of the screen), there should
 fnver be a screen element except when the element's sole purpose is to only be
 displayed in full screen mode.
+
+
+## Region or Section?
+
+Many times page and screen are used interchangeably.  However, I distinguish
+the two by the following definitions.
+
+**Region**
+
+A region is an area within a context such as a header, body, sidebar, or footer
+within a document.  These regions usually will contain sections of the document.
+Sections may be moved to different regions but the header region will always be
+the header region.  If a header region is moved else where, then it is no longer
+a header region.
+
+**Section**
+
+A section is a part within a greater whole such as a section within a document.
+Sections are usually contained within regions but they may span multiple
+regions too.  However, span multiple regions is not typical.  In HTML, it is
+not possible from a DOM perspective.  Sections can be styled to appear like
+they span multiple regions.
+
+Sections may be composed of regions too.
