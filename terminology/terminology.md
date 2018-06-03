@@ -38,7 +38,7 @@ displayed in full screen mode.
 
 ## Region or Section?
 
-Many times page and screen are used interchangeably.  However, I distinguish
+Many times region and section are used interchangeably.  However, I distinguish
 the two by the following definitions.
 
 **Region**
