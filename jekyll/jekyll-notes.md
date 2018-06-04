@@ -83,6 +83,12 @@ title: Blogging Like a Hacker
 ```
 
 
+## Templates
+
+Jekyll uses the [Liquid] template language.  See
+https://jekyllrb.com/docs/templates/ for details.
+
+
 ## Running
 
 **Installing Gems**
@@ -111,3 +117,5 @@ bundle exec jekyll serve
   the site is built.  Some files could be retained by specifying them within the
   `<keep_files>` configuration directive.
 
+
+[liquid]: http://liquidmarkup.org
