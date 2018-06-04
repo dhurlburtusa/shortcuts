@@ -38,6 +38,7 @@ See [Alt Codes](https://usefulshortcuts.com/alt-codes) for instructions and list
 
 | Char | Code   | Decimal     | HTML         | Alt Code |
 | ---- | ------ | ----------- | ------------ | -------- |
+| …    | U+2026 | &amp;#8230; | &amp;hellip; | 0133     |
 | ±    | U+00B1 | &amp;#177;  | &amp;plusmn; | 241      |
 | ≈    | U+2248 | &amp;#8776; | &amp;#8776;  | 247      |
 | ≠    | U+2260 | &amp;#8800; | &amp;#8800;  | ?        |
