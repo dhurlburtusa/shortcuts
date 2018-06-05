@@ -19,6 +19,10 @@ app.get('/', function (req, res) {
 
 defaultNamespace.on('connect', function (socket) {
   console.log('a user connected to the default namespace.');
+  
+  socket.on('disconnect', function () {
+    console.log('a user disconnected from the default namespace.');
+  });
 });
 
 webServer.listen(3000, function () {
