@@ -35,6 +35,9 @@ const socketIoServer = SocketIoServer(webServer);
 const customNamespace = socketIoServer.of('/custom');
 ```
 
+Note: Calling `socketIoServer.of` with the same path will immediately return a
+reference to the previously instantiated namespace.
+
 **Rooms**
 
 Sockets may join a room within a namespace.  By default sockets automatically
