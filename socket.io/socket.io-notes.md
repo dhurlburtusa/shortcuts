@@ -13,3 +13,8 @@ Socket.IO is composed of two parts:
 * A server that integrates with (or mounts on) the Node.JS HTTP Server:
   `socket.io`
 * A client library that loads on the browser side: `socket.io-client`
+* If you don't care about reconnection logic and such, take a look at [Engine.IO],
+  which is the WebSocket semantics transport layer Socket.IO uses.
+
+
+[Engine.IO]: https://github.com/socketio/engine.io
