@@ -21,7 +21,7 @@ on your SocketIO server instance.
 import SocketIoServer from 'socket.io';
 
 const socketIoServer = SocketIoServer(webServer);
-const defaultNamespace = socketIoServer.sockets;
+const defaultNamespace = socketIoServer.sockets; // Or socketIoServer.of('/')
 ```
 
 **Custom Namespaces**
