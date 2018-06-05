@@ -47,6 +47,17 @@ TODO: Confirm whether a room with the same name in different namespaces act as a
 single room or separate rooms.
 
 
+## Parsers
+
+Parsers are used to parse the payload sent along a socket.  Various parsers are
+available.  See
+https://github.com/socketio/socket.io/tree/master/examples/custom-parsers for
+details.
+
+Note: The client and server must use the same parser type for communication to
+work.
+
+
 ## Misc
 
 Socket.IO is composed of two parts:
