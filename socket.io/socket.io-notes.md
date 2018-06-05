@@ -6,6 +6,44 @@ From https://socket.io:
 > on every platform, browser or device, focusing equally on reliability and speed.
 
 
+## Overview
+
+A SocketIO server consists of one or more namespaces.  Within each namespace,
+you can also define arbitrary channels, known as rooms, that sockets can `join`
+and `leave`.
+
+**Default Namespace**
+
+The default namespace is called '/' and is accessible via the `sockets` property
+on your SocketIO server instance.
+
+```
+import SocketIoServer from 'socket.io';
+
+const socketIoServer = SocketIoServer(webServer);
+const defaultNamespace = socketIoServer.sockets;
+```
+
+**Custom Namespaces**
+
+A custom namespace can be created from your SocketIO server instance.
+
+```
+import SocketIoServer from 'socket.io';
+
+const socketIoServer = SocketIoServer(webServer);
+const customNamespace = socketIoServer.of('/custom');
+```
+
+**Rooms**
+
+Sockets may join a room within a namespace.  By default sockets automatically
+join a room identified by the socket's ID.
+
+TODO: Confirm whether a room with the same name in different namespaces act as a
+single room or separate rooms.
+
+
 ## Misc
 
 Socket.IO is composed of two parts:
