@@ -8,9 +8,9 @@ From https://socket.io:
 
 ## Overview
 
-A SocketIO server consists of one or more namespaces.  Within each namespace,
-you can also define arbitrary channels, known as rooms, that sockets can `join`
-and `leave`.
+A SocketIO server consists of one or more namespaces, each of which represents a
+pool of connected sockets.  Within each namespace, you can define arbitrary
+channels, known as rooms, that sockets can `join` and `leave`.
 
 **Default Namespace**
 
