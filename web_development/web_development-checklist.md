@@ -30,6 +30,7 @@ against the grain.
       * See http://getbem.com/naming/
       * See https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
       * JavaScript hook CSS classes
+    - Nesting (such as with Sass)
     - Font-Size strategy:
       - Absolute such as `px`s.
       - Parent element relative such as `em`s.
