@@ -32,6 +32,16 @@ against the grain.
     - Font-Size strategy:
       - Absolute such as `px`s.
       - Parent element relative such as `em`s.
-      - Root relative such as `rem`s.  See https://snook.ca/archives/html_and_css/font-size-with-rem.
+      - Root relative such as `rem`s.  See
+        https://snook.ca/archives/html_and_css/font-size-with-rem.
+    - When !important is allowed?
+      * For general state (aka utility) classes such as `hidden`: `display: none
+        !important`.
+      * To override third-party styles when they used "dumb" selectors that you don't
+        want to repeat.
+      * To override inlined styles you have no control over.
+      * See
+        https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/
+      * See https://css-tricks.com/when-using-important-is-the-right-choice/
   + Etc
 * Development environment dependencies/requirements
