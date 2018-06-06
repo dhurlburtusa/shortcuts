@@ -24,6 +24,11 @@ against the grain.
       * Media query choices.
       * x-browser rules location(s): separate file, inline, other?
     - Naming convention: Bem, Suit, SMACSS, other?
+      * See https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849
+      * See http://thesassway.com/advanced/modular-css-naming-conventions
+      * See http://getbem.com/naming/
+      * See https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
+      * JavaScript hook CSS classes
     - Font-Size strategy:
       - Absolute such as `px`s.
       - Parent element relative such as `em`s.
