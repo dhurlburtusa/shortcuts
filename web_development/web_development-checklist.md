@@ -16,6 +16,7 @@ against the grain.
     - ESlint
     - Prettier
   + CSS strategy
+    - Mobile 1st
     - CSS Modules
     - Global CSS
     - Pre-processors (Sass, Less)
