@@ -24,5 +24,9 @@ against the grain.
       * Media query choices.
       * x-browser rules location(s): separate file, inline, other?
     - Naming convention: Bem, Suit, SMACSS, other?
+    - Font-Size strategy:
+      - Absolute such as `px`s.
+      - Parent element relative such as `em`s.
+      - Root relative such as `rem`s.  See https://snook.ca/archives/html_and_css/font-size-with-rem.
   + Etc
 * Development environment dependencies/requirements
