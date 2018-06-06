@@ -8,6 +8,10 @@ my code.
 
 ## One or Two Words
 
+**Style Sheet**
+
+Two words is the most common.
+
 **Username**
 
 One word when used as the unique ID typed in by the user to identify themselves.
