@@ -6,6 +6,14 @@ a server-side runtime for executing queries by using a type system you define
 for your data.  GraphQL isn't tied to any specific database or storage engine
 and is instead backed by your existing code and data.
 
+From graphql.org:
+
+> GraphQL is a query language for APIs and a runtime for fulfilling those queries
+> with your existing data.  GraphQL provides a complete and understandable
+> description of the data in your API, gives clients the power to ask for exactly
+> what they need and nothing more, makes it easier to evolve APIs over time, and
+> enables powerful developer tools.
+
 See http://graphql.org/ and http://facebook.github.io/graphql/ for more
 information.
 
