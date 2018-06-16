@@ -97,6 +97,10 @@ query <queryName> {
 
 https://github.com/graphql-boilerplates/
 
+**Tools**
+
+* [GraphiQL](https://github.com/graphql/graphiql).
+
 **Types**
 
 Map, List, Null, String, Boolean, Int, Float, Enum.
