@@ -308,6 +308,46 @@ LimitRequestBody 10240000
 # END Wordfence WAF
 ```
 
+**An NGiNX Config File**
+
+```nginx
+server {
+    ...
+    location = /xmlrpc.php { deny all; }
+
+    location = /wp-config.php { deny all; }
+
+    location = /wp-config-sample.php { return 404; }
+
+    # Deny access to specific files
+    location ~* /changelog(?:\.txt)|/license(?:\.txt)|/readme\.(?:html|txt) {
+        return 404;
+    }
+
+    # Deny access to certain types of files
+    location ~* .+\.log$|log.+\.txt$|.+\.md$|.+\.pem$|.+\.pl$ {
+        return 404;
+    }
+
+    # Deny access to where Sucuri saves data.
+    location ~* ^/wp-content/uploads/sucuri { return 404; }
+
+    # Deny access to /updraft/ directory
+    location ~* ^/wp-content/updraft/ { return 404; }
+
+    # Deny access to any files with a .php extension in the uploads directory
+    # Works in sub-directory installs and also in multisite network
+    # Keep logging the requests to parse later (or to pass to firewall utilities such as fail2ban)
+    location ~* /(?:files|uploads|wp-content|wp-includes)/.*\.php$ {
+        return 404;
+    }
+
+    # Deny access to "hidden" files
+    location ~ /\. { return 404; }
+    ...
+}
+```
+
 **php.ini**
 
 ```
