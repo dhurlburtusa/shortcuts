@@ -99,7 +99,8 @@ https://github.com/graphql-boilerplates/
 
 **Tools**
 
-* [GraphiQL](https://github.com/graphql/graphiql).
+* [GraphQL-tools](https://www.npmjs.com/package/graphql-tools)
+* [GraphiQL](https://github.com/graphql/graphiql)
 
 **Types**
 
