@@ -10,6 +10,10 @@
   ...
 {% endif %}
 
+{% if expr == blank %}
+  ...
+{% endif %}
+
 {% unless expr %}
   ...
 {% endunless %}
