@@ -50,6 +50,7 @@
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
   + **Con**: Plaintext editor.
+* [HappyForms](https://wordpress.org/plugins/happyforms/) (Free)
 * [Log Viewer](https://wordpress.org/plugins/log-viewer/) (Free)
 * [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
 * [Plugin Organizer](https://wordpress.org/plugins/plugin-organizer/) (Free)
