@@ -290,3 +290,28 @@ documents.
 ```xml
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 ```
+
+
+## Path Commands
+
+The shape of a `path` element is defined by one attribute: `d`.  The `d`
+attribute contains a series of commands and parameters used by those commands.
+
+All of the commands also come in two variants.  An **uppercase letter**
+specifies absolute coordinates and a **lowercase letter** specifies relative
+coordinates.
+
+Coordinates in the `d` attribute are always unitless and hence in the user
+coordinate system.
+
+| Command                | Letter | Syntax                                             |
+| ---------------------- | ------ | -------------------------------------------------- |
+| Move To                | M, m   | `M x y`; `m dx dy`                                 |
+| Line To                | L, l   | `L x y`; `l dx dy`                                 |
+| Horizontal Line        | H, h   | `H x`; `h dx`                                      |
+| Vertical Line          | V, v   | `V y`; `v dy`                                      |
+| Close Path             | Z, z   | `Z`; `z` (no difference in meaning)                |
+| Cubic Bezier Curve     | C, c   | `C x1 y1, x2 y2, x y`; `c dx1 dy1, dx2 dy2, dx dy` |
+| Shortcut CB Curve      | S, s   | `S x2 y2, x y`; `s dx2 dy2, dx dy`                 |
+| Quadratic Bezier Curve | Q, q   | `Q x1 y1, x y`; `q dx1 dy1, dx dy`                 |
+| Shortcut QB Curve      | T, t   | `T x y`; `t dx dy`                                 |
