@@ -315,3 +315,18 @@ coordinate system.
 | Shortcut CB Curve      | S, s   | `S x2 y2, x y`; `s dx2 dy2, dx dy`                 |
 | Quadratic Bezier Curve | Q, q   | `Q x1 y1, x y`; `q dx1 dy1, dx dy`                 |
 | Shortcut QB Curve      | T, t   | `T x y`; `t dx dy`                                 |
+
+
+## Attributes
+
+* `fill`
+* `fill-opacity`
+* `fill-rule`, one of 'evenodd', 'nonzero'
+* `stroke`
+* `stroke-dasharray`, must be comma-separated
+* `stroke-dashoffset`
+* `stroke-linecap`, one of 'butt', 'round', 'square'
+* `stroke-linejoin`, one of 'bevel', 'miter', 'round'
+* `stroke-miterlimit`
+* `stroke-opacity`
+* `stroke-width`
