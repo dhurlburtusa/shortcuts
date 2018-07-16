@@ -10,13 +10,18 @@ building user interfaces.
 
 Here is a list of some other projects that work well with React.
 
+* [Classnames](https://www.npmjs.com/package/classnames)
 * [Flow](https://flowtype.org/)
 * [Flux](https://facebook.github.io/flux/)
 * [Immutable](https://facebook.github.io/immutable-js/)
+* [Isomorphic Fetch](https://www.npmjs.com/package/isomorphic-fetch)
+* [prop-types](https://www.npmjs.com/package/prop-types)
+* [React Bootstrap](https://www.npmjs.com/package/react-bootstrap)
+* [React Intl](https://www.npmjs.com/package/react-intl)
+* [React Loadable](https://www.npmjs.com/package/react-loadable)
 * [React Native](https://facebook.github.io/react-native/)
 * [react-redux](https://github.com/reactjs/react-redux)
 * [React Router](https://github.com/reactjs/react-router)
-* [React Router Redux](https://github.com/reactjs/react-router-redux)
 * [Redux](http://redux.js.org/)
 * [redux-actions](https://redux-actions.js.org/)
 * [redux-devtools](https://github.com/gaearon/redux-devtools)
@@ -24,6 +29,7 @@ Here is a list of some other projects that work well with React.
 * [redux-promise](https://github.com/acdlite/redux-promise)
 * [Redux Thunk](https://github.com/gaearon/redux-thunk)
 * [reselect](https://github.com/reactjs/reselect)
+* [Universal Router](https://www.npmjs.com/package/universal-router)
 
 
 ## Substitutes
