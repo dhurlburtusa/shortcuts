@@ -50,8 +50,9 @@ There are many ways to setup a React project.  See the following for details.
 * https://github.com/facebookincubator/create-react-app
 * https://github.com/dhurlburtusa/react-starter-kit
 * https://github.com/kriasoft/react-starter-kit
-* https://github.com/Microsoft/TypeScript-React-Starter
-* https://github.com/FountainJS/generator-fountain-react
+* https://github.com/Microsoft/TypeScript-React-Starter (Not many changes since May 2017)
+* https://github.com/FountainJS/generator-fountain-react (No updates since April 2017)
+* https://github.com/ctrlplusb/react-universally (No updates since Oct 2017)
 
 
 ## HTML
