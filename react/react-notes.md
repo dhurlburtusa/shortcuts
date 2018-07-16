@@ -48,6 +48,8 @@ bit more functionality or niceties.  Some are designed for performance.
 There are many ways to setup a React project.  See the following for details.
 
 * https://github.com/facebookincubator/create-react-app
+* https://github.com/dhurlburtusa/react-starter-kit
+* https://github.com/kriasoft/react-starter-kit
 * https://github.com/Microsoft/TypeScript-React-Starter
 * https://github.com/FountainJS/generator-fountain-react
 
