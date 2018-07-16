@@ -29,7 +29,20 @@ document (for example, an HTML document).  This SVG fragment has its own
 viewport and coordinate system.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" class="..." version="1.1" viewBox="0 0 100 50">
+<svg xmlns="http://www.w3.org/2000/svg" class="..." preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 50">
+  ...
+</svg>
+```
+
+Include the `xlink` namespace when using `xlink` attributes that have not been
+deprecated or the SVG document is required to validate against a version such as
+1.1.
+
+Note: `href` should be used in place of `xlink:href` and CSS `white-space` 
+should be used in place of `xlink:space`.
+
+```
+<svg ... xmlns:xlink="http://www.w3.org/1999/xlink" ...>
   ...
 </svg>
 ```
