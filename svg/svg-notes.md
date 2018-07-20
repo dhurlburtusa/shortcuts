@@ -258,6 +258,23 @@ the target canvas.
 
 Note: Includes the shape elements plus the `image`, `text`, and `use` elements.
 
+### Referenced Elements
+
+Referenced elements are those elements that are referenced from elsewhere in the
+SVG document.  Typically, these elements are declared as child elements of a
+`def` element.
+
+* `altGlyphDef`
+* `clipPath`
+* `cursor`
+* `filter`
+* `linearGradient`
+* `marker`
+* `mask`
+* `pattern`
+* `radialGradient`
+* `symbol`
+
 ### Shape Elements
 
 Shape elements are those that define graphics elements which are defined by some
