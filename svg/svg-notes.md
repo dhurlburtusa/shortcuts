@@ -215,6 +215,21 @@ child element of its parent.
 Authors should always provide a `title` child element to the outermost `svg`
 element within a stand-alone SVG document.
 
+**use**
+
+The `use` element references another element and indicates that the graphical
+contents of that element is included/drawn at that given point in the document.
+
+The `use` element has optional attributes `x`, `y`, `width`, and `height` to
+define the rectangular region within the current coordinate system.
+
+The SVG DOM will have a `use` element as opposed to the graphical elements the
+`use` element references.
+
+The referenced element inherits properties from the `use` element and the `use`
+element's ancestors.  An instance of a referenced element does not inherit
+properties from the referenced element's original parents.
+
 ### Container Elements
 
 Container elements are those elements which can have graphics elements and other
