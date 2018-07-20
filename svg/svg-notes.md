@@ -222,7 +222,6 @@ container elements as child elements.
 * `svg`
 * `switch`
 * `symbol`
-* `svg`
 
 ### Descriptive Elements
 
@@ -319,7 +318,6 @@ https://www.w3.org/TR/SVG/coords.html#ElementsThatEstablishViewports.
 * `symbol` when instanced by a `use` element
 * `image` that references an SVG file
 * `foreignObject`
-
 
 
 ## DOCTYPE
