@@ -133,6 +133,19 @@ video:fullscreen {
 }
 ```
 
+**hypens**
+
+The `hyphens` CSS property specifies how words should be hyphenated when text
+wraps across multiple lines.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens for details.
+
+```css
+p {
+  hypens: auto;
+}
+```
+
 **inline-size**
 
 The `inline-size` CSS property defines the horizontal or vertical size of an
