@@ -262,7 +262,7 @@ Note: Includes the shape elements plus the `image`, `text`, and `use` elements.
 
 Referenced elements are those elements that are referenced from elsewhere in the
 SVG document.  Typically, these elements are declared as child elements of a
-`def` element.
+`defs` element.
 
 * `altGlyphDef`
 * `clipPath`
