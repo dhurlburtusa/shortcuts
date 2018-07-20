@@ -181,6 +181,15 @@ The `symbol` element is a container element used to define graphical template
 objects which can be instantiated by a `use` element.  `symbol` elements are
 never rendered directly.
 
+The `symbol` is very similar to the `g` element.  The key distinctions between
+the two are:
+
+- A `symbol` element itself is not rendered.
+- A `symbol` element has attributes `viewBox` and `preserveAspectRatio` which
+  allow a `symbol` to scale-to-fit within a rectangular viewport defined by the
+  referencing `use` element.
+
+It is common to declare `symbol`s as children of a `defs` element.
 
 **title**
 
