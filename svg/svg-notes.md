@@ -282,7 +282,6 @@ SVG document.
 * `symbol`
 * `use`
 
-
 ### Text Content Elements
 
 Text content elements are those elements that causes a text string to be
@@ -293,6 +292,17 @@ rendered onto the canvas.
 * `textPath`
 * `tref`
 * `tspan`
+
+### Viewport Elements
+
+Certain elements establish a viewport.  See
+https://www.w3.org/TR/SVG/coords.html#ElementsThatEstablishViewports.
+
+* `svg`
+* `symbol` when instanced by a `use` element
+* `image` that references an SVG file
+* `foreignObject`
+
 
 
 ## DOCTYPE
