@@ -7,6 +7,10 @@
 * /wp-login.php?action=register
 * /wp-login.php?action=lostpassword
 
+**Noteworthy**
+
+* /wp-admin/about.php
+
 
 ## Database
 
