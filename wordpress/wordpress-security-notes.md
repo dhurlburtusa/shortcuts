@@ -43,6 +43,8 @@
 * Delete all inactive themes.
 * Delete `.php` files from the `wp-content/uploads/` directory.
 * Disable access to certain files.
+* Use Secure File System Permissions
+  + `sudo chown -R root:www-data /path/to/wordpress/install`
 
 **.htaccess**
 
