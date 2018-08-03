@@ -18,29 +18,29 @@ installing WordPress.
 * Install Plugins:
   + Wordfence Security
   + Yoast SEO
-  + TinyMCE Advanced
-  + Black Studio TinyMCE Widget
+  + ~~TinyMCE Advanced~~
+  + ~~Black Studio TinyMCE Widget~~
   + UpdraftPlus WordPress Backup
   + Advanced Custom Fields
-  + Contact Form 7
-  + Ninja Forms
-  + Contact Forms by WPForms
-  + Shortcodes Ultimate
-  + WP-Optimize
+  + ~~Contact Form 7~~
+  + ~~Ninja Forms~~
+  + ~~Contact Forms by WPForms~~
+  + ~~Shortcodes Ultimate~~
+  + ~~WP-Optimize~~
   + Insert Headers and Footers
 * Install Themes:
-  + Agama
-  + Agama Blue
-  + Ariel
-  + Di Business?
-  + Holiday Tours?
-  + Hotel Dream?
-  + Live Porfolio?
-  + Medical Circle?
-  + Meditation?
-  + Mercia?
-  + My Holiday?
-  + Twenty Fifteen
-  + Twenty Seventeen
+  + ~~Agama~~
+  + ~~Agama Blue~~
+  + ~~Ariel~~
+  + ~~Di Business?~~
+  + ~~Holiday Tours?~~
+  + ~~Hotel Dream?~~
+  + ~~Live Porfolio?~~
+  + ~~Medical Circle?~~
+  + ~~Meditation?~~
+  + ~~Mercia?~~
+  + ~~My Holiday?~~
+  + ~~Twenty Fifteen~~
+  + ~~Twenty Seventeen~~
   + Twenty Sixteen
-  + VW Tour Lite
+  + ~~VW Tour Lite~~
