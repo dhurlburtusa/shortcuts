@@ -7,26 +7,29 @@ function define(sequelize, DataTypes) {
   // for list of available data types.
   const attributes = {
     id: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV1,
+      primaryKey: true,
+    },
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
       allowNull: false,
+      // IDs should never be exposed as numbers. It is okay to save them as numbers. So,
+      // convert to a string.
+      get() {
+        return '' + this.getDataValue('id');
+      },
     },
-    description_required: {
+    description: {
       type: DataTypes.STRING(400),
       allowNull: false,
       validate: {
         notEmpty: true,
       },
     },
-    email_optional: {
-      type: DataTypes.STRING(320),
-      validate: {
-        isEmail: true,
-        notEmpty: true,
-      },
-    },
-    email_required: {
+    email: {
       type: DataTypes.STRING(320),
       allowNull: false,
       validate: {
@@ -34,19 +37,21 @@ function define(sequelize, DataTypes) {
         notEmpty: true,
       },
     },
-    lat_optional: {
-      type: DataTypes.FLOAT,
-    },
-    lat_required: {
+    lat: {
       type: DataTypes.FLOAT,
       allowNull: false,
+      validate: {
+        min: -90,
+        max: 90,
+      },
     },
-    lng_optional: {
-      type: DataTypes.FLOAT,
-    },
-    lng_required: {
+    lng: {
       type: DataTypes.FLOAT,
       allowNull: false,
+      validate: {
+        min: -180,
+        max: 180,
+      },
     },
     name: {
       type: DataTypes.STRING(50),
@@ -64,15 +69,13 @@ function define(sequelize, DataTypes) {
         notEmpty: true,
       },
     },
-    url_required: {
+    url: {
       type: DataTypes.STRING(512),
       allowNull: false,
       validate: {
+        isUrl: true,
         notEmpty: true,
       },
-    },
-    url_optional: {
-      type: DataTypes.STRING(512),
     },
 
     blob: {
@@ -156,6 +159,10 @@ function define(sequelize, DataTypes) {
     },
     integer_tiny: {
       type: DataTypes.TINYINT, // 8-bit
+      allowNull: false,
+    },
+    integer_unsigned: {
+      type: DataTypes.INTEGER.UNSIGNED, // 32-bit
       allowNull: false,
     },
     json: {
@@ -252,9 +259,39 @@ function define(sequelize, DataTypes) {
         return `${this.get('dependency_field_1')} ${this.get('dependency_field_2')}`;
       },
     },
+    
+    validated_column: {
+      type: ...,
+      ...
+      // See http://docs.sequelizejs.com/manual/tutorial/models-definition.html#validations
+      // for list of built-in validators.
+      validate: {
+        // Using Validate.js
+        
+        
+      },
+    },
   };
 
-  const options = {};
+  const options = {
+    // Add a comment for the table in MySQL or Postgres.
+    comment: 'This represents ...',
+    // paranoid: false,
+    // timestamps: false,
+    // version: false,
+    // Define model level validators to be run after all field validators.  Besure to
+    // use a name that does not conflict with a field name. Model validator are called
+    // with the model object's context and are deemed to fail if they throw an error,
+    // otherwise pass. 
+    validate: {
+      bothLatLngOrNone() {
+        if ((this.lat === null) !== (this.lng === null)) {
+          throw new Error('Require either both latitude and longitude or neither');
+        }
+      },
+      etc() { ... },
+    },
+  };
 
   const Model = sequelize.define(MODEL_NAME, attributes, options);
 
