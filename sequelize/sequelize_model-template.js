@@ -197,19 +197,19 @@ function define(sequelize, DataTypes) {
       allowNull: false,
     },
     text: {
-      type: DataTypes.TEXT,
+      type: DataTypes.TEXT, // Max len of 65,535 (2^16 − 1) characters.
       allowNull: false,
     },
     text_long: {
-      type: DataTypes.TEXT('long'),
+      type: DataTypes.TEXT('long'), // Max len of 4,294,967,295 or 4GB (2^32 − 1) characters.
       allowNull: false,
     },
     text_medium: {
-      type: DataTypes.TEXT('medium'),
+      type: DataTypes.TEXT('medium'), // Max len of 16,777,215 (2^24 − 1) characters.
       allowNull: false,
     },
     text_tiny: {
-      type: DataTypes.TEXT('tiny'),
+      type: DataTypes.TEXT('tiny'), // Max len of 255 (2^8 − 1) characters.
       allowNull: false,
     },
     time: {
