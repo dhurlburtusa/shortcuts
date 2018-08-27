@@ -3,6 +3,8 @@
 Lerna is a tool that optimizes the workflow around managing multi-package
 repositories with `git` and `npm`.
 
+Lerna can also reduce the time and space requirements for numerous copies of
+packages in development and build environments.
 
 ## Installation
 
