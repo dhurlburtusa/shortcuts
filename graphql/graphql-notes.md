@@ -39,8 +39,27 @@ information.
 * **Strong‐typing**: The server can make certain guarantees about the shape and
   nature of the response.
 
+## Types
 
-## Type Syntax
+**Basic**
+
+* Boolean
+* Float
+* ID
+* Int
+* String
+
+**Nullable**
+
+By default, every type is nullable. Use an exclamation point to indicate a type
+cannot be nullable, so `String!` is a non-nullable string.
+
+**List**
+
+To use a list type, surround the type in square brackets, so `[Int]` is a list
+of integers.
+
+### Type Syntax
 
 **Enums**
 
