@@ -95,6 +95,22 @@ type Query {
 }
 ```
 
+## Arguments
+
+By defining the arguments in the schema language, typechecking happens
+automatically. Each argument must be named and have a type.
+
+```
+type Query {
+  inbox(limit: Int!, offset: Int): [...]
+}
+```
+
+The resolver functions will receive these arguments as a single object.
+
+When you're passing arguments in code, use `$` syntax to define variables in
+your query, and pass the variables as a separate map.
+
 
 ## Query Syntax
 
