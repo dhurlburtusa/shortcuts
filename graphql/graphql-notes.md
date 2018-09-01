@@ -95,6 +95,15 @@ type Query {
 }
 ```
 
+**Inputs**
+
+```
+input <inputName> {
+  <fieldName>: <dataType>
+  ...
+}
+```
+
 ## Arguments
 
 By defining the arguments in the schema language, typechecking happens
