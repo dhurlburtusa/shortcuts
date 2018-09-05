@@ -32,6 +32,65 @@ https://developer.wordpress.org/rest-api/reference/#rest-api-developer-endpoint-
 - `X-WP_TotalPages`
 
 
+## Custom Routes and Endpoints
+
+**Registering a Route**
+
+Use `register_rest_route` in the `rest_api_init` action hook.
+
+The following demonstrates registering a route using the function-based API.
+
+```php
+<?php
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'myplugin/v1', '/authors/(?P<id>\d+)', array(
+    'methods' => 'GET',
+    'callback' => 'my_plugin_get_author_endpoint',
+    'args' => array(
+      'id' => array(
+        'default' => -1,
+        'required' => true,
+        'sanitize_callback' => function (?) {
+          return ...;
+        },
+        'validate_callback' => function ($param, $request, $key) {
+          return is_numeric( $param );
+        }
+      ),
+    ),
+    'permission_callback' => function ($request) {
+      return current_user_can( 'edit_others_posts' );
+    }
+  ) );
+} );
+
+function my_plugin_get_author_endpoint( WP_REST_Request $request ) {
+  $some_param = $request['some_param'];
+  $some_param = $request->get_param( 'some_param' );
+  
+  $all_params_except_file_params = $request->get_params();
+  $url_params = $request->get_url_params();
+  $query_params = $request->get_query_params();
+  $body_params = $request->get_body_params();
+  $json_params = $request->get_json_params();
+  $default_params = $request->get_default_params();
+  $file_params = $request->get_file_params();
+  ...
+  if ( ... ) {
+    return new WP_Error( 'code...', 'message...', array( 'status' => 404 ) );
+  }
+  $result = ...
+  ...
+  // Wrap result in a response. This is optional unless you need to set a
+  // custom status code or custom headers.
+  $response = new WP_REST_Response( $result );
+  $response->set_status( 205 );
+  $response->header( 'Location', 'https://example.com/' );
+  return $response;
+}
+```
+
+
 ## Misc
 
 **Requests**
