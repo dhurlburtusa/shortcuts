@@ -3,6 +3,7 @@
 The WordPress REST API provides API endpoints for WordPress data types such as
 posts, pages, media, tags, categories, users, etc.
 
+
 ## Routes & Endpoints
 
 A route is a URI which can be mapped to different HTTP methods. The mapping of
@@ -13,3 +14,23 @@ response showing us what routes are available.
 
 A list of routes for WordPress can be found at
 https://developer.wordpress.org/rest-api/reference/#rest-api-developer-endpoint-reference.
+
+
+## Misc
+
+**Requests**
+
+`WP_REST_Request`
+
+**Responses**
+
+`WP_REST_Response`
+
+**Global Parameters**
+
+https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/
+
+- `_jsonp`
+- `_method`
+- `_envelope`
+- `_embed`
