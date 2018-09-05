@@ -16,6 +16,22 @@ A list of routes for WordPress can be found at
 https://developer.wordpress.org/rest-api/reference/#rest-api-developer-endpoint-reference.
 
 
+## Pagination
+
+**Parameters**
+
+- `page`
+- `per_page`
+- `offset`
+- `order`
+- `orderby`
+
+**Response Headers**
+
+- `X-WP-Total`
+- `X-WP_TotalPages`
+
+
 ## Misc
 
 **Requests**
