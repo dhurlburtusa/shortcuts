@@ -110,6 +110,24 @@ add_action( 'init', 'my_plugin__register_post_types' );
 ```
 
 
+## Adding REST API Support for Custom Taxonomies
+
+To make a custom taxonomy available via the REST API, simply set
+`'show_in_rest'` to `true` when registering the custom taxonomy.
+
+```php
+function my_plugin__register_taxonomies() {
+  $args = array(
+    ...
+    'show_in_rest' => true,
+    ...
+  );
+  register_taxonomy( 'genre', array( 'resource' ), $args );
+}
+add_action( 'init', 'my_plugin__register_taxonomies' );
+```
+
+
 ## Misc
 
 **Requests**
