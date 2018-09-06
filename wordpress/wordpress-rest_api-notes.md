@@ -92,6 +92,24 @@ function my_plugin_get_author_endpoint( WP_REST_Request $request ) {
 ```
 
 
+## Adding REST API Support for Custom Post Types
+
+To make a custom post type available via the REST API, simply set
+`'show_in_rest'` to `true` when registering the custom post type.
+
+```php
+function my_plugin__register_post_types() {
+  $args = array(
+    'public' => true,
+    'show_in_rest' => true,
+    ...
+  );
+  register_post_type( 'resource', $args );
+}
+add_action( 'init', 'my_plugin__register_post_types' );
+```
+
+
 ## Misc
 
 **Requests**
