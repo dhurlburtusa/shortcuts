@@ -145,6 +145,24 @@ function my_plugin__register_taxonomies() {
 add_action( 'init', 'my_plugin__register_taxonomies' );
 ```
 
+If the custom taxonomy has already been registered before your plugin, then you
+must manually update the global variable where taxonomies are kept.
+
+```php
+function my_plugin__add_rest_api_support() {
+  global $wp_taxonomies;
+  
+  $taxonomy_name = 'name_of_taxonomy';
+  if ( isset( $wp_taxonomies[$taxonomy_name] ) ) {
+    $wp_taxonomies[$taxonomy_name]->show_in_rest = true;
+    // Optionally customize the `rest_base` or controller class:
+    $wp_taxonomies[$taxonomy_name]->rest_base = $post_type_name;
+    $wp_taxonomies[$taxonomy_name]->rest_controller_class = 'WP_REST_Terms_Controller';
+  }
+}
+add_action( 'init', 'my_plugin__add_rest_api_support', 25 );
+```
+
 
 ## Misc
 
