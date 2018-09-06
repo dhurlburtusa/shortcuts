@@ -109,6 +109,24 @@ function my_plugin__register_post_types() {
 add_action( 'init', 'my_plugin__register_post_types' );
 ```
 
+If the custom post type has already been registered before your plugin, then you
+must manually update the global variable where post types are kept.
+
+```php
+function my_plugin__add_rest_api_support() {
+  global $wp_post_types;
+  
+  $post_type_name = 'name_of_custom_post_type';
+  if ( isset( $wp_post_types[$post_type_name] ) ) {
+    $wp_post_types[$post_type_name]->show_in_rest = true;
+    // Optionally customize the `rest_base` or controller class:
+    $wp_post_types[$post_type_name]->rest_base = $post_type_name;
+    $wp_post_types[$post_type_name]->rest_controller_class = 'WP_REST_Posts_Controller';
+  }
+}
+add_action( 'init', 'my_plugin__add_rest_api_support', 25 );
+```
+
 
 ## Adding REST API Support for Custom Taxonomies
 
