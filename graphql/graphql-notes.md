@@ -178,6 +178,8 @@ Query, Mutation, Subscription.
 GraphQL does not require a specific serialization format.  However, JSON is the
 preferred serialization format.
 
+See http://facebook.github.io/graphql/draft/#sec-Response for details.
+
 A response to a GraphQL operation must be a map.
 
 For a successful execution:
@@ -202,7 +204,9 @@ For an errant execution:
           column: number, // >= 1
         },
         ...
-      ]
+      ],
+      path: [number|string], // Required if error associated with particular field.
+      extensions: { ... }, // Optional.
     },
     ...
   ],
