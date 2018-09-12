@@ -45,27 +45,30 @@ The following demonstrates registering a route using the function-based API.
 <?php
 add_action( 'rest_api_init', function () {
   register_rest_route( 'myplugin/v1', '/authors/(?P<id>\d+)', array(
-    'methods' => 'GET',
-    'callback' => 'my_plugin_get_author_endpoint',
-    'args' => array(
-      'id' => array(
-        'default' => -1,
-        'required' => true,
-        'sanitize_callback' => function (?) {
-          return ...;
-        },
-        'validate_callback' => function ($param, $request, $key) {
-          return is_numeric( $param );
-        }
+    array(
+      'methods' => 'GET',
+      'callback' => 'my_plugin__get_author_endpoint',
+      'args' => array(
+        'id' => array(
+          'default' => -1,
+          'required' => true,
+          'sanitize_callback' => function ($param_value, $request, $param_name) {
+            return sanitize_text_field( $param_value );
+          },
+          'validate_callback' => function ($param_value, $request, $param_name) {
+            return is_numeric( $param_value );
+          }
+        ),
       ),
+      'permission_callback' => function ($request) {
+        return current_user_can( 'edit_others_posts' );
+      },
     ),
-    'permission_callback' => function ($request) {
-      return current_user_can( 'edit_others_posts' );
-    }
+    'schema' => 'my_plugin__route_schema',
   ) );
 } );
 
-function my_plugin_get_author_endpoint( WP_REST_Request $request ) {
+function my_plugin__get_author_endpoint( WP_REST_Request $request ) {
   $some_param = $request['some_param'];
   $some_param = $request->get_param( 'some_param' );
   
@@ -88,6 +91,34 @@ function my_plugin_get_author_endpoint( WP_REST_Request $request ) {
   $response->set_status( 205 );
   $response->header( 'Location', 'https://example.com/' );
   return $response;
+}
+
+function my_plugin__route_schema() {
+  $schema = array(
+    // This tells the spec of JSON Schema we are using which is draft 4.
+    '$schema'              => 'http://json-schema.org/draft-04/schema#',
+    // The title property marks the identity of the resource.
+    'title'                => 'comment',
+    'type'                 => 'object',
+    // In JSON Schema you can specify object properties in the properties attribute.
+    'properties'           => array(
+      'id' => array(
+        'description'  => esc_html__( 'Unique identifier for the object.', 'my-textdomain' ),
+        'type'         => 'integer',
+        'context'      => array( 'view', 'edit', 'embed' ),
+        'readonly'     => true,
+      ),
+      'author' => array(
+        'description'  => esc_html__( 'The id of the user object, if author was a user.', 'my-textdomain' ),
+        'type'         => 'integer',
+      ),
+      'content' => array(
+        'description'  => esc_html__( 'The content for the object.', 'my-textdomain' ),
+        'type'         => 'string',
+      ),
+    ),
+  );
+  return $schema;
 }
 ```
 
