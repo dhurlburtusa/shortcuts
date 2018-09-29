@@ -18,6 +18,9 @@ don't belong to the registrar you are leaving.  Once this is done and has
 propagated through the DNS, then you can safely initiate the transfer process by
 following the generic steps below.
 
+See https://www.namecheap.com/support/knowledgebase/article.aspx/582/51/how-do-i-transfer-a-domain-to-namecheap-with-minimal-downtime
+for more information on transferring a domain with minimal downtime.
+
 Take note of some information/configuration that may need to be manually
 transferred. The following is a brief list meant as a reminder:
 
