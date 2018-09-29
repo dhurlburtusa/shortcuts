@@ -18,6 +18,22 @@ don't belong to the registrar you are leaving.  Once this is done and has
 propagated through the DNS, then you can safely initiate the transfer process by
 following the generic steps below.
 
+Take note of some information/configuration that may need to be manually
+transferred. The following is a brief list meant as a reminder:
+
+- Assets
+  + Cron Jobs
+  + Databases
+  + Error Pages
+  + Files
+  + Public/Private Keys
+  + SSL Certs
+  + Web Server Configs
+- Email account
+  + Forwarders
+  + Auto Responders
+  + Filters
+
 **Steps**
 
 1)  Verify the Domain's Eligibility for Transfer
