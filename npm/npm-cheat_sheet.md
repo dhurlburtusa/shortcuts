@@ -188,6 +188,9 @@ password, and email.
 npm login
 ```
 
+Use may use a Github email for the email. It looks something like:
+`dhurlburtusa@users.noreply.github.com`.
+
 If you are planning to publish the package to a particular scope you have
 permission for, then declare the scope as an option when you login.
 
