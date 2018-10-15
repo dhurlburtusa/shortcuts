@@ -241,6 +241,9 @@ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>]
   ```
 
   to install it locally into the node_modules folder in that other folder.
+  
+  If you have a `package.json` in `my-package`, then the `dependencies` will be
+  updated with something like `"some-other-package": "file:../some-other-folder"`.
 
   Then go into the node-repl, and try using require('my-package') to bring in
   your module's main module.  You could also create a test script and then run it
