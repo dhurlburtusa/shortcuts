@@ -11,6 +11,8 @@ building user interfaces.
 Here is a list of some other projects that work well with React.
 
 * [Classnames](https://www.npmjs.com/package/classnames)
+* [cross-env](https://www.npmjs.com/package/cross-env)
+* [cross-fetch](https://www.npmjs.com/package/cross-fetch)
 * [Flow](https://flowtype.org/)
 * [Flux](https://facebook.github.io/flux/)
 * [Immutable](https://facebook.github.io/immutable-js/)
