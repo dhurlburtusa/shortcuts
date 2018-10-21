@@ -21,6 +21,7 @@ Here is a list of some other projects that work well with React.
 * [react-async](https://www.npmjs.com/package/react-async)
 * [React Bootstrap](https://www.npmjs.com/package/react-bootstrap)
 * [react-content-loader](https://www.npmjs.com/package/react-content-loader)
+* [react-fns](https://www.npmjs.com/package/react-fns)
 * [React Intl](https://www.npmjs.com/package/react-intl)
 * [react-lazily-render](https://www.npmjs.com/package/react-lazily-render)
 * [React Loadable](https://www.npmjs.com/package/react-loadable)
