@@ -28,6 +28,7 @@ Here is a list of some other projects that work well with React.
 * [React Native](https://facebook.github.io/react-native/)
 * [react-redux](https://github.com/reactjs/react-redux)
 * [React Router](https://github.com/reactjs/react-router)
+* [react-safe](https://www.npmjs.com/package/react-safe)
 * [React Waypoint](https://github.com/brigade/react-waypoint)
 * [Redux](http://redux.js.org/)
 * [redux-actions](https://redux-actions.js.org/)
