@@ -35,6 +35,12 @@ Service workers are also intended to be used for such things as:
 - Scoped: The scope that the service worker applies depends on the URL with which
   it is registered. For example, `/sw.js` will apply to the entire origin but
   `/example/sw.js` will only apply to `/example/`.
+- Generally, deferring service worker registration until after the initial page
+  has loaded will provide the best experience for users, especially those on
+  mobile devices with slower network connections.
+
+See https://developers.google.com/web/fundamentals/primers/service-workers/registration
+for registration details.
 
 See https://developers.google.com/web/fundamentals/primers/service-workers/, 
 https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API, and
