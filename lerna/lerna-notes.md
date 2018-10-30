@@ -6,6 +6,7 @@ repositories with `git` and `npm`.
 Lerna can also reduce the time and space requirements for numerous copies of
 packages in development and build environments.
 
+
 ## Installation
 
 ```sh
@@ -13,6 +14,7 @@ npm install --global lerna
 # Or
 yarn global add lerna
 ```
+
 
 ## Getting Started
 
@@ -29,3 +31,16 @@ git flow init your-repo && cd your-repo
 ```sh
 lerna init
 ```
+
+
+## Commands
+
+**`lerna init`**
+
+```sh
+lerna init
+# or for independent versioning mode:
+lerna init --independent
+```
+
+
