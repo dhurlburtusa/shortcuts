@@ -20,6 +20,8 @@ yarn global add lerna
 
 ```sh
 git init your-repo && cd your-repo
+# or
+git flow init your-repo && cd your-repo
 ```
 
 **Initialize Lerna**
