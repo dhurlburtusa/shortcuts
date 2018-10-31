@@ -19,6 +19,7 @@ against the grain.
     - Mobile 1st
     - CSS Modules
     - Global CSS
+    - Styled Components
     - Pre-processors (Sass, Less)
     - Post CSS
     - Organization
