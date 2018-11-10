@@ -55,6 +55,16 @@ lerna create <name> [loc]
 
 See https://github.com/lerna/lerna/tree/master/commands/create for details.
 
+**`lerna add`**
+
+Add a dependency to matched packages.
+
+```sh
+lerna add <package>[@version] [--dev] [--exact]
+```
+
+See https://github.com/lerna/lerna/tree/master/commands/add for details.
+
 **`lerna bootstrap`**
 
 Link local packages together and install remaining package dependencies.
