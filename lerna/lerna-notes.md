@@ -63,7 +63,15 @@ Add a dependency to matched packages.
 lerna add <package>[@version] [--dev] [--exact]
 ```
 
-See https://github.com/lerna/lerna/tree/master/commands/add for details.
+**`lerna run`**
+
+Run an npm script in each package that contains that script.
+
+```sh
+lerna run <script> -- [..args]
+```
+
+See https://github.com/lerna/lerna/tree/master/commands/run for details.
 
 **`lerna bootstrap`**
 
