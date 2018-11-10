@@ -47,6 +47,8 @@ Use `--exact` to specify dependency versions without a caret.
 
 **`lerna create`**
 
+Create a new lerna-managed package.
+
 ```sh
 lerna create <name> [loc]
 ```
