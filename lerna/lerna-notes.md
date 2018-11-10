@@ -57,8 +57,10 @@ See https://github.com/lerna/lerna/tree/master/commands/create for details.
 
 **`lerna bootstrap`**
 
-Installs each package's dependencies and linking any cross-package dependencies.
+Link local packages together and install remaining package dependencies.
 
 ```sh
 lerna bootstrap
 ```
+
+See https://github.com/lerna/lerna/tree/master/commands/bootstrap for details.
