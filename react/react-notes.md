@@ -36,6 +36,7 @@ Here is a list of some other projects that work well with React.
 * [redux-devtools](https://github.com/gaearon/redux-devtools)
 * [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
 * [redux-promise](https://github.com/acdlite/redux-promise)
+* [redux-saga](https://github.com/redux-saga/redux-saga)
 * [Redux Thunk](https://github.com/gaearon/redux-thunk)
 * [reselect](https://github.com/reactjs/reselect)
 * [Universal Router](https://www.npmjs.com/package/universal-router)
