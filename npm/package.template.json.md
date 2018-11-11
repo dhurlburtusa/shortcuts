@@ -1,4 +1,5 @@
-// See https://docs.npmjs.com/files/package.json.
+See https://docs.npmjs.com/files/package.json and/or
+https://github.com/stereobooster/package.json
 
 ```json5
 {
