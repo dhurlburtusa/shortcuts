@@ -32,8 +32,20 @@ and then on to the local port you specified.
 Get your authtoken at https://dashboard.ngrok.com/auth. Then run the following
 
 ```sh
-./ngrok authtoken <your_authtoken>
+ngrok authtoken <your_authtoken>
 ```
 
+
+## Example Usage
+
+Here are some examples of using `ngrok`. It works with Git Bash. However, it
+does not display all the information it is designed to. It works better with
+Window's regular cmd prompt or Windows PowerShell.
+
+**Web Server Running on localhost:3000**
+
+```sh
+ngrok http 3000
+```
 
 [ngrok-register]: https://dashboard.ngrok.com/user/signup
