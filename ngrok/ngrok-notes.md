@@ -17,10 +17,24 @@ and then on to the local port you specified.
 
 ## Download
 
+`ngrok` can be installed either as an native program or as an `npm` package.
+
+**Native Program**
+
 - Go to https://ngrok.com/download and download the correct version for your
   machine.
 - Unzip the downloaded archive and save the executable somewhere on your system.
 - Update the system `PATH` for easy access.
+
+See https://ngrok.com/ for details.
+
+**NPM Package**
+
+```sh
+npm install ngrok
+```
+
+See https://www.npmjs.com/package/ngrok for details.
 
 
 ## Setup
