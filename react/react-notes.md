@@ -25,6 +25,7 @@ Here is a list of some other projects that work well with React.
 * [React Intl](https://www.npmjs.com/package/react-intl)
 * [react-lazily-render](https://www.npmjs.com/package/react-lazily-render)
 * [React Loadable](https://www.npmjs.com/package/react-loadable)
+* [react-media-query-hoc](https://www.npmjs.com/package/react-media-query-hoc)
 * [React Native](https://facebook.github.io/react-native/)
 * [react-redux](https://github.com/reactjs/react-redux)
 * [React Router](https://github.com/reactjs/react-router)
