@@ -342,7 +342,7 @@ is_string($var);
 
 ## PHP String
 
-A string is sequence of characters, where a character is the same as a byte.
+A string is a sequence of characters, where a character is the same as a byte.
 This means that PHP only supports a 256-character set, and hence does not offer
 native Unicode support.
 
@@ -357,8 +357,8 @@ A string literal can be specified in four different ways:
 
 A string specified by enclosing it in single quotes (the ' character).
 
-To specify a literal single quote, escape it with a backslash (\').  To specify
-a literal backslash, double it (\\).
+To specify a literal single quote, escape it with a backslash (\\').  To specify
+a literal backslash, double it (\\\\).
 
 **Double Quoted**
 
