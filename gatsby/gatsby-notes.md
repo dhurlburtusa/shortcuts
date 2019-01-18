@@ -39,5 +39,25 @@ gatsby serve
 ```
 
 
+## Gatsby Project Structure
+
+```
+/
+|-- /.cache
+|-- /plugins
+|-- /public
+|-- /src
+    |-- /pages
+    |-- /templates
+    |-- html.js
+|-- /static
+|-- gatsby-config.js
+|-- gatsby-node.js
+|-- gatsby-ssr.js
+|-- gatsby-browser.js
+```
+
+See https://www.gatsbyjs.org/docs/gatsby-project-structure/ for details.
+
 
 [gatsby]: https://www.gatsbyjs.org/
