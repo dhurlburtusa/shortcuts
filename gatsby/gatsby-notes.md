@@ -16,4 +16,28 @@ npx gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-worl
 ```
 
 
+## Common Commands
+
+**Developing with a Live Reloading HMR**
+
+```sh
+gatsby develop
+```
+
+I recommend making this an npm strict so you can use `npm start` to run the above command.
+
+**Create a Production Build**
+
+```sh
+gatsby build
+```
+
+**Serve the Production Build Locally**
+
+```sh
+gatsby serve
+```
+
+
+
 [gatsby]: https://www.gatsbyjs.org/
