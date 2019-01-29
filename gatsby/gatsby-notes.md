@@ -59,10 +59,10 @@ gatsby serve
     |-- /templates
     |-- html.js
 |-- /static
+|-- gatsby-browser.js
 |-- gatsby-config.js
 |-- gatsby-node.js
 |-- gatsby-ssr.js
-|-- gatsby-browser.js
 ```
 
 See https://www.gatsbyjs.org/docs/gatsby-project-structure/ for details.
