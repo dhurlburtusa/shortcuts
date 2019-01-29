@@ -15,6 +15,14 @@ npx gatsby new <site-proj-dir-name> [<url-to-gatsby-starter>]
 npx gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
+**Common Starter URLs**
+
+- https://github.com/gatsbyjs/gatsby-starter-hello-world
+- https://github.com/gatsbyjs/gatsby-starter-default
+- https://github.com/gatsbyjs/gatsby-starter-blog
+
+See https://www.gatsbyjs.org/starters/ for more starters.
+
 
 ## Common Commands
 
