@@ -93,6 +93,15 @@ Gatsby settings affecting server-side rendering.
 See https://www.gatsbyjs.org/docs/gatsby-project-structure/ for details.
 
 
+## GraphQL
+
+Gatsby uses GraphQL to fetch data for the site.
+
+**Graph*i*QL**
+
+The Graph*i*QL IDE is available at `/___graphql`.
+
+
 [gatsby]: https://www.gatsbyjs.org/
 [gatsby-browser-api]: https://www.gatsbyjs.org/docs/browser-apis/
 [gatsby-configuration]: https://www.gatsbyjs.org/docs/gatsby-config/
