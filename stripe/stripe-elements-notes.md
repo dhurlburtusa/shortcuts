@@ -14,6 +14,32 @@ Elements includes features like:
 - Customizable styling to match the look and feel of your checkout flow.
 
 
+## Including Stripe.js
+
+In order to create Stripe Elements, tokenize customer information, and/or accept
+payments with the browser payment APIs, the Stripe.js library needs to be
+included on the site/app.
+
+```js
+<script src="https://js.stripe.com/v3/"></script>
+```
+
+It is recommended to include this library on every page of your site/app, not
+just the checkout page, in order to leverage Stripe's advanced fraud
+functionality.
+
+Then somewhere after including Stripe.js, create a new instance of Stripe using
+your publishable API key.
+
+```html
+<script>
+  (function (global, Stripe) {
+    var stripe = Stripe('pk_test_yourpublishablekey');
+  })(self || this, Stripe);
+</script>
+```
+
+
 ## Elements
 
 - Card
