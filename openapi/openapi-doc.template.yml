@@ -1,0 +1,22 @@
+# Required
+openapi: '3.0.2'
+# Required
+info:
+  title: ''
+  description: ''
+  termsOfService: ''
+  contact:
+    name: ''
+    email: ''
+    url: ''
+  license:
+    name: ''
+    url: ''
+  version: 0.0.0-alpha
+# Required
+paths:
+servers: []
+components: {}
+security: []
+tags: []
+externalDocs: {}
