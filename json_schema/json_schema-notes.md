@@ -7,7 +7,7 @@ See http://json-schema.org/ for details.
 
 The current version is draft-07, but draft-08 is currently in progress.
 
-Documentation about draft-04 can be found in this
+Documentation about draft-07 can be found in this
 [excellent guide][stsi-json_schema-guide].
 
 
