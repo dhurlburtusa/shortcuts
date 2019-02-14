@@ -167,3 +167,29 @@ const DogPhoto = ({ breed }) => (
   </Query>
 );
 ```
+
+**Polling for New Data**
+
+```js
+const DogPhoto = ({ breed }) => (
+  <Query
+    pollInterval={500}
+    query={GET_DOG_PHOTO}
+    variables={{ breed }}
+    skip={!breed}
+  >
+    {({ data, error, loading, startPolling, stopPolling }) => {
+      if (loading) return null;
+      if (error) return `Error!: ${error}`;
+
+      return (
+        <div>
+          <img src={data.dog.displayImage} style={{ height: 100, width: 100 }} />
+          <button onClick={startPolling}>Start Polling</button>
+          <button onClick={stopPolling}>Stop Polling</button>
+        </div>
+      );
+    }}
+  </Query>
+);
+```
