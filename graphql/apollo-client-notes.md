@@ -16,3 +16,20 @@ GraphQL, and can be used with any JavaScript front-end.  The client is:
 - **Small and flexible**: You don’t get stuff your application doesn’t need.
 - **Community driven**: Apollo is driven by the community and serves a variety
   of use cases.
+
+**Platforms**
+
+Apollo Client supports many platforms:
+
+- **JavaScript**
+  + Angular
+  + Ember
+  + Meteor
+  + React
+  + Vue
+- **Web Components**
+  + Polymer
+  + lit-apollo
+- **Native mobile**
+  + Native iOS with Swift
+  + Native Android with Java
