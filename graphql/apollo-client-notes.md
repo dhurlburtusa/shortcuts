@@ -54,3 +54,24 @@ const client = new ApolloClient({
 });
 ```
 
+
+## Making Queries with Client
+
+Once you have a client you can start making queries.  The following illustrates
+using your client to make a query.
+
+```js
+import gql from 'graphql-tag';
+...
+client
+  .query({
+    query: gql`
+      {
+        rates(currency: 'USD') {
+          currency
+        }
+      }
+    `
+  })
+  .then(result => console.log(result));
+```
