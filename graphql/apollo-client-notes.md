@@ -33,3 +33,24 @@ Apollo Client supports many platforms:
 - **Native mobile**
   + Native iOS with Swift
   + Native Android with Java
+
+
+## Creating a Client
+
+In order to use Apollo Client, you need to create one.  If you don't need
+any special configuration, you can use `apollo-boost'.
+
+**apollo-boost**
+
+```sh
+npm install apollo-boost --save
+```
+
+```js
+import ApolloClient from 'apollo-boost';
+
+const client = new ApolloClient({
+  uri: 'The graphql endpoint.',
+});
+```
+
