@@ -128,7 +128,7 @@ const ExchangeRates = () => (
       }
     `}
   >
-    {({ loading, error, data }) => {
+    {({ data, error, loading }) => {
       if (loading) return <p>Loading...</p>;
       if (error) return <p>Error :(</p>;
 
@@ -137,6 +137,32 @@ const ExchangeRates = () => (
           <p>{currency}: {rate}</p>
         </div>
       ));
+    }}
+  </Query>
+);
+```
+
+**Requesting Parameterized Data**
+
+```js
+const GET_DOG_PHOTO = gql`
+  query Dog($breed: String!) {
+    dog(breed: $breed) {
+      id
+      displayImage
+    }
+  }
+`;
+
+const DogPhoto = ({ breed }) => (
+  <Query query={GET_DOG_PHOTO} variables={{ breed }}>
+    {({ data, error, loading }) => {
+      if (loading) return null;
+      if (error) return `Error!: ${error}`;
+
+      return (
+        <img src={data.dog.displayImage} style={{ height: 100, width: 100 }} />
+      );
     }}
   </Query>
 );
