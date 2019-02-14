@@ -40,7 +40,7 @@ Apollo Client supports many platforms:
 In order to use Apollo Client, you need to create one.  If you don't need
 any special configuration, you can use `apollo-boost'.
 
-**apollo-boost**
+**Apollo-Boost**
 
 ```sh
 npm install apollo-boost --save
@@ -53,6 +53,10 @@ const client = new ApolloClient({
   uri: 'The graphql endpoint.',
 });
 ```
+
+Apollo Boost is just a mostly-preconfigured Apollo Client.  It is made up of the
+following packages: `apollo-client`, `apollo-cache-inmemory`,
+`apollo-link-http`, `apollo-link-error`, and `apollo-link-state`.
 
 
 ## Making Queries with Client
@@ -74,4 +78,66 @@ client
     `
   })
   .then(result => console.log(result));
+```
+
+Using the client directly is great in an imperative coding context, but when in
+a declarative coding context and/or in the UI, then using the client indirectly
+will usually be easier.
+
+
+## Use with React
+
+To use Apollo Client with React, you will need a client provider component and
+a HOC or the `Query` component.  The `react-apollo` package provides this
+functionality.
+
+**Connecting the client to React**
+
+```js
+import React from 'react';
+import { ApolloProvider } from 'react-apollo';
+import { render } from 'react-dom';
+
+import client from './apollo-client-instance';
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      <h2>My first Apollo app 🚀</h2>
+    </div>
+  </ApolloProvider>
+);
+
+render(<App />, document.getElementById('root'));
+```
+
+**Requesting Data**
+
+```js
+import gql from 'graphql-tag';
+import { Query } from 'react-apollo';
+
+const ExchangeRates = () => (
+  <Query
+    query={gql`
+      {
+        rates(currency: 'USD') {
+          currency
+          rate
+        }
+      }
+    `}
+  >
+    {({ loading, error, data }) => {
+      if (loading) return <p>Loading...</p>;
+      if (error) return <p>Error :(</p>;
+
+      return data.rates.map(({ currency, rate }) => (
+        <div key={currency}>
+          <p>{currency}: {rate}</p>
+        </div>
+      ));
+    }}
+  </Query>
+);
 ```
