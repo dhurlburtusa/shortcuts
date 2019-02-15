@@ -159,13 +159,15 @@ See https://graphql.org/code/#server-libraries.
 
 **JavaScript**
 
+* [Apollo Resolvers](https://github.com/thebigredgeek/apollo-resolvers)
 * [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 * [express-graphql](https://www.npmjs.com/package/express-graphql)
 * [GraphQL.js](https://graphql.org/graphql-js/)
+* [graphql-tools](https://www.npmjs.com/package/graphql-tools)
+* [graphql-resolvers](https://www.npmjs.com/package/graphql-resolvers)
 
 **Tools**
 
-* [GraphQL-tools](https://www.npmjs.com/package/graphql-tools)
 * [GraphiQL](https://github.com/graphql/graphiql)
 
 **Types**
