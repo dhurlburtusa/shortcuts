@@ -223,3 +223,35 @@ const DogPhoto = ({ breed }) => (
   </Query>
 );
 ```
+
+**Refetching Fresh/Different Data with Refetching Notification**
+
+```js
+const DogPhoto = ({ breed }) => (
+  <Query
+    notifyOnNetworkStatusChange
+    query={GET_DOG_PHOTO}
+    variables={{ breed }}
+    skip={!breed}
+  >
+    {({ data, error, loading, networkStatus, refetch }) => {
+      if (networkStatus === 4) return 'Refetching!';
+      if (loading) return null;
+      if (error) return `Error!: ${error}`;
+
+      return (
+        <div>
+          <img
+            src={data.dog.displayImage}
+            style={{ height: 100, width: 100 }}
+          />
+          <button onClick={refetch}>Refetch!</button>
+          <button onClick={() => refetch({ breed: 'Golden Retriever' }) }>
+            Golden Retriever
+          </button>
+        </div>
+      );
+    }}
+  </Query>
+);
+```
