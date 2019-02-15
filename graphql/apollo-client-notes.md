@@ -113,6 +113,9 @@ render(<App />, document.getElementById('root'));
 
 **Requesting Data**
 
+To request data in a declarative fashion, use the [`Query`][react-apollo-query]
+component.
+
 ```js
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
@@ -255,3 +258,6 @@ const DogPhoto = ({ breed }) => (
   </Query>
 );
 ```
+
+
+[react-apollo-query]: https://www.apollographql.com/docs/react/api/react-apollo.html#query
