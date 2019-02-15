@@ -188,7 +188,7 @@ const DogPhoto = ({ breed }) => (
       return (
         <div>
           <img src={data.dog.displayImage} style={{ height: 100, width: 100 }} />
-          <button onClick={startPolling}>Start Polling</button>
+          <button onClick={() => startPolling(1000)}>Start Polling</button>
           <button onClick={stopPolling}>Stop Polling</button>
         </div>
       );
