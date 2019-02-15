@@ -91,6 +91,18 @@ To use Apollo Client with React, you will need a client provider component and
 a HOC or the `Query` component.  The `react-apollo` package provides this
 functionality.
 
+**React Apollo**
+
+```sh
+npm install react-apollo --save
+```
+
+Links:
+
+- [API Docs](https://www.apollographql.com/docs/react/api/react-apollo.html)
+- [Mutations](https://www.apollographql.com/docs/react/essentials/mutations.html)
+- [Queries](https://www.apollographql.com/docs/react/essentials/queries.html)
+
 **Connecting the client to React**
 
 ```js
