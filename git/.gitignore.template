@@ -1,27 +1,45 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies
 /node_modules/
 
-# testing
+# Testing
 /coverage/
 
-# production
+.coveralls.yml
+
+# Build/Deployment
 /build/
 /dist/
 /lib/
 
-.coveralls.yml
-
-.DS_Store
-
+# Environment Variable files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs
+/logs/
 lerna-debug.log*
 npm-debug.log*
 npm-error.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Runtime data
+/pids/
+
+*.pid
+*.seed
+*.pid.lock
+
+# Create React App/Gatsby files
+/.cache/
+/public/
+
+# Mac files
+.DS_Store
+
+# Yarn Integrity file
+.yarn-integrity
