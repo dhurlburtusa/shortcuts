@@ -32,7 +32,7 @@ See https://www.gatsbyjs.org/starters/ for more starters.
 gatsby develop
 ```
 
-I recommend making this an npm strict so you can use `npm start` to run the above command.
+I recommend making this an npm script so you can use `npm start` to run the above command.
 
 **Create a Production Build**
 
