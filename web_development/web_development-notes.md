@@ -182,6 +182,50 @@ app by browsers were described by Russell in a follow-up post:
 * **An icon at least 144×144 large in png format**. E.g.: `"icons": [ { "src":
   "/images/icon-144.png", "sizes": "144x144", "type": "image/png" } ]`
 
+### Web App Manifest
+
+The web app manifest is a simple JSON file that tells the browser about your web
+application and how it should behave when "installed" on the user's mobile
+device or desktop.
+
+Web app manifests are deployed in your HTML pages using a `<link>` element in
+the `<head>` of a document:
+  
+```html
+<link rel="manifest" href="/manifest.webmanifest">
+```
+
+The file may be a name of your choice. However, `manifest.json` and
+`manifest.webmanifest` are common.
+
+```json
+{
+  "short_name": "Maps",
+  "name": "Google Maps",
+  "description": "A geographical map provided by Google.",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/maps/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#3367D6"
+}
+```
+
+See https://developers.google.com/web/fundamentals/web-app-manifest/ and
+https://developer.mozilla.org/en-US/docs/Web/Manifest for details.
+
 
 ## Performance
 
