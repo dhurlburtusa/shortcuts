@@ -82,3 +82,12 @@ operate on.
 Note: The caching API doesn't honor HTTP caching headers.
 
 See https://developer.mozilla.org/en-US/docs/Web/API/Cache for details.
+
+
+## Offline First
+
+Offline first thinking promotes designing web apps to still be functional even
+when internet connectivity has been lost.
+
+See https://alistapart.com/article/offline-first, http://hood.ie/, and
+http://offlinefirst.org/ for information about Offline First.
