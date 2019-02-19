@@ -38,6 +38,11 @@ Service workers are also intended to be used for such things as:
   likely to need in the near future, such as the next few pictures in a photo
   album.
 
+See https://developers.google.com/web/fundamentals/primers/service-workers/, 
+https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API, and
+https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker for details.
+
+
 ## Registration
 
 - Scoped: The scope that the service worker applies depends on the URL with which
@@ -49,7 +54,3 @@ Service workers are also intended to be used for such things as:
 
 See https://developers.google.com/web/fundamentals/primers/service-workers/registration
 for registration details.
-
-See https://developers.google.com/web/fundamentals/primers/service-workers/, 
-https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API, and
-https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker for details.
