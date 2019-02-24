@@ -1,7 +1,7 @@
 # HTTP Content-Security-Policy Notes
 
 The Content Security Policy (CSP) adds a layer of security to help detect and
-mitigate certain types of attacks, including Cross Site Scriptiong (XSS) and
+mitigate certain types of attacks, including Cross Site Scripting (XSS) and
 data injection attacks.
 
 To enable CSP, you need to configure your web server to return the
