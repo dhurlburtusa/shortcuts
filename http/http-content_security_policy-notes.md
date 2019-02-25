@@ -9,7 +9,9 @@ To enable CSP, you need to configure your web server to return the
 used to configure a policy.  The header tells CSP compliant browsers which
 domains to accept executable content from.
 
-See https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP for details.
+See https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP and
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
+for details.
 
 
 ## Writing a Policy
