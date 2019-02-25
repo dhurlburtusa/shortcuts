@@ -19,12 +19,14 @@ for details.
 You can use the `Content-Security-Policy` HTTP header to specify your policy,
 like this:
 
+**Syntax**
+
 ```http
-Content-Security-Policy: policy
+Content-Security-Policy: <policy-directive>; <policy-directive>
 ```
 
-The `policy` is a string containing the policy directives describing your
-Content Security Policy.
+The `policy-directive` is a string containing the policy directives describing
+your Content Security Policy.
 
 A policy is described using a series of policy directives, each of which
 describes the policy for a certain resource type or policy area.  Your policy
