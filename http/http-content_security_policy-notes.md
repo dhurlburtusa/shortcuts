@@ -6,6 +6,7 @@ data injection attacks.
 
 To enable CSP, you need to configure your web server to return the
 `Content-Security-Policy` HTTP header.  Alternatively, the `<meta>` tag can be
-used to configure a policy.
+used to configure a policy.  The header tells CSP compliant browsers which
+domains to accept executable content from.
 
 See https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP for details.
