@@ -43,3 +43,11 @@ CSRF defenses can't be circumvented.
 - https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md
 - https://seclab.stanford.edu/websec/csrf/csrf.pdf
+
+
+## Tools
+
+**Useful Links**
+
+- http://w3af.org/
+- https://oxdef.info/pages/csp-tester
