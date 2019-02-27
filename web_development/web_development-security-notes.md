@@ -4,10 +4,20 @@ When doing web development, security should be top priority.  Here are listed
 several security issues to keep in mind when developing.
 
 
+## SQL Injection
+
+**Useful Links**
+
+- https://www.owasp.org/index.php/SQL_Injection
+- https://www.owasp.org/index.php/Blind_SQL_Injection
+
+
 ## Cross-Site Scripting (XSS)
 
-See https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
-for more info.
+**Useful Links**
+
+- https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
+- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
 
 
 ## Cross-Site Request Forgery (CSRF)
