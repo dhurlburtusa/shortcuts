@@ -6,3 +6,8 @@ deploying software.
 
 Jenkins can be installed through native system packages, Docker, or even run
 standalone by any machine with a Java Runtime Environment (JRE) installed.
+
+
+## Installing
+
+See https://jenkins.io/doc/book/installing/ for details.
