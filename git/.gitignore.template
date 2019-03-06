@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# Note: Directories beginning with a `/` only applies to current directory.
+# Without the `/`, matching sub-directories will be ignored.
+
 # Dependencies
 /node_modules/
 
