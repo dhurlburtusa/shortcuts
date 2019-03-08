@@ -91,3 +91,66 @@ when internet connectivity has been lost.
 
 See https://alistapart.com/article/offline-first, http://hood.ie/, and
 http://offlinefirst.org/ for information about Offline First.
+
+
+## Uncategorized
+
+```js
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    const swc = navigator.serviceWorker;
+    swc.register("/sw.js")
+      .then(swReg => {
+        console.log("sw.js registered.");
+      })
+      .catch(error => {
+        console.error("Failed to load sw.js.", error);
+      });
+  });
+}
+else {
+  console.warn("Sorry. Service workers not available in this browser.");
+}
+```
+
+```js
+// sw.js
+/* eslint-disable no-restricted-globals */
+// console.log("sw.js");
+
+var CACHE_NAME = "static-asset-cache-v1";
+
+var urlsToCache = [
+  "react.js",
+  "...",
+];
+
+self.addEventListener("fetch", function (event) {
+  console.log("sw.js#onFetch");
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
+        // Cache hit - return response
+        if (response) {
+          console.log('cache hit:', response);
+          return response;
+        }
+        return fetch(event.request);
+      }
+    )
+  );
+});
+
+self.addEventListener("install", function (event) {
+  console.log("sw.js#onInstall");
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function (cache) {
+        console.log("Opened cache");
+        console.log("Caching:", urlsToCache);
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
+```
