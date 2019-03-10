@@ -54,6 +54,17 @@ The inventory file will need to be updated as managed nodes are added, changed,
 or removed.
 
 
+## Language Basics
+
+Playbooks contain plays.
+Plays contain tasks.
+Tasks call modules.
+
+Tasks run sequentially.
+
+Handlers are triggered by tasks, and they are run once, at the end of plays.
+
+
 ## Inventory
 
 Basically a list of managed nodes using IP addresses or hostnames.
