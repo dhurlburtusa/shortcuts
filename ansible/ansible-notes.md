@@ -54,6 +54,26 @@ The inventory file will need to be updated as managed nodes are added, changed,
 or removed.
 
 
+## Modes of Operation
+
+These are known as strategies.
+
+**Linear**
+
+- Execute list of tasks on multiple hosts at the same time.
+
+**Serial**
+
+- Execute list of tasks one host at a time.
+
+**Free**
+
+- Execute tasks as fast as you can.
+
+See https://docs.ansible.com/ansible/latest/user_guide/playbooks_strategies.html
+for details.
+
+
 ## Language Basics
 
 Playbooks contain plays.
