@@ -12,6 +12,15 @@
     var_1: value_1
     ...
 
+  pre_tasks:
+    - name: name of task
+      ...
+
+  roles:
+    - common
+    - webservers
+    - role: '/path/to/my/roles/common'
+
   order: inventory | reverse_inventory | reverse_sorted | sorted | shuffle
   tasks:
     - name: name of task
@@ -34,7 +43,15 @@
     - name: name of task
       shell: param1=arg1 param2=arg2
       ...
+    - import_role:
+        name: example_role
+    - include_role:
+        name: example_role
     ...
+
+  post_tasks:
+    - name: name of task
+      ...
 
   # A set of handlers. Handlers will be run once if any of the tasks notified the
   # handler.
@@ -61,3 +78,7 @@
       shell: param1=arg1 param2=arg2
       ...
     ...
+- name: name of another play
+  hosts: ...
+  ...
+...
