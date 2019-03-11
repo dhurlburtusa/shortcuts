@@ -105,13 +105,121 @@ See http://docs.ansible.com/ansible/latest/ansible-inventory.html for use of the
 
 ## Playbooks
 
-Playbooks describe the desired state of a node.
+Playbooks are Ansible’s configuration, deployment, and orchestration language.
+They can describe a policy you want your remote systems to enforce, or a set of
+steps in a general IT process.
 
-* Written with YAML file(s).
-* Consists of plays which consists of tasks which call modules.
-* Allows variables from: playbooks, files, inventories, command line, and more.
-* Tasks run sequentially.
-* Handlers are triggered by tasks and are run once at the end of plays.
+- Written with YAML file(s).
+- Consists of plays which consists of tasks which call modules.
+- Allows variables from: playbooks, files, inventories, command line, and more.
+- Tasks run sequentially.
+- Handlers are triggered by tasks and are run once at the end of plays.
+
+For each play in a playbook, you get to choose which machines (aka hosts) in
+your infrastructure to target and what remote user to complete the tasks as.
+
+### Reusability
+
+A playbook can be decomposed into smaller files and then reused.  There are
+three ways to reuse: `includes` (dynamic), `imports` (static), and `roles`.
+
+- Ansible pre-processes all static imports during Playbook parsing time.
+- Dynamic includes are processed during runtime at the point in which that task is
+  encountered.
+
+See https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse.html#tradeoffs-and-pitfalls-between-includes-and-imports
+for information about tradeoffs and pitfalls between includes and imports.
+
+```yml
+# playbook.yml
+- import_playbook: databases.yml
+- import_playbook: webservers.yml
+```
+
+```yml
+# common_tasks.yml
+- name: placeholder foo
+  command: /bin/foo
+- name: placeholder bar
+  command: /bin/bar
+```
+
+```yml
+# more_handlers.yml
+- name: restart apache
+  service:
+    name: apache
+    state: restarted
+```
+
+```yml
+  tasks:
+    - import_tasks: common_tasks.yml
+    # or
+    - include_tasks: common_tasks.yml
+
+  handlers:
+    - import_tasks: more_handlers.yml
+    # or
+    - include_tasks: more_handlers.yml
+```
+
+**Roles**
+
+Roles are ways of automatically loading certain vars_files, tasks, and handlers
+based on a known file structure.  Grouping content by roles also allows easy
+sharing of roles with other users.
+
+**Role Directory Structure**
+
+Example project structure:
+
+```
+site.yml
+webservers.yml
+fooservers.yml
+roles/
+   common/
+     tasks/
+     handlers/
+     files/
+     templates/
+     vars/
+     defaults/
+     meta/
+   webservers/
+     tasks/
+     defaults/
+     meta/
+```
+
+Roles expect files to be in certain directory names.  Roles must include at
+least one of these directories, however it is perfectly fine to exclude any
+which are not being used.  When in use, each directory must contain a `main.yml`
+file, which contains the relevant content:
+
+- `tasks` - contains the main list of tasks to be executed by the role.
+- `handlers` - contains handlers, which may be used by this role or even anywhere
+  outside this role.
+- `defaults` - default variables for the role.
+- `vars` - other variables for the role.
+- `files` - contains files which can be deployed via this role.
+- `templates` - contains templates which can be deployed via this role.
+- `meta` - defines some meta data for this role.
+
+### Execution Order
+
+The order of execution for your playbook is as follows:
+
+- Any `pre_tasks` defined in the play.
+- Any handlers triggered so far will be run.
+- Each role listed in `roles` will execute in turn.  Any role dependencies defined
+  in the roles `meta/main.yml` will be run first, subject to tag filtering and
+  conditionals.
+- Any `tasks` defined in the play.
+- Any handlers triggered so far will be run.
+- Any `post_tasks` defined in the play.
+- Any handlers triggered so far will be run.
 
 
 ## Misc Uncategorized
