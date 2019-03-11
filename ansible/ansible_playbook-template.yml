@@ -1,21 +1,63 @@
 ---
 - name: name of play
-  hosts: web # Reference to inventory
+  # Reference to a group or host in the inventory (aka hosts file)
+  hosts: web 
+  gather_facts: false
   remote_user: installer
-  become_method: sudo
-  become_user: root
+  # Whether the remote user becomes a different user
+  become: true
+  become_method: su
+  become_user: other
   vars:
     var_1: value_1
     ...
 
+  order: inventory | reverse_inventory | reverse_sorted | sorted | shuffle
   tasks:
-  - name: name of task
-    <module-name>: param1=arg1 param2=arg2
+    - name: name of task
+      <module-name>:
+        param1: arg1
+        param2: arg2
+        ...
+      notify:
+        - name of handler
+        - name of another handler
+        ...
+      # The following may be used at the task-level too.
+      remote_user: installer
+      become: true
+      become_method: su
+      become_user: other
+    - name: name of task
+      command: param1=arg1 param2=arg2
+      ...
+    - name: name of task
+      shell: param1=arg1 param2=arg2
+      ...
     ...
-    notify:
-    - name of handler
-  ...
-  
+
+  # A set of handlers. Handlers will be run once if any of the tasks notified the
+  # handler.
   handlers:
-  - name: name of handler
-    <module-name>: param1=arg1 param2=arg2
+    - name: name of handler
+      <module-name>:
+        param1: arg1
+        param2: arg2
+      ...
+    - name: restart memcached
+      service:
+        name: memcached
+        state: restarted
+      listen: restart web services
+    - name: restart apache
+      service:
+        name: apache
+        state: restarted
+      listen: restart web services
+    - name: name of another handler
+      command: param1=arg1 param2=arg2
+      ...
+    - name: name of another handler
+      shell: param1=arg1 param2=arg2
+      ...
+    ...
