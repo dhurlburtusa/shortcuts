@@ -11,6 +11,10 @@
   vars:
     var_1: value_1
     ...
+  vars_files:
+    - "vars/{{ function }}.yml"
+    - "vars/{{ env }}.yml"
+    ...
 
   pre_tasks:
     - name: name of task
