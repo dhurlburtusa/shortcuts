@@ -222,6 +222,22 @@ The order of execution for your playbook is as follows:
 - Any handlers triggered so far will be run.
 
 
+## Variables
+
+Variable names should be letters, numbers, and underscores.  Variables should
+always start with a letter.
+
+**Inventory**
+
+TODO: Finish documenting.
+
+**Playbooks**
+
+Variables can be set in playbooks at various levels. It can be set at the play
+
+**Facts**
+
+
 ## Misc Uncategorized
 
 docs.ansible.com/ansible/intro_installation.html
