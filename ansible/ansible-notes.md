@@ -87,7 +87,8 @@ Handlers are triggered by tasks, and they are run once, at the end of plays.
 
 ## Inventory
 
-Basically a list of managed nodes using IP addresses or hostnames.
+Basically a list of managed nodes (aka hosts) using IP addresses or hostnames.
+The hosts are referenced in playbooks.
 
 * May be static or dynamic.
 * May be in different formats depending on inventory plugins.
@@ -95,6 +96,75 @@ Basically a list of managed nodes using IP addresses or hostnames.
   + YAML with plugin
 * Allows grouping of hosts.
 * Allows variables.
+
+The default location for the inventory is `/etc/ansible/hosts` in an INI format.
+The headings in brackets become group names.  It is ok to put host in more than
+one group.
+
+**Default Groups**
+
+There are two default groups: `all` and `ungrouped`.  `all` contains every host.
+`ungrouped` contains all hosts that don’t have another group aside from `all`.
+
+### Patterns
+
+```ini
+[webservers]
+www[01:50].example.com
+
+[databases]
+db-[a:f].example.com
+```
+
+### Connection Types
+
+```ini
+[targets]
+localhost              ansible_connection=local
+other1.example.com     ansible_connection=ssh        ansible_user=warden
+other2.example.com     ansible_connection=ssh        ansible_user=warden
+```
+
+### Variables
+
+**Host Variables**
+
+```ini
+[denver]
+host1 http_port=80 maxRequestsPerChild=808
+host2 http_port=303 maxRequestsPerChild=909
+```
+
+**Group Variables**
+
+```ini
+[denver]
+host1
+host2
+
+[denver:vars]
+ntp_server=ntp.denver.example.com
+proxy=proxy.denver.example.com
+```
+
+```yml
+denver:
+  hosts:
+    host1:
+    host2:
+  vars:
+    ntp_server: ntp.denver.example.com
+    proxy: proxy.denver.example.com
+```
+
+Note: Group variables is only a convenient way to apply variables to multiple
+hosts at once; variables are always flattened to the host level before a play is
+executed.  Variables will come from all of the groups the host is a member of.
+
+**Externalizing Variables**
+
+Note: The preferred practice in Ansible is to not store variables in the main
+inventory file.
 
 See http://docs.ansible.com/ansible/latest/intro_inventory.html for details and
 examples.
