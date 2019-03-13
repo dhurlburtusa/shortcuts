@@ -166,6 +166,42 @@ executed.  Variables will come from all of the groups the host is a member of.
 Note: The preferred practice in Ansible is to not store variables in the main
 inventory file.
 
+In addition to storing variables directly in the inventory file, host and group
+variables can be stored in individual files relative to the inventory file or a
+playbook. If both paths exist, variables in the playbook directory will override
+variables set in the inventory directory.
+
+These variable files are in YAML format. Valid file extensions include ‘.yml’,
+‘.yaml’, ‘.json’, or no file extension.
+
+Assuming the inventory file path is: `/etc/ansible/hosts`
+
+If the host is named ‘foosball’ and in groups ‘raleigh’ and ‘webservers’,
+variables in YAML files at the following locations will be made available to the
+host:
+
+```
+/etc/ansible/group_vars/raleigh
+/etc/ansible/group_vars/webservers
+/etc/ansible/host_vars/foosball
+```
+
+It is okay if these files do not exist, as this is an optional feature.
+
+As an advanced use case, you can create directories named after your groups or
+hosts and Ansible will read all the files in these directories in
+lexicographical order. An example with the ‘raleigh’ group:
+
+```
+/etc/ansible/group_vars/raleigh/db_settings
+/etc/ansible/group_vars/raleigh/cluster_settings
+```
+
+All hosts that are in the ‘raleigh’ group will have the variables defined in
+these files available to them.  This can be very useful to keep your variables
+organized when a single file starts to be too big or when you want to use
+Ansible Vault on a part of a group’s variables.
+
 See http://docs.ansible.com/ansible/latest/intro_inventory.html for details and
 examples.
 
