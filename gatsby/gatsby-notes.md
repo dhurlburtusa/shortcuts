@@ -111,6 +111,34 @@ header, a common site footer, and will render the layout component's children
 within the body of the layout.
 
 
+## Plugins
+
+Gatsby plugins are JavaScript packages that help add functionality to a Gatsby
+site. Gatsby is designed to be extensible, which means plugins are able to
+extend and modify just about everything Gatsby does.
+
+There are two main steps to using a plugin: Installing and configuring. Here's
+an example for using the Typography.js plugin.
+
+```sh
+npm install --save gatsby-plugin-typography react-typography typography typography-theme-fairy-gates
+```
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
+}
+```
+
+
 [gatsby]: https://www.gatsbyjs.org/
 [gatsby-browser-api]: https://www.gatsbyjs.org/docs/browser-apis/
 [gatsby-configuration]: https://www.gatsbyjs.org/docs/gatsby-config/
