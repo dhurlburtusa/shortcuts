@@ -102,6 +102,15 @@ Gatsby uses GraphQL to fetch data for the site.
 The Graph*i*QL IDE is available at `/___graphql`.
 
 
+## Layout Components
+
+Layout components are for sections of your site that you want to share across
+multiple pages. Gatsby doesn't provide anything specific for layouts. Layout
+components are just ordinary components that usually will have a common site
+header, a common site footer, and will render the layout component's children
+within the body of the layout.
+
+
 [gatsby]: https://www.gatsbyjs.org/
 [gatsby-browser-api]: https://www.gatsbyjs.org/docs/browser-apis/
 [gatsby-configuration]: https://www.gatsbyjs.org/docs/gatsby-config/
