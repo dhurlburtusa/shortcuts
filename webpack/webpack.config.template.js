@@ -1,4 +1,5 @@
 const path = require('path')
+
 const webpack = require('webpack')
 
 /*
@@ -41,7 +42,7 @@ const entry = './index.js'
 const entry = {
   main: './index.js',
   chunk1: './chunk1-entry.js',
-  chunk2: './chunk2-entry.js',
+  chunk2: ['./polyfill.js', './chunk2-entry.js'],
 }
 
 /*
@@ -54,9 +55,15 @@ const entry = {
  * See https://webpack.js.org/configuration/externals/ for details.
  *
  * @param {!Object<string|!Array|!Object>|!RegExp|function (context, request, callback)}
- *   - The key should math the name of the imported module.
+ *   - The key should match the name of the imported module.
  */
 const externals = undefined
+// const externals = {
+//   bootstrap: '$',
+//   jquery: 'jQuery',
+//   react: 'React',
+//   'react-dom': 'ReactDOM',
+// }
 
 /*
  * These options determine how the different types of modules within a project will
@@ -277,7 +284,7 @@ const output = {
    * Note this option is called `filename` but you are still allowed to use
    * something like `"js/[name]/bundle.js"` to create a folder structure.
    *
-   * Note this options does not affect output files for on-demand-loaded chunks.
+   * Note this option does not affect output files for on-demand-loaded chunks.
    * For these files the `output.chunkFilename` option is used.  It also doesn't
    * affect files created by loaders.  For these files see loader options.
    *
