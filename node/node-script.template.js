@@ -152,3 +152,12 @@ console.log(process.memoryUsage());
 //   heapUsed: 650472,
 //   external: 49879
 // }
+
+if (require.main === module) {
+  // Do something special when run as a script.
+  console.log('I am being run as a script direct with `node`.');
+}
+
+// The entry point of the running app. Will be this module if it is being run as a
+// script.
+console.log(require.main.filename);
