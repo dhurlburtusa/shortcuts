@@ -117,6 +117,10 @@ https://github.com/stereobooster/package.json
    * You can specify the version of node that your stuff works on:
    *
    *   "engines" : { "node" : ">=0.10.3 <0.12" }
+   * 
+   * https://node.green/ is a good resource to help determine the minimum version.
+   * Using NVM (https://github.com/nvm-sh/nvm or https://github.com/coreybutler/nvm-windows)
+   * can also help by running the tests with several node/npm versions.
    */
   "engines": {
     "node": ">=4.0.0",
