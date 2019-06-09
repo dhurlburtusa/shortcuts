@@ -253,6 +253,36 @@ https://github.com/stereobooster/package.json
     "name": "value"
   },
   /**
+   * This is a set of config values that will be used at publish-time.  It's
+   * especially handy if you want to set the tag, registry, or access, so that you
+   * can ensure that a given package is not tagged with "latest", published to the
+   * global public registry or that a scoped module is private by default.
+   *
+   * Any config values can be overridden, but of course only "tag", "registry", and
+   * "access" probably matter for the purposes of publishing.
+   *
+   * By default, a scoped package has restricted access. So, if you plan to make the
+   * package public, the you may want to use the following:
+   *
+   *   "publishConfig": {
+   *     "access": "public"
+   *   }
+   */
+  "publishConfig": {},
+  "bundledDependencies": [""],
+  "dependencies": {
+    "package-name": "version-expression or url"
+  },
+  "devDependencies": {
+    "package-name": "version-expression or url"
+  },
+  "optionalDependencies": {
+    "package-name": "version-expression or url"
+  },
+  "peerDependencies": {
+    "package-name": "version-expression or url"
+  },
+  /**
    * See https://docs.npmjs.com/misc/scripts for details.
    */
   "scripts": {
@@ -419,36 +449,6 @@ https://github.com/stereobooster/package.json
     "coverage": "",
 
     "...": "...",
-  },
-  /**
-   * This is a set of config values that will be used at publish-time.  It's
-   * especially handy if you want to set the tag, registry, or access, so that you
-   * can ensure that a given package is not tagged with "latest", published to the
-   * global public registry or that a scoped module is private by default.
-   *
-   * Any config values can be overridden, but of course only "tag", "registry", and
-   * "access" probably matter for the purposes of publishing.
-   *
-   * By default, a scoped package has restricted access. So, if you plan to make the
-   * package public, the you may want to use the following:
-   *
-   *   "publishConfig": {
-   *     "access": "public"
-   *   }
-   */
-  "publishConfig": {},
-  "bundledDependencies": [""],
-  "dependencies": {
-    "package-name": "version-expression or url"
-  },
-  "devDependencies": {
-    "package-name": "version-expression or url"
-  },
-  "optionalDependencies": {
-    "package-name": "version-expression or url"
-  },
-  "peerDependencies": {
-    "package-name": "version-expression or url"
   }
 }
 ```
