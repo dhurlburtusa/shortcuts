@@ -428,6 +428,13 @@ https://github.com/stereobooster/package.json
    *
    * Any config values can be overridden, but of course only "tag", "registry", and
    * "access" probably matter for the purposes of publishing.
+   *
+   * By default, a scoped package has restricted access. So, if you plan to make the
+   * package public, the you may want to use the following:
+   *
+   *   "publishConfig": {
+   *     "access": "public"
+   *   }
    */
   "publishConfig": {},
   "bundledDependencies": [""],
