@@ -52,6 +52,12 @@ https://github.com/stereobooster/package.json
    *   }
    *
    *   "author": "Barney Rubble <barney@rubble.com> (http://barnyrubble.tumblr.com)"
+   *
+   *   "author": {
+   *     "name": "Danny Hurlburt",
+   *     "email": "dhurlburtusa@users.noreply.github.com",
+   *     "url": "https://github.com/dhurlburtusa"
+   *   }
    */
   "author": {
     "name": "",
@@ -202,12 +208,12 @@ https://github.com/stereobooster/package.json
    * Examples:
    *
    *   "bugs": {
-   *     "email": "dhurlburtusa@github.com",
+   *     "email": "dhurlburtusa@users.noreply.github.com",
    *     "url": "https://github.com/dhurlburtusa/qc-core/issues"
    *   }
    *
    *   "bugs": {
-   *     "email": "dhurlburtusa@github.com"
+   *     "email": "dhurlburtusa@users.noreply.github.com"
    *   }
    *
    *   "bugs": {
