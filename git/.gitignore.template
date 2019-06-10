@@ -7,6 +7,7 @@
 /node_modules/
 
 # Testing
+/__tests__/unit/coverage/
 /coverage/
 
 .coveralls.yml
@@ -15,6 +16,7 @@
 /build/
 /dist/
 /lib/
+/pkg/
 
 # Environment Variable files
 .env.local
