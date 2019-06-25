@@ -327,6 +327,8 @@ server {
 		expires 1M;
 	}
 
+	location = /wordfence-waf.php { deny all; }
+
 	location = /wp-config.php { deny all; }
 
 	location = /wp-config-sample.php { return 404; }
