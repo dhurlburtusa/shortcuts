@@ -26,8 +26,8 @@
   + Some good options:
     - [All in One WP Security & Firewall]
     - [Sucuri Scanner]
-    - [Vulnerability Alerts]
     - [Wordfence]
+    - [WPScan]
 * Disable PHP file execution in certain WordPress directories.
   + See http://www.wpbeginner.com/wp-tutorials/how-to-disable-php-execution-in-certain-wordpress-directories/
     for details.
@@ -431,5 +431,5 @@ expose_php = Off
 [sucuri scanner]: https://wordpress.org/plugins/sucuri-scanner/
 [updraftplus]: https://wordpress.org/plugins/updraftplus/
 [vaultpress]: https://vaultpress.com/
-[vulnerability alerts]: https://wordpress.org/plugins/vulnerability-alerts/
 [Wordfence]: https://wordpress.org/plugins/wordfence/
+[WPScan]: https://wordpress.org/plugins/wpscan/
