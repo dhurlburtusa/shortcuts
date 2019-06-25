@@ -149,6 +149,18 @@ ls notreal 2> errors.txt
 
 ## Firewall
 
+**Firewall Applications**
+
+```bash
+sudo ufw app list
+```
+
+**Firewall Status**
+
+```bash
+sudo ufw status
+```
+
 **List Firewall Rules**
 
 ```bash
