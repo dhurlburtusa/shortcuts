@@ -329,6 +329,10 @@ server {
 
 	location = /wordfence-waf.php { deny all; }
 
+	# I am not 100% sure if we want this. I don't know who should be calling this.
+	# But I an going to deny it for now.
+	location = /wp-activate.php { deny all; }
+
 	location = /wp-config.php { deny all; }
 
 	location = /wp-config-sample.php { return 404; }
