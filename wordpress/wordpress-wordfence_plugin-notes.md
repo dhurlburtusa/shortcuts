@@ -9,7 +9,7 @@ After installing
   + This will setup Extended Protection.
 - Enable auto-update
   + Find under All Options menu.
-- onfigure Email Alert Preferences
+- Configure Email Alert Preferences
   + Find under All Options menu.
 
 
