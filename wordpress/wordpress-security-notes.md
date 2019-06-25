@@ -321,6 +321,12 @@ server {
 	gzip_types application/javascript application/json application/manifest+json application/octet-stream application/xml application/xml+rss image/jpeg image/png image/svg+xml text/css text/javascript text/plain text/xml;
 	#gzip_types application/javascript application/json application/manifest+json application/xml application/xml+rss image/png image/svg+xml text/css text/javascript text/plain text/xml;
 
+	location ^~ /assets {
+		root /var/www/example.com/html/assets;
+		try_files $uri $uri/ =404;
+		expires 1M;
+	}
+
 	location = /wp-config.php { deny all; }
 
 	location = /wp-config-sample.php { return 404; }
@@ -362,9 +368,10 @@ server {
 		return 404;
 	}
 
-	location ~ ^/[^/]+\.(css|eot|gif|ico|jpeg|jpg|js|json|png|svg|ttf|txt|woff2?|xml)$ {
-		root /var/www/example.com/html/assets;
+	location ~* ^/[^/]+\.(css|eot|gif|ico|jpeg|jpg|js|json|png|svg|ttf|txt|woff2?|xml)$ {
+		#root /var/www/example.com/html/assets;
 		expires 1M;
+		#log_not_found off;
 	}
 
 	location ~* \.(css|eot|gif|ico|jpeg|jpg|js|json|png|svg|ttf|txt|webmanifest|woff2?|xml)$ {
