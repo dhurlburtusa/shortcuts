@@ -22,6 +22,19 @@ where the signal is one of
 * reload — reloading the configuration file
 * reopen — reopening the log files
 
+**Preferred Alternative**
+
+I am calling the following the preferred alternative because it is what I
+commonly see in the DigitalOcean documentation. This, of course, only works
+on systems with SystemV (e.g., Ubuntu).
+
+```sh
+sudo systemctl status nginx
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl reload nginx
+```
 
 ## Configuration
 
