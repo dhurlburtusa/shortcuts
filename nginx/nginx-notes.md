@@ -38,6 +38,20 @@ sudo systemctl reload nginx
 
 ## Configuration
 
+### Reloading
+
+After making changes to a configuration file, first check whether it is valid.
+
+```sh
+sudo nginx -t
+```
+
+If it is, then
+
+```sh
+sudo systemctl restart nginx
+```
+
 ### Structure
 
 ```nginx
