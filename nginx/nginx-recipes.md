@@ -5,24 +5,22 @@
 
 ```
 server {
+	# FQDN, LAN IP, WAN IP
+	server_name	domain.name 192.168.1.126 73.3.230.59;
 
 	listen	80;
 	listen	[::]:80;
 
+	# May change to 301 when you are sure HTTPS-only is what you want.
+	return	302 https://$host$request_uri;
+}
+
+server {
 	# FQDN, LAN IP, WAN IP
 	server_name	domain.name 192.168.1.126 73.3.230.59;
-
-	# May change to 301 when you are sure HTTPS-only is what you want.
-	return	302 https://$server_name$request_uri;
-
-}
-server {
 
 	listen	443 ssl;
 	listen	[::]:443 ssl;
-
-	# FQDN, LAN IP, WAN IP
-	server_name	domain.name 192.168.1.126 73.3.230.59;
 
 	ssl_certificate	domain.name.crt;
 	ssl_certificate_key	domain.name.key;
