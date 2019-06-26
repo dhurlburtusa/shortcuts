@@ -3,23 +3,8 @@
 
 ## Common/Popular
 
-**WP Development**
+**Development-Only**
 
-* [ACF Content Analysis for Yoast SEO](https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/) (Free)
-* [Add Admin CSS](https://wordpress.org/plugins/add-admin-css/) (Free)
-* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
-* [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
-* [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
-* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) (Free, Paid)
-* [All in One WP Security & Firewall](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/) (Free)
-* [Beaver Builder](https://www.wpbeaverbuilder.com/) (Paid)
-* [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
-* [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
-* [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
-  + **Caution**: Causes WP Mail SMTP plugin to break due to some Composer
-    compatibility issues and the order in which the plugins are loaded.  However, if
-    a plugin such as Plugin Organizer is installed, then the plugin load order can
-    be changed such that this plugin loads after the WP Main SMTP plugin.
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) (Free)
 * [Debug Bar Actions and Filters](https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/) (Free)
 * [Debug Bar Console](https://wordpress.org/plugins/debug-bar-console/) (Free)
@@ -46,6 +31,25 @@
 * [Debug Bar Transients](https://wordpress.org/plugins/debug-bar-transients/) (Free)
 * [Debug Bar Widgets](https://wordpress.org/plugins/debug-bar-widgets/) (Free)
 * [Debug Media](https://wordpress.org/plugins/debug-media/) (Free)
+* [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
+
+**Recommended**
+
+* [ACF Content Analysis for Yoast SEO](https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/) (Free)
+* [Add Admin CSS](https://wordpress.org/plugins/add-admin-css/) (Free)
+* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
+* [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
+* [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
+* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) (Free, Paid)
+* [All in One WP Security & Firewall](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/) (Free)
+* [Beaver Builder](https://www.wpbeaverbuilder.com/) (Paid)
+* [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
+* [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
+* [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
+  + **Caution**: Causes WP Mail SMTP plugin to break due to some Composer
+    compatibility issues and the order in which the plugins are loaded.  However, if
+    a plugin such as Plugin Organizer is installed, then the plugin load order can
+    be changed such that this plugin loads after the WP Main SMTP plugin.
 * [Duplicator](https://wordpress.org/plugins/duplicator/) (Free, Paid)
   + Great for one-off backups.
   + Great for migrations.
@@ -58,7 +62,6 @@
 * [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
 * [Plugin Organizer](https://wordpress.org/plugins/plugin-organizer/) (Free)
 * [Remove Dashboard Access](https://wordpress.org/plugins/remove-dashboard-access-for-non-admins/) (Free)
-* [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 * [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
   + **Caution**: Does not seem to backup core WordPress files including
