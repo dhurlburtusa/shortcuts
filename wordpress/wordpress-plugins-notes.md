@@ -31,6 +31,7 @@
 * [Debug Bar Transients](https://wordpress.org/plugins/debug-bar-transients/) (Free)
 * [Debug Bar Widgets](https://wordpress.org/plugins/debug-bar-widgets/) (Free)
 * [Debug Media](https://wordpress.org/plugins/debug-media/) (Free)
+* [Debug This](https://wordpress.org/plugins/debug-this/) (Free)
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 
 **Recommended**
