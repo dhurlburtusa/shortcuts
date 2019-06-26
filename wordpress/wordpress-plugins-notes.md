@@ -46,6 +46,9 @@
 * [Debug Bar Transients](https://wordpress.org/plugins/debug-bar-transients/) (Free)
 * [Debug Bar Widgets](https://wordpress.org/plugins/debug-bar-widgets/) (Free)
 * [Debug Media](https://wordpress.org/plugins/debug-media/) (Free)
+* [Duplicator](https://wordpress.org/plugins/duplicator/) (Free, Paid)
+  + Great for one-off backups.
+  + Great for migrations.
 * [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
@@ -69,6 +72,9 @@
 * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) (Free)
 * [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
+* [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) (Free, Paid)
+  + Great to clean up database.
+  + Great to get an overview of the database.
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (Free, Paid)
   + If the `Advance Custom Fields` plugin is installed, be sure to also install `ACF
     Content Analysis for Yoast SEO` plugin so Yoast can analyze the custom fields.
