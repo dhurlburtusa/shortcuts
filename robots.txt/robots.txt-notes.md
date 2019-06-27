@@ -58,7 +58,9 @@ See https://en.wikipedia.org/wiki/Noindex for some related techniques.
 ```
 
 
-## Example
+## Examples
+
+**Generic**
 
 ```
 User-agent: *
@@ -67,6 +69,21 @@ Disallow: /tmp/
 Disallow: /junk/
 Disallow: /private/
 ```
+
+**WordPress**
+
+```
+User-Agent: *
+Allow: /wp-content/uploads/
+Disallow: /refer/
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /wp-includes/
+Disallow: /license.txt
+Disallow: /readme.html
+```
+
+See https://www.wpbeginner.com/wp-tutorials/how-to-optimize-your-wordpress-robots-txt-for-seo/ for details.
 
 
 ## Sitemap.xml Autodiscovery
