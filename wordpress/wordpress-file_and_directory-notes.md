@@ -53,3 +53,15 @@
         + Many files and directories
     * uploads/
       + wp-file-manager-pro/
+
+### Wordfence Plugin
+
+- root/
+  + .user.ini
+  + wordfence-waf.php
+  + wp-content/
+    * plugins/
+      - wordfence/
+        + Many files and directories
+    * wflogs/
+      - Several files
