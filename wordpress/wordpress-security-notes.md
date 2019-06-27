@@ -26,7 +26,7 @@
   + Some good options:
     - [All in One WP Security & Firewall]
     - [Sucuri Scanner]
-    - [Wordfence]
+    - [Wordfence] (Preferred)
     - [WPScan]
 * Disable PHP file execution in certain WordPress directories.
   + See http://www.wpbeginner.com/wp-tutorials/how-to-disable-php-execution-in-certain-wordpress-directories/
@@ -325,6 +325,17 @@ server {
 		root /var/www/example.com/html/assets;
 		try_files $uri $uri/ =404;
 		expires 1M;
+	}
+
+	location = /favicon.ico {
+		log_not_found off;
+		access_log off;
+	}
+
+	location = /robots.txt {
+		log_not_found off;
+		access_log off;
+		#allow all; # Is this necessary?
 	}
 
 	location = /wordfence-waf.php { deny all; }
