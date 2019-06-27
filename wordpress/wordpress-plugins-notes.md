@@ -148,7 +148,7 @@ enable developers to extend your plugin by passing functions through your hooks.
 
 **Removing Hooks**
 
-You can also use invoke [`remove_action`][remove_action] to remove a function
+You can also invoke [`remove_action`][remove_action] to remove a function
 that was defined earlier.
 
 ### Header Comment
