@@ -23,6 +23,11 @@ https://developers.google.com/search/reference/robots_txt, and
 https://en.wikipedia.org/wiki/Robots_exclusion_standard for details.
 
 
+## Warning
+
+Note: Don't block CSS and JS files. See https://yoast.com/dont-block-css-and-js-files/ for why?
+
+
 ## Alternatives
 
 **HTML meta Tags**
