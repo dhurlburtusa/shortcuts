@@ -25,13 +25,13 @@ Below is a list of some basic theme templates and files recognized by WordPress.
   latest posts.
 * **header.php**: The header template file usually contains your site's document
   type, meta information, links to stylesheets and scripts, and other data.
-* **singular.php**: The singular template is used for posts when `single.php` is
-  not found, or for pages when `page.php` is not found.  If `singular.php` is
-  not found, `index.php` is used.
 * **single.php**: The single post template is used when a visitor requests a
   single post.
 * **single-{post-type}.php**: The single post template used when a visitor
   requests a single post from a custom post type.
+* **singular.php**: The singular template is used for posts when `single.php` is
+  not found, or for pages when `page.php` is not found.  If `singular.php` is
+  not found, `index.php` is used.
 * **archive-{post-type}.php**: The archive post type template is used when
   visitors request a custom post type archive.  The `archive.php` template file
   is used if the `archive-{post-type}.php` is not present.
@@ -61,6 +61,22 @@ Below is a list of some basic theme templates and files recognized by WordPress.
   present, WordPress will use `attachment.php` instead.
 * **404.php**: The 404 template is used when WordPress cannot find a post, page,
   or other content that matches the visitor’s request.
+
+**Post Template Files**
+
+- **home.php** — The home page template is the front page by default.  If you do
+  not set WordPress to use a static front page, this template is used to show
+  latest posts. If there is no `home.php` in the theme, `index.php` will be used
+  instead.
+
+1. **single.php** — The single post template is used when a visitor requests a
+   single post. The `singular.php` template is used for posts when `single.php` is
+   not found
+2. **singular.php** — The singular template is used for posts when `single.php` is
+   not found, or for pages when `page.php` is not found.  If `singular.php` is not
+   found, `index.php` is used.
+3. **index.php** — If no specific post templates are assigned or found, WordPress
+   defaults back to using the theme's index file to render pages.
 
 See https://developer.wordpress.org/themes/basics/template-files/ for more
 details.
