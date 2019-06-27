@@ -78,6 +78,27 @@ Below is a list of some basic theme templates and files recognized by WordPress.
 3. **index.php** — If no specific post templates are assigned or found, WordPress
    defaults back to using the theme's index file to render pages.
 
+**Page Template Files**
+
+Page templates are a specific type of template file that can be applied to a
+specific page or groups of pages.
+
+WordPress looks for template files in the following order:
+
+1. **Page Template** — If the page has a custom template assigned, WordPress looks
+   for that file and, if found, uses it.
+2. **page-{slug}.php** — If no custom template has been assigned, WordPress looks
+   for and uses a specialized template that contains the page's slug.
+3. **page-{id}.php** — If a specialized template that includes the page's slug is
+   not found, WordPress looks for and uses a specialized template named with the
+   page's ID.
+4. **page.php** — If a specialized template that includes the page's ID is not
+  found, WordPress looks for and uses the theme's default page template.
+5. **singular.php** — If page.php is not found, WordPress looks for and uses the
+   theme's template used for a single post, regardless of post type.
+6. **index.php** — If no specific page templates are assigned or found, WordPress
+   defaults back to using the theme's index file to render pages.
+
 See https://developer.wordpress.org/themes/basics/template-files/ for more
 details.
 
