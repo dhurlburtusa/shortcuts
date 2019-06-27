@@ -41,3 +41,15 @@
     * Many files and directories
 
 ## Third-Party
+
+### WP File Manager Plugin
+
+- root/
+  + .quarantine/
+  + .tmb/
+  + wp-content/
+    * plugins/
+      - wp-file-manager/
+        + Many files and directories
+    * uploads/
+      + wp-file-manager-pro/
