@@ -5,7 +5,7 @@
 
 **Version 5.x**
 
-- root
+- root/
   + index.php
   + license.txt
   + readme.html
@@ -39,3 +39,5 @@
         + {current-month}/
   + wp-includes/
     * Many files and directories
+
+## Third-Party
