@@ -74,6 +74,9 @@
     Editor will wipe out any special statements included by hosting services.
   + `WP File Manager` plugin preferred.
 * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
+  + Configuration
+    - Recommended:
+      * Enable Trash: yes
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) (Free)
 * [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) (Free, Paid)
