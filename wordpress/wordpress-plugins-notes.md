@@ -82,6 +82,7 @@
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) (Free, Paid)
   + Great to clean up database.
   + Great to get an overview of the database.
+  + Good image compress feature.
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (Free, Paid)
   + If the `Advance Custom Fields` plugin is installed, be sure to also install `ACF
     Content Analysis for Yoast SEO` plugin so Yoast can analyze the custom fields.
