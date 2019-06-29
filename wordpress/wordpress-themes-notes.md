@@ -303,6 +303,55 @@ Here is a short list of what may be useful informational tags.
   written for the current post or the given post.
 
 
+## Template Tags
+
+A template tag is simply a piece of code that tells WordPress to get something from the database. It is broken up into three components:
+
+- A PHP code tag
+- A WordPress function
+- Optional parameters
+
+See https://developer.wordpress.org/themes/references/list-of-template-tags/ for the complete list of template tags.
+
+Here is a list of some template tags.
+
+- **`get_bloginfo( 'admin_email' )`**: Get the admin email and include it.
+- **`get_bloginfo( 'charset' )`**: Get the encoding for pages and feeds and include it.
+- **`get_bloginfo( 'description' )`**: Get the site tagline and include it.
+- **`get_bloginfo( 'language' )`**: Get the language code and include it.
+- **`get_bloginfo( 'name' )`**: Get the blog name (aka site title) which is usually used in the site title and include it.
+- **`get_bloginfo( 'version' )`**: Get the WP version and include it.
+- **`get_bloginfo( 'url' )`**: Get the site address and include it.
+- **`get_bloginfo( 'wpurl' )`**: Get the WP address and include it.
+- **`get_footer()`**: Tells WP to get the `footer.php` file and include it.
+- **`get_footer( $name )`**: Tells WP to get the `footer-{name}.php` file and include it.
+- **`get_header()`**: Tells WP to get the `header.php` file and include it.
+- **`get_header( $name )`**: Tells WP to get the `header-{name}.php` file and include it.
+- **`get_search_form( $args )`**: Tells WP to get the `searchform.php` file and include it.
+- **`get_sidebar()`**: Tells WP to get the `sidebar.php` file and include it.
+- **`get_sidebar( $name )`**: Tells WP to get the `sidebar-{name}.php` file and include it.
+- **`get_template_part( $slug )`**: Tells WP to get the `{slug}.php` file and include it.
+- **`get_template_part( $slug, $name )`**: Tells WP to get the `{slug}-{name}.php` file and include it.
+- **`get_the_title( $post )`**: Retrieve the post title.
+- **`post_class( $extra_classes = '', $post_id )`**:
+- **`single_post_title( $prefix )`**: Display the page title for post.
+- **`wp_login_form( $args )`**: Provides a simple login form for use anywhere within WordPress.
+
+**Loop-Only Template Tags**
+
+- **`next_post()`**:
+- **`post_class( $extra_classes = '' )`**:
+- **`previous_post()`**:
+- **`the_content( $more_link_text = null, $strip_teaser )`**:
+- **`the_date( $date_format, $before = '', $after = '' )`**:
+- **`the_excerpt()`**:
+- **`the_ID()`**:
+- **`the_meta()`**:
+- **`the_shortlink( $text = __( 'This is the short link.' ), $title = '', $before = '', $after = '' )`**:
+- **`the_tags( $before = __( 'Tags: '), $sep = ', ', $after = '')`**:
+- **`the_title( $before, $after )`**: Get the title of the page or post and include it.
+
+
 ## Child Themes
 
 > A child theme is a theme that inherits the functionality and styling of
