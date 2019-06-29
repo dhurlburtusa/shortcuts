@@ -78,6 +78,8 @@
     - Recommended:
       * Enable Trash: yes
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) (Free)
+  + Try Post SMTP instead next time a site is created.
+* [Post SMTP Mailer/Email Log](https://wordpress.org/plugins/post-smtp/) (Free)
 * [WP NoteUp](https://wordpress.org/plugins/wp-noteup/) (Free)
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) (Free, Paid)
   + Great to clean up database.
