@@ -1,5 +1,6 @@
 # WordPress Filter Notes
 
-- **`the_date`, `$the_date`, `$date_format`, `$before`, `$after`**
-- **`the_shortlink`, `$link`, `$shortlink`, `$text`, `$title`**
-- **`the_time`, `$the_time`, `$time_format`**
+- **`the_date`, `string $the_date`, `string $date_format`, `string $before`, `string $after`**
+- **`the_time`, `string $the_time`, `string $time_format`**
+- **`wp_title`, `string $title`, `string $sep`, `string $seplocation`**
+- **`wp_title_parts`, `array $title_array`**
