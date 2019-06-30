@@ -7,6 +7,9 @@ Text Domain: hsllc
 Domain Path: /languages
 */
 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 if (!defined('SSP__DIRNAME')) {
   define('SSP__DIRNAME', plugin_basename(dirname(__FILE__)));
 }
