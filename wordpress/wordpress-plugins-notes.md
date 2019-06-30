@@ -55,6 +55,7 @@
   + Great for one-off backups.
   + Great for migrations.
 * [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
+* [Edit Author Slug](https://wordpress.org/plugins/edit-author-slug/) (Free)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
 * [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
   + **Con**: Plaintext editor.
