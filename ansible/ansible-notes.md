@@ -383,6 +383,9 @@ ansible-vault decrypt some_encrypted_file.yml
 ansible-vault rekey some_encrypted_file.yml
 ```
 
+Check mode: Dry-run for ad-hoc commands and playbooks. Use `-C` cli option.
+Note: Not all modules support check mode.
+
 Using Ansible Tower.
 
 
