@@ -6,6 +6,9 @@ Ansible is a powerful IT automation and orchestration engine.
   Ansible playbooks.
 * An automation engine which runs the Ansible playbooks.
 
+Check out https://www.ansible.com/resources/videos/quick-start-video for a good
+short overview of Ansible.
+
 See https//www.ansible.com/ for more details.
 
 **Requirements**
