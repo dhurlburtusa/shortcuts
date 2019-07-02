@@ -359,6 +359,30 @@ ansible <inventory> -m ...
 ansible-playbook ...
 ```
 
+```sh
+ansible-vault create some_file.yml
+```
+
+```sh
+ansible-vault encrypt some_file.yml
+```
+
+```sh
+ansible-vault view some_encrypted_file.yml
+```
+
+```sh
+ansible-vault edit some_encrypted_file.yml
+```
+
+```sh
+ansible-vault decrypt some_encrypted_file.yml
+```
+
+```sh
+ansible-vault rekey some_encrypted_file.yml
+```
+
 Using Ansible Tower.
 
 
