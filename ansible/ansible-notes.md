@@ -346,6 +346,11 @@ Variables can be set in playbooks at various levels. It can be set at the play
 
 **Facts**
 
+## Templating
+
+Take into account that templating happens on the Ansible controller, not on the
+task’s target host, so filters also execute on the controller as they manipulate
+local data.
 
 ## Misc Uncategorized
 
