@@ -443,11 +443,65 @@ Note: Not all modules support check mode.
 
 Using Ansible Tower.
 
+**Tasks**
+
+Every task should have a name, which is included in the output from running the playbook.
+
+**Handlers**
+
+Handlers are lists of tasks, not really any different from regular tasks, that
+are referenced by a globally unique name, and are notified by notifiers. If
+nothing notifies a handler, it will not run. Regardless of how many tasks notify
+a handler, it will run only once, after all of the tasks complete in a
+particular play.
+
+Here’s an example handlers section:
+
+```yml
+---
+- hosts: example
+  tasks:
+  - name: template configuration file
+    template:
+      src: template.j2
+      dest: /etc/foo.conf
+    notify:
+     - restart memcached
+     - restart apache
+  ...
+  handlers:
+    - name: restart memcached
+      service:
+        name: memcached
+        state: restarted
+    - name: restart apache
+      service:
+        name: apache
+        state: restarted
+```
 
 **Modules**
 
 100s built-in
 Others available from Ansible Galaxy.
+
+The command and shell modules will typically rerun the same command again, which is totally ok if the command is something like chmod or setsebool, etc. Though there is a creates flag available which can be used to make these modules also idempotent.
+
+The command and shell modules are the only modules that just take a list of arguments and don’t use the key=value form. This makes them work as simply as you would expect:
+
+```yml
+tasks:
+  - name: enable selinux
+    command: /sbin/setenforce 1
+```
+
+The command and shell module care about return codes, so if you have a command whose successful exit code is not zero, you may wish to do this:
+
+```yml
+tasks:
+  - name: run this command and ignore the result
+    shell: /usr/bin/somecommand || /bin/true
+```
 
 http://docs.ansible.com/ansible/latest/modules_by_category.html
 
