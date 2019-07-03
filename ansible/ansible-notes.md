@@ -9,7 +9,7 @@ Ansible is a powerful IT automation and orchestration engine.
 Check out https://www.ansible.com/resources/videos/quick-start-video for a good
 short overview of Ansible.
 
-See https//www.ansible.com/ for more details.
+See https://www.ansible.com/ for more details.
 
 **Requirements**
 
@@ -361,7 +361,7 @@ docs.ansible.com/ansible/modules_by_category.html
 
 It can be defined at the play or the task level.
 
-```
+```yml
 ---
 - hosts: example
   remote_user: root
@@ -376,7 +376,7 @@ It can be defined at the play or the task level.
 To run a command as another user, use `become`. Use `become_user` to choose the
 user. It defaults to `root`.
 
-```
+```yml
 ---
 - hosts: example
   become: yes
@@ -391,7 +391,7 @@ user. It defaults to `root`.
 
 The order by which hosts are run can be controlled with `order`.
 
-```
+```yml
 ---
 - hosts: example
   order: sorted # One of inventory | reverse_inventory | sorted | reverse_sorted | shuffle
