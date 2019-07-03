@@ -357,6 +357,46 @@ local data.
 docs.ansible.com/ansible/intro_installation.html
 docs.ansible.com/ansible/modules_by_category.html
 
+**Remote User**
+
+It can be defined at the play or the task level.
+
+```
+---
+- hosts: example
+  remote_user: root
+  tasks:
+    - name: test connection
+      ping:
+      remote_user: some_remote_user
+```
+
+**Run a Command as Another User**
+
+To run a command as another user, use `become`. Use `become_user` to choose the
+user. It defaults to `root`.
+
+```
+---
+- hosts: example
+  become: yes
+  become_user: root
+  tasks:
+    - name: run sql
+      become: yes
+      become_user: mysql
+```
+
+**Host Run Order**
+
+The order by which hosts are run can be controlled with `order`.
+
+```
+---
+- hosts: example
+  order: sorted # One of inventory | reverse_inventory | sorted | reverse_sorted | shuffle
+```
+
 **Running**
 
 ```sh
