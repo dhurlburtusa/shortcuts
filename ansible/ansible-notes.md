@@ -227,6 +227,13 @@ steps in a general IT process.
 For each play in a playbook, you get to choose which machines (aka hosts) in
 your infrastructure to target and what remote user to complete the tasks as.
 
+It is important to understand that, within a play, all hosts are going to get
+the same task directives. It is the purpose of a play to map a selection of
+hosts to tasks.
+
+When running the playbook, hosts with failed tasks are taken out of the rotation
+for the entire playbook.
+
 ### Reusability
 
 A playbook can be decomposed into smaller files and then reused.  There are
