@@ -282,6 +282,9 @@ for information about tradeoffs and pitfalls between includes and imports.
 
 **Roles**
 
+Roles allow you to package together taks, handlers, files, templates, variables,
+modules, and plugins. Roles can be uploaded and shared via Ansible Galaxy.
+
 Roles are ways of automatically loading certain vars_files, tasks, and handlers
 based on a known file structure.  Grouping content by roles also allows easy
 sharing of roles with other users.
@@ -322,6 +325,85 @@ file, which contains the relevant content:
 - `files` - contains files which can be deployed via this role.
 - `templates` - contains templates which can be deployed via this role.
 - `meta` - defines some meta data for this role.
+
+**Using Roles**
+
+The classic (original) way to use roles is via the `roles` option for a given
+play:
+
+```
+---
+- hosts: webservers
+  # Roles can be run inline with other tasks.
+  tasks:
+    - debug:
+        msg: "before we run our role"
+    - import_role:
+        name: example
+    - include_role:
+        name: example
+      tags:
+        - bar
+        - baz
+      vars:
+        var1: some_value
+        var2: some_value
+    - debug:
+        msg: "after we ran our role"
+  # Roles can also be run in the "classic" manner. They are treated as static
+  # imports and processed during playbook parsing.
+  roles:
+    # By simple name
+    - common
+    - webservers
+    # With other keywords
+    - role: some_role
+      vars:
+        var1: some_value
+        var2: some_value
+```
+
+This designates the following behaviors, for each role ‘x’:
+
+- If `roles/x/tasks/main.yml` exists, tasks listed therein will be added to the
+  play.
+- If `roles/x/handlers/main.yml` exists, handlers listed therein will be added to
+  the play.
+- If `roles/x/vars/main.yml` exists, variables listed therein will be added to the
+  play.
+- If `roles/x/defaults/main.yml` exists, variables listed therein will be added to
+  the play.
+- If `roles/x/meta/main.yml` exists, any role dependencies listed therein will be
+  added to the list of roles (1.3 and later).
+- Any `copy`, `script`, `template` or include tasks (in the role) can reference
+  files in `roles/x/{files,templates,tasks}/` (dir depends on task) without having
+  to path them relatively or absolutely.
+
+When used in this manner, the order of execution for your playbook is as follows:
+
+- Any `pre_tasks` defined in the play.
+- Any handlers triggered so far will be run.
+- Each role listed in roles will execute in turn. Any role dependencies defined in
+  the role's `meta/main.yml` will be run first, subject to tag filtering and
+  conditionals.
+- Any `tasks` defined in the play.
+- Any handlers triggered so far will be run.
+- Any `post_tasks` defined in the play.
+- Any handlers triggered so far will be run.
+
+**Role Dependencies**
+
+Role dependencies allow you to automatically pull in other roles when using a
+role. Role dependencies are stored in the meta/main.yml file contained within
+the role directory.
+
+**Ansible Galaxy**
+
+Ansible Galaxy is a free site for finding, downloading, rating, and reviewing
+all kinds of community developed Ansible roles and can be a great way to get a
+jumpstart on your automation projects.
+
+See https://galaxy.ansible.com/.
 
 ### Execution Order
 
