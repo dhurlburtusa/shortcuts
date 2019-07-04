@@ -337,6 +337,10 @@ The order of execution for your playbook is as follows:
 - Any `post_tasks` defined in the play.
 - Any handlers triggered so far will be run.
 
+### Validation
+
+See [tools for validating playbooks](https://docs.ansible.com/ansible/latest/community/other_tools_and_programs.html#validate-playbook-tools).
+
 
 ## Variables
 
