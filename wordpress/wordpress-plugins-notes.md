@@ -1,6 +1,11 @@
 # WordPress Plugins Notes
 
 
+## Pre-Installation Check
+
+When installing a plugin you've never used before, it's like a box of chocolates, you never know what you are going to get. So, checkout the plugin's test results at https://plugintests.com/ before installing.
+
+
 ## Common/Popular
 
 **Development-Only**
