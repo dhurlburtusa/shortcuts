@@ -37,6 +37,7 @@ When installing a plugin you've never used before, it's like a box of chocolates
 * [Debug Bar Widgets](https://wordpress.org/plugins/debug-bar-widgets/) (Free)
 * [Debug Media](https://wordpress.org/plugins/debug-media/) (Free)
 * [Debug This](https://wordpress.org/plugins/debug-this/) (Free)
+  + Note: From first glance, this seems to have almost all, if not all, of the same features that all the individual "Debug Bar" plugins offers.
 * [Show Current Template](https://wordpress.org/plugins/show-current-template/) (Free)
 
 **Recommended**
