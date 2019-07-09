@@ -66,6 +66,7 @@ When installing a plugin you've never used before, it's like a box of chocolates
 * [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
   + **Con**: Plaintext editor.
 * [HappyForms](https://wordpress.org/plugins/happyforms/) (Free)
+* [If Menu](https://wordpress.org/plugins/if-menu/) (Free)
 * [Log Viewer](https://wordpress.org/plugins/log-viewer/) (Free)
 * [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
 * [Plugin Organizer](https://wordpress.org/plugins/plugin-organizer/) (Free)
