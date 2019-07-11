@@ -258,6 +258,24 @@ WordPress comes with five built-in post types.
 * Nav Menu (`nav_menu_item`)
 
 
+## Available Post Formats
+
+A theme can choose which post formats it supports by calling `add_theme_support` with `'post-formats'` and an array containing the supported post formats.
+
+**Post Formats**
+
+- `aside`
+- `audio`
+- `chat`
+- `gallery`
+- `image`
+- `link`
+- `quote`
+- `standard`
+- `status`
+- `video`
+
+
 ## Misc
 
 **CSS Selectors**
