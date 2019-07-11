@@ -4,6 +4,34 @@ At their most basic level, WordPress themes are collections of different files
 that work together to create what you see, as well as how your site behaves.
 
 
+## Feature Support
+
+WordPress offers many different features. However, it is up to the theme developer which features to support by calling `add_theme_support` with one of the feature names.
+
+**Features**
+
+A list of known features.
+
+- `admin-bar`
+- `automatic-feed-links`
+- `custom-background`
+- `custom-header`
+- `custom-logo`
+- `customize-selective-refresh-widgets`
+- `editor-color-palette`
+- `editor-style`
+- `editor-styles`
+- `html5`
+- `menus`
+- `post-formats`
+- `post-thumbnails`
+- `responsive-embeds`
+- `starter-content`
+- `title-tag`
+- `widgets`
+- `wp-block-styles`
+
+
 ## Template Files
 
 WordPress themes are made up of template files.  These are PHP files that
