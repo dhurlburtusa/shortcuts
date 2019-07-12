@@ -43,6 +43,8 @@ for more details and options.
 
 ## Basic Code Structure
 
+TODO: Update for version 5.x.
+
 ```
 require index.php
   require wp-blog-header.php
