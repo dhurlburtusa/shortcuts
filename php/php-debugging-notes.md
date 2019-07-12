@@ -1,5 +1,8 @@
 # PHP Debugging Notes
 
+
+## Some Functions Useful when Debugging
+
 - `defined`
 - `var_dump`
 - `var_export`
@@ -20,3 +23,5 @@
 - `phpversion`
 - `sleep`
 - `error_log`
+
+See https://wordpress.org/support/article/debugging-in-wordpress/ for more information.
