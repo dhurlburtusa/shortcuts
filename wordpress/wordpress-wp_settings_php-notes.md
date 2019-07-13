@@ -48,6 +48,12 @@
 - `TEMPLATEPATH`:
 - `STYLESHEETPATH`:
 - `WP_DEFAULT_THEME`:
+- `SCRIPT_DEBUG`: Boolean. Defaults to 
+- `REST_API_VERSION`:
+- `AUTOSAVE_INTERVAL`:
+- `EMPTY_TRASH_DAYS`:
+- `WP_POST_REVISIONS`:
+- `WP_CRON_LOCK_TIMEOUT`:
 
 ## Globals
 
@@ -112,3 +118,12 @@ Note: Theses are available to both plugins and themes.
 - $is_IIS
 - $is_iis7
 - $is_nginx
+
+**Via `wp-includes/widgets.php`**
+
+- `$wp_registered_sidebars`
+- `$wp_registered_widget_controls`
+- `$wp_registered_widget_updates`
+- `$wp_registered_widgets`
+
+
