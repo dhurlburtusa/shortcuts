@@ -197,6 +197,24 @@ style.css
 ```
 
 
+## The Loop
+
+**Minimal**
+
+```php
+<?php
+if ( have_posts() ) :
+	while ( have_posts() ) :
+		the_post(); 
+
+		// TODO: Add the post contents here.
+	endwhile;
+else:
+	// TODO: Add a no-posts message here.
+endif;
+```
+
+
 ## Conditional Tags
 
 * **`is_home()`**: Determines if the query is for the blog homepage.  See
