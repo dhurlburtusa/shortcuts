@@ -3,6 +3,9 @@
 
 ## Hooks
 
+### When `$action === 'login'`**
+
+
 ### Actions
 
 **Via `wp-settings.php`**
@@ -31,9 +34,6 @@
   + `login_form_resetpass`, none
   + `login_form_retrievepassword`, none
   + `login_form_rp`, none
-  + `login_form_foo`, none
-  + `login_form_foo`, none
-  + `login_form_foo`, none
 
 **When `$action === 'login'`**
 
