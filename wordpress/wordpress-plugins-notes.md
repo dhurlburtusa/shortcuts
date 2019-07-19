@@ -43,44 +43,22 @@ When installing a plugin you've never used before, it's like a box of chocolates
 **Recommended**
 
 * [ACF Content Analysis for Yoast SEO](https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/) (Free)
-* [Add Admin CSS](https://wordpress.org/plugins/add-admin-css/) (Free)
-* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
-* [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
-* [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) (Free, Paid)
-* [All in One WP Security & Firewall](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/) (Free)
-* [Beaver Builder](https://www.wpbeaverbuilder.com/) (Paid)
-* [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
-* [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
-* [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
-  + **Caution**: Causes WP Mail SMTP plugin to break due to some Composer
-    compatibility issues and the order in which the plugins are loaded.  However, if
-    a plugin such as Plugin Organizer is installed, then the plugin load order can
-    be changed such that this plugin loads after the WP Main SMTP plugin.
+* [Content Aware Sidebars](https://wordpress.org/plugins/content-aware-sidebars/) (Free, Paid)
 * [Duplicator](https://wordpress.org/plugins/duplicator/) (Free, Paid)
   + Great for one-off backups.
   + Great for migrations.
-* [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
 * [Edit Author Slug](https://wordpress.org/plugins/edit-author-slug/) (Free)
 * [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) (Free)
-* [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
-  + **Con**: Plaintext editor.
-* [HappyForms](https://wordpress.org/plugins/happyforms/) (Free)
 * [If Menu](https://wordpress.org/plugins/if-menu/) (Free, Paid ~$15/year)
 * [Log Viewer](https://wordpress.org/plugins/log-viewer/) (Free)
 * [Plugin Notes Plus](https://wordpress.org/plugins/plugin-notes-plus/) (Free)
 * [Plugin Organizer](https://wordpress.org/plugins/plugin-organizer/) (Free)
 * [Remove Dashboard Access](https://wordpress.org/plugins/remove-dashboard-access-for-non-admins/) (Free)
-* [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
 * [UpdraftPlus - Backup](https://wordpress.org/plugins/updraftplus/) (Free, Paid)
   + **Caution**: Does not seem to backup core WordPress files including
     `wp-config.php`.
 * [Wordfence](https://wordpress.org/plugins/wordfence/) (Free, Paid)
-* [WP Add Custom CSS](https://wordpress.org/plugins/wp-add-custom-css/) (Free)
-* ~~[WP Config File Editor](https://wordpress.org/plugins/wp-config-file-editor/)~~ (Free)
-  + **Caution**: Make a backup of `wp-config.php` before using.  Using supplied
-    Editor will wipe out any special statements included by hosting services.
-  + `WP File Manager` plugin preferred.
 * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/) (Free, Paid)
   + Configuration
     - Recommended:
@@ -96,6 +74,32 @@ When installing a plugin you've never used before, it's like a box of chocolates
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (Free, Paid)
   + If the `Advance Custom Fields` plugin is installed, be sure to also install `ACF
     Content Analysis for Yoast SEO` plugin so Yoast can analyze the custom fields.
+
+**Maybe**
+
+* [Add Admin CSS](https://wordpress.org/plugins/add-admin-css/) (Free)
+* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) (Free, Paid)
+* [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/) (Free, Paid)
+* [Admin Menu Tree Page View](https://wordpress.org/plugins/admin-menu-tree-page-view/) (Free)
+* [All in One WP Security & Firewall](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/) (Free)
+* [Beaver Builder](https://www.wpbeaverbuilder.com/) (Paid)
+* [Beaver Builder Lite](https://wordpress.org/plugins/beaver-builder-lite-version/) (Free)
+* [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) (Free)
+* [CSS & JavaScript Toolbox](https://wordpress.org/plugins/css-javascript-toolbox/) (Free, Paid)
+  + **Caution**: Causes WP Mail SMTP plugin to break due to some Composer
+    compatibility issues and the order in which the plugins are loaded.  However, if
+    a plugin such as Plugin Organizer is installed, then the plugin load order can
+    be changed such that this plugin loads after the WP Main SMTP plugin.
+* [Divi Builder](https://www.elegantthemes.com/plugins/divi-builder/) (Paid)
+* [HappyForms](https://wordpress.org/plugins/happyforms/) (Free)
+* [Head & Footer Code](https://wordpress.org/plugins/head-footer-code/) (Free)
+  + **Con**: Plaintext editor.
+* [Theme My Login](https://wordpress.org/plugins/theme-my-login/) (Free)
+* ~~[WP Config File Editor](https://wordpress.org/plugins/wp-config-file-editor/)~~ (Free)
+  + **Caution**: Make a backup of `wp-config.php` before using.  Using supplied
+    Editor will wipe out any special statements included by hosting services.
+  + `WP File Manager` plugin preferred.
+* [WP Add Custom CSS](https://wordpress.org/plugins/wp-add-custom-css/) (Free)
 
 **Some to Try**
 
