@@ -4,7 +4,7 @@ Custom fields, also referred to as post metadata, is a feature in WordPress whic
 
 Note: Custom fields starting with an underscore do not display in the edit screen's custom fields module.
 
-See https://www.wpbeginner.com/wp-tutorials/wordpress-custom-fields-101-tips-tricks-and-hacks/ for a good overview of custom fields.
+See https://www.wpbeginner.com/wp-tutorials/wordpress-custom-fields-101-tips-tricks-and-hacks/ for a good overview of custom fields and see https://metabox.io/what-is-custom-fields-in-wordpress/ and its related articles for in-depth knowledge of custom fields and WP metadata.
 
 
 ## Metadata API
