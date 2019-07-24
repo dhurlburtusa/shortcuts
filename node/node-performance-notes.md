@@ -35,6 +35,10 @@ From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#blocking-the-e
     * `child_process.execSync`
     * `child_process.execFileSync`
 
+From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#offloading-conclusions:
+
+- "Node excels for I/O-bound work, but for expensive computation it might not be the best option."
+
 
 ## Anti-REDOS Strategies
 
