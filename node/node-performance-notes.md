@@ -3,6 +3,12 @@
 
 ## Misc
 
+From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#conclusion:
+
+Node has two types of threads: one Event Loop and k Workers. The Event Loop is responsible for JavaScript callbacks and non-blocking I/O, and a Worker executes tasks corresponding to C++ code that completes an asynchronous request, including blocking I/O and CPU-intensive work. Both types of threads work on no more than one activity at a time. If any callback or task takes a long time, the thread running it becomes blocked. If your application makes blocking callbacks or tasks, this can lead to degraded throughput (clients/second) at best, and complete denial of service at worst.
+
+To write a high-throughput, more DoS-proof web server, you must ensure that on benign and on malicious input, neither your Event Loop nor your Workers will block.
+
 From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#how-careful-should-you-be:
 
 - "Node uses the Google V8 engine for JavaScript, which is quite fast for many common operations. Exceptions to this rule are regexps and JSON operations."
@@ -38,6 +44,10 @@ From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#blocking-the-e
 From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#offloading-conclusions:
 
 - "Node excels for I/O-bound work, but for expensive computation it might not be the best option."
+
+From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#avoiding-task-partitioning:
+
+- "Routing shorter Tasks and longer Tasks to separate Worker Pools is another way to minimize Task time variation. The downside of this approach is that Workers in all of these Worker Pools will incur space and time overheads and will compete with each other for CPU time. Remember that each CPU-bound Task makes progress only while it is scheduled. As a result, you should only consider this approach after careful analysis."
 
 
 ## Anti-REDOS Strategies
