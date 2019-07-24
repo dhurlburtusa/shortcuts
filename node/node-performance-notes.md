@@ -17,6 +17,24 @@ From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#avoiding-vulne
     * Using backreferences, like `(a.*) \1`.
     * Recommendation: use a non-re equivalent. E.g., when doing a simple string match, use `indexOf` instead.
 
+From https://nodejs.org/en/docs/guides/dont-block-the-event-loop/#blocking-the-event-loop-node-core-modules:
+
+- In a server, you should not use the following synchronous APIs from these modules:
+  + Encryption:
+    * `crypto.randomBytes` (synchronous version)
+    * `crypto.randomFillSync`
+    * `crypto.pbkdf2Sync`
+    * You should also be careful about providing large input to the encryption and decryption routines.
+  + Compression:
+    * `zlib.inflateSync`
+    * `zlib.deflateSync`
+  + File system:
+    * Do not use the synchronous file system APIs. For example, if the file you access is in a distributed file system like NFS, access times can vary widely.
+  + Child process:
+    * `child_process.spawnSync`
+    * `child_process.execSync`
+    * `child_process.execFileSync`
+
 
 ## Anti-REDOS Strategies
 
