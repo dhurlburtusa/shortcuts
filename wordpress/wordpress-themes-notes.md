@@ -361,14 +361,20 @@ See https://developer.wordpress.org/themes/references/list-of-template-tags/ for
 
 Here is a list of some template tags.
 
-- **`get_bloginfo( 'admin_email' )`**: Get the admin email and include it.
-- **`get_bloginfo( 'charset' )`**: Get the encoding for pages and feeds and include it.
-- **`get_bloginfo( 'description' )`**: Get the site tagline and include it.
-- **`get_bloginfo( 'language' )`**: Get the language code and include it.
-- **`get_bloginfo( 'name' )`**: Get the blog name (aka site title) which is usually used in the site title and include it.
-- **`get_bloginfo( 'version' )`**: Get the WP version and include it.
-- **`get_bloginfo( 'url' )`**: Get the site address and include it.
-- **`get_bloginfo( 'wpurl' )`**: Get the WP address and include it.
+- **`allowed_tags()`**: Display all of the HTML tags allowed in comments.
+- **`bloginfo( 'admin_email' )`**: Display the admin email which may have been filtered with `bloginfo`.
+- **`bloginfo( 'charset' )`**: Display the encoding for pages and feeds which may have been filtered with `bloginfo`.
+- **`bloginfo( 'description' )`**: Display the site tagline which may have been filtered with `bloginfo`.
+- **`bloginfo( 'language' )`**: Display the language code which may have been filtered with `bloginfo`.
+- **`bloginfo( 'name' )`**: Display the blog name (aka site title) which is usually used in the site title which may have been filtered with `bloginfo`.
+- **`bloginfo( 'version' )`**: Display the WP version which may have been filtered with `bloginfo`.
+- **`get_bloginfo( 'admin_email' )`**: Get the admin email which may have been filtered with `bloginfo`.
+- **`get_bloginfo( 'charset' )`**: Get the encoding for pages and feeds which may have been filtered with `bloginfo`.
+- **`get_bloginfo( 'description' )`**: Get the site tagline which may have been filtered with `bloginfo`.
+- **`get_bloginfo( 'language' )`**: Get the language code which may have been filtered with `bloginfo`.
+- **`get_bloginfo( 'name' )`**: Get the blog name (aka site title) which is usually used in the site title which may have been filtered with `bloginfo`.
+- **`get_bloginfo( 'version' )`**: Get the WP version which may have been filtered with `bloginfo`.
+- **`get_calendar( $initial = true, $echo = true )`**: Display or retrieve calendar markup with days that have posts as links which may have been filtered with `get_calendar`.
 - **`get_footer()`**: Tells WP to get the `footer.php` file and include it.
 - **`get_footer( $name )`**: Tells WP to get the `footer-{name}.php` file and include it.
 - **`get_header()`**: Tells WP to get the `header.php` file and include it.
@@ -382,15 +388,25 @@ Here is a list of some template tags.
 - **`post_class( $extra_classes = '', $post_id )`**:
 - **`single_post_title( $prefix )`**: Display the page title for post.
 - **`wp_login_form( $args )`**: Provides a simple login form for use anywhere within WordPress.
+- **`wp_login_url( $redirect = '', $force_reauth = false )`**: Returns the login URL which may have been filtered with `site_url` or `login_url`.
+- **`wp_loginout( $redirect = '', $echo = true )`**: Displays a login or logout link. May be filtered with `loginout`.
+- **`wp_logout_url( $redirect = '' )`**: Returns the logout URL which may have been filtered with `site_url` or `logout_url`. 
+- **`wp_lostpassword_url( $redirect = '' )`**: Returns the lost-password (aka forgot-password) URL which may have been filtered with `network_site_url` or `lostpassword_url`. 
+- **`wp_register( $before = '<li>', $after = '</li>', $echo = true )`**: Displays the registration or dashboard link. May be filtered with `register`.
+- **`wp_title( $sep = '&raquo;', $display = true, $seplocation = '' )`**: Display or retrieve page title which may have been filtered by `wp_title`. (Yoast SEO likely has filtered this.)
 
 **Loop-Only Template Tags**
 
+- **`get_the_author()`**: Retrieve the author's display name of the current post which may have been filtered by `the_author`.
+- **`get_the_author_link()`**: Retrieve the author's display name as a link if the author has a URL set.
 - **`next_post()`**:
 - **`post_class( $extra_classes = '' )`**:
 - **`previous_post()`**:
+- **`the_author()`**: Display the author's display name of the current post which may have been filtered by `the_author`.
 - **`the_content( $more_link_text = null, $strip_teaser )`**:
 - **`the_date( $date_format, $before = '', $after = '' )`**:
 - **`the_excerpt()`**:
+- **`get_the_ID()`**:
 - **`the_ID()`**:
 - **`the_meta()`**:
 - **`the_shortlink( $text = __( 'This is the short link.' ), $title = '', $before = '', $after = '' )`**:
