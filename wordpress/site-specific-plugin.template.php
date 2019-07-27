@@ -15,6 +15,11 @@ if (!defined('SSP__DIRNAME')) {
 }
 define('SSP__PATH', plugin_dir_path(__FILE__));
 
+// Some actions you may want to remove:
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
+remove_action( 'wp_head', 'wp_generator' );
+
 function ssp__on_activation () {
   // TODO: Add options (optional).
   // TODO: Add tables (optional).
