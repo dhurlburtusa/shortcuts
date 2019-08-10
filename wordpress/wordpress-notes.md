@@ -299,6 +299,15 @@ A theme can choose which post formats it supports by calling `add_theme_support`
 * Use [custom post types]
 * Use [custom taxonomies]
 
+**Quicktags**
+
+See https://codex.wordpress.org/Quicktags_API.
+
+- `<!--more-->`, see https://developer.wordpress.org/reference/functions/get_extended/, https://developer.wordpress.org/reference/functions/get_the_content/
+- `<!--more Some text-->`
+- `<!--nextpage-->`, see https://developer.wordpress.org/reference/functions/wp_link_pages/
+- `<!--noteaser-->`, see https://developer.wordpress.org/reference/functions/get_the_content/
+
 
 [custom fields]: https://codex.wordpress.org/Custom_Fields
 [custom post types]: https://codex.wordpress.org/Custom_Post_Types
