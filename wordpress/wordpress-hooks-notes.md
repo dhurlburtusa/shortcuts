@@ -13,3 +13,19 @@
 | `wp_enqueue_scripts`          |       |     ✓     |       |
 | `wp_head`                     |       |     ✓     |       |
 | `wtf__document_init`          |       |     ✓     |       |
+
+
+## Filters
+
+| Name                                  | Admin | Non-Admin | Notes |
+| ------------------------------------- | ----- | --------- | ----- |
+| `body_class`                          |       |     ✓     |       |
+| `dynamic_sidebar_params`              |   ✓?  |     ✓?    |       |
+| `excerpt_more`                        |   ✓   |     ✓     |       |
+| `nav_menu_link_attributes`            |       |     ✓     |       |
+| `widget_tag_cloud_args`               |   ✓?  |     ✓?    |       |
+| `wp_calculate_image_sizes`            |   ✓   |     ✓     |       |
+| `wp_get_attachment_image_attributes`  |   ✓   |     ✓     |       |
+| `wp_nav_menu_objects`                 |       |     ✓     |       |
+| `wp_resource_hints`                   |   ✓   |     ✓     |       |
+| `wtf__document_body_content_tpl_name` |       |     ✓     |       |
