@@ -20,10 +20,10 @@
 | Name                                  | Admin | Non-Admin | Notes |
 | ------------------------------------- | ----- | --------- | ----- |
 | `body_class`                          |       |     ✓     |       |
-| `dynamic_sidebar_params`              |   ✓?  |     ✓?    |       |
+| `dynamic_sidebar_params`              |   ✓   |     ✓     |       |
 | `excerpt_more`                        |   ✓   |     ✓     |       |
 | `nav_menu_link_attributes`            |       |     ✓     |       |
-| `widget_tag_cloud_args`               |   ✓?  |     ✓?    |       |
+| `widget_tag_cloud_args`               |       |     ✓     |       |
 | `wp_calculate_image_sizes`            |   ✓   |     ✓     |       |
 | `wp_get_attachment_image_attributes`  |   ✓   |     ✓     |       |
 | `wp_nav_menu_objects`                 |       |     ✓     |       |
