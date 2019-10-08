@@ -7,4 +7,4 @@
 
 - Remove transients.
   + They likely have stale or incorrect data.
-  + Can use (Transients Manager Plugin)[https://wordpress.org/plugins/transients-manager/].
+  + Can use [Transients Manager Plugin](https://wordpress.org/plugins/transients-manager/).
