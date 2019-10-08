@@ -135,3 +135,11 @@ The following is a select list of options from the `options` table.
 | `time_format`     | g:i a                | Default time format. |
 
 See https://codex.wordpress.org/Option_Reference for more details.
+
+## Backing Up/Exporting
+
+```sh
+sudo mysqldump {database_name} > {database_name}.sql
+```
+
+Note: For some reason when I tried to import it using MySQL Workbench, it complained that it was not UTF-8 encoded. I simply opened it up in VS Code, made sure the editor encoding was set to UTF-8, and saved it.
