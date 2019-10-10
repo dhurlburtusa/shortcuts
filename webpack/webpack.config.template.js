@@ -18,6 +18,14 @@ const webpack = require('webpack')
 const name = undefined
 
 /*
+ *
+ */
+const mode = undefined // Defaults to 'production'.
+// const mode = 'development'
+// const mode = 'production'
+// const mode = 'none'
+
+/*
  * The base directory, an absolute path, for resolving entry points and loaders
  * from configuration.  By default the current directory is used, but it's
  * recommended to pass a value in your configuration.  This makes your
@@ -432,6 +440,7 @@ const config = {
   context,
   entry,
   externals,
+  mode,
   module: loaders,
   name,
   output,
