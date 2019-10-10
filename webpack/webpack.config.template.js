@@ -429,16 +429,16 @@ const resolve = undefined
 const target = undefined
 
 const config = {
-  context: context,
-  entry: entry,
-  externals: externals,
+  context,
+  entry,
+  externals,
   module: loaders,
-  name: name,
-  output: output,
-  performance: performance,
-  plugins: plugins,
-  resolve: resolve,
-  target: target,
+  name,
+  output,
+  performance,
+  plugins,
+  resolve,
+  target,
 }
 
 module.exports = config
