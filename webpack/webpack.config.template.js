@@ -431,8 +431,8 @@ const target = undefined
 const config = {
   context: context,
   entry: entry,
-  module: loaders,
   externals: externals,
+  module: loaders,
   name: name,
   output: output,
   performance: performance,
