@@ -11,6 +11,13 @@ const webpack = require('webpack')
  */
 
 /*
+ * The name of the configuration. May be used when multiple configurations are
+ * defined. For example, if you pass a name to the `--config-name` CLI option,
+ * Webpack will only build that specific configuration.
+ */
+const name = undefined
+
+/*
  * The base directory, an absolute path, for resolving entry points and loaders
  * from configuration.  By default the current directory is used, but it's
  * recommended to pass a value in your configuration.  This makes your
@@ -426,6 +433,7 @@ const config = {
   entry: entry,
   module: loaders,
   externals: externals,
+  name: name,
   output: output,
   performance: performance,
   plugins: plugins,
