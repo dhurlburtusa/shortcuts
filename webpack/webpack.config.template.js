@@ -452,6 +452,37 @@ const config = {
 
 module.exports = config
 
+// A Webpack configuration may be a function. See https://webpack.js.org/configuration/configuration-types/#exporting-a-function for details.
+/**
+ * @param {Object|String|Array<Object|String>} env - The environment options. See
+ *   https://webpack.js.org/api/cli/#environment-options and
+ *   https://webpack.js.org/guides/environment-variables/ for details.
+ * @param {Object} argv - An options map. From what I have read, it sounds like these
+     12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ *   come from many of the command line options. It is stated in the Webpack
+ *   documentation that command-line options override configuration options. So, I am
+ *   not sure the benefit of using `argv` is if it will just be overridden. More
+ *   investigation is required.
+ */
+const configFn = (env, argv) {
+  const { /* Depends on how the command-line was called. */ } = env;
+  const option1 = argv['option1'];
+  const optimizeMinimize = argv['optimize-minimize'];
+
+  const config = {
+    // A standard Webpack configuration object.
+  }
+  // Or
+  const config = new Promise((resolve, reject) => {
+    resolve({
+      // A standard Webpack configuration object.
+    })
+  })
+  return config
+}
+
+module.exports = configFn
+
 // You can also setup more than one configuration.  All configurations will be
 // built.  See https://webpack.js.org/configuration/configuration-types/#exporting-multiple-configurations
 // for details.
