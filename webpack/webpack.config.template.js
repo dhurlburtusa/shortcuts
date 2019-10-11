@@ -91,6 +91,23 @@ const externals = undefined
  * @param {!Object=}
  */
 const resolve = undefined
+const resolve = {
+  alias: {
+    // The following is a nice way to use absolute imports of application code.
+    //
+    //     import Foo from 'App/components/Foo'
+    //
+    // Instead of something like the following depending on where its being imported.
+    //
+    //     import Foo from '../components/Foo'
+    //
+    App: context,
+    // All importing the `bar` module as `foo` instead.
+    foo: 'bar',
+  },
+  modules: ['node_modules'], // The default.
+  modules: [context, 'node_modules'],
+}
 
 /*
  * Because JavaScript can be written for both server and browser, Webpack offers
