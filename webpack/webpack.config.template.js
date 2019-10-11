@@ -522,7 +522,7 @@ module.exports = config
  *   not sure the benefit of using `argv` is if it will just be overridden. More
  *   investigation is required.
  */
-const configFn = (env, argv) {
+const configFn = (env, argv) => {
   const { /* Depends on how the command-line was called. */ } = env;
   const option1 = argv['option1'];
   const optimizeMinimize = argv['optimize-minimize'];
