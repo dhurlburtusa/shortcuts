@@ -83,6 +83,30 @@ const externals = undefined
 // }
 
 /*
+ * These options change how modules are resolved. Webpack provides reasonable
+ * defaults, but it is possible to change the resolving in detail. Needing to
+ * change the defaults is not common.  See
+ * https://webpack.js.org/configuration/resolve/ for details.
+ *
+ * @param {!Object=}
+ */
+const resolve = undefined
+
+/*
+ * Because JavaScript can be written for both server and browser, Webpack offers
+ * multiple deployment targets that you can set in your Webpack configuration.
+ *
+ * See https://webpack.js.org/configuration/target/ for details.
+ *
+ * @param {string=} [target='web'] - May be one of `'async-node'`,
+ *   `'electron-main'`, `'electron-renderer'`, `'node'`, `'node-webkit'`,
+ *   `'web'`, or `'webworker'`.
+ * @param {function (compiler): string=} target - Set it to a function if none of
+ *   the predefined targets from the list above meet your needs.
+ */
+const target = undefined
+
+/*
  * These options determine how the different types of modules (whether JavaScript,
  * CSS, etc) within a project will be treated/processed/handled.
  *
@@ -413,30 +437,6 @@ const plugins = [
     // ...
   }),
 ]
-
-/*
- * These options change how modules are resolved.  webpack provides reasonable
- * defaults, but it is possible to change the resolving in detail.  Needing to
- * change the defaults is not common.  See
- * https://webpack.js.org/configuration/resolve/ for details.
- *
- * @param {!Object=}
- */
-const resolve = undefined
-
-/*
- * Because JavaScript can be written for both server and browser, webpack offers
- * multiple deployment targets that you can set in your webpack configuration.
- *
- * See https://webpack.js.org/configuration/target/ for details.
- *
- * @param {string=} [target='web'] - May be one of `'async-node'`,
- *   `'electron-main'`, `'electron-renderer'`, `'node'`, `'node-webkit'`,
- *   `'web'`, or `'webworker'`.
- * @param {function (compiler): string=} target - Set it to a function if none of
- *   the predefined targets from the list above meet your needs.
- */
-const target = undefined
 
 const config = {
   context,
