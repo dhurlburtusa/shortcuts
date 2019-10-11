@@ -46,7 +46,9 @@ const context = path.resolve(__dirname, 'src')
  *
  * @param {string} entry - The single entry point.  It will have a chunk name of
  *   `'main'`.
- * @param {string[]} entry - TODO: Determine what happens in this case.
+ * @param {string[]} entry - All items will be processed meaning each will have its
+ *   own dependency graph. However, when `output.library` is used, only the last
+ *   module in the array will be exposed. It will have a chunk name of `'main'`.
  * @param {!Object<string|string[]>} entry - An object defining multiple
  *   entrypoints.  Each key is the name of each chunk.
  * @param {function (): string|string[]|!Object<string|string[]>} entry - A
