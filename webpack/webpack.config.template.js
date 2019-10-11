@@ -198,6 +198,11 @@ const loaders = {
        */
 
       /*
+       * @param {Condition}
+       */
+      issuer: undefined,
+
+      /*
        * Shorthand for `resource.test`.
        *
        * @param {Condition}
@@ -217,6 +222,7 @@ const loaders = {
       exclude: undefined,
 
       /*
+       * Longhand for `Rule.test`, `Rule.include`, `Rule.exclude`.
        * @param {Condition}
        */
       resource: {
@@ -228,15 +234,26 @@ const loaders = {
         not: [],
       },
       /*
+       * Could be used to treat imports with a "query" differently.
+       *
        * @param {Condition}
        */
       resourceQuery: undefined,
+      // Could be used on CSS imports to declare that the CSS should be inlined.
+      resourceQuery: /inline/,
+
+      // Meta:
 
       /*
-       * @param {Condition}
+       * Aids with tree-shaking. See
+       * https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free
+       * for more info.
        */
-      issuer: undefined,
-
+      sideEffects: false,
+      sideEffects: [
+        'glob',
+      ],
+      
       // Results:
 
       /*
@@ -245,9 +262,14 @@ const loaders = {
       enforce: undefined,
 
       /*
+       * A shortcut for `Rule.use: [ { loader } ]`.
        * @param {string}
        */
       loader: undefined,
+      /*
+       * A shortcut for `Rule.use: [ { options } ]`.
+       * @param {Object}
+       */
       options: {},
 
       use: [
@@ -259,14 +281,31 @@ const loaders = {
           /*
            * @param {Object=}
            */
-          options: {},
-        }
+          options: {
+            // ident: 'some-unique-identifier', // Almost never needed.
+          },
+        },
+        // May use a function instead
+        ({ compiler, issuer, realResource, resource }) => {
+          // ...
+          return {
+            loader: 'foo-loader',
+            options: { /* ... */ },
+          }
+        },
       ],
 
       /*
        * @param {Object=}
        */
       parser: undefined,
+
+      /*
+       * See https://webpack.js.org/configuration/module/#ruletype for more info.
+       *
+       * @param {'javascript/auto'|'javascript/dynamic'|'javascript/esm'|'json'|'webassembly/experimental'}
+       */
+      type: undefined,
 
       // Nested Rules:
 
@@ -276,6 +315,7 @@ const loaders = {
       oneOf: undefined,
 
       /*
+       * An array of Rules that is also used when the Rule matches.
        * @param {Rule[]=}
        */
       rules: undefined,
