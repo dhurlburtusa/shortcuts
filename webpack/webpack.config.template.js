@@ -83,14 +83,14 @@ const externals = undefined
 // }
 
 /*
- * These options determine how the different types of modules within a project will
- * be treated.
+ * These options determine how the different types of modules (whether JavaScript,
+ * CSS, etc) within a project will be treated/processed/handled.
  *
  * @param {?Object=}
  */
 const loaders = {
   /*
-   * Prevent webpack from parsing any files matching the given regular
+   * Prevents Webpack from parsing any files matching the given regular
    * expression(s).
    *
    * @param {!RegExp=|!RegExp[]=|function (string): boolean=}
@@ -98,11 +98,11 @@ const loaders = {
   noParse: /jquery|lodash/,
 
   /*
-   * An array of rules which are matched to requests when modules are created.
-   * These rules can modify how the module is created.  They can apply loaders to
-   * the module, or modify the parser.
+   * An array of `Rule`s which are matched to requests when modules are created.
+   * These rules can modify how the module is created. They can apply loaders to
+   * the module or modify the parser.
    *
-   * A Rule can be separated into three parts — Conditions, Results, and nested
+   * A `Rule` can be separated into three parts — Conditions, Results, and nested
    * Rules.
    *
    * **Rule Conditions**
