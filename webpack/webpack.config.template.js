@@ -458,7 +458,6 @@ module.exports = config
  *   https://webpack.js.org/api/cli/#environment-options and
  *   https://webpack.js.org/guides/environment-variables/ for details.
  * @param {Object} argv - An options map. From what I have read, it sounds like these
-     12345678901234567890123456789012345678901234567890123456789012345678901234567890
  *   come from many of the command line options. It is stated in the Webpack
  *   documentation that command-line options override configuration options. So, I am
  *   not sure the benefit of using `argv` is if it will just be overridden. More
