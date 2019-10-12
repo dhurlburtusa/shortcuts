@@ -532,8 +532,13 @@ const configFn = (env, argv) => {
   }
   // Or
   const config = new Promise((resolve, reject) => {
+    const bail = argv.bail === null ? false : argv.bail
+    const mode = argv.mode || 'production'
     resolve({
       // A standard Webpack configuration object.
+      bail,
+      mode,
+      ...
     })
   })
   return config
