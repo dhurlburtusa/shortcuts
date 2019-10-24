@@ -27,6 +27,11 @@ See [Plugins Notes](https://github.com/dhurlburtusa/shortcuts/blob/master/wordpr
 See [Themes Notes](https://github.com/dhurlburtusa/shortcuts/blob/master/wordpress/wordpress-themes-notes.md).
 
 
+## WP Cron
+
+See [Cron Notes](https://github.com/dhurlburtusa/shortcuts/blob/master/wordpress/wordpress-cron-notes.md).
+
+
 ## Debugging
 
 In `wp-config.php`, you can define the following PHP variables.
