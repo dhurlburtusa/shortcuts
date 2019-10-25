@@ -70,3 +70,11 @@ Cron information is stored in the `cron` option in the `wp_options` table.
 - https://developer.wordpress.org/reference/hooks/pre_unschedule_event/
 - https://developer.wordpress.org/reference/hooks/pre_unschedule_hook/
 - https://developer.wordpress.org/reference/hooks/schedule_event/
+
+**Running WP-Cron**
+
+To run WP-Cron, regardless of whether `DISABLE_WP_CRON` is set to true, hit the https://domain.com/wp-cron.php?doing_wp_cron URL.
+
+```sh
+wget -q -O - https://domain.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1
+```
