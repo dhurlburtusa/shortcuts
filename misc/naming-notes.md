@@ -1,4 +1,6 @@
 # Naming Notes
 
-- logged in vs authenticated
+**Ideas**
 
+- logged in vs authenticated
+- aside vs sidebar
