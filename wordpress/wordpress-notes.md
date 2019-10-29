@@ -250,13 +250,13 @@ See http://wpengineer.com/2500/wordpress-dropins/ for more details.
 * `wp-content/suspended.php` (if multisite)
 
 
-## Custom Post Types
+## Available Post Types
 
 I don't know the complete, accurate history of WordPress, but in the beginning
 there were just posts.  Then pages where added.  Instead of making pages a
 first-class concept, posts were extended by having different types.  Blogs posts
 got the `post` type.  Pages got the `page` type.  Fast forward to today and
-WordPress comes with several built-in post types.
+WordPress comes with several built-in post types as listed below.
 
 * Attachment (`attachment`)
 * Custom CSS (`custom_css`)
@@ -266,6 +266,7 @@ WordPress comes with several built-in post types.
 * Revision (`revision`)
 * Nav Menu (`nav_menu_item`)
 * WP Block (`wp_block`)
+* WP Template (`wp_template`) (since v5.3)
 
 
 ## Available Post Formats
