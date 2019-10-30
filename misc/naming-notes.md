@@ -7,3 +7,4 @@
 - regions vs sections (in HTML context)
 - site header vs page header (in HTML context)
 - site footer vs page footer (in HTML context)
+- variation vs version
