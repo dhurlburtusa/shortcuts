@@ -307,7 +307,7 @@ A theme can choose which post formats it supports by calling `add_theme_support`
 
 **Navigation Menus**
 
-- The navigation menus are stored in the `wp_term_taxonomy` table with a `taxonomy` of `nav_menu`.
+- The navigation menus are stored in the `wp_term_taxonomy` table with a `taxonomy` of `nav_menu` and in the `wp_term` table joined to the `wp_term_taxonomy` table by `term_id`.
 - The menu items ares stored in the `wp_posts` table with a `post_type` of `nav_menu_item`.
 
 **Quicktags**
