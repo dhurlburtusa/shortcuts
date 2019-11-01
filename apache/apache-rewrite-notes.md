@@ -15,4 +15,5 @@ RewriteRule pattern substitution [flags]
 - `flags`
 	+ `NC`
 		* Makes rule case insensitive.
-
+	+ `QSA`
+		* Appends query string to `substitution`.
