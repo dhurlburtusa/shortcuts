@@ -1,5 +1,6 @@
 # Apache Rewrite Notes
 
+See http://httpd.apache.org/docs/current/mod/mod_rewrite.html for details.
 
 ## RewriteRule
 
