@@ -795,7 +795,7 @@ PHP has many functions available.  See http://php.net/manual/en/funcref.php for
 details.
 
 
-## PHP 5 Classes
+## PHP Classes
 
 ```php
 
@@ -804,6 +804,9 @@ namespace NamespaceName {
   [abstract | final] class ClassName [extends OtherClassName] [implements SomeInterface[, SomeOtherInterface]] {
 
     const CONSTANT = 'constant value';
+    // As of PHP 7.1.0, may provide visibility modifiers.
+    public const CONSTANT = 'constant value';
+    private const CONSTANT = 'constant value';
 
     public static $staticVar = ...;
     private static $staticVar = ...;
@@ -811,6 +814,7 @@ namespace NamespaceName {
     public static function staticMethodName(...) {
       ...
       self::$staticVar
+      self::CONSTANT
     }
 
     /**
@@ -827,6 +831,7 @@ namespace NamespaceName {
     private static function staticMethodName(...) {
       ...
       self::$staticVar
+      self::CONSTANT
     }
 
     // Properties:
@@ -848,6 +853,7 @@ namespace NamespaceName {
       parent::__construct(...);
       ...
       self::$staticVar
+      self::CONSTANT
     }
 
     function __destruct() {
@@ -992,6 +998,9 @@ namespace NamespaceName {
 
 // Calling a static method:
 ClassName::staticMethodName(...);
+
+// Accessing the constant:
+ClassName::CONSTANT;
 
 // Instantiating an object of a particular class:
 $var = new ClassName;
