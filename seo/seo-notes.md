@@ -88,3 +88,11 @@ used in titles, text, and metadata.
 ## Factors that may Affect Search Ranks
 
 * Better PageSpeed score.
+
+**On-page Factors**
+
+On-page factors all have to do with elements of your own website. They include technical set-up, the quality of your code, textual, and visual content, and user-friendliness of your site.
+
+**Off-page Factors**
+
+Off-page factors include things like links from other websites, social media attention, and other marketing activities outside your own website.
