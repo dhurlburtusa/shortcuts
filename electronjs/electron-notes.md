@@ -18,3 +18,14 @@ Since Electron uses Chromium for displaying web pages, Chromium's multi-process 
 The main process creates web pages by creating BrowserWindow instances. Each BrowserWindow instance runs the web page in its own renderer process. When a BrowserWindow instance is destroyed, the corresponding renderer process is also terminated.
 
 In web pages, calling native GUI related APIs is not allowed because managing native GUI resources in web pages is very dangerous and it is easy to leak resources. If you want to perform GUI operations in a web page, the renderer process of the web page must communicate with the main process to request that the main process perform those operations.
+
+
+## Using Electron APIs
+
+Electron offers a number of APIs that support the development of a desktop application in both the main process and the renderer process. In both processes, you'd access Electron's APIs by requiring its included module:
+
+```js
+const electron = require('electron')
+```
+
+See https://electronjs.org/docs/tutorial/application-architecture#using-electron-apis for details.
