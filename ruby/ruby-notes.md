@@ -12,6 +12,11 @@ if __FILE__ == $0
 end
 ```
 
+**Useful Reads**
+
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/
+
+
 ## Resources
 
 - [Bundler](https://bundler.io/)
