@@ -30,6 +30,7 @@ end
 **Useful Reads**
 
 - https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/
+- https://www.ruby-lang.org/en/libraries/
 
 
 ## Resources
