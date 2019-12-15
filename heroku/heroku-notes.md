@@ -7,3 +7,14 @@ details.
 
 The interface to Heroku primarily consists of a web-based dashboard and the
 `heroku` CLI.
+
+
+## Uncategorized
+
+**App's First Deployment**
+
+- `heroku login`
+- `cd path/to/app/`
+- `heroku create`
+- `git push heroku master`
+- `heroku open`
