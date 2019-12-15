@@ -18,3 +18,14 @@ The interface to Heroku primarily consists of a web-based dashboard and the
 - `heroku create`
 - `git push heroku master`
 - `heroku open`
+
+**Associate a Git Repo with Heroku**
+
+- `heroku login`
+- `heroku git:remote -a <your-app-name>`
+
+**Scaling a Web App**
+
+- `heroku login`
+- `cd path/to/app/`
+- `heroku ps:scale web={n}`
