@@ -47,6 +47,12 @@ When Ruby gems are installed, the documentation is generated too. This increases
 echo "gem: --no-document" >> ~/.gemrc
 ```
 
+**Installation**
+
+```sh
+gem install rails
+```
+
 
 ## Uncategorized
 
