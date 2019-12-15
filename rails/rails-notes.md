@@ -39,6 +39,14 @@ Now that the .c and .h files are available to the `sqlite3` Ruby gem, it should 
 gem install rails
 ```
 
+**Skipping Installation of Ruby Documentation**
+
+When Ruby gems are installed, the documentation is generated too. This increases the time to complete installation of the gem and uses more disk space. To prevent the installation of the documentation but not have to remember to disable it everytime `gem install` is called, run the following:
+
+```sh
+echo "gem: --no-document" >> ~/.gemrc
+```
+
 
 ## Uncategorized
 
