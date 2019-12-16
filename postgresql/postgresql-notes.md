@@ -1,6 +1,17 @@
 # PostgreSQL Notes
 
 
+## Installation
+
+**Ubuntu**
+
+See https://www.postgresql.org/download/linux/ubuntu/ and/or https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04.
+
+**Windows**
+
+See https://www.postgresql.org/download/windows/.
+
+
 ## Server Administration
 
 The PostgreSQL daemon is run under a separate user account. This user account should only own the data that is managed by the server, and should not be shared with other daemons. The user name `postgres` is often used.
