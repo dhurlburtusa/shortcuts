@@ -3,6 +3,24 @@
 Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
 
 
+## Documentation
+
+**Online**
+
+[Ruby-Doc.org](https://ruby-doc.org/)
+
+**Offline**
+
+Use the `ri` command that comes with Ruby.
+
+```sh
+ri
+ri Object
+ri Object.static_method
+ri Object#instance_method
+```
+
+
 ## Misc
 
 - Everything except nil and false is considered true.
