@@ -22,6 +22,58 @@ Before you can do anything, you must initialize a database storage area on disk.
 
 In file system terms, a database cluster is a single directory under which all data will be stored. This is some times known as the data directory or data area.
 
+### Starting/Reloading/Stopping Daemon
+
+In Ubuntu, you use `pg_ctlcluster` instead of `pg_ctl`.
+
+**General Syntax of `pg_ctlcluster`**
+
+```sh
+pg_ctlcluster {pg_version} {cluster_name} {command}
+```
+
+**Starting**
+
+```sh
+pg_ctlcluster {pg_version} {cluster_name} start
+# E.g., start the main cluster for v10
+pg_ctlcluster 10 main start
+```
+
+**Reloading**
+
+Used to re-read configuration changes.
+
+```sh
+pg_ctlcluster {pg_version} {cluster_name} reload
+# E.g., reload the main cluster for v10
+pg_ctlcluster 10 main reload
+```
+
+**Restarting**
+
+```sh
+pg_ctlcluster {pg_version} {cluster_name} restart
+# E.g., restart the main cluster for v10
+pg_ctlcluster 10 main restart
+```
+
+**Display Status**
+
+```sh
+pg_ctlcluster {pg_version} {cluster_name} status
+# E.g., Display status of the main cluster for v10
+pg_ctlcluster 10 main status
+```
+
+**Stopping**
+
+```sh
+pg_ctlcluster {pg_version} {cluster_name} stop
+# E.g., stop the main cluster for v10
+pg_ctlcluster 10 main stop
+```
+
 
 ## Environment Variables
 
