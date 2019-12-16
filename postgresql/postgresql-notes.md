@@ -16,5 +16,6 @@ In file system terms, a database cluster is a single directory under which all d
 
 | Name     | Description |
 | -------- | ----------- |
+| `PGDATA` | The path to the data directory. |
 | `PGHOST` | The host of the Postgres server. |
 | `PGPORT` | The post the Postgres server is listening on. |
