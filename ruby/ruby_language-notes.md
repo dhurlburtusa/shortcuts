@@ -31,6 +31,17 @@
 ```
 
 
+## Keywords
+
+```ruby
+__FILE__
+__LINE__
+alias
+```
+
+See https://ruby-doc.org/core-2.6.5/doc/keywords_rdoc.html for details.
+
+
 ## Variables
 
 - Ruby naming convention: snake_case.
