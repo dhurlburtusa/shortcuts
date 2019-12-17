@@ -21,6 +21,11 @@ ri Object#instance_method
 ```
 
 
+## Language
+
+See [Ruby Language Notes](./ruby_language-notes.md).
+
+
 ## Misc
 
 - Everything except nil and false is considered true.
