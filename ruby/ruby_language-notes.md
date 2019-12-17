@@ -6,6 +6,17 @@
 - An almost 100% object-oriented programming language.
 - No primitives.
 
+**Integers**
+
+```ruby
+# Math Operations
+4 + 2
+4 - 2
+4 / 2
+4 * 2
+4 ** 2 # four squared
+```
+
 
 ## Variables
 
