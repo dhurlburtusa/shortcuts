@@ -72,5 +72,11 @@ rails generate controller {Controller_name} {action_name}
 rails generate controller Example index
 ```
 
+**Routes info During Development**
+
+- http://localhost:3000/rails/info/routes
+- `rails routes`
+
+
 [sqlite3]: https://www.sqlite.org/
 [yarn]: https://yarnpkg.com/
