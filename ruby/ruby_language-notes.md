@@ -9,12 +9,25 @@
 **Integers**
 
 ```ruby
+42.class  #=> Integer (Fixnum in Ruby <2.4)
 # Math Operations
 4 + 2
 4 - 2
 4 / 2
 4 * 2
 4 ** 2 # four squared
+```
+
+**Floats**
+
+```ruby
+4.2.class  #=> Float
+# Math Operations
+4.0 + 2
+4.0 - 2
+4.0 / 2
+4.0 * 2
+4.0 ** 2 # four squared
 ```
 
 
