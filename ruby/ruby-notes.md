@@ -79,6 +79,25 @@ b.kind_of? M  #=> true
 0.nil?  #=> false
 1.nil?  #=> false
 false.nil?  #=> false
+
+# `freeze`
+foo.freeze
+
+# Reflection
+foo.methods
+foo.private_methods
+foo.protected_methods
+foo.public_methods
+foo.singleton_methods
+foo.respond_to? :bar
+
+# Conversions
+foo.to_a  # Convert to array (available on Enumerable, Hash, Struct, etc)
+foo.to_f  # Convert to float (available on Integer, String, etc)
+foo.to_h  # Convert to hash (available on Array, Enumerable, Struct, etc)
+foo.to_i  # Convert to integer (available on Float, String, Time, etc)
+foo.to_s  # Convert to string (available on all objects)
+foo.to_sym  # Convert to symbol (available on Strin, etc)
 ```
 
 
