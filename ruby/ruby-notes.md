@@ -26,6 +26,62 @@ ri Object#instance_method
 See [Ruby Language Notes](./ruby_language-notes.md).
 
 
+## Commonly Used Object Methods
+
+```ruby
+# `new`, `object_id`
+class A; end
+
+a1 = A.new
+a2 = A.new
+
+a1.object_id == a2.object_id  #=> false
+
+# `class`
+1.class #=> Integer
+
+# `===`, `==`, `equal?`, `eql?`
+obj1 === obj2 # Case equality, i.e., used with `case` statements.
+obj1 == obj2  # Same object reference or equivalency. Depends on object implementation.
+obj1.equal? obj2  # Same object reference (aka equality).
+obj1.eql? obj2  # Same hash key.
+
+# `instance_of?`
+class A; end
+class B < A; end
+class C < B; end
+
+b = B.new
+b.instance_of? A  #=> false
+b.instance_of? B  #=> true
+b.instance_of? C  #=> false
+
+# `is_a?` and `kind_of?`
+module M; end
+class A
+  include M
+end
+class B < A; end
+class C < B; end
+
+b = B.new
+b.is_a? A #=> true
+b.is_a? B #=> true
+b.is_a? C #=> false
+b.is_a? M #=> true
+
+b.kind_of? A  #=> true
+b.kind_of? B  #=> true
+b.kind_of? C  #=> false
+b.kind_of? M  #=> true
+
+# `nil?`
+0.nil?  #=> false
+1.nil?  #=> false
+false.nil?  #=> false
+```
+
+
 ## Misc
 
 - Everything except nil and false is considered true.
