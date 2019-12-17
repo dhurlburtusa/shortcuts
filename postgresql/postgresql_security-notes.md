@@ -25,20 +25,31 @@ CREATE ROLE deployer WITH LOGIN PASSWORD 'asdf1234' CREATEDB CREATEROLE;
 The following are the statements/commands used in a `psql` session initiated with
 
 ```sh
-psql -U deployer -d postgres -h localhost -W
+psql -U postgres -d postgres -h localhost -W
 ```
 
 ```psql
 # Create our application role with no login privileges. It will be the owner of each database.
 CREATE ROLE rails_hello_app;
 
+# Allow deployer to have same privileges as application role. This will allow the deployer to migrate the application's database(s).
+GRANT rails_hello_app TO deployer;
+
 # Create our development and test databases:
 CREATE DATABASE rails_hello_app_development WITH OWNER rails_hello_app;
 
 CREATE DATABASE rails_hello_app_test WITH OWNER rails_hello_app;
 
+# Create the read/write role with login privilege.
+CREATE ROLE rails_hello_app_rw WITH LOGIN PASSWORD 'asdf1234';
+
+# Create the read-only role with login privilege.
+CREATE ROLE rails_hello_app_ro WITH LOGIN PASSWORD 'asdf1234';
+
 # Connect to the development database. The statements that follow will apply to this database.
 \c rails_hello_app_development
+
+ALTER SCHEMA public OWNER TO rails_hello_app;
 
 # Revoke all privileges from the PUBLIC role from the public schema.
 REVOKE ALL ON SCHEMA public FROM PUBLIC;
@@ -46,16 +57,10 @@ REVOKE ALL ON SCHEMA public FROM PUBLIC;
 # Grant all privileges to the application role on the public schema.
 GRANT ALL ON SCHEMA public TO rails_hello_app;
 
-# Create the read/write role with login privilege.
-CREATE ROLE rails_hello_app_rw WITH LOGIN PASSWORD 'asdf1234';
-
 # Grant the read/write role read/write privileges:
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO rails_hello_app_rw;
 
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO rails_hello_app_rw;
-
-# Create the read-only role with login privilege.
-CREATE ROLE rails_hello_app_ro WITH LOGIN PASSWORD 'asdf1234';
 
 # Grant the read-only role read-only privileges:
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO rails_hello_app_ro;
@@ -65,22 +70,19 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO rails_hello_app_ro;
 # Switch to the test database and repeat:
 \c rails_hello_app_test
 
+ALTER SCHEMA public OWNER TO rails_hello_app;
+
+# Revoke all privileges from the PUBLIC role from the public schema.
 REVOKE ALL ON SCHEMA public FROM PUBLIC;
 
+# Grant all privileges to the application role on the public schema.
 GRANT ALL ON SCHEMA public TO rails_hello_app;
-
-CREATE ROLE rails_hello_app_rw WITH LOGIN PASSWORD 'asdf1234';
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO rails_hello_app_rw;
 
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO rails_hello_app_rw;
 
-CREATE ROLE rails_hello_app_ro WITH LOGIN PASSWORD 'asdf1234';
-
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO rails_hello_app_ro;
 
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO rails_hello_app_ro;
-
-# Allow deployer to have same privileges as application role. This will allow the deployer to migrate the application's database(s).
-GRANT rails_hello_app TO deployer;
 ```
