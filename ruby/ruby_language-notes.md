@@ -37,3 +37,7 @@ x = 1
 | None      | local    | `foo`   |
 | None      | block    | `foo`   |
 
+
+## Operations
+
+- Uses standard math rules: parenthesis, exponents, multiplication, division, addition, and subtraction (PEMDAS).
