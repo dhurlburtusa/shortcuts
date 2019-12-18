@@ -114,7 +114,7 @@ foo.to_sym  # Convert to symbol (available on Strin, etc)
 - Blocks are Objects, they just don’t know it yet.
 - Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls.
 - The `Kernel` module methods may be called without a receiver and thuse can be be called in functional form.
-
+- Recommended shebang: `#!/usr/bin/env ruby`
 
 ## To be Categorized
 
