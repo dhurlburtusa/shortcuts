@@ -1,6 +1,11 @@
 # Rails Runtime Notes
 
 
+## Configuration
+
+See https://guides.rubyonrails.org/configuring.html for details.
+
+
 ## Constants
 
 | Name               | Description |
