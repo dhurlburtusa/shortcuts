@@ -72,10 +72,15 @@ rails generate controller {Controller_name} {action_name}
 rails generate controller Example index
 ```
 
-**Get Information about the Rails App**
+**Getting Information about the Rails App**
 
 ```sh
 rails about
+rails initializers
+rails middleware
+rails routes
+rails stats
+rails time:zones
 ```
 
 **Routes info During Development**
