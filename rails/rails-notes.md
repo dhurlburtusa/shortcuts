@@ -62,6 +62,17 @@ gem install rails
 
 ## Uncategorized
 
+**Default Route**
+
+```ruby
+# config/routes.rb
+Rails.application.routes.draw do
+
+  get ':controller(/:action(/:id))'
+
+end
+```
+
 **Generate New App**
 
 ```sh
