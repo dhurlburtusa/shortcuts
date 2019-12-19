@@ -7,7 +7,8 @@ Ruby is a dynamic, open source programming language with a focus on simplicity a
 
 **Online**
 
-[Ruby-Doc.org](https://ruby-doc.org/)
+- [Ruby-Doc.org](https://ruby-doc.org/)
+- [RubyDoc.info](https://rubydoc.info/)
 
 **Offline**
 
