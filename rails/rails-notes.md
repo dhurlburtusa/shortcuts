@@ -1,6 +1,12 @@
 # Rails Notes
 
 
+## Documentation
+
+- https://guides.rubyonrails.org/
+- https://api.rubyonrails.org/
+
+
 ## Installing
 
 **Prerequisites**
