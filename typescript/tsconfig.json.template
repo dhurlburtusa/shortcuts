@@ -1,0 +1,50 @@
+{
+	"@comment extends": "See https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#configuration-inheritance-with-extends",
+	"extends": "./configs/ts-base",
+
+	"@comment compileOnSave": "See https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#compileonsave",
+	"compileOnSave": true,
+
+	"@comment compilerOptions": "See https://www.typescriptlang.org/docs/handbook/compiler-options.html",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": true,
+		"diagnostics": true,
+		"extendedDiagnostics": true,
+		"lib": [],
+		"module": "ESNext",
+		"newLine": "lf",
+		"removeComments": true,
+		"target": "ESNext",
+		"watch": true
+	},
+
+	"@comment files": "Takes a list of relative or absolute file paths.",
+	"files": [
+		"file1.ts",
+		"file2.ts",
+		...
+	]
+
+	"@comment include": "Takes a list of glob-like file patterns.",
+	"include": [
+		"src/**/*"
+	],
+
+	"@comment exclude": "Takes a list of glob-like file patterns.",
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	],
+
+	// See https://www.typescriptlang.org/docs/handbook/project-references.html.
+	"references": [
+		{
+			// The path property of each reference can point to a directory containing a
+			// `tsconfig.json` file, or to the config file itself (which may have any name).
+			"path": "./src",
+			"path": "./src/the-ts-config.json",
+		},
+	],
+}
