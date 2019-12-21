@@ -20,6 +20,15 @@ See http://www.typescriptlang.org/docs/handbook/basic-types.html for details.
 | Never         | `never`         |
 
 
+## Enums
+
+```ts
+enum Color {Red, Green, Blue}
+enum Color {Red = 1, Green, Blue}
+enum Color {Red = 1, Green = 2, Blue = 4}
+```
+
+
 ## Interfaces
 
 ```ts
