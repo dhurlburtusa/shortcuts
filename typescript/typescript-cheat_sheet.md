@@ -10,6 +10,7 @@ See http://www.typescriptlang.org/docs/handbook/basic-types.html for details.
 | `Boolean`     | `boolean`       |
 | `null`        | `null`          |
 | `Number`      | `number`        |
+| Object        | `object`        |
 | `String`      | `string`        |
 | Void          | `void`          |
 | `undefined`   | `undefined`     |
