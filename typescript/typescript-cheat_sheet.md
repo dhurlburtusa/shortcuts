@@ -39,3 +39,18 @@ interface Person {
   lastName: string;
 }
 ```
+
+
+## Type Assertions
+
+```ts
+let someValue: any = "this is a string";
+
+let strLength: number = (<string>someValue).length;
+```
+
+```ts
+let someValue: any = "this is a string";
+
+let strLength: number = (someValue as string).length;
+```
