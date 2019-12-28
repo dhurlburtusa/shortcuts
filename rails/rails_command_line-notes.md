@@ -3,10 +3,24 @@
 
 ## Generate
 
+### Controller
+
+```sh
+rails generate controller {ControllerName} [{action} ...{action}] [--template-engine=ENGINE_NAME]
+```
+
+**ENGINE_NAME**
+
+- `erb`
+- `haml`?
+- `liquid`?
+- `slim`?
+- `tilt`?
+
 ### Model
 
 ```sh
-rails generator model {Name} [field[:type][:index] field[:type][:index]] [--no-timestamps] [--primary-key-type=PRIMARY_KEY_TYPE]
+rails generate model {ModelName} [field[:type][:index] ...field[:type][:index]] [--no-timestamps] [--primary-key-type=PRIMARY_KEY_TYPE]
 ```
 
 **:type**
