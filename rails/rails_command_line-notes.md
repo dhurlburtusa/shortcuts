@@ -37,6 +37,7 @@ rails generate model {ModelName} [field[:type][:index] ...field[:type][:index]] 
 | `integer` |  |
 | `numeric` |  |
 | `primary_key` |  |
+| `references` |  |
 | `string` | `string{50}` |
 | `text` | `text{1000}` |
 | `time` |  |
