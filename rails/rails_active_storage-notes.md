@@ -4,6 +4,7 @@ Active Storage facilitates uploading files to a cloud storage service like Amazo
 
 Using Active Storage, an application can transform image uploads with ImageMagick, generate image representations of non-image uploads like PDFs and videos, and extract metadata from arbitrary files.
 
+See https://guides.rubyonrails.org/active_storage_overview.html for details.
 
 ## Setup
 
