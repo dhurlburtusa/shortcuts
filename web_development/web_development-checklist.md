@@ -48,6 +48,9 @@ against the grain.
       * See https://css-tricks.com/when-using-important-is-the-right-choice/
   + Etc
 * Development environment dependencies/requirements
+* Branch strategy?
+  + Git Flow
+  + Other?
 
 
 ## Web Security
