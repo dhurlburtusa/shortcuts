@@ -29,4 +29,4 @@ See https://www.odoo.com/documentation/13.0/setup/install.html#repository for re
 
 ## Deployment
 
-See https://www.odoo.com/documentation/13.0/setup/deploy.html for details.
+See https://www.odoo.com/documentation/13.0/setup/deploy.html and https://www.odoo.com/documentation/13.0/setup/cdn.html for details.
