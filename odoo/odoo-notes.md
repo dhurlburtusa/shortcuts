@@ -23,3 +23,5 @@ apt-get install postgresql -y
 Install wkhtmltopdf. See https://wkhtmltopdf.org/downloads.html to download the package.
 
 See https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg#install-a-package-from-the-local-filesystem for how to install a debian package.
+
+See https://www.odoo.com/documentation/13.0/setup/install.html#repository for remaining instructions.
