@@ -37,7 +37,7 @@ Encoding of CSS, URLs, HTML, HTML attributes, and JavaScript within each context
 
 - https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
-
+- https://github.com/OWASP/CheatSheetSeries/blog/master/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md
 
 ## Cross-Site Request Forgery (CSRF)
 
