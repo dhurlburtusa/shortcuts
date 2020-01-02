@@ -25,6 +25,13 @@ There are various vectors for XSS.
 	+ Stored attacks are those where the injected script is permanently stored on the target servers, such as in a database, in a message forum, visitor log, comment field, etc. The victim then retrieves the malicious script from the server when it requests the stored information.
 	+ A form of server-side XSS.
 
+XSS attacks always execute in the browser.
+
+The difference between Reflected/Stored XSS and DOM XSS is where the attack is added or injected into the application. With R/S XSS the attack is injected into the application during server-side processing of requests where untrusted input is dynamically added to HTML. For DOM XSS, the attack is injected into the application during runtime in the client directly.
+
+Escaping of user supplied data must be handled correctly in the four standard contexts: HTML, HTML, attributes, URL, and CSS.
+
+Encoding of CSS, URLs, HTML, HTML attributes, and JavaScript within each context must be handled correctly.
 
 **Useful Links**
 
