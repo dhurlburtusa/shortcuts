@@ -31,6 +31,9 @@ cookie, IP address, etc.  Therefore, if the user is authenticated to the site,
 the site cannot distinguish between the forged or legitimate request sent by the
 victim.
 
+Note: The impact of a successful CSRF attack is limited to the capabilities
+exposed by the vulnerable application.
+
 Note: XSS is not necessary for CSRF to work.  However, any cross-site scripting
 vulnerability can be used to defeat all CSRF mitigation techniques available in
 the market today except mitigation techniques that involve user interaction.
