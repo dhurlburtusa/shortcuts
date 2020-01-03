@@ -24,6 +24,15 @@ several security issues to keep in mind when developing.
 - https://www.owasp.org/index.php/Blind_SQL_Injection
 
 
+## Content Security Policy
+
+Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. By injecting the CSP headers from the server, the browser is aware and capable of protecting the user from dynamic calls that will load content into the page currently being visited.
+
+**Cons**
+
+Only newer browsers support CSP. Browsers that don't support it still work with servers that implement it, and vice-versa. See https://caniuse.com/#search=CSP.
+
+
 ## Cross-Site Scripting (XSS)
 
 There are various vectors for XSS.
