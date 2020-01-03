@@ -32,6 +32,8 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
 
 Only newer browsers support CSP. Browsers that don't support it still work with servers that implement it, and vice-versa. See https://caniuse.com/#search=CSP.
 
+See https://github.com/dhurlburtusa/shortcuts/blob/master/http/http-content_security_policy-notes.md for details.
+
 
 ## Cross-Site Scripting (XSS)
 
