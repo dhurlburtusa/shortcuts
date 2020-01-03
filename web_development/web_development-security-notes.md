@@ -6,6 +6,18 @@ several security issues to keep in mind when developing.
 
 ## SQL Injection
 
+**Prevention**
+
+- **Prepared Statements**
+	+ See https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Query_Parameterization_Cheat_Sheet.md for examples in various languages.
+- **Stored Procedures**
+- **Whitelist Input Validation**
+	+ See https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Input_Validation_Cheat_Sheet.md for more details.
+- **Escaping All User-Supplied Input**
+- **Least Privilege**
+	+ Use a readonly user for `SELECT` statements.
+	+ Can't create/drop tables, database, etc with any user in web app.
+
 **Useful Links**
 
 - https://www.owasp.org/index.php/SQL_Injection
