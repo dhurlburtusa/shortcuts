@@ -59,12 +59,23 @@ Unlike “simple requests” (discussed above), "preflighted" requests first sen
 Here are some of the request headers sent with an "preflighted" request.
 
 - `Origin`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin
 - `Access-Control-Request-Method`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method
 - `Access-Control-Request-Headers`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers
 
 Here are some of the response headers returned with a "preflighted" request.
 
+- `access-Control-Allow-Credentials`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
 - `Access-Control-Allow-Headers`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
 - `Access-Control-Allow-Methods`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
 - `Access-Control-Allow-Origin`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
+- `Access-Control-Expose-Headers`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers
 - `Access-Control-Max-Age`
+	+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age
