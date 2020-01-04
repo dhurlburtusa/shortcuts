@@ -21,5 +21,30 @@ sending the actual request with the actual HTTP request method.  Servers can
 also notify clients whether "credentials" (including Cookies and HTTP
 Authentication data) should be sent with requests.
 
-
 See https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS for details.
+
+
+## Simple Requests
+
+Some requests don’t trigger a CORS preflight. Those are called “simple requests” in this article, though the `Fetch` spec (which defines CORS) doesn’t use that term. A “simple request” is one that **meets all the following conditions**:
+
+- One of the allowed methods:
+	+ GET
+	+ HEAD
+	+ POST
+- Apart from the headers automatically set by the user agent (for example, `Connection`, `User-Agent`, or the other headers defined in the Fetch spec as a “forbidden header name”), the only headers which are allowed to be manually set are those which the Fetch spec defines as a “CORS-safelisted request-header”, which are:
+	+ `Accept`
+	+ `Accept-Language`
+	+ `Content-Language`
+	+ `Content-Type` (but note the additional requirements below)
+	+ `DPR`
+	+ `Downlink`
+	+ `Save-Data`
+	+ `Viewport-Width`
+	+ `Width`
+- The only allowed values for the Content-Type header are:
+	+ `application/x-www-form-urlencoded`
+	+ `multipart/form-data`
+	+ `text/plain`
+- No event listeners are registered on any `XMLHttpRequestUpload` object used in the request; these are accessed using the `XMLHttpRequest.upload` property.
+No `ReadableStream` object is used in the request.
