@@ -48,3 +48,23 @@ Some requests don’t trigger a CORS preflight. Those are called “simple reque
 	+ `text/plain`
 - No event listeners are registered on any `XMLHttpRequestUpload` object used in the request; these are accessed using the `XMLHttpRequest.upload` property.
 No `ReadableStream` object is used in the request.
+
+
+## Preflighted Requests
+
+Unlike “simple requests” (discussed above), "preflighted" requests first send an HTTP request by the `OPTIONS` method to the resource on the other domain, to determine if the actual request is safe to send. Cross-site requests are preflighted like this since they may have implications to user data.
+
+**Headers**
+
+Here are some of the request headers sent with an "preflighted" request.
+
+- `Origin`
+- `Access-Control-Request-Method`
+- `Access-Control-Request-Headers`
+
+Here are some of the response headers returned with a "preflighted" request.
+
+- `Access-Control-Allow-Headers`
+- `Access-Control-Allow-Methods`
+- `Access-Control-Allow-Origin`
+- `Access-Control-Max-Age`
