@@ -90,6 +90,11 @@ CSRF defenses can't be circumvented.
 - https://seclab.stanford.edu/websec/csrf/csrf.pdf
 
 
+## Security Headers
+
+See [HTTP Security Headers Notes](../http/http-security_headers-notes.md).
+
+
 ## Tools
 
 **Useful Links**
