@@ -1,0 +1,1 @@
+# Rails Asset Pipeline Notes
