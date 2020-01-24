@@ -18,3 +18,5 @@ Custom Shopify apps interact with the Shopify API on behalf of a single store. T
 **Private Apps**
 
 Private apps interact with the Shopify API on behalf of a single store. Private apps are created in the Shopify admin, and are not listed on the Shopify App Store. Private apps do not require a Shopify app review.
+
+Note: Developers can still create private apps, but custom apps are the recommended solution.
