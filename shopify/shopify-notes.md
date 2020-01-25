@@ -58,3 +58,14 @@ See https://help.shopify.com/en/manual/your-account/staff-accounts/create-staff-
 **Collaborator Account**
 
 See https://help.shopify.com/en/partners/dashboard/request-access and https://help.shopify.com/en/manual/your-account/staff-accounts/collaborator-accounts for details.
+
+
+## Storefront API
+
+The Storefront API gives you full creative control to build customized purchasing experiences for your customers.
+
+Using the Storefront API, you can:
+
+- Fetch data about products and collections.
+- Create unique checkout experiences with full control over the shopping cart.
+- Create new customers or modify existing ones, including address information.
