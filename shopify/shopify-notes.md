@@ -45,3 +45,16 @@ Credentials need to be generated from the Shopify admin and they are provided in
 Private apps can authenticate with Shopify by including the request header `X-Shopify-Access-Token: {access_token}`, where `{access_token}` is replaced by your private app's Admin API password.
 
 See https://help.shopify.com/en/api/getting-started/authentication/private-authentication for details.
+
+
+## Access
+
+There are several means to access a store's admin section. The owner or a staff member can access through logging in. A collaborator account can be granted.
+
+**Staff Members**
+
+See https://help.shopify.com/en/manual/your-account/staff-accounts/create-staff-accounts for details.
+
+**Collaborator Account**
+
+See https://help.shopify.com/en/partners/dashboard/request-access and https://help.shopify.com/en/manual/your-account/staff-accounts/collaborator-accounts for details.
