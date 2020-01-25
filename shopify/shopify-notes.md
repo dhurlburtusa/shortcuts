@@ -20,3 +20,28 @@ Custom Shopify apps interact with the Shopify API on behalf of a single store. T
 Private apps interact with the Shopify API on behalf of a single store. Private apps are created in the Shopify admin, and are not listed on the Shopify App Store. Private apps do not require a Shopify app review.
 
 Note: Developers can still create private apps, but custom apps are the recommended solution.
+
+
+## Authentication
+
+Before it can interact with the Shopify API, your app must provide the necessary authentication credentials in each HTTP request that it makes to Shopify. The way to provide these credentials depends on the type of app that you're developing. Shopify supports three different types of apps: public apps, custom apps, and private apps. Each app uses a specific authentication mechanism.
+
+**Public Apps**
+
+Credentials need to be generated from the Partner Dashboard and then they are used to implement OAuth. Public apps authenticate to Shopify by providing the `X-Shopify-Access-Token` header field in each HTTP request to the Shopify API.
+
+See https://help.shopify.com/en/api/getting-started/authentication/public-authentication for details.
+
+**Custom Apps**
+
+An installation link needs to be generated from the Partner Dashboard. The merchant uses the link to go through the OAuth process in order to install the app on their store. Custom apps authenticate to Shopify by providing the `X-Shopify-Access-Token` header in each HTTP request to the Shopify API.
+
+See https://help.shopify.com/en/api/getting-started/authentication/custom-authentication for details.
+
+**Private Apps**
+
+Credentials need to be generated from the Shopify admin and they are provided in the requests to Shopify. A private app can make authenticated requests to the Shopify Admin REST API using basic authentication or by including its Shopify access token in the request header.
+
+Private apps can authenticate with Shopify by including the request header `X-Shopify-Access-Token: {access_token}`, where `{access_token}` is replaced by your private app's Admin API password.
+
+See https://help.shopify.com/en/api/getting-started/authentication/private-authentication for details.
