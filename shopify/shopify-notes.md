@@ -69,3 +69,17 @@ Using the Storefront API, you can:
 - Fetch data about products and collections.
 - Create unique checkout experiences with full control over the shopping cart.
 - Create new customers or modify existing ones, including address information.
+
+The Storefront API can only be accessed using GraphQL.
+
+The Storefront API provides unauthenticated access to customers, checkouts, product collections, and other store resources.
+
+### Authentication
+
+To authenticate with the Storefront API as either a private or public app, you need to obtain a storefront access token with the unauthenticated access scopes. As a private app, you can obtain the token when creating a private app in the Shopify admin. As a public app, you need to obtain the token by using OAuth. You need to include the token in a request header to access the Storefront API:
+
+```
+X-Shopify-Storefront-Access-Token: < storefront-access-token >
+```
+
+See https://help.shopify.com/en/api/storefront-api/getting-started#storefront-api-authentication for details.
