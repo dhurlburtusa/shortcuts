@@ -11,13 +11,22 @@ You can create three different types of apps for Shopify stores: public, custom,
 
 A public Shopify app interacts with the Shopify API on behalf of multiple stores. All public apps need to go through Shopify’s review process.
 
+- Can be converted to a sales channel.
+- Created from the Partner Dashboard.
+
 **Custom Apps**
 
 Custom Shopify apps interact with the Shopify API on behalf of a single store. The store's Shopify URL `example.myshopify.com` is provided on app creation and can't be changed. Custom apps are not listed on the Shopify App Store and do not require a Shopify app review.
 
+- Cannot be converted to a sales channel.
+- Created from the Partner Dashboard.
+
 **Private Apps**
 
 Private apps interact with the Shopify API on behalf of a single store. Private apps are created in the Shopify admin, and are not listed on the Shopify App Store. Private apps do not require a Shopify app review.
+
+- Cannot be converted to a sales channel.
+- Created from the merchant's store.
 
 Note: Developers can still create private apps, but custom apps are the recommended solution.
 
