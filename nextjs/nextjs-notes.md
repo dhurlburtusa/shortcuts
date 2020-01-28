@@ -7,11 +7,14 @@ See https://nextjs.org/ for details.
 
 ## Features
 
-- File-system routing.
+- Zero Setup.
 - Automatic code splitting.
+- Client-side routing with optimized page prefetching.
+- File-system routing.
+- API routes to build your API with serverless functions, with the same simple router used for pages.
 - Server side rendering.
 - Static exporting.
-- Zero Setup.
-- Fully extensible.
 - CSS-in-JS.
 - Progressive-web-app (PWA).
+- Webpack-based dev environment which supports Hot Module Replacement (HMR).
+- Fully extensible.
