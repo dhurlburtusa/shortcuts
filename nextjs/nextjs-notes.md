@@ -42,6 +42,15 @@ Having brackets ([]) in the page name makes it a dynamic route.
 In Next.js every file inside `pages/api` is an API Route. API Routes are lambdas (a.k.a serverless functions) running on Node.
 
 
+## Data Fetching
+
+With `getInitialProps`, we can fetch data for a given page via a remote data source and pass it as props to our page. `getInitialProps` needs to work on both server and client, since it is called in both environments.
+
+<p class="note warning">
+  `getInitialProps` can only be added to the default component exported by a page (really a route), adding it to any other component won't work.
+</p>
+
+
 ## Next.js CLI
 
 ```sh
