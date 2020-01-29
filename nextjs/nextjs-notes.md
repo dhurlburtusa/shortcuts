@@ -20,6 +20,13 @@ See https://nextjs.org/ for details.
 - Fully extensible.
 
 
+## Installation
+
+```sh
+npm install --save next react react-dom
+```
+
+
 ## Next.js CLI
 
 ```sh
