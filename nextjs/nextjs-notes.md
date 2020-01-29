@@ -27,6 +27,21 @@ npm install --save next react react-dom
 ```
 
 
+## Routing
+
+```js
+import Link from 'next/link';
+
+<Link href="/about">
+  <a>About Page</a>
+</Link>
+```
+
+Having brackets ([]) in the page name makes it a dynamic route.
+
+In Next.js every file inside `pages/api` is an API Route. API Routes are lambdas (a.k.a serverless functions) running on Node.
+
+
 ## Next.js CLI
 
 ```sh
