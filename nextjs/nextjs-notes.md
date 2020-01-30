@@ -44,6 +44,23 @@ Having brackets ([]) in the page name makes it a dynamic route.
 In Next.js every file inside `pages/api` is an API Route. API Routes are lambdas (a.k.a serverless functions) running on Node.
 
 
+## Static Generation
+
+Generally used for:
+
+- Static marketing pages.
+- Static blog.
+- Dashboards (really?)
+
+Referred to as:
+
+- Static site generation (SSG)
+- Static generation
+- Static websites
+
+The page is rendered to static HTML when `next build` is ran. `next build` will output the HTML into a `.html` file and that file will be served consistently without changes.
+
+
 ## Data Fetching
 
 With `getInitialProps`, we can fetch data for a given page via a remote data source and pass it as props to our page. `getInitialProps` needs to work on both server and client, since it is called in both environments.
