@@ -61,6 +61,22 @@ Referred to as:
 The page is rendered to static HTML when `next build` is ran. `next build` will output the HTML into a `.html` file and that file will be served consistently without changes.
 
 
+## Server-Side Rendering
+
+Generally used for:
+
+- Frequently updated data.
+- CMS backed pages.
+
+Referred to as:
+
+- Server-side rendering (SSR).
+- Dynamic rendering.
+- On-demand rendering.
+
+When a request comes in to the server the page is rendered on-demand, meaning the user that requests the page always gets the latest data. This mode is opted into by adding a blocking data requirement to the page via an async `getInitialProps` function on the page component exported as the default of the page/route module.
+
+
 ## Data Fetching
 
 With `getInitialProps`, we can fetch data for a given page via a remote data source and pass it as props to our page. `getInitialProps` needs to work on both server and client, since it is called in both environments.
