@@ -2,6 +2,8 @@
 
 The React framework for SEO-friendly sites, server-side rendered apps, PWAs, Electron, static websites, light-weight apps, the desktop, and the mobile web.
 
+Next.js is built around the concept of pages. A page is a React Component exported from a `.js`, `.jsx`, `.ts`, or `.tsx` file in the `./pages` directory.
+
 See https://nextjs.org/ for details.
 
 
