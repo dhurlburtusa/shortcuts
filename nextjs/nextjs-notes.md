@@ -14,8 +14,8 @@ See https://nextjs.org/ for details.
 - Client-side routing with optimized page prefetching.
 - File-system routing.
 - API routes to build your API with serverless functions, with the same simple router used for pages.
-- Server side rendering.
-- Static exporting.
+- Server side rendering (pre-rendering).
+- Static exporting (pre-rendering).
 - CSS-in-JS.
 - Progressive-web-app (PWA).
 - Webpack-based dev environment which supports Hot Module Replacement (HMR).
