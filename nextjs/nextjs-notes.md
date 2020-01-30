@@ -50,13 +50,13 @@ Generally used for:
 
 - Static marketing pages.
 - Static blog.
-- Dashboards (really?)
+- Dashboards (Really? Dashboards? Those are usually data driven).
 
 Referred to as:
 
-- Static site generation (SSG)
-- Static generation
-- Static websites
+- Static site generation (SSG).
+- Static generation.
+- Static websites.
 
 The page is rendered to static HTML when `next build` is ran. `next build` will output the HTML into a `.html` file and that file will be served consistently without changes.
 
