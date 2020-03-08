@@ -276,6 +276,12 @@ function define(sequelize, DataTypes) {
   const options = {
     // Add a comment for the table in MySQL or Postgres.
     comment: 'This represents ...',
+    // See https://sequelize.org/v5/manual/models-definition.html#indexes
+    indexes: [
+      { fields: ['date_field', 'etc'] },
+      { fields: ['name_field'], unique: true },
+      { fields: ['some_field', 'etc'], name: 'table_some_field_index', },
+    ],
     // paranoid: false,
     // timestamps: false,
     // version: false,
