@@ -1,16 +1,13 @@
-const MODEL_NAME = 'MyExampleChildModel';
+// Note: `allowNull` defaults to true.
+
+const DEFAULT_MODEL_NAME = 'MyExampleChildModel';
 
 // See http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-init
 // for documentation on model attributes and options.
-function define(sequelize, DataTypes) {
+function define (sequelize, modelName = DEFAULT_MODEL_NAME) {
   // See http://docs.sequelizejs.com/variable/index.html#static-variable-DataTypes
   // for list of available data types.
   const attributes = {
-    id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV1,
-      primaryKey: true,
-    },
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -18,7 +15,7 @@ function define(sequelize, DataTypes) {
       allowNull: false,
       // IDs should never be exposed as numbers. It is okay to save them as numbers. So,
       // convert to a string.
-      get() {
+      get () {
         return '' + this.getDataValue('id');
       },
     },
@@ -60,6 +57,12 @@ function define(sequelize, DataTypes) {
       validate: {
         notEmpty: true,
       },
+    },
+    publicId: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      defaultValue: DataTypes.UUIDV4,
+      unique: 'publicId',
     },
     slug: {
       type: DataTypes.STRING(31),
@@ -223,8 +226,8 @@ function define(sequelize, DataTypes) {
     uuid_with_default: {
       type: DataTypes.UUID,
       allowNull: false,
-      defaultValue: DataTypes.UUIDV1,
-      defaultValue: DataTypes.UUIDV4,
+      defaultValue: DataTypes.UUIDV1, // Most likely to have similar value.
+      defaultValue: DataTypes.UUIDV4, // Very random, i.e., unlikely to have similar value.
       defaultValue: function () {
         return someFunctionToGenerateId();
       },
@@ -299,18 +302,52 @@ function define(sequelize, DataTypes) {
     },
   };
 
-  const Model = sequelize.define(MODEL_NAME, attributes, options);
+  const Model = sequelize.define(modelName, attributes, options);
 
   Model.associate = models_unused => {
     // Nothing to associate.
   };
 
   Model.associate = models => {
+    // See https://sequelize.org/v5/class/lib/model.js~Model.html#static-method-belongsTo
     models.MyExampleChildModel.belongsTo(models.MyExampleParentModel, {
       foreignKey: 'parentId',
+      // child.getParent()
       as: 'parent',
       onUpdate: 'cascade',
       onDelete: 'cascade',
+    });
+
+    // https://sequelize.org/v5/class/lib/model.js~Model.html#static-method-hasOne
+    models.MyExampleParentModel.hasOne(models.MyExampleChildModel, {
+      foreignKey: 'parentId',
+      // parent.getChild()
+      as: 'child',
+      onUpdate: 'cascade',
+      onDelete: 'cascade',
+    });
+
+    // See https://sequelize.org/v5/class/lib/model.js~Model.html#static-method-hasMany
+    models.MyExampleParentModel.hasMany(models.MyExampleChildModel, {
+      foreignKey: 'parentId',
+      // parent.getChildren()
+      as: 'children',
+      onUpdate: 'cascade',
+      onDelete: 'cascade',
+    });
+
+    // See https://sequelize.org/v5/class/lib/model.js~Model.html#static-method-belongsToMany
+    models.MyExampleChildModel.belongsToMany(models.MyExampleParentModel, {
+      // Defaults to source + primary key of source
+      foreignKey: 'childId',
+      // Defaults to target + primary key of target
+      otherKey: 'parentId',
+      // child.getParents()
+      as: 'parents',
+      onUpdate: 'cascade',
+      onDelete: 'cascade',
+      through: models.MyParentChildModel,
+      timestamps: true,
     });
   };
 
