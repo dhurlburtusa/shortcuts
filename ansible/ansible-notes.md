@@ -282,7 +282,7 @@ for information about tradeoffs and pitfalls between includes and imports.
 
 **Roles**
 
-Roles allow you to package together taks, handlers, files, templates, variables,
+Roles allow you to package together tasks, handlers, files, templates, variables,
 modules, and plugins. Roles can be uploaded and shared via Ansible Galaxy.
 
 Roles are ways of automatically loading certain vars_files, tasks, and handlers
