@@ -14,3 +14,12 @@ and deployed to an HTTP server.
 Storybook supports many different frontend view layers with more coming!  React,
 Vue, Angular, Mithril, Marko, HTML, Svelte, Meteor, and Ember are currently
 supported.
+
+
+## Writing Stories
+
+A Storybook is a collection of stories. Each story represents a single visual
+state of a component.
+
+> Technically, a story is a function that returns something that can be rendered
+> to screen.
