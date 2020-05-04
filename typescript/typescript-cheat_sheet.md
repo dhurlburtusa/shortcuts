@@ -36,7 +36,9 @@ enum Color {Red = 1, Green = 2, Blue = 4}
 ```ts
 interface Person {
   firstName: string;
+  middleName?: string;
   lastName: string;
+  readonly dob: string;
 }
 ```
 
