@@ -39,6 +39,13 @@ interface Person {
   middleName?: string;
   lastName: string;
   readonly dob: string;
+  [propName: string]: any;
+}
+```
+
+```ts
+interface SearchFunc {
+  (source: string, subString: string): boolean;
 }
 ```
 
