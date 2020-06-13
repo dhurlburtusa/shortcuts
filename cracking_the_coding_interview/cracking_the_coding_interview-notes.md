@@ -17,6 +17,11 @@ In academics, there are actually three "Bigs". In software development, usually 
 
 These are the three ways the runtime for an algorithm can be described.
 
+## Facts
+
+- Recursive algorithms take at least O(n) space, where n i sthe depth of the recursive call.
+- All recursive algorithms _can_ be implemented iteratively.
+
 ## Interview Questions
 
 ### Arrays and Strings
