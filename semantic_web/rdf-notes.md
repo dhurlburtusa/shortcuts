@@ -41,3 +41,20 @@ The resource denoted by an IRI is called its referent, and the resource denoted 
 Asserting an RDF triple says that some relationship, indicated by the predicate, holds between the resources denoted by the subject and object. This statement corresponding to an RDF triple is known as an RDF statement. The predicate itself is an IRI and denotes a property, that is, a resource that can be thought of as a binary relation.
 
 Unlike IRIs and literals, blank nodes do not identify specific resources. Statements involving blank nodes say that something with the given relationships exists, without explicitly naming it.
+
+
+## The Referent of an IRI
+
+The resource denoted by an IRI is also called its **referent**. For some IRIs with particular meanings, such as those identifying XSD datatypes, the referent is fixed by this specification. For all other IRIs, what exactly is denoted by any given IRI is not defined by this specification. Other specifications may fix IRI referents, or apply other constraints on what may be the referent of any IRI.
+
+Guidelines for determining the referent of an IRI are provided in other documents.
+
+A very brief, informal, and partial account follows:
+
+- By design, IRIs have global scope.
+- By social convention, the IRI owner gets to say what the intended (or usual) referent of an IRI is. Applications and users need not abide by this intended denotation, but there may be a loss of interoperability with other applications and users if they do not do so.
+- The IRI owner can establish the intended referent by means of a specification or other document that explains what is denoted.
+- A good way of communicating the intended referent is to set up the IRI so that it dereferences to such a document.
+- Such a document can, in fact, be an RDF document that describes the denoted resource by means of RDF statements.
+
+Perhaps the most important characteristic of IRIs in web architecture is that they can be dereferenced, and hence serve as starting points for interactions with a remote server.
