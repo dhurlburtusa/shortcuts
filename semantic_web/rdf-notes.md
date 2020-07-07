@@ -95,3 +95,12 @@ As RDF graphs are sets of triples, they can be combined easily, supporting the u
 An RDF dataset is a collection of RDF graphs. All but one of these graphs have an associated IRI or blank node. They are called named graphs, and the IRI or blank node is called the graph name. The remaining graph does not have an associated IRI, and is called the default graph of the RDF dataset.
 
 There are many possible uses for RDF datasets. One such use is to hold snapshots of multiple RDF sources.
+
+
+## Serialization Formats
+
+- Turtle and TriG.
+- JSON-LD (JSON based)
+- RDFa (for HTML embedding)
+- N-Triples and N-Quads (line-based exchange formats)
+- RDF/XML (the original 2004 syntax, updated for RDF 1.1)
