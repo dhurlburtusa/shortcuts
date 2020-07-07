@@ -20,3 +20,11 @@ This document defines an abstract syntax (a data model) which serves to link all
 ## Changes
 
 - A new concept in RDF 1.1 is the notion of an RDF dataset to represent multiple graphs.
+
+## Graph-based Data Model
+
+The core structure of the abstract syntax is a set of triples, each consisting of a subject, a predicate and an object. A set of such triples is called an RDF graph.
+
+There can be three kinds of nodes in an RDF graph: IRIs, literals, and blank nodes.
+
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
