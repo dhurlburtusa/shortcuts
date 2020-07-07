@@ -17,9 +17,11 @@ This document defines an abstract syntax (a data model) which serves to link all
 - the SPARQL Query Language [SPARQL11-OVERVIEW];
 - the RDF Schema vocabulary [RDF11-SCHEMA].
 
+
 ## Changes
 
 - A new concept in RDF 1.1 is the notion of an RDF dataset to represent multiple graphs.
+
 
 ## Graph-based Data Model
 
@@ -28,3 +30,14 @@ The core structure of the abstract syntax is a set of triples, each consisting o
 There can be three kinds of nodes in an RDF graph: IRIs, literals, and blank nodes.
 
 IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+
+
+## Resources and Statements
+
+Any IRI or literal denotes something in the world (the "universe of discourse"). These things are called resources.
+
+The resource denoted by an IRI is called its referent, and the resource denoted by a literal is called its literal value. Literals have datatypes that define the range of possible values, such as strings, numbers, and dates. Special kind of literals, language-tagged strings, denote plain-text strings in a natural language.
+
+Asserting an RDF triple says that some relationship, indicated by the predicate, holds between the resources denoted by the subject and object. This statement corresponding to an RDF triple is known as an RDF statement. The predicate itself is an IRI and denotes a property, that is, a resource that can be thought of as a binary relation.
+
+Unlike IRIs and literals, blank nodes do not identify specific resources. Statements involving blank nodes say that something with the given relationships exists, without explicitly naming it.
