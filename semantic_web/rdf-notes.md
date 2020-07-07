@@ -58,3 +58,13 @@ A very brief, informal, and partial account follows:
 - Such a document can, in fact, be an RDF document that describes the denoted resource by means of RDF statements.
 
 Perhaps the most important characteristic of IRIs in web architecture is that they can be dereferenced, and hence serve as starting points for interactions with a remote server.
+
+
+## RDF Vocabularies and Namespace IRIs
+
+An RDF vocabulary is a collection of IRIs intended for use in RDF graphs.
+
+The IRIs in an RDF vocabulary often begin with a common substring known as a namespace IRI. Some namespace IRIs are associated by convention with a short name known as a namespace prefix. In some serialization formats it is common to abbreviate IRIs that start with namespace IRIs by using a namespace prefix in order to assist readability. Note however that these abbreviations are not valid IRIs, and must not be used in contexts where IRIs are expected.
+
+The term “namespace” on its own does not have a well-defined meaning in the context of RDF, but is sometimes informally used to mean “namespace IRI” or “RDF vocabulary”.
+
