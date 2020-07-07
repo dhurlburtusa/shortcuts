@@ -86,3 +86,12 @@ Intuitively speaking, changes in the universe of discourse can be reflected in t
 - A relationship that holds between two resources at one time may not hold at another time.
 - RDF sources may change their state over time. That is, they may provide different RDF graphs at different times.
 - Some RDF sources may, however, be immutable snapshots of another RDF source, archiving its state at some point in time.
+
+
+## Working with Multiple RDF Graphs
+
+As RDF graphs are sets of triples, they can be combined easily, supporting the use of data from multiple sources. Nevertheless, it is sometimes desirable to work with multiple RDF graphs while keeping their contents separate. RDF datasets support this requirement.
+
+An RDF dataset is a collection of RDF graphs. All but one of these graphs have an associated IRI or blank node. They are called named graphs, and the IRI or blank node is called the graph name. The remaining graph does not have an associated IRI, and is called the default graph of the RDF dataset.
+
+There are many possible uses for RDF datasets. One such use is to hold snapshots of multiple RDF sources.
