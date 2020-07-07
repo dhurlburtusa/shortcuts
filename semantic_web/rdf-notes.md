@@ -18,6 +18,13 @@ This document defines an abstract syntax (a data model) which serves to link all
 - the RDF Schema vocabulary [RDF11-SCHEMA].
 
 
+## Links
+
+- https://www.w3.org/TR/rdf11-concepts/
+- https://www.w3.org/TR/rdf11-primer/
+- https://www.w3.org/TR/rdf11-mt/
+
+
 ## Changes
 
 - A new concept in RDF 1.1 is the notion of an RDF dataset to represent multiple graphs.
