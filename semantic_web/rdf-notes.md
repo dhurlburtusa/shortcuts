@@ -68,3 +68,21 @@ The IRIs in an RDF vocabulary often begin with a common substring known as a nam
 
 The term “namespace” on its own does not have a well-defined meaning in the context of RDF, but is sometimes informally used to mean “namespace IRI” or “RDF vocabulary”.
 
+
+## RDF and Change over Time
+
+The RDF data model is atemporal: RDF graphs are static snapshots of information.
+
+However, RDF graphs can express information about events and about temporal aspects of other entities, given appropriate vocabulary terms.
+
+Since RDF graphs are defined as mathematical sets, adding or removing triples from an RDF graph yields a different RDF graph.
+
+We informally use the term RDF source to refer to a persistent yet mutable source or container of RDF graphs. An RDF source is a resource that may be said to have a state that can change over time. A snapshot of the state can be expressed as an RDF graph. For example, any web document that has an RDF-bearing representation may be considered an RDF source. Like all resources, RDF sources may be named with IRIs and therefore described in other RDF graphs.
+
+Intuitively speaking, changes in the universe of discourse can be reflected in the following ways:
+
+- An IRI, once minted, should never change its intended referent.
+- Literals, by design, are constants and never change their value.
+- A relationship that holds between two resources at one time may not hold at another time.
+- RDF sources may change their state over time. That is, they may provide different RDF graphs at different times.
+- Some RDF sources may, however, be immutable snapshots of another RDF source, archiving its state at some point in time.
