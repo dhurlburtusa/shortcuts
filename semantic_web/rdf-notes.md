@@ -118,6 +118,13 @@ An RDF triple encodes a statement—a simple logical expression, or claim about 
 An entailment regime is a specification that defines precise conditions that make these relationships hold. RDF itself recognizes only some basic cases of entailment, equivalence, and inconsistency. Other specifications, such as RDF Schema and OWL 2, add more powerful entailment regimes, as do some domain-specific vocabularies.
 
 
+## RDF Documents and Syntaxes
+
+An RDF document is a document that encodes an RDF graph or RDF dataset in a concrete RDF syntax, such as Turtle, RDFa, JSON-LD, or TriG. RDF documents enable the exchange of RDF graphs and RDF datasets between systems.
+
+A concrete RDF syntax may offer many different ways to encode the same RDF graph or RDF dataset
+
+
 ## Serialization Formats
 
 - Turtle and TriG.
