@@ -132,3 +132,72 @@ A concrete RDF syntax may offer many different ways to encode the same RDF graph
 - RDFa (for HTML embedding)
 - N-Triples and N-Quads (line-based exchange formats)
 - RDF/XML (the original 2004 syntax, updated for RDF 1.1)
+
+
+## RDF Graphs
+
+An RDF graph is a set of RDF triples.
+
+IRIs, literals, and blank nodes are collectively known as RDF terms.
+
+### Triples
+
+An RDF triple consists of three components:
+
+- the subject, which is an IRI or a blank node
+- the predicate, which is an IRI
+- the object, which is an IRI, a literal or a blank node
+
+An RDF triple is conventionally written in the order subject, predicate, object.
+
+The set of nodes of an RDF graph is the set of subjects and objects of triples in the graph. It is possible for a predicate IRI to also occur as a node in the same graph.
+
+### IRIs
+
+An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of RFC 3987. Further normalization must not be performed when comparing IRIs for equality.
+
+IRI normalization: Interoperability problems can be avoided by minting only IRIs that are normalized according to Section 5 of RFC 3987.
+
+- Uppercase characters in scheme names and domain names.
+- Percent-encoding of characters where it is not required by IRI syntax.
+- Explicitly stated HTTP default port (http://example.com:80/); http://example.com/ is preferable.
+- Completely empty path in HTTP IRIs (http://example.com); http://example.com/ is preferable.
+- “/./” or “/../” in the path component of an IRI.
+- Lowercase hexadecimal letters within percent-encoding triplets (“%3F” is preferable over “%3f”).
+- Punycode-encoding of Internationalized Domain Names in IRIs.
+- IRIs that are not in Unicode Normalization Form C.
+
+
+### Literals
+
+Literals are used for values such as strings, numbers, and dates.
+
+A literal in an RDF graph consists of two or three elements:
+
+- a lexical form, being a Unicode string, which should be in Normal Form C,
+- a datatype IRI, being an IRI identifying a datatype that determines how the lexical form maps to a literal value, and
+- if and only if the datatype IRI is http://www.w3.org/1999/02/22-rdf-syntax-ns#langString, a non-empty language tag as defined by BCP 47.
+
+A literal is a language-tagged string if the third element is present. Lexical representations of language tags may be converted to lower case. The value space of language tags is always in lower case.
+
+The literal value associated with a literal is:
+
+- If the literal is a language-tagged string, then the literal value is a pair consisting of its lexical form and its language tag, in that order.
+- If the literal's datatype IRI is in the set of recognized datatype IRIs, let d be the referent of the datatype IRI.
+  + If the literal's lexical form is in the lexical space of d, then the literal value is the result of applying the lexical-to-value mapping of d to the lexical form.
+  + Otherwise, the literal is ill-typed and no literal value can be associated with the literal. Such a case produces a semantic inconsistency but is not syntactically ill-formed. Implementations must accept ill-typed literals and produce RDF graphs from them. Implementations may produce warnings when encountering ill-typed literals.
+- If the literal's datatype IRI is not in the set of recognized datatype IRIs, then the literal value is not defined by this specification.
+
+### Blank Nodes
+
+### Replacing Blank Nodes with IRIs
+
+Blank nodes are disjoint from IRIs and literals. Otherwise, the set of possible blank nodes is arbitrary. RDF makes no reference to any internal structure of blank nodes.
+
+Blank node identifiers are local identifiers that are used in some concrete RDF syntaxes or RDF store implementations. They are always locally scoped to the file or RDF store, and are not persistent or portable identifiers for blank nodes. Blank node identifiers are not part of the RDF abstract syntax, but are entirely dependent on the concrete syntax or implementation.
+
+In situations where stronger identification is needed, systems may systematically replace some or all of the blank nodes in an RDF graph with IRIs. Systems wishing to do this should mint a new, globally unique IRI (a Skolem IRI) for each blank node so replaced.
