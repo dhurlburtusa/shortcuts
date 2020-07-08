@@ -201,3 +201,15 @@ Blank nodes are disjoint from IRIs and literals. Otherwise, the set of possible 
 Blank node identifiers are local identifiers that are used in some concrete RDF syntaxes or RDF store implementations. They are always locally scoped to the file or RDF store, and are not persistent or portable identifiers for blank nodes. Blank node identifiers are not part of the RDF abstract syntax, but are entirely dependent on the concrete syntax or implementation.
 
 In situations where stronger identification is needed, systems may systematically replace some or all of the blank nodes in an RDF graph with IRIs. Systems wishing to do this should mint a new, globally unique IRI (a Skolem IRI) for each blank node so replaced.
+
+
+## RDF Datasets
+
+An RDF dataset is a collection of RDF graphs, and comprises:
+
+- Exactly one default graph, being an RDF graph. The default graph does not have a name and may be empty.
+- Zero or more named graphs. Each named graph is a pair consisting of an IRI or a blank node (the graph name), and an RDF graph. Graph names are unique within an RDF dataset.
+
+Blank nodes can be shared between graphs in an RDF dataset.
+
+SPARQL 1.1 also defines the concept of an RDF Dataset. The definition of an RDF Dataset in SPARQL 1.1 and this specification differ slightly in that this specification allows RDF Graphs to be identified using either an IRI or a blank node. SPARQL 1.1 Query Language only allows RDF Graphs to be identified using an IRI.
