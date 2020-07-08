@@ -104,6 +104,20 @@ An RDF dataset is a collection of RDF graphs. All but one of these graphs have a
 There are many possible uses for RDF datasets. One such use is to hold snapshots of multiple RDF sources.
 
 
+## Equivalence, Entailment, and Inconsistency
+
+An RDF triple encodes a statement—a simple logical expression, or claim about the world. An RDF graph is the conjunction (logical AND) of its triples. The precise details of this meaning of RDF triples and graphs are the subject of the RDF Semantics specification, which yields the following relationships between RDF graphs:
+
+- **Entailment**
+  An RDF graph A entails another RDF graph B if every possible arrangement of the world that makes A true also makes B true. When A entails B, if the truth of A is presumed or demonstrated then the truth of B is established.
+- **Equivalence**
+  Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.
+- **Inconsistency**
+  An RDF graph is inconsistent if it contains an internal contradiction. There is no possible arrangement of the world that would make the expression true.
+  
+An entailment regime is a specification that defines precise conditions that make these relationships hold. RDF itself recognizes only some basic cases of entailment, equivalence, and inconsistency. Other specifications, such as RDF Schema and OWL 2, add more powerful entailment regimes, as do some domain-specific vocabularies.
+
+
 ## Serialization Formats
 
 - Turtle and TriG.
