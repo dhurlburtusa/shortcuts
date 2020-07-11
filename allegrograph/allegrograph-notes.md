@@ -5,3 +5,18 @@ AllegroGraph is a database and application framework for building Semantic Web a
 AllegroGraph is a high-performance database built to hold this information, query it, and reason with it.
 
 AllegroGraph implements the ACID properties of transaction processing (atomicity, consistency, isolation, and durability) similarly to other database products.
+
+
+## Managing the Server
+
+**Starting**
+
+```sh
+[ag-dir]/bin/agraph-control --config [agdir]/lib/agraph.cfg start
+```
+
+**Stopping**
+
+```sh
+[ag-dir]/bin/agraph-control --config [agdir]/lib/agraph.cfg stop
+```
