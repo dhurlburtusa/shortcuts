@@ -20,3 +20,7 @@ AllegroGraph implements the ACID properties of transaction processing (atomicity
 ```sh
 [ag-dir]/bin/agraph-control --config [agdir]/lib/agraph.cfg stop
 ```
+
+### Users
+
+AllegroGraph supports Role Based Access Control. A role is a collection of permissions. A user who is assigned a particular role has all the permissions of that role.
