@@ -213,3 +213,11 @@ An RDF dataset is a collection of RDF graphs, and comprises:
 Blank nodes can be shared between graphs in an RDF dataset.
 
 SPARQL 1.1 also defines the concept of an RDF Dataset. The definition of an RDF Dataset in SPARQL 1.1 and this specification differ slightly in that this specification allows RDF Graphs to be identified using either an IRI or a blank node. SPARQL 1.1 Query Language only allows RDF Graphs to be identified using an IRI.
+
+
+## Datatypes
+
+Datatypes are used with RDF literals to represent values such as strings, numbers and dates. RDF re-uses many of the XML Schema built-in datatypes, and defines two additional non-normative datatypes, rdf:HTML and rdf:XMLLiteral.
+
+A datatype is denoted by one or more IRIs.
+
