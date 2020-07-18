@@ -69,7 +69,23 @@ app.use(passport.session());
 
 ### Sessions
 
-See http://www.passportjs.org/docs/configure/#session for details.
+In a typical web application, the credentials used to authenticate a user will only be transmitted during the login request. If authentication succeeds, a session will be established and maintained via a cookie set in the user's browser.
+
+Each subsequent request will not contain credentials, but rather the unique cookie that identifies the session. In order to support login sessions, Passport will serialize and deserialize user instances to and from the session.
+
+```js
+passport.serializeUser(function (user, done) {
+  done(null, user.id); // Only save the user ID in the session.
+});
+
+passport.deserializeUser(function (id, done) {
+  User.findById(id, function (err, user) {
+    done(err, user); // The second argument will become `req.user`.
+  });
+});
+```
+
+The serialization and deserialization logic is supplied by the application, allowing the application to choose an appropriate database and/or object mapper, without imposition by the authentication layer.
 
 
 ## Variables
