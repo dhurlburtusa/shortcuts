@@ -70,3 +70,12 @@ app.use(passport.session());
 ### Sessions
 
 See http://www.passportjs.org/docs/configure/#session for details.
+
+
+## Variables
+
+Passport makes data available during a request. This is usually done by adding a property to the request object.
+
+| Property | Description |
+| -------- | ----------- |
+| `user`   | Whatever is passed to the second parameter of the "done" callback in a strategy. |
