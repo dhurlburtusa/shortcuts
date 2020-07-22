@@ -88,6 +88,18 @@ passport.deserializeUser(function (id, done) {
 The serialization and deserialization logic is supplied by the application, allowing the application to choose an appropriate database and/or object mapper, without imposition by the authentication layer.
 
 
+## Methods
+
+Passport adds some methods to the request instance.
+
+| Method            | Description |
+| ----------------- | ----------- |
+| isAuthenticated   | Determines whether the user is authenticated. |
+| isUnauthenticated | Determines whether the user is not authenticated. |
+| login             | See http://www.passportjs.org/docs/login/. |
+| logout            | See http://www.passportjs.org/docs/logout/. |
+
+
 ## Variables
 
 Passport makes data available during a request. This is usually done by adding a property to the request object.
