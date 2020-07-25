@@ -47,14 +47,43 @@ function* saga () {
 Creates an Effect description that instructs the middleware to perform a non-blocking call on `fn`. That is, it's similar to `call` but will not block.
 
 ```
-import { call } from 'redux-saga/effects'
+import { cancel, cancelled, fork, join } from 'redux-saga/effects'
+
+function* some_task (param1, param2, ...) {
+  try {
+    // TODO: Do task logic.
+  }
+  catch (err) {
+    // TODO: Do error-handling logic.
+  }
+  finally {
+    if (yield cancelled()) {
+      // TODO: Do cancellation logic.
+    }
+  }
+}
 
 function* saga () {
   try {
-    const task = yield fork(some_fn, arg1, arg2, ...)
+    const task = yield fork(some_task, arg1, arg2, ...)
     ...
+    if (task.isRunning()) {
+      yield cancel(task)
+      // Or?
+      task.cancel()
+    }
+    else {
+      const error = task.error()
+      const result = task.result()
+      // Or
+      task.toPromise()
+        .then((result) => { ... })
+        .catch((error) => { ... })
+    }
+    yield join(task)
   }
   catch (err) {
+    if (task.isCancelled()) { ... }
     ...
   }
 }
