@@ -18,6 +18,30 @@ Sagas can yield Effects in multiple forms. The easiest way is to yield a Promise
 
 `redux-saga` provides some helper effects wrapping internal functions to spawn tasks when some specific actions are dispatched to the Store.
 
+### `call`
+
+Creates an Effect description that instructs the middleware to call the function fn with args as arguments.
+
+If the function is a generator function, the parent generator is suspended (aka blocked) until the child generator terminates.
+
+If the function is a normal function and returns a `Promise`, then generator is suspended until the promise is settled.
+
+If the result is not an iterator object nor a promise, the middleware will immediately return that value back to the saga, so that it can resume its execution synchronously.
+
+```
+import { call } from 'redux-saga/effects'
+
+function* saga () {
+  try {
+    const result = yield call(some_fn, arg1, arg2, ...)
+    ...
+  }
+  catch (err) {
+    ...
+  }
+}
+```
+
 ### `take`
 
 Suspends the generator until a matching action is dispatched.
