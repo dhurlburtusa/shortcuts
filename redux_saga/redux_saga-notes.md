@@ -42,6 +42,25 @@ function* saga () {
 }
 ```
 
+### `fork`
+
+Creates an Effect description that instructs the middleware to perform a non-blocking call on `fn`. That is, it's similar to `call` but will not block.
+
+```
+import { call } from 'redux-saga/effects'
+
+function* saga () {
+  try {
+    const task = yield fork(some_fn, arg1, arg2, ...)
+    ...
+  }
+  catch (err) {
+    ...
+  }
+}
+```
+
+
 ### `take`
 
 Suspends the generator until a matching action is dispatched.
