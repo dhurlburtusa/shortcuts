@@ -89,6 +89,7 @@ function* saga () {
 }
 ```
 
+Note: You can't catch errors from forked tasks.
 
 ### `take`
 
