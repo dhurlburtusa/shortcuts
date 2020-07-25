@@ -18,7 +18,19 @@ Sagas can yield Effects in multiple forms. The easiest way is to yield a Promise
 
 `redux-saga` provides some helper effects wrapping internal functions to spawn tasks when some specific actions are dispatched to the Store.
 
+### `take`
 
+Suspends the generator until a matching action is dispatched.
+
+```
+import { take } from 'redux-saga/effects'
+
+function* saga () {
+  // With `take`, actions are "pulled". The generator is blocked until a matching
+  // action is dispatched.
+  const action = yield take('some_pattern_to_match_action_type')
+}
+```
 
 ## Misc
 
