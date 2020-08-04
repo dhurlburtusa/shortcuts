@@ -5,3 +5,20 @@ Auth0 is a flexible, drop-in solution to add authentication and authorization se
 You can connect any application to Auth0 and define the identity providers you want to use.
 
 Based on your app's technology, choose one of the SDKs (or call the API) and hook it up to your app. Now each time a user tries to authenticate, Auth0 will verify their identity and send the required information back to your app.
+
+
+## Terminology
+
+- Account: A user's account. Can have one or more tenants.
+- Tenant: In Auth0, a tenant is logically isolated.
+  + Encouraged to create one tenant for each environment (development, staging, production).
+- Region: A geographic region for tenents and its domain.
+- Application: Must be registered with the tenant. Can be done via the Dashboard.
+  + Types
+    * Native/Mobile
+    * Single-Page App
+    * Regular Web App
+    * Backend/API
+  + Assigned a Client ID, Client secret.
+- Connection: Auth0 sits between your app and the identity provider that authenticates your users. This relationship between Auth0 and the identity provider is referred to as a Connection.
+  + Each connection can be shared among multiple applications. You can configure any number of connections, and then choose which of them to enable for each application.
