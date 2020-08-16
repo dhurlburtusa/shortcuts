@@ -19,6 +19,16 @@ The following is a list of less technical OWL documentation and serve well as in
 
 ## Ontologies
 
+OWL 2 is a language for expressing ontologies. An ontology is a set of precise descriptive statements about some part of the world (usually referred to as the domain of interest or the subject matter of the ontology). Precise descriptions satisfy several purposes: most notably, they prevent misunderstandings in human communication and they ensure that software behaves in a uniform, predictable way and works well with other software.
+
+OWL 2 is a knowledge representation language, designed to formulate, exchange and reason with knowledge about a domain of interest.
+
+Some fundamental notions should first be explained to understand how knowledge is represented in OWL 2. These basic notions are:
+
+- Axioms: The basic statements that an OWL ontology expresses.
+- Entities: Elements used to refer to real-world objects.
+- Expressions: Combinations of entities to form complex descriptions from basic ones.
+
 Ontologies are formalized vocabularies of terms, often covering a specific domain and shared by a community of users. They specify the definitions of terms by describing their relationships with other terms in the ontology.
 
 The conceptual structure of OWL 2 ontologies is defined in the OWL 2 Structural Specification document.
