@@ -3,6 +3,18 @@
 OWL 2 is designed to facilitate ontology development and sharing via the Web, with the ultimate goal of making Web content more accessible to machines.
 
 
+## Documentation
+
+See https://www.w3.org/TR/owl-overview/#Documentation_Roadmap for guidance on OWL 2 documentation.
+
+The following is a list of less technical OWL documentation and serve well as introductory material.
+
+- https://www.w3.org/TR/owl-overview/
+- https://www.w3.org/TR/owl2-primer/
+- https://www.w3.org/TR/owl2-new-features/
+- https://www.w3.org/TR/owl2-quick-reference/
+
+
 ## Ontologies
 
 Ontologies are formalized vocabularies of terms, often covering a specific domain and shared by a community of users. They specify the definitions of terms by describing their relationships with other terms in the ontology.
