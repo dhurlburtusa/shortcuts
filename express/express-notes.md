@@ -67,3 +67,21 @@ Express looks up the files in the order in which you set the static directories 
 ```js
 app.use('/static', express.static('public'))
 ```
+
+
+## Special Request Properties
+
+The request object is an instance of [`http.IncomingMessage`](https://nodejs.org/dist/latest-v12.x/docs/api/http.html#http_class_http_incomingmessage).
+So, it contains all the properties from `http.IncomingMessage` and `stream.Readable`.
+
+| Property      | Description |
+| ------------- | ----------- |
+| app           | A reference to the Express application. |
+| body          | A reference to the parsed (usually) request body. Added by various middleware such as `express.json`. Untrusted. |
+| cookies       | A reference to the parsed cookies when using the `cookie-parser` middleware. Untrusted. |
+| files         | Reference to uploaded files. Added by middleware such as `multer`. Untrusted. |
+| path          | The path part of the request URL. When called from a middleware, the mount point is not included. |
+| query         | The parsed query string. It's shape depends on the query parser settings. Untrusted. |
+| signedCookies | A reference to the parsed signed-cookies when using the `cookie-parser` middleware. |
+| url           | Inherited from `http.IncomingMessage` but may be changed for example when mounting a router. See `req.originalUrl` for the original URL. |
+| user          | Usually added by various middleware. |
