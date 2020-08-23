@@ -40,3 +40,30 @@ app.post('/', function (req, res) {
   res.send('Got a POST request')
 })
 ```
+
+
+## Serving Static Files
+
+To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
+
+The function signature is:
+
+```js
+express.static(root, [options])
+```
+
+The `root` argument specifies the root directory from which to serve static assets.
+
+For example, use the following code to serve images, CSS files, and JavaScript files in a directory named public:
+
+```js
+app.use(express.static('public'))
+app.use(express.static('files'))
+...
+```
+
+Express looks up the files in the order in which you set the static directories with the express.static middleware function.
+
+```js
+app.use('/static', express.static('public'))
+```
