@@ -67,7 +67,7 @@ process.on('rejectionHandled', (...args) => {
 });
 
 // Process the script's arguments. May want to do this now or after setting up all
-// the event handles. The arguments may dictate the behavior of the handler.
+// the event handlers. The arguments may dictate the behavior of the handler.
 console.log('process.argv:', process.argv);
 
 // You may want to read the environment variables:
