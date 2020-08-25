@@ -52,6 +52,18 @@ process.on('multipleResolves', (type, promise, reason) => {
 //   process.exit(1);
 // });
 
+// The `uncaughtExceptionMonitor` event is emitted before an `uncaughtException`
+// event is emitted or a hook installed via
+// `process.setUncaughtExceptionCaptureCallback()` is called.
+//
+// Installing an `uncaughtExceptionMonitor` listener does not change the behavior
+// once an `uncaughtException` event is emitted. The process will still crash if no
+// `uncaughtException` listener is installed.
+// Note: Available starting in v13.7.0.
+// process.on('uncaughtExceptionMonitor', (err, origin) => {
+//    // TODO: Perform synchronous cleanup of allocated resources and then exit.
+// });
+
 // Emitted whenever a `Promise` is rejected and no error handler is attached to the
 // promise within a turn of the event loop.
 process.on('unhandledRejection', (reason, promise) => {
