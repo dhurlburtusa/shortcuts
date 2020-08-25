@@ -39,6 +39,8 @@ process.on('multipleResolves', (type, promise, reason) => {
 
 // Note: The default behavior if an `uncaughtException` handler is not set is to
 // print the stack trace to `stderr` and exit with code 1.
+// See https://nodejs.org/api/process.html#process_event_uncaughtexception before
+// implementing. The default handler may actually be all you need.
 // process.on('uncaughtException', err => {
 //   // Note: Exceptions thrown from this handler will not be caught. Instead the
 //   // process will exit with a non-zero exit code and the stack trace will be
