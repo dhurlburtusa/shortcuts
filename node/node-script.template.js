@@ -41,14 +41,20 @@ process.on('multipleResolves', (type, promise, reason) => {
 // print the stack trace to `stderr` and exit with code 1.
 // See https://nodejs.org/api/process.html#process_event_uncaughtexception before
 // implementing. The default handler may actually be all you need.
-// process.on('uncaughtException', err => {
+// Note: `origin` add in versions v10.17.0 and v12.0.0.
+// process.on('uncaughtException', (err, origin) => {
 //   // Note: Exceptions thrown from this handler will not be caught. Instead the
 //   // process will exit with a non-zero exit code and the stack trace will be
 //   // printed. This is to avoid infinite recursion.
-//   console.error('Caught exception:', err);
+//   fs.writeSync(
+//     process.stderr.fd,
+//     `Caught exception: ${err}\n` +
+//     `Exception origin: ${origin}`
+//   );
 //
 //   // TODO: Perform synchronous cleanup of allocated resources and then exit.
 //
+//   // Always exit the process. Don't try to resume.
 //   process.exit(1);
 // });
 
