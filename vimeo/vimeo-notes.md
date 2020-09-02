@@ -101,3 +101,35 @@ The API responds with the access token and details about the authenticated user.
 ```
 
 See https://developer.vimeo.com/api/authentication#using-the-auth-code-grant-step-5 for details.
+
+### Implicit Grant
+
+With the implicit grant, your app gains access to private data, but the workflow is abbreviated. You don't receive an authorization code to exchange for an access token like you do in the authorization code grant. The API just gives you the access token, and you get it through the browser, as part of a URL. The access token has a one-hour lifespan.
+
+To obtain an access token with the implicit grant, first make sure that your app is set up for it. Go to My Apps, open your app's information page, look under the settings for OAuth redirect authentication, and, if necessary, click the control for enabling implicit authentication.
+
+Once you're sure that you've turned on this setting, here are the general steps:
+
+**Step 1. Send your end user to the authorization URL.**
+
+Send your end user here:
+
+```
+https://api.vimeo.com/oauth/authorize?response_type=token&client_id={client_id}&redirect_uri={redirect_uri}&state={state}&scope={scope_list}
+```
+
+See https://developer.vimeo.com/api/authentication#using-the-implicit-grant-step-1 for details.
+
+**Step 2. Receive access permission from your end user.**
+
+Your end user creates a new account or logs in, accepts or denies your app's request for access, and chooses which scopes to allow.
+
+**Step 3. Get the access token.**
+
+Vimeo sends the end user to your redirect URI, but they append the access token to it, along with other information, in a URL fragment (the part after the hash sign):
+
+```
+{redirect_uri}#access_token={access_token}&token_type=bearer&scope={scope_list}&state={state}&expires_in={expires_in}
+```
+
+See https://developer.vimeo.com/api/authentication#using-the-implicit-grant-step-3 for details.
