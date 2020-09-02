@@ -133,3 +133,9 @@ Vimeo sends the end user to your redirect URI, but they append the access token 
 ```
 
 See https://developer.vimeo.com/api/authentication#using-the-implicit-grant-step-3 for details.
+
+### Device Code Grant
+
+Not every Internet-connected device includes a browser, and many of these devices are input-constrained, or difficult to use to enter information. The device code grant is for cases like these. In this workflow, the browserless device displays a special URL and code. Your end user switches to a computer or tablet, opens a browser, goes to the URL, and enters the code. Back in the browserless device, your app intercepts that the code has been entered and receives an access token from the API.
+
+See https://developer.vimeo.com/api/authentication#using-the-device-code-grant for details.
