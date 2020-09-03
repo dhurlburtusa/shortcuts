@@ -19,6 +19,15 @@ Based on your app's technology, choose one of the SDKs (or call the API) and hoo
 - Use analytics to track users on your site or application.
 
 
+## Tenants
+
+Everything starts with an Auth0 tenant. This is where you configure your use of Auth0, and the where Auth0 assets - such as applications, connections, and user profiles are defined, managed and stored. You access an Auth0 tenant via the Auth0 Dashboard, where you can also create additional, associated tenants. You can create more than one Auth0 tenant so that you can structure your tenants in a way that will isolate different domains of users and also support your Software Development Life Cycle (SDLC).
+
+Tenant names cannot be changed or reused once deleted.
+
+See https://auth0.com/docs/get-started/learn-the-basics, https://auth0.com/docs/get-started/dashboard/tenant-settings, https://auth0.com/docs/support/delete-or-reset-tenant, and https://auth0.com/docs/best-practices/tenant-settings-best-practices for details.
+
+
 ## Deployment Options
 
 Auth0 offers in the following deployment models:
@@ -30,6 +39,7 @@ Auth0 offers in the following deployment models:
 | Managed Private Cloud  | A dedicated cloud service running on either Auth0's cloud or the customer's AWS cloud infrastructure. |
 
 See https://auth0.com/docs/get-started/deployment-options for details.
+
 
 ## Custom Domains
 
