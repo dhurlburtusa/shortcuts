@@ -7,6 +7,18 @@ You can connect any application to Auth0 and define the identity providers you w
 Based on your app's technology, choose one of the SDKs (or call the API) and hook it up to your app. Now each time a user tries to authenticate, Auth0 will verify their identity and send the required information back to your app.
 
 
+## Use Cases
+
+- Add user authentication and authorization to an app.
+- Secure an API with OAuth 2.0.
+- Add Single Sign-on to allow access to multiple apps.
+- Securely access your API from a JavaScript front-end app or a mobile app.
+- Passwordless authentication.
+- Block suspicious IP addresses if they make consecutive failed login attempts, in order to avoid DDoS attacks.
+- Enforce multi-factor authentication (MFA).
+- Use analytics to track users on your site or application.
+
+
 ## Terminology
 
 - Account: A user's account. Can have one or more tenants.
