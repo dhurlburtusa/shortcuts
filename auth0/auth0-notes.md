@@ -31,6 +31,18 @@ Auth0 offers in the following deployment models:
 
 See https://auth0.com/docs/get-started/deployment-options for details.
 
+## Custom Domains
+
+Auth0 allows you to map the domain for your tenant to **one custom domain** of your choosing. This allows you to maintain a consistent experience for your users by keeping them on your domain instead of redirecting or using Auth0's domain.
+
+Auth0 custom domains are available with any paid subscription plan.
+
+Auth0 recommends that you use custom domains with Universal Login for the most seamless and secure experience for your users.
+
+Auth0 recommends that you whitelist your custom domain instead.
+
+See https://auth0.com/docs/custom-domains for details.
+
 
 ## Terminology
 
