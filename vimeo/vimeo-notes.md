@@ -9,6 +9,12 @@ The API focuses around access to a registered app. Apps are registered in the [V
 
 If you want to make API requests, you need to have an access token. And if you want to get an access token, you need to follow an authentication workflow.
 
+### Personal Access Token
+
+A personal access token gives you API access to your own data.
+
+NOTE: You can't recover a lost token string, but you can always get a new one by creating a new token.
+
 ### Client Credentials Grant
 
 The client credentials grant provides access to public data only. You don't need permission from your end user for that, so the entire authentication workflow happens without their participation.
