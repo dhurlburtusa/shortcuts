@@ -19,6 +19,19 @@ Based on your app's technology, choose one of the SDKs (or call the API) and hoo
 - Use analytics to track users on your site or application.
 
 
+## Deployment Options
+
+Auth0 offers in the following deployment models:
+
+| Deployment             | Description |
+| ---------------------- | ----------- |
+| Public Cloud           | A multi-tenant cloud service running on Auth0's cloud. |
+| Standard Private Cloud | A dedicated cloud service running on Auth0's cloud. |
+| Managed Private Cloud  | A dedicated cloud service running on either Auth0's cloud or the customer's AWS cloud infrastructure. |
+
+See https://auth0.com/docs/get-started#deployment-options for details.
+
+
 ## Terminology
 
 - Account: A user's account. Can have one or more tenants.
