@@ -74,3 +74,50 @@ See https://auth0.com/docs/custom-domains for details.
     * Social: Configure social connections like Facebook, Twitter, Github and others.
     * Enterprise: Configure Enterprise Connections like Active Directory, SAML, Office 365 and others.
     * Passwordless: Let your users signup and login using one-time codes (delivered by email or SMS) or one-click links, instead of passwords.
+
+
+## Tokens
+
+There are basically two main types of tokens that are related to identity: ID tokens and access tokens.
+
+### ID Tokens
+
+ID tokens are JSON web tokens (JWTs) meant for use by the application only. For example, if there's an app that uses Google to log in users and to sync their calendars, Google sends an ID token to the app that includes information about the user.
+
+Do not use ID tokens to gain access to an API.
+
+By default, an ID token is valid for 36000 seconds (10 hours). If there are security concerns, you can shorten the time period before the token expires, keeping in mind that one of the purposes of the token is to improve user experience by caching user information.
+
+### Access Tokens
+
+Access tokens (which aren't always JWTs) are used to inform an API that the bearer of the token has been authorized to access the API and perform a predetermined set of actions (specified by the scopes granted).
+
+Note that the token does not contain any information about the user besides their ID (`sub` claim). It only contains authorization information about which actions the application is allowed to perform at the API (`scope` claim). This is what makes it useful for securing an API but not for authenticating a user.
+
+Access tokens must never be used for authentication. Access tokens cannot tell if the user has authenticated. The only user information the access token possesses is the user ID, located in the sub claim. In your applications, treat access tokens as opaque strings since they are meant for APIs.
+
+
+## Security
+
+### ID Tokens
+
+Do not use ID tokens to gain access to an API.
+
+Do not add sensitive data to the payload: Tokens are signed to protect against manipulation and are easily decoded.
+
+Do not send tokens over non-HTTPS connections.
+
+Be sure to validate ID tokens before using the information it contains. You can use a [library](https://jwt.io/#libraries-io) to help with this task.
+
+Each token contains information for the intended audience (which is usually the recipient). According to the OpenID Connect specification, the audience of the ID token (indicated by the aud claim) must be the client ID of the application making the authentication request. If this is not the case, you should not trust the token.
+
+Conversely, an API expects a token with the aud value to equal the API's unique identifier. Therefore, unless you maintain control over both the application and the API, sending an ID token to an API will generally not work. Since the ID token is not signed by the API, the API would have no way of knowing if the application had modified the token (e.g., adding more scopes) if it were to accept the ID Token. See the [JWT Handbook](https://auth0.com/resources/ebooks/jwt-handbook) for more information.
+
+### Access Tokens
+
+Access tokens must never be used for authentication.
+
+### Token Storage
+
+You need to ensure that tokens and other sensitive data are not vulnerable to cross-site scripting attacks and can't be read by malicious JavaScript.
+
