@@ -85,6 +85,9 @@
 - sh:Warning
 - sh:xone
 - xsd:boolean
+- xsd:date
+- xsd:dateTime
 - xsd:decimal
 - xsd:integer
 - xsd:string
+- xsd:time
