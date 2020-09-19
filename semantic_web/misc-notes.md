@@ -48,6 +48,7 @@
 - sh:hasValue
 - sh:ignoredProperties
 - sh:in
+- sh:Info
 - sh:IRI
 - sh:IRIOrLiteral
 - sh:Literal
