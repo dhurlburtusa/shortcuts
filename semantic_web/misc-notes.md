@@ -19,19 +19,31 @@
 ## Common Predicates/Objects (at least suspected)
 
 - owl:Ontology
+- rdf:Alt
+- rdf:Bag
+- rdf:first
 - rdf:langString
 - rdf:List
+- rdf:JSON
+- rdf:nil
 - rdf:Property
+- rdf:rest
+- rdf:Seq
 - rdf:type
+- rdf:value
 - rdfs:Class
 - rdfs:comment
 - rdfs:Datatype
 - rdfs:domain
 - rdfs:isDefinedBy
 - rdfs:label
+- rdfs:Literal
+- rdfs:member
 - rdfs:range
 - rdfs:Resource
+- rdfs:seeAlso
 - rdfs:subClassOf
+- rdfs:subPropertyOf
 - sh:and
 - sh:BlankNode
 - sh:BlankNodeOrIRI
