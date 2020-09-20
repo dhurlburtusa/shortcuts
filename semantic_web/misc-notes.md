@@ -22,7 +22,11 @@
 
 ## Common Predicates/Objects (at least suspected)
 
+- owl:equivalentClass
+- owl:imports
 - owl:Ontology
+- owl:Thing
+- owl:versionInfo
 - rdf:Alt
 - rdf:Bag
 - rdf:first
