@@ -113,3 +113,14 @@
 - xsd:integer
 - xsd:string
 - xsd:time
+
+
+## Basic Turtle Syntax
+
+(Section to be expanded.)
+
+```turtle
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix : <http://example.org/book/> .
+:book1 dc:title "SPARQL Tutorial" .
+```
