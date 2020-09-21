@@ -1,0 +1,1 @@
+# SPARQL Query Language Notes
