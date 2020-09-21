@@ -23,6 +23,22 @@
 
 ## Common Predicates/Objects (at least suspected)
 
+- foaf:account
+- foaf:age
+- foaf:Document
+- foaf:familyName
+- foaf:givenName
+- foaf:Group
+- foaf:homepage
+- foaf:Image
+- foaf:interest
+- foaf:knows
+- foaf:mbox
+- foaf:member
+- foaf:name
+- foaf:Person
+- foaf:OnlineAccount
+- foaf:Organization
 - owl:equivalentClass
 - owl:imports
 - owl:Ontology
