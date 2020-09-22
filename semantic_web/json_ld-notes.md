@@ -137,6 +137,82 @@ A value object is a map that has a `@value` entry. See the [Value Objects sectio
 The vocabulary mapping is set in the context using the `@vocab` key whose value must be an IRI, a compact IRI, a term, or null. See the [Context Definitions section of JSON-LD 1.1][context-definitions] for a normative description.
 
 
+## Keywords
+
+**@base**
+Used to set the base IRI against which to resolve those relative IRI references which are otherwise interpreted relative to the document.
+
+**@container**
+Used to set the default container type for a term.
+
+**@context**
+Used to define the short-hand names that are used throughout a JSON-LD document. These short-hand names are called terms and help developers to express specific identifiers in a compact manner.
+
+**@direction**
+Used to set the base direction of a JSON-LD value which are not typed values (e.g. strings, or language-tagged strings).
+
+**@graph**
+Used to express a graph.
+
+**@id**
+Used to uniquely identify node objects that are being described in the document with IRIs or blank node identifiers. A node reference is a node object containing only the `@id` property, which may represent a reference to a node object found elsewhere in the document.
+
+**@import**
+Used in a context definition to load an external context within which the containing context definition is merged. This can be useful to add JSON-LD 1.1 features to JSON-LD 1.0 contexts.
+
+**@included**
+Used in a top-level node object to define an included block, for including secondary node objects within another node object.
+
+**@index**
+Used to specify that a container is used to index information and that processing should continue deeper into a JSON data structure.
+
+**@json**
+Used as the `@type` value of a JSON literal.
+
+**@language**
+Used to specify the language for a particular string value or the default language of a JSON-LD document.
+
+**@list**
+Used to express an ordered set of data.
+
+**@nest**
+Used to define a property of a node object that groups together properties of that node but is not an edge in the graph.
+
+**@none**
+Used as an index value in an index map, id map, language map, type map, or elsewhere where a map is used to index into other values when the indexed node does not have the feature being indexed.
+
+**@prefix**
+With the value `true`, allows this term to be used to construct a compact IRI when compacting. With the value `false`, prevents the term from being used to construct a compact IRI. Also determines if the term will be considered when expanding compact IRIs.
+
+**@propagate**
+Used in a context definition to change the scope of that context. By default, it is `true`, meaning that contexts propagate across node objects (other than for type-scoped contexts which default to `false`). Setting this to `false` causes term definitions created within that context to be removed when entering a new node object.
+
+**@protected**
+Used to prevent term definitions of a context to be overridden by other contexts.
+
+**@reverse**
+Used to express reverse properties.
+
+**@set**
+Used to express an unordered set of data and to ensure that values are always represented as arrays.
+
+**@type**
+Used to set the type of a node or the datatype of a typed value.
+
+**@value**
+Used to specify the data that is associated with a particular property in the graph.
+
+**@version**
+Used in a context definition to set the processing mode. New features since JSON-LD 1.0 are not available when processing mode has been explicitly set to `"json-ld-1.0"`.
+
+NOTE: Within a context definition, `@version` takes the specific value `1.1`, not `"json-ld-1.1"`, as a JSON-LD 1.0 processor may accept a string value for `@version` but will reject a numeric value.
+
+NOTE: The use of `1.1` for the value of `@version` is intended to cause a JSON-LD 1.0 processor to stop processing. Although it is clearly meant to be related to JSON-LD 1.1, it does not otherwise adhere to the requirements for Semantic Versioning.
+
+**@vocab**
+Used to expand properties and values in `@type` with a common prefix IRI.
+
+
 ## Misc
 
 - While JSON-LD uses the same array representation as JSON, the collection is unordered by default. While order is preserved in regular JSON arrays, it is not in regular JSON-LD arrays unless specifically defined.
