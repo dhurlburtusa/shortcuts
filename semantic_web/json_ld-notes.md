@@ -14,3 +14,8 @@ JSON-LD introduces:
 - a facility to express one or more directed graphs, such as a social network, in a single document
 
 JSON-LD is designed to be usable directly as JSON, with no knowledge of RDF. It is also designed to be usable as RDF in conjunction with other Linked Data technologies like SPARQL.
+
+
+## Misc
+
+- While JSON-LD uses the same array representation as JSON, the collection is unordered by default. While order is preserved in regular JSON arrays, it is not in regular JSON-LD arrays unless specifically defined.
