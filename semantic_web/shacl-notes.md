@@ -20,6 +20,7 @@ The Shapes Constraint Language (SHACL) is a language for validating RDF graphs a
 Inherits from sh:Shape
 
 - sh:closed: xsd:boolean
+- sh:ignoredProperties: list
 - sh:or: rdf:List
 - sh:not: sh:Shape
 - sh:property: sh:PropertyShape
@@ -32,11 +33,25 @@ Inherits from sh:Shape
 - sh:defaultValue: any
 - sh:group: sh:PropertyGroup
 - sh:path: rdfs:Resource
-- sh:minCount: xsd:integer
-- sh:maxCount: xsd:integer
 - sh:class: rdfs:Resource
 - sh:datatype: rdfs:Resource
+- sh:nodeKind: sh:BlankNode | sh:BlankNodeOrIRI | sh:BlankNodeOrLiteral | sh:IRI | sh:IRIOrLiteral | sh:Literal
+- sh:minCount: literal of xsd:integer
+- sh:maxCount: literal of xsd:integer
+- sh:minExclusive: literal
+- sh:minInclusive: literal
+- sh:maxExclusive: literal
+- sh:maxInclusive: literal
 - sh:node: sh:NodeShape
+- sh:maxLength: literal of xsd:integer
+- sh:minLength: literal of xsd:integer
+- sh:pattern: literal of xsd:string
+- sh:flags
+- sh:languageIn: 
+- sh:uniqueLang: 
+- sh:hasValue: any
+- sh:in: list
+- And others
 
 
 ## Targets
