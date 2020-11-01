@@ -228,3 +228,18 @@ WHERE {
   OPTIONAL { ?x foaf:homepage ?hpage }
 }
 ```
+
+
+## Matching Alternatives
+
+SPARQL provides a means of combining graph patterns so that one of several alternative graph patterns may match. If more than one of the alternatives matches, all the possible pattern solutions are found.
+
+Pattern alternatives are syntactically specified with the `UNION` keyword.
+
+```sparql
+PREFIX dc10:  <http://purl.org/dc/elements/1.0/>
+PREFIX dc11:  <http://purl.org/dc/elements/1.1/>
+
+SELECT ?title
+WHERE { { ?book dc10:title ?title } UNION { ?book dc11:title ?title } }
+```
