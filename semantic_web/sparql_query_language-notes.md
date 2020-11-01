@@ -39,3 +39,12 @@ WHERE {
   ?x dc:title ?title .
 }
 ```
+
+
+## SPARQL Syntax
+
+### Syntax for Blank Nodes
+
+Blank nodes in graph patterns act as variables, not as references to specific blank nodes in the data being queried.
+
+Blank nodes are indicated by either the label form, such as "\_:abc", or the abbreviated form "[]". A blank node that is used in only one place in the query syntax can be indicated with []. A unique blank node will be used to form the triple pattern.
