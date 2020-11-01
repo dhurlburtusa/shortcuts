@@ -153,3 +153,13 @@ The outer-most graph pattern in a query is called the query pattern. It is gramm
 ```bnf
 [17]  	WhereClause	  ::=  	'WHERE'? GroupGraphPattern
 ```
+
+### Basic Graph Patterns
+
+Basic graph patterns are sets of triple patterns. SPARQL graph pattern matching is defined in terms of combining the results from matching basic graph patterns.
+
+A sequence of triple patterns, with optional filters, comprises a single basic graph pattern. Any other graph pattern terminates a basic graph pattern.
+
+**Blank Node Labels**
+
+When using blank nodes of the form \_:abc,  labels for blank nodes are scoped to the basic graph pattern.  A label can be used in only a single basic graph pattern in any query.
