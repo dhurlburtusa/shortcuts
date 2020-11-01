@@ -163,3 +163,21 @@ A sequence of triple patterns, with optional filters, comprises a single basic g
 **Blank Node Labels**
 
 When using blank nodes of the form \_:abc,  labels for blank nodes are scoped to the basic graph pattern.  A label can be used in only a single basic graph pattern in any query.
+
+### Group Graph Patterns
+
+In a SPARQL query string, a group graph pattern is delimited with braces: {}. For example, this query's query pattern is a group graph pattern of one basic graph pattern.
+
+```
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?name ?mbox
+WHERE {
+  ?x foaf:name ?name .
+  ?x foaf:mbox ?mbox .
+}
+```
+
+**Scope of Filters**
+
+A constraint, expressed by the keyword `FILTER`, is a restriction on solutions over the whole group in which the filter appears.
