@@ -16,7 +16,7 @@ In a **basic graph pattern match**, all the variables used in the query pattern 
 
 Graph pattern matching produces a solution sequence, where each solution has a set of bindings of variables to RDF terms. SPARQL `FILTER`s restrict solutions to those for which the filter expression evaluates to `TRUE`.
 
-**Restricting Value of Strings**
+**Restricting Value of Strings Example**
 
 ```sparql
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -27,7 +27,7 @@ WHERE {
 }
 ```
 
-**Restricting Numeric Values**
+**Restricting Numeric Values Example**
 
 ```sparql
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
