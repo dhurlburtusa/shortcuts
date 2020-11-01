@@ -183,3 +183,48 @@ WHERE {
 **Scope of Filters**
 
 A constraint, expressed by the keyword `FILTER`, is a restriction on solutions over the whole group in which the filter appears.
+
+
+## Including Optional Values
+
+### Optional Pattern Matching
+
+Optional parts of the graph pattern may be specified syntactically with the OPTIONAL keyword applied to a graph pattern:
+
+```sparql
+pattern OPTIONAL { pattern }
+```
+
+In an optional match, either the optional graph pattern matches a graph, thereby defining and adding bindings to one or more solutions, or it leaves a solution unchanged without adding any additional bindings.
+
+### Constraints in Optional Pattern Matching
+
+Constraints can be given in an optional graph pattern.
+
+```sparql
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX ns: <http://example.org/ns#>
+SELECT ?title ?price
+WHERE {
+  ?x dc:title ?title .
+  OPTIONAL {
+    ?x ns:price ?price .
+    FILTER (?price < 30)
+  }
+}
+```
+
+### Multiple Optional Graph Patterns
+
+Graph patterns are defined recursively. A graph pattern may have zero or more optional graph patterns, and any part of a query pattern may have an optional part.
+
+```sparql
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?name ?mbox ?hpage
+WHERE {
+  ?x foaf:name ?name .
+  OPTIONAL { ?x foaf:mbox ?mbox } .
+  OPTIONAL { ?x foaf:homepage ?hpage }
+}
+```
