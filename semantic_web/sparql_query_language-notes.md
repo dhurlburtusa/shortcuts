@@ -134,3 +134,22 @@ is syntactic sugar for:
         rdf:rest   rdf:nil .
   _:b3  rdf:rest   rdf:nil .
 ```
+
+
+## Graph Patterns
+
+SPARQL is based around graph pattern matching. More complex graph patterns can be formed by combining smaller patterns in various ways:
+
+* Basic Graph Patterns, where a set of triple patterns must match.
+* Group Graph Pattern, where a set of graph patterns must all match.
+* Optional Graph patterns, where additional patterns may extend the solution.
+* Alternative Graph Pattern, where two or more possible patterns are tried.
+* Patterns on Named Graphs, where patterns are matched against named graphs.
+
+The first two forms, basic graph patterns and group graph patterns, combine patterns by conjunction.
+
+The outer-most graph pattern in a query is called the query pattern. It is grammatically identified by `GroupGraphPattern` in
+
+```bnf
+[17]  	WhereClause	  ::=  	'WHERE'? GroupGraphPattern
+```
