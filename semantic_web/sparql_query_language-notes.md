@@ -160,6 +160,8 @@ Basic graph patterns are sets of triple patterns. SPARQL graph pattern matching 
 
 A sequence of triple patterns, with optional filters, comprises a single basic graph pattern. Any other graph pattern terminates a basic graph pattern.
 
+Basic graph patterns allow applications to make queries where the entire query pattern must match for there to be a solution.
+
 **Blank Node Labels**
 
 When using blank nodes of the form \_:abc,  labels for blank nodes are scoped to the basic graph pattern.  A label can be used in only a single basic graph pattern in any query.
