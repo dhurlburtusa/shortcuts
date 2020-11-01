@@ -243,3 +243,55 @@ PREFIX dc11:  <http://purl.org/dc/elements/1.1/>
 SELECT ?title
 WHERE { { ?book dc10:title ?title } UNION { ?book dc11:title ?title } }
 ```
+
+
+## Negation
+
+The SPARQL query language incorporates two styles of negation, one based on filtering results depending on whether a graph pattern does or does not match in the context of the query solution being filtered, and one based on removing solutions related to another pattern.
+
+### Filtering Using Graph Patterns
+
+Filtering of query solutions is done within a `FILTER` expression using `NOT EXISTS` and `EXISTS`. Note that the filter scope rules apply to the whole group in which the filter appears.
+
+**Testing For the Absence of a Pattern**
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+
+SELECT ?person
+WHERE {
+  ?person rdf:type foaf:Person .
+  FILTER NOT EXISTS { ?person foaf:name ?name }
+}
+```
+
+**Testing For the Presence of a Pattern**
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+
+SELECT ?person
+WHERE {
+  ?person rdf:type foaf:Person .
+  FILTER EXISTS { ?person foaf:name ?name }
+}
+```
+
+### Removing Possible Solutions
+
+The other style of negation provided in SPARQL is `MINUS` which evaluates both its arguments, then calculates solutions in the left-hand side that are not compatible with the solutions on the right-hand side.
+
+```sparql
+PREFIX : <http://example/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?s
+WHERE {
+  ?s ?p ?o .
+  MINUS {
+    ?s foaf:givenName "Bob" .
+  }
+}
+```
