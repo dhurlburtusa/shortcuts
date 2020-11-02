@@ -306,3 +306,35 @@ See https://www.w3.org/TR/sparql11-query/#neg-notexists-minus for details.
 A property path is a possible route through a graph between two graph nodes. A trivial case is a property path of length exactly 1, which is a triple pattern. The ends of the path may be RDF terms or variables. Variables cannot be used as part of the path itself, only the ends.
 
 Property paths allow for more concise expressions for some SPARQL basic graph patterns and they also add the ability to match connectivity of two resources by an arbitrary length path.
+
+**Syntax**
+
+In the description below, `iri` is either an IRI written in full or abbreviated by a prefixed name, or the keyword `a`. `elt` is a path element, which may itself be composed of path constructs.
+
+| Syntax Form    | Property Path Expression Name | Matches |
+| -------------- | ----------------------------- | ------- |
+| `iri`          | PredicatePath                 | An IRI. A path of length one. |
+| `^elt`         | InversePath                   | Inverse path (object to subject). |
+| `elt1 / elt2`  | SequencePath                  | A sequence path of `elt1` followed by `elt2`. |
+| `elt1 \| elt2` | AlternativePath               | A alternative path of `elt1` or `elt2` (all possibilities are tried). |
+| `elt*`         | ZeroOrMorePath                | A path that connects the subject and object of the path by zero or more matches of `elt`. |
+| `elt+`         | OneOrMorePath                 | A path that connects the subject and object of the path by one or more matches of `elt`. |
+| `elt?`         | ZeroOrOnePath                 | A path that connects the subject and object of the path by zero or one matches of `elt`. |
+| `!iri` or <code>!(iri<sub>1</sub>\|...\|iri<sub>n</sub>)</code> | NegatedPropertySet | Negated property set. An IRI which is not one of <code>iri<sub>i</sub></code>. `!iri` is short for `!(iri)`. |
+| `!^iri` or <code>!(^iri<sub>1</sub>\|...\|^iri<sub>n</sub>)</code> | NegatedPropertySet | Negated property set where the excluded matches are based on reversed path. That is, not one of <code>iri<sub>1</sub>...iri<sub>n</sub></code> as reverse paths. `!^iri` is short for `!(^iri)`. |
+| <code>!(iri<sub>1</sub>\|...\|iri<sub>j</sub>\|^iri<sub>j+1</sub>\|...\|^iri<sub>n</sub>)</code> | NegatedPropertySet | A combination of forward and reverse properties in a negated property set. |
+| `(elt)`        |                               | A group path elt, brackets control precedence. |
+
+The order of IRIs, and reverse IRIs, in a negated property set is not significant and they can occur in a mixed order.
+
+The precedence of the syntax forms is, from highest to lowest:
+
+- IRI, prefixed names
+- Negated property sets
+- Groups
+- Unary operators *, ? and +
+- Unary ^ inverse links
+- Binary operator /
+- Binary operator |
+
+Precedence is left-to-right within groups.
