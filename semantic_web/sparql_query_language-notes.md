@@ -299,3 +299,10 @@ WHERE {
 ### Relationship and differences between NOT EXISTS and MINUS
 
 See https://www.w3.org/TR/sparql11-query/#neg-notexists-minus for details.
+
+
+## Property Paths
+
+A property path is a possible route through a graph between two graph nodes. A trivial case is a property path of length exactly 1, which is a triple pattern. The ends of the path may be RDF terms or variables. Variables cannot be used as part of the path itself, only the ends.
+
+Property paths allow for more concise expressions for some SPARQL basic graph patterns and they also add the ability to match connectivity of two resources by an arbitrary length path.
