@@ -295,3 +295,7 @@ WHERE {
   }
 }
 ```
+
+### Relationship and differences between NOT EXISTS and MINUS
+
+See https://www.w3.org/TR/sparql11-query/#neg-notexists-minus for details.
