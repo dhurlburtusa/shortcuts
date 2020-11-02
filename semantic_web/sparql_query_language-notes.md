@@ -338,3 +338,14 @@ The precedence of the syntax forms is, from highest to lowest:
 - Binary operator |
 
 Precedence is left-to-right within groups.
+
+
+## Assignment
+
+The value of an expression can be added to a solution mapping by binding a new variable to the value of the expression, which is an RDF term. The variable can then be used in the query and also can be returned in results.
+
+Three syntax forms allow this: the `BIND` keyword, expressions in the `SELECT` clause and expressions in the `GROUP BY` clause. The assignment form is (_expression_ `AS` _?var_).
+
+If the evaluation of the expression produces an error, the variable remains unbound for that solution but the query evaluation continues.
+
+Data can also be directly included in a query using `VALUES` for inline data.
