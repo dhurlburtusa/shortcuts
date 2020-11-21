@@ -20,3 +20,12 @@ The `rdfs:subClassOf` property may be used to state that one class is a subclass
 ### `rdfs:Resource`
 
 All things described by RDF are called resources and are instances of the class `rdfs:Resource`. This is the class of everything. All other classes are subclasses of this class. `rdfs:Resource` is an instance of `rdfs:Class`.
+
+
+## Properties
+
+An RDF property is a relation between subject resources and object resources.
+
+The `rdfs:subPropertyOf` property may be used to state that one property is a subproperty of another. If a property `P` is a subproperty of property `P'`, then all pairs of resources which are related by `P` are also related by `P'`. The term super-property is often used as the inverse of subproperty.
+
+The RDF Schema specification does not define a top property that is the super-property of all properties.
