@@ -16,3 +16,7 @@ A class may be a member of its own class extension and may be an instance of its
 The group of resources that are RDF Schema classes is itself a class called `rdfs:Class`.
 
 The `rdfs:subClassOf` property may be used to state that one class is a subclass of another. The term super-class is used as the inverse of subclass.
+
+### `rdfs:Resource`
+
+All things described by RDF are called resources and are instances of the class `rdfs:Resource`. This is the class of everything. All other classes are subclasses of this class. `rdfs:Resource` is an instance of `rdfs:Class`.
