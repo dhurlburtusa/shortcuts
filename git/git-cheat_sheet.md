@@ -205,6 +205,18 @@ Switch branches:
 $ git checkout <branch-name>
 ```
 
+Rename current branch:
+
+```sh
+$ git branch -m <newname>
+```
+
+Rename any branch:
+
+```sh
+$ git branch -m <oldname> <newname>
+```
+
 Deleting a branch that's already been merged:
 
 ```sh
