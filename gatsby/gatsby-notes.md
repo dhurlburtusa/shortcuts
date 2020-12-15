@@ -21,7 +21,7 @@ npx gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-worl
 - https://github.com/gatsbyjs/gatsby-starter-default
 - https://github.com/gatsbyjs/gatsby-starter-blog
 
-See https://www.gatsbyjs.org/starters/ for more starters.
+See https://www.gatsbyjs.com/starters/?v=2 for more starters.
 
 
 ## Common Commands
@@ -90,7 +90,7 @@ This file is where Gatsby expects to find any usage of the [Gatsby server-side
 rendering APIs][gatsby-ssr-api] (if any).  These allow customization of default
 Gatsby settings affecting server-side rendering.
 
-See https://www.gatsbyjs.org/docs/gatsby-project-structure/ for details.
+See https://www.gatsbyjs.com/docs/gatsby-project-structure/ for details.
 
 
 ## GraphQL
@@ -139,8 +139,8 @@ module.exports = {
 ```
 
 
-[gatsby]: https://www.gatsbyjs.org/
-[gatsby-browser-api]: https://www.gatsbyjs.org/docs/browser-apis/
-[gatsby-configuration]: https://www.gatsbyjs.org/docs/gatsby-config/
-[gatsby-node-api]: https://www.gatsbyjs.org/docs/node-apis/
-[gatsby-ssr-api]: https://www.gatsbyjs.org/docs/ssr-apis/
+[gatsby]: https://www.gatsbyjs.com/
+[gatsby-browser-api]: https://www.gatsbyjs.com/docs/browser-apis/
+[gatsby-configuration]: https://www.gatsbyjs.com/docs/gatsby-config/
+[gatsby-node-api]: https://www.gatsbyjs.com/docs/node-apis/
+[gatsby-ssr-api]: https://www.gatsbyjs.com/docs/ssr-apis/
