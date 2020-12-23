@@ -139,6 +139,15 @@ module.exports = {
 ```
 
 
+## Data
+
+Data in Gatsby sites can come from anywhere: APIs, databases, CMSs, local files, etc.
+
+Source plugins fetch data from their source. E.g. the filesystem source plugin knows how to fetch data from the file system. The WordPress plugin knows how to fetch data from the WordPress API.
+
+Often, the format of the data you get from source plugins isn’t what you want to use to build your website. Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+
+
 [gatsby]: https://www.gatsbyjs.com/
 [gatsby-browser-api]: https://www.gatsbyjs.com/docs/browser-apis/
 [gatsby-configuration]: https://www.gatsbyjs.com/docs/gatsby-config/
