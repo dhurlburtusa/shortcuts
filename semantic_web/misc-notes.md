@@ -3,6 +3,9 @@
 
 ## Common Prefixes/Namespaces
 
+- d: <http://dbpedia.org/ontology/>
+- dbpedia: <http://dbpedia.org/>
+- dbpedia2: <http://dbpedia.org/property/>
 - dc: <http://purl.org/dc/elements/1.1/>
 - dcterms: <http://purl.org/dc/terms/>
 - err: <http://www.w3.org/2005/xqt-errors#>
@@ -18,6 +21,7 @@
 - sfn: <http://www.w3.org/ns/sparql#>
 - sh:  <http://www.w3.org/ns/shacl#>
 - skos: <http://www.w3.org/2004/02/skos/core#>
+- v: <http://www.w3.org/2006/vcard/>
 - xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
