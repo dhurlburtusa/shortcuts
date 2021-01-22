@@ -21,13 +21,23 @@ The following is a list of less technical OWL documentation and serve well as in
 
 OWL 2 is a language for expressing ontologies. An ontology is a set of precise descriptive statements about some part of the world (usually referred to as the domain of interest or the subject matter of the ontology). Precise descriptions satisfy several purposes: most notably, they prevent misunderstandings in human communication and they ensure that software behaves in a uniform, predictable way and works well with other software.
 
-OWL 2 is a knowledge representation language, designed to formulate, exchange and reason with knowledge about a domain of interest.
+OWL 2 is not a programming language.
+
+OWL 2 is not a schema language for syntax conformance.
+
+OWL 2 is not a database framework.
+
+OWL 2 is a knowledge representation language, designed to formulate, exchange, and reason with knowledge about a domain of interest.
 
 Some fundamental notions should first be explained to understand how knowledge is represented in OWL 2. These basic notions are:
 
 - Axioms: The basic statements that an OWL ontology expresses.
 - Entities: Elements used to refer to real-world objects.
 - Expressions: Combinations of entities to form complex descriptions from basic ones.
+
+In OWL 2, we denote objects as individuals, categories as classes, and relations as properties. Properties in OWL 2 are further subdivided. Object properties relate objects to objects (like a person to their spouse), while datatype properties assign data values to objects (like an age to a person). Annotation properties are used to encode information about (parts of) the ontology itself (like the author and creation date of an axiom) instead of the domain of interest.
+
+As a central feature of OWL, names of entities can be combined into expressions using so called constructors. As a basic example, the atomic classes “female” and “professor” could be combined conjunctively to describe the class of female professors. The latter would be described by an OWL class expression, that could be used in statements or in other expressions. In OWL, the constructors for each sort of entity vary greatly. The expression language for classes is very rich and sophisticated, whereas the expression language for properties is much less so.
 
 Ontologies are formalized vocabularies of terms, often covering a specific domain and shared by a community of users. They specify the definitions of terms by describing their relationships with other terms in the ontology.
 
