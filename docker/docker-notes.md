@@ -39,3 +39,11 @@ Dockers comes in different editions.
 	+ Easily add and remove as demands increase or decrease.
 - Stackable
 	+ Can create stacks of containers in a hierarchy of interrelated services that share dependencies and can be orchestrated and scaled together.
+
+
+## Docker Images and Containers
+
+- A packaged application, ready to be run as a container.
+- Executable packages that include the application (code), runtime, libraries, variables, and configuration files.
+
+A container is the executed/running image.
