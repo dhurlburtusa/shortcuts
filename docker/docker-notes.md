@@ -63,7 +63,20 @@ Docker creates simple tooling and a universal packaging approach that bundles up
 
 ## To Be Categorized
 
+- Commands
+	+ docker
+		* build -t name dir
+	+ docker-compose
+		* build
+		* up
+		* down
 - Files
 	+ .dockerignore
 	+ docker-compose.yml
 	+ Dockerfile
+		* CMD [ "executable", "parameter", ... ]
+		* COPY [flags] source ... dest
+		* EXPOSE port
+		* FROM baseImageName
+		* RUN command parameter ...
+		* WORKDIR /the/workdir/path
