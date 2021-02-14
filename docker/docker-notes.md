@@ -16,7 +16,7 @@ Dockers comes in different editions.
 
 - Free
 - Runs on Windows and Mac
-- Known ad CE (Community Edition)
+- Known as CE (Community Edition)
 
 
 ## What is a Container
