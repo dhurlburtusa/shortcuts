@@ -68,6 +68,7 @@ Docker creates simple tooling and a universal packaging approach that bundles up
 		* build -t imageName dir
 		* images
 		* info
+		* logs containerId
 		* ps
 		* pull imageName
 		* push ...
@@ -77,8 +78,8 @@ Docker creates simple tooling and a universal packaging approach that bundles up
 		* stop containerId
 	+ docker-compose
 		* build
-		* up
-		* down
+		* up ...
+		* down ...
 - Files
 	+ .dockerignore
 	+ docker-compose.yml
