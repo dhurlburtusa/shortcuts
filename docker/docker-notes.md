@@ -65,7 +65,16 @@ Docker creates simple tooling and a universal packaging approach that bundles up
 
 - Commands
 	+ docker
-		* build -t name dir
+		* build -t imageName dir
+		* images
+		* info
+		* ps
+		* pull imageName
+		* push ...
+		* rmi imageId
+		* run ...
+		* start containerId
+		* stop containerId
 	+ docker-compose
 		* build
 		* up
