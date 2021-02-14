@@ -47,3 +47,14 @@ Dockers comes in different editions.
 - Executable packages that include the application (code), runtime, libraries, variables, and configuration files.
 
 A container is the executed/running image.
+
+
+## Docker Engine
+
+Docker creates simple tooling and a universal packaging approach that bundles up all application dependencies inside a container which is then run on Docker Engine.
+
+- Industry’s de facto container runtime.
+- Runs on various Linux (CentOS, Debian, Fedora, Oracle Linux, RHEL, SUSE, and Ubuntu) and Windows Server OSes across hybrid/multi-cloud and validated to work with Kubernetes CRI.
+- Enables containerized applications to run anywhere consistently on any infrastructure, solving “dependency hell” for developers and operations teams, and eliminating the “it works on my laptop!” problem.
+- Supports any type of application - legacy to cloud-native, monolithic to 12-factor.
+- Built with security in mind.
