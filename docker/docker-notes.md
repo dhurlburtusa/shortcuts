@@ -59,3 +59,11 @@ Docker creates simple tooling and a universal packaging approach that bundles up
 - Enables containerized applications to run anywhere consistently on any infrastructure, solving “dependency hell” for developers and operations teams, and eliminating the “it works on my laptop!” problem.
 - Supports any type of application - legacy to cloud-native, monolithic to 12-factor.
 - Built with security in mind.
+
+
+## To Be Categorized
+
+- Files
+	+ .dockerignore
+	+ docker-compose.yml
+	+ Dockerfile
