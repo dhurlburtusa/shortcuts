@@ -80,6 +80,8 @@ This file is where you specify the site's main configuration and metadata like
 title and description, which Gatsby plugins you'd like to include, etc.  See
 the [config docs][gatsby-configuration] for details.
 
+See [gatsby-config.template.js](gatsby-config.template.js) for a template.
+
 **`gatsby-node.js`**
 
 This file is where Gatsby expects to find any usage of the [Gatsby node
