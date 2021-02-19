@@ -72,7 +72,7 @@ APIs][gatsby-browser-api] (if any).  These allow customization/extension of defa
 Gatsby settings affecting the browser. This is also a good place to import
 site-wide styles.
 
-See [gatsby-browser.template.js](../gatsby-browser.template.js) for a template.
+See [gatsby-browser.template.js](gatsby-browser.template.js) for a template.
 
 **`gatsby-config.js`**
 
