@@ -88,6 +88,8 @@ This file is where Gatsby expects to find any usage of the [Gatsby node
 APIs][gatsby-node-api] (if any).  These allow customization/extension of default
 Gatsby settings affecting pieces of the site build process.
 
+See [gatsby-node.template.js](gatsby-node.template.js) for a template.
+
 **`gatsby-ssr.js`**
 
 This file is where Gatsby expects to find any usage of the [Gatsby server-side
