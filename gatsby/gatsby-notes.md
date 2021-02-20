@@ -174,3 +174,7 @@ Often, the format of the data you get from source plugins isn’t what you want 
 ### Using a Page Query
 
 See https://www.gatsbyjs.com/docs/how-to/querying-data/page-query for details.
+
+### Recipes
+
+See https://www.gatsbyjs.com/blog/2020-04-15-announcing-gatsby-recipes/.
