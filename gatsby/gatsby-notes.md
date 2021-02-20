@@ -159,3 +159,18 @@ Often, the format of the data you get from source plugins isn’t what you want 
 [gatsby-configuration]: https://www.gatsbyjs.com/docs/gatsby-config/
 [gatsby-node-api]: https://www.gatsbyjs.com/docs/node-apis/
 [gatsby-ssr-api]: https://www.gatsbyjs.com/docs/ssr-apis/
+
+
+## Uncategorized
+
+### Environment Variables
+
+- GATSBY_GRAPHQL_IDE
+  
+  ```sh
+  GATSBY_GRAPHQL_IDE=playground gatsby develop
+  ```
+
+### Using a Page Query
+
+See https://www.gatsbyjs.com/docs/how-to/querying-data/page-query for details.
