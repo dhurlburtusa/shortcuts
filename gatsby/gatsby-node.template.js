@@ -1,4 +1,4 @@
-// https://www.gatsbyjs.org/docs/node-apis/
+// https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
 
 const path = require(`path`)
 
@@ -7,8 +7,8 @@ const { createFilePath } = require('gatsby-source-filesystem')
 
 /*
 Note: The `actions` property of the first parameter contains references to
-several functions. See https://www.gatsbyjs.org/docs/actions/ for the complete
-set.
+several functions. See https://www.gatsbyjs.com/docs/reference/config-files/actions/
+for the complete set.
 */
 
 /*
@@ -260,7 +260,8 @@ exports.onCreateDevServer = (cntx, cfg) => {
 Called when a new node is created.  Plugins wishing to extend or transform nodes
 created by other plugins should implement this API.
 
-See https://www.gatsbyjs.org/docs/node-interface/ for details about `cntx.node`.
+See https://www.gatsbyjs.com/docs/reference/graphql-data-layer/node-interface/
+for details about `cntx.node`.
 */
 exports.onCreateNode = (cntx, cfg) => {
   // console.log(`gatsby-node.js#onCreateNode(node: type: ${cntx.node.internal.type})`);
