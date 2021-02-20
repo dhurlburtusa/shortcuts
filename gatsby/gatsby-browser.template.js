@@ -1,4 +1,4 @@
-// https://www.gatsbyjs.org/docs/browser-apis/
+// https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
 // Note: This file runs in the browser, not node.js.
 
 // This is a good place to import custom typefaces and/or styles that apply to the
