@@ -1,6 +1,6 @@
-// https://www.gatsbyjs.org/docs/gatsby-config/
+// https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
 
-// https://www.gatsbyjs.org/docs/gatsby-config/#mapping-node-types
+// https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#mapping-node-types
 const mapping;
 //const mapping = {
 //  '<something>.<something>': '<something>.<something>',
@@ -8,6 +8,8 @@ const mapping;
 
 // The site's path prefix.
 // Note: it must *not* have a trailing slash.
+// https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#pathprefix
+// https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix.
 const pathPrefix = '';
 //const pathPrefix = '/foo';
 
