@@ -1,7 +1,5 @@
 // https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
 
-const path = require(`path`)
-
 const { GraphQLString } = require('gatsby/graphql')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -96,7 +94,7 @@ exports.createPages = (cntx, cfg) => {
     plugins,
   } = cfg;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPost = require.resolve('./src/templates/blog-post')
   return graphql(
     `
       {
@@ -295,10 +293,10 @@ exports.onCreateNode = (cntx, cfg) => {
   } = cfg;
   const { createNodeField } = actions
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value,
     })
