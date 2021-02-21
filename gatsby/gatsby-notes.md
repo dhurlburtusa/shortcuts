@@ -218,6 +218,10 @@ Often, the format of the data you get from source plugins isn’t what you want 
   GATSBY_GRAPHQL_IDE=playground gatsby develop
   ```
 
+### Routing
+
+See https://www.gatsbyjs.com/docs/reference/routing/creating-routes/ and https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/.
+
 ### Using a Page Query
 
 See https://www.gatsbyjs.com/docs/how-to/querying-data/page-query for details.
