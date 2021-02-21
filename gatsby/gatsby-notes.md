@@ -66,6 +66,36 @@ gatsby serve
 |-- gatsby-ssr.js
 ```
 
+See https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/ for details.
+
+**`.cache`**
+
+_Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+
+**`plugins`**
+
+This folder hosts any project-specific plugins that aren't published as an npm package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+
+**`public`**
+
+_Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+
+**`src`**
+
+This directory will contain all of the code related to what you will see on the frontend of your site, like your site header, or a page template.
+
+**`src/pages`**
+
+Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+
+**`src/templates`**
+
+Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+
+**`static`**
+
+If you put a file into the `static` folder, it will not be processed by webpack. Instead it will be copied into the `public` folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+
 **`gatsby-browser.js`**
 
 This file is where Gatsby expects to find any usage of the [Gatsby browser
@@ -97,11 +127,13 @@ This file is where Gatsby expects to find any usage of the [Gatsby server-side
 rendering APIs][gatsby-ssr-api] (if any).  These allow customization of default
 Gatsby settings affecting server-side rendering.
 
-See https://www.gatsbyjs.com/docs/gatsby-project-structure/ for details.
-
 **`src/html.js`**
 
-This file allows modification of the `<head>` metadata and general structure of the document. Allows adding external links.
+For custom configuration of default `.cache/default_html.js`.
+
+Allows modification of the `<head>` metadata and general structure of the document. Allows adding external links.
+
+See https://www.gatsbyjs.com/docs/custom-html/.
 
 **`src/pages/404.js`**
 
