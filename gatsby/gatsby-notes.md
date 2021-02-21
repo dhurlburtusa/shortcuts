@@ -56,6 +56,7 @@ gatsby serve
 |-- /public
 |-- /src
     |-- /pages
+        |-- 404.js
     |-- /templates
     |-- html.js
 |-- /static
@@ -97,6 +98,20 @@ rendering APIs][gatsby-ssr-api] (if any).  These allow customization of default
 Gatsby settings affecting server-side rendering.
 
 See https://www.gatsbyjs.com/docs/gatsby-project-structure/ for details.
+
+**`src/html.js`**
+
+This file allows modification of the `<head>` metadata and general structure of the document. Allows adding external links.
+
+**`src/pages/404.js`**
+
+A custom 404 page.
+
+Note: Gatsby creates this page by default -- there is no need to configure it in `gatsby-node.js`.
+
+Note: `src/pages/404.js` is just a common location to declare this page. But you may save it elsewhere if it matches ^\/?404\/?$.
+
+See https://www.gatsbyjs.com/docs/how-to/adding-common-features/add-404-page/.
 
 
 ## GraphQL
