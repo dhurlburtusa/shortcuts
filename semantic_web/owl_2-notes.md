@@ -48,3 +48,98 @@ Any OWL 2 ontology can also be viewed as an RDF graph.
 OWL 2 ontologies provide classes, properties, individuals, and data values and are stored as Semantic Web documents.
 
 OWL 2 ontologies can be used along with information written in RDF, and OWL 2 ontologies themselves are primarily exchanged as RDF documents.
+
+
+## Uncategorized
+
+**Common URIs**
+
+- owl:AllDifferent
+- owl:AllDisjointClasses
+- owl:AllDisjointProperties
+- owl:allValuesFrom
+- owl:AnnotationProperty
+- owl:AsymmetricProperty
+- owl:Class
+- owl:cardinality
+- owl:complementOf
+- owl:DatatypeProperty
+- owl:differentFrom
+- owl:disjointUnionOf
+- owl:disjointWith
+- owl:equivalentClass
+- owl:equivalentProperty
+- owl:FunctionalProperty
+- owl:hasSelf
+- owl:hasValue
+- owl:imports
+- owl:intersectionOf
+- owl:InverseFunctionalProperty
+- owl:inverseOf
+- owl:IrreflexiveProperty
+- owl:maxCardinality
+- owl:maxQualifiedCardinality
+- owl:members
+- owl:minCardinality
+- owl:minQualifiedCardinality
+- owl:NamedIndividual
+- owl:NegativePropertyAssertion
+- owl:Nothing
+- owl:ObjectProperty
+- owl:oneOf
+- owl:onClass
+- owl:onDataRange
+- owl:onProperties
+- owl:onProperty
+- owl:Ontology
+- owl:propertyDisjointWith
+- owl:ReflexiveProperty
+- owl:Restriction
+- owl:qualifiedCardinality
+- owl:sameAs
+- owl:someValuesFrom
+- owl:SymmetricProperty
+- owl:Thing
+- owl:TransitiveProperty
+- owl:unionOf
+- owl:versionIRI
+- owl:withRestrictions
+- rdf:type
+- rdfs:comment
+- rdfs:Datatype
+- rdfs:domain
+- rdfs:isDefinedBy
+- rdfs:label
+- rdfs:range
+- rdfs:seeAlso
+- rdfs:subClassOf
+- rdfs:subPropertyOf
+
+**Less Common URIs (I'm guessing)**
+
+- owl:Annotation
+- owl:annotatedProperty
+- owl:annotatedSource
+- owl:annotatedTarget
+- owl:assertionProperty
+- owl:Axiom
+- owl:backwardCompatibleWith
+- owl:bottomDataProperty
+- owl:bottomObjectProperty
+- ~~owl:DataRange~~ (Deprecated in OWL 2, replaced by rdfs:DataType)
+- owl:datatypeComplementOf
+- owl:deprecated
+- ~~owl:DeprecatedClass~~ (replaced by owl:deprecated)
+- ~~owl:DeprecatedProperty~~ (replaced by owl:deprecated)
+- owl:hasKey
+- owl:incompatibleWith
+- owl:OntologyProperty
+- owl:priorVersion
+- owl:propertyChainAxiom
+- owl:rational
+- owl:real
+- owl:sourceIndividual
+- owl:targetIndividual
+- owl:topDataProperty
+- owl:topObjectProperty
+- owl:versionInfo
