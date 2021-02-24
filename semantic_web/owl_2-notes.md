@@ -12,9 +12,21 @@ See https://www.w3.org/TR/owl-overview/#Documentation_Roadmap for guidance on OW
 The following is a list of less technical OWL documentation and serve well as introductory material.
 
 - https://www.w3.org/TR/owl-overview/
-- https://www.w3.org/TR/owl2-primer/
-- https://www.w3.org/TR/owl2-new-features/
-- https://www.w3.org/TR/owl2-quick-reference/
+- https://www.w3.org/TR/owl-primer/
+- https://www.w3.org/TR/owl-new-features/
+- https://www.w3.org/TR/owl-quick-reference/
+
+The following is a list of the specification documents.
+
+- https://www.w3.org/TR/owl-syntax/
+- https://www.w3.org/TR/owl-mapping-to-rdf/
+- https://www.w3.org/TR/owl-direct-semantics/
+- https://www.w3.org/TR/owl-rdf-based-semantics/
+- https://www.w3.org/TR/owl-conformance/
+- https://www.w3.org/TR/owl-profiles/
+- https://www.w3.org/TR/owl-xml-serialization/
+- https://www.w3.org/TR/owl2-manchester-syntax/
+- https://www.w3.org/TR/owl2-dr-linear/
 
 
 ## Ontologies
