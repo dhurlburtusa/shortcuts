@@ -23,6 +23,18 @@ npx gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-worl
 
 See https://www.gatsbyjs.com/starters/?v=2 for more starters.
 
+**Using a Template from Gatsby Cloud Account**
+
+- From workspace dashboard, click "Add a site".
+- In "Add a site" wizard:
+  + Select "Start from a Template" and click "Next".
+  + Pick from various starters and click "Next".
+  + Enter a repository name.
+  + If applicable, follow instructions to connect to your CMS provider.
+  + Click "Start my Site".
+
+
+
 
 ## Common Commands
 
