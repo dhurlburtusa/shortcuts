@@ -1,5 +1,11 @@
 # PuTTY Notes
 
+## Configuration
+
+It appears that these are saved in the Window's registry under the `HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY` key.
+
+TODO: Confirm whether there are configurations saved elsewhere.
+
 
 ## Common Configuration Changes
 
