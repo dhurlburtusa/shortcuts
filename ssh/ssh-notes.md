@@ -20,3 +20,7 @@ The `ssh-agent` is a helper program that keeps track of user's identity keys and
 The SSH agent is used for SSH public key authentication. It uses SSH keys for authentication. Users can create SSH keys using the `ssh-keygen` command and install them on servers using the `ssh-copy-id` command.
 
 See https://www.ssh.com/ssh/agent for details.
+
+**ssh-keygen**
+
+The `ssh-keygen` is a tool for creating new authentication key pairs for SSH. Such key pairs are used for automating logins, single sign-on, and for authenticating hosts.
