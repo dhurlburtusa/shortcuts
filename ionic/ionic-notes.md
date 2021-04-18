@@ -76,6 +76,8 @@ ionic cap add android
 ionic cap add ios
 ```
 
+Note: The project needs to be built first (i.e., `npm run build`).
+
 
 ## Opening Native IDEs
 
