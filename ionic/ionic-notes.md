@@ -24,3 +24,11 @@ Node and npm are the only requirements.
 npm uninstall -g ionic
 npm install -g @ionic/cli
 ```
+
+
+## Creating an App
+
+```sh
+ionic start <app-name> <starter-name>
+# Where <starter-name> is: blank, tabs, or sidemenu
+```
