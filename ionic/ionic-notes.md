@@ -86,3 +86,8 @@ cd <app-dir>
 ionic cap open android
 ionic cap open ios
 ```
+
+
+## Adaptive Styling
+
+See https://ionicframework.com/docs/core-concepts/fundamentals#adaptive-styling.
