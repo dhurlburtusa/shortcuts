@@ -47,3 +47,15 @@ ionic serve
 ```sh
 npm install @ionic/angular@latest --save
 ```
+
+
+## Ionic + React
+
+```sh
+npm install @ionic/react
+npm install @ionic/react-router
+```
+
+**CSS**
+
+See https://ionicframework.com/docs/intro/cdn#css to include the CSS in a React project.
