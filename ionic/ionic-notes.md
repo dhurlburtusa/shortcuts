@@ -26,6 +26,13 @@ npm install -g @ionic/cli
 ```
 
 
+## Installing Ionic Tooling
+
+```sh
+npm install -g cordova-res native-run
+```
+
+
 ## Creating an App
 
 ```sh
