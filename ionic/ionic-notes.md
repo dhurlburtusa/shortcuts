@@ -66,3 +66,12 @@ npm install @ionic/react-router
 **CSS**
 
 See https://ionicframework.com/docs/intro/cdn#css to include the CSS in a React project.
+
+
+## Adding Native Support
+
+```sh
+cd <app-dir>
+ionic capacitor add android
+ionic capacitor add ios
+```
