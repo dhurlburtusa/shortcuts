@@ -72,6 +72,15 @@ See https://ionicframework.com/docs/intro/cdn#css to include the CSS in a React 
 
 ```sh
 cd <app-dir>
-ionic capacitor add android
-ionic capacitor add ios
+ionic cap add android
+ionic cap add ios
+```
+
+
+## Opening Native IDEs
+
+```sh
+cd <app-dir>
+ionic cap open android
+ionic cap open ios
 ```
