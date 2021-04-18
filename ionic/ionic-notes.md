@@ -40,3 +40,10 @@ ionic start <app-name> <starter-name>
 cd <app-dir>
 ionic serve
 ```
+
+
+## Ionic + Angular
+
+```sh
+npm install @ionic/angular@latest --save
+```
