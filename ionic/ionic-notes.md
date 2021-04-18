@@ -32,3 +32,11 @@ npm install -g @ionic/cli
 ionic start <app-name> <starter-name>
 # Where <starter-name> is: blank, tabs, or sidemenu
 ```
+
+
+## Running the App
+
+```sh
+cd <app-dir>
+ionic serve
+```
