@@ -37,8 +37,10 @@ npm install -g cordova-res native-run
 
 ```sh
 ionic start <app-name> <starter-name>
-# Where <starter-name> is: blank, tabs, or sidemenu
+# Where <starter-name> is: blank, sidemenu, or tabs
 ```
+
+See https://ionicframework.com/docs/developing/starting for details.
 
 
 ## Running the App
