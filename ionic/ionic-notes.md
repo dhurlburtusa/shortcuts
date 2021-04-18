@@ -16,3 +16,11 @@ Node and npm are the only requirements.
 
 - Recommends using the built-in terminals.
 - Git Bash (from git-scm.com) does not support TTY interactivity and is not supported by Ionic.
+
+
+## Installing Ionic
+
+```sh
+npm uninstall -g ionic
+npm install -g @ionic/cli
+```
