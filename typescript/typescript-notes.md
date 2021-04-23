@@ -13,3 +13,10 @@ The presence of a `tsconfig.json` file in a directory indicates that the directo
 - By invoking `tsc` with no input files and a `--project` (or just `-p`) command line option that specifies the path of a directory containing a `tsconfig.json` file, or a path to a valid `.json` file containing the configurations.
 
 When input files are specified on the command line, `tsconfig.json` files are ignored.
+
+
+## Misc
+
+- Readonly<Something>
+- some_object as const
+
