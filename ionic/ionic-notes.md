@@ -23,6 +23,8 @@ Node and npm are the only requirements.
 
 ## Installing Ionic
 
+Ionic apps are created and developed primarily through the Ionic command-line utility.
+
 ```sh
 npm uninstall -g ionic
 npm install -g @ionic/cli
