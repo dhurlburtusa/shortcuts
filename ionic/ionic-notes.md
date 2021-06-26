@@ -8,6 +8,36 @@ Ionic Framework focuses on the frontend UX and UI interaction of an app — UI c
 
 Ionic is the only mobile app stack that enables web developers to build apps for all major app stores and the mobile web from a single codebase. And with [Adaptive Styling](https://ionicframework.com/docs/theming/platform-styles), Ionic apps look and feel at home on every device.
 
+**UI Components**
+
+Ionic Framework is a library of UI Components, which are reusable elements that serve as the building blocks for an application. Ionic Components are built with web standards using HTML, CSS, and JavaScript.
+
+**Adaptive Styling**
+
+Adaptive Styling is a built-in feature of Ionic Framework which allows app developers to use the same code base for multiple platforms. Every Ionic component adapts its look to the platform on which the app is running on.
+
+See https://ionicframework.com/docs/core-concepts/fundamentals#adaptive-styling.
+
+**Theming**
+
+At the core, Ionic Framework is built using CSS which allows us to take advantage of the flexibility that CSS properties (variables) provide.
+
+See https://ionicframework.com/docs/theming.
+
+**Navigation**
+
+Traditional web apps use a linear history, meaning that the user navigates forward to a page and can hit the back button to navigate back.
+
+In contrast, mobile apps often utilize parallel, "non-linear" navigation. For example, a tabbed interface can have separate navigation stacks for each tab, making sure the user never loses their place as they navigate and switch between tabs.
+
+Ionic apps embrace this mobile navigation approach, supporting parallel navigation histories that can also be nested, all while maintaining the familiar browser-style navigation concepts web developers are familiar with.
+
+**Native Access**
+
+One of the most common use cases for Ionic is to build an app which can be downloaded from both the App Store and Play Store. Both iOS and Android software development kits (SDKs) provide Web Views which render any Ionic app, while still allowing for full Native SDK access.
+
+See https://ionicframework.com/docs/core-concepts/webview.
+
 
 ## Environment Setup
 
@@ -97,8 +127,3 @@ cd <app-dir>
 ionic cap open android
 ionic cap open ios
 ```
-
-
-## Adaptive Styling
-
-See https://ionicframework.com/docs/core-concepts/fundamentals#adaptive-styling.
