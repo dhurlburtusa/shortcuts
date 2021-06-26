@@ -16,6 +16,8 @@ Node and npm are the only requirements.
 **Terminal**
 
 - Recommends using the built-in terminals.
+  + For Windows, Command Prompt and PowerShell are supported. WSL is known to work with Ionic, but may not be supported.
+  + For macOS, the built-in Terminal app is supported.
 - Git Bash (from git-scm.com) does not support TTY interactivity and is not supported by Ionic.
 
 
