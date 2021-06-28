@@ -104,6 +104,13 @@ npm install @ionic/react
 npm install @ionic/react-router
 ```
 
+**Creating an App**
+
+```sh
+ionic start <app-name> <template-name> --type react --capacitor --no-git
+# Where <template-name> is: blank, sidemenu, or tabs
+```
+
 **CSS**
 
 See https://ionicframework.com/docs/intro/cdn#css to include the CSS in a React project.
