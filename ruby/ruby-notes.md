@@ -98,7 +98,7 @@ foo.to_f  # Convert to float (available on Integer, String, etc)
 foo.to_h  # Convert to hash (available on Array, Enumerable, Struct, etc)
 foo.to_i  # Convert to integer (available on Float, String, Time, etc)
 foo.to_s  # Convert to string (available on all objects)
-foo.to_sym  # Convert to symbol (available on Strin, etc)
+foo.to_sym  # Convert to symbol (available on String, etc)
 ```
 
 
@@ -113,7 +113,6 @@ foo.to_sym  # Convert to symbol (available on Strin, etc)
 - Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls.
 - Message passing, not function calls.
 - Blocks are Objects, they just don’t know it yet.
-- Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls.
 - The `Kernel` module methods may be called without a receiver and thuse can be be called in functional form.
 - Recommended shebang: `#!/usr/bin/env ruby`
 
