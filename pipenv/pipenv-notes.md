@@ -19,5 +19,10 @@ pip install pipenv
 ```sh
 mkdir my_project/
 cd my_project/
-pipenv install some_package
+
+# Install some package:
+pipenv install <some_package>
+
+# Activate Virtual Environment:
+pipenv shell
 ```
