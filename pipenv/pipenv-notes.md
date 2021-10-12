@@ -1,6 +1,6 @@
 # Pipenv Notes
 
-Combines package management with virtual environments.
+Pipenv is a new package manager that combines `pip` and `virtualenv` into one easy-to-use tool.
 
 
 ## Installation
