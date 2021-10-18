@@ -21,3 +21,19 @@ However, Web Components by themselves weren't enough. Building fast web apps req
 ## CLI
 
 See https://stenciljs.com/docs/cli for details.
+
+### Component Generator
+
+The Stencil CLI can generate new components for you. If you used one of the starters, you can simply run the `generate` npm script in your project, which will start the interactive generator.
+
+```sh
+npm run generate
+```
+
+Or you can invoke the Stencil CLI directly with the `generate` command (`g` for short). If you don't have `stencil` installed globally, prefix the command with `npx`.
+
+```sh
+npx stencil generate
+```
+
+All components will be generated within the src/components folder. Within that, a folder will be created with the same name as the component tag name you provided, and within that folder the files will be generated.
