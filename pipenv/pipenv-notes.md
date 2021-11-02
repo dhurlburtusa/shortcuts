@@ -33,3 +33,17 @@ pipenv install <some_package>
 # Activate Virtual Environment:
 pipenv shell
 ```
+
+### Working with an Existing Project Initiated with pipenv
+
+```sh
+cd my_project/
+
+# TODO: Confirm the following is correct. If so, then remove this comment. If not, fix and then remove this comment.
+
+# Ensure packages are installed
+pipenv install
+
+# Activate Virtual Environment:
+pipenv shell
+```
