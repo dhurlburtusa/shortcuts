@@ -11,3 +11,18 @@ Most python distributions come with pip pre-installed. However, if yours does no
 ```sh
 python -m pip install --upgrade pip
 ```
+
+
+## Usage
+
+**From PyPy**
+
+```sh
+# Syntax
+python -m pip <pip arguments>
+```
+
+```sh
+# Example
+python -m pip numpy pandas
+```
