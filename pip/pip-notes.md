@@ -26,3 +26,9 @@ python -m pip <pip arguments>
 # Example
 python -m pip numpy pandas
 ```
+
+**From requirements.txt File**
+
+```sh
+python -m pip install -r requirements.txt
+```
