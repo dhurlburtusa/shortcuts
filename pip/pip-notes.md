@@ -5,6 +5,13 @@
 
 Most python distributions come with pip pre-installed. However, if yours does not, see https://pip.pypa.io/en/latest/installation/.
 
+**Add Command Completion**
+
+```sh
+# Example assuming bash; replace ~/.bashrc with your respective bash startup file.
+python -m pip completion --bash >> ~/.bashrc
+```
+
 
 ## Upgrading
 
