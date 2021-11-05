@@ -32,3 +32,9 @@ python -m pip numpy pandas
 ```sh
 python -m pip install -r requirements.txt
 ```
+
+**Uninstalling a Package**
+
+```sh
+python -m pip uninstall SomePackage
+```
