@@ -15,7 +15,7 @@ python -m pip install --upgrade pip
 
 ## Usage
 
-**From PyPy**
+**Installing a Package from PyPy**
 
 ```sh
 # Syntax
@@ -27,7 +27,7 @@ python -m pip <pip arguments>
 python -m pip numpy pandas
 ```
 
-**From requirements.txt File**
+**Installing a Package from a Requirements File**
 
 ```sh
 python -m pip install -r requirements.txt
