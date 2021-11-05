@@ -33,6 +33,18 @@ python -m pip numpy pandas
 python -m pip install -r requirements.txt
 ```
 
+**Listing Installed Packages**
+
+```sh
+python -m pip list
+```
+
+**Listing Outdated, Installed Packages**
+
+```sh
+python -m pip list --outdated
+```
+
 **Uninstalling a Package**
 
 ```sh
