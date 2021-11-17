@@ -40,3 +40,10 @@ FILTER (?price < 30.5)
 **Basic graph pattern**: a set of triple patterns.
 
 **Solution sequence**: The result of a query.
+
+
+## Misc
+
+- Variables are not required to be bound in a solution.
+- All the variables used in a query pattern must be bound in every solution.
+- Graph pattern matching produces a solution sequence, where each solution has a set of bindings of variables to RDF terms.
