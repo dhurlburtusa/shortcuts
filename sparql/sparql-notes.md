@@ -31,3 +31,12 @@ SPARQL FILTERs restrict solutions to those for which the filter expression evalu
 FILTER regex(?title, "^SPARQL")
 FILTER regex(?title, "web", "i")
 FILTER (?price < 30.5)
+
+
+## Terminology
+
+**Triple pattern**: are like RDF triples except that each of the subject, predicate and object may be a variable.
+
+**Basic graph pattern**: a set of triple patterns.
+
+**Solution sequence**: The result of a query.
