@@ -11,3 +11,23 @@ Supports:
 - creating values by expressions
 - extensible value testing
 - constraining queries by source RDF graph
+
+
+## Query
+
+### Query Forms
+
+- SELECT
+- CONSTRUCT
+- ASK
+- DESCRIBE
+
+### RDF Term Constraints
+
+SPARQL FILTERs restrict solutions to those for which the filter expression evaluates to TRUE.
+
+**Examples**
+
+FILTER regex(?title, "^SPARQL")
+FILTER regex(?title, "web", "i")
+FILTER (?price < 30.5)
