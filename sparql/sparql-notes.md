@@ -48,7 +48,7 @@ SPARQL graph pattern matching is defined in terms of combining the results from 
 
 A sequence of triple patterns, with optional filters, comprises a single basic graph pattern. Any other graph pattern terminates a basic graph pattern.
 
-Note: When using blank nodes of the form `\_:abc`,  labels for blank nodes are scoped to the basic graph pattern. A label can be used in only a single basic graph pattern in any query.
+Note: When using blank nodes of the form `_:abc`,  labels for blank nodes are scoped to the basic graph pattern. A label can be used in only a single basic graph pattern in any query.
 
 ```sparql
 ?x foaf:name ?name .
@@ -152,14 +152,14 @@ Graph patterns are defined recursively. A graph pattern may have zero or more op
 ```sparql
 ?x
   foaf:name ?name ;
-  foaf:mbox  ?mbox ;
+  foaf:mbox ?mbox ;
 .
 ```
 
 **Object lists**: A comma separated list of objects. Used when triple patterns share both subject and predicate.
 
 ```sparql
-?x foaf:nick  "Alice" , "Alice in Wonderland" .
+?x foaf:nick "Alice", "Alice in Wonderland" .
 ```
 
 
