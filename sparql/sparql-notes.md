@@ -55,6 +55,13 @@ Note: When using blank nodes of the form `\_:abc`,  labels for blank nodes are s
 ?x foaf:mbox ?mbox .
 ```
 
+```sparql
+# Still considered a single basic graph pattern with interleaved filter:
+?x foaf:name ?name .
+FILTER regex(?name, "Smith")
+?x foaf:mbox ?mbox .
+```
+
 ### Group Graph Patterns
 
 In a SPARQL query string, a group graph pattern is delimited with braces: `{` and `}`.
@@ -128,6 +135,8 @@ In an optional match, either the optional graph pattern matches a graph, thereby
   }
 }
 ```
+
+Graph patterns are defined recursively. A graph pattern may have zero or more optional graph patterns, and any part of a query pattern may have an optional part.
 
 
 ## Terminology
