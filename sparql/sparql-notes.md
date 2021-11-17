@@ -109,6 +109,26 @@ A constraint, expressed by the keyword FILTER, is a restriction on solutions ove
 }
 ```
 
+### Optional Graph Patterns
+
+Optional parts of the graph pattern may be specified syntactically with the `OPTIONAL` keyword applied to a graph pattern.
+
+```
+# Syntax:
+pattern OPTIONAL { pattern }
+```
+
+In an optional match, either the optional graph pattern matches a graph, thereby defining and adding bindings to one or more solutions, or it leaves a solution unchanged without adding any additional bindings.
+
+```sparql
+{
+  ?x foaf:name ?name .
+  OPTIONAL {
+    ?x foaf:mbox ?mbox .
+  }
+}
+```
+
 
 ## Terminology
 
