@@ -41,6 +41,21 @@ FILTER (?price < 30.5)
 
 **Solution sequence**: The result of a query.
 
+**Predicate-object lists**: A semi-colon separated list of predicate/object pairs. Used when triple patterns share the subject.
+
+```sparql
+?x
+  foaf:name ?name ;
+  foaf:mbox  ?mbox ;
+.
+```
+
+**Object lists**: A comma separated list of objects. Used when triple patterns share both subject and predicate.
+
+```sparql
+?x foaf:nick  "Alice" , "Alice in Wonderland" .
+```
+
 
 ## Misc
 
