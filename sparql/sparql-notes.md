@@ -28,9 +28,9 @@ SPARQL FILTERs restrict solutions to those for which the filter expression evalu
 
 **Examples**
 
-FILTER regex(?title, "^SPARQL")
-FILTER regex(?title, "web", "i")
-FILTER (?price < 30.5)
+- `FILTER regex(?title, "^SPARQL")`
+- `FILTER regex(?title, "web", "i")`
+- `FILTER (?price < 30.5)`
 
 ### Graph Patterns
 
