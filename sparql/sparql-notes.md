@@ -209,6 +209,62 @@ The other style of negation provided in SPARQL is `MINUS` which evaluates both i
 
 See https://www.w3.org/TR/sparql11-query/#neg-notexists-minus for details.
 
+### Property Paths
+
+A property path is a possible route through a graph between two graph nodes. A trivial case is a property path of length exactly 1, which is a triple pattern. The ends of the path may be RDF terms or variables. Variables cannot be used as part of the path itself, only the ends.
+
+Property paths allow for more concise expressions for some SPARQL basic graph patterns and they also add the ability to match connectivity of two resources by an arbitrary length path.
+
+See https://www.w3.org/TR/sparql11-query/#pp-language for details.
+
+**Predicate Path Example**
+
+```sparql
+:book1 dc:title ?title .
+```
+
+**Alternative Path Example**
+
+```sparql
+:book1 dc:title|rdfs:label ?displayString
+```
+
+**Inverse Path Examples**
+
+```sparql
+?x foaf:mbox <mailto:alice@example> .
+# is equivalent to:
+<mailto:alice@example> ^foaf:mbox ?x .
+```
+
+```sparql
+# all the people who know someone ?x knows
+?x foaf:knows/^foaf:knows ?y .
+```
+
+**Sequence Path Examples**
+
+```sparql
+?x foaf:knows/foaf:name ?name .
+```
+
+```sparql
+?x foaf:knows/foaf:knows/foaf:name ?name .
+```
+
+**One or More Path Example**
+
+```sparql
+?x foaf:knows+/foaf:name ?name .
+```
+
+**Zero or More Path Example**
+
+```sparql
+:list rdf:rest*/rdf:first ?element .
+```
+
+
 
 ## Terminology
 
