@@ -138,6 +138,26 @@ In an optional match, either the optional graph pattern matches a graph, thereby
 
 Graph patterns are defined recursively. A graph pattern may have zero or more optional graph patterns, and any part of a query pattern may have an optional part.
 
+### Alternative Graph Pattern
+
+SPARQL provides a means of combining graph patterns so that one of several alternative graph patterns may match. If more than one of the alternatives matches, all the possible pattern solutions are found.
+
+Pattern alternatives are syntactically specified with the `UNION` keyword.
+
+```sparql
+{
+  {
+    ?book dc10:title ?title .
+    # ...
+  }
+  UNION
+  {
+    ?book dc11:title ?title .
+    # ...
+  }
+}
+```
+
 
 ## Terminology
 
