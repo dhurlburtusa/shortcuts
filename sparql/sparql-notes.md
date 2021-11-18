@@ -158,6 +158,57 @@ Pattern alternatives are syntactically specified with the `UNION` keyword.
 }
 ```
 
+### Negation
+
+The SPARQL query language incorporates two styles of negation, one based on filtering results depending on whether a graph pattern does or does not match in the context of the query solution being filtered, and one based on removing solutions related to another pattern.
+
+#### Filtering Using Graph Patterns
+
+Filtering of query solutions is done within a `FILTER` expression using `NOT EXISTS` and `EXISTS`. Note that the filter scope rules apply to the whole group in which the filter appears.
+
+The `NOT EXISTS` filter expression tests whether a graph pattern does not match the dataset, given the values of variables in the group graph pattern in which the filter occurs. It does not generate any additional bindings.
+
+```sparql
+# Persons without a name declared:
+{
+  ?person rdf:type foaf:Person .
+  FILTER NOT EXISTS {
+    ?person foaf:name ?name .
+  }
+}
+```
+
+The filter expression `EXISTS` is also provided. It tests whether the pattern can be found in the data; it does not generate any additional bindings.
+
+```sparql
+# Persons with a name declared:
+{
+  ?person rdf:type foaf:Person .
+  FILTER EXISTS {
+    ?person foaf:name ?name .
+  }
+}
+```
+
+#### Removing Possible Solutions
+
+The other style of negation provided in SPARQL is `MINUS` which evaluates both its arguments, then calculates solutions in the left-hand side that are not compatible with the solutions on the right-hand side.
+
+```sparql
+{
+  ?s ?p ?o .
+  MINUS {
+    ?s foaf:givenName "Bob" .
+  }
+}
+```
+
+#### Relationship and differences between `NOT EXISTS` and `MINUS`
+
+`NOT EXISTS` and `MINUS` represent two ways of thinking about negation, one based on testing whether a pattern exists in the data, given the bindings already determined by the query pattern, and one based on removing matches based on the evaluation of two patterns. In some cases they can produce different answers.
+
+See https://www.w3.org/TR/sparql11-query/#neg-notexists-minus for details.
+
 
 ## Terminology
 
