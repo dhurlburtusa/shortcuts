@@ -79,4 +79,4 @@ Or you can invoke the Stencil CLI directly with the `generate` command (`g` for 
 npx stencil generate
 ```
 
-All components will be generated within the src/components folder. Within that, a folder will be created with the same name as the component tag name you provided, and within that folder the files will be generated.
+All components will be generated within the `src/components` folder. Within that, a folder will be created with the same name as the component tag name you provided, and within that folder the files will be generated.
