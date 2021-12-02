@@ -29,3 +29,33 @@ When input files are specified on the command line, `tsconfig.json` files are ig
   ```
 - `let a: ReadonlyArray<number> = [1, 2, 3];`
 - `let b: readonly number[] = [1, 2, 3];`
+- Terminology:
+  + **Contextual typing**: The process of infer types based on contextual information such as where a function is invoked.
+  + **Optional properties**: Properties of an object type that are optional. To declare, add a `?` after the property name.
+  
+    ```js
+    function printName(nameable: { first: string; last?: string }) {
+      // ...
+    }
+    ```
+  + **Type annotations**: The type declared on variables, function parameters, and function return values.
+    
+    ```js
+    // Variable:
+    let myName: string = "Alice";
+  
+    // Function parameters and return value:
+    function greet(name: string): string {
+      // ...
+    }
+    ```
+  + **Union types**: A type formed from two or more other types, representing values that may be _any_ one of those types.
+  
+    ```js
+    // Variable:
+    let id: number | string = "foo";
+  
+    function printId(id: number | string) {
+      // ...
+    }
+    ```
