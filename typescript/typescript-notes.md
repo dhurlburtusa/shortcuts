@@ -19,4 +19,13 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 - Readonly<Something>
 - some_object as const
-
+- You should prefer `interface`. Use `type` when you need specific features.
+- TypeScript's type checking focuses on the shape that values have. This is sometimes called "duck typing" or "structural typing". In a structural type system, if two objects have the same shape, they are considered to be of the same type.
+- The compiler _widens_ — converts to a supertype — the unit type to the primitive type, such as `"foo"` to `string` on assignment to a mutable variable.
+- A const-assertion: `let a = [1, 2, 3] as const;`
+- ```
+  interface X { x: number; }
+  let rx: Readonly<X> = { x: 1 };
+  ```
+- `let a: ReadonlyArray<number> = [1, 2, 3];`
+- `let b: readonly number[] = [1, 2, 3];`
