@@ -38,6 +38,16 @@ When input files are specified on the command line, `tsconfig.json` files are ig
       // ...
     }
     ```
+  + **Type alias**: A name given to a type declaration. This allow a single point of declaration and reusability.
+  
+    ```js
+    type ID = number | string;
+    type Point = {
+      x: number;
+      y: number;
+    }
+    type UserInputSanitizedString = string;
+    ```
   + **Type annotations**: The type declared on variables, function parameters, and function return values.
     
     ```js
@@ -49,6 +59,9 @@ When input files are specified on the command line, `tsconfig.json` files are ig
       // ...
     }
     ```
+  + **Type narrowing**: The process of narrowing a type, for instance narrowing a union type to a specific member type, by providing constructs in the code performing type narrowing such as using the `typeof` operator, `Array.isArray`, etc.
+  
+  
   + **Union types**: A type formed from two or more other types, representing values that may be _any_ one of those types.
   
     ```js
