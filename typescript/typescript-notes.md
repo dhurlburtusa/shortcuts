@@ -110,6 +110,21 @@ Sometimes this rule can be too conservative and will disallow more complex coerc
 const a = (expr as any) as T;
 ```
 
+When you initialize a variable with an object, TypeScript assumes that the properties of that object might change values later so the inferred type of the property is a general type (e.g., `number`, `string`, etc) and not a literal type.
+
+```ts
+const obj = { count: 0 };
+// obj.count inferred to be `number`.
+```
+
+But using `as const`:
+```ts
+const obj = { count: 0 } as const;
+// obj.count inferred to be `0`.
+```
+
+See [Literal Inference](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-inference) to more detailed explanation.
+
 **Type narrowing**: The process of narrowing a type, for instance narrowing a union type to a specific member type, by providing constructs in the code performing type narrowing such as using the `typeof` operator, `Array.isArray`, etc.
 
 **Union types**: A type formed from two or more other types, representing values that may be _any_ one of those types.
