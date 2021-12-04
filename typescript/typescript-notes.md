@@ -78,6 +78,24 @@ function greet(name: string): string {
 }
 ```
 
+**Type assertions**: Allows a JavaScript expression to be declared as a specific type when TypeScript is unable to accurate determine from static analysis. Use keyword `as` and the type.
+
+```ts
+const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
+```
+
+TypeScript only allows type assertions which convert to a _more_ specific or _less_ specific version of a type. This rule prevents "impossible" coercions like:
+
+```ts
+const x = "hello" as number;
+```
+
+Sometimes this rule can be too conservative and will disallow more complex coercions that might be valid. If this happens, you can use two assertions, first to `any` (or `unknown`), then to the desired type:
+
+```ts
+const a = (expr as any) as T;
+```
+
 **Type narrowing**: The process of narrowing a type, for instance narrowing a union type to a specific member type, by providing constructs in the code performing type narrowing such as using the `typeof` operator, `Array.isArray`, etc.
 
 **Union types**: A type formed from two or more other types, representing values that may be _any_ one of those types.
