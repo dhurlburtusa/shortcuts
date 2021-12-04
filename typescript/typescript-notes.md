@@ -136,7 +136,9 @@ const obj = { count: 0 } as const;
 
 See [Literal Inference](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-inference) to more detailed explanation.
 
-**Type narrowing**: The process of narrowing a type, for instance narrowing a union type to a specific member type, by providing constructs in the code performing type narrowing such as using the `typeof` operator, `Array.isArray`, etc.
+**Type narrowing**: The process of narrowing a type, for instance narrowing a union type to a specific member type, by providing constructs in the code performing type narrowing such as using the `typeof` operator, `Array.isArray`, etc with type guards.
+
+See [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) for details.
 
 **Union types**: A type formed from two or more other types, representing values that may be _any_ one of those types.
 
