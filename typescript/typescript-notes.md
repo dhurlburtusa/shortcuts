@@ -61,6 +61,17 @@ function print(a: string, alignment: 'left' | 'right' | 'center') {
 }
 ```
 
+**Non-null Assertion Operator (Postfix `!`)**: Special TypeScript syntax that is effectively a type assertion stating that an expression isn't `null` or `undefined`.
+
+```ts
+function liveDangerously(x?: number | null) {
+  // No error
+  console.log(x!.toFixed());
+}
+```
+
+Just like other type assertions, this doesn’t change the runtime behavior of your code, so it's important to only use `!` when you know that the value can't be `null` or `undefined`.
+
 **Optional properties**: Properties of an object type that are optional. To declare, add a `?` after the property name.
 
 ```ts
