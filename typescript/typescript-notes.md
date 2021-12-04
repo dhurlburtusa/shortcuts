@@ -18,6 +18,35 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 **Contextual typing**: The process of infer types based on contextual information such as where a function is invoked.
 
+**Interfaces**: A name given to an object type declaration. Is very similar to type aliases except that a type alias cannot be re-opened to add new properties.
+
+```ts
+interface Point {
+  x: number;
+  y: number;
+}
+
+interface Animal {
+  name: string
+}
+
+// Can be extended:
+interface Bear extends Animal {
+  honey: boolean
+}
+
+interface Window {
+  title: string
+}
+
+// Can be updated:
+interface Window {
+  React: ReactApi
+}
+```
+
+Note: Interfaces may only be used to [declare the shapes of objects, not rename primitives](https://www.typescriptlang.org/play?#code/PTAEAkFMCdIcgM6gC4HcD2pIA8CGBbABwBtIl0AzUAKBFAFcEBLAOwHMUBPQs0XFgCahWyGBVwBjMrTDJMAshOhMARpD4tQ6FQCtIE5DWoixk9QEEWAeV37kARlABvaqDegAbrmL1IALlAEZGV2agBfampkbgtrWwMAJlAAXmdXdy8ff0Dg1jZwyLoAVWZ2Lh5QVHUJflAlSFxROsY5fFAWAmk6CnRoLGwmILzQQmV8JmQmDzI-SOiKgGV+CaYAL0gBBdyy1KCQ-Pn1AFFplgA5enw1PtSWS+vCsAAVAAtB4QQWOEMKBuYVUiVCYvYQsUTQcRSBDGMGmKSgAAa-VEgiQe2GLgKQA).
+
 **Optional properties**: Properties of an object type that are optional. To declare, add a `?` after the property name.
 
 ```ts
