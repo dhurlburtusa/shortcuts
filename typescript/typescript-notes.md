@@ -47,6 +47,20 @@ interface Window {
 
 Note: Interfaces may only be used to [declare the shapes of objects, not rename primitives](https://www.typescriptlang.org/play?#code/PTAEAkFMCdIcgM6gC4HcD2pIA8CGBbABwBtIl0AzUAKBFAFcEBLAOwHMUBPQs0XFgCahWyGBVwBjMrTDJMAshOhMARpD4tQ6FQCtIE5DWoixk9QEEWAeV37kARlABvaqDegAbrmL1IALlAEZGV2agBfampkbgtrWwMAJlAAXmdXdy8ff0Dg1jZwyLoAVWZ2Lh5QVHUJflAlSFxROsY5fFAWAmk6CnRoLGwmILzQQmV8JmQmDzI-SOiKgGV+CaYAL0gBBdyy1KCQ-Pn1AFFplgA5enw1PtSWS+vCsAAVAAtB4QQWOEMKBuYVUiVCYvYQsUTQcRSBDGMGmKSgAAa-VEgiQe2GLgKQA).
 
+**Literal types**: A type declared as a specific boolean, number, or string. Usually used with union types.
+
+```ts
+type Status = 'fulfilled' | 'idle' | 'pending' | 'rejected';
+
+function compare(a: string, b: string): -1 | 0 | 1 {
+  // ...
+}
+
+function print(a: string, alignment: 'left' | 'right' | 'center') {
+  // ...
+}
+```
+
 **Optional properties**: Properties of an object type that are optional. To declare, add a `?` after the property name.
 
 ```ts
