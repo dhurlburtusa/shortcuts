@@ -144,6 +144,40 @@ See [Literal Inference](https://www.typescriptlang.org/docs/handbook/2/everyday-
 
 See [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) for details.
 
+**Type predicates**: Used to define used-defined type guards. A type predicate is used as the return type of a function. A type predicate takes the form `parameterName is Type`, where `parameterName` must be the name of a parameter from the current function signature. The function can then be used in narrowing.
+
+```ts
+// `pet is Fish` is the type predicate in the following function:
+function isFish(pet: Bird | Fish): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+
+let pet = getSmallPet();
+
+if (isFish(pet)) {
+  pet.swim();
+} else {
+  pet.fly();
+}
+```
+
+In addition, classes can use `this is Type` to narrow their type.
+
+```ts
+class FileSystemObject {
+  isFile(): this is FileRep {
+    return this instanceof FileRep;
+  }
+  isDirectory(): this is Directory {
+    return this instanceof Directory;
+  }
+  isNetworked(): this is Networked & this {
+    return this.networked;
+  }
+  constructor(public path: string, private networked: boolean) {}
+}
+```
+
 **Union types**: A type formed from two or more other types, representing values that may be _any_ one of those types.
 
 ```ts
