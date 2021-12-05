@@ -20,6 +20,25 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 **Control flow analysis**: The analysis of code based on reachability, and TypeScript uses this flow analysis to narrow types as it encounters type guards and assignments.
 
+**Discriminated unions**: A union type where each member has a common property with literal types that can be used to discriminate which member type is being acted upon.
+
+```ts
+interface Circle {
+  kind: "circle";
+  radius: number;
+}
+
+interface Square {
+  kind: "square";
+  sideLength: number;
+}
+
+// The `kind` property is considered the _discriminant_ property in the above interfaces.
+
+// `Shape` is the discriminated union type.
+type Shape = Circle | Square;
+```
+
 **Interfaces**: A name given to an object type declaration. Is very similar to type aliases except that a type alias cannot be re-opened to add new properties.
 
 ```ts
