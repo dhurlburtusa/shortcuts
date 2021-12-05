@@ -18,6 +18,8 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 **Contextual typing**: The process of infer types based on contextual information such as where a function is invoked.
 
+**Control flow analysis**: The analysis of code based on reachability, and TypeScript uses this flow analysis to narrow types as it encounters type guards and assignments.
+
 **Interfaces**: A name given to an object type declaration. Is very similar to type aliases except that a type alias cannot be re-opened to add new properties.
 
 ```ts
