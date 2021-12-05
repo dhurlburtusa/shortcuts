@@ -82,6 +82,28 @@ function print(a: string, alignment: 'left' | 'right' | 'center') {
 }
 ```
 
+**`never` type**: A type TypeScript uses to represent a state which shouldn't exist. For example, it's used when narrowing and the members of a union are reduced to a point where nothing is left. The `never` type can be used to perform exhaustiveness checking.
+
+The `never` type is assignable to every type; however, no type is assignable to `never` (except `never` itself). This means you can use narrowing and rely on `never` turning up to do exhaustive checking in a switch statement.
+
+For example, if not all cases in the following switch are not handled, then shape will not be `never` and the assignment will raise an error.
+
+```ts
+type Shape = Circle | Square;
+ 
+function getArea(shape: Shape) {
+  switch (shape.kind) {
+    case "circle":
+      return Math.PI * shape.radius ** 2;
+    case "square":
+      return shape.sideLength ** 2;
+    default:
+      const _exhaustiveCheck: never = shape;
+      return _exhaustiveCheck;
+  }
+}
+```
+
 **Non-null Assertion Operator (Postfix `!`)**: Special TypeScript syntax that is effectively a type assertion stating that an expression isn't `null` or `undefined`.
 
 ```ts
