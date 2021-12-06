@@ -16,6 +16,20 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 ## Terminology
 
+**call signature**: In JavaScript, functions can have properties in addition to being callable. However, the function type expression syntax doesn’t allow for declaring properties. If we want to describe something callable with properties, we can write a _call signature_ in an object type:
+
+```ts
+type DescribableFunction = {
+  description: string;
+  (someArg: number): boolean;
+};
+function doSomething(fn: DescribableFunction) {
+  console.log(fn.description + " returned " + fn(6));
+}
+```
+
+Note that the syntax is slightly different compared to a function type expression - use `:` between the parameter list and the return type rather than `=>`.
+
 **Contextual typing**: The process of infer types based on contextual information such as where a function is invoked.
 
 **Control flow analysis**: The analysis of code based on reachability, and TypeScript uses this flow analysis to narrow types as it encounters type guards and assignments.
