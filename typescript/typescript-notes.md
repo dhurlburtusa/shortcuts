@@ -53,6 +53,16 @@ interface Square {
 type Shape = Circle | Square;
 ```
 
+**Function type expressions**: A type declaration to describe a function. It is syntactically similar to arrow functions:
+
+```ts
+function greeter(fn: (a: string) => void) {
+  fn("Hello, World");
+}
+```
+
+Note that in function type expressions the parameter name is **required**. The function type `(string) => void` means "a function with a parameter named string of type any".
+
 **Interfaces**: A name given to an object type declaration. Is very similar to type aliases except that a type alias cannot be re-opened to add new properties.
 
 ```ts
@@ -258,6 +268,4 @@ function printId(id: number | string) {
   let rx: Readonly<X> = { x: 1 };
   ```
 - `let a: ReadonlyArray<number> = [1, 2, 3];`
-- `let b: readonly number[] = [1, 2, 3];`
-- Note that in function type expressions the parameter name is **required**. The function type `(string) => void` means "a function with a parameter named string of type any".
-  
+- `let b: readonly number[] = [1, 2, 3];`  
