@@ -16,7 +16,7 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 ## Terminology
 
-**call signature**: In JavaScript, functions can have properties in addition to being callable. However, the function type expression syntax doesn’t allow for declaring properties. If we want to describe something callable with properties, we can write a _call signature_ in an object type:
+**Call signature**: In JavaScript, functions can have properties in addition to being callable. However, the function type expression syntax doesn't allow for declaring properties. If we want to describe something callable with properties, we can write a _call signature_ in an object type:
 
 ```ts
 type DescribableFunction = {
@@ -148,7 +148,7 @@ function getArea(shape: Shape) {
 }
 ```
 
-**Non-null Assertion Operator (Postfix `!`)**: Special TypeScript syntax that is effectively a type assertion stating that an expression isn't `null` or `undefined`.
+**Non-null assertion operator (postfix `!`)**: Special TypeScript syntax that is effectively a type assertion stating that an expression isn't `null` or `undefined`.
 
 ```ts
 function liveDangerously(x?: number | null) {
