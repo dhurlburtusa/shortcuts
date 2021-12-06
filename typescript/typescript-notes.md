@@ -245,3 +245,5 @@ function printId(id: number | string) {
   ```
 - `let a: ReadonlyArray<number> = [1, 2, 3];`
 - `let b: readonly number[] = [1, 2, 3];`
+- Note that in function type expressions the parameter name is **required**. The function type `(string) => void` means "a function with a parameter named string of type any".
+  
