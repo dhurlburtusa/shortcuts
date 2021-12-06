@@ -73,6 +73,57 @@ interface Square {
 type Shape = Circle | Square;
 ```
 
+**Generic function**: Functions declared with generic type information using type parameters.
+
+```ts
+// `Type` here is an example of a type parameter.
+function firstElement<Type>(arr: Type[]): Type | undefined {
+  return arr[0];
+}
+
+// May have more than one type parameter.
+function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[] {
+  return arr.map(func);
+}
+```
+
+When the function is called, the parameter's type is inferred:
+
+```ts
+// n is of type 'number'
+const n = firstElement([1, 2, 3]);
+// s is of type 'string'
+const s = firstElement(["a", "b", "c"]);
+```
+
+Can be constrained:
+
+```ts
+function longest<Type extends { length: number }>(a: Type, b: Type) {
+  if (a.length >= b.length) {
+    return a;
+  } else {
+    return b;
+  }
+}
+```
+
+TypeScript can usually infer the intended type arguments in a generic call, but not always. In these cases, the types can be declared when the function is called:
+
+```ts
+function combine<Type>(arr1: Type[], arr2: Type[]): Type[] {
+  return arr1.concat(arr2);
+}
+
+const arr = combine<string | number>([1, 2, 3], ["hello"]);
+```
+
+Remember, generics are all about relating two or more values with the _same type_!
+
+Remember, type parameters are for _relating the types of multiple values_.
+
+See [Generic Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html#generic-functions) for more details.
+
 **Function type expressions**: A type declaration to describe a function. It is syntactically similar to arrow functions:
 
 ```ts
@@ -228,6 +279,8 @@ See [Literal Inference](https://www.typescriptlang.org/docs/handbook/2/everyday-
 **Type narrowing**: The process of narrowing a type, for instance narrowing a union type to a specific member type, by providing constructs in the code performing type narrowing such as using the `typeof` operator, `Array.isArray`, etc with type guards.
 
 See [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) for details.
+
+**Type parameter**: Used in a function signature of generic functions. See generic function for more details.
 
 **Type predicates**: Used to define used-defined type guards. A type predicate is used as the return type of a function. A type predicate takes the form `parameterName is Type`, where `parameterName` must be the name of a parameter from the current function signature. The function can then be used in narrowing.
 
