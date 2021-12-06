@@ -30,6 +30,26 @@ function doSomething(fn: DescribableFunction) {
 
 Note that the syntax is slightly different compared to a function type expression - use `:` between the parameter list and the return type rather than `=>`.
 
+**Construct signature**: JavaScript functions can also be invoked with the `new` operator. TypeScript refers to these as _constructors_ because they usually create a new object. You can write a _construct signature_ by adding the `new` keyword in front of a call signature:
+
+```ts
+type SomeConstructor = {
+  new (s: string): SomeObject;
+};
+function fn(ctor: SomeConstructor) {
+  return new ctor("hello");
+}
+```
+
+Some objects, like JavaScript's `Date` object, can be called with or without `new`. You can combine call and construct signatures in the same type arbitrarily:
+
+```ts
+interface CallOrConstruct {
+  new (s: string): Date;
+  (n?: number): number;
+}
+```
+
 **Contextual typing**: The process of infer types based on contextual information such as where a function is invoked.
 
 **Control flow analysis**: The analysis of code based on reachability, and TypeScript uses this flow analysis to narrow types as it encounters type guards and assignments.
