@@ -241,6 +241,27 @@ function greet(name: string): string {
 }
 ```
 
+**Type arguments**: Explicitly declared types to generic functions. TypeScript can usually infer the intended type arguments in a generic call, but not always.
+
+```ts
+function combine<Type>(arr1: Type[], arr2: Type[]): Type[] {
+  return arr1.concat(arr2);
+}
+```
+
+Normally it would be an error to call this function with mismatched arrays:
+
+```ts
+const arr = combine([1, 2, 3], ["hello"]);
+// Type 'string' is not assignable to type 'number'.
+```
+
+If you intended to do this, however, you could manually specify Type:
+
+```ts
+const arr = combine<string | number>([1, 2, 3], ["hello"]);
+```
+
 **Type assertions**: Allows a JavaScript expression to be declared as a specific type when TypeScript is unable to accurate determine from static analysis. Use keyword `as` and the type.
 
 ```ts
