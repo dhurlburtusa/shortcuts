@@ -210,6 +210,17 @@ function liveDangerously(x?: number | null) {
 
 Just like other type assertions, this doesn’t change the runtime behavior of your code, so it's important to only use `!` when you know that the value can't be `null` or `undefined`.
 
+**Optional parameters**: A parameter which does not need an argument when the function is called. To declare, add a `?` after the parameter name or give the parameter a default.
+
+```ts
+function f(x?: number) {
+  // ...
+}
+function toInt(x: number, radix = 10) {
+  // ...
+}
+```
+
 **Optional properties**: Properties of an object type that are optional. To declare, add a `?` after the property name.
 
 ```ts
