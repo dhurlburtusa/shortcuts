@@ -16,6 +16,20 @@ When input files are specified on the command line, `tsconfig.json` files are ig
 
 ## Types
 
+### `ReadonlyArray` Type
+
+A built-in generic type representing a readonly variation of the JavaScript `Array`.
+
+```ts
+const roArray: ReadonlyArray<string> = ["red", "green", "blue"];
+// Using shorthand:
+const roArray: readonly string[] = ["red", "green", "blue"];
+
+function doStuff(values: readonly string[]) {
+  // ...
+}
+```
+
 ### Object Types
 
 A type declaration which uses a syntax similar to JavaScript object literal notation. It can be anonymous or named.
