@@ -124,6 +124,22 @@ Remember, type parameters are for _relating the types of multiple values_.
 
 See [Generic Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html#generic-functions) for more details.
 
+**Function overloads**: Some JavaScript functions can be called with different signatures. Overload signatures are used to declares these.
+
+```ts
+function makeDate(timestamp: number): Date;
+function makeDate(m: number, d: number, y: number): Date;
+function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
+  if (d !== undefined && y !== undefined) {
+    return new Date(y, mOrTimestamp, d);
+  } else {
+    return new Date(mOrTimestamp);
+  }
+}
+```
+
+In this example, the first two signatures are called the _overload signatures_. The last signature is the _implementation signature_, but this cannot be called directly. 
+
 **Function type expressions**: A type declaration to describe a function. It is syntactically similar to arrow functions:
 
 ```ts
