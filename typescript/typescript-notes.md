@@ -406,3 +406,4 @@ function printId(id: number | string) {
 - `let a: ReadonlyArray<number> = [1, 2, 3];`
 - `let b: readonly number[] = [1, 2, 3];`
 - When writing a function type for a callback, never write an optional parameter unless you intend to call the function without passing that argument.
+- `void` is not the same as `undefined`.
