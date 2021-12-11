@@ -50,7 +50,7 @@ interface CallOrConstruct {
 }
 ```
 
-**Contextual typing**: The process of infer types based on contextual information such as where a function is invoked.
+**Contextual typing**: The process of inferring types based on contextual information such as where a function is invoked.
 
 **Control flow analysis**: The analysis of code based on reachability, and TypeScript uses this flow analysis to narrow types as it encounters type guards and assignments.
 
