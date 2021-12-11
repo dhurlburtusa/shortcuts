@@ -85,6 +85,22 @@ interface NumberOrStringDictionary {
 
 An index signature property type must be either `string` or `number`.
 
+**Generic Object Types**
+
+```ts
+// Using an interface:
+interface Box<Type> {
+  contents: Type;
+}
+
+// Using a type alias:
+type Box<Type> = {
+  contents: Type;
+};
+
+let box: Box<string>;
+```
+
 
 ## Terminology
 
