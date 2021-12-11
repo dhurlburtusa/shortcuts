@@ -30,6 +30,24 @@ function doStuff(values: readonly string[]) {
 }
 ```
 
+### Tuple Type
+
+A tuple type is another sort of `Array` type that knows exactly how many elements it contains, and exactly which types it contains at specific positions.
+
+```ts
+type StringNumberPair = [string, number];
+
+type ReadonlyStringNumberPair = readonly [string, number];
+
+// With an optional property.
+type Either2dOr3d = [number, number, number?];
+
+// May contain rest elements (not necessarily at the end).
+type StringBooleansNumber = [string, ...boolean[], number];
+```
+
+A tuple with a rest element has no set `length` - it only has a set of well-known elements in different positions.
+
 ### Object Types
 
 A type declaration which uses a syntax similar to JavaScript object literal notation. It can be anonymous or named.
