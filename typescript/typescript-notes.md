@@ -140,6 +140,21 @@ function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
 
 In this example, the first two signatures are called the _overload signatures_. The last signature is the _implementation signature_, but this cannot be called directly. 
 
+**Function `this`**: The `this` of the function (aka method). Since the JavaScript specification states that you cannot have a parameter called `this`, TypeScript uses that syntax space to let you declare the type for `this` in the function body.
+
+```ts
+interface DB {
+  filterUsers(filter: (this: User) => boolean): User[];
+}
+ 
+const db = getDB();
+const admins = db.filterUsers(function (this: User) {
+  return this.isAdmin;
+});
+```
+
+Note that you need to use `function` and not arrow functions to get this behavior since with arrow functions, the `this` would refer to the `this` outside of the function scope.
+
 **Function type expressions**: A type declaration to describe a function. It is syntactically similar to arrow functions:
 
 ```ts
