@@ -260,6 +260,12 @@ function printName(nameable: { first: string; last?: string }) {
 }
 ```
 
+**Tuple**: In general, a sequence of values of a fixed length. In JavaScript, tuples are represented with arrays. But arrays are not inherently fixed length. In TypeScript, an array can declared to be fixed length by appending ` as const`.
+
+```ts
+const args = [8, 5] as const;
+```
+
 **Type alias**: A name given to a type declaration. This allow a single point of declaration and reusability.
 
 ```ts
