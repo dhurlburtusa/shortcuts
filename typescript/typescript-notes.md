@@ -14,6 +14,78 @@ The presence of a `tsconfig.json` file in a directory indicates that the directo
 
 When input files are specified on the command line, `tsconfig.json` files are ignored.
 
+## Types
+
+### Object Types
+
+A type declaration which uses a syntax similar to JavaScript object literal notation. It can be anonymous or named.
+
+```ts
+// Three ways to declare an object type with an `age` property of type `number` and a `name` property of type `string`.
+const person: { age: number; name: string } = { age: 42, name: 'Alice' };
+
+interface Person {
+  age: number;
+  name: string;
+}
+
+type Person = {
+  age: number;
+  name: string;
+}
+```
+
+**Optional Properties**
+
+Declare by adding a `?` to the end of the property's name.
+
+```ts
+interface Point {
+  x: number;
+  y: number;
+  z?: number;
+}
+```
+
+Note: Using mapping modifiers, you can remove `optional` attributes.
+
+**`readonly` Properties**
+
+Declare by prepending `readonly` to the property's name.
+
+```ts
+interface Point {
+  readonly x: number;
+  readonly y: number;
+  readonly z?: number;
+}
+```
+
+Note: Using mapping modifiers, you can remove `readonly` attributes.
+
+**Index Signatures**
+
+Sometimes you don't know all the names of a type's properties ahead of time, but you do know the shape of the values.
+
+```ts
+interface StringArray {
+  [index: number]: string;
+}
+
+interface ReadonlyStringArray {
+  readonly [index: number]: string;
+}
+
+interface NumberOrStringDictionary {
+  [index: string]: number | string;
+  length: number; // ok, length is a number
+  name: string; // ok, name is a string
+}
+```
+
+An index signature property type must be either `string` or `number`.
+
+
 ## Terminology
 
 **Call signature**: In JavaScript, functions can have properties in addition to being callable. However, the function type expression syntax doesn't allow for declaring properties. If we want to describe something callable with properties, we can write a _call signature_ in an object type:
