@@ -134,6 +134,29 @@ let box: Box<string>;
 ```
 
 
+## Modules
+
+### Syntax
+
+TypeScript supports ES module syntax.
+
+### TypeScript Specific ES Module Syntax
+
+Types can be exported and imported using the same syntax as JavaScript values.
+
+`import type` is an import statement which can only import types.
+
+**Inline type imports**
+
+TypeScript 4.5 also allows for individual imports to be prefixed with `type` to indicate that the imported reference is a type.
+
+```ts
+import { createCatName, type Cat, type Dog } from "./animal.js";
+```
+
+These allow a non-TypeScript transpiler like Babel to know what imports can be safely removed.
+
+
 ## Terminology
 
 **Call signature**: In JavaScript, functions can have properties in addition to being callable. However, the function type expression syntax doesn't allow for declaring properties. If we want to describe something callable with properties, we can write a _call signature_ in an object type:
