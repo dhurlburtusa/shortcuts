@@ -56,3 +56,24 @@ The abstract OAuth 2.0 flow illustrated in Figure 1 describes the interaction be
 (F) The resource server validates the access token, and if valid, serves the request.
 
 The preferred method for the client to obtain an authorization grant from the resource owner (depicted in steps (A) and (B)) is to use the authorization server as an intermediary.
+
+
+### Client Registration
+
+Before initiating the protocol, the client registers with the authorization server. The means through which the client registers with the authorization server are beyond the scope of RFC 6749 but typically involve end-user interaction with an HTML registration form.
+
+#### Client Types
+
+OAuth defines two client types, based on their ability to authenticate securely with the authorization server (i.e., ability to maintain the confidentiality of their client credentials):
+
+- confidential: Clients capable of maintaining the confidentiality of their credentials (e.g., client implemented on a secure server with restricted access to the client credentials), or capable of secure client authentication using other means.
+
+- public: Clients incapable of maintaining the confidentiality of their credentials (e.g., clients executing on the device used by the resource owner, such as an installed native application or a web browser-based application), and incapable of secure client authentication via any other means.
+
+The client type designation is based on the authorization server's definition of secure authentication and its acceptable exposure levels of client credentials.
+
+See [RFC 6749 section 2.1](https://tools.ietf.org/html/rfc6749#section-2.1) for details.
+
+#### Client Identifier
+
+The authorization server issues the registered client a client identifier -- a unique string representing the registration information provided by the client. The client identifier is not a secret; it is exposed to the resource owner and MUST NOT be used alone for client authentication. The client identifier is unique to the authorization server.
