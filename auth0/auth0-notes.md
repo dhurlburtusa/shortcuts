@@ -37,19 +37,19 @@ Auth0 categorizes apps based on these characteristics:
 
 - **Application type**: To add authentication to your application, you must register it in the Auth0 Dashboard and select from one of the following application types:
 
-  + **Regular web application**: Traditional web apps that perform most of their application logic on the server (such as Express.js or ASP.NET). To learn how to set up a regular web application, see [Register Regular Web Applications](https://auth0.com/docs/applications/set-up-an-application/register-regular-web-applications).
+  + **Regular web application**: Traditional web apps that perform most of their application logic on the server (such as Express.js or ASP.NET). To learn how to set up a regular web application, see [Register Regular Web Applications](https://auth0.com/docs/get-started/create-apps/regular-web-apps).
 
-  + **Single-page web application (SPA)**: JavaScript apps that perform most of their user interface logic in a web browser, communicating with a web server primarily using APIs (such as AngularJS + Node.js or React). To learn how to set up a Single-page web application, see [Register Single-Page Web Applications](https://auth0.com/docs/applications/set-up-an-application/register-single-page-app).
+  + **Single-page web application (SPA)**: JavaScript apps that perform most of their user interface logic in a web browser, communicating with a web server primarily using APIs (such as AngularJS + Node.js or React). To learn how to set up a Single-page web application, see [Register Single-Page Web Applications](https://auth0.com/docs/get-started/create-apps/single-page-web-apps).
 
-  + **Native application**: Mobile or Desktop applications that run natively in a device (such as iOS or Android). To learn how to set up a native application, see [Register Native Applications](https://auth0.com/docs/applications/set-up-an-application/register-native-applications).
+  + **Native application**: Mobile or Desktop applications that run natively in a device (such as iOS or Android). To learn how to set up a native application, see [Register Native Applications](https://auth0.com/docs/get-started/create-apps/native-apps).
 
-  + **Machine-to-machine (M2M) application**: Non-interactive applications, such as command-line tools, daemons, IoT devices, or services running on your backend. Typically, you use this option if you have a service that requires access to an API. To learn how to set up a native application, see [Register Machine-to-Machine Applications](https://auth0.com/docs/applications/set-up-an-application/register-machine-to-machine-applications).
+  + **Machine-to-machine (M2M) application**: Non-interactive applications, such as command-line tools, daemons, IoT devices, or services running on your backend. Typically, you use this option if you have a service that requires access to an API. To learn how to set up a native application, see [Register Machine-to-Machine Applications](https://auth0.com/docs/get-started/create-apps/machine-to-machine-apps).
 
-- **Credential security**: According to the OAuth 2.0 spec, apps can be classified as either public or confidential; confidential apps can hold credentials securely, while public apps cannot. See [Confidential and Public Applications](https://auth0.com/docs/applications/confidential-and-public-applications) for details.
+- **Credential security**: According to the OAuth 2.0 spec, apps can be classified as either public or confidential; confidential apps can hold credentials securely, while public apps cannot. See [Confidential and Public Applications](https://auth0.com/docs/configure/applications/confidential-public-apps) for details.
 
-- **Ownership**: Whether an app is classified as first- or third-party depends on app ownership and control. First-party apps are controlled by the same organization or person that owns the Auth0 domain. Third-party apps enable external parties or partners to securely access protected resources behind your API. To learn more, see [First-Party and Third-Party Applications](https://auth0.com/docs/applications/first-party-and-third-party-applications).
+- **Ownership**: Whether an app is classified as first- or third-party depends on app ownership and control. First-party apps are controlled by the same organization or person that owns the Auth0 domain. Third-party apps enable external parties or partners to securely access protected resources behind your API. To learn more, see [First-Party and Third-Party Applications](https://auth0.com/docs/configure/applications/confidential-public-apps/first-party-and-third-party-applications).
 
-See https://auth0.com/docs/applications for details.
+See https://auth0.com/docs/configure/applications for details.
 
 
 ## Tenants
