@@ -167,3 +167,45 @@ The flow illustrated in Figure 2 includes the following steps:
 (H) The authorization server authenticates the client and validates the refresh token, and if valid, issues a new access token (and, optionally, a new refresh token).
 
 Steps (C), (D), (E), and (F) are outside the scope of RFC 6749, as described in the [Accessing Protected Resources](#accessing-protected-resources) section.
+
+### Accessing Protected Resources
+
+The client accesses protected resources by presenting the access token to the resource server. The resource server MUST validate the access token and ensure that it has not expired and that its scope covers the requested resource. The methods used by the resource server to validate the access token (as well as any error responses) are beyond the scope of this specification but generally involve an interaction or coordination between the resource server and the authorization server.
+
+The method in which the client utilizes the access token to authenticate with the resource server depends on the type of access token issued by the authorization server. Typically, it involves using the HTTP `Authorization` request header field with an authentication scheme defined by the specification of the access token type used, such as [RFC 6750](https://tools.ietf.org/html/rfc6750).
+
+#### Access Token Types
+
+The access token type provides the client with the information required to successfully utilize the access token to make a protected resource request (along with type-specific attributes). The client MUST NOT use an access token if it does not understand the token type.
+
+For example, the "bearer" token type defined in [RFC 6750](https://tools.ietf.org/html/rfc6750) is utilized by simply including the access token string in the request:
+
+```
+GET /resource/1 HTTP/1.1
+Host: example.com
+Authorization: Bearer mF_9.B5f-4.1JqM
+```
+
+while the "mac" token type defined in [OAuth-HTTP-MAC](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-http-mac-00.html) is utilized by issuing a Message Authentication Code (MAC) key together with the access token that is used to sign certain components of the HTTP requests:
+
+```
+GET /resource/1 HTTP/1.1
+Host: example.com
+Authorization: MAC id="h480djs93hd8",
+                   nonce="274312:dj83hs9s",
+                   mac="kDZvddkndxvhGRXZhvuDjEWhGeE="
+```
+
+Each access token type definition specifies the additional attributes (if any) sent to the client together with the "access_token" response parameter. It also defines the HTTP authentication method used to include the access token when making a protected resource request.
+
+#### Error Response
+
+If a resource access request fails, the resource server SHOULD inform the client of the error. The specifics of such error responses are beyond the scope of RFC 6749, however, it establishes a common registry in [Section 11.4](https://tools.ietf.org/html/rfc6750#section-11.4) for error values to be shared among OAuth token authentication schemes.
+
+New authentication schemes designed primarily for OAuth token authentication SHOULD define a mechanism for providing an error status code to the client, in which the error values allowed are registered in the error registry established by this specification.
+
+Such schemes MAY limit the set of valid error codes to a subset of the registered values.  If the error code is returned using a named parameter, the parameter name SHOULD be "error".
+
+Other schemes capable of being used for OAuth token authentication, but not primarily designed for that purpose, MAY bind their error values to the registry in the same manner.
+
+New authentication schemes MAY choose to also specify the use of the `error_description` and `error_uri` parameters to return error information in a manner parallel to their usage in RFC 6749.
