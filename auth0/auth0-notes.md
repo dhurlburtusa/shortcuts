@@ -58,7 +58,7 @@ Everything starts with an Auth0 tenant. This is where you configure your use of 
 
 Tenant names cannot be changed or reused once deleted.
 
-See https://auth0.com/docs/get-started/learn-the-basics, https://auth0.com/docs/get-started/dashboard/tenant-settings, https://auth0.com/docs/support/delete-or-reset-tenant, and https://auth0.com/docs/best-practices/tenant-settings-best-practices for details.
+See https://auth0.com/docs/get-started/create-tenants, https://auth0.com/docs/configure/tenant-settings, and https://auth0.com/docs/support/manage-subscriptions/delete-or-reset-tenant for details.
 
 
 ## Deployment Options
@@ -71,7 +71,7 @@ Auth0 offers in the following deployment models:
 | Standard Private Cloud | A dedicated cloud service running on Auth0's cloud. |
 | Managed Private Cloud  | A dedicated cloud service running on either Auth0's cloud or the customer's AWS cloud infrastructure. |
 
-See https://auth0.com/docs/get-started/deployment-options for details.
+See https://auth0.com/docs/deploy for details.
 
 
 ## Custom Domains
@@ -84,7 +84,7 @@ Auth0 recommends that you use custom domains with Universal Login for the most s
 
 Auth0 recommends that you whitelist your custom domain instead.
 
-See https://auth0.com/docs/custom-domains for details.
+See https://auth0.com/docs/brand-and-customize/custom-domains for details.
 
 
 ## Terminology
