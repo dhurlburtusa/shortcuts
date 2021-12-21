@@ -209,3 +209,39 @@ Such schemes MAY limit the set of valid error codes to a subset of the registere
 Other schemes capable of being used for OAuth token authentication, but not primarily designed for that purpose, MAY bind their error values to the registry in the same manner.
 
 New authentication schemes MAY choose to also specify the use of the `error_description` and `error_uri` parameters to return error information in a manner parallel to their usage in RFC 6749.
+
+### Terminology
+
+**access-restricted resource**: Aka protected resource.
+
+**access token**: A string denoting a specific scope, lifetime, and other access attributes. They are credentials used to access protected resources. The string is usually opaque to the client.
+
+The token may denote an identifier used to retrieve the authorization information or may self-contain the authorization information in a verifiable manner (e.g., JWT).
+
+Additional authentication credentials, which are beyond the scope of RFC 6749, may be required in order for the client to use a token.
+
+**authorization code**: A code obtained from an authorization server being used as an intermediary between the client and resource owner during steps (A) and (B) in the abstract protocol flow.
+
+**authorization grant**: A credential representing the resource owner's authorization (to access its protected resources) used by the client to obtain an access token.
+
+**authorization endpoint**: An endpoint used to interact with the resource owner and obtain an authorization grant.
+
+**authorization server**: The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization.
+
+**client**: An application making protected resource requests on behalf of the resource owner and with its authorization.
+
+**grant type**: The type of authorization grant. Used with the authorization request. RFC 6749 defines four -- authorization code (`authorization_code`), implicit, resource owner password credentials (`password`), and client credentials (`client_credentials`) -- as well as an extensibility mechanism for defining additional types. Transported in the `grant_type` request parameter of the token request. Also used in a refresh token request with the value `refresh_token`.
+
+**OAuth authorization endpoint response type**: Currently, either `code` or `token`.
+
+**protected resource**: Aka access-restricted resource
+
+**refresh token**: A credential used to obtain access tokens.
+
+**resource owner**: An entity capable of granting access to a protected resource. When the resource owner is a person, it is referred to as an end-user.
+
+**resource server**: The server hosting the protected resources, capable of accepting and responding to protected resource requests using access tokens.
+
+**scope**: The scope or range of the requested or granted access.
+
+**token endpoint**: An endpoint used by the client to obtain an access token by presenting its authorization grant or refresh token.
