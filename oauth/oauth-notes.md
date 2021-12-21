@@ -245,3 +245,10 @@ Additional authentication credentials, which are beyond the scope of RFC 6749, m
 **scope**: The scope or range of the requested or granted access.
 
 **token endpoint**: An endpoint used by the client to obtain an access token by presenting its authorization grant or refresh token.
+
+### Misc
+
+- The use of OAuth over any protocol other than HTTP is out of scope of RFC 6749.
+- The OAuth 2.0 protocol is not backward compatible with OAuth 1.0.
+- The authorization server may be the same server as the resource server or a separate entity.
+- A single authorization server may issue access tokens accepted by multiple resource servers.
