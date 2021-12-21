@@ -212,6 +212,26 @@ New authentication schemes MAY choose to also specify the use of the `error_desc
 
 ### Terminology
 
+<!--
+**authorization code grant error response**:
+
+**authorization request**:
+
+**authorization response**:
+
+**implicit grant error response**:
+
+**OAuth extensions error**:
+
+**resource access error response**:
+
+**token error response**:
+
+**token request**:
+
+**token response**:
+-->
+
 **access-restricted resource**: Aka protected resource.
 
 **access token**: A string denoting a specific scope, lifetime, and other access attributes. They are credentials used to access protected resources. The string is usually opaque to the client.
