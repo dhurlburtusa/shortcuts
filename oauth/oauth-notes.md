@@ -35,7 +35,7 @@ See [RFC 6749 section 2.1](https://tools.ietf.org/html/rfc6749#section-2.1) for 
 
 #### Client Identifier
 
-The authorization server issues the registered client a client identifier -- a unique string representing the registration information provided by the client. The client identifier is not a secret; it is exposed to the resource owner and MUST NOT be used alone for client authentication. The client identifier is unique to the authorization server.
+The authorization server issues the registered client a client identifier — a unique string representing the registration information provided by the client. The client identifier is not a secret; it is exposed to the resource owner and MUST NOT be used alone for client authentication. The client identifier is unique to the authorization server.
 
 ### Protocol Flow
 
@@ -79,7 +79,7 @@ The preferred method for the client to obtain an authorization grant from the re
 
 ### Authorization Grants
 
-An authorization grant is a credential representing the resource owner's authorization (to access its protected resources) used by the client to obtain an access token.  RFC 6749 defines four grant types -- authorization code, implicit, resource owner password credentials, and client credentials -- as well as an extensibility mechanism for defining additional types.
+An authorization grant is a credential representing the resource owner's authorization (to access its protected resources) used by the client to obtain an access token.  RFC 6749 defines four grant types — authorization code, implicit, resource owner password credentials, and client credentials — as well as an extensibility mechanism for defining additional types.
 
 #### Authorization Code Grant
 
@@ -250,7 +250,7 @@ Additional authentication credentials, which are beyond the scope of RFC 6749, m
 
 **client**: An application making protected resource requests on behalf of the resource owner and with its authorization.
 
-**grant type**: The type of authorization grant. Used with the authorization request. RFC 6749 defines four -- authorization code (`authorization_code`), implicit, resource owner password credentials (`password`), and client credentials (`client_credentials`) -- as well as an extensibility mechanism for defining additional types. Transported in the `grant_type` request parameter of the token request. Also used in a refresh token request with the value `refresh_token`.
+**grant type**: The type of authorization grant. Used with the authorization request. RFC 6749 defines four — authorization code (`authorization_code`), implicit, resource owner password credentials (`password`), and client credentials (`client_credentials`) — as well as an extensibility mechanism for defining additional types. Transported in the `grant_type` request parameter of the token request. Also used in a refresh token request with the value `refresh_token`.
 
 **OAuth authorization endpoint response type**: Currently, either `code` or `token`.
 
