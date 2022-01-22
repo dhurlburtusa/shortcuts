@@ -6,3 +6,5 @@ Web Components is a suite of different technologies allowing you to create reusa
 - Shadow DOM
 - ES Modules
 - HTML Template
+
+See https://developer.mozilla.org/en-US/docs/Web/Web_Components for details.
