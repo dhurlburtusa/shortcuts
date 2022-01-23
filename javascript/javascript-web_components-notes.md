@@ -46,3 +46,48 @@ The Shadow DOM API provides a way to attach a hidden separated DOM to an element
 You can affect the nodes in the shadow DOM in exactly the same way as non-shadow nodes — for example appending children or setting attributes, styling individual nodes using element.style.foo, or adding style to the entire shadow DOM tree inside a `<style>` element. The difference is that none of the code inside a shadow DOM can affect anything outside it, allowing for handy encapsulation.
 
 The shadow DOM spec has made it so that you are allowed to actually manipulate the shadow DOM of your own custom elements.
+
+### Creating a Shadow DOM
+
+The `Element#attachShadow` method attaches a shadow DOM tree to the specified element and returns a reference to its shadow root.
+
+```js
+elmt.attachShadow({
+  delegatesFocus: true | false | undefined,
+  mode: 'open' | 'closed',
+});
+```
+
+#### Acceptable Shadow Host Elements
+
+The following is a list of elements you can attach a shadow root to:
+
+- Any autonomous custom element with a valid name
+- `article`
+- `aside`
+- `blockquote`
+- `body`
+- `div`
+- `footer`
+- `h1`
+- `h2`
+- `h3`
+- `h4`
+- `h5`
+- `h6`
+- `header`
+- `main`
+- `nav`
+- `p`
+- `section`
+- `span`
+
+#### Exceptions
+
+**InvalidStateError**
+
+The element you are trying to attach to is already a shadow host.
+
+**NotSupportedError**
+
+You are trying to attach a shadow root to an element outside the HTML namespace, the element cannot have a shadow attached to it, or the static property `disabledFeatures` has been given a value of `"shadow"` in the element definition.
