@@ -31,3 +31,18 @@ You can define several different callbacks inside a custom element's class defin
 
 - **attributeChangedCallback**: Invoked each time one of the custom element's attributes is added, removed, or changed. Which attributes to notice change for is specified in a static get `observedAttributes` method.
 
+
+## Shadow DOM
+
+The Shadow DOM API provides a way to attach a hidden separated DOM to an element. Shadow DOM allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which can be attached to any elements you want, in the same way as the normal DOM.
+
+### Terminology
+
+- **Shadow host**: The regular DOM node that the shadow DOM is attached to.
+- **Shadow tree**: The DOM tree inside the shadow DOM.
+- **Shadow boundary**: The place where the shadow DOM ends and the regular DOM begins.
+- **Shadow root**: The root node of the shadow tree.
+
+You can affect the nodes in the shadow DOM in exactly the same way as non-shadow nodes — for example appending children or setting attributes, styling individual nodes using element.style.foo, or adding style to the entire shadow DOM tree inside a `<style>` element. The difference is that none of the code inside a shadow DOM can affect anything outside it, allowing for handy encapsulation.
+
+The shadow DOM spec has made it so that you are allowed to actually manipulate the shadow DOM of your own custom elements.
