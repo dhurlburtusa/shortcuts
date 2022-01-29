@@ -4,7 +4,7 @@ Note: JavaScript only -- does not handle CSS, HTML, images, etc. Great for JS
 libraries.
 
 ```js
-npm install --global rollup
+npm install --save-dev rollup
 ```
 
 **rollup.config.js**
