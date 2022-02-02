@@ -65,6 +65,15 @@ Decorators are a pure compiler-time construction used by stencil to collect all 
 
 See https://stenciljs.com/docs/cli for details.
 
+### Starting a new Project
+
+```sh
+npm init stencil <starter> <package-name>
+```
+
+where `<starter>` is one of `component` or `app`.
+
+
 ### Component Generator
 
 The Stencil CLI can generate new components for you. If you used one of the starters, you can simply run the `generate` npm script in your project, which will start the interactive generator.
