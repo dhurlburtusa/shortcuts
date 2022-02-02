@@ -48,6 +48,18 @@ Decorators are a pure compiler-time construction used by stencil to collect all 
 - `componentDidUpdate()`:
 - `render()`:
 
+### The `appload` Event
+
+A special event called `appload` will be emitted when the app and all of its child components have finished loading. You can listen for it on the `window` object.
+
+If you have multiple apps on the same page, you can determine which app emitted the event by checking `event.detail.namespace`. This will be the value of the `namespace` config option you've set in your Stencil config.
+
+```js
+window.addEventListener('appload', (event) => {
+  console.log(event.detail.namespace);
+});
+```
+
 ### Other
 
 - `Host`: Host is a functional component that can be used at the root of the render function to set attributes and event listeners to the host element itself.
