@@ -9,27 +9,19 @@ packages in development and build environments.
 
 ## Installation
 
-```sh
-npm install --global lerna
-# Or
-yarn global add lerna
-```
+It is not recommended to install globally. Use `npx lerna ...` to run `lerna init`.
 
 
 ## Getting Started
 
-**Create a new git repositiory**
-
 ```sh
-git init your-repo && cd your-repo
-# or
-git flow init your-repo && cd your-repo
+mkdir your-repo && cd your-repo
 ```
 
 **Initialize Lerna**
 
 ```sh
-lerna init
+npx lerna init
 ```
 
 
@@ -38,9 +30,9 @@ lerna init
 **`lerna init`**
 
 ```sh
-lerna init
+npx lerna init
 # or for independent versioning mode instead of fixed:
-lerna init --independent
+npx lerna init --independent
 ```
 
 Use `--exact` to specify dependency versions without a caret.
@@ -50,7 +42,7 @@ Use `--exact` to specify dependency versions without a caret.
 Create a new lerna-managed package.
 
 ```sh
-lerna create <name> [loc]
+npx lerna create <name> [loc]
 ```
 
 See https://github.com/lerna/lerna/tree/master/commands/create for details.
@@ -60,7 +52,7 @@ See https://github.com/lerna/lerna/tree/master/commands/create for details.
 Add a dependency to matched packages.
 
 ```sh
-lerna add <package>[@version] [--dev] [--exact]
+npx lerna add <package>[@version] [--dev] [--exact]
 ```
 
 **`lerna run`**
@@ -68,7 +60,7 @@ lerna add <package>[@version] [--dev] [--exact]
 Run an npm script in each package that contains that script.
 
 ```sh
-lerna run <script> -- [..args]
+npx lerna run <script> -- [..args]
 ```
 
 See https://github.com/lerna/lerna/tree/master/commands/run for details.
@@ -78,7 +70,7 @@ See https://github.com/lerna/lerna/tree/master/commands/run for details.
 Link local packages together and install remaining package dependencies.
 
 ```sh
-lerna bootstrap
+npx lerna bootstrap
 ```
 
 See https://github.com/lerna/lerna/tree/master/commands/bootstrap for details.
