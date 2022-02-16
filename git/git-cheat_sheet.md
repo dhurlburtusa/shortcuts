@@ -77,6 +77,14 @@ To start a project from Github:
     $ git add file1 file2 file3
 
 
+## Change File Modes/Permissions/Rights
+
+```sh
+# Add execute permission
+git add --chmod=+x -- path/to/file
+```
+
+
 ## Clone
 
 Clone an existing repository into a new directory.  Creates remote-tracking branches for each branch in the cloned
