@@ -11,3 +11,11 @@
 
 const double pi = 3.1415926;
 ```
+
+
+## Strings
+
+- Not a type natively supported by the language.
+- Strings are arrays of characters (`char`) terminated by the `\0` (NULL) character.
+- The `std::string` class is available in the C++ standard library via the `<string>` header.
+- The `<cstring>` header contains functions to handler character array strings.
