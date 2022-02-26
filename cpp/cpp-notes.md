@@ -13,6 +13,25 @@ const double pi = 3.1415926;
 ```
 
 
+## Characters
+
+| Escape code | Description           |
+| ----------- | --------------------- |
+| \n          | newline               |
+| \r          | carriage return       |
+| \t          | tab                   |
+| \v          | vertical tab          |
+| \b          | backspace             |
+| \f          | form feed (page feed) |
+| \a          | alert (beep)          |
+| \'          | single quote (')      |
+| \"          | double quote (")      |
+| \?          | question mark (?)     |
+| \\          | backslash (\)         |
+| \0DD        | octal                 |
+| \xDD        | hexidecimal           |
+
+
 ## Strings
 
 - Not a type natively supported by the language.
