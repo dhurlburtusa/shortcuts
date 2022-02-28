@@ -1,5 +1,7 @@
 # Make Notes
 
+Make is a tool which is typically used to control the generation of executables and other non-source files of a program from the program's source files. More generally, Make can be used to run a series of instructions depending on what files have changed.
+
 
 ## Makefiles
 
