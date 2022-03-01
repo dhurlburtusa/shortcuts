@@ -1,0 +1,14 @@
+
+alias ga='git add'
+alias ga='git add --patch'
+alias gcm='git commit -m'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gl='git log'
+alias gs='git status'
+
+#alias ll='ls -l'
+alias ll='ls -alF'
+#alias la='ls -al'
+alias la='ls -A'
+alias l='ls -CF'
