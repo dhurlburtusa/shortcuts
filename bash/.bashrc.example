@@ -151,4 +151,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# echo 'ssh keys: ' $(ssh-add -l)
+
+# eval "$(register-python-argcomplete pipx)"
+
+# eval "$(/c/bin/uru.bat admin install)"
+
 echo 'End of ~/.bashrc'
