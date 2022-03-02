@@ -9,6 +9,11 @@ Makefiles are used to help decide which parts of a large program need to be reco
 
 It can be used beyond programs too, when you need a series of instructions to run depending on what files have changed.
 
+- The default target is the first target.
+- `clean` is often used as a target that removes the output of other targets, but it is not a special word in `make`.
+- When there are multiple targets for a rule, the commands will be run for each target.
+- `$@` is an automatic variable that contains the target name.
+
 ### Syntax
 
 A Makefile consists of a set of rules. A rule generally looks like this:
