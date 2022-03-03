@@ -1,5 +1,8 @@
 {
-	"@comment extends": "See https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#configuration-inheritance-with-extends",
+	"@comment extends": [
+	  "See https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#configuration-inheritance-with-extends",
+	  "See https://github.com/tsconfig/bases for some TSConfig to extend."
+	],
 	"extends": "./configs/ts-base",
 
 	"@comment compileOnSave": "See https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#compileonsave",
