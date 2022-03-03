@@ -6,9 +6,9 @@ PM2 is a daemon process manager that will help you manage and keep your applicat
 ## Installation
 
 ```sh
-$ npm install pm2@latest -g
+npm install pm2@latest -g
 # or
-$ yarn global add pm2
+yarn global add pm2
 ```
 
 
