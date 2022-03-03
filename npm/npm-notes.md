@@ -19,6 +19,18 @@ npm init --scope=my-scope
 npm init --scope=username
 ```
 
+**Workspaces**
+
+First, initialize a package like normal. See the commands above. Then you add workspaces using the following syntax:
+
+```sh
+npm init -w|--workspace <path/workspace-name> [-w|--workspace <path/workspace-name> ...]
+# E.g.
+npm init --workspace ./packages/foo --w ./libraries/bar --w ./applications/foo
+```
+
+Note: The workspaces may have the same name with a different path but the `name` property of each workspace's `package.json` must be unique.
+
 ### Version Controlled Package Initialization Examples
 
 For these examples, Github is used as the SCM.
