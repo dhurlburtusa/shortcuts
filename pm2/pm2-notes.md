@@ -10,3 +10,14 @@ $ npm install pm2@latest -g
 # or
 $ yarn global add pm2
 ```
+
+
+## Usage
+
+**Basic Usage**
+
+```sh
+pm2 start app.js
+pm2 start bashscript.sh
+# etc
+```
