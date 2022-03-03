@@ -32,3 +32,25 @@ pm2 delete app_name
 ```
 
 `app_name` may also be `all` or the process ID.
+
+**Monitoring**
+
+There are many options. You may subscribe for a dashboard as https://pm2.io or do the following.
+
+**List managed processes**
+
+```sh
+pm2 ls
+```
+
+**Display logs**
+
+```sh
+pm2 logs
+```
+
+**See terminal-based dashboard**
+
+```sh
+pm2 monit
+```
