@@ -21,3 +21,14 @@ pm2 start app.js
 pm2 start bashscript.sh
 # etc
 ```
+
+**Process Management**
+
+```sh
+pm2 restart app_name
+pm2 reload app_name
+pm2 stop app_name
+pm2 delete app_name
+```
+
+`app_name` may also be `all` or the process ID.
