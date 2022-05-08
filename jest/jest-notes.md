@@ -26,7 +26,7 @@ yarn add --dev jest
 
 ```json
   "scripts": {
-    "coverage": "jest --coverage",
-    "test": "jest --watch"
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch"
   }
 ```
