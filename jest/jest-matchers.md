@@ -68,4 +68,8 @@ See https://jestjs.io/docs/next/expect for current list.
 - expect(function).toHaveReturnedWith(value)
 - expect(function).toHaveLastReturnedWith(value)
 - expect(function).toHaveNthReturnedWith(nthCall, value)
-- 
+
+
+## `jest-extended`
+
+[jest-extended](https://www.npmjs.com/package/jest-extended) aims to add additional matchers to Jest's default ones making it easy to test everything.
