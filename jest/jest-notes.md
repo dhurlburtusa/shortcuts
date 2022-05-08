@@ -19,6 +19,24 @@ npm install --save-dev jest
 yarn add --dev jest
 ```
 
+### Using TypeScript via `ts-jest`
+
+```sh
+npm install --save-dev ts-jest
+# or
+yarn add --dev ts-jest
+```
+
+### Provide typing when writing your tests
+
+```sh
+npm install --save-dev @types/jest
+# or
+yarn add --dev @types/jest
+```
+
+In general, try to match the major (26) and minor (4) version as closely as possible.
+
 
 ## Configuration
 
@@ -31,8 +49,8 @@ yarn add --dev jest
   }
 ```
 
-## Generate a basic configuration file
+### Generate a basic configuration file
 
-```
+```sh
 npx jest --init
 ```
