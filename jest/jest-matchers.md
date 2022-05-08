@@ -73,3 +73,8 @@ See https://jestjs.io/docs/next/expect for current list.
 ## `jest-extended`
 
 [jest-extended](https://www.npmjs.com/package/jest-extended) aims to add additional matchers to Jest's default ones making it easy to test everything.
+
+
+## `@testing-library/jest-dom`
+
+`[@testing-library/jest-dom`](https://www.npmjs.com/package/@testing-library/jest-dom) provides a set of DOM related custom jest matchers that you can use to extend jest.
