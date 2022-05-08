@@ -5,7 +5,7 @@ Jest is a "zero configuation testing platform".
 > One of Jest's philosophies is to provide an integrated "zero-configuration"
 > experience.
 
-See https://facebook.github.io/jest/ for details.
+See https://jestjs.io/ or https://facebook.github.io/jest/ for details.
 
 
 ## Installation
