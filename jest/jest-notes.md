@@ -30,3 +30,9 @@ yarn add --dev jest
     "test:watch": "jest --coverage --watch"
   }
 ```
+
+## Generate a basic configuration file
+
+```
+npx jest --init
+```
