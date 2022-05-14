@@ -19,6 +19,12 @@ const path = require('path');
 
 let exitCode = 0;
 
+// Process the script's arguments. May want to do this now or after setting up all
+// the event handlers. The arguments may dictate the behavior of the handler.
+// [yargs](https://www.npmjs.com/package/yargs) is a popular option for parsing the
+// script's arguments.
+console.log('process.argv:', process.argv);
+
 // Set the process title to make it easier to find with `ps` command.
 process.title = 'My Script';
 
@@ -85,10 +91,6 @@ process.on('rejectionHandled', (...args) => {
   console.log('process#rejectionHandled');
   console.log('args:', args);
 });
-
-// Process the script's arguments. May want to do this now or after setting up all
-// the event handlers. The arguments may dictate the behavior of the handler.
-console.log('process.argv:', process.argv);
 
 // You may want to read the environment variables:
 console.log('process.env:', process.env);
