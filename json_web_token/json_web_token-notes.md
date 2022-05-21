@@ -4,7 +4,7 @@ JSON Web Token (JWT) is an open standard ([RFC 7519](rfc-7519)) that defines a
 compact and self-contained way for securely transmitting information between
 parties as a JSON object.  This information can be verified and trusted because
 it is digitally signed.  JWTs can be signed using a secret (with the HMAC
-algorithm) or a public/private key pair using RSA.
+algorithm) or a public/private key pair using RSA or ECDSA.
 
 Let's explain some concepts of this definition further.
 
@@ -52,7 +52,7 @@ Let's break down the different parts.
 
 **Header**
 
-The header typically consists of two parts: the type of the token, which is
+The header _typically_ consists of two parts: the type of the token, which is
 `JWT`, and the hashing algorithm being used, such as HMAC SHA256 or RSA.
 
 For example:
@@ -70,7 +70,7 @@ Then, this JSON is Base64Url encoded to form the first part of the JWT.
 
 The second part of the token is the payload, which contains the claims.
 Claims are statements about an entity (typically, the user) and additional
-metadata.  There are three types of claims: registered, public, and private
+data.  There are three types of claims: registered, public, and private
 claims.
 
 * **Registered claims**: These are a set of predefined claims which are not
@@ -84,7 +84,8 @@ claims.
   resistant namespace.
 
 * **Private claims**: These are the custom claims created to share information
-  between parties that agree on using them.
+  between parties that agree on using them and are neither _registered_ or
+  _public_ claims.
 
 ```json5
 {
@@ -112,8 +113,9 @@ HMACSHA256(
 )
 ```
 
-The signature is used to verify that the sender of the JWT is who it says it
-is and to ensure that the message wasn't changed along the way.
+The signature is used to verify the message wasn't changed along the way, and,
+in the case of tokens signed with a private key, it can also verify that the
+sender of the JWT is who it says it is.
 
 
 ## Header
