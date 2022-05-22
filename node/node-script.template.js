@@ -43,7 +43,7 @@ process.on('multipleResolves', (type, promise, reason) => {
   process.exit(1);
 });
 
-// Note: The default behavior if an `uncaughtException` handler is not set is to
+// Note: The default behavior if an `uncaughtException` handler if not set is to
 // print the stack trace to `stderr` and exit with code 1.
 // See https://nodejs.org/api/process.html#process_event_uncaughtexception before
 // implementing. The default handler may actually be all you need.
@@ -96,7 +96,7 @@ process.on('rejectionHandled', (...args) => {
 console.log('process.env:', process.env);
 
 // You may want to update the environment variables:
-process.env.DEBUG = true;
+process.env.DEBUG = 'true';
 
 // Emitted when Node.js empties its event loop and has no additional work to
 // schedule. Is not emitted for conditions causing explicit termination, such as
