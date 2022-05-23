@@ -16,3 +16,12 @@
 - **Type-safe database queries** that can be validated at compile time.
 - **Less boilerplate** so developers can focus on the important parts of their app.
 - **Auto-completion in code editors** instead of needing to look up documentation.
+
+
+## Prisma CLI
+
+Prisma comes with a CLI program: `prisma`. After it is saved locally in an npm package, you can run it with `npx`:
+
+```sh
+npx prisma
+```
