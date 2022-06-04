@@ -1,5 +1,7 @@
 # Git Cheat Sheet
 
+Git (aka the stupid content tracker) is a fast, scalable, distributed revision control system.
+
 See [git documenation](https://git-scm.com/docs/git).
 
 See [Appendix A: Git Quick Reference](https://git-scm.com/docs/user-manual.html#git-quick-start).
