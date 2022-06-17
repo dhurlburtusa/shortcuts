@@ -14,9 +14,125 @@
 
 ### Applications
 
-Allows you to define different types of applications: Native, Single Page Web Applications, Regular Web Applications, and Machine to Machine Applications.
+Allows you to define different types of applications: Native, Single Page Application, Regular Web Application, and Machine to Machine Application.
 
 - A Generic "Default App" is created for you when you first sign up.
+
+**Generic (no specific application type chosen)**
+
+- Name
+- Domain (not editable)
+- Client ID (not editable)
+- Client Secret (not editable)
+- Description
+- Application Logo
+- Application Type (unset)
+- Token Endpoint Authentication Method: Post
+- Application Login URI
+- Allowed Callback URLs
+- Allowed Logout URLs
+- Allowed Web Origins
+- Allowed Origins (CORS)
+- ID Token Expiration
+- Refresh Token Rotation
+  + Disabled by default
+- Refresh Token Expiration
+  + Disabled by default
+- Grant types
+  + Available: Implicit, Authorization Code, Refresh Token, Client Credentials, Password, MFA (excludes Device Code and Passwordless OTP)
+  + Selected by default: Implicit, Authorization Code, Refresh Token, Client Credentials
+
+**Single Page Application**
+
+- Name
+- Domain (not editable)
+- Client ID (not editable)
+- Client Secret (not editable)
+- Description
+- Application Logo
+- Application Type: Single Page Application
+- Token Endpoint Authentication Method: None (not editable)
+- Application Login URI
+- Allowed Callback URLs
+- Allowed Logout URLs
+- Allowed Web Origins
+- Allowed Origins (CORS)
+- ID Token Expiration
+- Refresh Token Rotation
+  + Enabled by default
+- Refresh Token Expiration
+  + Enabled by default
+- Grant types
+  + Available: Implicit, Authorization Code, Refresh Token, Password, MFA (excludes Client Credentials, Device Code, and Passwordless OTP)
+  + Selected by default: Implicit, Authorization Code, Refresh Token
+
+**Regular Web Application**
+
+- Name
+- Domain (not editable)
+- Client ID (not editable)
+- Client Secret (not editable)
+- Description
+- Application Logo
+- Application Type: Regular Web Application
+- Token Endpoint Authentication Method: Post
+- Application Login URI
+- Allowed Callback URLs
+- Allowed Logout URLs
+- Allowed Web Origins
+- Allowed Origins (CORS)
+- ID Token Expiration
+- Refresh Token Rotation
+- Refresh Token Expiration
+- Grant types
+  + Available: Implicit, Authorization Code, Refresh Token, Client Credentials, Password, MFA, Passwordless OTP (excludes Device Code)
+  + Selected by default: Implicit, Authorization Code, Refresh Token, Client Credentials
+
+**Native**
+
+- Name
+- Domain (not editable)
+- Client ID (not editable)
+- Client Secret (not editable)
+- Description
+- Application Logo
+- Application Type: Native
+- Token Endpoint Authentication Method: None (not editable)
+- Application Login URI
+- Allowed Callback URLs
+- Allowed Logout URLs
+- Allowed Web Origins
+- Allowed Origins (CORS)
+- ID Token Expiration
+- Refresh Token Rotation
+- Refresh Token Expiration
+- Grant types
+  + Available: Implicit, Authorization Code, Refresh Token, Password, MFA, Device Code, Passwordless OTP (excludes Client Credentials)
+  + Selected by default: Implicit, Authorization Code, Refresh Token
+
+**Machine to Machine**
+
+Requires at least one authorized API (see APIs section).
+
+- Name
+- Domain (not editable)
+- Client ID (not editable)
+- Client Secret (not editable)
+- Description
+- Application Logo
+- Application Type: Machine to Machine (not editable)
+- Token Endpoint Authentication Method: Post
+- Application Login URI
+- Allowed Callback URLs
+- Allowed Logout URLs
+- Allowed Web Origins
+- Allowed Origins (CORS)
+- ID Token Expiration
+- Refresh Token Rotation
+- Refresh Token Expiration
+- Grant types
+  + Available: Implicit, Authorization Code, Refresh Token, Client Credentials, Password, MFA, Passwordless OTP (excludes Device Code)
+  + Selected by default: Client Credentials
 
 ### APIs
 
