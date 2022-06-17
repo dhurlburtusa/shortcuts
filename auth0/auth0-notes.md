@@ -54,7 +54,7 @@ See https://auth0.com/docs/configure/applications for details.
 
 ## Tenants
 
-Everything starts with an Auth0 tenant. This is where you configure your use of Auth0, and the where Auth0 assets - such as applications, connections, and user profiles are defined, managed and stored. You access an Auth0 tenant via the Auth0 Dashboard, where you can also create additional, associated tenants. You can create more than one Auth0 tenant so that you can structure your tenants in a way that will isolate different domains of users and also support your Software Development Life Cycle (SDLC).
+Everything starts with an Auth0 tenant. This is where you configure your use of Auth0 and where Auth0 assets - such as applications, connections, and user profiles are defined, managed, and stored. You access an Auth0 tenant via the Auth0 Dashboard, where you can also create additional, associated tenants. You can create more than one Auth0 tenant so that you can structure your tenants in a way that will isolate different domains of users and also support your Software Development Life Cycle (SDLC).
 
 Tenant names cannot be changed or reused once deleted.
 
