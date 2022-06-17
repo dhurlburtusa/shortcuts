@@ -45,3 +45,8 @@ Auth0 provious various social connections like Google, Facebook, Twitter, and ot
 A rule is arbitrary JavaScript code that can be used to extend Auth0's default behavior when authenticating a user.
 
 - Initially, no rules are available.
+
+### Hooks
+
+Hooks allow you to customize the behavior of Auth0 with Node.js code that is executed in selected extension points.
+
