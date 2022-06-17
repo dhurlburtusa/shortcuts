@@ -39,3 +39,9 @@ You can use an Auth0 database or you can supply your own.
 #### Social Connections
 
 Auth0 provious various social connections like Google, Facebook, Twitter, and others so that you can let your users login with them.
+
+### Rules
+
+A rule is arbitrary JavaScript code that can be used to extend Auth0's default behavior when authenticating a user.
+
+- Initially, no rules are available.
