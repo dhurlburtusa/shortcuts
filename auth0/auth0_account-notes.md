@@ -14,6 +14,8 @@
 
 ### Applications
 
+Allows you to define different types of applications: Native, Single Page Web Applications, Regular Web Applications, and Machine to Machine Applications.
+
 - A Generic "Default App" is created for you when you first sign up.
 
 ### APIs
