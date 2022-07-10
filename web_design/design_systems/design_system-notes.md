@@ -36,6 +36,7 @@ From Wikipedia:
 
 **States**
 
+- Busy (e.g., loading)
 - Disabled
 - Focused
 - Hovered
