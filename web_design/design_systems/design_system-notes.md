@@ -16,3 +16,34 @@ From Wikipedia:
 - Regular
 - Solid
 - Thin
+
+### Buttons
+
+**colors (MUI, el al)**
+
+- Error
+- Info
+- Primary
+- Secondary
+- Success
+- Warning
+
+**Sizes**
+
+- Large
+- Medium
+- Small
+
+**States**
+
+- Disabled
+- Focused
+- Hovered
+- Pressed
+
+**Variants**
+
+- Elevated
+- Filled (aka Contained in MUI)
+- Outlined
+- Text
