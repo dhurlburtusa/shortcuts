@@ -12,11 +12,9 @@ From Wikipedia:
 **Styles**
 
 - Filled
-- Light
 - Multi-tone
 - Outlined
 - Regular
-- Solid
 - Thin
 
 ### Buttons
