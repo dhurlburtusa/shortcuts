@@ -36,6 +36,7 @@ From Wikipedia:
 
 **States**
 
+- Active
 - Busy (e.g., loading)
 - Disabled
 - Focused
@@ -48,3 +49,30 @@ From Wikipedia:
 - Filled (aka Contained in MUI)
 - Outlined
 - Text
+
+### Inputs
+
+**Colors**
+
+- Error
+- Normal
+- Warning
+
+**Sizes**
+
+- Large
+- Medium
+- Small
+
+**States**
+
+- Autofilled
+- Busy (e.g., loading)
+- Checked (applies only to checkbox and radio type)
+- Disabled
+- Focused
+- Indeterminate (applies only to checkbox and radio type)
+- Invalid (after some user interaction)
+- Hovered
+- Read-only
+- Required
