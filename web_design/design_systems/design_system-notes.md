@@ -9,6 +9,43 @@ From Wikipedia:
 
 ### Icons
 
+**Common Semantics**
+
+- Add
+- Busy
+- Close
+- Collapse
+- Copy
+- Deleted
+- Edit
+- Error notice
+- Expand
+- Filter
+- Help
+- Informational notice
+- Navigate home
+- Navigate to first item
+- Navigate to last item
+- Navigate to previous item
+- Navigate to next item
+- Navigate to profile
+- Navigate to settings
+- Notification
+- Play
+- Pause
+- Refresh
+- Save
+- Search
+- See more
+- Select language
+- Sort ascending
+- Sort descending
+- Stop
+- Success notice
+- Warning notice
+- Zoom in
+- Zoom out
+
 **Styles**
 
 - Filled
