@@ -13,16 +13,23 @@ From Wikipedia:
 
 - Add
 - Busy
+- Cancel
 - Close
 - Collapse
 - Copy
 - Deleted
+- Done
+- Download
 - Edit
 - Error notice
 - Expand
+- Favorite
 - Filter
 - Help
+- Hide
 - Informational notice
+- Maximize
+- Minimize
 - Navigate home
 - Navigate to first item
 - Navigate to last item
@@ -33,15 +40,21 @@ From Wikipedia:
 - Notification
 - Play
 - Pause
+- Redo
 - Refresh
+- Remove
 - Save
 - Search
 - See more
 - Select language
+- Show
+- Sort
 - Sort ascending
 - Sort descending
 - Stop
 - Success notice
+- Undo
+- Upload
 - Warning notice
 - Zoom in
 - Zoom out
