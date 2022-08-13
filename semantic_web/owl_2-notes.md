@@ -73,6 +73,25 @@ As a central feature of OWL, names of entities can be combined into _expressions
 
 In general, classes are used to group individuals that have something in common in order to refer to them. Hence, classes essentially represent sets of individuals. In modeling, classes are often used to denote the set of objects comprised by a concept of human thinking, like the concept _person_ or the concept _woman_. An individual may well belong to several classes simultaneously.
 
+**ClassAssertion**
+
+Individuals may be declared to be member's of a class.
+
+```turtle
+:_Mary rdf:type :Woman .
+```
+
+### Class Hierarchies
+
+Classes can have relationships with other classes.
+
+**SubClassOf**
+
+```turtle
+:Woman rdfs:subClassOf :Person .
+```
+
+The subclass relationship between classes is transitive. It is also reflexive, meaning that every class is its own subclass.
 
 ## Properties
 
