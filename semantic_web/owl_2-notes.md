@@ -81,8 +81,6 @@ Individuals may be declared to be member's of a class.
 :_Mary rdf:type :Woman .
 ```
 
-### Class Hierarchies
-
 Classes can have relationships with other classes.
 
 **SubClassOf**
@@ -92,6 +90,29 @@ Classes can have relationships with other classes.
 ```
 
 The subclass relationship between classes is transitive. It is also reflexive, meaning that every class is its own subclass.
+
+**EquivalentClasses**
+
+```turtle
+:Person owl:equivalentClass :Human .
+```
+
+Stating that `Person` and `Human` are equivalent amounts exactly to the same as stating that both `Person` is a subclass of `Human` and `Human` is a subclass of `Person`.
+
+**DisjointClasses**
+
+In some cases membership in one class specifically excludes membership in another.
+
+```turtle
+[
+  rdf:type owl:AllDisjointClasses ;
+  owl:members (
+    :Man
+    :Woman
+  ) ;
+]
+```
+
 
 ## Properties
 
