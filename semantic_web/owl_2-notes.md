@@ -140,6 +140,37 @@ Properties come in three flavors: annotation properties, data properties, and ob
 
 Data properties relate individuals to data values.
 
+**DataPropertyAssertion**
+
+```turtle
+:_John :hasAge 51 .
+```
+
+**NegativeDataPropertyAssertion**
+
+```turtle
+[
+  rdf:type owl:NegativePropertyAssertion ;
+  owl:sourceIndividual :_Jack ;
+  owl:assertionProperty :hasAge ;
+  owl:targetValue 53 ;
+]
+```
+
+**DataPropertyDomain**
+
+```turtle
+:hasAge rdfs:domain :Person .
+```
+
+**DataPropertyRange**
+
+```turtle
+:hasAge rdfs:range xsd:nonNegativeInteger .
+```
+
+Note that a domain (or range) statement is not a constraint on the knowledge but allows a reasoner to infer further knowledge. In the above example, anything with the `:hasAge` property is inferred to be a `:Person`, which may not be correct.
+
 ### Object Properties
 
 Object properties relate individuals to other individuals.
