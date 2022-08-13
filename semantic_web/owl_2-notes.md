@@ -113,6 +113,20 @@ In some cases membership in one class specifically excludes membership in anothe
 ]
 ```
 
+## Individuals
+
+**DifferentIndividuals**
+
+```turtle
+:_John owl:differentFrom :_Cody .
+```
+
+**SameIndividual**
+
+```turtle
+:_James owl:sameAs :_Jim .
+```
+
 
 ## Properties
 
