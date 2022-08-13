@@ -64,6 +64,11 @@ OWL 2 ontologies provide classes, properties, individuals, and data values and a
 OWL 2 ontologies can be used along with information written in RDF, and OWL 2 ontologies themselves are primarily exchanged as RDF documents.
 
 
+## Expressions and Constructors
+
+As a central feature of OWL, names of entities can be combined into _expressions_ using so called _constructors_. As a basic example, the atomic classes `female` and `professor` could be combined conjunctively to describe the class of female professors. The latter would be described by an OWL class expression, that could be used in statements or in other expressions. In this sense, expressions can be seen as new entities which are defined by their structure. In OWL, the constructors for each sort of entity vary greatly. The expression language for classes is very rich and sophisticated, whereas the expression language for properties is much less so. These differences have historical as well as technical reasons.
+
+
 ## Classes
 
 In general, classes are used to group individuals that have something in common in order to refer to them. Hence, classes essentially represent sets of individuals. In modeling, classes are often used to denote the set of objects comprised by a concept of human thinking, like the concept _person_ or the concept _woman_. An individual may well belong to several classes simultaneously.
