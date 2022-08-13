@@ -160,6 +160,18 @@ Object properties relate individuals to other individuals.
 :hasChild owl:equivalentProperty otherOnt:child .
 ```
 
+**ObjectPropertyDomain**
+
+```turtle
+:hasWife rdfs:domain :Man .
+```
+
+**ObjectPropertyRange**
+
+```turtle
+:hasWife rdfs:range :Woman .
+```
+
 
 ## Uncategorized
 
