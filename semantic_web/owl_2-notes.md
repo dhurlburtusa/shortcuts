@@ -130,6 +130,36 @@ Data properties relate individuals to data values.
 
 Object properties relate individuals to other individuals.
 
+**ObjectPropertyAssertion**
+
+```turtle
+:_John :hasWife :_Leah .
+```
+
+**NegativeObjectPropertyAssertion**
+
+```turtle
+# Leah is not Cody's wife:
+[
+  rdf:type owl:NegativePropertyAssertion ;
+  owl:sourceIndividual :_Cody ;
+  owl:assertionProperty :hasWife ;
+  owl:targetIndividual :_Leah ;
+]
+```
+
+**SubObjectPropertyOf**
+
+```turtle
+:hasWife rdfs:subPropertyOf :hasSpouse .
+```
+
+**EquivalentObjectProperties**
+
+```turtle
+:hasChild owl:equivalentProperty otherOnt:child .
+```
+
 
 ## Uncategorized
 
