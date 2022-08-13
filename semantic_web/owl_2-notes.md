@@ -69,6 +69,23 @@ OWL 2 ontologies can be used along with information written in RDF, and OWL 2 on
 In general, classes are used to group individuals that have something in common in order to refer to them. Hence, classes essentially represent sets of individuals. In modeling, classes are often used to denote the set of objects comprised by a concept of human thinking, like the concept _person_ or the concept _woman_. An individual may well belong to several classes simultaneously.
 
 
+## Properties
+
+Properties come in three flavors: annotation properties, data properties, and object properties.
+
+### Annotation Properties
+
+(To be completed)
+
+### Data Properties
+
+Data properties relate individuals to data values.
+
+### Object Properties
+
+Object properties relate individuals to other individuals.
+
+
 ## Uncategorized
 
 **Common URIs**
