@@ -218,6 +218,66 @@ Object properties relate individuals to other individuals.
 ```
 
 
+## Property Restrictions
+
+Property restrictions provide a type of logic-based constructors involving properties.
+
+**Existential Quantification**
+
+Existential quantification defines a class as the set of all individuals that are connected via a particular property to another individual which is an instance of a certain class.
+
+```turtle
+:Parent owl:equivalentClass [
+  rdf:type owl:Restriction ;
+  owl:onProperty :hasChild ;
+  owl:someValuesFrom :Person ;
+] .
+```
+
+This means that there is an expectation that for every instance of Parent, there exists at least one child, and that child is a member of the class Person.
+
+Natural language indicators for the usage of existential quantification are words like “some,” or “one.”
+
+**Universal Quantification**
+
+Universal quantification is used to describe a class of individuals for which all related individuals must be instances of a given class.
+
+```turtle
+:HappyPerson
+  rdf:type owl:Class ;
+  owl:equivalentClass [
+    rdf:type owl:Restriction ;
+    owl:onProperty :hasChild ;
+    owl:allValuesFrom :HappyPerson ;
+  ] ;
+.
+```
+
+Note: this does not require that a person must have children to be happy. A person without any `:hasChild` relation is inferred to be a `:HappyPerson`.
+
+Natural language indicators for the usage of universal quantification are words like “only,” “exclusively,” or “nothing but.”
+
+**Class of individuals that are related to one particular individual**
+
+```turtle
+:JohnsChildren owl:equivalentClass [
+  rdf:type owl:Restriction ;
+  owl:onProperty :hasParent ;
+  owl:hasValue :John ;
+] .
+```
+
+**Classes of individuals that are related to themself**
+
+```turtle
+:NarcisticPerson owl:equivalentClass [
+  rdf:type owl:Restriction ;
+  owl:onProperty :loves ;
+  owl:hasSelf "true"^^xsd:boolean ;
+] .
+```
+
+
 ## Uncategorized
 
 **Common URIs**
