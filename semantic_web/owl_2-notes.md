@@ -277,6 +277,71 @@ Natural language indicators for the usage of universal quantification are words 
 ] .
 ```
 
+### Property Cardinality Restrictions
+
+**owl:maxQualifiedCardinality**
+
+```turtle
+:John rdf:type [
+  rdf:type owl:Restriction ;
+  owl:maxQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+  owl:onProperty :hasChild ;
+  owl:onClass :Parent ;
+] .
+```
+
+**owl:minQualifiedCardinality**
+
+```turtle
+:John rdf:type [
+  rdf:type owl:Restriction ;
+  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+  owl:onProperty :hasChild ;
+  owl:onClass :Parent ;
+] .
+```
+
+**owl:qualifiedCardinality**
+
+```turtle
+:John rdf:type [
+  rdf:type owl:Restriction ;
+  owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+  owl:onProperty :hasChild ;
+  owl:onClass :Parent ;
+] .
+```
+
+**owl:maxCardinality**
+
+```turtle
+:John rdf:type [
+  rdf:type owl:Restriction ;
+  owl:maxCardinality "4"^^xsd:nonNegativeInteger ;
+  owl:onProperty :hasChild ;
+] .
+```
+
+**owl:minCardinality**
+
+```turtle
+:John rdf:type [
+  rdf:type owl:Restriction ;
+  owl:minCardinality "2"^^xsd:nonNegativeInteger ;
+  owl:onProperty :hasChild ;
+] .
+```
+
+**owl:cardinality**
+
+```turtle
+:John rdf:type [
+  rdf:type owl:Restriction ;
+  owl:cardinality "3"^^xsd:nonNegativeInteger ;
+  owl:onProperty :hasChild ;
+] .
+```
+
 
 ## Uncategorized
 
