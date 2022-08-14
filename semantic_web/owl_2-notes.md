@@ -227,6 +227,77 @@ Object properties relate individuals to other individuals.
 ```
 
 
+## Property Characteristics
+
+**owl:inverseOf**
+
+```turtle
+:hasParent owl:inverseOf :hasChild .
+```
+
+**owl:SymmetricProperty**
+
+When a property and its inverse coincide, it is symmetric. In other words, the direction of a property doesn't matter.
+
+```turtle
+:hasSpouse rdf:type owl:SymmetricProperty .
+```
+
+Note that being symmetric is a much stronger notion than being non-asymmetric.
+
+**owl:AsymmetricProperty**
+
+A property can also be asymmetric meaning that if it connects A with B it never connects B with A.
+
+```turtle
+:hasChild rdf:type owl:AsymmetricProperty .
+```
+
+Note that being asymmetric is a much stronger notion than being non-symmetric.
+
+**owl:ReflexiveProperty**
+
+When a property relates everything to itself, it is reflexive.
+
+```turtle
+:hasRelative rdf:type owl:ReflexiveProperty .
+```
+
+Note that this does not necessarily mean that every two individuals which are related by a reflexive property are identical.
+
+**owl:IrreflexiveProperty**
+
+When a property cannot relate to itself, it is irreflexive.
+
+```turtle
+:parentOf rdf:type owl:IrreflexiveProperty .
+```
+
+**owl:FunctionalProperty**
+
+When a property can relate to at most one other individual, it is functional.
+
+```turtle
+:hasHusband rdf:type owl:FunctionalProperty .
+```
+
+**owl:InverseFunctionalProperty**
+
+When the inverse of a property can relate to at most one other individual, it is functional.
+
+```turtle
+:hasHusband rdf:type owl:InverseFunctionalProperty .
+```
+
+**owl:TransitiveProperty**
+
+A transitive property interlinks two individuals A and C whenever it interlinks A with B and B with C for some individual B.
+
+```turtle
+:hasAncestor rdf:type owl:TransitiveProperty .
+```
+
+
 ## Property Restrictions
 
 Property restrictions provide a type of logic-based constructors involving properties.
