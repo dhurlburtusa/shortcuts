@@ -127,6 +127,15 @@ In some cases membership in one class specifically excludes membership in anothe
 :_James owl:sameAs :_Jim .
 ```
 
+**Enumeration**
+
+```turtle
+:MyBirthdayGuests owl:equivalentClass [
+  rdf:type owl:Class ;
+  owl:oneOf ( :Bill  :John  :Mary )
+] .
+```
+
 
 ## Properties
 
