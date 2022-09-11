@@ -1,5 +1,35 @@
 # RDF* Notes
 
+RDF-star extends RDF with a convenient way to make statements about other statements.
+
+
+## Concrete Syntaxes
+
+### Turtle-star
+
+An extension of the Turtle format allowing the representation of RDF-star graphs.
+
+#### Annotation Syntax
+
+
+## SPARQL-star
+
+
+## Term Definitions
+
+**Asserted Triple**
+
+**Quoted Triple**
+
+**RDF-star Graph**
+A set of RDF-star triples.
+
+**RDF-star term**
+
+
+**RDF-star Triple**
+Triple that include a triple as a subject or an object.
+
 
 ## Support Status:
 
