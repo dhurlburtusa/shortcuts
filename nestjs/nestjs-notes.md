@@ -10,3 +10,23 @@ Under the hood, Nest makes use of robust HTTP Server frameworks like [Express](h
 npm i -g @nestjs/cli
 nest new --strict project-name
 ```
+
+## Controllers
+
+Controllers are responsible for handling incoming requests and returning responses to the client. A routing mechanism controls which controller receives which requests.
+
+To create a basic controller, Nest uses classes and decorators. Decorators associate classes with required metadata and enable Nest to create a routing map (tie requests to the corresponding controllers).
+
+```ts
+import { Controller, Get } from '@nestjs/common';
+
+@Controller('foobars')
+export class FooBarsController {
+
+  @Get()
+  findAll(): string {
+    return 'All the foobars.';
+  }
+
+}
+```
