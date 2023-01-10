@@ -1,0 +1,6 @@
+= AsciiDoc Notes
+:toc:
+
+AsciiDoc is a plain text authoring format (i.e., lightweight markup language) for writing technical content such as documentation, articles, and books.
+
+One you’re done writing and want to publish your AsciiDoc document, you’ll need an AsciiDoc processor. That’s where Asciidoctor fits in. Asciidoctor is the core AsciiDoc processor. It reads the AsciiDoc source, parses it into a document model and converts it to a publishable format such as HTML using a converter.
