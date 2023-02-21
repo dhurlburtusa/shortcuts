@@ -43,3 +43,17 @@ The value of x is: 6
 ```
 
 Shadowing is different from marking a variable as `mut` because we'll get a compile-time error if we accidentally try to reassign to this variable without using the `let` keyword. When the `let` keyword is used again, it effectively creates a new variable, possibly with a different type, but with the same name.
+
+## Ownership
+
+Ownership is a set of rules that govern how a Rust program manages memory. All programs have to manage the way they use a computer's memory while running. Some languages have garbage collection that regularly looks for no-longer-used memory as the program runs; in other languages, the programmer must explicitly allocate and free the memory. Rust uses a third approach: memory is managed through a system of ownership with a set of rules that the compiler checks. If any of the rules are violated, the program won't compile. None of the features of ownership will slow down your program while it's running.
+
+In other words, ownership enables Rust to make memory safety guarantees without needing a garbage collector.
+
+The main purpose of ownership is to manage heap data.
+
+### Ownership Rules
+
+- Each value in Rust has an owner.
+- There can only be one owner at a time.
+- When the owner goes out of scope, the value will be dropped.
