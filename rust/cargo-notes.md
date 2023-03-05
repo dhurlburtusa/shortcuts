@@ -40,3 +40,9 @@ cargo test
 ```
 
 See [cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html) for details.
+
+## Features
+
+Cargo "features" provide a mechanism to express conditional compilation and optional dependencies. A package defines a set of named features in the `[features]` table of `Cargo.toml`, and each feature can either be enabled or disabled. Features for the package being built can be enabled on the command-line with flags such as `--features feat1,feat2,etc`. Features for dependencies can be enabled in the dependency declaration in `Cargo.toml`.
+
+See [Features](https://doc.rust-lang.org/cargo/reference/features.html) for details.
