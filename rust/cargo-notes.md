@@ -2,6 +2,8 @@
 
 Cargo is Rust's build system and package manager.
 
+See [The Cargo Book](https://doc.rust-lang.org/cargo/index.html) for details.
+
 ## Creating a New Project
 
 ```sh
