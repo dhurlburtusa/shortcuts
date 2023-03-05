@@ -32,3 +32,11 @@ cargo build
 ```sh
 cargo run
 ```
+
+## Running Tests
+
+```sh
+cargo test
+```
+
+See [cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html) for details.
