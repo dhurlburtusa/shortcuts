@@ -11,6 +11,10 @@ cargo new {project_name}
 cd {project_name}
 ```
 
+## Package Layout
+
+See [Package Layout](https://doc.rust-lang.org/cargo/guide/project-layout.html) for details.
+
 ## Building and Running
 
 **Build, then Run**
