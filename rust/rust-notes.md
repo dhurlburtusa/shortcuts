@@ -8,6 +8,12 @@ By striving for zero-cost abstractions, higher-level features that compile to lo
 
 Rust's greatest ambition is to eliminate the trade-offs that programmers have accepted for decades by providing safety and productivity, speed and ergonomics.
 
+## Data Types
+
+Every value in Rust is of a certain data type and be either scalar or compound.
+
+Rust is a statically typed language, which means that it must know the types of all variables at compile time.
+
 ## Constants
 
 Constants in Rust are declared with the `const` keyword and the type of the value _must_ be annotated. Constants can be declared in any scope, including the global scope. Constants may only be set to a constant expression, not the results of a value that could only be computed at runtime. Rust's naming convention for constants is to use all uppercase with underscores between words.
