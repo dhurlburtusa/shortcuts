@@ -14,6 +14,22 @@ Every value in Rust is of a certain data type and be either scalar or compound.
 
 Rust is a statically typed language, which means that it must know the types of all variables at compile time.
 
+### Scalar Types
+
+A scalar type represents a single value. Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters.
+
+**Integer Types**
+
+| Length  | Signed | Unsigned |
+| ------- | ------ | -------- |
+| 8-bit   | i8     | u8       |
+| 16-bit  | i16    | u16      |
+| 32-bit  | i32    | u32      |
+| 64-bit  | i64    | u64      |
+| 128-bit | i128   | u128     |
+| arch    | isize  | usize    |
+
+
 ## Constants
 
 Constants in Rust are declared with the `const` keyword and the type of the value _must_ be annotated. Constants can be declared in any scope, including the global scope. Constants may only be set to a constant expression, not the results of a value that could only be computed at runtime. Rust's naming convention for constants is to use all uppercase with underscores between words.
