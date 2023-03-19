@@ -37,6 +37,12 @@ Rust's floating-point types are `f32` and `f64`.
 
 Constants in Rust are declared with the `const` keyword and the type of the value _must_ be annotated. Constants can be declared in any scope, including the global scope. Constants may only be set to a constant expression, not the results of a value that could only be computed at runtime. Rust's naming convention for constants is to use all uppercase with underscores between words.
 
+## Operations
+
+Rust supports the basic mathematical operations: addition, subtraction, multiplication, division, and remainder. Integer division truncates toward zero to the nearest integer.
+
+ [Appendix B](https://doc.rust-lang.org/book/appendix-02-operators.html) contains a list of all operators that Rust provides.
+ 
 ## Variables
 
 Variables in Rust are declared with the `let` keyword and are immutable by default. A variable can be made mutable by adding `mut` in front of the variable name.
