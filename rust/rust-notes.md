@@ -29,6 +29,9 @@ A scalar type represents a single value. Rust has four primary scalar types: int
 | 128-bit | i128   | u128     |
 | arch    | isize  | usize    |
 
+**Floating-Point Types**
+
+Rust's floating-point types are `f32` and `f64`.
 
 ## Constants
 
