@@ -18,7 +18,9 @@ Rust is a statically typed language, which means that it must know the types of 
 
 A scalar type represents a single value. Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters.
 
-**Integer Types**
+#### Integer Types
+
+**Variants**
 
 | Length  | Signed | Unsigned |
 | ------- | ------ | -------- |
@@ -29,7 +31,17 @@ A scalar type represents a single value. Rust has four primary scalar types: int
 | 128-bit | i128   | u128     |
 | arch    | isize  | usize    |
 
-**Floating-Point Types**
+**Syntax**
+
+| Syntax  | Example     |
+| ------- | ----------- |
+| Binary  | 0b1111_0000 |
+| Byte    | b'A'        |
+| Decimal | 98_222      |
+| Hex     | 0xff        |
+| Octal   | 0o77        |
+
+#### Floating-Point Types
 
 Rust's floating-point types are `f32` and `f64`.
 
