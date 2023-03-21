@@ -22,6 +22,10 @@ A scalar type represents a single value. Rust has four primary scalar types: boo
 
 Rust's boolean type is `bool` and has two possible values: `true` and `false`. Booleans are one byte in size.
 
+#### Character
+
+Rust's character type is `char` and are four bytes in size, representing a Unicode Scalar Value.
+
 #### Integer Types
 
 **Variants**
