@@ -44,6 +44,19 @@ Dockers comes in different editions.
 	+ Can create stacks of containers in a hierarchy of interrelated services that share dependencies and can be orchestrated and scaled together.
 
 
+## Docker Objects
+
+When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects.
+
+### Images
+
+An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization.
+
+### Containers
+
+A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.
+
+
 ## Docker Images and Containers
 
 - A packaged application, ready to be run as a container.
