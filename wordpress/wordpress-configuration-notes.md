@@ -16,18 +16,21 @@ installing WordPress.
   + Category base: /blog/topics
   + Tag base: /blog/tags
 * Install Plugins:
+  + Create Block Theme
+  + Health Check & Troubleshooting
+  + Performance Lab
   + Wordfence Security
   + Yoast SEO
   + ~~TinyMCE Advanced~~
   + ~~Black Studio TinyMCE Widget~~
   + UpdraftPlus WordPress Backup
-  + Advanced Custom Fields
+  + ~~Advanced Custom Fields~~
   + ~~Contact Form 7~~
   + ~~Ninja Forms~~
   + ~~Contact Forms by WPForms~~
   + ~~Shortcodes Ultimate~~
   + ~~WP-Optimize~~
-  + Insert Headers and Footers
+  + ~~Insert Headers and Footers~~
 * Install Themes:
   + ~~Agama~~
   + ~~Agama Blue~~
@@ -42,5 +45,5 @@ installing WordPress.
   + ~~My Holiday?~~
   + ~~Twenty Fifteen~~
   + ~~Twenty Seventeen~~
-  + Twenty Sixteen
+  + ~~Twenty Sixteen~~
   + ~~VW Tour Lite~~
