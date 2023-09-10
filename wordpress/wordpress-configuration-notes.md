@@ -8,12 +8,20 @@ installing WordPress.
   + Update Tagline
   + Set Timezone
 * Configure Reading Settings:
-  + Set "For each article in a feed, show" to Summary
+  + Set "For each post in a feed, include" to Excerpt
 * Configure Discussion Settings:
+  + Pick values appropriate for the site.
   + Choose a Default Avatar.
+* Configure Media Settings:
+  + Medium size:
+    * Max Width: 800
+    * Max Height: 600
+  + Large size:
+    * Max Width: 1600
+    * Max Height: 1200
 * Configure Permalink Settings:
   + Custom Structure: /blog/%postname%/
-  + Category base: /blog/topics
+  + Category base: /blog/categories
   + Tag base: /blog/tags
 * Install Plugins:
   + Create Block Theme
