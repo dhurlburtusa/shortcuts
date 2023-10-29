@@ -357,6 +357,15 @@ and if applicable, have others run:
 $ git pull --prune --tags
 ```
 
+### Delete a Tag
+
+```sh
+# For local tags
+$ git tag -d <tagname>
+# For remote tags
+$ git push <remote> --delete <tagname>
+```
+
 
 ## Push
 
