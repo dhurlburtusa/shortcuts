@@ -471,8 +471,8 @@ See https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup for deta
 **Your Identity**
 
 ```sh
-git config --global user.name "Your Name"
-git config --global user.email me@example.com
+git config --global user.name "Danny Hurlburt"
+git config --global user.email dhurlburtusa@user.noreply.github.com
 ```
 
 **Your Editor**
