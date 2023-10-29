@@ -312,25 +312,25 @@ first.)
 
 ## Tags
 
-List tags:
+### List Tags
 
 ```sh
 $ git tag -l
 ```
 
-Create lightweight tag:
+### Create Lightweight Tag
 
 ```sh
 $ git tag <tagname>
 ```
 
-Create annotated tag with a message:
+### Create Annotated Tag with an Optional Message
 
 ```sh
 $ git tag -a [-m <msg>] <tagname>
 ```
 
-Rename a tag:
+### Rename a Tag
 
 ```sh
 $ git tag new old
