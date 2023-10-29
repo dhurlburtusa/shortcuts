@@ -464,6 +464,13 @@ Some Examples:
       ; Don't trust file modes
       filemode = false
 
+### List
+
+```sh
+$ git config --list
+$ git config --list --show-origin
+```
+
 ### First Time Setup
 
 See https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup for details.
