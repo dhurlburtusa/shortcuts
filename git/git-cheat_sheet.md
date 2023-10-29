@@ -321,13 +321,25 @@ $ git tag -l
 ### Create Lightweight Tag
 
 ```sh
+# For last commit
 $ git tag <tagname>
+# For some other commit
+$ git tag <tagname> <checksum>
 ```
 
 ### Create Annotated Tag with an Optional Message
 
 ```sh
+# For last commit
 $ git tag -a [-m <msg>] <tagname>
+# For some other commit
+$ git tag -a [-m <msg>] <tagname> <checksum>
+```
+
+### Show Tag Data
+
+```sh
+git show <tagname>
 ```
 
 ### Rename a Tag
