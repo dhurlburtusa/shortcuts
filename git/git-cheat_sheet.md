@@ -366,6 +366,12 @@ $ git tag -d <tagname>
 $ git push <remote> --delete <tagname>
 ```
 
+### Checking out Tags
+
+```sh
+$ git checkout <tagname>
+```
+
 
 ## Push
 
