@@ -296,6 +296,12 @@ Here is an example.  It is common to use `origin` for the name of the remote tha
 $ git remote add origin https://github.com/dhurlburtusa/qc-core.git
 ```
 
+### Inspect a Remote
+
+```sh
+$ git remove show <remote>
+```
+
 
 ## Syncing a Fork
 
