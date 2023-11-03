@@ -149,3 +149,7 @@ The main purpose of ownership is to manage heap data.
   <dt>immutable reference</dt>
   <dd><code>&T</code>, can be used to borrow data but not mutate it.</dd>
 </dl>
+
+## Lifetimes
+
+A lifetime is a construct of the compiler (or more specifically, its borrow checker) uses to ensure all borrows are valid. Specifically, a variable's lifetime begins when it is created and ends when it is destroyed.
