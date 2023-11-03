@@ -53,6 +53,12 @@ Rust's floating-point types are `f32` and `f64`.
 | Hex     | 0xff        |
 | Octal   | 0o77        |
 
+### Strings
+
+**Misc**
+
+- String literals have type `&'static str`. `&'static str` is a reference to a string allocated in read only memory.
+
 ## Constants
 
 Constants in Rust are declared with the `const` keyword and the type of the value _must_ be annotated. Constants can be declared in any scope, including the global scope. Constants may only be set to a constant expression, not the results of a value that could only be computed at runtime. Rust's naming convention for constants is to use all uppercase with underscores between words.
