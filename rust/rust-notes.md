@@ -108,3 +108,14 @@ The main purpose of ownership is to manage heap data.
 - Each value in Rust has an owner.
 - There can only be one owner at a time.
 - When the owner goes out of scope, the value will be dropped.
+
+## Mutability
+
+**Misc**
+
+<dl>
+  <dt>mutable reference</dt>
+  <dd><code>&mut T</code>, can used to borrow and mutate mutable data.</dd>
+  <dt>immutable reference</dt>
+  <dd><code>&T</code>, can be used to borrow data but not mutate it.</dd>
+</dl>
