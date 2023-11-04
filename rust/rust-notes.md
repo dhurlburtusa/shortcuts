@@ -162,6 +162,18 @@ The main purpose of ownership is to manage heap data.
 
 A lifetime is a construct of the compiler (or more specifically, its borrow checker) uses to ensure all borrows are valid. Specifically, a variable's lifetime begins when it is created and ends when it is destroyed.
 
+## Attributes
+
+An attribute is metadata applied to some module, crate, or item. When attributes apply to a whole crate, their syntax is `#![crate_attribute]`, and when they apply to a module or item, the syntax is `#[item_attribute]` (notice the missing bang `!`).
+
+Attributes can take arguments with different syntaxes:
+
+- `#[attribute = "value"]`
+- `#[attribute(key = "value")]`
+- `#[attribute(key1 = "value", key2 = "value")]`
+- `#[attribute(value)]`
+- `#[attribute(value1, value2)]`
+
 ## Lints
 
 - `#[allow(dead_code)]`
