@@ -61,6 +61,12 @@ Rust's floating-point types are `f32` and `f64`.
 
 ### Misc
 
+#### Casting
+
+Rust provides no implicit type conversion (coercion) between primitive types. But, explicit type conversion (casting) can be performed using the `as` keyword.
+
+There are limitations in conversion rules. A float cannot be directly converted to a char.
+
 #### Type Aliases
 
 ```rust
