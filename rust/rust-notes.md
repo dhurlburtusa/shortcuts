@@ -178,3 +178,40 @@ Attributes can take arguments with different syntaxes:
 
 - `#[allow(dead_code)]`
 
+## Traits
+
+```rust
+use std::convert::From;
+
+impl From<F> for T {
+    fn from(f: F) -> Self {
+        ...
+    }
+}
+```
+
+The `Into` trait is simply the reciprocal of the `From` trait.
+
+```rust
+use std::convert::Into;
+
+impl Into<T> for F {
+    fn into(self) -> T {
+        T
+    }
+}
+```
+
+```rust
+use std::fmt;
+
+struct Circle {
+    radius: i32
+}
+
+impl fmt::Display for Circle {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "Circle of radius {}", self.radius)
+    }
+}
+```
