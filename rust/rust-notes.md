@@ -174,10 +174,6 @@ Attributes can take arguments with different syntaxes:
 - `#[attribute(value)]`
 - `#[attribute(value1, value2)]`
 
-## Lints
-
-- `#[allow(dead_code)]`
-
 ## Traits
 
 ```rust
@@ -215,3 +211,7 @@ impl fmt::Display for Circle {
     }
 }
 ```
+
+## Lints
+
+- `#[allow(dead_code)]`
