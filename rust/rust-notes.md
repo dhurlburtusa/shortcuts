@@ -212,6 +212,35 @@ impl fmt::Display for Circle {
 }
 ```
 
+## Flow Control
+
+### if/else
+
+```rust
+// Statement
+if ... {
+    ...
+} else if ... {
+    ...
+} else {
+    ...
+}
+
+// Expression
+let something =
+    if ... {
+        ...
+        some_value
+    } else if ... {
+        ...
+        some_other_value
+    } else {
+        ...
+        another_value
+    };
+//   ^ Don't forget to put a semicolon here! All `let` bindings need it.
+```
+
 ## Lints
 
 - `#[allow(dead_code)]`
