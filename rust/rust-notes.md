@@ -241,6 +241,48 @@ let something =
 //   ^ Don't forget to put a semicolon here! All `let` bindings need it.
 ```
 
+### loop
+
+**Typical**
+
+```rust
+loop {
+    ...
+    continue;
+    ...
+    break;
+}
+```
+
+**Nesting and Labels**
+
+```rust
+'outer: loop {
+
+    'inner: loop {
+        // This would break only the inner loop
+        // break;
+
+        // This breaks the outer loop
+        break 'outer;
+    }
+
+    println!("This point will never be reached");
+}
+```
+
+**Returning from Loops**
+
+```rust
+let something =
+    loop {
+        ...
+        break some_value;
+        ...
+    };
+//   ^ Don't forget to put a semicolon here! All `let` bindings need it.
+```
+
 ## Lints
 
 - `#[allow(dead_code)]`
