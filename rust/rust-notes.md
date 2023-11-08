@@ -283,6 +283,17 @@ let something =
 //   ^ Don't forget to put a semicolon here! All `let` bindings need it.
 ```
 
+### while
+
+```rust
+while ... {
+    ...
+    continue;
+    ...
+    break;
+}
+```
+
 ## Lints
 
 - `#[allow(dead_code)]`
