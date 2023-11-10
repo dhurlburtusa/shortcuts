@@ -297,3 +297,8 @@ while ... {
 ## Lints
 
 - `#[allow(dead_code)]`
+
+**Documentation Related**
+
+- `#![deny(missing_docs)]`
+- `#![warn(missing_docs)]`
