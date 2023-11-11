@@ -51,3 +51,22 @@ pub struct ReadmeDoctests;
 ```
 
 See https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html for details.
+
+## Scraped Examples
+
+Rustdoc has an unstable feature where it can automatically scrape examples of items being documented from the `examples/` directory of a Cargo workspace. These examples will be included within the generated documentation for that item.
+
+**How to use this feature**
+
+```sh
+cargo doc -Zunstable-options -Zrustdoc-scrape-examples
+```
+
+To enable this feature on [docs.rs](https://docs.rs), add this to your Cargo.toml:
+
+```toml
+[package.metadata.docs.rs]
+cargo-args = ["-Zunstable-options", "-Zrustdoc-scrape-examples"]
+```
+
+See https://doc.rust-lang.org/rustdoc/scraped-examples.html for details.
