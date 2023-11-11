@@ -16,3 +16,9 @@ clippy-driver --version
 ```sh
 cargo clippy
 ```
+
+**Directly**
+
+```sh
+clippy-driver ...
+```
