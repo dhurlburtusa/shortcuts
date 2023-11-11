@@ -5,3 +5,7 @@ The standard Rust distribution ships with a tool called `rustdoc`. Its job is to
 ## Doc Comments
 
 Code comments with a special syntax are used to indicate which comments are documentation comments. Doc comments come in an inner and an outer variety. The outer variety uses the `///` syntax and is used to document the item present after it. The inner variety uses the `//!` syntax and is used to document the item it is present inside. It is often used when documenting the entire crate.
+
+## The #[doc] attribute
+
+See https://doc.rust-lang.org/rustdoc/write-documentation/the-doc-attribute.html for details.
