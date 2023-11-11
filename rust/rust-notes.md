@@ -296,8 +296,34 @@ while ... {
 
 ## Lints
 
-- `#[allow(dead_code)]`
-- `#[warn(unused_must_use)]`
+See https://doc.rust-lang.org/rustc/lints/listing/index.html for details.
+
+- `#![deny(absolute_paths_not_starting_with_crate)]`
+- `#![warn(dead_code)]`
+- `#![warn(elided_lifetimes_in_paths)]`
+- `#![warn(explicit_outlives_requirements)]`
+- `#![deny(keyword_idents)]`
+- `#![warn(macro_use_extern_crate)]`
+- `#![warn(meta_variable_misuse)]`
+- `#![deny(missing_abi)]`
+- `#![warn(missing_copy_implementations)]`
+- `#![warn(missing_docs)]`
+- `#![deny(non_ascii_idents)]`
+- `#![deny(single_use_lifetimes)]`
+- `#![warn(trivial_casts)]`
+- `#![deny(trivial_numeric_casts)]`
+- `#![warn(unnameable_types)]`
+- `#![warn(unreachable_pub)]`
+- `#![deny(unsafe_code)]`
+- `#![deny(unsafe_op_in_unsafe_fn)]`
+- `#![deny(unused_must_use)]`
+- `#![warn(unused_crate_dependencies)]`
+- `#![deny(unused_extern_crates)]`
+- `#![warn(unused_lifetimes)]`
+- `#![warn(unused_macro_rules)]`
+- `#![warn(unused_results)]`
+- `#![warn(unused_tuple_struct_fields)]`
+- `#![warn(variant_size_differences)]`
 
 **Documentation Related**
 
