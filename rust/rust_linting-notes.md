@@ -8,3 +8,11 @@ The rust compiler, `rustc`, comes with many [built-in lints](https://doc.rust-la
 which clippy-driver
 clippy-driver --version
 ```
+
+## Usage
+
+**Via Cargo**
+
+```sh
+cargo clippy
+```
