@@ -297,6 +297,7 @@ while ... {
 ## Lints
 
 - `#[allow(dead_code)]`
+- `#[warn(unused_must_use)]`
 
 **Documentation Related**
 
