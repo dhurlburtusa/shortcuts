@@ -147,6 +147,10 @@ The main purpose of ownership is to manage heap data.
 - There can only be one owner at a time.
 - When the owner goes out of scope, the value will be dropped.
 
+## References
+
+A reference is like a pointer in that it’s an address we can follow to access the data stored at that address; that data is owned by some other variable. Unlike a pointer, a reference is guaranteed to point to a valid value of a particular type for the life of that reference.
+
 ## Mutability
 
 **Misc**
