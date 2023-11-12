@@ -239,6 +239,8 @@ let something =
         another_value
     };
 //   ^ Don't forget to put a semicolon here! All `let` bindings need it.
+
+let value = if ... { 42 } else { 13 };
 ```
 
 ### loop
