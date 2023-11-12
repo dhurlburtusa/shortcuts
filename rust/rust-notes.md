@@ -156,6 +156,19 @@ A reference is like a pointer in that it’s an address we can follow to access 
 - At any given time, you can have _either_ one mutable reference _or_ any number of immutable references.
 - References must always be valid.
 
+### Slices
+
+Slices let you reference a contiguous sequence of elements in a collection rather than the whole collection. A slice is a kind of reference, so it does not have ownership.
+
+**String Slices**
+
+```rust
+let s = String::from("hello world");
+
+let hello = &s[0..5];
+let world = &s[6..11];
+```
+
 ## Mutability
 
 **Misc**
