@@ -151,6 +151,11 @@ The main purpose of ownership is to manage heap data.
 
 A reference is like a pointer in that it’s an address we can follow to access the data stored at that address; that data is owned by some other variable. Unlike a pointer, a reference is guaranteed to point to a valid value of a particular type for the life of that reference.
 
+### The Rules of References
+
+- At any given time, you can have _either_ one mutable reference _or_ any number of immutable references.
+- References must always be valid.
+
 ## Mutability
 
 **Misc**
