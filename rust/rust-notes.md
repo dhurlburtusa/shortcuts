@@ -59,6 +59,30 @@ Rust's floating-point types are `f32` and `f64`.
 
 - String literals have type `&'static str`. `&'static str` is a reference to a string allocated in read only memory.
 
+### Compound Types
+
+Compound types can group multiple values into one type. Rust has two _primitive_ compound types: tuples and arrays.
+
+#### Tuples
+
+A tuple is a general way of grouping together a number of values with a variety of types into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
+
+```rust
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+```
+
+#### Arrays
+
+An array is a collection of multiple values with the **same** type. Arrays in Rust have a fixed length.
+
+```rust
+let a = [1, 2, 3, 4, 5];
+```
+
+#### Structs
+
+A struct, or structure, is a custom data type that lets you package together and name multiple related values that make up a meaningful group.
+
 ### Misc
 
 #### Casting
