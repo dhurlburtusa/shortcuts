@@ -153,7 +153,7 @@ The main purpose of ownership is to manage heap data.
 
 <dl>
   <dt>mutable reference</dt>
-  <dd><code>&mut T</code>, can used to borrow and mutate mutable data.</dd>
+  <dd><code>&mut T</code>, can be used to borrow and mutate mutable data.</dd>
   <dt>immutable reference</dt>
   <dd><code>&T</code>, can be used to borrow data but not mutate it.</dd>
 </dl>
