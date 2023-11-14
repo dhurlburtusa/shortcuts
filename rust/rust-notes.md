@@ -141,6 +141,12 @@ fn main() {
     };
 
     let user2 = build_user(String::from("someone@example.com"), String::from("someusername123"));
+
+    let user3 = User {
+        email: String::from("another@example.com"),
+        // struct update syntax
+        ..user2
+    };
 }
 ```
 
