@@ -111,6 +111,39 @@ fn main() {
 }
 ```
 
+## Structs
+
+A struct, or structure, is a custom data type that lets you package together and name multiple related values that make up a meaningful group.
+
+```rust
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username,
+        email,
+        sign_in_count: 1,
+    }
+}
+
+fn main() {
+    let user1 = User {
+        active: true,
+        username: String::from("someusername123"),
+        email: String::from("someone@example.com"),
+        sign_in_count: 1,
+    };
+
+    let user2 = build_user(String::from("someone@example.com"), String::from("someusername123"));
+}
+```
+
 ## Constants
 
 Constants in Rust are declared with the `const` keyword and the type of the value _must_ be annotated. Constants can be declared in any scope, including the global scope. Constants may only be set to a constant expression, not the results of a value that could only be computed at runtime. Rust's naming convention for constants is to use all uppercase with underscores between words. Constants are valid for the entire time a program runs, within the scope in which they were declared.
