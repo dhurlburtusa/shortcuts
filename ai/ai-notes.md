@@ -18,7 +18,7 @@ Machine learning systems feed on data to learn new things.
 
 <dl>
   <dt>Supervised learning</dt>
-  <dd>A data scientist acts like a tutor for the machine. They show the machine the correct answers and then let the system train itself to get better. Needs to have a knowledgeable tutor. Depends on labeled data.</dd>
+  <dd>A data scientist acts like a tutor for the machine. They show the machine the correct answers and then let the system train itself to get better. Needs to have a knowledgeable tutor. Used for classifying. Depends on labeled data.</dd>
   <dd>
     Split the data into a training set and a test set.
     <dl>
@@ -34,7 +34,7 @@ Machine learning systems feed on data to learn new things.
 </dl>
 <dl>
   <dt>Unsupervised learning</dt>
-  <dd>The machine makes all the observations on its own. Needs access to a lot of good data.</dd>
+  <dd>The machine makes all the observations on its own. Used for clustering. Needs access to a lot of good data.</dd>
 </dl>
 
 ### Classifications
@@ -56,6 +56,10 @@ Machine learning algorithms that use rewards as a way to give the system incenti
 #### Q-Learning
 
 Reinforcement learning that will find the best course of action, given the current state of the agent.
+
+### Algorithms
+
+Most machine learning algorithms are borrowed from statistics.
 
 ## Artificial Neural Network
 
