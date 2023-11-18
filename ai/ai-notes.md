@@ -19,6 +19,18 @@ Machine learning systems feed on data to learn new things.
 <dl>
   <dt>Supervised learning</dt>
   <dd>A data scientist acts like a tutor for the machine. They show the machine the correct answers and then let the system train itself to get better. Needs to have a knowledgeable tutor.</dd>
+  <dd>
+    Split the data into a training set and a test set.
+    <dl>
+      <dt>Training data set</dt>
+      <dd>A smaller chunk of data that the machine uses to learn. Curated and known from the beginning.</dd>
+    </dl>
+    <dl>
+      <dt>Test data set</dt>
+      <dd>Typically many times larger than the training data. May not be curated and the expected outcome may not be known.</dd>
+    </dl>
+    Uses machine learning algorithms which rely on statistics. These algorithms help the machine find relationships within the data.
+  </dd>
 </dl>
 <dl>
   <dt>Unsupervised learning</dt>
