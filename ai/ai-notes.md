@@ -86,6 +86,14 @@ Used by businesses to predict future customer behavior.
 
 Note: This analysis is more about predicting than about learning.
 
+#### Naive Bayes Algorithm
+
+Used to classify items based on many features in the data. Assumes all the predictors are independent from one another, this is why it is called naive.
+
+Classes and predictors are set up. Then the algorithm will do class predictor probability. It looks at each one of the predictors and creates a probability that the dob belongs in each class.
+
+Used by banks to check for fraud. Used by cybersecurity firms to look for security threats.
+
 ## Artificial Neural Network
 
 AI system that mimics the structure of the human brain.
