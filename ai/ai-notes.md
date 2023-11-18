@@ -18,6 +18,6 @@ AI system that mimics the structure of the human brain.
 
 Input layer, hidden layers , output layer.
 
-Machine learning system.
+Machine learning system. Basically, makes guesses and compares those guesses to the correct answer.
 
 Is trained with different input data. Adjusts hidden layer to improve output layer.
