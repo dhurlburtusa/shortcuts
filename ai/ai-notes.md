@@ -14,6 +14,17 @@ Learn by sensing data. Learn by "experience". Different from symbolic systems, s
 
 Machine learning systems feed on data to learn new things.
 
+### Learning Strategies
+
+<dl>
+  <dt>Supervised learning</dt>
+  <dd>A data scientist acts like a tutor for the machine. They show the machine the correct answers and then let the system train itself to get better. Needs to have a knowledgeable tutor.</dd>
+</dl>
+<dl>
+  <dt>Unsupervised learning</dt>
+  <dd>The machine makes all the observations on its own. Needs access to a lot of good data.</dd>
+</dl>
+
 ## Artificial Neural Network
 
 AI system that mimics the structure of the human brain.
