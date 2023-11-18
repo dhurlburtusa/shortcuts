@@ -24,15 +24,11 @@ Machine learning systems feed on data to learn new things.
     <dl>
       <dt>Training data set</dt>
       <dd>A smaller chunk of labeled data that the machine uses to learn. Curated and known from the beginning.</dd>
-    </dl>
-    <dl>
       <dt>Test data set</dt>
       <dd>Typically many times larger than the training data. May not be curated and the expected outcome may not be known.</dd>
     </dl>
     Uses machine learning algorithms which rely on statistics. These algorithms help the machine find relationships within the data.
   </dd>
-</dl>
-<dl>
   <dt>Unsupervised learning</dt>
   <dd>The machine makes all the observations on its own. Used for clustering. Needs access to a lot of good data.</dd>
 </dl>
@@ -60,6 +56,17 @@ Reinforcement learning that will find the best course of action, given the curre
 ### Algorithms
 
 Most machine learning algorithms are borrowed from statistics.
+
+#### K-Nearest Neighbor
+
+A supervised ML algorithm for multi-class classification that takes new data and compares it to existing data. Minimizes the distance between neighbors. The Euclidean distance is a common way to measure the distance between neighbors.
+
+<dl>
+  <dt>Euclidean Distance</dt>
+  <dd>A mathematical formula that can help see the distance between data points.</dd>
+  <dt>Classification Predictors</dt>
+  <dd>Use of attributes/features to diagram the distance.</dd>
+</dl>
 
 ## Artificial Neural Network
 
