@@ -76,6 +76,16 @@ Starts with picking `K` centroids. Then each centroid calculates the mean or ave
 
 Example: A retailer may use K-means clustering to decide who to give promotions by clustering their customers into loyal customers, regular customers, and low-priced customers. Then promotions are given to regular customers in hopes to turning them into loyal customers.
 
+#### Regression Analysis
+
+A supervised ML algorithm that looks at the relation between predictors (aka, input variables, independent variables, or regressors) and the outcome. Takes the training data and labeling the correct output. Then using the labeled data with the test data.
+
+Makes a prediction and sees how close it is to the outcome. This is repeated until the system makes the most accurate prediction.
+
+Used by businesses to predict future customer behavior.
+
+Note: This analysis is more about predicting than about learning.
+
 ## Artificial Neural Network
 
 AI system that mimics the structure of the human brain.
