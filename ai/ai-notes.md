@@ -39,11 +39,15 @@ Machine learning systems feed on data to learn new things.
 
 ### Classifications
 
-Used to organize data.
+Used to organize data. A supervised machine learning challenge. Uses human created categories.
 
 #### Binary Classification
 
-A supervised machine learning challenge. Used to determine whether an email is spam or not spam. Used to detect fraudulent credit card transactions.
+Used to determine whether an email is spam or not spam. Used to detect fraudulent credit card transactions.
+
+### Data Clustering
+
+Uses unsupervised machine learning to create groups or clusters.
 
 ## Artificial Neural Network
 
