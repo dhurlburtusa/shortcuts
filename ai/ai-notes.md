@@ -68,6 +68,14 @@ A supervised ML algorithm for multi-class classification that takes new data and
   <dd>Use of attributes/features to diagram the distance.</dd>
 </dl>
 
+#### K-Means Clustering
+
+An unsupervised machine learning algorithm used to create clusters based on what the machine sees in the data. `K` is the number of desired clusters.
+
+Starts with picking `K` centroids. Then each centroid calculates the mean or average distance between itself and all the surrounding items. Then the closest items to the centroids would be labelled the same as the centroid. Then new centroids are picked and the average distance is calculated. This is done until centroids are picked with the minimum overall mean distance.
+
+Example: A retailer may use K-means clustering to decide who to give promotions by clustering their customers into loyal customers, regular customers, and low-priced customers. Then promotions are given to regular customers in hopes to turning them into loyal customers.
+
 ## Artificial Neural Network
 
 AI system that mimics the structure of the human brain.
