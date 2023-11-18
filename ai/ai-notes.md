@@ -18,12 +18,12 @@ Machine learning systems feed on data to learn new things.
 
 <dl>
   <dt>Supervised learning</dt>
-  <dd>A data scientist acts like a tutor for the machine. They show the machine the correct answers and then let the system train itself to get better. Needs to have a knowledgeable tutor.</dd>
+  <dd>A data scientist acts like a tutor for the machine. They show the machine the correct answers and then let the system train itself to get better. Needs to have a knowledgeable tutor. Depends on labeled data.</dd>
   <dd>
     Split the data into a training set and a test set.
     <dl>
       <dt>Training data set</dt>
-      <dd>A smaller chunk of data that the machine uses to learn. Curated and known from the beginning.</dd>
+      <dd>A smaller chunk of labeled data that the machine uses to learn. Curated and known from the beginning.</dd>
     </dl>
     <dl>
       <dt>Test data set</dt>
@@ -36,6 +36,14 @@ Machine learning systems feed on data to learn new things.
   <dt>Unsupervised learning</dt>
   <dd>The machine makes all the observations on its own. Needs access to a lot of good data.</dd>
 </dl>
+
+### Classifications
+
+Used to organize data.
+
+#### Binary Classification
+
+A supervised machine learning challenge. Used to determine whether an email is spam or not spam. Used to detect fraudulent credit card transactions.
 
 ## Artificial Neural Network
 
