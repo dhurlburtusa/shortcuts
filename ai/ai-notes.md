@@ -8,3 +8,6 @@
 - Expert systems
 - Combinatorial explosion
   
+## Machine Learning
+
+Learn by sensing data. Learn by "experience". Different from symbolic systems, still just identifying patterns.
