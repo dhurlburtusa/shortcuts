@@ -23,3 +23,9 @@ Input layer, hidden layers , output layer.
 Machine learning system. Basically, makes guesses and compares those guesses to the correct answer.
 
 Is trained with different input data. Adjusts hidden layer to improve output layer.
+
+## Natural Language Processing
+
+This is when you interact with the machine using your own natural language.
+
+Uses machine learning and artificial neural networks.
