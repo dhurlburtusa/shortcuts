@@ -299,6 +299,15 @@ impl fmt::Display for Circle {
 
 ## Flow Control
 
+### for
+
+```rust
+let a = [10, 20, 30, 40, 50];
+for item in a {
+    println!("The value is: {item}");
+}
+```
+
 ### if/else
 
 ```rust
