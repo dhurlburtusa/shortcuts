@@ -49,6 +49,14 @@ Used to determine whether an email is spam or not spam. Used to detect fraudulen
 
 Uses unsupervised machine learning to create groups or clusters.
 
+### Reinforcement Learning
+
+Machine learning algorithms that use rewards as a way to give the system incentive to find new patterns.
+
+#### Q-Learning
+
+Reinforcement learning that will find the best course of action, given the current state of the agent.
+
 ## Artificial Neural Network
 
 AI system that mimics the structure of the human brain.
