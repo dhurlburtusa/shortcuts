@@ -12,6 +12,8 @@
 
 Learn by sensing data. Learn by "experience". Different from symbolic systems, still just identifying patterns.
 
+Machine learning systems feed on data to learn new things.
+
 ## Artificial Neural Network
 
 AI system that mimics the structure of the human brain.
