@@ -425,3 +425,14 @@ See https://doc.rust-lang.org/rustc/lints/listing/index.html for details.
 
 - `#![deny(missing_docs)]`
 - `#![warn(missing_docs)]`
+
+## Misc
+
+```rust
+use std::any
+use std::fmt;
+
+fn print_type<T: fmt::Debug>(item: T) {
+    println!("{:?} is {}", item, any::type_name::<T>());
+}
+```
