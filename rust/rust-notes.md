@@ -436,3 +436,8 @@ fn print_type<T: fmt::Debug>(item: T) {
     println!("{:?} is {}", item, any::type_name::<T>());
 }
 ```
+
+```rust
+// Concatenate literals into a `&'static str`.
+let s = concat!("test", 10, 'b', true);
+```
