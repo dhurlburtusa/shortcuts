@@ -441,3 +441,8 @@ fn print_type<T: fmt::Debug>(item: T) {
 // Concatenate literals into a `&'static str`.
 let s = concat!("test", 10, 'b', true);
 ```
+
+```rust
+let path: &'static str = env!("PATH");
+println!("the $PATH variable at the time of compiling was: {path}");
+```
