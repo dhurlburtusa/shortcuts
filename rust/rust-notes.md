@@ -265,6 +265,8 @@ A trait defines functionality a particular type has and can share with other typ
 
 Note: Traits are similar to a feature often called interfaces in other languages, although with some differences.
 
+A type’s behavior consists of the methods we can call on that type. Different types share the same behavior if we can call the same methods on all of those types. Trait definitions are a way to group method signatures together to define a set of behaviors necessary to accomplish some purpose.
+
 ```rust
 use std::convert::From;
 
@@ -294,9 +296,23 @@ struct Circle {
     radius: i32
 }
 
+// Implementing the fmt:Display trait on the Circle struct.
 impl fmt::Display for Circle {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "Circle of radius {}", self.radius)
+    }
+}
+```
+
+```rust
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
+
+// OR the same trait but with a default implementation.
+pub trait Summary {
+    fn summarize(&self) -> String {
+        String::from("(Read more...)")
     }
 }
 ```
