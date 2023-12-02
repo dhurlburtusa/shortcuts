@@ -341,8 +341,26 @@ impl Summary for Tweet {
     }
 }
 
+// **Trait Bounds**
 pub fn notify<T: Summary>(item: &T) {
     println!("Breaking news! {}", item.summarize());
+}
+
+// **Multiple Trait Bounds**
+pub fn notify<T: Summary + Display>(item: &T) {
+    println!("Breaking news! {}", item.summarize());
+}
+
+fn some_function<T, U>(t: &T, u: &U) -> i32
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{ /* ... */ }
+
+fn returns_summarizable() -> impl Summary {
+    Tweet {
+        // ...
+    }
 }
 ```
 
