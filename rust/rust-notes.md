@@ -484,6 +484,10 @@ while ... {
 }
 ```
 
+## Error Handling
+
+Rust groups errors into two major categories: recoverable and unrecoverable errors.
+
 ## Lints
 
 See https://doc.rust-lang.org/rustc/lints/listing/index.html for details.
