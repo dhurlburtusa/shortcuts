@@ -509,6 +509,26 @@ The `?` operator can only be used in a function that returns `Result` or `Option
 
 Note that you can use the `?` operator on a `Result` in a function that returns `Result`, and you can use the `?` operator on an `Option` in a function that returns `Option`, but you can’t mix and match. The `?` operator won’t automatically convert a `Result` to an `Option` or vice versa; in those cases, you can use methods like the `ok` method on `Result` or the `ok_or` method on `Option` to do the conversion explicitly.
 
+### The `main` Function
+
+The `main` function may return any types that implement the `std::process::Termination` trait, which contains a function `report` that returns an `ExitCode`.
+
+```rust
+use std::process::Termination;
+
+fn main() -> impl Termination {
+    // ...
+}
+```
+
+```rust
+// This signature allows any error to be returned.
+fn main() -> Result<(), Box<dyn Error>> {
+    // ... some code that may result in an error.
+    Ok(())
+}
+```
+
 ## Lints
 
 See https://doc.rust-lang.org/rustc/lints/listing/index.html for details.
