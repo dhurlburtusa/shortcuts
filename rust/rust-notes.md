@@ -274,7 +274,44 @@ let world = &s[6..11];
 
 ## Lifetimes
 
-A lifetime is a construct of the compiler (or more specifically, its borrow checker) uses to ensure all borrows are valid. Specifically, a variable's lifetime begins when it is created and ends when it is destroyed.
+A lifetime is a construct of the compiler (or more specifically, its borrow checker) used to ensure all borrows are valid. Specifically, a variable's lifetime begins when it is created and ends when it is destroyed.
+
+The main aim of lifetimes is to prevent dangling references.
+
+### Lifetime Annotation Syntax
+
+Lifetime annotations don’t change how long any of the references live. Rather, they describe the relationships of the lifetimes of multiple references to each other without affecting the lifetimes.
+
+The names of lifetime parameters must start with an apostrophe (') and are usually all lowercase and very short. Most people use the name `'a` for the first lifetime annotation.
+
+```rust
+&i32        // a reference
+&'a i32     // a reference with an explicit lifetime
+&'a mut i32 // a mutable reference with an explicit lifetime
+```
+
+### Lifetime Annotations in Function Signatures
+
+```rust
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+```
+
+When we pass concrete references to `longest`, the concrete lifetime that is substituted for `'a` is the part of the scope of `x` that overlaps with the scope of `y`. 
+
+When returning a reference from a function, the lifetime parameter for the return type needs to match the lifetime parameter for one of the parameters. Otherwise, the returned reference would be dangling.
+
+### Lifetime Annotations in Struct Definitions
+
+Lifetime annotations are required on every reference in a struct's definition.
+
+```rust
+struct MyStruct<'a> {
+    foo: String,
+    bar: &'a str,
+}
+```
 
 ## Attributes
 
