@@ -292,6 +292,8 @@ The names of lifetime parameters must start with an apostrophe (') and are usual
 
 ### Lifetime Annotations in Function Signatures
 
+Lifetimes on function or method parameters are called input lifetimes, and lifetimes on return values are called output lifetimes.
+
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() { x } else { y }
@@ -307,9 +309,51 @@ When returning a reference from a function, the lifetime parameter for the retur
 Lifetime annotations are required on every reference in a struct's definition.
 
 ```rust
-struct MyStruct<'a> {
+struct MyStructWithReferences<'a> {
     foo: String,
     bar: &'a str,
+}
+```
+
+### Lifetime Annotations in Method Definitions
+
+```rust
+impl<'a> MyStructWithReferences<'a> {
+    // Note: Explicit lifetime annotation on `self` not required due to first elision
+    // rule.
+    fn total_len(&self) -> usize {
+        self.foo.len() + self.bar.len()
+    }
+}
+```
+
+The lifetime parameter declaration after `impl` and its use after the type name are required, but we’re not required to annotate the lifetime of the reference to `self` because of the first elision rule.
+
+### Lifetime Elision
+
+The patterns programmed into Rust’s analysis of references are called the lifetime elision rules. These aren’t rules for programmers to follow; they’re a set of particular cases that the compiler will consider, and if your code fits these cases, you don’t need to write the lifetimes explicitly.
+
+The compiler uses three rules to figure out the lifetimes of the references when there aren’t explicit annotations.
+
+1) The compiler assigns a lifetime parameter to **each** parameter that’s a reference.
+2) If there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters.
+3) If there are multiple input lifetime parameters, but one of them is `&self` or `&mut self` because this is a method, the lifetime of `self` is assigned to all output lifetime parameters.
+
+These rules apply to fn definitions as well as impl blocks.
+
+The following is an example of a function that matches with the lifetime elision rules. Therefore, explicit lifetime annotations are not required.
+
+```rust
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
 }
 ```
 
