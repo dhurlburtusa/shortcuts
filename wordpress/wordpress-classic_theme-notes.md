@@ -1,6 +1,6 @@
-# WordPress Themes Notes
+# WordPress Classic Theme Notes
 
-At their most basic level, WordPress themes are collections of different files
+At their most basic level, WordPress classic themes are collections of different files
 that work together to create what you see, as well as how your site behaves.
 
 
