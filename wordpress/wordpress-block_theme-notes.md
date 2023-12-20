@@ -50,18 +50,18 @@ When determining which themes are available to activate, WordPress searches thro
 The following example demonstrates the recommended fields.
 
 ```css
-/**
- * Theme Name: My Theme
- * Version: 0.0
- * Description: My Theme is ...
- * Author: Me
- * Text Domain: my-theme
- * Tested up to: 6.4
- * Requires at least: 6.0
- * Requires PHP: 8.0
- * License: MIT
- * License URI: https://spdx.org/licenses/MIT.html
- */
+/*
+Theme Name: My Theme
+Version: 0.0
+Description: My Theme is ...
+Author: Me
+Text Domain: my-theme
+Tested up to: 6.4
+Requires at least: 6.0
+Requires PHP: 8.0
+License: MIT
+License URI: https://spdx.org/licenses/MIT.html
+*/
 ```
 
 #### Child Theme Header Fields
@@ -69,11 +69,11 @@ The following example demonstrates the recommended fields.
 A child theme also supports the `Template` field which is what indicates that it is a child theme. The `Template` field is used to designate the parent theme's folder relative to the `wp-content/themes` directory.
 
 ```css
-/**
- * Theme Name: My Child Theme
- * Template: parent-theme
- * ...
- */
+/*
+Theme Name: My Child Theme
+Template: parent-theme
+...
+*/
 ```
 
 See https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ for details.
