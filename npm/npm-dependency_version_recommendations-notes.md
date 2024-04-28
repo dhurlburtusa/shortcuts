@@ -7,7 +7,9 @@ non-breaking-change version greater than or equal to specified version. The
 same version range operator is also used when the flag `-D` (`--save-dev`) is
 included without also including `--no-save` or `-E` (`--save-exact`).
 
-**Recommendations**
+## Recommendations
+
+### For Library Packages
 
 Because the dependencies under `dependencies` are needed when your package is
 used and your code is not depending on a feature that was released in a later
@@ -28,5 +30,5 @@ code depends on the bug/issue addressed in a patch, then using an exact
 version without updating the code would make sense.
 
 
-[caret-ranges]: https://docs.npmjs.com/misc/semver#caret-ranges-123-025-004
-[tilde-ranges]: https://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1
+[caret-ranges]: https://github.com/npm/node-semver#caret-ranges-123-025-004
+[tilde-ranges]: https://github.com/npm/node-semver#tilde-ranges-123-12-1
