@@ -78,3 +78,49 @@ Template: parent-theme
 ```
 
 See https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ for details.
+
+## CSS Custom Properties
+
+WordPress generates several CSS properties—many based on the configuration provided in `theme.json`.
+
+`--wp--custom--{$level-1}--{$level-2}--...--{$level-n}`
+
+`var:custom|$level-1|$level-2|...|$level-n`
+
+`--wp--preset–{$feature}-{$slug}`
+
+where `$feature` is one of `aspect-ratio`, `color`, `font-family`, `font-size`, `gradient`, `shadow`, `spacing`.
+
+`--wp--preset--aspect-ratio--{$slug}`
+`--wp--preset--color--{$slug}` `.has-{$slug}-color` `.has-{$slug}-background-color` with predefined slugs: `black`, `cyan-bluish-gray`, `light-green-cyan`, `luminous-vivid-amber`, `luminous-vivid-orange`, `pale-cyan-blue`, `pale-pink`, `vivid-cyan-blue`, `vivid-green-cyan`, `vivid-purple`, `vivid-red`, `white` 
+`--wp--preset--font-family--{$slug}`
+`--wp--preset--font-size–{$slug}` with predefined slugs: `medium`, `large`, `small`, `x-large`
+`--wp--preset--gradient-{$slug}` with predefined slugs: `blush-bordeaux`, `blush-light-purple`, `cool-to-warm-spectrum`, `electric-grass`, `light-green-cyan-to-vivid-green-cyan`, `luminous-dusk`, `luminous-vivid-amber-to-luminous-vivid-orange`, `luminous-vivid-orange-to-vivid-red`, `midnight`, `pale-ocean`, `very-light-gray-to-cyan-bluish-gray`, `vivid-cyan-blue-to-vivid-purple`
+`--wp--preset--shadow--{$slug}` with predefined slugs: `crisp`, `deep`, `natural`, `outlined`, `sharp`
+`--wp--preset--spacing--{$slug}` where `$slug` is `10`, `20`, `30`, ...
+
+`--wp--style--block-gap`
+`--wp--style--global--content-size`
+`--wp--style--global--wide-size`
+`--wp--style--root--padding-bottom`
+`--wp--style--root--padding-left`
+`--wp--style--root--padding-right`
+`--wp--style--root--padding-top`
+
+`var:preset|$feature|$slug`
+
+`--wp-admin--admin-bar--height`
+`--wp-admin-theme-color`
+`--wp-admin-theme-color--rgb`
+`--wp-admin-theme-color-darker-10`
+`--wp-admin-theme-color-darker-10--rgb`
+`--wp-admin-theme-color-darker-20`
+`--wp-admin-theme-color-darker-20--rgb`
+`--wp-admin-border-width-focus`
+
+`--wp-block-synced-color`
+`--wp-block-synced-color--rgb`
+
+`--wp-bound-block-color`
+
+
