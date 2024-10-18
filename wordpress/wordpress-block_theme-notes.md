@@ -129,7 +129,7 @@ where `$feature` is one of `aspect-ratio`, `color`, `font-family`, `font-size`, 
 WordPress uses several CSS classes as various points in the DOM.
 
 `has-text-align-left`
-
+`wp-duotone-{$slug}`
 
 ### The `body` Element
 
