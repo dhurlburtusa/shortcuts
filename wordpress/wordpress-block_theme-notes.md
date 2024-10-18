@@ -16,7 +16,7 @@ Block themes also follow a standard structure in how many of those files are lai
   + `header.html`
   + others
 - `patterns/`
-  + Reusable patterns made up of one or more blocks that users can insert via the editor interface. WordPress will automatically register files included in this folder.
+  + Reusable patterns made up of one or more blocks that users can insert via the editor interface. WordPress will automatically register patterns included in this folder when a valid header is provided.
   + `example.php`
   + others
 - `styles/`
@@ -32,6 +32,7 @@ Block themes also follow a standard structure in how many of those files are lai
   + `singular.html`
   + others
 - `README.txt`
+- `embed.php`
 - `functions.php`
 - `screenshot.png`
 - `style.css`
