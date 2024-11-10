@@ -91,3 +91,9 @@ Vite automatically extracts the CSS used by modules in an async chunk and genera
 ### Preload Directives Generation
 
 Vite automatically generates `<link rel="modulepreload">` directives for entry chunks and their direct imports in the built HTML.
+
+### Async Chunk Loading Optimization
+
+Basically, allows common chunks to be fetched in parallel with the chunks that depends on it instead of waterfalling.
+
+See https://vite.dev/guide/features.html#async-chunk-loading-optimization for details.
