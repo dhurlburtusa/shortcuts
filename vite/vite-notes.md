@@ -39,3 +39,7 @@ The above will throw an error in the browser. Vite will detect such bare module 
 **Dependencies are Strongly Cached**
 
 Vite caches dependency requests via HTTP headers, so if you wish to locally edit/debug a dependency, follow the steps [here](https://vite.dev/guide/dep-pre-bundling.html#browser-cache).
+
+### Hot Module Replacement
+
+Vite provides an [HMR API](https://vite.dev/guide/api-hmr.html) over native ESM. Frameworks with HMR capabilities can leverage the API to provide instant, precise updates without reloading the page or blowing away application state.
