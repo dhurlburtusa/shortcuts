@@ -10,3 +10,10 @@ Vite (French word for "quick", pronounced like "veet") is a build tool that aims
 During development, Vite sets `esnext` as the transform target, because we assume a modern browser is used and it supports all of the latest JavaScript and CSS features. This prevents syntax lowering, letting Vite serve modules as close as possible to the original source code.
 
 For the production build, by default Vite targets browsers that support native ES Modules, native ESM dynamic import, and import.meta. Legacy browsers can be supported via the official [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy). See the [Building for Production](https://vite.dev/guide/build.html) section for more details.
+
+## Scaffolding a Vite Project
+
+```sh
+npm create vite@latest
+npm create vite@latest my-app -- --template react-ts
+```
