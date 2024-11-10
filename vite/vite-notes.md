@@ -43,3 +43,23 @@ Vite caches dependency requests via HTTP headers, so if you wish to locally edit
 ### Hot Module Replacement
 
 Vite provides an [HMR API](https://vite.dev/guide/api-hmr.html) over native ESM. Frameworks with HMR capabilities can leverage the API to provide instant, precise updates without reloading the page or blowing away application state.
+
+### TypeScript
+
+Vite supports importing `.ts` files out of the box.
+
+#### Transpile Only
+
+Note that Vite only performs transpilation on `.ts` files and does NOT perform type checking. It assumes type checking is taken care of by your IDE and build process.
+
+The reason Vite does not perform type checking as part of the transform process is because the two jobs work fundamentally differently. Transpilation can work on a per-file basis and aligns perfectly with Vite's on-demand compile model. In comparison, type checking requires knowledge of the entire module graph.
+
+Vite uses [esbuild](http://esbuild.github.io/) to transpile TypeScript into JavaScript which is about 20~30x faster than vanilla `tsc`, and HMR updates can reflect in the browser in under 50ms.
+
+#### TypeScript Compiler Options
+
+Some configuration fields under compilerOptions in `tsconfig.json` require special attention.
+
+See https://vite.dev/guide/features.html#typescript-compiler-options for details.
+
+Note: TypeScript-based Vite starter templates correctly set the TypeScript configuration.
