@@ -67,3 +67,19 @@ Note: TypeScript-based Vite starter templates correctly set the TypeScript confi
 ### JSX
 
 `.jsx` and `.tsx` files are also supported out of the box. JSX transpilation is also handled via [esbuild](http://esbuild.github.io/).
+
+### CSS
+
+Importing `.css` files will inject its content to the page via a `<style>` tag with HMR support.
+
+#### `@import` Inlining and Rebasing
+
+Vite is pre-configured to support CSS `@import` inlining via `postcss-import`. Vite aliases are also respected for CSS `@import`. In addition, all CSS `url()` references, even if the imported files are in different directories, are always automatically rebased to ensure correctness.
+
+`@import` aliases and URL rebasing are also supported for Sass and Less files (see [CSS Pre-processors](https://vite.dev/guide/features.html#css-pre-processors)).
+
+#### PostCSS
+
+If the project contains valid PostCSS config (any format supported by `postcss-load-config`, e.g. `postcss.config.js`), it will be automatically applied to all imported CSS.
+
+Note that CSS minification will run after PostCSS and will use [build.cssTarget](https://vite.dev/config/build-options.html#build-csstarget) option.
