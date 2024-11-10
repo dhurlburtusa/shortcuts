@@ -83,3 +83,7 @@ Vite is pre-configured to support CSS `@import` inlining via `postcss-import`. V
 If the project contains valid PostCSS config (any format supported by `postcss-load-config`, e.g. `postcss.config.js`), it will be automatically applied to all imported CSS.
 
 Note that CSS minification will run after PostCSS and will use [build.cssTarget](https://vite.dev/config/build-options.html#build-csstarget) option.
+
+### CSS Code Splitting
+
+Vite automatically extracts the CSS used by modules in an async chunk and generates a separate file for it. The CSS file is automatically loaded via a `<link>` tag when the associated async chunk is loaded, and the async chunk is guaranteed to only be evaluated after the CSS is loaded to avoid FOUC.
