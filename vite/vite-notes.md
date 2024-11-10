@@ -17,3 +17,7 @@ For the production build, by default Vite targets browsers that support native E
 npm create vite@latest
 npm create vite@latest my-app -- --template react-ts
 ```
+
+## Features
+
+At the very basic level, developing using Vite is not that different from using a static file server. However, Vite provides many enhancements over native ESM imports to support various features that are typically seen in bundler-based setups.
