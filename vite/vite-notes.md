@@ -63,3 +63,7 @@ Some configuration fields under compilerOptions in `tsconfig.json` require speci
 See https://vite.dev/guide/features.html#typescript-compiler-options for details.
 
 Note: TypeScript-based Vite starter templates correctly set the TypeScript configuration.
+
+### JSX
+
+`.jsx` and `.tsx` files are also supported out of the box. JSX transpilation is also handled via [esbuild](http://esbuild.github.io/).
