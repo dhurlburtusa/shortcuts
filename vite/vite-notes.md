@@ -87,3 +87,7 @@ Note that CSS minification will run after PostCSS and will use [build.cssTarget]
 ### CSS Code Splitting
 
 Vite automatically extracts the CSS used by modules in an async chunk and generates a separate file for it. The CSS file is automatically loaded via a `<link>` tag when the associated async chunk is loaded, and the async chunk is guaranteed to only be evaluated after the CSS is loaded to avoid FOUC.
+
+### Preload Directives Generation
+
+Vite automatically generates `<link rel="modulepreload">` directives for entry chunks and their direct imports in the built HTML.
