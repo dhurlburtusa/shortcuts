@@ -212,6 +212,9 @@ NOTE: The use of `1.1` for the value of `@version` is intended to cause a JSON-L
 **@vocab**
 Used to expand properties and values in `@type` with a common prefix IRI.
 
+## Relationship to RDF
+
+JSON-LD is a concrete RDF syntax. Hence, a JSON-LD document is both an RDF document and a JSON document and correspondingly represents an instance of an RDF data model. However, JSON-LD also extends the RDF data model to optionally allow JSON-LD to serialize generalized RDF Datasets.
 
 ## Misc
 
