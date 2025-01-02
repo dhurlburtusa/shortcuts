@@ -16,6 +16,61 @@ JSON-LD introduces:
 JSON-LD is designed to be usable directly as JSON, with no knowledge of RDF. It is also designed to be usable as RDF in conjunction with other Linked Data technologies like SPARQL.
 
 
+## Examples
+
+### @id
+
+```json-ld
+{
+  "http://schema.org/name": "Manu Sporny",
+  "http://schema.org/url": {
+    "@id": "http://manu.sporny.org/"
+    ↑ The '@id' keyword means 'This value is an identifier that is an IRI'
+  },
+  "http://schema.org/image": {
+    "@id": "http://manu.sporny.org/images/manu.png"
+  }
+}
+```
+
+### @context
+
+```json-ld
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    ↑ This means that 'name' is shorthand for 'http://schema.org/name'
+    "image": {
+      "@id": "http://schema.org/image",
+      ↑ This means that 'image' is shorthand for 'http://schema.org/image'
+      "@type": "@id"
+      ↑ This means that a string value associated with 'image'
+        should be interpreted as an identifier that is an IRI
+    },
+    "homepage": {
+      "@id": "http://schema.org/url",
+      ↑ This means that 'homepage' is shorthand for 'http://schema.org/url'
+      "@type": "@id"
+      ↑ This means that a string value associated with 'homepage'
+        should be interpreted as an identifier that is an IRI 
+    }
+  },
+  "name": "Manu Sporny",
+  "homepage": "http://manu.sporny.org/",
+  "image": "http://manu.sporny.org/images/manu.png"
+}
+```
+
+```json-ld
+{
+  "@context": "https://json-ld.org/contexts/person.jsonld",
+  "name": "Manu Sporny",
+  "homepage": "http://manu.sporny.org/",
+  "image": "http://manu.sporny.org/images/manu.png"
+}
+```
+
+
 ## Term Definitions
 
 **active context**
@@ -212,9 +267,11 @@ NOTE: The use of `1.1` for the value of `@version` is intended to cause a JSON-L
 **@vocab**
 Used to expand properties and values in `@type` with a common prefix IRI.
 
+
 ## Relationship to RDF
 
 JSON-LD is a concrete RDF syntax. Hence, a JSON-LD document is both an RDF document and a JSON document and correspondingly represents an instance of an RDF data model. However, JSON-LD also extends the RDF data model to optionally allow JSON-LD to serialize generalized RDF Datasets.
+
 
 ## Misc
 
