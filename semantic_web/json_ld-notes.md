@@ -70,6 +70,42 @@ JSON-LD is designed to be usable directly as JSON, with no knowledge of RDF. It 
 }
 ```
 
+### @version
+
+```json-ld
+{
+  "@context": {
+    "@version": 1.1,
+    ...
+  },
+  ...
+}
+```
+
+### @vocab
+
+```json-ld
+{
+  "@context": {
+    "@vocab": "http://example.com/vocab/"
+  },
+  "@id": "http://example.org/places#BrewEats",
+  "@type": "Restaurant",
+  "name": "Brew Eats"
+  ...
+}
+```
+
+Expands to:
+
+```json-ld
+[{
+  "@id": "http://example.org/places#BrewEats",
+  "@type": ["http://example.com/vocab/Restaurant"],
+  "http://example.com/vocab/name": [{"@value": "Brew Eats"}]
+}]
+```
+
 
 ## Term Definitions
 
