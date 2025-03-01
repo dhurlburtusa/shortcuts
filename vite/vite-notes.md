@@ -18,6 +18,29 @@ npm create vite@latest
 npm create vite@latest my-app -- --template react-ts
 ```
 
+You can use `.` for the project name to scaffold in the current directory.
+
+### Supported Templates
+
+- lit
+- lit-ts
+- preact
+- preact-ts
+- qwik
+- qwik-ts
+- react
+- react-ts
+- react-swc
+- react-swc-ts
+- solid
+- solid-ts
+- svelte
+- svelte-ts
+- vanilla
+- vanilla-ts
+- vue
+- vue-ts
+
 ## Features
 
 At the very basic level, developing using Vite is not that different from using a static file server. However, Vite provides many enhancements over native ESM imports to support various features that are typically seen in bundler-based setups.
