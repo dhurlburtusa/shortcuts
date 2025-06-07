@@ -11,3 +11,7 @@ jupyter notebook ./path/to/some/notebook.ipynb
 ```
 
 ## Executing Notebooks
+
+```sh
+jupyter execute ./path/to/some/notebook.ipynb
+```
