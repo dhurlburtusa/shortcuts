@@ -1,5 +1,17 @@
 # Jupyter Notebook Notes
 
+The Jupyter Notebook is an interactive computing environment that enables users to author notebook documents that include:
+
+- Live code
+- Interactive widgets
+- Plots
+- Narrative text
+- Equations
+- Images
+- Video
+
+These documents provide a complete and self-contained record of a computation that can be converted to various formats and shared with others.
+
 ## Running
 
 ```sh
