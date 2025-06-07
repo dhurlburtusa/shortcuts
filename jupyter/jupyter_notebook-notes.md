@@ -1,6 +1,6 @@
-# Jupyter Notes
+# Jupyter Notebook Notes
 
-## Running Jupyter Notebook
+## Running
 
 ```sh
 jupyter notebook
