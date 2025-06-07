@@ -6,8 +6,10 @@
 jupyter notebook
 ```
 
+**With some Options**
+
 ```sh
-jupyter notebook ./path/to/some/notebook.ipynb
+jupyter notebook --port 4321 ./path/to/some/notebook.ipynb
 ```
 
 ## Executing Notebooks
