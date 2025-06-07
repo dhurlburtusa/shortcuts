@@ -40,6 +40,8 @@ When you run the notebook web application on your computer, notebook documents a
 
 The notebook consists of a sequence of cells. A cell is a multiline text input field, and its contents can be executed by using `Shift`-`Enter` or by clicking either the “Play” button the toolbar. The execution behavior of a cell is determined by the cell’s type. There are three types of cells: code cells, markdown cells, and raw cells.
 
+Internally, notebook documents are JSON data with binary values base64 encoded. This allows them to be read and manipulated programmatically by any programming language. Because JSON is a text format, notebook documents are version control friendly.
+
 #### Code Cells
 
 A code cell allows you to edit and write new code, with full syntax highlighting and tab completion. The programming language you use depends on the kernel.
