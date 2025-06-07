@@ -7,6 +7,7 @@ See https://ipython.readthedocs.io/en/stable/interactive/tutorial.html#magic-fun
 - **%connect_info**: print the kernel's ID.
 - **%lsmagic**: List the available magic functions.
 - **%magic**: Get a detailed explanation of the magic system.
+- **%pip**: Run the pip package manager within the current kernel.
 
 ## Misc
 
