@@ -33,3 +33,7 @@ When a code cell is executed, code that it contains is sent to the kernel associ
 A markdown cell allows you to document the computational process using the Markdown syntax.
 
 Within Markdown cells, you can also include mathematics in a straightforward way, using standard LaTeX notation: `$...$` for inline mathematics and `$$...$$` for displayed mathematics.
+
+### Raw Cells
+
+Raw cells provide a place in which you can write output directly. Raw cells are not evaluated by the notebook.
