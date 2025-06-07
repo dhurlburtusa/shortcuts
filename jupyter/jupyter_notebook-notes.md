@@ -27,3 +27,9 @@ The notebook consists of a sequence of cells. A cell is a multiline text input f
 A code cell allows you to edit and write new code, with full syntax highlighting and tab completion. The programming language you use depends on the kernel.
 
 When a code cell is executed, code that it contains is sent to the kernel associated with the notebook. The results that are returned from this computation are then displayed in the notebook as the cell’s output.
+
+### Markdown Cells
+
+A markdown cell allows you to document the computational process using the Markdown syntax.
+
+Within Markdown cells, you can also include mathematics in a straightforward way, using standard LaTeX notation: `$...$` for inline mathematics and `$$...$$` for displayed mathematics.
