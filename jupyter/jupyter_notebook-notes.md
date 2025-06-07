@@ -36,11 +36,13 @@ Notebook documents contain the inputs and outputs of an interactive session as w
 
 When you run the notebook web application on your computer, notebook documents are just files on your local filesystem with a `.ipynb` extension.
 
+Notebooks can be exported to different static formats including HTML, reStructeredText, LaTeX, PDF, and slide shows (reveal.js) using Jupyter’s nbconvert utility.
+
+Internally, notebook documents are JSON data with binary values base64 encoded. This allows them to be read and manipulated programmatically by any programming language. Because JSON is a text format, notebook documents are version control friendly.
+
 ### Structure
 
 The notebook consists of a sequence of cells. A cell is a multiline text input field, and its contents can be executed by using `Shift`-`Enter` or by clicking either the “Play” button the toolbar. The execution behavior of a cell is determined by the cell’s type. There are three types of cells: code cells, markdown cells, and raw cells.
-
-Internally, notebook documents are JSON data with binary values base64 encoded. This allows them to be read and manipulated programmatically by any programming language. Because JSON is a text format, notebook documents are version control friendly.
 
 #### Code Cells
 
