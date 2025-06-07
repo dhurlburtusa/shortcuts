@@ -21,3 +21,9 @@ jupyter execute ./path/to/some/notebook.ipynb
 ## Structure of a Notebook Document
 
 The notebook consists of a sequence of cells. A cell is a multiline text input field, and its contents can be executed by using `Shift`-`Enter` or by clicking either the “Play” button the toolbar. The execution behavior of a cell is determined by the cell’s type. There are three types of cells: code cells, markdown cells, and raw cells.
+
+### Code Cells
+
+A code cell allows you to edit and write new code, with full syntax highlighting and tab completion. The programming language you use depends on the kernel.
+
+When a code cell is executed, code that it contains is sent to the kernel associated with the notebook. The results that are returned from this computation are then displayed in the notebook as the cell’s output.
