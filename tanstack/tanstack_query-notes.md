@@ -41,3 +41,9 @@ Note that query keys act as dependencies for your query functions. Adding depend
 For a library to create typesafe standardized query keys, useful for cache management in TanStack Query, check out https://www.npmjs.com/package/@lukemorales/query-key-factory.
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/query-keys for details.
+
+## Query Functions
+
+A query function can be literally any function that returns a promise. The promise that is returned should either resolve the data or throw an error.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/query-functions for details.
