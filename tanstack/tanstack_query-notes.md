@@ -38,4 +38,6 @@ TanStack Query manages query caching for you based on query keys. Query keys hav
 
 Note that query keys act as dependencies for your query functions. Adding dependent variables to your query key will ensure that queries are cached independently, and that any time a variable changes, queries will be refetched automatically (depending on your `staleTime` settings).
 
+For a library to create typesafe standardized query keys, useful for cache management in TanStack Query, check out https://www.npmjs.com/package/@lukemorales/query-key-factory.
+
 See https://tanstack.com/query/latest/docs/framework/react/guides/query-keys for details.
