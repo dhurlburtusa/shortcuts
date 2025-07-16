@@ -47,3 +47,9 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/query-keys for
 A query function can be literally any function that returns a promise. The promise that is returned should either resolve the data or throw an error.
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/query-functions for details.
+
+## Query Options
+
+One of the best ways to share `queryKey` and `queryFn` between multiple places, yet keep them co-located to one another, is to use the `queryOptions` helper.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/query-options for details.
