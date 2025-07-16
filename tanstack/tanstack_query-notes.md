@@ -53,3 +53,9 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/query-function
 One of the best ways to share `queryKey` and `queryFn` between multiple places, yet keep them co-located to one another, is to use the `queryOptions` helper.
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/query-options for details.
+
+## Network Mode
+
+TanStack Query provides three different network modes (online, always, offlineFirst) to distinguish how queries and mutations should behave if you have no network connection. This mode can be set for each query / mutation individually, or globally via the query / mutation defaults.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/network-mode for details.
