@@ -29,3 +29,5 @@ With zero dependencies, TanStack Query is extremely lean given the dense feature
 ## Query
 
 A query is a declarative dependency on an asynchronous source of data that is tied to a __unique key__. A query can be used with any Promise based method to fetch data from a server. If your method modifies data on the server, it is recommended using Mutations instead.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/queries for details.
