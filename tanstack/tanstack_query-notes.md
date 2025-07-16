@@ -25,3 +25,7 @@ With zero dependencies, TanStack Query is extremely lean given the dense feature
 - Offline Support
 - SSR Support
 - Data Selectors
+
+## Query
+
+A query is a declarative dependency on an asynchronous source of data that is tied to a __unique key__. A query can be used with any Promise based method to fetch data from a server. If your method modifies data on the server, it is recommended using Mutations instead.
