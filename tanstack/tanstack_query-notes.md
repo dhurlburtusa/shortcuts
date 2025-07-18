@@ -89,3 +89,5 @@ const {
   enabled: !!userId,
 })
 ```
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/dependent-queries for details.
