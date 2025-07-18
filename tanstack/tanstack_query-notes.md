@@ -59,3 +59,7 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/query-options 
 TanStack Query provides three different network modes (online, always, offlineFirst) to distinguish how queries and mutations should behave if you have no network connection. This mode can be set for each query / mutation individually, or globally via the query / mutation defaults.
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/network-mode for details.
+
+## Parallel Queries
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/parallel-queries for details.
