@@ -97,3 +97,11 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/dependent-quer
 If you ever want to disable a query from automatically running, you can use the `enabled = false` option. The enabled option also accepts a callback that returns a boolean.
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/disabling-queries for details.
+
+## Query Retries
+
+When a `useQuery` query fails (the query function throws an error), TanStack Query will automatically retry the query if that query's request has not reached the max number of consecutive retries (defaults to 3) or a function is provided to determine if a retry is allowed.
+
+You can configure retries both on a global level and an individual query level.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/query-retries for details.
