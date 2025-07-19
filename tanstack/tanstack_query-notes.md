@@ -105,3 +105,7 @@ When a `useQuery` query fails (the query function throws an error), TanStack Que
 You can configure retries both on a global level and an individual query level.
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/query-retries for details.
+
+## Paginated / Lagged Queries
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/paginated-queries for details.
