@@ -109,3 +109,7 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/query-retries 
 ## Paginated / Lagged Queries
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/paginated-queries for details.
+
+## Infinite Queries
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/infinite-queries for details.
