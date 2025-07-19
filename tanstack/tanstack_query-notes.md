@@ -91,3 +91,9 @@ const {
 ```
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/dependent-queries for details.
+
+## Disabling/Pausing Queries
+
+If you ever want to disable a query from automatically running, you can use the `enabled = false` option. The enabled option also accepts a callback that returns a boolean.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/disabling-queries for details.
