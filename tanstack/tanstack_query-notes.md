@@ -126,6 +126,23 @@ There are many ways to supply initial data for a query to the cache before you n
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/initial-query-data for details.
 
+## Placeholder Query Data
+
+**What is placeholder data?**
+
+Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the data is not persisted to the cache. This comes in handy for situations where you have enough partial (or fake) data to render the query successfully while the actual data is fetched in the background.
+
+There are a few ways to supply placeholder data for a query to the cache before you need it:
+
+- Declaratively:
+  + Provide `placeholderData` to a query to prepopulate its cache if empty.
+- Imperatively:
+  + Prefetch or fetch the data using `queryClient` and the `placeholderData` option.
+
+When using `placeholderData`, the Query will not be in the `pending` state - it will start out as being in the `success` state, because there is `data` to display - even if that data is just "placeholder" data. To distinguish it from "real" data, the `isPlaceholderData` flag is set to `true` on the Query result.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data for details.
+
 ## Query Invalidation
 
 The `invalidateQueries` method of a `QueryClient` instance allows you to intelligently mark queries as stale and potentially refetch them too!
