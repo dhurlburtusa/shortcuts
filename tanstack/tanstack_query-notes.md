@@ -71,11 +71,11 @@ Dependent (or serial) queries depend on previous ones to finish before they can 
 ```tsx
 // Get the user
 const { data: user } = useQuery({
-  queryKey: ['user', email],
+  queryKey: ["user", email],
   queryFn: getUserByEmail,
-})
+});
 
-const userId = user?.id
+const userId = user?.id;
 
 // Then get the user's projects
 const {
@@ -83,11 +83,11 @@ const {
   fetchStatus,
   data: projects,
 } = useQuery({
-  queryKey: ['projects', userId],
+  queryKey: ["projects", userId],
   queryFn: getProjectsByUser,
   // The query will not execute until the userId exists
   enabled: !!userId,
-})
+});
 ```
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/dependent-queries for details.
@@ -149,9 +149,10 @@ The `invalidateQueries` method of a `QueryClient` instance allows you to intelli
 
 ```ts
 // Invalidate every query in the cache
-queryClient.invalidateQueries()
+queryClient.invalidateQueries();
+
 // Invalidate every query with a key that starts with `todos`
-queryClient.invalidateQueries({ queryKey: ['todos'] })
+queryClient.invalidateQueries({ queryKey: ["todos"] })
 ```
 
 When a query is invalidated with invalidateQueries, two things happen:
