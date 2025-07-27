@@ -113,3 +113,22 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/paginated-quer
 ## Infinite Queries
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/infinite-queries for details.
+
+## Query Invalidation
+
+The `invalidateQueries` method of a `QueryClient` instance allows you to intelligently mark queries as stale and potentially refetch them too!
+
+```ts
+// Invalidate every query in the cache
+queryClient.invalidateQueries()
+// Invalidate every query with a key that starts with `todos`
+queryClient.invalidateQueries({ queryKey: ['todos'] })
+```
+
+When a query is invalidated with invalidateQueries, two things happen:
+
+- It is marked as stale. This stale state overrides any `staleTime` configurations being used in `useQuery` or related hooks.
+- If the query is currently being rendered via `useQuery` or related hooks, it will also be refetched in the background.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/query-invalidation for details.
+
