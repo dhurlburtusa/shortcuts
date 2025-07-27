@@ -114,6 +114,18 @@ See https://tanstack.com/query/latest/docs/framework/react/guides/paginated-quer
 
 See https://tanstack.com/query/latest/docs/framework/react/guides/infinite-queries for details.
 
+## Initial Query Data
+
+There are many ways to supply initial data for a query to the cache before you need it:
+
+- Declaratively:
+  + Provide `initialData` to a query to prepopulate its cache if empty.
+- Imperatively:
+  + Prefetch the data using `queryClient.prefetchQuery`.
+  + Manually place the data into the cache using `queryClient.setQueryData`.
+
+See https://tanstack.com/query/latest/docs/framework/react/guides/initial-query-data for details.
+
 ## Query Invalidation
 
 The `invalidateQueries` method of a `QueryClient` instance allows you to intelligently mark queries as stale and potentially refetch them too!
