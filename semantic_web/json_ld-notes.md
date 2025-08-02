@@ -70,6 +70,34 @@ JSON-LD is designed to be usable directly as JSON, with no knowledge of RDF. It 
 }
 ```
 
+### @type
+
+```json-ld
+{
+  "@context": { ... },
+  "@type": "Person",
+  ↑ This means the type of this node.
+  "birthday": {
+    "@type": "xsd:date",
+    ↑ This means the type of this data.
+    "@value": "2000-01-01"
+  },
+}
+```
+
+```json-ld
+{
+  "@context": {
+    "birthday" : {
+      "@id": "http://schema.org/birthday",
+      "@type": "xsd:date"
+    },
+  },
+  ...
+  "birthday": "2000-01-01",
+}
+```
+
 ### @version
 
 ```json-ld
