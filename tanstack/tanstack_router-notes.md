@@ -4,9 +4,10 @@ TanStack Router is a router for building React and Solid applications. Some of i
 
 - 100% inferred TypeScript support
 - Typesafe navigation
-- Nested Routing and layout routes (with pathless layouts)
+- Nested routes, layout routes (with pathless layouts), and grouped routes
 - Built-in Route Loaders w/ SWR Caching
 - Designed for client-side data caches (TanStack Query, SWR, etc.)
+- Parallel data loading
 - Automatic route prefetching
 - Asynchronous route elements and error boundaries
 - File-based Route Generation
@@ -16,3 +17,9 @@ TanStack Router is a router for building React and Solid applications. Some of i
 - Custom Search Param parser/serializer support
 - Search param middleware
 - Route matching/loading middleware
+
+## Why TanStack Router?
+
+See https://tanstack.com/router/latest/docs/framework/react/overview#why-tanstack-router for details.
+
+Some reasons are highlighted below.
