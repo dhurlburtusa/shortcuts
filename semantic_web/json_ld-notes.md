@@ -524,6 +524,17 @@ NOTE: The use of `1.1` for the value of `@version` is intended to cause a JSON-L
 **@vocab**
 Used to expand properties and values in `@type` with a common prefix IRI.
 
+## Processing Mode
+
+```json-ld
+{
+  "@context": {
+    "@version": 1.1,
+  },
+}
+```
+
+See https://www.w3.org/TR/json-ld/#json-ld-1-1-processing-mode for details.
 
 ## Relationship to RDF
 
