@@ -134,6 +134,20 @@ Expands to:
 }]
 ```
 
+## The Context
+
+A context is used to map terms to IRIs. Terms are case sensitive and most valid strings that are not reserved JSON-LD keywords can be used as a term. Exceptions are the empty string `""` and strings that have the form of a keyword (i.e., starting with `@` followed exclusively by one or more ALPHA characters (see [RFC5234])), which must not be used as terms. Strings that have the form of an IRI (e.g., containing a ":") should not be used as terms. The value of a term definition can either be a simple string, mapping the term to an IRI, or a map.
+
+A context is introduced using an entry with the key `@context` and may appear within a node object or a value object. Therefore, a JSON-LD document may contain multiple contexts.
+
+When a term definition has a map value, the map is called an expanded term definition. They allow declaring the type (using `@type) of the term. They also allow terms to be used for index maps (using `@index`) and to specify whether array values are to be interpreted as sets (using `@set`) or lists (using `@list`). Expanded term definitions may be defined using IRIs or compact IRIs as keys, which is mainly used to associate type or language information with an IRI or compact IRI.
+
+Contexts can either be directly embedded into the document (an embedded context) or be referenced using a URL. External JSON-LD context documents may contain extra information located outside of the `@context` key, such as documentation about the terms declared in the document. Information contained outside of the `@context` value is ignored when the document is used as an external JSON-LD context document.
+
+JSON documents can be interpreted as JSON-LD without having to be modified by referencing a context via an HTTP Link Header as described in § 6.1 Interpreting JSON as JSON-LD. It is also possible to apply a custom context using the JSON-LD 1.1 API [JSON-LD11-API].
+
+In JSON-LD documents, contexts may also be specified inline. This has the advantage that documents can be processed even in the absence of a connection to the Web.
+
 ## Keyword Aliasing
 
 Each of the JSON-LD keywords, except for `@context`, may be aliased to application-specific keywords. This feature allows legacy JSON content to be utilized by JSON-LD by re-using JSON keys that already exist in legacy documents. This feature also allows developers to design domain-specific implementations using only the JSON-LD context.
