@@ -160,6 +160,66 @@ Term-to-IRI expansion occurs if the key matches a term defined within the active
 
 JSON keys that do not expand to an IRI are not Linked Data and thus ignored when processed.
 
+## Specifying the Type
+
+In Linked Data, it is common to specify the type of a graph node; in many cases, this can be inferred based on the properties used within a given node object, or the property for which a node is a value.
+
+The type of a particular node can be specified using the `@type` keyword. In Linked Data, types are uniquely identified with an IRI.
+
+A node can be assigned more than one type by using an array.
+
+```json-ld
+{
+  "@id": "http://me.markus-lanthaler.com/",
+  "@type": [
+    "http://schema.org/Person",
+    "http://xmlns.com/foaf/0.1/Person"
+  ],
+}
+```
+
+The value of a `@type` key may also be a term defined in the active context:
+
+```json-ld
+{
+  "@context": {
+    "Person": "http://schema.org/Person"
+  },
+  "@id": "http://me.markus-lanthaler.com/",
+  "@type": "Person",
+}
+```
+
+In addition to setting the type of nodes, `@type` can also be used to set the type of a value to create a typed value. This use of `@type` is similar to that used to define the type of a node object, but value objects are restricted to having just a single type.
+
+**Implicit**
+```json-ld
+{
+  "@context": {
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "modified": "2010-05-29T14:17:39+02:00"
+}
+```
+
+**Explicit**
+```json-ld
+{
+  "@context": {
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    }
+  },
+  "modified": {
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value": "2010-05-29T14:17:39+02:00"
+  }
+}
+```
+
 ## Keyword Aliasing
 
 Each of the JSON-LD keywords, except for `@context`, may be aliased to application-specific keywords. This feature allows legacy JSON content to be utilized by JSON-LD by re-using JSON keys that already exist in legacy documents. This feature also allows developers to design domain-specific implementations using only the JSON-LD context.
