@@ -226,7 +226,7 @@ If a term is redefined within a context, all previous rules associated with the 
 
 Multiple contexts may be combined using an array, which is processed in order. The set of contexts defined within a specific map are referred to as local contexts. The active context refers to the accumulation of local contexts that are in scope at a specific point within the document. Setting a local context to `null` effectively resets the active context to an empty context, without term definitions, default language, or other things defined within previous contexts.
 
-### IRIs
+## IRIs
 
 A string is interpreted as an IRI when it is the value of a map entry with the key `@id`.
 
