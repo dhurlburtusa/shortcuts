@@ -134,6 +134,34 @@ Expands to:
 }]
 ```
 
+## Keyword Aliasing
+
+Each of the JSON-LD keywords, except for `@context`, may be aliased to application-specific keywords. This feature allows legacy JSON content to be utilized by JSON-LD by re-using JSON keys that already exist in legacy documents. This feature also allows developers to design domain-specific implementations using only the JSON-LD context.
+
+Since keywords cannot be redefined, they can also not be aliased to other keywords. Aliased keywords may not be used within a context, itself.
+
+```json-ld
+{
+  "@context": {
+    "url": "@id",
+    "a": "@type",
+    "name": "http://xmlns.com/foaf/0.1/name"
+  },
+  "url": "http://example.com/about#gregg",
+  "a": "http://xmlns.com/foaf/0.1/Person",
+  "name": "Gregg Kellogg"
+}
+```
+
+Expands to:
+
+```json-ld
+[{
+  "@id": "http://example.com/about#gregg",
+  "@type": ["http://xmlns.com/foaf/0.1/Person"],
+  "http://xmlns.com/foaf/0.1/name": [{"@value": "Gregg Kellogg"}]
+}]
+```
 
 ## Term Definitions
 
@@ -216,8 +244,9 @@ A nested property is a key in a node object whose value is a map containing entr
 **node object**
 A node object represents zero or more properties of a node in the graph serialized by the JSON-LD document. A map is a node object if it exists outside of the JSON-LD context and:
 
-  - it does not contain the `@value`, `@list`, or `@set` keywords, or
-  - it is not the top-most map in the JSON-LD document consisting of no other entries than `@graph` and `@context`.
+  - it is not the top-most map in the JSON-LD document consisting of no other entries than `@graph` and `@context`,
+  - it does not contain the `@value`, `@list`, or `@set` keywords, and
+  - it is not a graph object.
 
 The entries of a node object whose keys are not keywords are also called properties of the node object. See the [Node Objects section of JSON-LD 1.1][node-objects] for a normative description.
 
