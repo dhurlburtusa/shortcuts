@@ -39,3 +39,9 @@ Search parameters are:
 - Easily modified with the useSearch hook, Link, navigate, and router.navigate APIs
 - Customizable with a custom search filters and middleware
 - Subscribed via fine-grained search param selectors for efficient re-renders
+
+## Installation
+
+```sh
+npm install @tanstack/react-router
+```
