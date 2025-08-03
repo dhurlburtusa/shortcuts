@@ -148,6 +148,18 @@ JSON documents can be interpreted as JSON-LD without having to be modified by re
 
 In JSON-LD documents, contexts may also be specified inline. This has the advantage that documents can be processed even in the absence of a connection to the Web.
 
+### IRIs
+
+A string is interpreted as an IRI when it is the value of a map entry with the key `@id`.
+
+Values that are interpreted as IRIs, can also be expressed as relative IRI references.
+
+IRIs can be expressed directly in the key position.
+
+Term-to-IRI expansion occurs if the key matches a term defined within the active context.
+
+JSON keys that do not expand to an IRI are not Linked Data and thus ignored when processed.
+
 ## Keyword Aliasing
 
 Each of the JSON-LD keywords, except for `@context`, may be aliased to application-specific keywords. This feature allows legacy JSON content to be utilized by JSON-LD by re-using JSON keys that already exist in legacy documents. This feature also allows developers to design domain-specific implementations using only the JSON-LD context.
