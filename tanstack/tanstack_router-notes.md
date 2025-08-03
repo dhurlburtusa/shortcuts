@@ -23,3 +23,19 @@ TanStack Router is a router for building React and Solid applications. Some of i
 See https://tanstack.com/router/latest/docs/framework/react/overview#why-tanstack-router for details.
 
 Some reasons are highlighted below.
+
+### 1st-Class Search Parameters
+
+Search parameters are a first-class citizen in TanStack Router. While still based on standard URLSearchParams, TanStack Router uses a powerful parser/serializer to manage deeper and more complex data structures in your search params, all while keeping them type-safe and easy to work with.
+
+It's like having `useState` right in the URL!
+
+Search parameters are:
+
+- Automatically parsed and serialized as JSON
+- Validated and typed
+- Inherited from parent routes
+- Accessible in loaders, components, and hooks
+- Easily modified with the useSearch hook, Link, navigate, and router.navigate APIs
+- Customizable with a custom search filters and middleware
+- Subscribed via fine-grained search param selectors for efficient re-renders
