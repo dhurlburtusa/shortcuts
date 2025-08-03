@@ -197,6 +197,35 @@ The outer array is standard for a document in expanded document form and flatten
 }
 ```
 
+Multiple contexts may be combined using an array, which is processed in order. The set of contexts defined within a specific map are referred to as local contexts. The active context refers to the accumulation of local contexts that are in scope at a specific point within the document. Setting a local context to `null` effectively resets the active context to an empty context, without term definitions, default language, or other things defined within previous contexts.
+
+### Duplicate Context Terms
+
+Duplicate context terms are overridden using a most-recently-defined-wins mechanism.
+
+```json-ld
+{
+  "@context": {
+    "name": "http://example.com/person#name",
+    "details": "http://example.com/person#details"
+  },
+  "name": "Markus Lanthaler",
+  ...
+  "details": {
+    "@context": {
+      "name": "http://example.com/organization#name"
+    },
+    "name": "Graz University of Technology"
+  }
+}
+```
+
+In the example above, the name term is overridden in the more deeply nested details structure, which uses its own embedded context. Note that this is rarely a good authoring practice and is typically used when working with legacy applications that depend on a specific structure of the map.
+
+If a term is redefined within a context, all previous rules associated with the previous definition are removed. If a term is redefined to `null`, the term is effectively removed from the list of terms defined in the active context.
+
+Multiple contexts may be combined using an array, which is processed in order. The set of contexts defined within a specific map are referred to as local contexts. The active context refers to the accumulation of local contexts that are in scope at a specific point within the document. Setting a local context to `null` effectively resets the active context to an empty context, without term definitions, default language, or other things defined within previous contexts.
+
 ### IRIs
 
 A string is interpreted as an IRI when it is the value of a map entry with the key `@id`.
@@ -301,7 +330,7 @@ Expands to:
 ## Term Definitions
 
 **active context**
-A `context` that is used to resolve terms while the processing algorithm is running.
+A `context` that is used to resolve terms while the processing algorithm is running. The active context refers to the accumulation of local contexts that are in scope at a specific point within the document.
 
 **base direction**
 The base direction is the direction used when a string does not have a direction associated with it directly. It can be set in the context using the `@direction` key whose value must be one of the strings `"ltr"`, `"rtl"`, or `null`. See the [Context Definitions section of JSON-LD 1.1][context-definitions] for a normative description.
