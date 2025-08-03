@@ -257,6 +257,23 @@ If `@vocab` is used but certain keys in an map should not be expanded using the 
 }
 ```
 
+### Base IRI
+
+JSON-LD allows IRIs to be specified in a relative form which is resolved against the document base according section 5.1 Establishing a Base URI of [RFC3986]. The base IRI may be explicitly set with a context using the `@base` keyword.
+
+```json-ld
+{
+  "@context": {
+    "@base": "http://example.com/document.jsonld",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label"
+  },
+  "@id": "",
+  "label": "Just a simple document"
+}
+```
+
+See https://www.w3.org/TR/json-ld/#base-iri for details.
+
 ## IRIs
 
 A string is interpreted as an IRI when it is the value of a map entry with the key `@id`.
