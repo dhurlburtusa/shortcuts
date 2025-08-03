@@ -148,6 +148,55 @@ JSON documents can be interpreted as JSON-LD without having to be modified by re
 
 In JSON-LD documents, contexts may also be specified inline. This has the advantage that documents can be processed even in the absence of a connection to the Web.
 
+In general, contexts may be used any time a map is defined. The only time that one cannot express a context is as a **direct** child of another context definition (may be used in an expanded term definition).
+
+### Multiple Contexts
+
+A JSON-LD document may have the form of an array composed of one or more node objects, which use a context definition in each top-level node object
+
+```json-ld
+[
+  {
+    "@context": "https://json-ld.org/contexts/person.jsonld",
+    "name": "Manu Sporny",
+    "homepage": "http://manu.sporny.org/",
+    "depiction": "http://twitter.com/account/profile_image/manusporny"
+  }, {
+    "@context": "https://json-ld.org/contexts/place.jsonld",
+    "name": "The Empire State Building",
+    "description": "The Empire State Building is a 102-story landmark in New York City.",
+    "geo": {
+      "latitude": "40.75",
+      "longitude": "73.98"
+    }
+  }
+]
+```
+
+The outer array is standard for a document in expanded document form and flattened document form, and may be necessary when describing a disconnected graph, where nodes may not reference each other. In such cases, using a top-level map with an `@graph` property can be useful for saving the repetition of `@context`.
+
+```json-ld
+{
+  "@context": [
+    "https://json-ld.org/contexts/person.jsonld",
+    "https://json-ld.org/contexts/place.jsonld",
+    { "title": "http://purl.org/dc/terms/title" }
+  ],
+  "@graph": [{
+    "http://xmlns.com/foaf/0.1/name": "Manu Sporny",
+    "homepage": "http://manu.sporny.org/",
+    "depiction": "http://twitter.com/account/profile_image/manusporny"
+  }, {
+    "title": "The Empire State Building",
+    "description": "The Empire State Building is a 102-story landmark in New York City.",
+    "geo": {
+      "latitude": "40.75",
+      "longitude": "73.98"
+    }
+  }]
+}
+```
+
 ### IRIs
 
 A string is interpreted as an IRI when it is the value of a map entry with the key `@id`.
