@@ -226,6 +226,37 @@ If a term is redefined within a context, all previous rules associated with the 
 
 Multiple contexts may be combined using an array, which is processed in order. The set of contexts defined within a specific map are referred to as local contexts. The active context refers to the accumulation of local contexts that are in scope at a specific point within the document. Setting a local context to `null` effectively resets the active context to an empty context, without term definitions, default language, or other things defined within previous contexts.
 
+### Default Vocabulary
+
+At times, all properties and types may come from the same vocabulary. JSON-LD's `@vocab` keyword allows an author to set a common prefix which is used as the vocabulary mapping and is used for all properties and types that do not match a term and are neither an IRI nor a compact IRI (i.e., they do not contain a colon).
+
+```json-ld
+{
+  "@context": {
+    "@vocab": "http://example.com/vocab/"
+  },
+  "@id": "http://example.org/places#BrewEats",
+  "@type": "Restaurant",
+  "name": "Brew Eats"
+  ...
+}
+```
+
+If `@vocab` is used but certain keys in an map should not be expanded using the vocabulary IRI, a term can be explicitly set to `null` in the context. For instance, in the example below the databaseId entry would not expand to an IRI causing the property to be dropped when expanding.
+
+```json-ld
+{
+  "@context": {
+     "@vocab": "http://example.com/vocab/",
+     "databaseId": null
+  },
+  "@id": "http://example.org/places#BrewEats",
+  "@type": "Restaurant",
+  "name": "Brew Eats",
+  "databaseId": "23987520"
+}
+```
+
 ## IRIs
 
 A string is interpreted as an IRI when it is the value of a map entry with the key `@id`.
