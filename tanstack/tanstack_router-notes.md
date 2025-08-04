@@ -45,3 +45,7 @@ Search parameters are:
 ```sh
 npm install @tanstack/react-router
 ```
+
+## Quick Start
+
+See https://tanstack.com/router/latest/docs/framework/react/quick-start.
