@@ -206,3 +206,9 @@ See https://tanstack.com/router/latest/docs/framework/react/routing/routing-conc
 Non-nested routes can be created by suffixing a parent file route segment with a `_` and are used to un-nest a route from its parents and render its own component tree.
 
 See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#non-nested-routes for details.
+
+### Excluding Files and Folders from Routes
+
+Files and folders can be excluded from route generation with a `-` prefix attached to the file name. This gives you the ability to colocate logic in the route directories.
+
+See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#excluding-files-and-folders-from-routes for details.
