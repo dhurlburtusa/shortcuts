@@ -200,3 +200,9 @@ Like Layout Routes, Pathless Layout Routes are used to wrap child routes with ad
 Pathless Layout Routes are prefixed with an underscore (`_`) to denote that they are "pathless".
 
 See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#pathless-layout-routes for details.
+
+### Non-Nested Routes
+
+Non-nested routes can be created by suffixing a parent file route segment with a `_` and are used to un-nest a route from its parents and render its own component tree.
+
+See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#non-nested-routes for details.
