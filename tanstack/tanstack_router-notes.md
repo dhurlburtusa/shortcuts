@@ -145,3 +145,37 @@ For example, a route targeting the `files/$` path is a splat route. If the URL p
 ```js
 { _splat: "documents/hello-world" }
 ```
+
+### Optional Path Parameters
+
+Optional path parameters allow you to define route segments that may or may not be present in the URL. They use the `{-$paramName}` syntax and provide flexible routing patterns where certain parameters are optional.
+
+```tsx
+// posts.{-$category}.tsx - Optional category parameter
+import { createFileRoute } from "@tanstack/react-router";
+
+function PostsComponent() {
+  const { category } = Route.useParams();
+
+  return <div>{category ? `Posts in ${category}` : "All Posts"}</div>;
+}
+
+const Route = createFileRoute("/posts/{-$category}")({
+  component: PostsComponent,
+});
+
+export { Route };
+```
+
+This route will match both `/posts` (`category` is `undefined`) and `/posts/tech` (`category` is `"tech"`).
+
+You can also define multiple optional parameters in a single route:
+
+```tsx
+// posts.{-$category}.{-$slug}.tsx
+export const Route = createFileRoute("/posts/{-$category}/{-$slug}")({
+  component: PostsComponent,
+});
+```
+
+This route matches `/posts`, `/posts/tech`, and `/posts/tech/hello-world`.
