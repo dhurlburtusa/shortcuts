@@ -212,3 +212,23 @@ See https://tanstack.com/router/latest/docs/framework/react/routing/routing-conc
 Files and folders can be excluded from route generation with a `-` prefix attached to the file name. This gives you the ability to colocate logic in the route directories.
 
 See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#excluding-files-and-folders-from-routes for details.
+
+### Pathless Route Group Directories
+
+Pathless route group directories use `()` as a way to group routes files together regardless of their path. They are purely organizational and do not affect the route tree or component tree in any way.
+
+```
+routes/
+├── index.tsx
+├── (app)/
+│   ├── dashboard.tsx
+│   ├── settings.tsx
+│   ├── users.tsx
+├── (auth)/
+│   ├── login.tsx
+│   ├── register.tsx
+```
+
+In the example above, the `(app)` and `(auth)` directories are purely organizational and do not affect the route tree or component tree in any way. They are used to group related routes together for easier navigation and organization.
+
+See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#pathless-route-group-directories for details.
