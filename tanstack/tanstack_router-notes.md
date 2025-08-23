@@ -135,3 +135,13 @@ const Route = createFileRoute("/posts/$postId")({
 
 export { Route };
 ```
+
+### Splat / Catch-All Routes
+
+A route with a path of only `$` is called a "splat" route because it always captures any remaining section of the URL pathname from the `$` to the end. The captured pathname is then available in the `params` object under the special `_splat` property.
+
+For example, a route targeting the `files/$` path is a splat route. If the URL pathname is `/files/documents/hello-world`, the `params` object would contain `documents/hello-world` under the special `_splat` property:
+
+```js
+{ _splat: "documents/hello-world" }
+```
