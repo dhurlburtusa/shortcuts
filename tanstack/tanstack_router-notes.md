@@ -67,3 +67,21 @@ import { createRootRoute } from "@tanstack/react-router";
 
 export const Route = createRootRoute();
 ```
+
+### Basic Routes
+
+Basic routes match a specific path, for example `/about`, `/settings`, `/settings/notifications` are all basic routes as they match the path exactly.
+
+```ts
+import { createFileRoute } from "@tanstack/react-router";
+
+function AboutComponent() {
+  return <div>About</div>;
+}
+
+const Route = createFileRoute('/about')({
+  component: AboutComponent,
+});
+
+export { Route };
+```
