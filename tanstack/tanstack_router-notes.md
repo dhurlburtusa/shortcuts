@@ -179,3 +179,16 @@ export const Route = createFileRoute("/posts/{-$category}/{-$slug}")({
 ```
 
 This route matches `/posts`, `/posts/tech`, and `/posts/tech/hello-world`.
+
+### Layout Routes
+
+Layout routes are used to wrap child routes with additional components and logic. They are useful for:
+
+- Wrapping child routes with a layout component.
+- Enforcing a loader requirement before displaying any child routes.
+- Validating and providing search params to child routes.
+- Providing fallbacks for error components or pending elements to child routes.
+- Providing shared context to all child routes.
+- And more!
+
+See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#layout-routes for details.
