@@ -192,3 +192,11 @@ Layout routes are used to wrap child routes with additional components and logic
 - And more!
 
 See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#layout-routes for details.
+
+### Pathless Layout Routes
+
+Like Layout Routes, Pathless Layout Routes are used to wrap child routes with additional components and logic. However, pathless layout routes do not require a matching `path` in the URL and are used to wrap child routes with additional components and logic without requiring a matching `path` in the URL.
+
+Pathless Layout Routes are prefixed with an underscore (`_`) to denote that they are "pathless".
+
+See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#pathless-layout-routes for details.
