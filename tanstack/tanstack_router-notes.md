@@ -49,3 +49,21 @@ npm install @tanstack/react-router
 ## Quick Start
 
 See https://tanstack.com/router/latest/docs/framework/react/quick-start.
+
+## Concepts
+
+### Root Route
+
+The root route is the top-most route in the entire tree and encapsulates all other routes as children.
+
+- It has no path
+- It is always matched
+- Its `component` is always rendered
+
+To create a root route, call the `createRootRoute` function and export it as the `Route` variable in your route file:
+
+```ts
+import { createRootRoute } from "@tanstack/react-router";
+
+export const Route = createRootRoute();
+```
