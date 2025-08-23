@@ -85,3 +85,27 @@ const Route = createFileRoute('/about')({
 
 export { Route };
 ```
+
+### Index Routes
+
+Index routes specifically target their parent route when it is matched exactly and no child route is matched.
+
+Let's take a look at an index route for a `/posts` URL:
+
+```tsx
+// posts.index.tsx
+import { createFileRoute } from "@tanstack/react-router";
+
+function PostsIndexComponent() {
+  return <div>Please select a post!</div>;
+}
+
+// Note the trailing slash, which is used to target index routes
+const Route = createFileRoute("/posts/")({
+  component: PostsIndexComponent,
+});
+
+export { Route };
+```
+
+This route will be matched when the URL is `/posts` exactly.
