@@ -109,3 +109,29 @@ export { Route };
 ```
 
 This route will be matched when the URL is `/posts` exactly.
+
+### Dynamic Route Segments
+
+Route path segments that start with a `$` followed by a label are dynamic and capture that section of the URL into the `params` object for use in your application. For example, a pathname of `/posts/123` would match the `/posts/$postId` route, and the `params` object would be `{ postId: "123" }`.
+
+These params are then usable in your route's configuration and components.
+
+```tsx
+// posts.$postId.tsx
+import { createFileRoute } from "@tanstack/react-router";
+
+function PostComponent() {
+  // In a component!
+  const { postId } = Route.useParams();
+  return <div>Post ID: {postId}</div>;
+}
+
+const Route = createFileRoute("/posts/$postId")({
+  // In a loader
+  loader: ({ params }) => fetchPost(params.postId),
+  // Or in a component
+  component: PostComponent,
+});
+
+export { Route };
+```
