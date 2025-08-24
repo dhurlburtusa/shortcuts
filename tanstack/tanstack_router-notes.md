@@ -243,3 +243,14 @@ To build a route tree, TanStack Router supports:
 - Code-Based Routing
 
 Both methods support the exact same core features and functionality, but file-based routing requires less code for the same or better results. For this reason, file-based routing is the preferred and recommended way to configure TanStack Router.
+
+## Route Matching
+
+When TanStack Router processes your route tree, all of your routes are automatically sorted to match the most specific routes first. This means that regardless of the order your route tree is defined, routes will always be sorted in this order:
+
+- Index Route
+- Static Routes (most specific to least specific)
+- Dynamic Routes (longest to shortest)
+- Splat/Wildcard Routes
+
+See https://tanstack.com/router/latest/docs/framework/react/routing/route-matching for details.
