@@ -232,3 +232,14 @@ routes/
 In the example above, the `(app)` and `(auth)` directories are purely organizational and do not affect the route tree or component tree in any way. They are used to group related routes together for easier navigation and organization.
 
 See https://tanstack.com/router/latest/docs/framework/react/routing/routing-concepts#pathless-route-group-directories for details.
+
+## Route Trees
+
+TanStack Router uses a nested route tree to match up the URL with the correct component tree to render. Nested routing is a powerful concept that allows you to use a URL to render a nested component tree.
+
+To build a route tree, TanStack Router supports:
+
+- File-Based Routing
+- Code-Based Routing
+
+Both methods support the exact same core features and functionality, but file-based routing requires less code for the same or better results. For this reason, file-based routing is the preferred and recommended way to configure TanStack Router.
