@@ -254,3 +254,11 @@ When TanStack Router processes your route tree, all of your routes are automatic
 - Splat/Wildcard Routes
 
 See https://tanstack.com/router/latest/docs/framework/react/routing/route-matching for details.
+
+## File-Based Routing
+
+File-based routing is a way to configure your routes using the filesystem. Instead of defining your route structure via code, you can define your routes using a series of files and directories that represent the route hierarchy of your application.
+
+### Directory Routes
+
+Directories can be used to denote route hierarchy, which can be useful for organizing multiple routes into logical groups and also cutting down on the filename length for large groups of deeply nested routes.
