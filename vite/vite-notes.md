@@ -55,6 +55,23 @@ Similar to static http servers, Vite has the concept of a "root directory" which
 
 Vite also supports multi-page apps with multiple .html entry points.
 
+## Command Line Interface
+
+In a project where Vite is installed, you can use the `vite` binary in your npm scripts, or run it directly with `npx vite`. Here are the default npm scripts in a scaffolded Vite project:
+
+```json5
+// package.json
+{
+  "scripts": {
+    "build": "vite build", // build for production
+    "dev": "vite", // start dev server, aliases: `vite dev`, `vite serve`
+    "preview": "vite preview" // locally preview production build
+  }
+}
+```
+
+See https://vite.dev/guide/cli.html for details.
+
 ## Features
 
 At the very basic level, developing using Vite is not that different from using a static file server. However, Vite provides many enhancements over native ESM imports to support various features that are typically seen in bundler-based setups.
