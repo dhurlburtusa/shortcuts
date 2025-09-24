@@ -118,6 +118,22 @@ See https://vite.dev/guide/features.html#typescript-compiler-options for details
 
 Note: TypeScript-based Vite starter templates correctly set the TypeScript configuration.
 
+### HTML
+
+HTML files stand front-and-center of a Vite project, serving as the entry points for your application, making it simple to build single-page and multi-page applications.
+
+Any HTML files in your project root can be directly accessed by its respective directory path:
+
+- `<root>/index.html` -> `http://localhost:5173/`
+- `<root>/about.html` -> `http://localhost:5173/about.html`
+- `<root>/blog/index.html` -> `http://localhost:5173/blog/index.html`
+
+Assets referenced by HTML elements such as `<script type="module" src>` and `<link href>` are processed and bundled as part of the app.
+
+To opt-out of HTML processing on certain elements, you can add the `vite-ignore` attribute on the element, which can be useful when referencing external assets or CDN.
+
+See https://vite.dev/guide/features.html#html for details.
+
 ### JSX
 
 `.jsx` and `.tsx` files are also supported out of the box. JSX transpilation is also handled via [esbuild](http://esbuild.github.io/).
