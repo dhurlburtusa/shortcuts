@@ -138,6 +138,8 @@ See https://vite.dev/guide/features.html#html for details.
 
 `.jsx` and `.tsx` files are also supported out of the box. JSX transpilation is also handled via [esbuild](http://esbuild.github.io/).
 
+See https://vite.dev/guide/features.html#jsx for details.
+
 ### CSS
 
 Importing `.css` files will inject its content to the page via a `<style>` tag with HMR support.
