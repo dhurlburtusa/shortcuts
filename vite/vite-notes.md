@@ -11,6 +11,10 @@ During development, Vite sets `esnext` as the transform target, because we assum
 
 For the production build, by default Vite targets browsers that support native ES Modules, native ESM dynamic import, and import.meta. Legacy browsers can be supported via the official [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy). See the [Building for Production](https://vite.dev/guide/build.html) section for more details.
 
+## Trying Vite Online
+
+See https://vite.dev/guide/#trying-vite-online for details.
+
 ## Scaffolding a Vite Project
 
 ```sh
