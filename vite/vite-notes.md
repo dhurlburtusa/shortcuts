@@ -171,3 +171,8 @@ Vite automatically generates `<link rel="modulepreload">` directives for entry c
 Basically, allows common chunks to be fetched in parallel with the chunks that depends on it instead of waterfalling.
 
 See https://vite.dev/guide/features.html#async-chunk-loading-optimization for details.
+
+## Using Plugins
+
+Vite can be extended using plugins, which are based on Rollup's well-designed plugin interface with a few extra Vite-specific options. This means that Vite users can rely on the mature ecosystem of Rollup plugins, while also being able to extend the dev server and SSR functionality as needed.
+
