@@ -37,6 +37,7 @@ Service workers are also intended to be used for such things as:
 - Performance enhancements, for example pre-fetching resources that the user is
   likely to need in the near future, such as the next few pictures in a photo
   album.
+- API mocking.
 
 See https://developers.google.com/web/fundamentals/primers/service-workers/, 
 https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API, and
