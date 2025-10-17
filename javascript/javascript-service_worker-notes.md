@@ -95,17 +95,20 @@ http://offlinefirst.org/ for information about Offline First.
 
 ## Uncategorized
 
-```js
+```ts
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    const swc = navigator.serviceWorker;
-    swc.register("/sw.js")
-      .then(swReg => {
-        console.log("sw.js registered.");
-      })
-      .catch(error => {
-        console.error("Failed to load sw.js.", error);
+  window.addEventListener("load", async () => {
+    try {
+      const swc = navigator.serviceWorker;
+
+      const swr = await swc.register(new URL("./sw.ts", import.meta.url), {
+        type: "module",
       });
+
+      console.debug("sw.js registered.", swr);
+    } catch (err) {
+      console.error("Failed to load sw.js.", err);
+    }
   });
 }
 else {
@@ -113,7 +116,9 @@ else {
 }
 ```
 
-```js
+```ts
+/// <reference lib="webworker" />
+
 // sw.js
 /* eslint-disable no-restricted-globals */
 // console.log("sw.js");
