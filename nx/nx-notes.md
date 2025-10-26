@@ -14,7 +14,7 @@ npx create-nx-workspace@latest
 
 **Prerequistites**
 
-- `gh` command. (Probably depends on the CI provider choice.)
+- `gh` command and authenticated with the user/organization where the generated code will be pushed. (Probably depends on the CI provider choice.)
 - Others? (Probably. I haven't discovered them yet.)
 
 **Prompts**
