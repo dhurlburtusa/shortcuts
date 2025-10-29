@@ -21,6 +21,7 @@ npx create-nx-workspace@latest
 
 - Organization name. Used as the root directory of the monorepo. Will be used to suggest to create a repo at https://github.com/new?name=<org-name> (depending on choices of other prompts (I assume the CI provider affects this.).)
 - Stack options.
+- React options (if React stack chosen)
 - Prettier.
 - AI agents.
 - CI provider.
@@ -33,10 +34,50 @@ npx create-nx-workspace@latest
 - Angular: Configures an Angular application with modern tooling.
 - Node: Configures a Node API application with your framework of choice.
 
+**React Options**
+
+**Framework Options**
+
+- None: I only want react, react-dom or react-router
+- Next.js
+- Expo
+- React Native
+
+- Use React Router for server-side rendering.
+
+**Bundler Options**
+
+- Vite
+- Webpack
+- Rspack
+
+**Test Runner Options**
+
+- Vitest
+- Jest
+- None
+
+**Test Runner for E2E Tests**
+
+- Playwright
+- Cypress
+
+**Stylesheet Format**
+
+- CSS
+- SASS
+- LESS
+- tailwind
+- styled-components
+- emotion
+- styled-jsx
+
+- Use ESLint?
+
 **Options**
 
 - Use Prettier?
-- AI agents:
+- AI agents (select zero or more):
   + Claude Code
   + OpenAI Codex
   + GitHub Copilot for VSCode
