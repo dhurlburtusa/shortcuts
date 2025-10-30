@@ -17,7 +17,7 @@ npx create-nx-workspace@latest
 - `gh` command and authenticated with the user/organization where the generated code will be pushed. (Probably depends on the CI provider choice.)
 - Others? (Probably. I haven't discovered them yet.)
 
-**Prompts**
+#### Prompts
 
 - Organization name. Used as the root directory of the monorepo. Will be used to suggest to create a repo at https://github.com/new?name=<org-name> (depending on choices of other prompts (I assume the CI provider affects this.).)
 - Stack options.
@@ -34,7 +34,7 @@ npx create-nx-workspace@latest
 - Angular: Configures an Angular application with modern tooling.
 - Node: Configures a Node API application with your framework of choice.
 
-**React Options**
+##### React Options
 
 **Framework Options**
 
@@ -74,7 +74,26 @@ npx create-nx-workspace@latest
 
 - Use ESLint?
 
-**Options**
+##### Node Options
+
+**Framework Options**
+
+- None
+- Express
+- Fastify
+- Koa
+- NestJs
+
+- With Dockerfile?
+
+**Unit Test Runner Options**
+
+- Jest
+- None
+
+- Use ESLint?
+
+#### Common Options
 
 - Use Prettier?
 - AI agents (select zero or more):
