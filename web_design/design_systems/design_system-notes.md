@@ -100,6 +100,15 @@ From Wikipedia:
 - Outlined
 - Text
 
+**Options**
+
+- Has left icon
+- Has right icon
+- Has text
+- Left icon
+- Right icon
+- Text
+
 ### Inputs
 
 **Colors**
