@@ -7,6 +7,60 @@ From Wikipedia:
 
 ## Components
 
+- Icons
+- Alert
+- Button
+  + Icon only
+  + Text only
+  + Left icon and text
+  + Right icon and text
+- Button Group
+- Fab Button
+- Toggle Button
+- Card
+- Split Button
+- Fields
+  + Field input
+  + Field label
+  + Helper text
+- Inputs
+  + Checkbox
+  + Radio button
+  + Select (aka Combobox)
+  + Switch
+  + Text
+  + Textarea
+  + etc
+- Grid
+- Image
+- Label
+- Layout
+- Link
+  + External
+  + Internal
+- List
+- List Item
+- Menu
+- Menubar
+- Menu Item
+- Menu Item Checkbox
+- Menu Item Link
+- Menu Item Nav Link
+- Menu Item Radio
+- Progressbar
+- Table
+- Table Head
+- Table Body
+- Table Foot
+- Tab
+- Tablist
+- Tabpanel
+- Toolbar
+- Tooltip
+- Tree
+- Tree Grid
+- Tree Item
+
 ### Icons
 
 **Common Semantics**
