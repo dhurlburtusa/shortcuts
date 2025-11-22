@@ -9,16 +9,17 @@ From Wikipedia:
 
 - Icons
 - Alert
-- Button
-  + Icon only
-  + Text only
-  + Left icon and text
-  + Right icon and text
+- Buttons:
+  + Floating Action
+  + Regular
+    * Icon only
+    * Text only
+    * Left icon and text
+    * Right icon and text
+  + Split
+  + Toggle
 - Button Group
-- Fab Button
-- Toggle Button
 - Card
-- Split Button
 - Fields
   + Field input
   + Field label
