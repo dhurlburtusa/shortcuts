@@ -21,3 +21,9 @@ When applying transforms (e.g., bevel) to objects, you may need to set which pro
 Use `Ctrl + A`/`⌘ + A` to open the Apply menu. Then select which properties to apply the subsequent transformation.
 
 See https://docs.blender.org/manual/en/latest/scene_layout/object/editing/apply.html for details.
+
+**Set Origin**
+
+Sometimes, after applying a transformation to an object, its origin may be moved to an unintended location. To set it back to the intended location, `RMB` to open the Object context menu. Then select where to move the object's origin.
+
+See https://docs.blender.org/manual/en/latest/scene_layout/object/origin.html#set-origin for details.
