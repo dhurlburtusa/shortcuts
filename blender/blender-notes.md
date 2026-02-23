@@ -6,6 +6,9 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 
 ## Shortcuts
 
+- Delete: `X`
+- Duplicate: `Shift + D`
+- Switch between Object and Edit modes: `Tab`
 - Move 3D cursor to origin: `Shift + C`
 - Loop cut (edit mode): `Cmd + R`
 - Open Add menu: `Shift + A`
