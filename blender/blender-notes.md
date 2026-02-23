@@ -7,6 +7,7 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 ## Shortcuts
 
 - Move 3D cursor to origin: `Shift + C`
+- Loop cut (edit mode): `Cmd + R`
 - Open Add menu: `Shift + A`
 - Set 3D rotation center: `Option + MMB`
 
