@@ -28,3 +28,16 @@ See https://docs.blender.org/manual/en/latest/scene_layout/object/editing/apply.
 Sometimes, after applying a transformation to an object, its origin may be moved to an unintended location. To set it back to the intended location, `RMB` to open the Object context menu. Then select where to move the object's origin.
 
 See https://docs.blender.org/manual/en/latest/scene_layout/object/origin.html#set-origin for details.
+
+**Easily Set Camera Position**
+
+- Change to Camera Perspective
+- Set View Lock to Lock Camera to View (camera frame becomes outlined in red)
+- Move view to desired position
+- Unselect Lock Camera to View
+
+To set View Lock to Lock Camera to View:
+
+- `N` to open Sidebar
+- Select View tab
+- Under View > View Lock: select Lock Camera to View
