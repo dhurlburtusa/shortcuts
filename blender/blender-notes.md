@@ -1,7 +1,11 @@
 # Blender Notes
 
+## Organization
+
+Scenes are a way to organize your work. Each blend-file can contain multiple scenes.
+
 ## Shortcuts
 
-- Open Add dialog: Shift + A
+- Open Add menu: Shift + A
 - Set 3D rotation center: Option + Middle Click
 
