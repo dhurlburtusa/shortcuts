@@ -14,6 +14,13 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 - Open Add menu: `Shift + A`
 - Set 3D rotation center: `Option + MMB`
 
+**Edit Mode**
+
+- Extrude: `E`
+- Inset: `I`
+- Bevel: `Ctrl + B`/`Cmd + B`
+- Loop Cut: `Ctrl + R`/`Cmd + R`
+
 ## Tips
 
 See https://www.youtube.com/watch?v=KfSQh2dFCik.
