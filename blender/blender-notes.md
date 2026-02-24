@@ -29,7 +29,7 @@ See https://www.youtube.com/watch?v=KfSQh2dFCik.
 
 When applying transforms (e.g., bevel) to objects, you may need to set which properties the transform should apply to.
 
-Use `Ctrl + A`/`⌘ + A` to open the Apply menu. Then select which properties to apply the subsequent transformation.
+Use `Ctrl + A`/`Cmd + A` to open the Apply menu. Then select which properties to apply the subsequent transformation.
 
 See https://docs.blender.org/manual/en/latest/scene_layout/object/editing/apply.html for details.
 
