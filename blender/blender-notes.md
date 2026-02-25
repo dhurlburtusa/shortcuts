@@ -15,6 +15,9 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 - Join meshes: `Ctrl + J`/`Cmd + J`
 - Open Add menu: `Shift + A`
 - Set 3D rotation center: `Option + MMB`
+- Clear Location: `Alt + G`/`Opt + G`
+- Clear Rotation: `Alt + R`/`Opt + R`
+- Clear Scale: `Alt + S`/`Opt + S`
 
 **Edit Mode**
 
