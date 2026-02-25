@@ -10,6 +10,7 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 - Duplicate: `Shift + D`
 - Switch between Object and Edit modes: `Tab`
 - Move 3D cursor to origin: `Shift + C`
+- Open Move to Collection menu: `M`
 - Loop cut (edit mode): `Ctrl + R`/`Cmd + R`
 - Join meshes: `Ctrl + J`/`Cmd + J`
 - Open Add menu: `Shift + A`
