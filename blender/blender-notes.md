@@ -1,5 +1,9 @@
 # Blender Notes
 
+## 3D File Formats
+
+See https://www.thepixellab.net/8-best-3d-file-formats
+
 ## Organization
 
 Scenes are a way to organize your work. Each blend-file can contain multiple scenes.
