@@ -6,3 +6,4 @@ Assets for Blender can be retrieved from several places.
 - https://www.turbosquid.com/
 - https://www.cgtrader.com/
 - https://cgdream.ai/
+- https://www.meshy.ai/
