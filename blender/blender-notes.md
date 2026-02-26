@@ -2,7 +2,7 @@
 
 ## 3D File Formats
 
-See https://www.thepixellab.net/8-best-3d-file-formats
+See https://www.thepixellab.net/8-best-3d-file-formats and https://www.vividworks.com/blog/3d-model-formats-guide.
 
 ## Organization
 
