@@ -9,3 +9,7 @@ Assets for Blender can be retrieved from several places.
 - https://www.cgtrader.com/
 - https://cgdream.ai/
 - https://www.meshy.ai/
+- https://ambientcg.com/
+- https://polyhaven.com/
+- https://3dassets.one/
+- https://www.poliigon.com/
