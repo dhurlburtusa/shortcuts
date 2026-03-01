@@ -2,6 +2,8 @@
 
 ## My Preference Changes
 
+Note: These are the changes from the default settings for Blender v4.5.7.
+
 - Interface:
   + Display:
     * Resolution Scale: 1.15
@@ -13,8 +15,9 @@
         + Scene Statistics
         + Scene Duration
         + System Memory
-        + Extensions Updates
-        + Blender Version
+- Editing:
+  + Annotations:
+    * Default Color: #C75400E6 (some orange color)
 
 ## 3D File Formats
 
