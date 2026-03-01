@@ -17,6 +17,7 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 - Scale: `S`
 - Delete: `X`
 - Duplicate: `Shift + D`
+- Duplicate linked: `Opt + D`
 - Switch between Object and Edit modes: `Tab`
 - Move 3D cursor to origin: `Shift + C`
 - Open Move to Collection menu: `M`
