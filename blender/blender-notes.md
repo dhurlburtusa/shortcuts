@@ -2,7 +2,9 @@
 
 ## My Preference Changes
 
-- Interface > Display > Resolution Scale: Set to 1.15
+- Interface:
+  + Display:
+    * Resolution Scale: Set to 1.15
 
 ## 3D File Formats
 
