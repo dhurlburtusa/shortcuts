@@ -12,6 +12,7 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 
 - Select All: `A`
 - Deselect all: `A` `A` (i.e., double tap `A`)
+- Grab (i.e., move): `G`
 - Delete: `X`
 - Duplicate: `Shift + D`
 - Switch between Object and Edit modes: `Tab`
