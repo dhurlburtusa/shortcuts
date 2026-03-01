@@ -11,7 +11,7 @@ Scenes are a way to organize your work. Each blend-file can contain multiple sce
 ## Shortcuts
 
 - Select All: `A`
-- Deselect all: `A` `A` (i.e., double tap `A`)
+- Deselect all: `A` `A` (i.e., double tap `A`) or `Opt + A`
 - Grab (i.e., move): `G`
 - Rotate: `R`
 - Scale: `S`
