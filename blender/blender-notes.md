@@ -4,7 +4,17 @@
 
 - Interface:
   + Display:
-    * Resolution Scale: Set to 1.15
+    * Resolution Scale: 1.15
+    * Line Width: Thin
+  + Editors:
+    * Border Width: 1
+    * Status Bar:
+      - Show:
+        + Scene Statistics
+        + Scene Duration
+        + System Memory
+        + Extensions Updates
+        + Blender Version
 
 ## 3D File Formats
 
