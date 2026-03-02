@@ -71,6 +71,14 @@ Note: These are the changes from the default settings for Blender v4.5.7.
         + Use Spatial Splits: (checked)
       - Final Render:
         + Persistent Data: (checked)
+- Output:
+  + Output: //output/
+- Scene:
+  + Units:
+    * Length: Millimeters
+- Camera:
+  + Lens:
+    * Clip Start: 1 mm
 
 ## 3D File Formats
 
