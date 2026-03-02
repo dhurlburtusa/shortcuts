@@ -24,6 +24,11 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Extra Curve Objects
     * Extra Mesh Objects
     * LoopTools
+- Add-ons
+  + Check:
+    * Extra Curve Objects
+    * Extra Mesh Objects
+    * LoopTools
 
 ## 3D File Formats
 
