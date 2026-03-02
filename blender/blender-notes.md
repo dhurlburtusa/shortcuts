@@ -50,6 +50,27 @@ Note: These are the changes from the default settings for Blender v4.5.7.
   + Render Engine: Cycles
     * Device: GPU
     * Check Open Shading Language
+    * Sampling:
+      - Viewport:
+        + Add a new preset called Fast Preview with the following values:
+          * Noise Threshold: (checked), 0.25
+          * Max Samples: 2
+          * Min Samples: 0
+          * Denoise: (checked)
+            - Denoiser: Automatic
+            - Passes: Albedo
+            - Prefilter: Fast
+            - Quality: Fast
+            - Start Sample: 1
+            - Use GPU: checked
+    * Performance:
+      - Memory:
+        + Use Tiling: (checked)
+        + Tile Size: 480
+      - Acceleration Structure:
+        + Use Spatial Splits: (checked)
+      - Final Render:
+        + Persistent Data: (checked)
 
 ## 3D File Formats
 
