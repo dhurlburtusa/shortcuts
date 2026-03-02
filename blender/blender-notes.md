@@ -1,86 +1,5 @@
 # Blender Notes
 
-## My Blender Preference Changes
-
-Note: These are the changes from the default settings for Blender v4.5.7.
-
-- Interface:
-  + Display:
-    * Resolution Scale: 1.15
-    * Line Width: Thin
-  + Editors:
-    * Border Width: 1
-    * Status Bar:
-      - Show:
-        + Scene Statistics
-        + Scene Duration
-        + System Memory
-- Editing:
-  + Annotations:
-    * Default Color: #C75400E6 (some orange color)
-- Get Extensions:
-  + (Allow online access if necessary)
-  + Install:
-    * Extra Curve Objects
-    * Extra Mesh Objects
-    * LoopTools
-- Add-ons:
-  + Check:
-    * Extra Curve Objects
-    * Extra Mesh Objects
-    * LoopTools
-    * Node Wrangler
-- Input:
-  + Keyboard:
-    * Check Emulate Numpad (if computer doesn't have a numpad)
-- System:
-  + Memory & Limits:
-    * Undo Steps: 128
-    * Console Scrollback Lines: 1024
-  + Video Sequencer:
-    * Proxy Setup: Manual
-- File Paths:
-  + Data:
-    * Fonts: /System/Library/Fonts/ (Mac)
-    * Render:
-      - Render Output: //output/
-
-## Common Blender File Changes
-
-- Render:
-  + Render Engine: Cycles
-    * Device: GPU
-    * Check Open Shading Language
-    * Sampling:
-      - Viewport:
-        + Add a new preset called Fast Preview with the following values:
-          * Noise Threshold: (checked), 0.25
-          * Max Samples: 2
-          * Min Samples: 0
-          * Denoise: (checked)
-            - Denoiser: Automatic
-            - Passes: Albedo
-            - Prefilter: Fast
-            - Quality: Fast
-            - Start Sample: 1
-            - Use GPU: checked
-    * Performance:
-      - Memory:
-        + Use Tiling: (checked)
-        + Tile Size: 480
-      - Acceleration Structure:
-        + Use Spatial Splits: (checked)
-      - Final Render:
-        + Persistent Data: (checked)
-- Output:
-  + Output: //output/
-- Scene:
-  + Units:
-    * Length: Millimeters
-- Camera:
-  + Lens:
-    * Clip Start: 1 mm
-
 ## 3D File Formats
 
 See https://www.thepixellab.net/8-best-3d-file-formats and https://www.vividworks.com/blog/3d-model-formats-guide.
@@ -88,35 +7,6 @@ See https://www.thepixellab.net/8-best-3d-file-formats and https://www.vividwork
 ## Organization
 
 Scenes are a way to organize your work. Each blend-file can contain multiple scenes.
-
-## Shortcuts
-
-- Select All: `A`
-- Deselect all: `A` `A` (i.e., double tap `A`) or `Opt + A`
-- Grab (i.e., move): `G`
-- Rotate: `R`
-- Scale: `S`
-- Delete: `X`
-- Duplicate: `Shift + D`
-- Duplicate linked: `Opt + D`
-- Switch between Object and Edit modes: `Tab`
-- Move 3D cursor to origin: `Shift + C`
-- Open Move to Collection menu: `M`
-- Loop cut (edit mode): `Ctrl + R`/`Cmd + R`
-- Join meshes: `Ctrl + J`/`Cmd + J`
-- Open Add menu: `Shift + A`
-- Set 3D rotation center: `Option + MMB`
-- Clear Location: `Alt + G`/`Opt + G`
-- Clear Rotation: `Alt + R`/`Opt + R`
-- Clear Scale: `Alt + S`/`Opt + S`
-
-**Edit Mode**
-
-- Extrude: `E`
-- Inset: `I`
-- Bevel: `Ctrl + B`/`Cmd + B`
-- Loop Cut: `Ctrl + R`/`Cmd + R`
-- Open Separate menu: `P`
 
 ## Tips
 
