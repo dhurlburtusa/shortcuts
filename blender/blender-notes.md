@@ -147,3 +147,7 @@ To set View Lock to Lock Camera to View:
 - `N` to open Sidebar
 - Select View tab
 - Under View > View Lock: select Lock Camera to View
+
+## Rendering Tips
+
+See https://blendergrid.com/articles/realistic-lighting-in-blender.
