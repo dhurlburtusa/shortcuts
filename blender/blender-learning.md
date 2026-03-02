@@ -6,6 +6,8 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 ### For Beginners
 
+**Fundamentals/Overview**
+
 - Blender Quick Start Guide for Absolute Beginners (Tutorial)
   + https://www.youtube.com/watch?v=LCtVAemG4_M
   + 19:29
