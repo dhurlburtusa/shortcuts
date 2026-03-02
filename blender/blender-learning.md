@@ -53,6 +53,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Organization**
 
+- How to Use Blender's Outliner and Collections (Tutorial)
+  + https://www.youtube.com/watch?v=ph6QUXNq5aE
+  + 00:13:38
 - Understanding Parenting in Blender
   + https://www.youtube.com/watch?v=5oclP4hQndc
   + 00:05:17
