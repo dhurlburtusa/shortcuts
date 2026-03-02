@@ -29,6 +29,7 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Extra Curve Objects
     * Extra Mesh Objects
     * LoopTools
+    * Node Wrangler
 - Input:
   + Keyboard:
     * Check Emulate Numpad (if computer doesn't have a numpad)
