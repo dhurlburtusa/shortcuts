@@ -38,6 +38,11 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Console Scrollback Lines: 1024
   + Video Sequencer:
     * Proxy Setup: Manual
+- File Paths:
+  + Data:
+    * Fonts: /System/Library/Fonts/ (Mac)
+    * Render:
+      - Render Output: //output/
 
 ## 3D File Formats
 
