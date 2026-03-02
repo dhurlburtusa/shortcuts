@@ -32,6 +32,12 @@ Note: These are the changes from the default settings for Blender v4.5.7.
 - Input:
   + Keyboard:
     * Check Emulate Numpad (if computer doesn't have a numpad)
+- System:
+  + Memory & Limits:
+    * Undo Steps: 128
+    * Console Scrollback Lines: 1024
+  + Video Sequencer:
+    * Proxy Setup: Manual
 
 ## 3D File Formats
 
