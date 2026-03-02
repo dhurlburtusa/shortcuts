@@ -24,11 +24,14 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Extra Curve Objects
     * Extra Mesh Objects
     * LoopTools
-- Add-ons
+- Add-ons:
   + Check:
     * Extra Curve Objects
     * Extra Mesh Objects
     * LoopTools
+- Input:
+  + Keyboard:
+    * Check Emulate Numpad (if computer doesn't have a numpad)
 
 ## 3D File Formats
 
