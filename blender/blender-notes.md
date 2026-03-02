@@ -44,6 +44,13 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Render:
       - Render Output: //output/
 
+## Common Blender File Changes
+
+- Render:
+  + Render Engine: Cycles
+    * Device: GPU
+    * Check Open Shading Language
+
 ## 3D File Formats
 
 See https://www.thepixellab.net/8-best-3d-file-formats and https://www.vividworks.com/blog/3d-model-formats-guide.
