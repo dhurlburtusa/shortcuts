@@ -56,3 +56,6 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Understanding Parenting in Blender
   + https://www.youtube.com/watch?v=5oclP4hQndc
   + 00:05:17
+- How to Render with View Layers in Blender (Tutorial)
+  + https://www.youtube.com/watch?v=gUxC_Xl4Tjk
+  + 00:06:49
