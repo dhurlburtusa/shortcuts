@@ -1,6 +1,6 @@
 # Blender Notes
 
-## My Preference Changes
+## My Blender Preference Changes
 
 Note: These are the changes from the default settings for Blender v4.5.7.
 
