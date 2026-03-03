@@ -5,6 +5,7 @@
 - Grab (i.e., move): `G`
 - Rotate: `R`
 - Scale: `S`
+- Open Apply menu: `Ctrl + A`/`Cmd + A`
 - Delete: `X`
 - Duplicate: `Shift + D`
 - Duplicate linked: `Opt + D`
