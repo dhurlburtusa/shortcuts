@@ -2,6 +2,7 @@
 
 - Select All: `A`
 - Deselect all: `A` `A` (i.e., double tap `A`) or `Opt + A`
+- Invert Selection: `Ctrl + I`/`Cmd + I`
 - Grab (i.e., move): `G`
 - Clear Location: `Alt + G`/`Opt + G`
 - Rotate: `R`
