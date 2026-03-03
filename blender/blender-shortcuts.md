@@ -31,6 +31,7 @@
 - Open Clear Parent menu: `Alt + P`/`Opt + P`
 - Open Move to Collection menu: `M`
 - Open Link to Collection menu: `Shift + M`
+- Open Snap pie menu: `Shift + S`
 
 **Edit Mode**
 
