@@ -19,6 +19,7 @@
 - Clear Scale: `Alt + S`/`Opt + S`
 - Open Set Parent To menu: `Ctrl + P`/`Cmd + P`
 - Open Clear Parent menu: `Alt + P`/`Opt + P`
+- Open Move to Collection menu: `M`
 
 **Edit Mode**
 
