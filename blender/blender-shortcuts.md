@@ -18,6 +18,7 @@
 - Clear Location: `Alt + G`/`Opt + G`
 - Clear Rotation: `Alt + R`/`Opt + R`
 - Clear Scale: `Alt + S`/`Opt + S`
+- Open Set Parent To menu: `Ctrl + P`/`Cmd + P` 
 
 **Edit Mode**
 
