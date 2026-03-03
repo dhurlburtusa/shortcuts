@@ -12,7 +12,14 @@
 - Join meshes: `Ctrl + J`/`Cmd + J`
 - Duplicate: `Shift + D`
 - Duplicate linked: `Opt + D`
+- Insert Keyframe: `I`
+- Insert Keyframe with Keying Set: `K`
+- Delete Keyframes: `Alt + I`/`Opt + I`
+- Hide Selected: `H`
+- Hide Unselected: `Shift + H`
+- Show Hidden Objects: `Alt + H`/`Opt + H`
 - Delete: `X`
+- Delete Global: `Shift + X`
 - Switch between Object and Edit modes: `Tab`
 - Move 3D cursor to origin: `Shift + C`
 - Set 3D rotation center: `Option + MMB`
