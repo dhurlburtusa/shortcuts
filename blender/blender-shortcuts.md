@@ -1,5 +1,7 @@
 # Blender Shortcuts
 
+- Toggle Toolbar: `T`
+- Toggle Sidebar: `N`
 - Select All: `A`
 - Deselect all: `A` `A` (i.e., double tap `A`) or `Opt + A`
 - Invert Selection: `Ctrl + I`/`Cmd + I`
