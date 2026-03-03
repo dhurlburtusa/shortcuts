@@ -41,7 +41,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Compositing**
 
-- TODO
+- Compositing for Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=JgQvvd1jryw
+  + 00:38:09
 
 **Rendering**
 
