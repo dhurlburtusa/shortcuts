@@ -40,3 +40,6 @@
 - Bevel: `Ctrl + B`/`Cmd + B`
 - Loop Cut: `Ctrl + R`/`Cmd + R`
 - Open Separate menu: `P`
+- Change to Vertex selection mode: `1`
+- Change to Edge selection mode: `2`
+- Change to Face selection mode: `3`
