@@ -14,3 +14,5 @@ Assets for Blender can be retrieved from several places.
 - https://polyhaven.com/
 - https://3dassets.one/
 - https://www.poliigon.com/
+- https://www.geoscatter.com/
+- https://gumroad.com/
