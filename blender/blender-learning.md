@@ -1,5 +1,9 @@
 # Learning Blender
 
+## Courses
+
+- See Paid Courses section in description of https://www.youtube.com/watch?v=SkRdc0ShV_U.
+
 ## Tutorials
 
 YouTube hosts many great tutorials on learning Blender. Ryan King, et al has several great videos.
