@@ -24,7 +24,7 @@
   + Output: //output/
 - Scene:
   + Units:
-    * Length: Millimeters
+    * Length: Millimeters or whatever unit is easier to work with
 - Camera:
   + Lens:
     * Clip Start: 1 mm
