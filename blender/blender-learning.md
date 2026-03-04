@@ -21,6 +21,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Blender Beginner Fundamentals Tutorials
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBtRc3DalXy786Fsa5yEq_9B
   + Many, many, many hours
+- Understanding Normals in Blender
+  + https://www.youtube.com/watch?v=cn5BC3Vzcsc
+  + 00:04:40
 
 **Modeling**
 
