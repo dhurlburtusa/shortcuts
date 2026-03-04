@@ -2,6 +2,11 @@
 
 ## My Common Blender File Changes
 
+**From the Outliner editor**
+
+- Move the Camera and Light to the Scene Collection.
+- Make the Camera and Light unselectable.
+
 **From the Properties editor**
 
 Change the following properties.
