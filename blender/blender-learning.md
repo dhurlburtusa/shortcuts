@@ -29,6 +29,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - 3D Basics - What are Normals?
   + https://www.youtube.com/watch?v=hkTjreiookM
   + 00:12:14
+- How to Use Blender's Snapping Feature (Tutorial)
+  + https://www.youtube.com/watch?v=-c0Evpf8V3A
+  + 00:10:16
 
 **Modeling**
 
