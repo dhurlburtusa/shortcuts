@@ -12,13 +12,6 @@
           * Noise Threshold: (checked), 0.25
           * Max Samples: 2
           * Min Samples: 0
-          * Denoise: (checked)
-            - Denoiser: Automatic
-            - Passes: Albedo
-            - Prefilter: Fast
-            - Quality: Fast
-            - Start Sample: 1
-            - Use GPU: checked
     * Performance:
       - Memory:
         + Use Tiling: (checked)
