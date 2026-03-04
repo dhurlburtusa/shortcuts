@@ -13,8 +13,8 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Status Bar:
       - Show:
         + Scene Statistics
-        + Scene Duration
-        + System Memory
+        + Scene Duration (if desired)
+        + System Memory (if desired)
 - Editing:
   + Annotations:
     * Default Color: #C75400E6 (some orange color)
@@ -32,11 +32,11 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Node Wrangler
 - Input:
   + Keyboard:
-    * Check Emulate Numpad (if computer doesn't have a numpad)
+    * Check Emulate Numpad (if computer doesn't have a numpad and if desired)
 - System:
   + Memory & Limits:
-    * Undo Steps: 128
-    * Console Scrollback Lines: 1024
+    * Undo Steps: 256
+    * Console Scrollback Lines: 4096
   + Video Sequencer:
     * Proxy Setup: Manual
 - File Paths:
