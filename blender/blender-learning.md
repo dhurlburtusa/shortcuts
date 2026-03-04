@@ -65,6 +65,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 - TODO
 
+**Physics**
+
+- Rigid Body Physics for Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=lctjzasiy64
+  + 00:25:24
+
 **Organization**
 
 - How to Use Blender's Outliner and Collections (Tutorial)
