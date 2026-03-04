@@ -2,6 +2,10 @@
 
 ## My Common Blender File Changes
 
+**From the Properties editor**
+
+Change the following properties.
+
 - Render:
   + Render Engine: Cycles
     * Device: GPU
