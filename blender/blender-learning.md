@@ -36,6 +36,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Modifiers for Beginners (Blender Tutorial)
   + https://www.youtube.com/watch?v=F_f-O-W9lMU
   + 00:46:37
+- All 54 Modifiers in Blender Explained in 10 minutes - 2024 Update
+  + https://www.youtube.com/watch?v=ov0F3cEJWoI
+  + 00:11:42
 
 **Sculpting**
 
