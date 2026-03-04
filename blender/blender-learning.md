@@ -39,6 +39,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - All 54 Modifiers in Blender Explained in 10 minutes - 2024 Update
   + https://www.youtube.com/watch?v=ov0F3cEJWoI
   + 00:11:42
+- All 50+ Modifiers in Blender Explained in 30 Minutes or Less
+  + https://www.youtube.com/watch?v=8BQYAwDW6IE
+  + 00:32:15
 
 **Sculpting**
 
