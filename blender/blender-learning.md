@@ -30,6 +30,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Creating a Rubber Duck in Blender
   + https://www.youtube.com/watch?v=xsUsM5AZ9uI
   + 00:22:44
+- Modifiers for Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=F_f-O-W9lMU
+  + 00:46:37
 
 **Sculpting**
 
