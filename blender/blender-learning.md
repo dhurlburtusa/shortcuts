@@ -27,6 +27,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - 3d Modeling for Beginners (Blender Tutorial)
   + https://www.youtube.com/watch?v=SAcHh9_ZG6A
   + 01:40:18
+- Creating a Rubber Duck in Blender
+  + https://www.youtube.com/watch?v=xsUsM5AZ9uI
+  + 00:22:44
 
 **Sculpting**
 
