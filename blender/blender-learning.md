@@ -26,6 +26,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Understanding Normals in Blender
   + https://www.youtube.com/watch?v=cn5BC3Vzcsc
   + 00:04:40
+- 3D Basics - What are Normals?
+  + https://www.youtube.com/watch?v=hkTjreiookM
+  + 00:12:14
 
 **Modeling**
 
