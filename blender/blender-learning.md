@@ -46,6 +46,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/watch?v=8BQYAwDW6IE
   + 00:32:15
 
+**Geometry Nodes**
+
+- Geometry Nodes for Complete Beginners
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBsDZ3jQPwP1p6evNI22wevP
+  + 6 videos in almost 2 hours
+
 **Sculpting**
 
 - TODO
