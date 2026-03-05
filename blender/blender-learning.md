@@ -82,6 +82,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Blender Procedural Material Tutorials
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBs6TtApKKK-L_0Nm6fovNPk
   + 257 videos in many, many, many, many hours
+- Introduction to Procedural Shader Nodes for Complete Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=J5t7gzIfTt0
+  + 00:23:33
+- Create Custom Material Node Groups in Blender for Beginners (Ultimate Guide)
+  + https://www.youtube.com/watch?v=51jdmRvyImk
+  + 01:22:31
 
 **Displacement**
 
