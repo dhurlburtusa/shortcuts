@@ -78,6 +78,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 - TODO
 
+**Displacement**
+
+- Blender Displacement Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBuPdltPqVGkl2TTWYfQ1YxV
+  + 6 videos in about an hour
+
 **Texture Painting**
 
 - Texture Painting Blender Tutorials
