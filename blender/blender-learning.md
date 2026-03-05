@@ -90,9 +90,11 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBvJPh7D_ITafvmTW7ZzQTEr
   + 18 videos in many, many, many hours
 
-**Shading**
+**Lighting**
 
-- TODO
+- Blender Lighting Tutorials 💡
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBsZdwrobBkXT_A8jse09yRz
+  + 13 videos in about a few hours
 
 **Rigging**
 
