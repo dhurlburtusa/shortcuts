@@ -114,6 +114,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Physics**
 
+- Blender Physics Simulation Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBustxQs2JcnSb0Qxnnb7rWC
+  + 16 videos in many, many, many hours
 - Rigid Body Physics for Beginners (Blender Tutorial)
   + https://www.youtube.com/watch?v=lctjzasiy64
   + 00:25:24
