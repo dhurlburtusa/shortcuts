@@ -84,6 +84,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 - TODO
 
+**Rigging**
+
+- Blender Rigging Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBtZwiHCNQSF8sYPCE6cBJ4R
+  + 9 videos in about 3 hours 15 minutes
+
 **Animating**
 
 - Blender Animation Tutorials
