@@ -86,7 +86,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Animating**
 
-- TODO
+- Blender Animation Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBv7JhwAy6LhV3NKgHH0-1FA
+  + 6 videos in almost 2 hours
 
 **Compositing**
 
