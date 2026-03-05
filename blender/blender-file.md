@@ -14,7 +14,6 @@ Change the following properties.
 - Render:
   + Render Engine: Cycles
     * Device: GPU
-    * Check Open Shading Language
     * Sampling:
       - Viewport:
         + Add a new preset called Fast Preview with the following values:
