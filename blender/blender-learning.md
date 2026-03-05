@@ -37,6 +37,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Modeling**
 
+- Blender Beginner 3D Modeling Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBtflg3dnmixeS_8Llpbh3Qm
+  + 19 videos in many, many, many hours
 - 3d Modeling for Beginners (Blender Tutorial)
   + https://www.youtube.com/watch?v=SAcHh9_ZG6A
   + 01:40:18
