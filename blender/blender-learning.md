@@ -77,9 +77,11 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBsGtywsEiN2ti-5UPq83IMi
   + 38 videos in many, many, many hours
 
-**UV Editing**
+**Procedural Material**
 
-- TODO
+- Blender Procedural Material Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBs6TtApKKK-L_0Nm6fovNPk
+  + 257 videos in many, many, many, many hours
 
 **Displacement**
 
