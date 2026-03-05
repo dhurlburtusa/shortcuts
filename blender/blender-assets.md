@@ -2,6 +2,7 @@
 
 Assets for Blender can be retrieved from several places.
 
+- https://www.blender.org/download/demo-files/
 - https://extensions.blender.org/
 - https://ryankingart.gumroad.com/
 - https://superhivemarket.com/
