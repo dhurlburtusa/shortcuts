@@ -21,15 +21,26 @@ Note: These are the changes from the default settings for Blender v4.5.7.
 - Get Extensions:
   + (Allow online access if necessary)
   + Install:
+    * Add Camera Rigs
+    * A.N.T.Landscape
+    * BoltFactory
     * Extra Curve Objects
     * Extra Mesh Objects
     * LoopTools
+    * Modifier Tools
+    * Sapling Tree Gen
 - Add-ons:
   + Check:
+    * Add Camera Rigs (if you want to easily animate while camera is moving)
+    * A.N.T.Landscape (if you want to generate some landscapes)
+    * BoltFactory (if you want to generate nuts and/or bolts)
     * Extra Curve Objects
     * Extra Mesh Objects
     * LoopTools
+    * Modifier Tools
     * Node Wrangler
+    * Rigify (if doing rigging)
+    * Sapling Tree Gen (if you want to generate various detailed trees)
 - Input:
   + Keyboard:
     * Check Emulate Numpad (if computer doesn't have a numpad and if desired)
