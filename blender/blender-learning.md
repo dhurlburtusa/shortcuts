@@ -135,9 +135,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Video Editing**
 
-- Video Editing with Blender for Complete Beginners
-  + https://www.youtube.com/playlist?list=PLsGl9GczcgBs0r5xcKL7KvrmGoRuro8RV
-  + 4 videos in a little over 2 hours
+- Blender Video Editing Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBsDGQDN50peUxKEWy-C931g
+  + 9 videos in about 3 hours
 
 **Physics**
 
