@@ -7,6 +7,9 @@
 - Pro Atmo:
   + https://superhivemarket.com/products/pro-atmo/?ref=738 (affiliate link)
   + Review Video: https://www.youtube.com/watch?v=vXroKF8z9k0
+- Quick Baker:
+  + https://superhivemarket.com/products/quick-baker/?ref=738 (affiliate link)
+  + Review Video: https://www.youtube.com/watch?v=iLweOL95WoQ
 - Simply Micro Mesh:
   + https://superhivemarket.com/products/simply-micro-mesh/?ref=738 (affiliate link)
   + Review Video: https://www.youtube.com/watch?v=E9SubyH3pu8
