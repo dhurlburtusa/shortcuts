@@ -84,6 +84,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBsVJWWIEWDBhRtDOA1mUF3i
   + 21 videos in many, many, many hours
 
+**Texture Baking**
+
+- Texture Baking Blender Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBvJPh7D_ITafvmTW7ZzQTEr
+  + 18 videos in many, many, many hours
+
 **Shading**
 
 - TODO
