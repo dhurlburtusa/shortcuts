@@ -2,6 +2,8 @@
 
 ## Courses
 
+- Blender Studio:
+  + https://studio.blender.org/training/
 - See Paid Courses section in description of https://www.youtube.com/watch?v=SkRdc0ShV_U.
 - CG Masters
   + https://cgmasters.com/category/blender-training-courses/
