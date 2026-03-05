@@ -80,7 +80,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Texture Painting**
 
-- TODO
+- Texture Painting Blender Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBsVJWWIEWDBhRtDOA1mUF3i
+  + 21 videos in many, many, many hours
 
 **Shading**
 
