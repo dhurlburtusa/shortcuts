@@ -114,6 +114,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBv7JhwAy6LhV3NKgHH0-1FA
   + 6 videos in almost 2 hours
 
+**Particle Systems**
+
+- Particle Systems Blender Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBuR9Ixf8lDZPnRPLsghYV_0
+  + 10 videos in several hours
+
 **Compositing**
 
 - Compositing for Beginners (Blender Tutorial)
