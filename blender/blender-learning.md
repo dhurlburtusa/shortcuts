@@ -35,6 +35,18 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/watch?v=-c0Evpf8V3A
   + 00:10:16
 
+**Organization**
+
+- How to Use Blender's Outliner and Collections (Tutorial)
+  + https://www.youtube.com/watch?v=ph6QUXNq5aE
+  + 00:13:38
+- Understanding Parenting in Blender
+  + https://www.youtube.com/watch?v=5oclP4hQndc
+  + 00:05:17
+- How to Render with View Layers in Blender (Tutorial)
+  + https://www.youtube.com/watch?v=gUxC_Xl4Tjk
+  + 00:06:49
+
 **Modeling**
 
 - Blender Beginner 3D Modeling Tutorials
@@ -65,21 +77,6 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/watch?v=32tkr5xLvWQ
   + 00:36:03
 
-**Modifiers**
-
-- Modifiers for Beginners (Blender Tutorial)
-  + https://www.youtube.com/watch?v=F_f-O-W9lMU
-  + 00:46:37
-- New Object Modifiers in Blender 5.0!
-  + https://www.youtube.com/watch?v=43g89WI3vlY
-  + 00:20:43
-- All 54 Modifiers in Blender Explained in 10 minutes - 2024 Update
-  + https://www.youtube.com/watch?v=ov0F3cEJWoI
-  + 00:11:42
-- All 50+ Modifiers in Blender Explained in 30 Minutes or Less
-  + https://www.youtube.com/watch?v=8BQYAwDW6IE
-  + 00:32:15
-
 **Geometry Nodes**
 
 - Geometry Nodes for Complete Beginners
@@ -94,6 +91,21 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Blender Sculpting Tutorials
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBsGtywsEiN2ti-5UPq83IMi
   + 38 videos in many, many, many hours
+
+**Modifiers**
+
+- Modifiers for Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=F_f-O-W9lMU
+  + 00:46:37
+- New Object Modifiers in Blender 5.0!
+  + https://www.youtube.com/watch?v=43g89WI3vlY
+  + 00:20:43
+- All 54 Modifiers in Blender Explained in 10 minutes - 2024 Update
+  + https://www.youtube.com/watch?v=ov0F3cEJWoI
+  + 00:11:42
+- All 50+ Modifiers in Blender Explained in 30 Minutes or Less
+  + https://www.youtube.com/watch?v=8BQYAwDW6IE
+  + 00:32:15
 
 **Procedural Material**
 
@@ -149,22 +161,6 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBuR9Ixf8lDZPnRPLsghYV_0
   + 10 videos in several hours
 
-**Compositing**
-
-- Compositing for Beginners (Blender Tutorial)
-  + https://www.youtube.com/watch?v=JgQvvd1jryw
-  + 00:38:09
-
-**Rendering**
-
-- TODO
-
-**Video Editing**
-
-- Blender Video Editing Tutorials
-  + https://www.youtube.com/playlist?list=PLsGl9GczcgBsDGQDN50peUxKEWy-C931g
-  + 9 videos in about 3 hours
-
 **Physics**
 
 - Blender Physics Simulation Tutorials
@@ -177,14 +173,18 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/watch?v=6Dtwhd1N0bY
   + 00:34:24
 
-**Organization**
+**Compositing**
 
-- How to Use Blender's Outliner and Collections (Tutorial)
-  + https://www.youtube.com/watch?v=ph6QUXNq5aE
-  + 00:13:38
-- Understanding Parenting in Blender
-  + https://www.youtube.com/watch?v=5oclP4hQndc
-  + 00:05:17
-- How to Render with View Layers in Blender (Tutorial)
-  + https://www.youtube.com/watch?v=gUxC_Xl4Tjk
-  + 00:06:49
+- Compositing for Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=JgQvvd1jryw
+  + 00:38:09
+
+**Video Editing**
+
+- Blender Video Editing Tutorials
+  + https://www.youtube.com/playlist?list=PLsGl9GczcgBsDGQDN50peUxKEWy-C931g
+  + 9 videos in about 3 hours
+
+**Rendering**
+
+- TODO
