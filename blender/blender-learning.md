@@ -52,6 +52,18 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - How to Use Curves for Beginners (Blender Tutorial)
   + https://www.youtube.com/watch?v=gxzWCH1Q4fM
   + 00:18:41
+- Animate an Object Along a Curve (Blender Tutorial)
+  + https://www.youtube.com/watch?v=VNs7DyEV6fA
+  + 00:08:33
+- Array an Object Along a Curve in Blender (Tutorial)
+  + https://www.youtube.com/watch?v=lRK8UMudejg
+  + 00:03:15
+- How to Make Text Follow A Curve in Blender
+  + https://www.youtube.com/watch?v=kHRMO552K8k
+  + 00:02:13
+- Creating Customizable Railroad Tracks in Blender (Tutorial)
+  + https://www.youtube.com/watch?v=32tkr5xLvWQ
+  + 00:36:03
 
 **Modifiers**
 
