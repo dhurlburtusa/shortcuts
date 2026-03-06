@@ -7,6 +7,8 @@
 - See Paid Courses section in description of https://www.youtube.com/watch?v=SkRdc0ShV_U.
 - CG Masters
   + https://cgmasters.com/category/blender-training-courses/
+- P2design Academy:
+  + https://www.p2design-academy.com/
 
 ## Tutorials
 
