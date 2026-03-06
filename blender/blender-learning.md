@@ -47,6 +47,12 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
   + https://www.youtube.com/watch?v=xsUsM5AZ9uI
   + 00:22:44
 
+**Curves**
+
+- How to Use Curves for Beginners (Blender Tutorial)
+  + https://www.youtube.com/watch?v=gxzWCH1Q4fM
+  + 00:18:41
+
 **Modifiers**
 
 - Modifiers for Beginners (Blender Tutorial)
