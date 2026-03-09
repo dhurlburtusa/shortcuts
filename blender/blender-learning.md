@@ -27,6 +27,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - Blender Beginner Fundamentals Tutorials
   + https://www.youtube.com/playlist?list=PLsGl9GczcgBtRc3DalXy786Fsa5yEq_9B
   + Many, many, many hours
+- How to Use the Camera in Blender (Tutorial)
+  + https://www.youtube.com/watch?v=aY04h4ujrlY
+  + 00:16:31
 - Understanding Normals in Blender
   + https://www.youtube.com/watch?v=cn5BC3Vzcsc
   + 00:04:40
