@@ -33,6 +33,7 @@
 - Open Link to Collection menu: `Shift + M`
 - Open Snap pie menu: `Shift + S`
 - Open Shading pie menu: `Z`
+- Open View pie menu: `` ` ``
 
 **Edit Mode**
 
