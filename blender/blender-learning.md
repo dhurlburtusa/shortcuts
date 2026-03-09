@@ -48,6 +48,9 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 - How to Render with View Layers in Blender (Tutorial)
   + https://www.youtube.com/watch?v=gUxC_Xl4Tjk
   + 00:06:49
+- Create Your Own Asset Libraries in Blender! (Tutorial)
+  + https://www.youtube.com/watch?v=jpz13q52YWM
+  + 00:26:42
 
 **Modeling**
 
