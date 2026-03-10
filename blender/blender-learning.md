@@ -195,4 +195,6 @@ YouTube hosts many great tutorials on learning Blender. Ryan King, et al has sev
 
 **Rendering**
 
-- TODO
+- The Complete Guide to Eevee
+  + https://www.youtube.com/watch?v=-gW6vk_OuNQ
+  + 01:16:53
