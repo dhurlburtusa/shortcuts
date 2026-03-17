@@ -1,5 +1,9 @@
 # Font Notes
 
+## Resources
+
+- https://fonts.google.com/knowledge
+
 ## Misc
 
 **FontFaceObserver**
