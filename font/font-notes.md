@@ -3,6 +3,7 @@
 ## Resources
 
 - https://fonts.google.com/knowledge
+- https://variablefonts.io/
 
 ## Misc
 
