@@ -9,3 +9,4 @@
 - https://packetlosstest.com/
 - https://www.youtube.com/@GDCFestivalofGaming
 - https://enable3d.io/
+- Coding Math video playlist: https://www.youtube.com/playlist?list=PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9
