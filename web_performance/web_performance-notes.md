@@ -45,3 +45,13 @@ Another problem that can delay startup is idle time, caused by waiting for respo
 ## How Browsers Work
 
 Two major issues in web performance are issues having to do with latency and issues having to do with the fact that for the most part, browsers are single-threaded.
+
+### Navigation
+
+The first step of navigating to a web page is finding where the assets for that page are located. If the IP address for the assets is not cached, then the browser must performa a **DNS lookup**. This can add significant latency, especially with cellular/satilite connected devices.
+
+Once the IP address is known, the browser sets up a connection to the server via a **TCP three-way handshake**.
+
+For secure connections established over HTTPS, the **TLS negotiation** is required. (This requires five more round trips to the server before the request for content is actually sent.)
+
+After the eight round trips to the server, the browser is finally able to make the request.
