@@ -25,3 +25,15 @@ A well-designed system does not maximize the amount of free memory. Rather, a we
 ### Power Usage
 
 A well-designed system minimizes power required, while meeting other UPP goals.
+
+## Application Performance
+
+### Startup Performance
+
+Application startup is punctuated by three user-perceived events:
+
+- Time to first paint.
+- Time to interactivity.
+- Time to full load.
+
+The key to fast startup is to keep two things in mind: UPP is all that matters, and there's a "critical path" to each user-perceived event above. The critical path is exactly and only the code that must run to produce the event.
