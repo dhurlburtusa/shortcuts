@@ -7,3 +7,7 @@ See https://developer.mozilla.org/en-US/docs/Web/Performance for details.
 ## Fundamentals
 
 Ultimately, user-perceived performance is the only performance that matters. Users prefer, say, a responsive, smooth app that only processes 1,000 database transactions per second, over a choppy, unresponsive app that processes 100,000,000 per second.
+
+### Responsiveness
+
+Responsiveness means how fast the system provides outputs (possibly multiple ones) in response to user inputs.
