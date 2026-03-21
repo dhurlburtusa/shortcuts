@@ -18,6 +18,10 @@ Frame rate is the rate at which the system changes pixels displayed to the user.
 
 ### Memory Usage
 
-Memory usage is closely approximates "user state".
+Memory usage closely approximates "user state".
 
 A well-designed system does not maximize the amount of free memory. Rather, a well-designed system has been optimized to use as much memory as possible to maintain user state, while meeting other UPP goals.
+
+### Power Usage
+
+A well-designed system minimizes power required, while meeting other UPP goals.
