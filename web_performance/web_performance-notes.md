@@ -11,3 +11,8 @@ Ultimately, user-perceived performance is the only performance that matters. Use
 ### Responsiveness
 
 Responsiveness means how fast the system provides outputs (possibly multiple ones) in response to user inputs.
+
+
+### Frame Rate
+
+Frame rate is the rate at which the system changes pixels displayed to the user.
