@@ -6,13 +6,18 @@ See https://developer.mozilla.org/en-US/docs/Web/Performance for details.
 
 ## Fundamentals
 
-Ultimately, user-perceived performance is the only performance that matters. Users prefer, say, a responsive, smooth app that only processes 1,000 database transactions per second, over a choppy, unresponsive app that processes 100,000,000 per second.
+Ultimately, user-perceived performance (UPP) is the only performance that matters. Users prefer, say, a responsive, smooth app that only processes 1,000 database transactions per second, over a choppy, unresponsive app that processes 100,000,000 per second.
 
 ### Responsiveness
 
 Responsiveness means how fast the system provides outputs (possibly multiple ones) in response to user inputs.
 
-
 ### Frame Rate
 
 Frame rate is the rate at which the system changes pixels displayed to the user.
+
+### Memory Usage
+
+Memory usage is closely approximates "user state".
+
+A well-designed system does not maximize the amount of free memory. Rather, a well-designed system has been optimized to use as much memory as possible to maintain user state, while meeting other UPP goals.
