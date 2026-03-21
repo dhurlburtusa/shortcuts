@@ -72,6 +72,18 @@ A request for a web page or app starts with an HTTP request. The server sends a 
 
 While the DOM construction is incremental, CSSOM is not. CSS is render blocking: the browser blocks page rendering until it receives and processes all the CSS. CSS is render blocking because rules can be overwritten, so the content can't be rendered until the CSSOM is complete.
 
+**Summary**
+
+- Processing the HTML and building DOM.
+- Processing the CSS and building the CSSOM.
+- Combining the DOM and CSSOM into a render tree.
+- Running layout on the render tree to compute the geometry of each node.
+- Painting the individual nodes to the screen.
+
 To reduce the frequency and duration of layout events, batch updates and avoid animating box model properties.
+
+To ensure the script doesn't block the process, add the `async` attribute, or the `defer` attribute if JavaScript parsing and execution order is important.
+
+Waiting to obtain CSS doesn't block HTML parsing or downloading, but it does block JavaScript because JavaScript is often used to query CSS properties' impact on elements.
 
 See https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path for details.
