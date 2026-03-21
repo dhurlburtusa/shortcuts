@@ -32,8 +32,8 @@ A well-designed system minimizes power required, while meeting other UPP goals.
 
 Application startup is punctuated by three user-perceived events:
 
-- Time to first paint.
-- Time to interactivity.
+- Time to first paint (see [TTFB](https://developer.mozilla.org/en-US/docs/Glossary/Time_to_first_byte)).
+- Time to interactivity (see [TTI](https://developer.mozilla.org/en-US/docs/Glossary/Time_to_interactive)).
 - Time to full load.
 
 The key to fast startup is to keep two things in mind: UPP is all that matters, and there's a "critical path" to each user-perceived event above. The critical path is exactly and only the code that must run to produce the event.
