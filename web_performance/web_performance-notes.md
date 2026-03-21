@@ -32,7 +32,7 @@ A well-designed system minimizes power required, while meeting other UPP goals.
 
 Application startup is punctuated by three user-perceived events:
 
-- Time to first paint (see [TTFB](https://developer.mozilla.org/en-US/docs/Glossary/Time_to_first_byte)).
+- Time to first paint (see [FP](https://developer.mozilla.org/en-US/docs/Glossary/First_paint), [FCP](https://developer.mozilla.org/en-US/docs/Glossary/First_contentful_paint), [LCP](https://developer.mozilla.org/en-US/docs/Glossary/Largest_contentful_paint), [TTFB](https://developer.mozilla.org/en-US/docs/Glossary/Time_to_first_byte)).
 - Time to interactivity (see [TTI](https://developer.mozilla.org/en-US/docs/Glossary/Time_to_interactive)).
 - Time to full load.
 
