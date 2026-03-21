@@ -55,3 +55,7 @@ Once the IP address is known, the browser sets up a connection to the server via
 For secure connections established over HTTPS, the **TLS negotiation** is required. (This requires five more round trips to the server before the request for content is actually sent.)
 
 After the eight round trips to the server, the browser is finally able to make the request.
+
+### Parsing
+
+Once the browser receives the first chunk of data, it can begin parsing the information received to build the DOM and CSSOM.
