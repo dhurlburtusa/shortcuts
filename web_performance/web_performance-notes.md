@@ -41,3 +41,7 @@ The key to fast startup is to keep two things in mind: UPP is all that matters, 
 To reach a user-perceived startup event more quickly, the main "trick" is run only the code on the critical path. Shorten the critical path by simplifying the scene.
 
 Another problem that can delay startup is idle time, caused by waiting for responses to requests (like database loads). To avoid this problem, applications should issue requests as early as possible in startup (this is called "front-loading").
+
+## How Browsers Work
+
+Two major issues in web performance are issues having to do with latency and issues having to do with the fact that for the most part, browsers are single-threaded.
