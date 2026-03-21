@@ -59,3 +59,5 @@ After the eight round trips to the server, the browser is finally able to make t
 ### Parsing
 
 Once the browser receives the first chunk of data, it can begin parsing the information received to build the DOM and CSSOM.
+
+Typically, the first chunk of content is in the first 14KB of data. Even if the requested page's HTML is larger than the initial 14KB packet, the browser will begin parsing and attempting to render an experience based on the data it has. This is why it's important for web performance optimization to include everything the browser needs to start rendering a page — the CSS and HTML needed for the first render — in the first 14KB. But before anything is rendered to the screen, the HTML, CSS, and JavaScript have to be parsed.
