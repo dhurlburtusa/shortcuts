@@ -17,3 +17,11 @@ When building a web application, the app can be composed of the following main i
   + May have multiple active cameras, each rendered to a different HTML canvas (e.g., to render the view of multiple players/characters in a game at the same time). I believe the scene graph can be shared (to be verified).
   + May use "entities". Entities could be things like a game character. It will have a 3D object (e.g., a Three.js Mesh) to be rendered. The 3D object could be the root of a tree of 3D objects that together represent the entire entity. It may have different LOD nodes to control which Mesh to rendered depending on proximity to the active camera.
   + Uses a physics engine to transform certain entities/3D objects.
+- Page Initialization:
+  + Asynchronously load all dependencies (e.g., glTF files, textures, etc).
+  + Initialize a world
+    * Composed of:
+      - The scene graph
+      - One or more views
+        + Composed of a camera, a canvas, and a renderer
+    * One scene per world. However, can have more than one view. May have one view per character
