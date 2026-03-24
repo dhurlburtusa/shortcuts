@@ -25,3 +25,15 @@ When building a web application, the app can be composed of the following main i
       - One or more views
         + Composed of a camera, a canvas, and a renderer
     * One scene per world. However, can have more than one view. May have one view per character
+- Buiding a Scene Graph:
+  + After all the dependencies are loaded:
+    * Solutions:
+      - Lazily Create Shareables:
+        + Enable a way to lazily create shareables (e.g., materials, geometries, etc) as unshared objects are created.
+        + Will need a way to identify/describe the sharable object.
+        + Pro: Only creates the sharable objects need by the unsharable objects.
+      - Create All Shareables First:
+        + Create all shareable objects (e.g., materials, geometries, etc).
+        + Make these shareable objects available to use as the rest of the scene is created.
+        + Pro: May be a little easier to implement than lazy solution.
+        + Con: May create shareable objects that aren't needed.
