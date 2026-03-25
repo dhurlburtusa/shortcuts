@@ -37,3 +37,5 @@ When building a web application, the app can be composed of the following main i
         + Make these shareable objects available to use as the rest of the scene is created.
         + Pro: May be a little easier to implement than lazy solution.
         + Con: May create shareable objects that aren't needed.
+- Switching worlds/scene graphs:
+  + Perform proper clean up. See https://threejs.org/manual/#en/how-to-dispose-of-objects.
