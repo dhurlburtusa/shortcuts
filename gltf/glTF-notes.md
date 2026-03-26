@@ -10,6 +10,11 @@ See https://www.khronos.org/gltf/ for details.
 
 See https://www.khronos.org/files/gltf20-reference-guide.pdf for a great overview.
 
+## Assets
+
+- glTF Sample Assets
+  + https://github.khronos.org/glTF-Assets/
+
 ## Tools
 
 - Asset Auditor
