@@ -7,3 +7,5 @@ glTF™ is a royalty-free specification for the efficient transmission and loadi
 In 2022 glTF 2.0 was released as the ISO/IEC 12113:2022 International standard, recognizing glTF's global position as a 3D asset format.
 
 See https://www.khronos.org/gltf/ for details.
+
+See https://www.khronos.org/files/gltf20-reference-guide.pdf for a great overview.
