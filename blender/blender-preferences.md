@@ -41,6 +41,10 @@ Note: These are the changes from the default settings for Blender v4.5.7.
     * Node Wrangler
     * Rigify (if doing rigging)
     * Sapling Tree Gen (if you want to generate various detailed trees)
+  + Configure Preferences:
+    * glTF 2.0 format
+      - Check:
+        + Shader Editor Add-ons
 - Input:
   + Keyboard:
     * Check Emulate Numpad (if computer doesn't have a numpad and if desired)
