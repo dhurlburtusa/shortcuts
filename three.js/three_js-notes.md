@@ -26,6 +26,8 @@ When building a web application, the app can be composed of the following main i
         + Composed of a camera, a canvas, and a renderer
     * One scene per world. However, can have more than one view. May have one view per character
 - Buiding a Scene Graph:
+  + Has a `root` property, a ref to the `THREE.scene` instance.
+  + Has other convenience properties that contain references to main nodes of the graph. For example, may have an array containing references to entities that need to be updated each clock time/frame.
   + After all the dependencies are loaded:
     * Solutions:
       - Lazily Create Shareables:
