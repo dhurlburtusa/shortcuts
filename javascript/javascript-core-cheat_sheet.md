@@ -176,7 +176,7 @@ typeof flag == 'boolean' ? flag : false;
 
 ## Quirks
 
-Here are somethings about JavaScript that I find to be quirky.
+Here are some things about JavaScript that I find to be quirky.
 
 **The type of `NaN` is `'number'`**
 
