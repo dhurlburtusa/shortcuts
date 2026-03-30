@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ## Element Selection
 
-var elmts = document.querySelectorAll("<selector>");
-
+```js
+const elmts = document.querySelectorAll("<selector>");
+```
 
 ## Media Query
 
