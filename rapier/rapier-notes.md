@@ -1,5 +1,29 @@
 # Rapier Notes
 
+## Installation
+
+```sh
+npm install @dimforge/rapier2d
+npm install @dimforge/rapier3d
+```
+
+### Use with Vite
+
+```sh
+npm install --save-dev vite-plugin-wasm 
+```
+
+```
+// vite.config.js
+import { defineConfig } from "vite";
+
+import wasm from "vite-plugin-wasm";
+
+export default defineConfig({
+  plugins: [wasm()],
+});
+```
+
 ## Colliders
 
 Colliders represent the geometric shapes that generate contacts and collision events when they touch. Attaching one or multiple colliders to a rigid body allow the rigid-body to be affected by contact forces.
