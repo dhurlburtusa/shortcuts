@@ -9,7 +9,7 @@ JavaScript project.
 
 * `mkdir my-project && cd my-project`
 * `git flow init`<sup>†</sup>
-  + Use all defaults except `v` for the version tag prefix.  
+  + Use all defaults except `production` for production branch and optionally `v` for the version tag prefix.  
 * Add a `package.json` file:
   + Do one of:
     - `yarn init`
@@ -19,7 +19,7 @@ JavaScript project.
 * Add dependencies:
   + Do one of:
     - `yarn add $dependency`
-    - `npm install --save $dependency`
+    - `npm install $dependency`
 * Add dev dependencies:
   + Do one of:
     - `yarn add --dev $dependency`
