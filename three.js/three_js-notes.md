@@ -1,5 +1,11 @@
 # Three.js Notes
 
+## Installation
+
+```sh
+npm install --save three
+```
+
 ## Untested Ideas
 
 When building a web application, the app can be composed of the following main items:
