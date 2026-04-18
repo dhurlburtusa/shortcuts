@@ -6,6 +6,10 @@
 npm install --save three
 ```
 
+## Geometry
+
+`Geometry` objects represent the vertex data of some piece of geometry like a sphere, cube, plane, dog, cat, human, tree, building, etc... Three.js provides many kinds of built in geometry primitives. You can also create custom geometry as well as load geometry from files.
+
 ## Untested Ideas
 
 When building a web application, the app can be composed of the following main items:
