@@ -42,6 +42,102 @@ Three.js has a large number of geometry primitives. Geometry primitives are gene
   
 See https://threejs.org/manual/#en/primitives.
 
+## "Disposables"
+
+Several Three.js objects hold onto resources. Those resources should be release when no longer needed. Many Three.js objects will release those resources when their `dispose` method is called.
+
+Here is a partial list of the types of Three.js objects that should be disposed of.
+
+- Controls:
+  + `Constrols` (abstract base class)
+  + `ArcballControls`
+  + `DragControls`
+  + `FirstPersonControls`
+  + `FlyControls`
+  + `MapControls`
+  + `OrbitControls`
+  + `PointerLockControls`
+  + `TrackballControls`
+  + `TransformControls`
+- Geometries:
+  + `BufferGeometry` (base class)
+- Helpers:
+  + `ArrowHelper`
+  + `AxesHelper`
+  + `Box3Helper`
+  + `BoxHelper`
+  + `CameraHelper`
+  + `DirectionalLightHelper`
+  + `GridHelper`
+  + `HemisphereLightHelper`
+  + `LightProbeHelper`
+  + `OctreeHelper`
+  + `PlaneHelper`
+  + `PointLightHelper`
+  + `PolarGridHelper`
+  + `PositionalAudioHelper`
+  + `RapierHelper`
+  + `RectAreaLightHelper`
+  + `Reflector`
+  + `Refractor`
+  + `SelectionHelper`
+  + `SkeletonHelper`
+  + `SpotLightHelper`
+  + `TextureHelper`
+  + `VertexNormalsHelper`
+  + `VertexTangentsHelper`
+  + `ViewHelper`
+  + `WorkerPool`
+  + Many others
+- Materials:
+  + `Material` (abstract base class)
+- Lights:
+  + `Light` (abstract base class)
+- Light Shadows:
+  + `LightShadow` (abstract base class)
+- Loaders:
+  + Some loaders need to be disposed, but not all.
+  + `KTX2Loader`
+  + `Rhino3dmLoader`
+- Nodes:
+  + `Node` (base class)
+  + `ComputeNode`
+  + `PassNode`
+  + Many others
+- Passes:
+  + `Pass` (abstract base class)
+- Renderers:
+  + `Renderer` (base class
+  + `WebGLRenderer`
+  + Some others
+- Textures:
+  + `Texture` (base class)
+- Misc:
+  + `BatchedMesh`
+  + `CanvasTarget`
+  + `ColorEnvironment`
+  + `DebugEnvironment`
+  + `EffectComposer`
+  + `FullScreenQuad`
+  + `HTMLMesh`
+  + `InstanceMesh`
+  + `Lensflare`
+  + `LensflareMesh`
+  + `OculusHandPointerModel`
+  + `PMREMGenerator`
+  + `RenderPipeline`
+  + `RenderTarget`
+  + `RoomEnvironment`
+  + `Skeleton`
+  + `Timer`
+  + `TimestampQueryPool` (abstract base class)
+    * `WebGLTimestampQueryPool`
+    * `WebGPUTimestampQueryPool`
+  + `UniformsGroup`
+  + Several others
+
+See https://threejs.org/manual/#en/how-to-dispose-of-objects.
+
 ## Untested Ideas
 
 When building a web application, the app can be composed of the following main items:
