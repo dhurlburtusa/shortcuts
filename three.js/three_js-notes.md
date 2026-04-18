@@ -16,6 +16,7 @@ Three.js has a large number of geometry primitives. Geometry primitives are gene
 
 - Simple:
   + Box
+  + Capsule
   + Circle
   + Cone
   + Cylinder
@@ -61,6 +62,16 @@ Here is a partial list of the types of Three.js objects that should be disposed 
   + `TransformControls`
 - Geometries:
   + `BufferGeometry` (base class)
+  + `BoxGeometry`
+  + `CapsuleGeometry`
+  + `CircleGeometry`
+  + `ConeGeometry`
+  + `CylinderGeometry`
+  + `Icosahedron`
+  + `Plane`
+  + `Sprere`
+  + `Torus`
+  + Many others
 - Helpers:
   + `ArrowHelper`
   + `AxesHelper`
@@ -78,8 +89,6 @@ Here is a partial list of the types of Three.js objects that should be disposed 
   + `PositionalAudioHelper`
   + `RapierHelper`
   + `RectAreaLightHelper`
-  + `Reflector`
-  + `Refractor`
   + `SelectionHelper`
   + `SkeletonHelper`
   + `SpotLightHelper`
@@ -89,16 +98,39 @@ Here is a partial list of the types of Three.js objects that should be disposed 
   + `ViewHelper`
   + `WorkerPool`
   + Many others
-- Materials:
-  + `Material` (abstract base class)
 - Lights:
   + `Light` (abstract base class)
+  + `AmbientLight`
+  + `DirectionalLight`
+  + `HemisphereLight`
+  + `IESSpotLight`
+  + `LightProbe`
+  + `PointLight`
+  + `ProjectorLight`
+  + `RectAreaLight`
+  + `SpotLight`
 - Light Shadows:
   + `LightShadow` (abstract base class)
+  + `DirectionalLightShadow`
+  + `PointLightShadow`
+  + `SpotLightShadow`
 - Loaders:
   + Some loaders need to be disposed, but not all.
   + `KTX2Loader`
   + `Rhino3dmLoader`
+- Materials:
+  + `Material` (abstract base class)
+  + `MeshBasicMaterial`
+  + `MeshDepthMaterial`
+  + `MeshLambertMaterial`
+  + `MeshMatcapMaterial`
+  + `MeshPhongMaterial`
+  + `MeshPhysicalMaterial`
+  + `MeshStandardMaterial`
+  + `MeshToonMaterial`
+  + `PointsMaterial`
+  + `SpriteMaterial`
+  + Several others
 - Nodes:
   + `Node` (base class)
   + `ComputeNode`
@@ -107,9 +139,10 @@ Here is a partial list of the types of Three.js objects that should be disposed 
 - Passes:
   + `Pass` (abstract base class)
 - Renderers:
-  + `Renderer` (base class
+  + `Renderer` (base class)
+  + `GPUComputationRenderer`
   + `WebGLRenderer`
-  + Some others
+  + `WebGPURenderer`
 - Textures:
   + `Texture` (base class)
 - Misc:
@@ -120,13 +153,21 @@ Here is a partial list of the types of Three.js objects that should be disposed 
   + `EffectComposer`
   + `FullScreenQuad`
   + `HTMLMesh`
-  + `InstanceMesh`
+  + `InstancedMesh`
   + `Lensflare`
   + `LensflareMesh`
   + `OculusHandPointerModel`
   + `PMREMGenerator`
+  + `Reflector`
+  + `Refractor`
   + `RenderPipeline`
   + `RenderTarget`
+    * `CubeRenderTarget`
+    * `RenderTarget3D`
+    * `WebGL3DRenderTarget`
+    * `WebGLArrayRenderTarget`
+    * `WebGLCubeRenderTarget`
+    * `WebGLRenderTarget`
   + `RoomEnvironment`
   + `Skeleton`
   + `Timer`
