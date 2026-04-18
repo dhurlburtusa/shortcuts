@@ -10,6 +10,38 @@ npm install --save three
 
 `Geometry` objects represent the vertex data of some piece of geometry like a sphere, cube, plane, dog, cat, human, tree, building, etc... Three.js provides many kinds of built in geometry primitives. You can also create custom geometry as well as load geometry from files.
 
+### Primitives
+
+Three.js has a large number of geometry primitives. Geometry primitives are generally 3D shapes that are generated at runtime with a bunch of parameters.
+
+- Simple:
+  + Box
+  + Circle
+  + Cone
+  + Cylinder
+  + Plane
+  + Ring
+  + Sphere
+  + Tetrahedron (4 sides)
+  + Octahedron (8 sides)
+  + Dodecahedron (12 sides)
+  + Icosahedron (20 sides)
+  + Torus
+  + Torus Knot
+- Complex:
+  + Extrude
+  + Lathe
+  + Parametric
+  + Polyhedron
+  + Shape
+  + Text
+  + Tube
+- Compound:
+  + Edges
+  + Wireframe
+  
+See https://threejs.org/manual/#en/primitives.
+
 ## Untested Ideas
 
 When building a web application, the app can be composed of the following main items:
