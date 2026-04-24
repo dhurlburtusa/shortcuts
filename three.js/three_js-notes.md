@@ -43,6 +43,123 @@ Three.js has a large number of geometry primitives. Geometry primitives are gene
   
 See https://threejs.org/manual/#en/primitives.
 
+## Material
+
+- `MeshBasicMaterial`
+  + Not affected by lights.
+  + Common properties:
+    * `color`
+    * `combine`
+    * `fog`
+    * `opacity` (inherited)
+    * `reflectivity`
+    * `side` (inherited)
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe`
+- `MeshLambertMaterial`
+  + Computes lighting only at the vertices.
+  + Common properties:
+    * `color`
+    * `combine`
+    * `emissive`
+    * `flatShading`
+    * `fog`
+    * `opacity` (inherited)
+    * `reflectivity`
+    * `side` (inherited)
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe`
+- `MeshMatcapMaterial`
+  + Defined by a MatCap (or Lit Sphere) texture, which encodes the material color and shading.
+  + Does not respond to lights.
+  + Will cast a shadow.
+  + Will not self-shadow or receive shadows.
+  + Common properties:
+    * `color`
+    * `flatShading`
+    * `fog`
+    * `matcap`
+    * `opacity` (inherited)
+    * `side` (inherited)
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe`
+- `MeshPhongMaterial`
+  + Computes lighting at every pixel.
+  + Supports specular highlights.
+  + Uses per-fragment shading.
+  + Common properties:
+    * `color`
+    * `combine`
+    * `emissive`
+    * `flatShading`
+    * `fog`
+    * `opacity` (inherited)
+    * `reflectivity`
+    * `shininess`
+    * `side` (inherited)
+    * `specular`
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe`
+- `MeshStandardMaterial`
+  + Physically based, using metallic-roughness workflow.
+  + Common properties:
+    * `color`
+    * `emissive`
+    * `flatShading`
+    * `fog`
+    * `metalness`
+    * `opacity` (inherited)
+    * `roughness`
+    * `side` (inherited)
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe`
+- `MeshPhysicalMaterial`
+  + Extends `MeshStandardMaterial`.
+  + Physically based, using metallic-roughness workflow.
+  + Common properties:
+    * `anisotropy`
+    * `attenuationColor`
+    * `clearcoat`
+    * `clearcoatRoughness`
+    * `color` (inherited)
+    * `emissive` (inherited)
+    * `flatShading` (inherited)
+    * `fog` (inherited)
+    * `ior`
+    * `iridescense`
+    * `metalness` (inherited)
+    * `opacity` (inherited)
+    * `reflectivity`
+    * `roughness` (inherited)
+    * `sheen`
+    * `sheenColor`
+    * `sheenRoughness`
+    * `side` (inherited)
+    * `specularColor`
+    * `specularIntensity`
+    * `thickness`
+    * `transmission`
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe` (inherited)
+- `MeshToonMaterial`
+  + Similar to the `MeshPhongMaterial` but it uses a gradient map (an X by 1 texture) to decide how to shade rather than shading smoothly.
+  + Common properties:
+    * `color`
+    * `emissive`
+    * `fog`
+    * `gradientMap`
+    * `opacity` (inherited)
+    * `side` (inherited)
+    * `transparent` (inherited)
+    * `visible` (inherited)
+    * `wireframe`
+
 ## "Disposables"
 
 Several Three.js objects hold onto resources. Those resources should be release when no longer needed. Many Three.js objects will release those resources when their `dispose` method is called.
