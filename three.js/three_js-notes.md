@@ -45,6 +45,43 @@ See https://threejs.org/manual/#en/primitives.
 
 ## Material
 
+- Hierarchy:
+  + `Material`
+    * `LineBasicMaterial`
+      - `LineDashedMaterial`
+    * `MeshBasicMaterial`
+    * `MeshDepthMaterial`
+    * `MeshDistanceMaterial`
+    * `MeshLambertMaterial`
+    * `MeshMatcapMaterial`
+    * `MeshNormalMaterial`
+    * `MeshPhongMaterial`
+    * `MeshStandardMaterial`
+      - `MeshPhysicalMaterial`
+    * `MeshToonMaterial`
+    * `NodeMaterial`
+      - `Line2NodeMaterial`
+      - `LineBasicNodeMaterial`
+      - `LineDashedNodeMaterial`
+      - `MeshBasicNodeMaterial`
+      - `MeshLambertNodeMaterial`
+      - `MeshMatcapNodeMaterial`
+      - `MeshNormalNodeMaterial`
+      - `MeshPhongNodeMaterial`
+      - `MeshStandardNodeMaterial`
+        + `MeshPhysicalNodeMaterial`
+          * `MeshSSSNodeMaterial`
+      - `MeshToonNodeMaterial`
+      - `ShadowNodeMaterial`
+      - `SpriteNodeMaterial`
+        + `PointsNodeMaterial`
+      - `VolumeNodeMaterial`
+    * `PointsMaterial`
+    * `ShaderMaterial`
+      - `LineMaterial`
+      - `RawShaderMaterial`
+    * `ShadowMaterial`
+    * `SpriteMaterial`
 - `MeshBasicMaterial`
   + Not affected by lights.
   + Common properties:
