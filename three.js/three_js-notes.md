@@ -240,6 +240,20 @@ See https://threejs.org/manual/#en/primitives.
   + This light gets emitted from a single point in one direction, along a cone that increases in size the further from the light it gets.
   + This light can cast shadows - see the `SpotLightShadow` for details.
 
+## Cameras
+
+- `ArrayCamera`:
+  + This type of camera can be used in order to efficiently render a scene with a predefined set of cameras. This is an important performance aspect for rendering VR scenes.
+  + An instance of `ArrayCamera` always has an array of sub cameras. It's mandatory to define for each sub camera the `viewport` property which determines the part of the viewport that is rendered with this camera.
+- `CubeCamera`:
+  + A special type of camera that is positioned in 3D space to render its surroundings into a cube render target. The render target can then be used as an environment map for rendering realtime reflections in your scene.
+- `OrthographicCamera`:
+  + Camera that uses orthographic projection.
+  + In this projection mode, an object's size in the rendered image stays constant regardless of its distance from the camera. This can be useful for rendering 2D scenes and UI elements, amongst other things.
+- `PerspectiveCamera`:
+  + Camera that uses perspective projection.
+  + This projection mode is designed to mimic the way the human eye sees. It is the most common projection mode used for rendering a 3D scene.
+
 ## "Disposables"
 
 Several Three.js objects hold onto resources. Those resources should be release when no longer needed. Many Three.js objects will release those resources when their `dispose` method is called.
