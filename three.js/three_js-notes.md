@@ -197,6 +197,20 @@ See https://threejs.org/manual/#en/primitives.
     * `visible` (inherited)
     * `wireframe`
 
+## Lights
+
+- Hierarchy:
+  + `Light` (extends `Object3D`)
+    * `AmbientLight`
+    * `DirectionalLight`
+    * `HemisphereLight`
+    * `LightProbe`
+    * `PointLight`
+    * `RectAreaLight`
+    * `SpotLight`
+      - `IESSpotLight`
+      - `ProjectorLight`
+
 ## "Disposables"
 
 Several Three.js objects hold onto resources. Those resources should be release when no longer needed. Many Three.js objects will release those resources when their `dispose` method is called.
