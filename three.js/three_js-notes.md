@@ -210,6 +210,35 @@ See https://threejs.org/manual/#en/primitives.
     * `SpotLight`
       - `IESSpotLight`
       - `ProjectorLight`
+- `AmbientLight`:
+  + Globally illuminates all objects in the scene equally.
+  + It cannot be used to cast shadows as it does not have a direction.
+- `DirectionalLight`:
+  + A light that gets emitted in a specific direction.
+  + This light will behave as though it is infinitely far away and the rays produced from it are all parallel.
+  + The common use case for this is to simulate daylight.
+  + Its direction is calculated as pointing from the light's `Object3D#position` to the `DirectionalLight#target` position.
+  + This light can cast shadows - see the `DirectionalLightShadow` for details.
+- `HemisphereLight`:
+  + A light source positioned directly above the scene, with color fading from the sky color to the ground color.
+  + This light cannot be used to cast shadows.
+- `LightProbe`:
+  + Light probes are an alternative way of adding light to a 3D scene.
+  + Unlike classical light sources (e.g. directional, point or spot lights), light probes do not emit light. Instead they store information about light passing through 3D space.
+  + During rendering, the light that hits a 3D object is approximated by using the data from the light probe.
+- `PointLight`:
+  + A light that gets emitted from a single point in all directions.
+  + A common use case for this is to replicate the light emitted from a bare lightbulb.
+  + This light can cast shadows - see the `PointLightShadow` for details.
+- `RectAreaLight`:
+  + This class emits light uniformly across the face of a rectangular plane.
+  + This light type can be used to simulate light sources such as bright windows or strip lighting.
+  + There is no shadow support.
+  + Only PBR materials are supported.
+  + You have to include `RectAreaLightUniformsLib` (`WebGLRenderer`) or `RectAreaLightTexturesLib` (`WebGPURenderer`) into your app and init the uniforms/textures.
+- `SpotLight`:
+  + This light gets emitted from a single point in one direction, along a cone that increases in size the further from the light it gets.
+  + This light can cast shadows - see the `SpotLightShadow` for details.
 
 ## "Disposables"
 
