@@ -41,3 +41,11 @@ A **linear combination** of $\vec{v_1}, \vec{v_2}, \dots, \vec{v_k} \in ℝ^n$ i
 $c_1\vec{v_1} + c_2\vec{v_2} + \dots + c_k\vec{v_k}$,
 
 where $c_1, c_2, \dots, c_k \in ℝ$.
+
+### The Dot Product
+
+**Definition — Dot Product**
+
+If $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in ℝ^n$ and $\vec{w} = \langle w_1, w_2, \dots, w_n \rangle \in ℝ^n$ then the **dot product** of $\vec{v}$ and $\vec{w}$, denoted by $\vec{v} ⋅ \vec{w}$, is the quantity
+
+$\vec{v} ⋅ \vec{w} = v_1w_1 + v_2w_2 + \dots + v_nw_n$.
