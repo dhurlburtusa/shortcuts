@@ -13,3 +13,7 @@ A vector in **standard position** has its tail located at the origin.
 ### Vector Addition
 
 If $\vec{v}=\langle v_1, v_2 \rangle$ and $\vec{w}=\langle w_1, w_2 \rangle$, then $\vec{v}+\vec{w}=\langle v_1+w_1, v_2+w_2 \rangle$
+
+### Scalar Multiplication
+
+If $\vec{v} = \langle v_1, v_2 \rangle$ and $c$ is a real number, then $c\vec{v} = \langle cv_1, cv_2 \rangle$
