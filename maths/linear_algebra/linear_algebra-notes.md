@@ -31,3 +31,13 @@ Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c, d \in ℝ$ be s
   <li>$\vec{v} + (-\vec{v}) = \vec{0}$</li>
   <li>$c(d\vec{v}) = (cd)\vec{v}$</li>
 </ol>
+
+### Linear Combinations
+
+**Definition — Linear Combinations**
+
+A **linear combination** of $\vec{v_1}, \vec{v_2}, \dots, \vec{v_k} \in ℝ^n$ is a vector of the form
+
+$c_1\vec{v_1} + c_2\vec{v_2} + \dots + c_k\vec{v_k}$,
+
+where $c_1, c_2, \dots, c_k \in ℝ$.
