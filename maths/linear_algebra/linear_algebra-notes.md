@@ -18,6 +18,12 @@ $\vec{0} = \langle 0, 0, \dots \rangle$
 
 $\vec{e_1} = \langle 1, 0, \dots, 0 \rangle$, $\vec{e_2} = \langle 0, 1, 0, \dots, 0 \rangle$, and in general $\vec{e_j} = \langle 0, \dots, 0, 1, 0, \dots, 0 \rangle$ where the $j^{th}$ entry equals 1.
 
+### Length of a Vector
+
+The **length** of a vector $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in ℝ^n$, denoted by $\\| \vec{v} \\|$, is defined by
+
+$\\| \vec{v} \\| = \sqrt{\vec{v} ⋅ \vec{v}} = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}$
+
 ### Vector Addition
 
 If $\vec{v}=\langle v_1, v_2 \rangle$ and $\vec{w}=\langle w_1, w_2 \rangle$, then $\vec{v}+\vec{w}=\langle v_1+w_1, v_2+w_2 \rangle$
