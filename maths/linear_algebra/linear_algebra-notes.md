@@ -57,3 +57,13 @@ where $c_1, c_2, \dots, c_k \in ℝ$.
 If $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in ℝ^n$ and $\vec{w} = \langle w_1, w_2, \dots, w_n \rangle \in ℝ^n$ then the **dot product** of $\vec{v}$ and $\vec{w}$, denoted by $\vec{v} ⋅ \vec{w}$, is the quantity
 
 $\vec{v} ⋅ \vec{w} = v_1w_1 + v_2w_2 + \dots + v_nw_n$.
+
+### Properties of the Dot Product
+
+Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c \in ℝ$ be a scalar. Then
+
+<ol type="a">
+  <li>$\vec{v} ⋅ \vec{w} = \vec{w} ⋅ \vec{v}$ (commutativity)</li>
+  <li>$\vec{v} ⋅ (\vec{w} + \vec{x}) = \vec{v} ⋅ \vec{w} + \vec{v} ⋅ \vec{x}$ (distributivity)</li>
+  <li>$(c\vec{v}) ⋅ \vec{w} = c(\vec{v} ⋅ \vec{w})$</li>
+</ol>
