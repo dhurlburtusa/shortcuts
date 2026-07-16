@@ -8,7 +8,15 @@ The **coordinates** of a vector only tell us the displacement in each dimension;
 
 A vector in **standard position** has its tail located at the origin.
 
-Zero Vector: $\vec{0} = \langle 0, 0, \dots \rangle$
+### Special Vectors
+
+**Zero Vector**
+
+$\vec{0} = \langle 0, 0, \dots \rangle$
+
+**Standard Basis Vectors**
+
+$\vec{e_1} = \langle 1, 0, \dots, 0 \rangle$, $\vec{e_2} = \langle 0, 1, 0, \dots, 0 \rangle$, and in general $\vec{e_j} = \langle 0, \dots, 0, 1, 0, \dots, 0 \rangle$ where the $j^{th}$ entry equals 1.
 
 ### Vector Addition
 
