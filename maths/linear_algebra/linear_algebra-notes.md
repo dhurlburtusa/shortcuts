@@ -91,3 +91,9 @@ Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $| \vec{v} ⋅ \vec{
 ### Triangle Inequality
 
 Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $\\|\vec{v} + \vec{w}\\| \leq \\|\vec{v}\\| + \\|\vec{w}\\|$.
+
+### Angle Between Vectors
+
+The **angle** $\theta$ between two non-zero vectors $\vec{v}, \vec{w} \in ℝ^n$ is the quantity
+
+$\theta = \arccos \left( \frac{\vec{v} ⋅ \vec{w}}{\\|\vec{v}\\| \\|\vec{w}\\|} \right)$
