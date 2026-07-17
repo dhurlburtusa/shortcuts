@@ -101,3 +101,7 @@ Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $\\| \vec{v} + \vec{
 The **angle** $\theta$ between two non-zero vectors $\vec{v}, \vec{w} \in ℝ^n$ is the quantity
 
 $\theta = \arccos \left( \frac{\vec{v} ⋅ \vec{w}}{\\| \vec{v} \\| \\| \vec{w} \\|} \right)$
+
+### Orthogonality
+
+Two vectors $\vec{v}, \vec{w} \in ℝ^n$ are call **orthogonal** if $\vec{v} ⋅ \vec{w} = 0$.
