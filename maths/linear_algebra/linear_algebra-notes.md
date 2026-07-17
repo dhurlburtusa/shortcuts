@@ -110,3 +110,11 @@ The **angle** $`\theta`$ between two non-zero vectors $`\vec{v}, \vec{w} \in ℝ
 ### Orthogonality
 
 Two vectors $`\vec{v}, \vec{w} \in ℝ^n`$ are called **orthogonal** if $`\vec{v} ⋅ \vec{w} = 0`$.
+
+## Matrices
+
+A **matrix** is rectangular array of numbers. Those numbers are called the **entries** or **elements** of the matrix.
+
+The **size** of a matrix is a description of the number of rows and columns that it has. A matrix with $`m`$ rows and $`n`$ columns has size $`m \times n`$.
+
+A $`1 \times m`$ matrix is called a **row matrix** or **row vector**. An $`n \times 1`$ matrix is called a **column matrix** or **column vector**. An $`m \times m`$ matrix is called **square**.
