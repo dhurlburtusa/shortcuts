@@ -83,3 +83,7 @@ Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c \in ℝ$ be a sc
   <li>$\vec{v} ⋅ (\vec{w} + \vec{x}) = \vec{v} ⋅ \vec{w} + \vec{v} ⋅ \vec{x}$ (distributivity)</li>
   <li>$(c\vec{v}) ⋅ \vec{w} = c(\vec{v} ⋅ \vec{w})$</li>
 </ol>
+
+### Cauchy-Schwarz Inequality
+
+Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $| \vec{v} ⋅ \vec{w} | \leq \\|\vec{v}\\| \\|\vec{w}\\|$.
