@@ -12,7 +12,7 @@ A vector in **standard position** has its tail located at the origin.
 
 **Zero Vector**
 
-$\vec{0} = \langle 0, 0, \dots \rangle$
+$`\vec{0} = \langle 0, 0, \dots \rangle`$
 
 **Standard Basis Vectors**
 
@@ -20,27 +20,26 @@ $\vec{e_1} = \langle 1, 0, \dots, 0 \rangle$, $\vec{e_2} = \langle 0, 1, 0, \dot
 
 ### Length of a Vector
 
-The **length** of a vector $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in ℝ^n$, denoted by $\\| \vec{v} \\|$, is defined by
+The **length** of a vector $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in ℝ^n$, denoted by $`\| \vec{v} \|`$, is defined by
 
-$\\| \vec{v} \\| = \sqrt{\vec{v} ⋅ \vec{v}} = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}$
+```math
+\| \vec{v} \| = \sqrt{\vec{v} ⋅ \vec{v}} = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}
+```
 
 ### Properties of Vector Length
 
 Let $\vec{v} \in ℝ^n$ be a vector and let $c \in ℝ$ be a scalar. Then
 
 <ol type="a">
-  <li>
-    $\\\| c\vec{v} \\\| = |c| \\\| \vec{v} \\\|$
-  </li>
-  <li>
-    $\\\| \vec{v} \\\| = 0$ if and only if $\vec{v} = \vec{0}$
+  <li>$\| c\vec{v} \| = |c| \| \vec{v} \|$</li>
+  <li>$\| \vec{v} \| = 0$ if and only if $\vec{v} = \vec{0}$
   </li>
 </ol>
 
 
 ### Vector Addition
 
-If $\vec{v}=\langle v_1, v_2 \rangle$ and $\vec{w}=\langle w_1, w_2 \rangle$, then $\vec{v}+\vec{w}=\langle v_1+w_1, v_2+w_2 \rangle$
+If $\vec{v} = \langle v_1, v_2 \rangle$ and $\vec{w} = \langle w_1, w_2 \rangle$, then $\vec{v} + \vec{w} = \langle v_1 + w_1, v_2 + w_2 \rangle$
 
 ### Scalar Multiplication
 
@@ -66,7 +65,9 @@ Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c, d \in ℝ$ be s
 
 A **linear combination** of $\vec{v_1}, \vec{v_2}, \dots, \vec{v_k} \in ℝ^n$ is a vector of the form
 
-$c_1\vec{v_1} + c_2\vec{v_2} + \dots + c_k\vec{v_k}$,
+```math
+c_1\vec{v_1} + c_2\vec{v_2} + \dots + c_k\vec{v_k}
+```
 
 where $c_1, c_2, \dots, c_k \in ℝ$.
 
@@ -76,7 +77,9 @@ where $c_1, c_2, \dots, c_k \in ℝ$.
 
 If $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in ℝ^n$ and $\vec{w} = \langle w_1, w_2, \dots, w_n \rangle \in ℝ^n$ then the **dot product** of $\vec{v}$ and $\vec{w}$, denoted by $\vec{v} ⋅ \vec{w}$, is the quantity
 
-$\vec{v} ⋅ \vec{w} = v_1w_1 + v_2w_2 + \dots + v_nw_n$.
+```math
+\vec{v} ⋅ \vec{w} = v_1w_1 + v_2w_2 + \dots + v_nw_n
+```
 
 ### Properties of the Dot Product
 
@@ -90,17 +93,19 @@ Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c \in ℝ$ be a sc
 
 ### Cauchy-Schwarz Inequality
 
-Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $| \vec{v} ⋅ \vec{w} | \leq \\| \vec{v} \\| \\| \vec{w} \\|$.
+Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $`| \vec{v} ⋅ \vec{w} | \leq \| \vec{v} \| \| \vec{w} \|`$.
 
 ### Triangle Inequality
 
-Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $\\| \vec{v} + \vec{w} \\| \leq \\| \vec{v} \\| + \\| \vec{w} \\|$.
+Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $`\| \vec{v} + \vec{w} \| \leq \| \vec{v} \| + \| \vec{w} \|`$.
 
 ### Angle Between Vectors
 
 The **angle** $\theta$ between two non-zero vectors $\vec{v}, \vec{w} \in ℝ^n$ is the quantity
 
-$\theta = \arccos \left( \frac{\vec{v} ⋅ \vec{w}}{\\| \vec{v} \\| \\| \vec{w} \\|} \right)$
+```math
+\theta = \arccos \left( \frac{\vec{v} ⋅ \vec{w}}{\| \vec{v} \| \| \vec{w} \|} \right)
+```
 
 ### Orthogonality
 
