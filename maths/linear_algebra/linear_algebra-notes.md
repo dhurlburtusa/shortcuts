@@ -29,8 +29,12 @@ $\\| \vec{v} \\| = \sqrt{\vec{v} ⋅ \vec{v}} = \sqrt{v_1^2 + v_2^2 + \dots + v_
 Let $\vec{v} \in ℝ^n$ be a vector and let $c \in ℝ$ be a scalar. Then
 
 <ol type="a">
-  <li>$\| c\vec{v} \| = |c| \| \vec{v} \|$</li>
-  <li>$\| \vec{v} \| = 0$ if and only if $\vec{v} = \vec{0}$</li>
+  <li>
+    $\\\| c\vec{v} \\\| = |c| \\\| \vec{v} \\\|$
+  </li>
+  <li>
+    $\\\| \vec{v} \\\| = 0$ if and only if $\vec{v} = \vec{0}$
+  </li>
 </ol>
 
 
@@ -86,14 +90,14 @@ Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c \in ℝ$ be a sc
 
 ### Cauchy-Schwarz Inequality
 
-Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $| \vec{v} ⋅ \vec{w} | \leq \\|\vec{v}\\| \\|\vec{w}\\|$.
+Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $| \vec{v} ⋅ \vec{w} | \leq \\| \vec{v} \\| \\| \vec{w} \\|$.
 
 ### Triangle Inequality
 
-Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $\\|\vec{v} + \vec{w}\\| \leq \\|\vec{v}\\| + \\|\vec{w}\\|$.
+Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $\\| \vec{v} + \vec{w} \\| \leq \\| \vec{v} \\| + \\| \vec{w} \\|$.
 
 ### Angle Between Vectors
 
 The **angle** $\theta$ between two non-zero vectors $\vec{v}, \vec{w} \in ℝ^n$ is the quantity
 
-$\theta = \arccos \left( \frac{\vec{v} ⋅ \vec{w}}{\\|\vec{v}\\| \\|\vec{w}\\|} \right)$
+$\theta = \arccos \left( \frac{\vec{v} ⋅ \vec{w}}{\\| \vec{v} \\| \\| \vec{w} \\|} \right)$
