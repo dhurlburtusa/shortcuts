@@ -113,8 +113,12 @@ Two vectors $`\vec{v}, \vec{w} \in ℝ^n`$ are called **orthogonal** if $`\vec{v
 
 ## Matrices
 
-A **matrix** is rectangular array of numbers. Those numbers are called the **entries** or **elements** of the matrix.
+A **matrix** is rectangular array of numbers. Those numbers are called the **entries** or **elements** of the matrix. We use double subscripts to specify individual entries of a matrix. The entry of the matrix $`A`$ in row $`i`$ and column $`j`$ is denoted by $`a_{i,j}`$. Another notation for this is $`[A]_{i,j}`$.
 
 The **size** of a matrix is a description of the number of rows and columns that it has. A matrix with $`m`$ rows and $`n`$ columns has size $`m \times n`$.
 
 A $`1 \times n`$ matrix is called a **row matrix** or **row vector**. An $`m \times 1`$ matrix is called a **column matrix** or **column vector**. An $`m \times m`$ matrix is called **square**.
+
+Two matrices are equal if they have the same size and all of their entries (in the same positions) are equal to each other.
+
+We use $`\mathcal{M}_{m,n}`$ to denote the set of $`m \times n`$ matrices, and the shorthand $`\mathcal{M}_n`$ for the set of $`n \times n`$ matrices.
