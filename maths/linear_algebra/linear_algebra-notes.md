@@ -24,6 +24,16 @@ The **length** of a vector $\vec{v} = \langle v_1, v_2, \dots, v_n \rangle \in �
 
 $\\| \vec{v} \\| = \sqrt{\vec{v} ⋅ \vec{v}} = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}$
 
+### Properties of Vector Length
+
+Let $\vec{v} \in ℝ^n$ be a vector and let $c \in ℝ$ be a scalar. Then
+
+<ol type="a">
+  <li>$\| c\vec{v} \| = |c| \| \vec{v} \|$</li>
+  <li>$\| \vec{v} \| = 0$ if and only if $\vec{v} = \vec{0}$</li>
+</ol>
+
+
 ### Vector Addition
 
 If $\vec{v}=\langle v_1, v_2 \rangle$ and $\vec{w}=\langle w_1, w_2 \rangle$, then $\vec{v}+\vec{w}=\langle v_1+w_1, v_2+w_2 \rangle$
