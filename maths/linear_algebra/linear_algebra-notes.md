@@ -126,3 +126,15 @@ We use $`\mathcal{M}_{m,n}`$ to denote the set of $`m \times n`$ matrices, and t
 ### Matrix Addition and Scalar Multiplication
 
 Suppose $`A`$ and $`B`$ are $`m \times n`$ matrices, and $`c \in ℝ`$ is a scalar. Then their **sum** $`A + B`$ is the matrix whose $`(i, j)`$-entry is $`a_{i,j} + b_{i,j}`$, and the **scalar multiplication** $`cA`$ is the matrix whose $`(i, j)`$-entry is $`ca_{i,j}`$.
+
+### Properties of Matrix Operations
+
+Let $`A, B, C \in \mathcal{M}_{m,n}`$ and let $`c, d \in ℝ`$ be scalars. Then
+
+<ol type="a">
+  <li>$A + B = B + A$ (commutativity)</li>
+  <li>$(A + B) + C = A + (B + C)$ (associativity)</li>
+  <li>$c(A + B) = cA + cB$ (distributivity)</li>
+  <li>$(c + d)A = cA + dA$ (distributivity)</li>
+  <li>$c(dA) = (cd)A$</li>
+</ol>
