@@ -109,4 +109,4 @@ The **angle** $`\theta`$ between two non-zero vectors $`\vec{v}, \vec{w} \in ℝ
 
 ### Orthogonality
 
-Two vectors $`\vec{v}, \vec{w} \in ℝ^n`$ are call **orthogonal** if $`\vec{v} ⋅ \vec{w} = 0`$.
+Two vectors $`\vec{v}, \vec{w} \in ℝ^n`$ are called **orthogonal** if $`\vec{v} ⋅ \vec{w} = 0`$.
