@@ -87,3 +87,7 @@ Let $\vec{v}, \vec{w}, \vec{x} \in ℝ^n$ be vectors and let $c \in ℝ$ be a sc
 ### Cauchy-Schwarz Inequality
 
 Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $| \vec{v} ⋅ \vec{w} | \leq \\|\vec{v}\\| \\|\vec{w}\\|$.
+
+### Triangle Inequality
+
+Suppose that $\vec{v}, \vec{w} \in ℝ^n$ are vectors. Then $\\|\vec{v} + \vec{w}\\| \leq \\|\vec{v}\\| + \\|\vec{w}\\|$.
