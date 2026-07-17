@@ -122,3 +122,7 @@ A $`1 \times n`$ matrix is called a **row matrix** or **row vector**. An $`m \ti
 Two matrices are equal if they have the same size and all of their entries (in the same positions) are equal to each other.
 
 We use $`\mathcal{M}_{m,n}`$ to denote the set of $`m \times n`$ matrices, and the shorthand $`\mathcal{M}_n`$ for the set of $`n \times n`$ matrices.
+
+### Matrix Addition and Scalar Multiplication
+
+Suppose $`A`$ and $`B`$ are $`m \times n`$ matrices, and $`c \in ℝ`$ is a scalar. Then their **sum** $`A + B`$ is the matrix whose $`(i, j)`$-entry is $`a_{i,j} + b_{i,j}`$, and the **scalar multiplication** $`cA`$ is the matrix whose $`(i, j)`$-entry is $`ca_{i,j}`$.
