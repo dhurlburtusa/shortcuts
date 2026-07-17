@@ -138,3 +138,13 @@ Let $`A, B, C \in \mathcal{M}_{m,n}`$ and let $`c, d \in ℝ`$ be scalars. Then
   <li>$(c + d)A = cA + dA$ (distributivity)</li>
   <li>$c(dA) = (cd)A$</li>
 </ol>
+
+### Matrix Multiplication
+
+If $`A`$ is an $`m \times n`$ matrix and $`B`$ is an $`n \times p`$ matrix, then their **product** $`AB`$ is the $`m \times p`$ matrix whose $`(i, j)`$-entry is:
+
+```math
+[AB]_{i,j} = a_{i,1}b_{1,j} + a_{i,2}b_{2,j} + \dots + a_{i,n}b_{n,j}.
+```
+
+The matrix product $`AB`$ only makes sense if $`A`$ has the same number of columns as $`B`$ has rows. The inner dimensions of the matrices must be equal, and the outer dimensions of the matrices will be the dimensions of the matrix product.
