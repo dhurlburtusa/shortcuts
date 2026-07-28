@@ -5,3 +5,5 @@ WebAssembly is a type of code that can be run in modern web browsers. It is a lo
 WebAssembly is designed to complement and run alongside JavaScript — using the WebAssembly JavaScript APIs, you can load WebAssembly modules into a JavaScript app and share functionality between the two.
 
 WebAssembly provides a way for code written in multiple languages to run on the web at near-native speed, and it enables client apps to run on the web that previously could not.
+
+See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAssembly.
