@@ -7,3 +7,12 @@ WebAssembly is designed to complement and run alongside JavaScript — using the
 WebAssembly provides a way for code written in multiple languages to run on the web at near-native speed, and it enables client apps to run on the web that previously could not.
 
 See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAssembly.
+
+## WebAssembly Goals
+
+* Be fast, efficient, and portable.
+* Be readable and debuggable.
+* Keep secure (see https://webassembly.org/docs/security/).
+* Don't break the web.
+
+See https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts#webassembly_goals and https://webassembly.org/docs/high-level-goals/ for details.
