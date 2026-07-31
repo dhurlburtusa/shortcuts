@@ -67,7 +67,7 @@ See [Register Names Explained - x86-64 General Purpose Registers (RAX, RBX, RCX,
 
 **mov**:
 
-Moves (aka copies) some value to a destination register. A literal value can be copied, the value of some register can be copied, etc.
+Moves (aka copies) some value to a register or memory. A literal value can be copied, the value of some register can be copied, the value of some memory, etc.
 
 **add**/**sub**:
 
