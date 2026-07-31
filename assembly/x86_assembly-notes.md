@@ -76,3 +76,7 @@ Adds/subtracts some value and saves the result in a register.
 **inc**/**dec**:
 
 Increments/decrements the value of some register.
+
+**lea**:
+
+Load effective address. That is, load the memory address into some register.
