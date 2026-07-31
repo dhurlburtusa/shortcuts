@@ -62,3 +62,9 @@ In 2003, AMD created the 64-bit architecture. Intel followed soon after.
 There are a bunch of additional features and special registers like SIMD instructions and vector registers designed for high-throughput computation.
 
 See [Register Names Explained - x86-64 General Purpose Registers (RAX, RBX, RCX, RDX, RDI, RSI)](https://www.youtube.com/watch?v=5SICv-2tMgQ) for details.
+
+## Instructions
+
+**mov**:
+
+Moves (aka copies) some value to a destination register. A literal value can be copied, the value of some register can be copied, etc.
