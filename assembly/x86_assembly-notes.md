@@ -1,5 +1,7 @@
 # x86 Assembly Notes
 
+See https://en.wikipedia.org/wiki/X86_assembly_language.
+
 ## Registers
 
 The Intel 8008 had 4 8-bit general purpose (GP) registers named **A**, **B**, **C**, **D**.
@@ -64,6 +66,8 @@ There are a bunch of additional features and special registers like SIMD instruc
 See [Register Names Explained - x86-64 General Purpose Registers (RAX, RBX, RCX, RDX, RDI, RSI)](https://www.youtube.com/watch?v=5SICv-2tMgQ) for details.
 
 ## Instructions
+
+See https://en.wikipedia.org/wiki/List_of_x86_instructions.
 
 **mov**:
 
