@@ -67,7 +67,7 @@ See [Register Names Explained - x86-64 General Purpose Registers (RAX, RBX, RCX,
 
 ## Instructions
 
-See https://en.wikipedia.org/wiki/List_of_x86_instructions.
+See https://en.wikipedia.org/wiki/List_of_x86_instructions or https://www.felixcloutier.com/x86/.
 
 **mov**:
 
