@@ -2,6 +2,10 @@
 
 See https://en.wikipedia.org/wiki/X86_assembly_language and https://en.wikibooks.org/wiki/X86_Assembly.
 
+## Guides
+
+- [x86 Assembly Guide](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
+
 ## Courses
 
 - [Learn Assembly for Beginners | x86-64 Tutorials](https://www.youtube.com/playlist?list=PL9o2C-4xGfjHl5PF-Xt-yWH2zc4wjJ3AW)
