@@ -2,6 +2,11 @@
 
 See https://en.wikipedia.org/wiki/X86_assembly_language and https://en.wikibooks.org/wiki/X86_Assembly.
 
+## Courses
+
+- [Learn Assembly for Beginners | x86-64 Tutorials](https://www.youtube.com/playlist?list=PL9o2C-4xGfjHl5PF-Xt-yWH2zc4wjJ3AW)
+- [x86 Assembly with NASM](https://www.youtube.com/playlist?list=PL2EF13wm-hWCoj6tUBGUmrkJmH1972dBB)
+
 ## Registers
 
 The Intel 8008 had 4 8-bit general purpose (GP) registers named **A**, **B**, **C**, **D**.
