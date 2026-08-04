@@ -11,13 +11,13 @@ See https://en.wikipedia.org/wiki/X86_assembly_language and https://en.wikibooks
 
 The Intel 8008 had 4 8-bit general purpose (GP) registers named **A**, **B**, **C**, **D**.
 
-- **A**: 8-bit GP
-- **B**: 8-bit GP
-- **C**: 8-bit GP
-- **D**: 8-bit GP
+- **A**: 8-bit GP (accumulator)
+- **B**: 8-bit GP (base)
+- **C**: 8-bit GP (counter)
+- **D**: 8-bit GP (data)
 
-- **BP**: 8-bit? base pointer
-- **SP**: 8-bit? stack pointer
+- **BP**: 8-bit (base pointer)
+- **SP**: 8-bit (stack pointer)
 
 The Intel 8086 extended the 8008's 8-bit GP registers to 16-bit. The low byte and high byte could be used separately or the whole 16 bits could be used. **A**, **B**, **C**, **D** were renamed **AL**, **BL**, **CL**, **DL** where the **L** meant lower. **AH**, **BH**, **CH**, and **DH** became the higher portion. **AX**, **BX**, **CX**, and **DX** were the full 16 bits.
 
@@ -68,7 +68,7 @@ In 2003, AMD created the 64-bit architecture. Intel followed soon after.
 
 There are a bunch of additional features and special registers like SIMD instructions and vector registers designed for high-throughput computation.
 
-See [Register Names Explained - x86-64 General Purpose Registers (RAX, RBX, RCX, RDX, RDI, RSI)](https://www.youtube.com/watch?v=5SICv-2tMgQ) for details.
+See [x86 Assembly/X86 Architecture](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture) and [Register Names Explained - x86-64 General Purpose Registers (RAX, RBX, RCX, RDX, RDI, RSI)](https://www.youtube.com/watch?v=5SICv-2tMgQ) for details.
 
 ## Instructions
 
