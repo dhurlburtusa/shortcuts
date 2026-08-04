@@ -1,6 +1,6 @@
 # x86 Assembly Notes
 
-See https://en.wikipedia.org/wiki/X86_assembly_language.
+See https://en.wikipedia.org/wiki/X86_assembly_language and https://en.wikibooks.org/wiki/X86_Assembly.
 
 ## Registers
 
