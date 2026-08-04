@@ -90,6 +90,12 @@ Adds/subtracts some value and saves the result in a register.
 
 Increments/decrements the value of some register.
 
+**int**:
+
+**INT** is widely used in real mode. In protected mode, **INT** is a privileged instruction.
+
+See https://en.wikipedia.org/wiki/INT_(x86_instruction).
+
 **lea**:
 
 Load effective address. That is, load the memory address into some register.
