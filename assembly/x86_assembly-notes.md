@@ -90,6 +90,10 @@ Increments/decrements the value of some register.
 
 Load effective address. That is, load the memory address into some register.
 
+## Instruction Performance
+
+See [Instruction tables: Lists of instruction latencies, throughputs and micro-operation breakdowns for Intel, AMD and VIA CPUs](https://www.agner.org/optimize/#manual_instr_tab).
+
 ## System V ABI Convention
 
 See https://wiki.osdev.org/Calling_Conventions for details.
