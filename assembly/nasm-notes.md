@@ -13,7 +13,7 @@ See [NASM website](https://www.nasm.us/).
 
 **System Calls**
 
-MacOS uses different IDs for system calls. For example, `0x2000001` for `exit`. (I
+MacOS uses different IDs for system calls. For example, `0x2000001` for `exit`. (I have not found a document defining all the system call IDs for MaxOS.)
 
 **Object File Format**
 
