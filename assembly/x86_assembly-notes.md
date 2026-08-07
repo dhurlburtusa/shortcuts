@@ -76,7 +76,7 @@ See [x86 Assembly/X86 Architecture](https://en.wikibooks.org/wiki/X86_Assembly/X
 
 ## Instructions
 
-See https://en.wikipedia.org/wiki/List_of_x86_instructions, https://faculty.nps.edu/cseagle/assembly/sys_call.html, or https://www.felixcloutier.com/x86/.
+See https://en.wikipedia.org/wiki/List_of_x86_instructions or https://www.felixcloutier.com/x86/.
 
 **mov**:
 
