@@ -8,6 +8,8 @@ WebAssembly provides a way for code written in multiple languages to run on the 
 
 WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.
 
+WebAssembly (abbreviated Wasm) is a safe, portable, low-level code format designed for efficient execution and compact representation.
+
 See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAssembly.
 
 ## Design Goals
