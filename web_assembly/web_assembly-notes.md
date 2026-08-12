@@ -6,6 +6,8 @@ WebAssembly is designed to complement and run alongside JavaScript — [using th
 
 WebAssembly provides a way for code written in multiple languages to run on the web at near-native speed, and it enables client apps to run on the web that previously could not.
 
+WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.
+
 See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAssembly.
 
 ## WebAssembly Goals
