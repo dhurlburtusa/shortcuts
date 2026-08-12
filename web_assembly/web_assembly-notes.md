@@ -10,7 +10,7 @@ WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based 
 
 See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAssembly.
 
-## WebAssembly Goals
+## Design Goals
 
 * Be fast, efficient, and portable.
 * Be readable and debuggable.
@@ -19,7 +19,7 @@ See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAss
 
 See https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts#webassembly_goals and https://webassembly.org/docs/high-level-goals/ for details.
 
-## WebAssembly Specifications
+## Specifications
 
 * Core: https://webassembly.github.io/spec/core/
 * Embedder:
