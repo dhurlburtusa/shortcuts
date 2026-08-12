@@ -28,10 +28,23 @@ See https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts#webasse
 
 ## Specifications
 
-* Core: https://webassembly.github.io/spec/core/
-* Embedder:
-  * JavaScript Embedding: https://webassembly.github.io/spec/js-api/
-  * Web Embedding: https://webassembly.github.io/spec/web-api/
-* Metadata: https://webassembly.github.io/spec/metadata/code/
+At its core, Wasm is a virtual instruction set architecture (virtual ISA).
+
+- Core:
+  + Defines the semantics of WebAssembly modules independent from a concrete embedding.
+  + https://webassembly.github.io/spec/core/
+- Embedder:
+  + Defines application programming interfaces (APIs) enabling the use of WebAssembly modules in concrete embedding environments.
+  + JavaScript Embedding:
+    * Defines JavaScript classes and objects for accessing WebAssembly from within JavaScript, including methods for validation, compilation, instantiation, and classes for representing and manipulating imports and exports as JavaScript objects.
+    * https://webassembly.github.io/spec/js-api/
+  + Web Embedding:
+    * Defines extensions to the JavaScript API made available specifically in web browsers, in particular, an interface for streaming compilation and instantiation from origin-bound Response types.
+    * https://webassembly.github.io/spec/web-api/
+- Metadata:
+  + Defines the format and semantics of extra information attached to a WebAssembly module.
+  + Code Metadata:
+    * Defines metadata attached to instructions.
+    * https://webassembly.github.io/spec/metadata/code/
 
 See https://webassembly.github.io/spec/.
