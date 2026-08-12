@@ -14,12 +14,17 @@ See https://webassembly.org/ and https://developer.mozilla.org/en-US/docs/WebAss
 
 ## Design Goals
 
+Wasm's main goal is to enable high performance applications on the Web, but it does not make any Web-specific assumptions or provide Web-specific features, so it can be employed in other environments as well.
+
 * Be fast, efficient, and portable.
+* Hardware-independent.
+* Language-independent.
+* Platform-independent.
 * Be readable and debuggable.
 * Keep secure (see https://webassembly.org/docs/security/).
 * Don't break the web.
 
-See https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts#webassembly_goals and https://webassembly.org/docs/high-level-goals/ for details.
+See https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts#webassembly_goals, https://webassembly.org/docs/high-level-goals/, and https://webassembly.github.io/spec/core/intro/introduction.html#design-goals for details.
 
 ## Specifications
 
