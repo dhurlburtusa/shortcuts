@@ -6,7 +6,7 @@ Assets for Blender can be retrieved from several places.
 - https://extensions.blender.org/
 - https://ryankingart.gumroad.com/
 - https://superhivemarket.com/
-- https://www.blenderkit.com/
+- https://www.blendkit.com/
 - https://www.turbosquid.com/
 - https://www.cgtrader.com/
 - https://cgdream.ai/
