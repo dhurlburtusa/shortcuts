@@ -9,4 +9,6 @@ Other operations may also be allowed, often including a **peek** or front operat
 
 The operations of a queue make it a first-in-first-out (**FIFO**) data structure as the first element added to the queue is the first one removed.
 
+A queue is an example of a linear data structure, or more abstractly a sequential collection.
+
 See https://en.wikipedia.org/wiki/Queue_(abstract_data_type) for details.
