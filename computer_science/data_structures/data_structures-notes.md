@@ -37,3 +37,14 @@ An abstract data type (ADT) is a mathematical model for data types, defined by i
 - Stack
 - Tree
 - Tuple
+
+### Linear
+
+- Arrays
+  + Array
+  + Associative array
+- Lists
+  + Array list
+  + Linked lists
+    * Doubly linked list
+    * Singly linked list
