@@ -13,6 +13,24 @@ See https://en.wikipedia.org/wiki/Data_structure for details.
 - Lookup
 - Mutation
 
+## Properties
+
+- Access
+  + Constant-time
+  + Sublinear
+  + Linear
+- Deletion
+  + Constant-time
+  + Sublinear
+  + Linear
+- Insertion
+  + Constant-time
+  + Sublinear
+  + Linear
+- Ordered
+- Sorted
+- Unique
+
 ## Types
 
 See https://en.wikipedia.org/wiki/List_of_data_structures for a list of well-known data structures.
