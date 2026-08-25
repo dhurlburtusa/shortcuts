@@ -48,3 +48,30 @@ An abstract data type (ADT) is a mathematical model for data types, defined by i
   + Linked lists
     * Doubly linked list
     * Singly linked list
+
+### Trees
+
+- Application-specific trees
+  + Abstract syntax tree
+  + Decision tree
+  + etc
+- B-trees
+  + B-tree
+  + B+ tree
+  + etc
+- Binary
+  + Binary tree
+  + Red-black tree
+  + etc
+- Bit-slice trees
+  + Trie
+  + etc
+- Heaps
+  + Heap
+  + etc
+- Multi-way trees
+  + K-ary tree
+  + etc
+- Space-partitioning trees
+  + Quadtree
+  + Octree
