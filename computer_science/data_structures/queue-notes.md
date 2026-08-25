@@ -12,3 +12,11 @@ The operations of a queue make it a first-in-first-out (**FIFO**) data structure
 A queue is an example of a linear data structure, or more abstractly a sequential collection.
 
 See https://en.wikipedia.org/wiki/Queue_(abstract_data_type) for details.
+
+## Implementation
+
+A queue may be implemented as circular buffers and linked lists, or by using both the stack pointer and the base pointer.
+
+- Linked list
+  + Doubly linked list has O(1) insertion and deletion at both ends.
+  + Singly linked list has O(1) insertion and deletion at one end. However, keeping a pointer to the last node in addition to the first node will enable it to be O(1) at both ends.
