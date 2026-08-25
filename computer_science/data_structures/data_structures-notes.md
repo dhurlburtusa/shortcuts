@@ -12,3 +12,7 @@ See https://en.wikipedia.org/wiki/Data_structure for details.
 - Traversal
 - Lookup
 - Mutation
+
+## Types
+
+See https://en.wikipedia.org/wiki/List_of_data_structures for a list of well-known data structures.
