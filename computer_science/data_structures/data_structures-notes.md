@@ -38,6 +38,15 @@ An abstract data type (ADT) is a mathematical model for data types, defined by i
 - Tree
 - Tuple
 
+### Graphs
+
+- Adjacency matrix
+- Graph
+- Hypergraph
+- Multigraph
+- Scene graph
+- etc
+
 ### Hash-based
 
 - Bloom filter
