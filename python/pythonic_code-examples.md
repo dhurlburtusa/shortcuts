@@ -14,3 +14,9 @@ for item in some_collection:
 for index, item in enumerate(some_collection):
   ...
 ```
+
+## Swapping Values
+
+```python
+a, b = b, a
+```
