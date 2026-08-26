@@ -10,6 +10,8 @@ Use dict and list comprehensions for simple cases.
 squared = [x*2 for x in numbers]
 ```
 
+See https://docs.python.org/3/reference/expressions.html#comprehensions.
+
 ## Loops
 
 Use a `for`/`in` loop.
