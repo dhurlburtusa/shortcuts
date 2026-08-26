@@ -2,6 +2,12 @@
 
 Pythonic code means writing code the way experienced Python developers expect. It uses the language's core features to be clear, short, and fast.
 
+## Comparisons
+
+Comparisons can be chained arbitrarily, e.g., `x < y <= z` is equivalent to `x < y and y <= z`, except that `y` is evaluated only once (but in both cases `z` is not evaluated at all when `x < y` is found to be false).
+
+See https://docs.python.org/3/reference/expressions.html#comparisons.
+
 ## Comprehensions
 
 Use dict, list, and set comprehensions for simple cases.
