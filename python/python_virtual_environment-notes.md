@@ -1,5 +1,6 @@
 # Python Virtual Environment Notes
 
+A Python virtual environment is a cooperatively isolated runtime environment that allows Python users and applications to install and upgrade Python distribution packages without interfering with the behavior of other Python applications running on the same system.
 
 ## Creation
 
