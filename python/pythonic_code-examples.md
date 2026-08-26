@@ -12,6 +12,15 @@ squared = [x*2 for x in numbers]
 
 See https://docs.python.org/3/reference/expressions.html#comprehensions.
 
+## Inclusion
+
+Checks if an item is included in a collection. Results in a boolean. Commonly used in an if statement.
+
+```python
+if item in some_collection:
+  ...
+```
+
 ## Loops
 
 Use a `for`/`in` loop.
