@@ -26,15 +26,6 @@ results = {c for c in 'abracadabra' if c not in 'abc'}
 
 See https://docs.python.org/3/reference/expressions.html#comprehensions.
 
-## Inclusion
-
-Checks if an item is included in a collection. Results in a boolean. Commonly used in an if statement.
-
-```python
-if item in some_collection:
-  ...
-```
-
 ## Loops
 
 Use a `for`/`in` loop.
@@ -47,6 +38,19 @@ for item in some_collection:
 for index, item in enumerate(some_collection):
   ...
 ```
+
+## Membership
+
+Checks if an item is a member of a collection. Results in a boolean. Commonly used in an if statement.
+
+```python
+if item in some_collection:
+  ...
+if item not in some_collection:
+  ...
+```
+
+See https://docs.python.org/3/reference/expressions.html#membership-test-operations.
 
 ## Swapping Values
 
