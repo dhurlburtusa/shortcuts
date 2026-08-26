@@ -5,3 +5,9 @@ Here is a collection of things I find odd about Python, especially compared to o
 ## Length of Data Types
 
 Instead of a `length` property on the object (i.e., `dict`, `list`, range, `set`, string (`str`), tuple etc), one uses the `len` built-in function. Fortunately, the it is O(1) since it stores the length internally according to AI.
+
+## Raw Strings
+
+Raw strings may not end in an odd number of `\` characters.
+
+See https://docs.python.org/3/faq/programming.html#faq-programming-raw-string-backslash.
