@@ -11,6 +11,6 @@ for item in some_collection:
   ...
 
 # With index:
-for item, index in enumerate(some_collection):
+for index, item in enumerate(some_collection):
   ...
 ```
