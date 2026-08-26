@@ -4,10 +4,18 @@ Pythonic code means writing code the way experienced Python developers expect. I
 
 ## Comprehensions
 
-Use dict and list comprehensions for simple cases.
+Use dict, list, and set comprehensions for simple cases.
 
 ```python
+# dict
+squared = {n: n ** 2 for n in range(10)}
+
+# list
 squared = [x*2 for x in numbers]
+eight_bit_even_hex = ['{:#04x}'.format(x) for x in range(256) if x % 2 == 0]
+
+# set
+results = {c for c in 'abracadabra' if c not in 'abc'}
 ```
 
 See https://docs.python.org/3/reference/expressions.html#comprehensions.
