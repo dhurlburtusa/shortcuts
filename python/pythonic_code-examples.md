@@ -39,3 +39,7 @@ for index, item in enumerate(some_collection):
 ```python
 a, b = b, a
 ```
+
+## More
+
+See https://github.com/jerry-git/learn-python3/blob/master/README.md#idiomatic-python.
