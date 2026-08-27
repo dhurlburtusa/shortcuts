@@ -8,6 +8,6 @@ See https://en.wikipedia.org/wiki/Linked_list for details.
 
 ## XOR-Linking
 
-A technique to decrease the storage requirements for doubly linked lists.
+A technique to decrease the storage requirements for doubly linked lists. However, this technique requires the ability to do bit operations on addresses, and therefore may not be available in some high-level languages.
 
 See https://en.wikipedia.org/wiki/XOR_linked_list for details.
