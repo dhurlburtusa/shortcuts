@@ -6,7 +6,7 @@ Linked lists can be used to implement several other common abstract data types, 
 
 See https://en.wikipedia.org/wiki/Linked_list for details.
 
-## XOR Doubly Linked List
+## XOR-Linking
 
 A technique to decrease the storage requirements for doubly linked lists.
 
