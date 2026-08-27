@@ -5,3 +5,9 @@ A linked list is a linear collection of data elements whose order is not given b
 Linked lists can be used to implement several other common abstract data types, including lists, stacks, queues, associative arrays, and S-expressions.
 
 See https://en.wikipedia.org/wiki/Linked_list for details.
+
+## XOR Doubly Linked List
+
+A technique to decrease the storage requirements for doubly linked lists.
+
+See https://en.wikipedia.org/wiki/XOR_linked_list for details.
