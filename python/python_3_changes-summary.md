@@ -76,3 +76,24 @@ Released on December 3, 2008.
     * Removed: `sys.exitfunc`, `sys.exc_clear`, `sys.exc_type`, `sys.exc_value`, `sys.exc_traceback`.
 
 See https://docs.python.org/3/whatsnew/3.0.html for more details.
+
+## Python 3.1
+
+Summary of changes from version 3.0.
+
+Released on June 27, 2009.
+
+### Language Changes
+
+- Directories and zip archives containing a `__main__.py` file can now be executed directly by passing their name to the interpreter. The directory/zipfile is automatically inserted as the first entry in [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path).
+
+### Standard Library Changes
+
+- Format specifier for thousands separator:
+  + The built-in [`format`](https://docs.python.org/3/library/functions.html#format) function and the [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format) method use a mini-language that now includes a simple, non-locale aware way to format a number with a thousands separator.
+- Modules:
+  + [`collections`](https://docs.python.org/3/library/collections.html) Module:
+    * Added [`OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
+
+See https://docs.python.org/3/whatsnew/3.1.html for more details.
+
