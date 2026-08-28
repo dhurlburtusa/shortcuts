@@ -24,8 +24,15 @@ Released on December 3, 2008.
   + [`dict`](https://docs.python.org/3/library/stdtypes.html#dict):
     * [`dict.keys`](https://docs.python.org/3/library/stdtypes.html#dict.keys), [`dict.items`](https://docs.python.org/3/library/stdtypes.html#dict.items), and [`dict.values`](https://docs.python.org/3/library/stdtypes.html#dict.values) return [views](https://docs.python.org/3/library/stdtypes.html#dict-views) instead of lists.
     * `dict.iterkeys`, `dict.iteritems`, and `dict.itervalues` methods are no longer supported.
-- [`sys`](https://docs.python.org/3/library/sys.html) Module:
-  + `sys.maxint` constant was removed. Consider using [`sys.maxsize`](https://docs.python.org/3/library/sys.html#sys.maxsize) in its place.
+- Modules:
+  + The new module was removed.
+  + [`operator`](https://docs.python.org/3/library/operator.html) Module:
+    * Removed: `sequenceIncludes` and `isCallable`.
+  + [`os`](https://docs.python.org/3/library/os.html) Module:
+    * The functions `os.tmpnam`, `os.tempnam`, and `os.tmpfile` have been removed in favor of the [`tempfile`](https://docs.python.org/3/library/tempfile.html) module.
+  + [`sys`](https://docs.python.org/3/library/sys.html) Module:
+    * `sys.maxint` constant was removed. Consider using [`sys.maxsize`](https://docs.python.org/3/library/sys.html#sys.maxsize) in its place.
+    * Removed: `sys.exitfunc`, `sys.exc_clear`, `sys.exc_type`, `sys.exc_value`, `sys.exc_traceback`.
 
 ### Language Changes
 
