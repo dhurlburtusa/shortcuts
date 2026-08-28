@@ -39,6 +39,8 @@ Released on December 3, 2008.
 - The ordering comparison operators (`<`, `<=`, `>=`, `>`) raise a `TypeError` exception when the operands don’t have a meaningful natural ordering.
 - Essentially, long renamed to [`int`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 - An expression like `1/2` returns a float. Use `1//2` to get the truncating behavior.
+- Exceptions:
+  + See [this](https://docs.python.org/3/whatsnew/3.0.html#changes-to-exceptions) for details.
 - Text vs Data instead of Unicode vs 8-bit:
   + Python 3.0 uses the concepts of text and (binary) data instead of Unicode strings and 8-bit strings.
   + The type used to hold text is [`str`](https://docs.python.org/3/library/stdtypes.html#str), the type used to hold data is [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes).
