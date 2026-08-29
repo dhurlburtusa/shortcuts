@@ -91,6 +91,11 @@ Released on June 27, 2009.
 
 - Format specifier for thousands separator:
   + The built-in [`format`](https://docs.python.org/3/library/functions.html#format) function and the [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format) method use a mini-language that now includes a simple, non-locale aware way to format a number with a thousands separator.
+- Built-In Functions:
+  + The `string.maketrans` function is deprecated and is replaced by new static methods, [`bytes.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytes.maketrans) and [`bytearray.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytearray.maketrans).
+- Built-In Types:
+  + Added [`int.bit_length`](https://docs.python.org/3/library/stdtypes.html#int.bit_length).
+  + [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format): The fields in format strings can now be automatically numbered. See [format string syntax](https://docs.python.org/3/library/string.html#formatstrings).
 - Modules:
   + [`collections`](https://docs.python.org/3/library/collections.html) Module:
     * Added [`OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
