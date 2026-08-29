@@ -86,19 +86,28 @@ Released on June 27, 2009.
 ### Language Changes
 
 - Directories and zip archives containing a `__main__.py` file can now be executed directly by passing their name to the interpreter. The directory/zipfile is automatically inserted as the first entry in [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path).
+- The syntax of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement now allows multiple context managers in a single statement.
+- Python now uses David Gay’s algorithm for finding the shortest floating-point representation that doesn’t change its value.
 
 ### Standard Library Changes
 
 - Format specifier for thousands separator:
   + The built-in [`format`](https://docs.python.org/3/library/functions.html#format) function and the [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format) method use a mini-language that now includes a simple, non-locale aware way to format a number with a thousands separator.
 - Built-In Functions:
+  + `round(x, n)` now returns an integer if `x` is an integer. Previously it returned a float.
   + The `string.maketrans` function is deprecated and is replaced by new static methods, [`bytes.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytes.maketrans) and [`bytearray.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytearray.maketrans).
 - Built-In Types:
+  + Added [`bytearray.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytes.maketrans).
+  + Added [`bytes.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytearray.maketrans).
   + Added [`int.bit_length`](https://docs.python.org/3/library/stdtypes.html#int.bit_length).
   + [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format): The fields in format strings can now be automatically numbered. See [format string syntax](https://docs.python.org/3/library/string.html#formatstrings).
 - Modules:
   + [`collections`](https://docs.python.org/3/library/collections.html) Module:
-    * Added [`OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
+    * Added [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
+    * Added [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter) class.
+    * Added [`collections.deque.maxlen`](https://docs.python.org/3/library/collections.html#collections.deque.maxlen) method.
+  + [`contextlib`](https://docs.python.org/3/library/contextlib.html) Module:
+    * Deprecated: `contextlib.nested`.
 
 See https://docs.python.org/3/whatsnew/3.1.html for more details.
 
