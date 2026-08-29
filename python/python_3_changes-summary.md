@@ -102,12 +102,18 @@ Released on June 27, 2009.
   + Added [`int.bit_length`](https://docs.python.org/3/library/stdtypes.html#int.bit_length).
   + [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format): The fields in format strings can now be automatically numbered. See [format string syntax](https://docs.python.org/3/library/string.html#formatstrings).
 - Modules:
+  + Added: [`tkinter.ttk`](https://docs.python.org/3/library/tkinter.ttk.html) module.
+  + The [`gzip.GzipFile`](https://docs.python.org/3/library/gzip.html#gzip.GzipFile) and [`bz2.BZ2File`](https://docs.python.org/3/library/bz2.html#bz2.BZ2File) classes now support the context management protocol
   + [`collections`](https://docs.python.org/3/library/collections.html) Module:
     * Added [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
     * Added [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter) class.
     * Added [`collections.deque.maxlen`](https://docs.python.org/3/library/collections.html#collections.deque.maxlen) method.
   + [`contextlib`](https://docs.python.org/3/library/contextlib.html) Module:
     * Deprecated: `contextlib.nested`.
+  + [`decimal`](https://docs.python.org/3/library/decimal.html) Module:
+    * Added [`decimal.Decimal.from_float`](https://docs.python.org/3/library/decimal.html#decimal.Decimal.from_float) and [`decimal.Context.create_decimal_from_float`](https://docs.python.org/3/library/decimal.html#decimal.Context.create_decimal_from_float) methods.
+
+Note: Many other changes not currently documented here.
 
 See https://docs.python.org/3/whatsnew/3.1.html for more details.
 
