@@ -4,6 +4,15 @@ C is a general-purpose, high-level language that was originally developed by Den
 
 In 1978, Brian Kernighan and Dennis Ritchie produced the first publicly available description of C, now known as the K&R standard.
 
+## What is C used for?
+
+C is often used to create programs that need to run fast and work closely with the computer.
+
+- Operating systems, such as parts of Windows, Linux, and macOS.
+- Programs inside devices like cars, TVs, and home electronics.
+- Software that needs to be fast, including databases and system tools.
+- Game engines and programs that handle graphics.
+- Core libraries that other programming languages rely on.
 
 ## Keywords
 
