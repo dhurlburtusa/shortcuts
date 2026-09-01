@@ -14,6 +14,14 @@ C is often used to create programs that need to run fast and work closely with t
 - Game engines and programs that handle graphics.
 - Core libraries that other programming languages rely on.
 
+## Difference between C and C++
+
+- C++ was developed as an extension of C, and the syntax is often similar.
+- C is mainly a procedural language (you build programs with functions).
+- C++ supports classes and objects (often used for object-oriented programming).
+
 ## Keywords
 
 See https://en.cppreference.com/w/c/keyword.
+
+Note: Some of the above is borrowed from https://www.w3schools.com/c/c_intro.php.
