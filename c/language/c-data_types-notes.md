@@ -46,3 +46,14 @@ must be declared.
   + Atomic types (since C11)
 
 See https://cppreference.com/c/language/type for details.
+
+## Type Groups
+
+- Object types: all types that aren't function types
+- Character types: `char`, `signed char`, `unsigned char`
+- Integer types: `char`, signed integer types, unsigned integer types, enumerated types
+- Real types: integer types and real floating types
+- Arithmetic types: integer types and floating types
+- Scalar types: arithmetic types, pointer types, and `nullptr_t` (since C23)
+- Aggregate types: Array types and structure types
+- Derived declarator types: array types, function types, and pointer types
