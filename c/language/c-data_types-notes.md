@@ -28,7 +28,7 @@ must be declared.
     * Bit-precise: `_BitInt(N)` (since C23)
     * Extended: implementation defined, e.g., `__int128`
   + Unsigned Integer Types:
-    * Standard: `_Bool` (since C99), `unsigned char`, `unsigned short`, `unsigned int`, `unsigned long`, `unsigned long long` (since C99)
+    * Standard: `_Bool` (since C99, until C23), `bool` (since C23), `unsigned char`, `unsigned short`, `unsigned int`, `unsigned long`, `unsigned long long` (since C99)
     * Bit-precise: `unsigned _BitInt(N)` (since C23)
     * Extended: implementation defined, e.g., `__uint128`
   + Floating-Point Types:
