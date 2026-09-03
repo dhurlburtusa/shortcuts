@@ -57,3 +57,11 @@ See https://cppreference.com/c/language/type for details.
 - Scalar types: arithmetic types, pointer types, and `nullptr_t` (since C23)
 - Aggregate types: Array types and structure types
 - Derived declarator types: array types, function types, and pointer types
+
+## Typedef Declaration
+
+The typedef declaration provides a way to declare an identifier as a type alias, to be used to replace a possibly complex type name. The keyword `typedef` is used in a declaration.
+
+```c
+typedef int int_t;
+```
