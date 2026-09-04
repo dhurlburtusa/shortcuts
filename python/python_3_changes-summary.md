@@ -134,8 +134,10 @@ Released on June 27, 2009.
     * Deprecated: `contextlib.nested`.
   + [`decimal`](https://docs.python.org/3/library/decimal.html) Module:
     * Added [`decimal.Decimal.from_float`](https://docs.python.org/3/library/decimal.html#decimal.Decimal.from_float) and [`decimal.Context.create_decimal_from_float`](https://docs.python.org/3/library/decimal.html#decimal.Context.create_decimal_from_float) methods.
+  + [`functools`](https://docs.python.org/3/library/functools.html) Module:
+    * [`partial` objects](https://docs.python.org/3/library/functools.html#partial-objects) can now be pickled.
   + [`itertools`](https://docs.python.org/3/library/itertools.html) Module:
-    * Added [`itertools.combinations_with_replacement`](https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement) and [`itertools.compress`](https://docs.python.org/3/library/itertools.html#itertools.compress) methods.
+    * Added [`itertools.combinations_with_replacement`](https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement) and [`itertools.compress`](https://docs.python.org/3/library/itertools.html#itertools.compress) functions.
     * Added `step` parameter to [`itertools.count`](https://docs.python.org/3/library/itertools.html#itertools.count).
   + [`logging`](https://docs.python.org/3/library/logging.html) Module:
     * Added [`NullHandler`](https://docs.python.org/3/library/logging.handlers.html#nullhandler) class.
@@ -143,10 +145,36 @@ Released on June 27, 2009.
   + [`pdb`](https://docs.python.org/3/library/pdb.html) Module:
     * Added `skip` parameter to [`pdb.Pdb`](https://docs.python.org/3/library/pdb.html#pdb.Pdb).
     * Can now access and display source code loaded via [`zipimport`](https://docs.python.org/3/library/zipimport.html) (or any other conformant [PEP 302](https://peps.python.org/pep-0302/) loader).
+  + [`pydoc`](https://docs.python.org/3/library/pydoc.html) Module:
+    * Added `pydoc` help topics for symbols so that `help('@')` works as expected in the interactive environment.
   + [`re`](https://docs.python.org/3/library/re.html) Module:
     * Added optional `flags` parameter to [`re.split`](https://docs.python.org/3/library/re.html#re.split), [`re.sub`](https://docs.python.org/3/library/re.html#re.sub), and [`re.subn`](https://docs.python.org/3/library/re.html#re.subn).
   + [`runpy`](https://docs.python.org/3/library/runpy.html) Module:
     * Added ability to execute packages by looking for a `__main__` submodule.
+  + [`unittest`](https://docs.python.org/3/library/unittest.html) Module:
+    * Added ability to [skip tests and to declare expected failures](https://docs.python.org/3/library/unittest.html#skipping-tests-and-expected-failures).
+    * To [`unittest.TestCase`](https://docs.python.org/3/library/unittest.html#unittest.TestCase):
+      - Added several assertion methods:
+        + [`assertGreater`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertGreater)
+        + [`assertGreaterEqual`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertGreaterEqual)
+        + [`assertIs`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIs)
+        + [`assertIsNot`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIsNot)
+        + [`assertIsNone`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIsNone)
+        + [`assertIsNotNone`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIsNotNone)
+        + [`assertIn`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIn)
+        + [`assertNotIn`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertNotIn)
+        + [`assertLess`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertLess)
+        + [`assertLessEqual`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertLessEqual)
+        + [`assertRaisesRegexp`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaisesRegex)
+        + [`assertRegex`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRegex)
+      - Added the [automatic calling of type-specific equality function](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addTypeEqualityFunc).
+      - Added [`addCleanup`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addCleanup) and [`doCleanups`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.doCleanups)
+      - Added the ability to use [`assertRaises`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises) as a context manager.
+      - Added class attribute [`longMessage`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.longMessage).
+    * To [`unittest.TestResult`](https://docs.python.org/3/library/unittest.html#unittest.TestResult):
+      - Added [`skipped`](https://docs.python.org/3/library/unittest.html#unittest.TestResult.skipped) attribute.
+      - Added [`startTestRun`](https://docs.python.org/3/library/unittest.html#unittest.TestResult.startTestRun) and [`stopTestRun`](https://docs.python.org/3/library/unittest.html#unittest.TestResult.stopTestRun) methods.
+    * Added `exit` parameter to [`unittest.main`](https://docs.python.org/3/library/unittest.html#unittest.main).
 
 Note: Many other changes not currently documented here.
 
