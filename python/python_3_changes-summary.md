@@ -136,6 +136,16 @@ Released on June 27, 2009.
     * Added [`decimal.Decimal.from_float`](https://docs.python.org/3/library/decimal.html#decimal.Decimal.from_float) and [`decimal.Context.create_decimal_from_float`](https://docs.python.org/3/library/decimal.html#decimal.Context.create_decimal_from_float) methods.
   + [`functools`](https://docs.python.org/3/library/functools.html) Module:
     * [`partial` objects](https://docs.python.org/3/library/functools.html#partial-objects) can now be pickled.
+  + [`imaplib`](https://docs.python.org/3/library/imaplib.html) Module:
+    * Now support IPv6.
+  + [`io`](https://docs.python.org/3/library/io.html) Module:
+    * To [`io.BufferedIOBase`](https://docs.python.org/3/library/io.html#io.BufferedIOBase):
+      - Added [`detach`](https://docs.python.org/3/library/io.html#io.BufferedIOBase.detach) method.
+    * To [`io.IOBase`](https://docs.python.org/3/library/io.html#io.IOBase):
+      - Added `SEEK_*` constants to [`seek`](https://docs.python.org/3/library/io.html#io.IOBase.seek).
+    * To [`io.TextIOBase`](https://docs.python.org/3/library/io.html#io.TextIOBase):
+      - Added `SEEK_*` constants to [`seek`](https://docs.python.org/3/library/io.html#io.TextIOBase.seek).
+      - Added [`detach`](https://docs.python.org/3/library/io.html#io.TextIOBase.detach) method.
   + [`itertools`](https://docs.python.org/3/library/itertools.html) Module:
     * Added [`itertools.combinations_with_replacement`](https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement) and [`itertools.compress`](https://docs.python.org/3/library/itertools.html#itertools.compress) functions.
     * Added `step` parameter to [`itertools.count`](https://docs.python.org/3/library/itertools.html#itertools.count).
@@ -151,6 +161,10 @@ Released on June 27, 2009.
     * Added optional `flags` parameter to [`re.split`](https://docs.python.org/3/library/re.html#re.split), [`re.sub`](https://docs.python.org/3/library/re.html#re.sub), and [`re.subn`](https://docs.python.org/3/library/re.html#re.subn).
   + [`runpy`](https://docs.python.org/3/library/runpy.html) Module:
     * Added ability to execute packages by looking for a `__main__` submodule.
+  + [`sys`](https://docs.python.org/3/library/sys.html) Module:
+    * Added named component attributes to [`sys.version_info`](https://docs.python.org/3/library/sys.html#sys.version_info).
+    * Added [`sys.float_repr_style`](https://docs.python.org/3/library/sys.html#sys.float_repr_style).
+    * Added [`sys.int_info`](https://docs.python.org/3/library/sys.html#sys.int_info).
   + [`unittest`](https://docs.python.org/3/library/unittest.html) Module:
     * Added ability to [skip tests and to declare expected failures](https://docs.python.org/3/library/unittest.html#skipping-tests-and-expected-failures).
     * To [`unittest.TestCase`](https://docs.python.org/3/library/unittest.html#unittest.TestCase):
