@@ -8,6 +8,21 @@ Summary of changes from version 2.x (mainly 2.6).
 
 Released on December 3, 2008.
 
+### Primary Changes
+
+- [`print`](https://docs.python.org/3/library/functions.html#print) is now a function.
+- Essentially, long renamed to [`int`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
+- An expression like `1/2` returns a float. Use `1//2` to get the truncating behavior.
+- Added dictionary and comprehensions.
+- Literals:
+  + New binary literals, e.g. 0b1010.
+  + New octal literals, e.g. `0o720`.
+  + Integer literals no longer support a trailing `l` or `L`.
+  + String literals no longer support a leading `u` or `U`.
+- New `raise` and `except` syntax.
+- Removed backticks (use [`repr`](https://docs.python.org/3/library/functions.html#repr) instead).
+- Removed `<>` (use `!=` instead).
+
 ### All Changes
 
 #### Language Changes
@@ -68,7 +83,7 @@ Released on December 3, 2008.
     * [`dict.keys`](https://docs.python.org/3/library/stdtypes.html#dict.keys), [`dict.items`](https://docs.python.org/3/library/stdtypes.html#dict.items), and [`dict.values`](https://docs.python.org/3/library/stdtypes.html#dict.values) return [views](https://docs.python.org/3/library/stdtypes.html#dict-views) instead of lists.
     * `dict.iterkeys`, `dict.iteritems`, and `dict.itervalues` methods are no longer supported.
 - Modules:
-  + The new module was removed.
+  + The `new` module was removed.
   + [`operator`](https://docs.python.org/3/library/operator.html) Module:
     * Removed: `sequenceIncludes` and `isCallable`.
   + [`os`](https://docs.python.org/3/library/os.html) Module:
