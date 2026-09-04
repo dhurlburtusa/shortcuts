@@ -111,7 +111,7 @@ Released on June 27, 2009.
 #### Standard Library Changes
 
 - Format specifier for thousands separator:
-  + The built-in [`format`](https://docs.python.org/3/library/functions.html#format) function and the [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format) method use a mini-language that now includes a simple, non-locale aware way to format a number with a thousands separator.
+  + The built-in [`format`](https://docs.python.org/3/library/functions.html#format) function and the [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format) method use a mini-language that now includes a simple, non-locale aware way to format a number with a thousands separator. That is, added the `,` option.
 - Built-In Functions:
   + `round(x, n)` now returns an integer if `x` is an integer. Previously it returned a float.
   + The `string.maketrans` function is deprecated and is replaced by new static methods, [`bytes.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytes.maketrans) and [`bytearray.maketrans`](https://docs.python.org/3/library/stdtypes.html#bytearray.maketrans).
@@ -127,10 +127,26 @@ Released on June 27, 2009.
     * Added [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
     * Added [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter) class.
     * Added [`collections.deque.maxlen`](https://docs.python.org/3/library/collections.html#collections.deque.maxlen) method.
+    * Added `rename` parameter to [`collections.namedtuple`](https://docs.python.org/3/library/collections.html#collections.namedtuple).
+  + [`configparser`](https://docs.python.org/3/library/configparser.html) Module:
+    * Uses `collections.OrderedDict` by default. (But will change back to regular `dict` in version 3.7.
   + [`contextlib`](https://docs.python.org/3/library/contextlib.html) Module:
     * Deprecated: `contextlib.nested`.
   + [`decimal`](https://docs.python.org/3/library/decimal.html) Module:
     * Added [`decimal.Decimal.from_float`](https://docs.python.org/3/library/decimal.html#decimal.Decimal.from_float) and [`decimal.Context.create_decimal_from_float`](https://docs.python.org/3/library/decimal.html#decimal.Context.create_decimal_from_float) methods.
+  + [`itertools`](https://docs.python.org/3/library/itertools.html) Module:
+    * Added [`itertools.combinations_with_replacement`](https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement) and [`itertools.compress`](https://docs.python.org/3/library/itertools.html#itertools.compress) methods.
+    * Added `step` parameter to [`itertools.count`](https://docs.python.org/3/library/itertools.html#itertools.count).
+  + [`logging`](https://docs.python.org/3/library/logging.html) Module:
+    * Added [`NullHandler`](https://docs.python.org/3/library/logging.handlers.html#nullhandler) class.
+    * Added `processName` to [`LogRecord` attributes](https://docs.python.org/3/library/logging.html#logrecord-attributes).
+  + [`pdb`](https://docs.python.org/3/library/pdb.html) Module:
+    * Added `skip` parameter to [`pdb.Pdb`](https://docs.python.org/3/library/pdb.html#pdb.Pdb).
+    * Can now access and display source code loaded via [`zipimport`](https://docs.python.org/3/library/zipimport.html) (or any other conformant [PEP 302](https://peps.python.org/pep-0302/) loader).
+  + [`re`](https://docs.python.org/3/library/re.html) Module:
+    * Added optional `flags` parameter to [`re.split`](https://docs.python.org/3/library/re.html#re.split), [`re.sub`](https://docs.python.org/3/library/re.html#re.sub), and [`re.subn`](https://docs.python.org/3/library/re.html#re.subn).
+  + [`runpy`](https://docs.python.org/3/library/runpy.html) Module:
+    * Added ability to execute packages by looking for a `__main__` submodule.
 
 Note: Many other changes not currently documented here.
 
