@@ -8,7 +8,9 @@ Summary of changes from version 2.x (mainly 2.6).
 
 Released on December 3, 2008.
 
-### Language Changes
+### All Changes
+
+#### Language Changes
 
 - The ordering comparison operators (`<`, `<=`, `>=`, `>`) raise a `TypeError` exception when the operands don’t have a meaningful natural ordering.
 - Essentially, long renamed to [`int`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
@@ -49,7 +51,7 @@ Released on December 3, 2008.
   + Classic classes are gone.
   + See [this](https://docs.python.org/3/whatsnew/3.0.html#changed-syntax) for details.
 
-### Standard Library Changes
+#### Standard Library Changes
 
 - Built-In Functions:
   + The [`bin`](https://docs.python.org/3/library/functions.html#bin) function is new.
@@ -83,13 +85,15 @@ Summary of changes from version 3.0.
 
 Released on June 27, 2009.
 
-### Language Changes
+### All Changes
+
+#### Language Changes
 
 - Directories and zip archives containing a `__main__.py` file can now be executed directly by passing their name to the interpreter. The directory/zipfile is automatically inserted as the first entry in [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path).
 - The syntax of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement now allows multiple context managers in a single statement.
 - Python now uses David Gay’s algorithm for finding the shortest floating-point representation that doesn’t change its value.
 
-### Standard Library Changes
+#### Standard Library Changes
 
 - Format specifier for thousands separator:
   + The built-in [`format`](https://docs.python.org/3/library/functions.html#format) function and the [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format) method use a mini-language that now includes a simple, non-locale aware way to format a number with a thousands separator.
@@ -116,4 +120,3 @@ Released on June 27, 2009.
 Note: Many other changes not currently documented here.
 
 See https://docs.python.org/3/whatsnew/3.1.html for more details.
-
