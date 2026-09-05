@@ -208,3 +208,31 @@ Summary of changes from version 3.1.
 
 Released on February 20, 2011.
 
+### Majority of Changes
+
+#### Language Changes
+
+- ?
+
+#### Behavior Changes
+
+- PYC Repository Directories:
+  + Cached bytecode now stored in `__pycache__` subdirectory.
+  + Each file is tagged based on interpreter (e.g., `mymodule.cpython-32.pyc`).
+  + Imported modules now have a `__cached__` attribute which stores the name of the actual file that was imported.
+  + The tag that is unique to each interpreter is accessible from the imp module:
+    * ```python
+      import imp
+      imp.get_tag()
+      ```
+
+#### Standard Library Changes
+
+- Built-In Functions:
+  + ?
+- Built-In Types:
+  + ?
+- Modules:
+  + Added: [`argparse`](https://docs.python.org/3/library/argparse.html) and [`concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) modules.
+  + [`logging.config`](https://docs.python.org/3/library/logging.config.html) Module:
+    * Added [`logging.config.dictConfig`](https://docs.python.org/3/library/logging.config.html#logging.config.dictConfig) function.
