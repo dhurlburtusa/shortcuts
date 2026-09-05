@@ -92,7 +92,7 @@ Released on December 3, 2008.
     * `sys.maxint` constant was removed. Consider using [`sys.maxsize`](https://docs.python.org/3/library/sys.html#sys.maxsize) in its place.
     * Removed: `sys.exitfunc`, `sys.exc_clear`, `sys.exc_type`, `sys.exc_value`, `sys.exc_traceback`.
 
-See https://docs.python.org/3/whatsnew/3.0.html for more details.
+See https://docs.python.org/3/whatsnew/3.0.html for other changes not listed here and for more details.
 
 ## Python 3.1
 
