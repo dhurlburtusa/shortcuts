@@ -121,7 +121,7 @@ Released on June 27, 2009.
   + Added [`int.bit_length`](https://docs.python.org/3/library/stdtypes.html#int.bit_length).
   + [`str.format`](https://docs.python.org/3/library/stdtypes.html#str.format): The fields in format strings can now be automatically numbered. See [format string syntax](https://docs.python.org/3/library/string.html#formatstrings).
 - Modules:
-  + Added: [`tkinter.ttk`](https://docs.python.org/3/library/tkinter.ttk.html) module.
+  + Added: [`importlib`](https://docs.python.org/3/library/importlib.html) and [`tkinter.ttk`](https://docs.python.org/3/library/tkinter.ttk.html) modules.
   + The [`gzip.GzipFile`](https://docs.python.org/3/library/gzip.html#gzip.GzipFile) and [`bz2.BZ2File`](https://docs.python.org/3/library/bz2.html#bz2.BZ2File) classes now support the context management protocol
   + [`collections`](https://docs.python.org/3/library/collections.html) Module:
     * Added [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict) class, but less important now that the built-in `dict` class gained the ability to remember insertion order in Python 3.7.
@@ -155,6 +155,8 @@ Released on June 27, 2009.
   + [`pdb`](https://docs.python.org/3/library/pdb.html) Module:
     * Added `skip` parameter to [`pdb.Pdb`](https://docs.python.org/3/library/pdb.html#pdb.Pdb).
     * Can now access and display source code loaded via [`zipimport`](https://docs.python.org/3/library/zipimport.html) (or any other conformant [PEP 302](https://peps.python.org/pep-0302/) loader).
+  + [`pickle`](https://docs.python.org/3/library/pickle.html) Module:
+    * Has been adapted for better interoperability with Python 2.x when used with protocol 2 or lower.
   + [`pydoc`](https://docs.python.org/3/library/pydoc.html) Module:
     * Added `pydoc` help topics for symbols so that `help('@')` works as expected in the interactive environment.
   + [`re`](https://docs.python.org/3/library/re.html) Module:
