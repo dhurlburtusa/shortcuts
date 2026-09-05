@@ -23,7 +23,7 @@ Released on December 3, 2008.
 - Removed backticks (use [`repr`](https://docs.python.org/3/library/functions.html#repr) instead).
 - Removed `<>` (use `!=` instead).
 
-### All Changes
+### Majority of Changes
 
 #### Language Changes
 
@@ -100,7 +100,7 @@ Summary of changes from version 3.0.
 
 Released on June 27, 2009.
 
-### All Changes
+### Majority of Changes
 
 #### Language Changes
 
@@ -201,3 +201,10 @@ Released on June 27, 2009.
 - Unpickling now interns the attribute names of pickled objects. This saves memory and allows pickles to be smaller.
 
 See https://docs.python.org/3/whatsnew/3.1.html for other changes not listed here and for more details.
+
+## Python 3.2
+
+Summary of changes from version 3.1.
+
+Released on February 20, 2011.
+
