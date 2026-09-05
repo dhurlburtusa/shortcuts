@@ -192,6 +192,12 @@ Released on June 27, 2009.
       - Added [`startTestRun`](https://docs.python.org/3/library/unittest.html#unittest.TestResult.startTestRun) and [`stopTestRun`](https://docs.python.org/3/library/unittest.html#unittest.TestResult.stopTestRun) methods.
     * Added `exit` parameter to [`unittest.main`](https://docs.python.org/3/library/unittest.html#unittest.main).
 
-Note: Many other changes not currently documented here.
+#### Optimizations
 
-See https://docs.python.org/3/whatsnew/3.1.html for more details.
+- The I/O library has been entirely rewritten in C and is 2 to 20 times faster.
+- Added a heuristic so that tuples and dicts containing only untrackable objects are not tracked by the garbage collector. This can reduce the size of collections and therefore the garbage collection overhead on long-running programs.
+- The decoding of UTF-8, UTF-16 and LATIN-1 is now two to four times faster.
+- The json module now has a C extension to substantially improve its performance.
+- Unpickling now interns the attribute names of pickled objects. This saves memory and allows pickles to be smaller.
+
+See https://docs.python.org/3/whatsnew/3.1.html for other changes not listed here and for more details.
