@@ -1,6 +1,6 @@
 # Astro Notes
 
-Astro is a JavaScript web framework optimized for building fast, content-driven websites.
+Astro is a JavaScript web framework optimized for building fast, content-driven websites like blogs, marketing, and e-commerce. Astro is best-known for pioneering the Islands architecture to reduce JavaScript overhead and complexity compared to other frameworks.
 
 **Server-First**
 
