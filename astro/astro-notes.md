@@ -27,3 +27,13 @@ Extend Astro with your favorite tools. Bring your own JavaScript UI components, 
 - Customizable: Tailwind, MDX, and 100+ other integrations to choose from.
 - UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more.
 - Much more.
+
+## Design Principles
+
+Astro is…
+
+- Content-driven: Astro was designed to showcase your content.
+- Server-first: Websites run faster when they render HTML on the server.
+- Fast by default: It should be impossible to build a slow website in Astro.
+- Easy to use: You don’t need to be an expert to build something with Astro.
+- Developer-focused: You should have the resources you need to be successful.
