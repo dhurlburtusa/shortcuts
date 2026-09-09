@@ -1,6 +1,18 @@
 # Astro Notes
 
-Astro is an all-in-one web framework for building fast, content-focused websites.
+Astro is a JavaScript web framework optimized for building fast, content-driven websites.
+
+**Server-First**
+
+Astro improves website performance by rendering components on the server, sending lightweight HTML to the browser with zero unnecessary JavaScript overhead.
+
+**Content-Driven**
+
+Astro was designed to work with your content, no matter where it lives. Load data from your file system, external API, or your favorite CMS.
+
+**Customizable**
+
+Extend Astro with your favorite tools. Bring your own JavaScript UI components, CSS libraries, themes, integrations, and more.
 
 **Key Features**
 
