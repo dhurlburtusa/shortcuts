@@ -17,8 +17,13 @@ Extend Astro with your favorite tools. Bring your own JavaScript UI components, 
 **Key Features**
 
 - Component Islands: A new web architecture for building faster websites.
+- Content Collections: Organize your Markdown and MDX with built-in TypeScript type-safety and frontmatter validation.
+- File-Based Routing: Astro's flexible routing system lets you understand your site's structure at a glance.
 - Server-first API design: Move expensive hydration off of your users’ devices.
-- Zero JS, by default: No JavaScript runtime overhead to slow you down.
+- Zero JavaScript, by default: No JavaScript runtime overhead to slow you down.
+- Optimized Images: Eliminate layout shift and serve optimized, modern image formats with Astro's built-in components and utilities.
 - Edge-ready: Deploy anywhere, even a global edge runtime like Deno or Cloudflare.
+- View Transitions: Seamlessly morph, fade, and swipe across pages with built-in, browser-native View Transitions APIs.
 - Customizable: Tailwind, MDX, and 100+ other integrations to choose from.
 - UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more.
+- Much more.
