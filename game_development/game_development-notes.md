@@ -1,5 +1,13 @@
 # Game Development Notes
 
+## Tools
+
+- [BabelEdit](https://www.codeandweb.com/babeledit)
+- [PhysicsEditor](https://www.codeandweb.com/physicseditor)
+- [SpriteIlluminator](https://www.codeandweb.com/spriteilluminator)
+- [TexturePacker](https://www.codeandweb.com/texturepacker)
+- [TexturePacker3D](https://www.codeandweb.com/texturepacker3d)
+
 ## Uncatgorized
 
 - https://developer.mozilla.org/en-US/docs/Games
