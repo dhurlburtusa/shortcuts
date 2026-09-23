@@ -5,7 +5,7 @@
 - [BabelEdit](https://www.codeandweb.com/babeledit)
 - [PhysicsEditor](https://www.codeandweb.com/physicseditor)
 - [SpriteIlluminator](https://www.codeandweb.com/spriteilluminator)
-- [Sprite Sheet Generator](https://spritesheetgenerator.online/)
+- [Spritesheet Generator](https://spritesheetgenerator.online/)
 - [TexturePacker](https://www.codeandweb.com/texturepacker)
 - [TexturePacker3D](https://www.codeandweb.com/texturepacker3d)
 
