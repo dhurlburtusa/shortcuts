@@ -7,6 +7,8 @@
     * For Python: [game-state](https://pypi.org/project/game-state/)
 - Composed of tiles?
   + Consider using [Tiled](https://www.mapeditor.org/) and importing into the game.
+- Will there be multiple levels/scenes?
+  + Consider using a level editor or tile map editor.
 
 ## Learning
 
