@@ -1,5 +1,13 @@
 # Game Development Notes
 
+## Considerations
+
+- Will have a title screen, menus, etc?
+  + Consider a library to help with switching between these "states"/"scenes".
+    * For Python: [game-state](https://pypi.org/project/game-state/)
+- Composed of tiles?
+  + Consider using [Tiled](https://www.mapeditor.org/) and importing into the game.
+
 ## Learning
 
 ### 2D Games
