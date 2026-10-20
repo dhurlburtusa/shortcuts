@@ -1,5 +1,17 @@
 # Game Development Notes
 
+## Learning
+
+### 2D Games
+
+#### Python
+
+##### Pygame
+
+**Video Tutorials**
+
+- [Pygame Platformer Tutorial - Full Course](https://www.youtube.com/watch?v=2gABYM5M0ww)
+
 ## Tools
 
 - [Aseprite](https://www.aseprite.org/)
