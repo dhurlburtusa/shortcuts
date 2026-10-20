@@ -10,8 +10,24 @@ Custom types can be exported and imported in a JSON format.
 
 ### Class
 
-Classes have a name. They can be assigned a color, set whether to draw fill, declared what is can be used for (layer, map, object, project, property, tile, tileset, wangcolor, or wangset). They can also be assigned members.
+Classes have a name. They can be assigned a color, set whether to draw fill, declared what is can be used for (layer, map, object, project, property, terrain (aka wangcolor), terrain set (aka wangset), tile, or tileset). They can also be assigned members.
+
+#### Class Members
+
+**Types**
+
+- bool (`false` or `true`)
+- color (string with `#aarrggbb` format)
+- float (number)
+- file (string of a file)
+- int (number)
+- object (to be determined)
+- string (string)
+- list (array of any type; types may be mixed; items don't have a `name` key)
+- enum
 
 ### Enum
 
-Enums can be either a number or string. Each enum may allow multiple values.
+Enums can be either a number or string. Each enum may allow multiple values to be selected.
+
+Number enums are stored as strings.
