@@ -1,5 +1,11 @@
 # Game Development Notes
 
+## Assets
+
+### 2D
+
+- https://opengameart.org/
+
 ## Considerations
 
 - Will have a title screen, menus, etc?
