@@ -15,6 +15,13 @@
   + Consider using [Tiled](https://www.mapeditor.org/) and importing into the game.
 - Will there be multiple levels/scenes?
   + Consider using a level editor or tile map editor.
+- How many players?
+  + Some games are single player only.
+- Does passage of time affect things?
+  + Difference between morning, afternoon, evening, night?
+  + Difference between phases of the moon?
+  + Difference between seasons: spring, summer, autumn, winter?
+  + May affect shading, shadows, existence of beings, etc.
 
 ## Learning
 
