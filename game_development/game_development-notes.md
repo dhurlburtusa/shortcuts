@@ -6,6 +6,49 @@
 
 - https://opengameart.org/
 
+## Engines
+
+### 2D and 3D
+
+- [Defold](https://defold.com/)
+  + Cross-platform:
+    * Android
+    * Facebook
+    * HTML5
+    * iOS
+    * Linux
+    * macOS
+    * Nintendo Switch
+    * PlayStation® 4
+    * PlayStation® 5
+    * Poki
+    * Steam
+    * Windows
+    * Xbox
+  + Language: Lua
+
+### 2D Only
+
+- [LÖVE](https://love2d.org/)
+  + Cross-platform:
+    * Android
+    * iOS
+    * Linux
+    * macOS
+    * Windows
+  + Language: Lua
+- [Solar2D](https://solar2d.com/)
+  + Cross-platform:
+    * Android
+    * Android TV
+    * HTML5
+    * iOS
+    * Linux
+    * macOS
+    * tvOS
+    * Windows
+  + Language: Lua
+
 ## Considerations
 
 - Will have a title screen, menus, etc?
