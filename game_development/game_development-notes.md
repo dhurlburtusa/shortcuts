@@ -51,7 +51,6 @@
 - [T-Engine4](https://te4.org/te4)
   + Language: Lua
 
-
 ## Considerations
 
 - Will have a title screen, menus, etc?
@@ -80,6 +79,10 @@
 **Video Tutorials**
 
 - [Pygame Platformer Tutorial - Full Course](https://www.youtube.com/watch?v=2gABYM5M0ww)
+
+## Patterns
+
+- https://gameprogrammingpatterns.com/
 
 ## Tools
 
