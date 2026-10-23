@@ -1,5 +1,8 @@
 # CPP Notes
 
+C++ is a popular programming language. It is used to create computer programs and is one of the most used languages in game development.
+
+C++ was developed as an extension of C and both languages have almost the same syntax.
 
 ## Constants
 
