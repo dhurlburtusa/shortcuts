@@ -2,7 +2,7 @@
 
 C++ is a cross-platform language that can be used to create high-performance applications, which includes video games.
 
-C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+C++ was developed by Bjarne Stroustrup, as an extension to the C language. The main difference between C and C++ is that C++ supports classes and objects, while C does not.
 
 C++ gives programmers a high level of control over system resources and memory.
 
