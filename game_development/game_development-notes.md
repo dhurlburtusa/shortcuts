@@ -9,6 +9,8 @@
 
 ## Engines
 
+See https://en.wikipedia.org/wiki/List_of_game_engines.
+
 ### 2D and 3D
 
 - [Defold](https://defold.com/)
