@@ -1,8 +1,12 @@
 # CPP Notes
 
-C++ is a popular programming language. It is used to create computer programs and is one of the most used languages in game development.
+C++ is a cross-platform language that can be used to create high-performance applications, which includes video games.
 
-C++ was developed as an extension of C and both languages have almost the same syntax.
+C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+
+C++ gives programmers a high level of control over system resources and memory.
+
+C++ has evolved over the years, with major versions including C++11, C++14, C++17, C++20, C++23, and C++26.
 
 ## Constants
 
