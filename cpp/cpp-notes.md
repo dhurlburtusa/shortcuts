@@ -45,3 +45,21 @@ const double pi = 3.1415926;
 - Strings are arrays of characters (`char`) terminated by the `\0` (NULL) character.
 - The `std::string` class is available in the C++ standard library via the `<string>` header.
 - The `<cstring>` header contains functions to handler character array strings.
+
+## Operators
+
+Operators are used to perform operations on variables and values.
+
+### Arithmetic Operators
+
+| Operator | Name           | Description        | Example |
+| -------- | -------------- | ------------------ | ------- |
+| +        | Addition       | Adds values        | x + y   |
+| -        | Subtraction    | Subtracts values   | x - y   |
+| *        | Multiplication | Multiplies values  | x * y   |
+| /        | Division       | Divides values     | x / y   |
+| %        | Modulus        | Division remainder | x % y   |
+| ++       | Increment      | Increments value   | ++x     |
+| --       | Decrement      | Decrements value   | --x     |
+
+Note: Integer division will be performed if both values/variables are integers.
