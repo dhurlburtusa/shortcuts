@@ -41,10 +41,15 @@ const double pi = 3.1415926;
 
 ## Strings
 
-- Not a type natively supported by the language.
-- Strings are arrays of characters (`char`) terminated by the `\0` (NULL) character.
 - The `std::string` class is available in the C++ standard library via the `<string>` header.
+- Not a type natively supported by the language.
+- A `string` literal is a collection of characters surrounded by double quotes (`""`).
+  + `string greeting = "Hello";`
+
+## C-Style Strings
+
 - The `<cstring>` header contains functions to handler character array strings.
+- Strings are arrays of characters (`char`) terminated by the `\0` (NULL) character.
 
 ## Operators
 
