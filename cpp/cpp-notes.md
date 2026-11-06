@@ -79,3 +79,14 @@ Note: Integer division will be performed if both values/variables are integers.
 | ^=       | x ^= 3  | x = x ^ 3  |
 | >>=      | x >>= 3 | x = x >> 3 |
 | <<=      | x <<= 3 | x = x << 3 |
+
+### Comparison Operators
+
+| Operator | Name                     | Example |
+| -------- | ------------------------ | ------- |
+| ==       | Equal to                 | x == y  |
+| !=       | Not equal                | x != y  |
+| >        | Greater than             | x > y   |
+| <        | Less than                | x < y   |
+| >=       | Greater than or equal to | x >= y  |
+| <=       | Less than or equal to    | x <= y  |
