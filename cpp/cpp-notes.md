@@ -45,6 +45,9 @@ const double pi = 3.1415926;
 - Not a type natively supported by the language.
 - A `string` literal is a collection of characters surrounded by double quotes (`""`).
   + `string greeting = "Hello";`
+- Use `+` to concatenate two strings.
+- Use `[index]` to access characters: `txt[txt.length() - 1]; // Last character.`.
+- Use `getline(cin, myString);` to input full line of text regardless of whitespace.
 
 ## C-Style Strings
 
