@@ -63,3 +63,19 @@ Operators are used to perform operations on variables and values.
 | --       | Decrement      | Decrements value   | --x     |
 
 Note: Integer division will be performed if both values/variables are integers.
+
+### Assignment Operators
+
+| Operator | Example | Same As    |
+| -------- | ------- | ---------- |
+| =        | x = 5   | x = 5      |
+| +=       | x += 3  | x = x + 3  |
+| -=       | x -= 3  | x = x - 3  |
+| *=       | x *= 3  | x = x * 3  |
+| /=       | x /= 3  | x = x / 3  |
+| %=       | x %= 3  | x = x % 3  |
+| &=       | x &= 3  | x = x & 3  |
+| \|=      | x \|= 3 | x = x \| 3 |
+| ^=       | x ^= 3  | x = x ^ 3  |
+| >>=      | x >>= 3 | x = x >> 3 |
+| <<=      | x <<= 3 | x = x << 3 |
