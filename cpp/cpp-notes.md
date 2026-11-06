@@ -98,3 +98,14 @@ Note: Integer division will be performed if both values/variables are integers.
 | &&       | Logical and | Returns true if both statements are true | x < 5 &&  x < 10 |
 | \|\|     | Logical or  | Returns true if one of the statements is true | x < 5 || x < 4 |
 | !        | Logical not | Reverse the result, returns false if the result is true | !(x < 5 && x < 10) |
+
+### Order of Operations
+
+- `(`, `)` - Parentheses
+- `*`, `/`, `%` - Multiplication, Division, Modulus
+- `+`, `-` - Addition, Subtraction
+- `>`, `<`, `>=`, `<=` - Comparison
+- `==`, `!=` - Equality
+- `&&` - Logical AND
+- `||` - Logical OR
+- `=` - Assignment
