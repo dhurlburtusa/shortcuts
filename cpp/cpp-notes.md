@@ -117,3 +117,16 @@ Note: Integer division will be performed if both values/variables are integers.
 - `&&` - Logical AND
 - `||` - Logical OR
 - `=` - Assignment
+
+## Flow Control
+
+C++ has several flow control statements.
+
+- `if`/`else if`/`else`
+- `do`/`break`/`continue`/`while`
+- `while`/`break`/`continue`
+- `switch`/`case`/`default`
+- `for`/`break`/`continue`
+- foreach
+
+
